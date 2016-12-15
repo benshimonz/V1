@@ -4,10 +4,10 @@
 
 A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair G = (V, E) comprising a set V of vertices (nodes) together with a set E of edges (arcs), which are 2-element subsets of V.
 
-A **property graph** (AKA attributed graph) is a graph where 
+A **property graph** (AKA attributed graph) is a graph where
 
 - Graph vertices represent entities
-  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects ((e.g. a person, a car, a product)
+  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a car, a product)
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features, called properties (attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
