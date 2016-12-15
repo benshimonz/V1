@@ -2,7 +2,5 @@
 
 
 ![GitHub Logo](/Pictures/Q001.png)
-Format: ![Alt Text](url)
 
-[[https://github.com/LiorKogan/V1/tree/master/Pictures/Q001.png|alt=octocat]]
 
