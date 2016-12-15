@@ -1,7 +1,7 @@
 # V1 - A visual query language for schema-based property graphs
 
-![V1](https://github.com/LiorKogan/V1/tree/master/Pictures/Q001.png)
-![V1](https://github.com/LiorKogan/V1/tree/master/Pictures/Q002.png)
+![V1](/Pictures/Q001.png)
+![V1](/Pictures/Q002.png)
 ![V1](/Pictures/Q003-1.png)
 ![V1](/Pictures/Q003-2.png)
 ![V1](/Pictures/Q004.png)
