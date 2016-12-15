@@ -1,3 +1,2 @@
-# V1
-V1 visual query language for schema-based property graphs
+# V1 - A visual query language for schema-based property graphs
 
