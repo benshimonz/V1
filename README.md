@@ -68,7 +68,7 @@ Many potential users won't use textual query languages. The learning curve may b
 
 Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of the work, and to the value of the insights that can be deduced.
 
-Visual query languages are very attractive. They have the potential to be more 'user friendly', in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is both generic, simple, rich, and efficient. This is what V1 aims to be. 
+Visual query languages are very attractive. They have the potential to be more 'user friendly', in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
 
