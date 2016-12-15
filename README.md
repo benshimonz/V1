@@ -1,5 +1,73 @@
 # V1 - A visual query language for schema-based property graphs
 
+## The property graph data model
+
+A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair G = (V, E) comprising a set V of vertices (nodes) together with a set E of edges (arcs), which are 2-element subsets of V.
+
+A **property graph** (AKA attributed graph) is a graph where 
+
+- Graph vertices represent entities (e.g. Persons)
+  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects.
+- Graph edges represent relationships between pairs of entities (e.g. owns, friend of). Usually all edges are directional.
+- Each vertex has a set of descriptive features, called properties (attributes) (e.g. 'First Name', 'Last Name')
+- Each edge has a set of properties as well
+- Each property has a name (string), a value type (e.g. string  / integer), and a value (e.g. "First_Name": string = "Lior")
+- Usually nodes have types (e.g. Person, Phone, Vehicle), but in a schema-free graph - the type is just another property
+- Edges have types as well (e.g. own, call). Again - without schema - the type is just another property
+
+More about property graphs can be found [here](http://tinkerpop.apache.org/docs/current/reference/) and [here](https://neo4j.com/developer/graph-database/).
+
+A **property graph's schema** is defined by
+
+- A set of entity types
+  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Car, Product)
+  For each entity type: 
+  - A name 
+  - A set of properties. For each property: name (key) and value type
+- A set of relationship types. For each relationship type:
+  - A name
+  - A set of properties. For each property: name (key) and value type
+  - A set of pairs of entity types for which the relationship type holds (e.g. Person owns Phone; Person owns Car)
+
+There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types directionality (unidirectional, bidirectional, mixed), constraints (mandatory attributes, relationships cardinality, etc.), class type hierarchies, relationship type hierarchies, and more.
+
+A **schema-based property graph** is a property graph that conforms to a given schema.
+
+**Why do we need a schema?**
+
+Schema-free property graphs do not define nor enforce entity-types and relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without integrity there are no formal building-blocks for representing patterns.
+
+In order to answer queries such as *“Any person that owns a red car”* we need first to:
+- Define 'Person' and 'Car' entity types
+- Ensure that each Person and Car entities are of the relevant entity types
+- Define 'owns' relationship type
+- Defines that the 'owns' relationship type holds between a Person and a Car
+- Define a 'Color' property for the Car entity type
+- Define that Color holds a string, or better, define a categorical data type
+
+## Patterns and pattern languages
+
+A Pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
+
+*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and he has a brother that called 5 or more phones belonging to employees of company X in the last month"*
+
+A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the [union of the] set of all the sub-graphs that conforms to the pattern's structure.
+
+A Pattern language defines the syntax for expressing patterns.
+
+Pattern languages differs in the following anpects:
+- Representation - textual (structured / controlled Natural) or visual (AKA graphical, diagrammatic)
+- Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
+- Simplicity -  both for constructing new patterns and for understanding existing patterns
+- Efficiency - to parse and to find patterns
+
+## The V1 Pattern language
+
+V1 is a generic visual pattern language for schema-based property graphs.
+
+
+
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
