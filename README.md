@@ -62,7 +62,7 @@ Pattern languages differs in the following anpects:
 - Simplicity -  both for constructing new patterns and for understanding existing patterns
 - Efficiency - to parse and to find patterns
 
-## The V1 Pattern language
+## The V1 pattern language
 
 Many potential users won't use textual query languages. The learning curve may be too sharp for someone with no perior experience in programming. Even users that use textual query languages may spend a lot of time on the technicalities. 
 
@@ -257,171 +257,165 @@ _**Q43:** Any phone that all of its owners (if any) are persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
-_**Q44:** Any path with length up to 4 between these two phones, which is composed only of 'call' relationships_
+_**Q44:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
 
-_**Q45:** Any path with length up to 4 between these two phones, which is composed only of 'call' and 'SMS' relationships_
+_**Q45:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' and 'SMS' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
-_**Q46:** Any _
+_**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a phone owned by John Price, which is composed of up to 2 'call' relationships, and only of 'phone' entities.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
-_**Q47:** Any_
+_**Q47:** All shortest paths between these two phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q047.png)
 
-_**Q48:** Any_
+_**Q48:** All shortest paths between these two phones, which are not composed of 'call' relationships and 'phone' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
-_**Q49:** Any_
+_**Q49:** Any 3 phones with circular call pattern, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
-_**Q50:** Any_
+_**Q50:** Any person that own (at least) two things of the same type_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
 
-_**Q51:** Any_
+_**Q51:** Any person that own (at least) two things of different types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
 
-_**Q52:** Any_
+_**Q52:** Any person that own (at least) two things of different types, both are not cars_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
-_**Q53:** Any_
+_**Q53:** Any person within graph distance ≤ 4 from James Smith_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q053.png)
 
-_**Q54:** Any_
+_**Q54:** Any person within graph distance ≤ 3 from James Smith, John Price and George Davis_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
 
-_**Q55:** Any_
+_**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and George Davis_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
-_**Q56:** Any_
+_**Q56, Q57, Q58:** limitations on the count and types of the sub-paths that a path may be composed of_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q056.png)
-
-_**Q57:** Any_
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q057.png)
-
-_**Q58:** Any_
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-_**Q59:** Any_
+_**Q59:** Any person having more than 2 parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
 
-_**Q60:** Any_
+_**Q60:** Any phone that received calls from exactly 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
 
-_**Q61:** Any_
+_**Q61:** Anything that owns more than 2 things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
 
-_**Q62:** Any_
+_**Q62:** Any person that is within graph distance ≤ 4 to more than 5 persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q63:** Any_
+_**Q63:** Any person that more than 2 persons are not his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any_
+_**Q64:** Any phone that number of phone that didn't call him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q65:** Any_
+_**Q65:** Anything that that number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any_
+_**Q66:** Any person that the number of persons that are not within graph distance ≤ 4 from him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-_**Q67:** Any_
+_**Q67:** The 3 persons with the maximal number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
 
-_**Q68:** Any_
+_**Q68:** The 2 phones that were called from the largest number of phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
 
-_**Q69:** Any_
+_**Q69:** The 2 things that own the largest number of things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
 
-_**Q70:** Any_
+_**Q70:** The 5 persons, that the number of persons within graph distance ≤ 4 from them is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-_**Q71:** Any_
+_**Q71:** Any phone that made more that 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any_
+_**Q72:** Any phone that received exactly 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
 
-_**Q73:** Any_
+_**Q73:** Any phone that made no more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
 
-_**Q74:** Any_
+_**Q74:** Any phone that the number of calls it received (cumulatively) is not 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
-_**Q75:** Any_
+_**Q75:** Any pair of phones A, B where A received between 8 to 10 calls from B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
-_**Q76:** Any_
+_**Q76:** Any phone that called between 8 to 10 times to 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-_**Q77:** Any_
+_**Q77:** The 5 phone pairs A, B where the number of calls from B to A is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
-_**Q78:** Any_
+_**Q78:** The 4 phones that called the largest number of times to 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
-_**Q79:** Any_
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to some person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
-_**Q80:** Any_
+_**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-_**Q81:** Any_
+_**Q81:** Any phone that didn't call (0 callees)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-_**Q82:** Any_
+_**Q82:** Any phone that wasn't called (0 callers)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q83:** Any_
+_**Q83:** Any phone that didn't call (0 calls)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
-_**Q84:** Any_
+_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q85:** Any_
+_**Q85:** Any phone that called at least 10 phones, and received calls from at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
