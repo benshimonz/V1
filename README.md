@@ -9,9 +9,6 @@
 
 </script>
 
-
-# V1 - A visual query language for schema-based property graphs
-
 Copyright (c) 2017 Lior Kogan.
 This work is provided under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
