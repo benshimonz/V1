@@ -2,5 +2,5 @@ theme: jekyll-theme-slate
 show_downloads: false
 google_analytics: UA-89133312-1
 
-title: AAA 111
-description: BBB BBB
+title: V1
+description: A visual query language for schema-based property graphs
