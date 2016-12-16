@@ -53,6 +53,7 @@ A **schema-based property graph** is a property graph that conforms to a given s
 Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without integrity there are no formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person that owns a red vehicle”* we need first to:
+
 * Define 'Person' and 'Vehicle' entity types
 * Ensure that each Person and Vehicle entities are of the relevant entity types
 * Define 'owns' relationship type
@@ -71,6 +72,7 @@ A pattern can be viewed as a query that can be executed against a graph database
 A pattern language defines a syntax for expressing patterns.
 
 Pattern languages differs in the following aspects:
+
 * Genericity - generic (e.g. schema-driven) or domain-specific
 * Representation - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
 * Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
