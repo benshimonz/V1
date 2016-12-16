@@ -24,7 +24,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph vertices represent entities.
   An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a vehicle, a product)
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
-- Each vertex has a set of descriptive features, called properties (attributes) (e.g. 'First Name', 'Last Name' for a person)
+- Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
 - Each property has a name (string), a value type (e.g. string  / integer), and a value (e.g. "First_Name": string = "Lior")
 - Usually each vertex has a type (e.g. Person, Phone, Vehicle), but in a schema-free graph - the type is just another property
@@ -34,8 +34,8 @@ More about property graphs can be found [here](http://tinkerpop.apache.org/docs/
 
 A **property graph's schema** is defined by
 
-* A set of entity types
-  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Vehicle, Product)
+* A set of entity types.
+  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Vehicle, Product).
   For each entity type: 
   * A name 
   * A set of properties. For each property: name (key) and value type
