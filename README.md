@@ -80,41 +80,41 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-* _**Q2:** Any phone, that was called by a phone that Lior Kogan owns_
+- _**Q2:** Any phone, that was called by a phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
--- _**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
+- _**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
--- ***Q4:** Any person that call was made to his phone from a phone owned by at least one of his parents*
+- _**Q4:** Any person that call was made to his phone from a phone owned by at least one of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
--- ***Q5:** Any person that call was made to his phone from a phone owned by two of his parents*
+- _**Q5:** Any person that call was made to his phone from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
--- ***Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by his other parent (note that one or both phones may be owner by both his parents)*
+- _**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by his other parent (note that one or both phones may be owner by both his parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
--- ***Q7:** Any person that either a call was made to his phone from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent*
+- _**Q7:** Any person that either a call was made to his phone from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
--- ***Q8:** Any person that was born before 1970 and died, or that his father was born before or at 1/1/1950*
+- _**Q8:** Any person that was born before 1970 and died, or that his father was born before or at 1/1/1950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
--- ***Q9:** Any pair of phones A, B were A called B both in 1980 and in 1984*
+- _**Q9:** Any pair of phones A, B were A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
--- ***Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010*
+- _**Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
