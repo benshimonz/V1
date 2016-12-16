@@ -9,7 +9,7 @@
 
 </script>
 
-V1 - A visual query language for schema-based property graphs.
+## V1 - A visual query language for schema-based property graphs.
 
 Copyright (c) 2017 Lior Kogan.
 
@@ -292,7 +292,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
-_**Q49:** Any 3 phones with circular call pattern, and their owners_
+_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
@@ -518,83 +518,83 @@ _**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
-_**Q107:** Any_
+_**Q107:** Any phone that (the number of phones owned by 5 persons each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-_**Q108:** Any_
+_**Q108:** Any person that have the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
-_**Q109:** Any_
+_**Q109:** Any person that his parent owned a vehicle and a phone prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
-_**Q110:** Any_
+_**Q110:** Any 3 bank accounts with a cyclic transfer pattern in chronological order, with amounts > $10000, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
 
-_**Q111:** Any_
+_**Q111:** Any person that doesn't know someone with a birth date similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
 
-_**Q112:** Any_
+_**Q112:** Any person that owned a car and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
-_**Q113:** Any_
+_**Q113:** Any person that know at least 5 person with a birth data similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
 
-_**Q114:** Any_
+_**Q114:** Any person that own more than 5 vehicles with the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
-_**Q115:** Any_
+_**Q115:** Any person that own more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
-_**Q116:** Any_
+_**Q116:** Any person that own vehicles with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any_
+_**Q117:** Any person that the average model year of his owned vehicles is greater than 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q118:** Any_
+_**Q118:** Any person and his 3 eldest offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
 
-_**Q119:** Any_
+_**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-_**Q120:** Any_
+_**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is less than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q121:** Any_
+_**Q121:** Any phone that (received calls from) or (made calls to) at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
-_**Q122:** Any_
+_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q123:** Any_
+_**Q123:** Any phone that either (received a call) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-_**Q124:** Any_
+_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-_**Q125:** Any_
+_**Q125:** Any phone that the number of phone it called is greater than the number of phones that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
 
-_**Q126:** Any_
+_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
