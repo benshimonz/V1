@@ -642,7 +642,7 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q138:** The 4 people that know people that cumulatively own cars with the largest number of colors_
+_**Q138:** The 4 people that know people that cumulatively own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
@@ -650,82 +650,81 @@ _**Q139:** Any person that own vehicles with the same number of colors as the nu
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
-_**Q140:** Any_
+_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any_
+_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-_**Q142:** Any_
+_**Q142:** Any person that owns a red vehicle, and has a parent that owns a vehicle. The parent and his vehicle are not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
 
-_**Q143:** Any_
+_**Q143:** Any person that owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
 
-_**Q144:** Any_
+_**Q144:** Any person that owns a red vehicle. If he has a parent that owns a vehicle - the parent and his vehicle will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q144.png)
 
-_**Q145:** Any_
+_**Q145:** Any person that owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q145.png)
 
-_**Q146:** Any_
+_**Q146:** Any person that owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
 
-_**Q147:** Any_
+_**Q147:** Any person. If (s)he owns both a vehicle and a phone - they will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
 
-_**Q148:** Any_
+_**Q148:** Any person that owns both a vehicle and a phone. If (s)he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
 
-_**Q149:** Any_
+_**Q149:** Any person. If (s)he owns a vehicle - it will be a part of the answer as well. If (s)he owns a phone - it will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
 
-_**Q150:** Any_
+_**Q150:** Any person that owns a vehicle or a phone. If (s)he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
-_**Q151:** Any_
+_**Q151:** Any person that owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
 
-_**Q152:** Any_
+_**Q152:** Any person that owns more than 10 vehicles. Only the Chinese vehicles will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
-_**Q153:** Any_
+_**Q153:** Any phone that in at least 10 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
-_**Q154:** Any_
+_**Q154:** Any phone that in at least 4 years: in at least 11 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q154.png)
 
-_**Q155:** Any_
+_**Q155:** Any phone that in at least 11 days called more than 100 minutes cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q155.png)
 
-_**Q156:** Any_
+_**Q156:** Any phone that called more than 1000 minutes cumulatively - in the days it called more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any_
+_**Q157:** Any person that owns at most 3 cars with the same color - for more than 5 colors _
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
-_**Q158:** Any_
+_**Q158:** Any phone that in at least 10 days - the number of phones it called is greater than the number of phones that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-_**Q159:** Any_
-
+_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phone that called it is greater than the number of phones it called)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
