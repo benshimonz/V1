@@ -94,7 +94,7 @@ _**Q1:** Any phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any phone, that was called by a phone that Lior Kogan owns_
+_**Q2:** Any phone that was called by a phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
@@ -104,7 +104,7 @@ _**Q3:** Any person that owns a phone, and his first name is Lior (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
-_**Q4:** Any person that a call was made to his phone from a phone owned by at least one of his parents_
+_**Q4:** Any person that a call was made to his phone from a phone owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
@@ -112,7 +112,7 @@ _**Q5:** Any person that a call was made to his phone from a phone owned by two 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
-_**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by his other parent (note that one or both phones may be owner by both his parents)_
+_**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
@@ -120,7 +120,7 @@ _**Q7:** Any person that either a call was made to his phone from a phone owned 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
-_**Q8:** Any person that was born before 1970 and died, or that his father was born before or at 1/1/1950_
+_**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
