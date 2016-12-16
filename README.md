@@ -287,7 +287,7 @@ _**Q45:** Any path with length ≤ 4 between these two phones, which is composed
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
-_**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a phone owned by John Price, which is composed of up to 2 'call' relationships, and only of 'phone' entities.
+_**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a phone owned by John Price, which is composed of up to 2 'call' relationships, and only of 'phone' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
@@ -725,7 +725,7 @@ _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the da
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any person that owns at most 3 vehicles with the same color - for more than 5 colors _
+_**Q157:** Any person that owns at most 3 vehicles with the same color - for more than 5 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
@@ -733,5 +733,5 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)
+_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
