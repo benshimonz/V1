@@ -64,7 +64,7 @@ Pattern languages differs in the following anpects:
 
 ## The V1 Pattern language
 
-Many potential users won't use textual query languages. The learning curve may be too sharp for someone with no perior experience in programming. Even users that are willing to use textual query languages may spend a lot of time on the technicalities. 
+Many potential users won't use textual query languages. The learning curve may be too sharp for someone with no perior experience in programming. Even users that use textual query languages may spend a lot of time on the technicalities. 
 
 Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of the work, and to the value of the insights that can be deduced.
 
@@ -76,17 +76,46 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 
 
+Q1: Any phone that Lior Kogan owns
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
+
+Q2: Any phone, that was called by a phone that Lior Kogan owns
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
+
+Q3: Any person that owns a phone, and his first name is Lior (two versions)
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
+
+Q4: Any person that call was made to his phone from a phone owned by at least one of his parents
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
+
+Q5: Any person that call was made to his phone from a phone owned by two of his parents
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
+
+Q6: Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by his other parent (note that one or both phones may be owner by both his parents)
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
+
+Q7: Any person that either a call was made to his phone from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
+
+Q8: Any person that was born before 1970 and died, or that his father was born before or at 1/1/1950
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
+
+Q9: Any pair of phones A, B were A called B both in 1980 and in 1984
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
+
+Q10: Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q012.png)
