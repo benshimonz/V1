@@ -9,7 +9,7 @@
 
 </script>
 
-## V1 - A visual query language for schema-based property graphs.
+## V1 - A visual query language for schema-based property graphs
 
 Copyright (c) 2017 Lior Kogan.
 
@@ -22,7 +22,7 @@ A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an or
 A **property graph** (AKA attributed graph) is a graph where
 
 - Graph vertices represent entities
-  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a car, a product)
+  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a vehicle, a product)
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features, called properties (attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
@@ -35,14 +35,14 @@ More about property graphs can be found [here](http://tinkerpop.apache.org/docs/
 A **property graph's schema** is defined by
 
 * A set of entity types
-  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Car, Product)
+  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Vehicle, Product)
   For each entity type: 
   * A name 
   * A set of properties. For each property: name (key) and value type
 * A set of relationship types. For each relationship type:
   * A name
   * A set of properties. For each property: name (key) and value type
-  * A set of pairs of entity types for which the relationship type holds (e.g. Person owns Phone; Person owns Car)
+  * A set of pairs of entity types for which the relationship type holds (e.g. Person owns Phone; Person owns Vehicle)
 
 There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory attributes, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, and more.
 
@@ -52,12 +52,12 @@ A **schema-based property graph** is a property graph that conforms to a given s
 
 Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without integrity there are no formal building-blocks for representing patterns.
 
-In order to ask and answer queries such as *“Any person that owns a red car”* we need first to:
-* Define 'Person' and 'Car' entity types
-* Ensure that each Person and Car entities are of the relevant entity types
+In order to ask and answer queries such as *“Any person that owns a red vehicle”* we need first to:
+* Define 'Person' and 'Vehicle' entity types
+* Ensure that each Person and Vehicle entities are of the relevant entity types
 * Define 'owns' relationship type
-* Defines that the 'owns' relationship type holds between a Person and a Car
-* Define a 'Color' property for the Car entity type
+* Defines that the 'owns' relationship type holds between a Person and a Vehicle
+* Define a 'Color' property for the Vehicle entity type
 * Define that Color holds a string, or better, define a categorical data type
 
 ## Patterns and pattern languages
@@ -268,7 +268,7 @@ _**Q42:** Anything that can own something, but owns nothing_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q042.png)
 
-_**Q43:** Any phone that all of its owners (if any) are persons_
+_**Q43:** Any phone that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
@@ -338,11 +338,11 @@ _**Q61:** Anything that owns more than 2 things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
 
-_**Q62:** Any person that is within graph distance ≤ 4 from more than 5 persons_
+_**Q62:** Any person that is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q63:** Any person that more than 2 persons are not his parents_
+_**Q63:** Any person that more than 2 people are not his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
@@ -354,11 +354,11 @@ _**Q65:** Anything that that number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any person that the number of persons that are not within graph distance ≤ 4 from him is 5_
+_**Q66:** Any person that the number of people that are not within graph distance ≤ 4 from him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-_**Q67:** The 3 persons with the maximal number of parents_
+_**Q67:** The 3 people with the maximal number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
 
@@ -370,7 +370,7 @@ _**Q69:** The 2 things that own the largest number of things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
 
-_**Q70:** The 5 persons, that the number of persons within graph distance ≤ 4 from them is the smallest_
+_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
@@ -494,7 +494,7 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-_**Q101:** Any person than owns at least 10 red cars_
+_**Q101:** Any person than owns at least 10 red vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
@@ -506,7 +506,7 @@ _**Q103:** Any phone A that called at least 3 phones that each of them was calle
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
 
-_**Q104:** Any person that owned red cars at least 10 times (same of different cars)_
+_**Q104:** Any person that owned red vehicles at least 10 times (same of different vehicles)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
@@ -518,7 +518,7 @@ _**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
-_**Q107:** Any phone that (the number of phones owned by 5 persons each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
+_**Q107:** Any phone that (the number of phones owned by 5 people each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
@@ -538,7 +538,7 @@ _**Q111:** Any person that doesn't know someone with a birth date similar to his
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
 
-_**Q112:** Any person that owned a car and a phone in the same time frames_
+_**Q112:** Any person that owned a vehicle and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
@@ -598,55 +598,55 @@ _**Q126:** Any phone that the number of phones it called is greater than the num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
-_**Q127:** Any_
+_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
-_**Q128:** Any_
+_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q129:** Any_
+_**Q129:** Any person than each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q130:** Any_
+_**Q130:** The 4 eldest people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
 
-_**Q131:** Any_
+_**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
-_**Q132:** Any_
+_**Q132:** The 4 people that own cars with the largest amount of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
-_**Q133:** Any_
+_**Q133:** The 4 people that average model year of their vehicles is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q134:** Any_
+_**Q134:** Any person that the vehicle owners he know owns vehicles in not more than 3 colors cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any_
+_**Q135:** Any person that the vehicle owners he know owns vehicles with an average model year of at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
-_**Q136:** Any_
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
 
-_**Q137:** Any_
+_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q138:** Any_
+_**Q138:** The 4 people that know people that cumulatively own cars with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**Q139:** Any_
+_**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
