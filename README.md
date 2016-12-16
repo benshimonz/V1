@@ -323,7 +323,7 @@ _**Q61:** Anything that owns more than 2 things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
 
-_**Q62:** Any person that is within graph distance ≤ 4 to more than 5 persons_
+_**Q62:** Any person that is within graph distance ≤ 4 from more than 5 persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
@@ -407,7 +407,7 @@ _**Q82:** Any phone that wasn't called (0 callers)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q83:** Any phone that didn't call (0 calls)_
+_**Q83:** Any phone that didn't call (0 outgoing calls)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
@@ -419,15 +419,15 @@ _**Q85:** Any phone that called at least 10 phones, and received calls from at l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
-_**Q86:** Any phone pair A, B where the call from A to B have a cumulative length of more than 100 minutes_
+_**Q86:** Any phones pair A, B where the call from A to B have a cumulative length of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-_**Q87:** Any phone that was called at least once, where that cumulative calls length is less that 100 minutes_
+_**Q87:** Any phone that was called at least once, where the cumulative calls duration is less that 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any phone pair A,B where A called B at least once, but the cumulative calls length is 0 minutes_
+_**Q88:** Any phone pair A,B where A called B at least once, but the cumulative calls duration is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
@@ -439,67 +439,67 @@ _**Q90:** The 4 phone pairs A, B with the maximal cumulative calls duration from
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
-_**Q91:** The 4 phones with the longest (shortest call received)_
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
 
-_**Q92:** The 4 phones with the largest (outgoing calls average duration)_
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-_**Q93:** Any_
+_**Q93:** First pass only (> 10 minutes calls). Then pass only phones A that called (> 10 minutes calls) to at least 3 phones. For these, pass only phone pairs A, B where A made at least 5 (> 10 minutes calls) to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
-_**Q94:** Any_
+_**Q94:** First pass only (> 10 minutes calls). Then pass phone pairs A, B where A made at least 5 (> 10 minutes calls) to B. From these A's pass only those that called (> 10 minutes calls) to at least 3 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
-_**Q95:** Any_
+_**Q95:** Any phone that received at least 5 (> 10 minutes calls) with a total duration of > 100 minutes from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095.png)
 
-_**Q96:** Any_
+_**Q96:** Any phone that received at least 10 (< 10 minutes calls) after 1/1/2010 from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q97:** Any_
+_**Q97:** Any phone that called at least 3 phones. For each callee, more than 10 calls, or calls with total duration of > 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
-_**Q98:** Any_
+_**Q98:** First pass phones A that called at least 3 phones. The pass phone pairs A,B where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
-_**Q99:** Any_
+_**Q99:** Any phone to which 052-333-4444 called more than 10 calls of < 10 minutes, and no calls of ≥ 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
-_**Q100:** Any_
+_**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes calls), more than 10 calls after 1/1/2010, more than 15 (< 10 minutes calls) after 1/1/2010, and more than 100 calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-_**Q101:** Any_
+_**Q101:** Any person than owns at least 10 red cars_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
-_**Q102:** Any_
+_**Q102:** Any phone that received calls from at least 2 phones that each of them received calls from at least one phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-_**Q103:** Any_
+_**Q103:** Any phone A that called at least 3 phones that each of them was called from at least 4 phones other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
 
-_**Q104:** Any_
+_**Q104:** Any person that owned red cars at least 10 times (same of different cars)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any_
+_**Q105:** Any phone that received 2 calls (cumulatively) from phones that each of them was called from at least one phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-_**Q106:** Any_
+_**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that each of them received at least 4 calls (cumulatively) from phones other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
