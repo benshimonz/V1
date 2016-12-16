@@ -248,7 +248,7 @@ _**Q37:** Any person that owns a vehicle or a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any person that owns something which is not a car or a phone_
+_**Q38:** Any person that owns something which is not a vehicle nor a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
@@ -304,7 +304,7 @@ _**Q51:** Any person that own (at least) two things of different types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
 
-_**Q52:** Any person that own (at least) two things of different types, both are not cars_
+_**Q52:** Any person that own (at least) two things of different types, both are not vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
@@ -530,7 +530,7 @@ _**Q109:** Any person that his parent owned a vehicle and a phone prior to his b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
-_**Q110:** Any 3 bank accounts with a cyclic transfer pattern in chronological order, with amounts > $10000, and their owners_
+_**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in chronological order, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
 
@@ -618,7 +618,7 @@ _**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
-_**Q132:** The 4 people that own cars with the largest amount of colors_
+_**Q132:** The 4 people that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
@@ -718,7 +718,7 @@ _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the da
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any person that owns at most 3 cars with the same color - for more than 5 colors _
+_**Q157:** Any person that owns at most 3 vehicles with the same color - for more than 5 colors _
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
@@ -726,5 +726,5 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phone that called it is greater than the number of phones it called)
+_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
