@@ -94,7 +94,7 @@ _**Q1:** Any phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any phone that was called by a phone that Lior Kogan owns_
+_**Q2:** Any phone that was called from a phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
@@ -104,11 +104,11 @@ _**Q3:** Any person that owns a phone, and his first name is Lior (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
-_**Q4:** Any person that a call was made to his phone from a phone owned by (at least one) of his parents_
+_**Q4:** Any person that his phone was called from a phone owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
-_**Q5:** Any person that a call was made to his phone from a phone owned by two of his parents_
+_**Q5:** Any person that his phone was called from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
@@ -116,7 +116,7 @@ _**Q6:** Any person that calls were made to his phone from two phones – one ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
-_**Q7:** Any person that either a call was made to his phone from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent_
+_**Q7:** Any person that either his phone was called from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
@@ -124,7 +124,7 @@ _**Q8:** Any person that was born before 1970 and died, or that his father was b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-_**Q9:** Any pair of phones A, B were A called B both in 1980 and in 1984_
+_**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
@@ -215,16 +215,16 @@ _**Q29:** Any phone that called or SMSed some phone (two versions)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any pair of phones A, B where A both called and SMSed B (two versions)_
+_**Q30:** Any phones pair (A, B) where A both called and SMSed B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
-_**Q31:** Any pair of phones A, B where A called B, A SMSed B, B called A, and B SMSed A_
+_**Q31:** Any phones pair (A, B) where A called B, A SMSed B, B called A, and B SMSed A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
 
-_**Q32:** Any pair of phones A, B where A SMSed B, and A SMSed some phone that SMSed B_
+_**Q32:** Any phones pair (A, B) where A SMSed B, and A SMSed some phone that SMSed B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
@@ -390,7 +390,7 @@ _**Q74:** Any phone that the number of calls it received (cumulatively) is not 1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
-_**Q75:** Any pair of phones A, B where A received between 8 to 10 calls from B_
+_**Q75:** Any phones pair (A, B) where A received between 8 to 10 calls from B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
@@ -398,7 +398,7 @@ _**Q76:** Any phone that called between 8 to 10 times to 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-_**Q77:** The 5 phone pairs A, B where the number of calls from B to A is the largest_
+_**Q77:** The 5 phone pairs (A, B) where the number of calls from B to A is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
@@ -434,7 +434,7 @@ _**Q85:** Any phone that called at least 10 phones, and received calls from at l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
-_**Q86:** Any phones pair A, B where the call from A to B have a cumulative length of more than 100 minutes_
+_**Q86:** Any phones pair (A, B) where the calls from A to B have a cumulative length of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
@@ -442,7 +442,7 @@ _**Q87:** Any phone that was called at least once, where the cumulative calls du
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any phone pair A,B where A called B at least once, but the cumulative calls duration is 0 minutes_
+_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative calls duration is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
@@ -450,7 +450,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-_**Q90:** The 4 phone pairs A, B with the maximal cumulative calls duration from A to B_
+_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
@@ -462,11 +462,11 @@ _**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-_**Q93:** First pass only (> 10 minutes calls). Then pass only phones A that called (> 10 minutes calls) to at least 3 phones. For these, pass only phone pairs A, B where A made at least 5 (> 10 minutes calls) to B_
+_**Q93:** First pass only (> 10 minutes calls). Then pass only phones A that called (> 10 minutes calls) to at least 3 phones. For these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
-_**Q94:** First pass only (> 10 minutes calls). Then pass phone pairs A, B where A made at least 5 (> 10 minutes calls) to B. From these A's pass only those that called (> 10 minutes calls) to at least 3 phones_
+_**Q94:** First pass only (> 10 minutes calls). Then pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B. From these A's pass only those that called (> 10 minutes calls) to at least 3 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
@@ -482,7 +482,7 @@ _**Q97:** Any phone that called at least 3 phones. For each callee, more than 10
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
-_**Q98:** First pass phones A that called at least 3 phones. The pass phone pairs A,B where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
+_**Q98:** First pass phones A that called at least 3 phones. Then pass phone pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
