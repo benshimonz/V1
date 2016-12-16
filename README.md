@@ -21,7 +21,7 @@ A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an or
 
 A **property graph** (AKA attributed graph) is a graph where
 
-- Graph vertices represent entities
+- Graph vertices represent entities.
   An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a vehicle, a product)
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features, called properties (attributes) (e.g. 'First Name', 'Last Name' for a person)
@@ -66,13 +66,13 @@ A Pattern defines a structure of a sub-graph in a schema-based property graph. H
 
 *“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
-A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the [union of the] set of all the sub-graphs that conforms to the pattern's structure.
+A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the [union of the elements of the] set of all the sub-graphs that conforms to the pattern's structure.
 
-A Pattern language defines the syntax for expressing patterns.
+A pattern language defines a syntax for expressing patterns.
 
-Pattern languages differs in the following anpects:
+Pattern languages differs in the following aspects:
 * Genericity - generic (e.g. schema-driven) or domain-specific
-* Representation - textual (structured / controlled Natural) or visual (AKA graphical, diagrammatic)
+* Representation - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
 * Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
 * Simplicity -  both for constructing new patterns and for understanding existing patterns
 * Efficiency - to parse and to find patterns
