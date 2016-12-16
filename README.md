@@ -117,155 +117,155 @@ _**Q10:** Any person that his first name is Lior, that owns some phone B which c
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-_**Q11:** Any_
+_**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-_**Q12:** Any_
+_**Q12:** Any person that doesn't own a vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q012.png)
 
-_**Q13:** Any_
+_**Q13:** Any vehicle that is not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q013.png)
 
-_**Q14:** Any_
+_**Q14:** Get vehicle 34-234-99, if not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q014.png)
 
-_**Q15:** Any_
+_**Q15:** Get Lior Kogan, if he doesn't own a vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q015.png)
 
-_**Q16:** Any_
+_**Q16:** Any person that doesn't own vehicle 34-234-99_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q016.png)
 
-_**Q17:** Any_
+_**Q17:** Any vehicle that is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q017.png)
 
-_**Q18:** Any_
+_**Q18:** Get Lior Kogan, if he doesn't own vehicle 34-234-99_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q018.png)
 
-_**Q19:** Any_
+_**Q19:** Get Vehicle 34-234-99, if it is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
-_**Q20:** Any (two versions)_
+_**Q20:** Any vehicle that is not owned by James Smith nor by John Price (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
-_**Q21:** Any (two versions)_
+_**Q21:** Any vehicle that is not owned by both James Smith and John Price(two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q22:** Any_
+_**Q22:** Any vehicle that is not owned by a person that owns a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
-_**Q23:** Any_
+_**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
-_**Q24:** Any_
+_**Q24:** Any person that has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
-_**Q25:** Any (two versions)_
+_**Q25:** Any of my friend's friends that isn't my friend(two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any (four versions)_
+_**Q26:** Any book, liked by people that like some book that I like, that I don't like(four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-3.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
 
-_**Q27:** Any_
+_**Q27:** Any person with a Chinese citizenship that owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
 
-_**Q28:** Any_
+_**Q28:** Any Chinese citizen that owns a red vehicle; Any person that doesn't know someone who owns a red vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q29:** Any (two versions)_
+_**Q29:** Any phone that called or SMSed some phone (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any (two versions)_
+_**Q30:** Any pair of phones A, B where A both called and SMSed B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
-_**Q31:** Any_
+_**Q31:** Any pair of phones A, B where A called B, A SMSed B, B called A, and B SMSed A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
 
-_**Q32:** Any_
+_**Q32:** Any pair of phones A, B where A SMSed B, and A SMSed some phone that SMSed B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
-_**Q33:** Any_
+_**Q33:** Any phone A that called some phone B, called some phone that called B, and SMSed some phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q033.png)
 
-_**Q34:** Any_
+_**Q34:** Any phone A that called some phone B, called some phone that called B, SMSed some phone D and SMSed some phoned that SMSed D (B and D may be the same phone or different phones)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
-_**Q35:** Any_
+_**Q35:** Any person that either (i) knows a Chinese citizen that owns a red vehicle (ii) know a person that doesn't know someone that owns a red vehicle (iii) know someone that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
-_**Q36:** Any_
+_**Q36:** Any person that owns something_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q036.png)
 
-_**Q37:** Any_
+_**Q37:** Any person that owns a vehicle or a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any_
+_**Q38:** Any person that owns something which is not a car or a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
-_**Q39:** Any_
+_**Q39:** Anything that can own something, but doesn't_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q039.png)
 
-_**Q40:** Any_
+_**Q40:** Any phone that have no owner_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q040.png)
 
-_**Q41:** Any_
+_**Q41:** Anything that can be owned, and is not owned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q041.png)
 
-_**Q42:** Any_
+_**Q42:** Anything that can own something, but owns nothing_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q042.png)
 
-_**Q43:** Any_
+_**Q43:** Any phone that all of its owners (if any) are persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
-_**Q44:** Any_
+_**Q44:** Any path with length up to 4 between these two phones, which is composed only of 'call' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
 
-_**Q45:** Any_
+_**Q45:** Any path with length up to 4 between these two phones, which is composed only of 'call' and 'SMS' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
-_**Q46:** Any_
+_**Q46:** Any _
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
