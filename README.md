@@ -419,31 +419,31 @@ _**Q85:** Any phone that called at least 10 phones, and received calls from at l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
-_**Q86:** Any_
+_**Q86:** Any phone pair A, B where the call from A to B have a cumulative length of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-_**Q87:** Any_
+_**Q87:** Any phone that was called at least once, where that cumulative calls length is less that 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any_
+_**Q88:** Any phone pair A,B where A called B at least once, but the cumulative calls length is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
-_**Q89:** Any_
+_**Q89:** Any phone that its outgoing calls have more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-_**Q90:** Any_
+_**Q90:** The 4 phone pairs A, B with the maximal cumulative calls duration from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
-_**Q91:** Any_
+_**Q91:** The 4 phones with the longest (shortest call received)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
 
-_**Q92:** Any_
+_**Q92:** The 4 phones with the largest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
