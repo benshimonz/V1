@@ -1,6 +1,7 @@
 # V1 - A visual query language for schema-based property graphs
 
-(C) 2017, Lior Kogan. This work is distributed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
+Copyright (c) 2017 Lior Kogan.
+This work is provided under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
 ## The property graph data model
 
