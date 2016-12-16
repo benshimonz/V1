@@ -1,5 +1,7 @@
 # V1 - A visual query language for schema-based property graphs
 
+(C) 2017, Lior Kogan. This work is distributed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
+
 ## The property graph data model
 
 A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair G = (V, E) comprising a set V of vertices (nodes) together with a set E of edges (arcs), which are 2-element subsets of V.
@@ -19,15 +21,15 @@ More about property graphs can be found [here](http://tinkerpop.apache.org/docs/
 
 A **property graph's schema** is defined by
 
-- A set of entity types
+* A set of entity types
   Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Car, Product)
   For each entity type: 
-  - A name 
-  - A set of properties. For each property: name (key) and value type
-- A set of relationship types. For each relationship type:
-  - A name
-  - A set of properties. For each property: name (key) and value type
-  - A set of pairs of entity types for which the relationship type holds (e.g. Person owns Phone; Person owns Car)
+  * A name 
+  * A set of properties. For each property: name (key) and value type
+* A set of relationship types. For each relationship type:
+  * A name
+  * A set of properties. For each property: name (key) and value type
+  * A set of pairs of entity types for which the relationship type holds (e.g. Person owns Phone; Person owns Car)
 
 There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory attributes, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, and more.
 
@@ -38,35 +40,35 @@ A **schema-based property graph** is a property graph that conforms to a given s
 Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without integrity there are no formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person that owns a red car”* we need first to:
-- Define 'Person' and 'Car' entity types
-- Ensure that each Person and Car entities are of the relevant entity types
-- Define 'owns' relationship type
-- Defines that the 'owns' relationship type holds between a Person and a Car
-- Define a 'Color' property for the Car entity type
-- Define that Color holds a string, or better, define a categorical data type
+* Define 'Person' and 'Car' entity types
+* Ensure that each Person and Car entities are of the relevant entity types
+* Define 'owns' relationship type
+* Defines that the 'owns' relationship type holds between a Person and a Car
+* Define a 'Color' property for the Car entity type
+* Define that Color holds a string, or better, define a categorical data type
 
 ## Patterns and pattern languages
 
 A Pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
 
-*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and he has a brother that called 5 or more phones belonging to employees of company X in the last month"*
+*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
 A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the [union of the] set of all the sub-graphs that conforms to the pattern's structure.
 
 A Pattern language defines the syntax for expressing patterns.
 
 Pattern languages differs in the following anpects:
-- Genericity - generic (e.g. schema-driven) or domain-specific
-- Representation - textual (structured / controlled Natural) or visual (AKA graphical, diagrammatic)
-- Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
-- Simplicity -  both for constructing new patterns and for understanding existing patterns
-- Efficiency - to parse and to find patterns
+* Genericity - generic (e.g. schema-driven) or domain-specific
+* Representation - textual (structured / controlled Natural) or visual (AKA graphical, diagrammatic)
+* Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
+* Simplicity -  both for constructing new patterns and for understanding existing patterns
+* Efficiency - to parse and to find patterns
 
 ## The V1 pattern language
 
 Many potential users won't use textual query languages. The learning curve may be too sharp for someone with no perior experience in programming. Even users that use textual query languages may spend a lot of time on the technicalities. 
 
-Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of the work, and to the value of the insights that can be deduced.
+Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
 
 Visual query languages are very attractive. They have the potential to be more 'user friendly', in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
 
