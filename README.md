@@ -76,15 +76,15 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 
 
-- * **Q1:** Any phone that Lior Kogan owns*
+- _**Q1:** Any phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-* **Q2:** Any phone, that was called by a phone that Lior Kogan owns*
+* _**Q2:** Any phone, that was called by a phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
--- * **Q3:** Any person that owns a phone, and his first name is Lior (two versions)*
+-- _**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
