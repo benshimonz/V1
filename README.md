@@ -215,7 +215,7 @@ _**Q20:** Any vehicle that is not owned by James Smith nor by John Price (two ve
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
-This pattern can also be represented with the '0' quantifier:
+This pattern can also be represented using the '0' quantifier:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
@@ -223,7 +223,7 @@ _**Q21:** Any vehicle that is not owned by both James Smith and John Price(two v
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
-This pattern can also be represented with the 'not all' quantifier, but notice that there is a slight difference: in the version below if either James Smith or John Price own the vehicle - the owner won't be a part of the answer, while in the representation below - the owner will be a part of the answer.
+This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either James Smith or John Price own the vehicle - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
