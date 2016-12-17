@@ -290,7 +290,7 @@ _**Q26:** Any book, that is liked by people that like some book that I like, but
 
 ## Starting a pattern with a quantifier 
 
-A pattern may start with a quantifier. Any brach of such quantifier must start with an entity (red / blue / yellow).
+A pattern may start with a quantifier. Any branch of such quantifier must start with an entity (red / blue / yellow).
 
 Here is another way to represent Q26:
 
