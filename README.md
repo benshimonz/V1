@@ -11,7 +11,9 @@
 
 ## V1 - A visual query language for schema-based property graphs
 
-Copyright (c) 2017 Lior Kogan.
+Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail.com)
+
+**this is an early draft. It’s known to be incomplet and incorrekt.**
 
 This work is provided under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
@@ -391,7 +393,7 @@ _**Q56, Q57, Q58:** limitations on the count and types of the sub-paths that a p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q057.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-## Aggregations and aAggregate conditions
+## Aggregations and aggregate conditions
 
 todo
 
@@ -737,7 +739,7 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## latent and optional components
+## Latent and optional components
 
 todo
 
