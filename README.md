@@ -171,11 +171,11 @@ _**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 ## Component nonexistance
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed from a left component and a right component. That left component (_person whose first name is Lior_) should have assignments, while the right component shouldn't (a relationship between an assigment of the left component to a red vehicle). Needless to say, the answer to such query will include only assignments to the left component.
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. That left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have an assigment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such query will contains only assignments to the left component.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or they may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **purple 'X' box** can be used (see examples below). However, in certain situations, we may want to get the valid the assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. This is where a **purple crossed-arrow box** can be used (more on this later).
+In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **purple 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. This is where a **purple crossed-arrow box** can be used (more on this later).
 
 Here are some examples:
 
