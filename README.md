@@ -97,7 +97,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property label** denoted by a numeric index wrapped in **purple curly brackets**. A property label serves as a placeholder for the property's value in a given assignment, and can be used to express limitation in other properties (e.g. age > {1}, where {1} is defined as the age of another entity). more on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property label** denoted by a numeric index wrapped in **purple curly brackets**. A property label serves as a placeholder for the property's value in a given assignment, and can be used to express limitation on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
@@ -113,7 +113,8 @@ zzz
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
 
-## V1 explained
+
+
 
 _**Q1:** Any phone that Lior Kogan owns_
 
