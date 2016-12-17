@@ -89,7 +89,7 @@ Visual query languages are very attractive. They have the potential to be more '
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
 
-## V1 explained
+## V1 basics
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
@@ -99,11 +99,31 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 **A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property label** denoted by a numeric index wrapped in **purple curly brackets**. A property label serves as a placeholder for the property's value in a given assignment, and can be used to express limitation on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
+
+Any pattern starts with a small diamond, and is read from left to right. A pair of entities can be connected with a horizontal **black arrow** - denoting a **directional relationship**, with a horizontal **black line** - denoting **non-directional relationship** (if directional relationships are supported), or with a horizontal **red line** - denoting a **path** (more on paths - later). Each relationship has a label which denotes the relationship's type.
+
+Patterns have a tree structure (as opposed to graph structure).
+
+Here are some basic examples:
+
+_**Q1:** Any phone that Lior Kogan owns_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
+
+_**Q2:** Any phone that was called from a phone that Lior Kogan owns_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
+
+_**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
+
+## Quantifiers
 
 zzz
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+
+
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
@@ -115,16 +135,6 @@ zzz
 
 
 
-
-_**Q1:** Any phone that Lior Kogan owns_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
-
-_**Q2:** Any phone that was called from a phone that Lior Kogan owns_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
-
-_**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
