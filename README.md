@@ -183,7 +183,7 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 
 ## Entity tags
 
-todo - identicallity constrain, nonidenticallity constrain
+todo - identicality constrain, nonidenticality constrain
 
 _**Q4:** Any person that his phone was called from a phone owned by (at least one) of his parents_
 
@@ -273,7 +273,7 @@ _**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
-_**Q24:** Any person that has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
+_**Q24:** Any person that have (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
