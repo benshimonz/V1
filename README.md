@@ -292,7 +292,7 @@ _**Q26:** Any book, that is liked by people that like some book that I like, but
 
 A pattern may start with a quantifier. Any branch of such quantifier must start with an entity (red / blue / yellow).
 
-Here is another way to represent Q26:
+Here is a fourth way to represent Q26:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
 
