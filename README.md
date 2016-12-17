@@ -115,30 +115,37 @@ _**Q2:** Any phone that was called from a phone that Lior Kogan owns_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q3:** Any person that owns a phone, and his first name is Lior (two versions)_
-
-## Quantifiers
-
-zzz
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
-
-
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
-
-
-
+_**Q3:** Any person that owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
+
+## Quantifiers
+
+todo
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+
+_**Q3:** Any person that owns a phone, and his first name is Lior **(v2)**_
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
+
+_**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
+
+_**Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
+
+_**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
+
+
+## Entity tags
+
+todo - identicallity constrain, nonidenticallity constrain
 
 _**Q4:** Any person that his phone was called from a phone owned by (at least one) of his parents_
 
@@ -156,21 +163,15 @@ _**Q7:** Any person that either his phone was called from a phone owned by two o
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
-_**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
-
 _**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-_**Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+## Nonexistance of assignment
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-_**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
+todo
 
 _**Q12:** Any person that doesn't own a vehicle_
 
@@ -236,7 +237,16 @@ _**Q26:** Any book, liked by people that like some book that I like, that I don'
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-3.png)
+
+## Starting a pattern with a quantifier 
+
+todo
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
+
+## E-Combiner
+
+todo
 
 _**Q27:** Any person with a Chinese citizenship that owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
 
@@ -245,6 +255,11 @@ _**Q27:** Any person with a Chinese citizenship that owns a vehicle and a phone 
 _**Q28:** Any Chinese citizen that owns a red vehicle; Any person that doesn't know someone who owns a red vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
+
+
+## R-Combiner
+
+todo
 
 _**Q29:** Any phone that called or SMSed some phone (two versions)_
 
@@ -275,6 +290,10 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 _**Q35:** Any person that either (i) knows a Chinese citizen that owns a red vehicle (ii) know a person that doesn't know someone that owns a red vehicle (iii) know someone that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
+
+## Red entities
+
+todo
 
 _**Q36:** Any person that owns something_
 
@@ -308,6 +327,28 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
+_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
+
+## Red entities - entity type tag
+
+_**Q50:** Any person that own (at least) two things of the same type_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
+
+_**Q51:** Any person that own (at least) two things of different types_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
+
+_**Q52:** Any person that own (at least) two things of different types, both are not vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
+
+## Paths
+
+todo
+
 _**Q44:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
@@ -328,22 +369,6 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
-_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
-
-_**Q50:** Any person that own (at least) two things of the same type_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
-
-_**Q51:** Any person that own (at least) two things of different types_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
-
-_**Q52:** Any person that own (at least) two things of different types, both are not vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
-
 _**Q53:** Any person within graph distance ≤ 4 from James Smith_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q053.png)
@@ -356,11 +381,21 @@ _**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
+## Path components
+
+todo
+
 _**Q56, Q57, Q58:** limitations on the count and types of the sub-paths that a path may be composed of_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q056.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q057.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
+
+## Aggregations and aAggregate conditions
+
+todo
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -558,6 +593,10 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
+## Property value tag
+
+todo
+
 _**Q108:** Any person that have the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
@@ -625,6 +664,10 @@ _**Q123:** Any phone that either (received a call) or (made a call) - at least 1
 _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+## Aggregation tag
+
+todo
 
 _**Q125:** Any phone that the number of phone it called is greater than the number of phones that called it_
 
@@ -694,6 +737,12 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
+## latent and optional components
+
+todo
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
+
 _**Q142:** Any person that owns a red vehicle, and has a parent that owns a vehicle. The parent and his vehicle are not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
@@ -738,6 +787,12 @@ _**Q152:** Any person that owns more than 10 vehicles. Only the Chinese vehicles
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
+## Splits
+
+todo
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
+
 _**Q153:** Any phone that in at least 10 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
@@ -761,6 +816,10 @@ _**Q157:** Any person that owns at most 3 vehicles with the same color - for mor
 _**Q158:** Any phone that in at least 10 days - the number of phones it called is greater than the number of phones that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
+
+## Split tag
+
+todo
 
 _**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
