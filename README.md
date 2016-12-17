@@ -99,7 +99,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property label** denoted by a numeric index wrapped in **purple curly brackets**. A property label serves as a placeholder for the property's value in a given assignment, and can be used to express limitation on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag** denoted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to express limitation on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -124,13 +124,41 @@ _**Q3:** Any person that owns a phone, and his first name is Lior **(v1)**_
 
 ## Quantifiers
 
-todo
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+Quantifiers are used when several conditions need to be checked. Here is a simple example:
 
 _**Q3:** Any person that owns a phone, and his first name is Lior **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
+
+In its simplest usage, a quantifier is connected to an entity on its left side, and has two or more branches on its right side. We'll call the left side of the quatifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
+
+Each branch may start with:
+
+* A relationship
+* An 'X' / 'O' / 'L' box following by a relationship (later on...)
+* A green rectange (property limitation / tag)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+
+The most useful quantifiers are:
+
+* & - For each assignment to the left component - there should be at least one assignment to any right component
+* | - For each assignment to the left component - there should be at least one assignment to at least one right component
+* Crossed & - For each assignment to the left component - the should be no assignment to at least one right component
+* 0 - For each assignment to the left component - there should be at no assignment to any right component
+
+Additional quantifiers:
+
+* _n_ - For each assignment to the left component - there should be at least one assignment to exactly _n_ right components
+* _> n_ - For each assignment to the left component - there should be at least one assignment to more than _n_ right components
+* _≥ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or more right components
+* _< n_ - For each assignment to the left component - there should be at least one assignment to less than _n_ right components
+* _≤ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or less right components
+* _n1..n2_ - For each assignment to the left component - there should be at least one assignment to _n1_ up to _n2_ right components
+* _≠ n_ - For each assignment to the left component - there should be at least one assignment to any number but _n_ right components
+* _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to less than _n1_ or more than _n2_ right components
+
+Here are some more examples:
 
 _**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
 
@@ -246,7 +274,7 @@ _**Q25:** Any of my friend's friends that isn't my friend(two versions)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any book, liked by people that like some book that I like, that I don't like(four versions)_
+_**Q26:** Any book, that is liked by people that like some book that I like, but is not liked by me (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
@@ -254,7 +282,9 @@ _**Q26:** Any book, liked by people that like some book that I like, that I don'
 
 ## Starting a pattern with a quantifier 
 
-todo
+A pattern may start with a quantifier. if an '&' quantifier starts a pattern - at least one of its branches must not start with a pink 'X' (otherwise the result will always be empty). Similarly, if an '|' quantifier starts a pattern - all its branches must not start with a pink 'X' (since any branch of an '|' that starts with an 'X' is meaningless).
+
+Here is another way to represent Q26:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
 
