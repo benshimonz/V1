@@ -91,7 +91,7 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ## V1 building blocks
 
-Red, blue and yellow rectangles represent entities. *A yellow rectangle* represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). *A blue rectangle* represents an entity of a given type. A blue 'Person' for example represents any person. *A red rectangle* represents an entity of any type (unless limitations are defined). The query processor will look for assignments of concrete entities, that match the query pattern, for any blue and red entities.
+Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless limitations are defined). The query processor will look for assignments of concrete entities, that match the query pattern, for any blue and red entities.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
