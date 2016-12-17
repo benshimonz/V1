@@ -143,7 +143,7 @@ Each branch may start with:
 The most useful quantifiers are:
 
 * & - For each assignment to the left component - there should be at least one assignment to any right component
-* | - For each assignment to the left component - there should be at least one assignment to at least one right component
+* &#124; - For each assignment to the left component - there should be at least one assignment to at least one right component
 * Crossed & - For each assignment to the left component - the should be no assignment to at least one right component
 * 0 - For each assignment to the left component - there should be at no assignment to any right component
 
@@ -290,7 +290,7 @@ _**Q26:** Any book, that is liked by people that like some book that I like, but
 
 ## Starting a pattern with a quantifier 
 
-A pattern may start with a quantifier. if an ''&'' quantifier starts a pattern - at least one of its branches must not start with a pink 'X' (otherwise the result will always be empty). Similarly, if an '|' quantifier starts a pattern - all its branches must not start with a pink 'X' (since any branch of an '|' that starts with an 'X' is meaningless).
+A pattern may start with a quantifier. if an '&' quantifier starts a pattern - at least one of its branches must not start with a pink 'X' (otherwise the result will always be empty). Similarly, if an '&#124;' quantifier starts a pattern - all its branches must not start with a pink 'X' (since any branch of an '&#124;' that starts with an 'X' is meaningless).
 
 Here is another way to represent Q26:
 
