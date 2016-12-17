@@ -13,9 +13,9 @@
 
 Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail.com)
 
-**this is an early draft. It’s known to be incomplet and incorrekt.**
-
 This work is provided under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
+
+**This is an early draft. It’s known to be incomplet and incorrekt.**
 
 ## The property graph data model
 
