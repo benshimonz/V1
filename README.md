@@ -134,9 +134,9 @@ In its simplest usage, a quantifier is connected to an entity on its left side, 
 
 Each branch may start with:
 
-* A relationship
-* An 'X' / 'O' / 'L' box following by a relationship (later on...)
-* A green rectange (property limitation / tag)
+* A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
+* A green rectangle (entity's property limitation / tag)
+* A quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
@@ -156,13 +156,21 @@ Additional quantifiers:
 * _≤ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or less right components
 * _n1..n2_ - For each assignment to the left component - there should be at least one assignment to _n1_ up to _n2_ right components
 * _≠ n_ - For each assignment to the left component - there should be at least one assignment to any number but _n_ right components
-* _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to less than _n1_ or more than _n2_ right components
+* _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to less than _n1_ or to more than _n2_ right components
+
+**Note:** If a branch contains only a property tag (without limitation) - it is evaluated as a valid assignment.
 
 Here are some more examples:
 
 _**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
+
+Quantifiers can also be used for relationships. In such cases, each branch may start with:
+
+* A green rectangle (relationship's property limitation / tag)
+* An aggregate condition / an aggregation tag
+* A quantifier
 
 _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
