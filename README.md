@@ -134,13 +134,13 @@ _**Q8:** Any person that was born before 1970 and died, or that his father was b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-_**Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
-
 _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
+
+_**Q10:** Any person that his first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
 
 ## Entity tags
