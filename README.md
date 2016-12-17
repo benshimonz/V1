@@ -290,7 +290,7 @@ _**Q26:** Any book, that is liked by people that like some book that I like, but
 
 ## Starting a pattern with a quantifier 
 
-A pattern may start with a quantifier. if an '&' quantifier starts a pattern - at least one of its branches must not start with a pink 'X' (otherwise the result will always be empty). Similarly, if an '&#124;' quantifier starts a pattern - all its branches must not start with a pink 'X' (since any branch of an '&#124;' that starts with an 'X' is meaningless).
+A pattern may start with a quantifier. Any brach of such quantifier must start with an entity (red / blue / yellow).
 
 Here is another way to represent Q26:
 
