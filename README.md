@@ -89,15 +89,19 @@ Visual query languages are very attractive. They have the potential to be more '
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
 
-## V1 building blocks
-
-Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless limitations are defined). The query processor will look for assignments of concrete entities, that match the query pattern, for any blue and red entities.
+## V1 explained
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
+Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless limitations are defined). For every blue rectangle and for every red rectangle, the query processor will look for **assignments** of concrete entities that match the query pattern.
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property label** denoted by a numeric index wrapped in **purple curly brackets**. A property label serves as a placeholder for the property's value in a given assignment, and can be used to express limitation in other properties (e.g. age > {1}, where {1} is defined as the age of another entity). more on this later.
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
+
+zzz
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -371,7 +375,7 @@ _**Q64:** Any phone that number of phone that didn't call him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q65:** Anything that that number of things it doesn't own is greater than 2_
+_**Q65:** Anything that the number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
