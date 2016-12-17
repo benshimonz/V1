@@ -214,16 +214,24 @@ _**Q19:** Get Vehicle 34-234-99, if it is not owned by Lior Kogan_
 _**Q20:** Any vehicle that is not owned by James Smith nor by John Price (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
+
+This pattern can also be represented with the '0' quantifier:
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
 _**Q21:** Any vehicle that is not owned by both James Smith and John Price(two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
+
+This pattern can also be represented with the 'not all' quantifier, but notice that there is a slight difference: in the version below if either James Smith or John Price own the vehicle - the owner won't be a part of the answer, while in the representation below - the owner will be a part of the answer.
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
 _**Q22:** Any vehicle that is not owned by a person that owns a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
+
+Note that left component is _'vehicle'_ while the right component is _'owned by a person that owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
 _**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
