@@ -91,10 +91,13 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ## V1 building blocks
 
-todo
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
 
 _**Q1:** Any phone that Lior Kogan owns_
