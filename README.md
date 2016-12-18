@@ -193,15 +193,15 @@ _**Q4:** Any person that his phone was called from a phone owned by (at least on
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
-Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tag is large, bold and green. this is a visual indication the this tag is used for to enforce identicality.
+Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tags are large, bold and green - this is a visual indication that these tags are used to enforce identicality.
 
-**Nonidenticality constraint** is used when two entites in the pattern must have nonidentical assignment. Here is an example:
+**Nonidenticality constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
 
 _**Q5:** Any person that his phone was called from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
-Without enforcing Nonidenticality, the same parent may be assigned to two branches of the '&' quantifier. The 'C' and '≠C' tags are large, bold and red. this is a visual indication the these tag is used for to enforce nonidenticality.
+Without enforcing Nonidenticality, the same parent may be assigned to lower two branches of the '&' quantifier. The 'C' and '≠C' tags are large, bold and red - this is a visual indication that these tags are used to enforce nonidenticality.
 
 Here are some more examples:
 
