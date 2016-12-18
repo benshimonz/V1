@@ -11,9 +11,9 @@
 
 ## V1 - A visual query language for schema-based property graphs
 
-Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail.com)
+Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail [dot] com)
 
-This work is provided under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
+This work is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
 **This is an early draft. It’s known to be incomplet and incorrekt.**
 
@@ -99,7 +99,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag** denoted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to express limitation on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constrainsts on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -183,7 +183,7 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 
 ## Entity tags
 
-There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an 'entity tag'.
+There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an **'entity tag'**.
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
@@ -428,7 +428,9 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ## Red entities - entity type tag
 
-todo
+A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
+
+Here are some examples:
 
 _**Q50:** Any person that own (at least) two things of the same type_
 
