@@ -195,6 +195,12 @@ _**Q4:** Any person that his phone was called from a phone owned by (at least on
 
 Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tags are large, bold and green - this is a visual indication that these tags are used to enforce identicality.
 
+Here is another example:
+
+_**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
+
 **Nonidenticality constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
 
 _**Q5:** Any person that his phone was called from a phone owned by two of his parents_
@@ -203,7 +209,7 @@ _**Q5:** Any person that his phone was called from a phone owned by two of his p
 
 Without enforcing Nonidenticality, the same parent may be assigned to lower two branches of the '&' quantifier. The 'C' and '≠C' tags are large, bold and red - this is a visual indication that these tags are used to enforce nonidenticality.
 
-Here are some more examples:
+Here are two more examples:
 
 _**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
 
@@ -212,10 +218,6 @@ _**Q6:** Any person that calls were made to his phone from two phones – one ow
 _**Q7:** Any person that either his phone was called from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
-
-_**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
 ## Component nonexistance
 
