@@ -185,7 +185,7 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 
 In any pattern, the top-left corner of every entity (red / blue / yellow) contains a letter. This letter is called an 'entity tag'.
 
-Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer should by tagged with the same tag as the query's entity it was assigned to. This assists the user in understanding the relation between the query and the answer. Second, entity tags can be used to express _identicality constraints_ and _nonidenticality constraints_.
+Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand the  answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
 **Identicality constraint** is used when two entites in the pattern must have identical assignment. Here is an example:
 
