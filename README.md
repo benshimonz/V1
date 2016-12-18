@@ -183,9 +183,9 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 
 ## Entity tags
 
-In any pattern, the top-left corner of every entity (red / blue / yellow) contains a letter. This letter is called an 'entity tag'.
+There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an 'entity tag'.
 
-Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand the  answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
+Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
 **Identicality constraint** is used when two entites in the pattern must have identical assignment. Here is an example:
 
@@ -193,7 +193,7 @@ _**Q4:** Any person that his phone was called from a phone owned by (at least on
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
-Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tags are large, bold and green - this is a visual indication that these tags are used to enforce identicality.
+Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tags are green - this is a visual indication that these tags are used to enforce identicality.
 
 Here is another example:
 
@@ -207,7 +207,7 @@ _**Q5:** Any person that his phone was called from a phone owned by two of his p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
-Without enforcing Nonidenticality, the same parent may be assigned to lower two branches of the '&' quantifier. The 'C' and '≠C' tags are large, bold and red - this is a visual indication that these tags are used to enforce nonidenticality.
+Without enforcing Nonidenticality, the same parent can be assigned to both C and E. The 'C' and '≠C' tags are red - this is a visual indication that these tags are used to enforce nonidenticality.
 
 Here are two more examples:
 
@@ -312,9 +312,17 @@ Here is a fourth way to represent Q26:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
 
-## E-Combiner
+## E-combiner
 
-todo
+An E-combiner combines two or more branches. On its left side are entities and on its right side either:
+
+* A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
+* A green rectangle (entity's property limitation / tag)
+* A quantifier
+
+The right side of the E-combiner is a direct continuation of any of the combined branches. The E-combiner is simply a syntactic sugar, and can be used when several branches terminates identically.
+
+Here are some examples:
 
 _**Q27:** Any person with a Chinese citizenship that owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
 
@@ -324,6 +332,9 @@ _**Q28:** Any Chinese citizen that owns a red vehicle; Any person that doesn't k
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
+_**Q35:** Any person that either (i) knows a Chinese citizen that owns a red vehicle (ii) know a person that doesn't know someone that owns a red vehicle (iii) know someone that doesn't own a phone_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
 ## R-Combiner
 
@@ -354,10 +365,6 @@ _**Q33:** Any phone A that called some phone B, called some phone that called B,
 _**Q34:** Any phone A that called some phone B, called some phone that called B, SMSed some phone D and SMSed some phoned that SMSed D (B and D may be the same phone or different phones)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
-
-_**Q35:** Any person that either (i) knows a Chinese citizen that owns a red vehicle (ii) know a person that doesn't know someone that owns a red vehicle (iii) know someone that doesn't own a phone_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
 ## Red entities
 
