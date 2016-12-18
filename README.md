@@ -428,6 +428,8 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ## Red entities - entity type tag
 
+todo
+
 _**Q50:** Any person that own (at least) two things of the same type_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
