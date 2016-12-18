@@ -28,7 +28,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a value type (e.g. string  / integer), and a value (e.g. "First_Name": string = "Lior")
+- Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Lior")
 - Usually each vertex has a type (e.g. Person, Phone, Vehicle), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'call'). Again - without schema - the type is just another property
 
@@ -78,7 +78,7 @@ Pattern languages differs in the following aspects:
 * Genericity - generic (e.g. schema-driven) vs. domain-specific
 * Representation - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
 * Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
-* Simplicity -  How simple it is to construct new patterns and to understand existing patterns
+* Simplicity - How simple it is to construct new patterns and to understand existing patterns
 * Efficiency - to parse patterns and to execute pattern queries
 
 ## The V1 pattern language
@@ -95,7 +95,7 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
-Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless limitations are defined). For every blue rectangle and for every red rectangle, the query processor will look for **assignments** of concrete entities that match the query pattern.
+Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined). For every blue rectangle and for every red rectangle, the query processor will look for **assignments** of concrete entities that match the pattern.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
@@ -378,11 +378,23 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 
 ## Red entities
 
-todo
+Sometimes the same relationship type can hold between diferent pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the ownder can be either a person or a company.
+ 
+ In it simplest form, a red rectangle represents an entity of any type.
 
 _**Q36:** Any person that owns something_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q036.png)
+
+Note that the entity type is constrained to things that a person can own.
+
+_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
+
+Similarly, the entity type of all owners is constrained to things that can own a phone.
+
+Additional type constraints can be enforced by defining a set of allowed types or a set of disallowed types.  Here are two examples:
 
 _**Q37:** Any person that owns a vehicle or a phone_
 
@@ -392,11 +404,13 @@ _**Q38:** Any person that owns something which is not a vehicle nor a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
+Even when a red entity is on either side of an 'X' - the entity type is constrained by the relationship type. Here are some examples:
+
 _**Q39:** Anything that can own something, but doesn't_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q039.png)
 
-_**Q40:** Any phone that have no owner_
+_**Q40:** Any phone that has no owner_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q040.png)
 
@@ -411,10 +425,6 @@ _**Q42:** Anything that can own something, but owns nothing_
 _**Q43:** Any phone that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
-
-_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
 ## Red entities - entity type tag
 
