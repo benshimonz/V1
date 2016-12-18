@@ -105,7 +105,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 Any pattern starts with a small diamond, and is read from left to right. A pair of entities can be connected with a horizontal **black arrow** - denoting a **directional relationship**, with a horizontal **black line** - denoting **non-directional relationship** (if directional relationships are supported), or with a horizontal **red line** - denoting a **path** (more on paths - later). Each relationship has a label which denotes the relationship's type.
 
-Patterns have a tree structure (as opposed to graph structure).
+Patterns have a tree-like structure (as opposed to graph-like structure).
 
 Here are some basic patterns:
 
@@ -183,15 +183,27 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 
 ## Entity tags
 
-todo - identicality constrain, nonidenticality constrain
+In any pattern, the top-left corner of every entity (red / blue / yellow) contains a letter. This letter is called an 'entity tag'.
+
+Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer should by tagged with the same tag as the query's entity it was assigned to. This assists the user in understanding the relation between the query and the answer. Second, entity tags can be used to express _identicality constraints_ and _nonidenticality constraints_.
+
+**Identicality constraint** is used when two entites in the pattern must have identical assignment. Here is an example:
 
 _**Q4:** Any person that his phone was called from a phone owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
+Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tag is large, bold and green. this is a visual indication the this tag is used for to enforce identicality.
+
+**Nonidenticality constraint** is used when two entites in the pattern must have nonidentical assignment. Here is an example:
+
 _**Q5:** Any person that his phone was called from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
+
+Without enforcing Nonidenticality, the same parent may be assigned to two branches of the '&' quantifier. The 'C' and '≠C' tags are large, bold and red. this is a visual indication the these tag is used for to enforce nonidenticality.
+
+Here are some more examples:
 
 _**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
 
