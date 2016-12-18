@@ -99,7 +99,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain limitation on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constrainsts on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constrainsts on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -135,7 +135,7 @@ In its simplest usage, a quantifier is connected to an entity on its left side, 
 Each branch may start with:
 
 * A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
-* A green rectangle (entity's property limitation / tag)
+* A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
@@ -158,7 +158,7 @@ Additional quantifiers:
 * _≠ n_ - For each assignment to the left component - there should be at least one assignment to any number but _n_ right components
 * _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to less than _n1_ or to more than _n2_ right components
 
-**Note:** If a branch contains only a property tag (without limitation) - it is evaluated as a valid assignment.
+**Note:** If a branch contains only a property tag (without constraints) - it is evaluated as a valid assignment.
 
 Here are some more examples:
 
@@ -172,7 +172,7 @@ _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone t
 
 Quantifiers can also be used for relationships. In such cases, each branch may start with:
 
-* A green rectangle (relationship's property limitation / tag)
+* A green rectangle (relationship's property value constraints / tag)
 * An aggregate condition / an aggregation tag
 * A quantifier
 
@@ -317,7 +317,7 @@ Here is a fourth way to represent Q26:
 An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entitie,s and on its right side either:
 
 * A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
-* A green rectangle (entity's property limitation / tag)
+* A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
 The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar that can be used to save duplication when several branches terminates identically.
@@ -509,7 +509,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 todo
 
-_**Q56, Q57, Q58:** limitations on the count and types of the sub-paths that a path may be composed of_
+_**Q56, Q57, Q58:** constraints on the count and types of the sub-paths that a path may be composed of_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q056.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q057.png)
