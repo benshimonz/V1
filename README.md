@@ -428,7 +428,7 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ## Red entities - entity type tag
 
-A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
+A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
 
 Here are some examples:
 
@@ -446,7 +446,32 @@ _**Q52:** Any person that own (at least) two things of different types, both are
 
 ## Paths
 
-todo
+A path connectes two entities - similar to a relationship. However, while relationship is a direct connection between two entities, a path is an indirect connection: a sequence of relationships and entities between the two entities.
+
+Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always 1 + the number of entities along the path.
+
+In a pattern, a path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of these operators: _< n, ≤,n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
+
+Here are two examples:
+
+_**Q53:** Any person within graph distance ≤ 4 from James Smith_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q053.png)
+
+_**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and George Davis_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
+
+Constraints may be defined for the entities and relationships along the path:
+
+- Constraint on the allowed/disallowed types of relationships along the path
+- Constraint on the number of relationships of each allowed type
+- Constraint on the allowed/disallowed types of entities along the path
+- Constraint on the number of entities of each allowed type
+
+Relationship constraints are listed in red curly brackets above the path's line, while entity constraints are listed in red curly brackets belove the path's line.
+
+Here are some examples:
 
 _**Q44:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' relationships_
 
@@ -455,6 +480,10 @@ _**Q44:** Any path with length ≤ 4 between these two phones, which is composed
 _**Q45:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' and 'SMS' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
+
+_**Q54:** Any person within graph distance ≤ 3 from James Smith, John Price and George Davis_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
 
 _**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a phone owned by John Price, which is composed of up to 2 'call' relationships, and only of 'phone' entities_
 
@@ -468,17 +497,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
-_**Q53:** Any person within graph distance ≤ 4 from James Smith_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q053.png)
-
-_**Q54:** Any person within graph distance ≤ 3 from James Smith, John Price and George Davis_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
-
-_**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and George Davis_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
 ## Path components
 
