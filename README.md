@@ -493,7 +493,7 @@ _**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a p
 
 ## Shortest paths
 
-Instead of specifying a constraint on the path length - paths can be limited to the shortest ones that subject to the constraints. If, for example, the shortest path length the subject to the constraints is 3 - all paths with length 3 are valid assignments.
+Instead of specifying a constraint on the path length - paths can be limited to the shortest ones that subject to the entities/relationships constraints. If, for example, the shortest path length that subject to the constraints is 3 - all paths with length 3 are valid assignments.
 
 Here are two examples:
 
