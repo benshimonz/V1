@@ -219,6 +219,8 @@ _**Q7:** Any person that either his phone was called from a phone owned by two o
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
+Entity tags are also used in Q24 and Q25 below.
+
 ## Component nonexistance
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. That left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
