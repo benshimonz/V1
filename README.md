@@ -386,15 +386,15 @@ _**Q36:** Any person that owns something_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q036.png)
 
-Note that the entity type is constrained to things that a person can own.
+The entity type is implicitly constrained because of the relationship type. In Q36, the entity type is constrained to things that a person can own.
 
 _**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
-Similarly, the entity type of all owners is constrained to things that can own a phone.
+Similarly, the entity type of all owners is implicitly constrained to things that can own a phone.
 
-Additional type constraints can be enforced by defining a set of allowed types or a set of disallowed types.  Here are two examples:
+In addition to the implicit type constraints, explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
 
 _**Q37:** Any person that owns a vehicle or a phone_
 
@@ -404,7 +404,7 @@ _**Q38:** Any person that owns something which is not a vehicle nor a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
-Even when a red entity is on either side of an 'X' - the entity type is constrained by the relationship type. Here are some examples:
+Even when a red entity is on either side of an 'X' - the entity's type is constrained by relationship types. Here are some examples:
 
 _**Q39:** Anything that can own something, but doesn't_
 
