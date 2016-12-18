@@ -344,6 +344,8 @@ An entity tag can't be used both on the left side and on the right side of an E-
 
 An R-combiner combines two or more branches of the same quantifier. On its left side are relationships, and on its right side - an entity.
 
+The entity type on an R-combiner's right side must match all the relationship types on its right side.
+
 Here are some examples:
 
 _**Q29:** Any phone that called or SMSed some phone (two versions)_
@@ -355,6 +357,8 @@ _**Q30:** Any phones pair (A, B) where A both called and SMSed B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
+
+Note that the concrete entity on the right side of the R-combiner is the same entity for all the branches.
 
 _**Q31:** Any phones pair (A, B) where A called B, A SMSed B, B called A, and B SMSed A_
 
