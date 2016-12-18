@@ -314,7 +314,7 @@ Here is a fourth way to represent Q26:
 
 ## E-combiner
 
-An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
+An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entitie,s and on its right side either:
 
 * A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
 * A green rectangle (entity's property limitation / tag)
@@ -323,8 +323,6 @@ An E-combiner combines two or more branches (not necessarily of the same quantif
 The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar that can be used to save duplication when several branches terminates identically.
 
 The relationship / property types on an E-combiner's right side must match all the entity types on its left side. 
-
-The same entity tag can't be used both on the left side and on the right side of an E-combiner (this prevents expressing identicality / nonidenticality constraints that are valid only for some branches).
 
 Here are some examples:
 
@@ -340,9 +338,13 @@ _**Q35:** Any person that either (i) knows a Chinese citizen that owns a red veh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
+An entity tag can't be used both on the left side and on the right side of an E-combiner (to prevent expressing identicality / nonidenticality constraints that are valid only in some branches).
+
 ## R-Combiner
 
-todo
+An R-combiner combines two or more branches of the same quantifier. On its left side are relationships, and on its right side - an entity.
+
+Here are some examples:
 
 _**Q29:** Any phone that called or SMSed some phone (two versions)_
 
