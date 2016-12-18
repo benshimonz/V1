@@ -314,13 +314,15 @@ Here is a fourth way to represent Q26:
 
 ## E-combiner
 
-An E-combiner combines two or more branches. On its left side are entities and on its right side either:
+An E-combiner combines two or more branches (not necessarily of the same quantifier) On its left side are entities and on its right side either:
 
 * A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
 * A green rectangle (entity's property limitation / tag)
 * A quantifier
 
-The right side of the E-combiner is a direct continuation of any of the combined branches. The E-combiner is simply a syntactic sugar, and can be used when several branches terminates identically.
+The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar that can be used to save duplication when several branches terminates identically.
+
+The relationship / property types on an E-combiner's right side should match all the entity types on its left side. 
 
 Here are some examples:
 
