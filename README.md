@@ -69,7 +69,7 @@ A pattern defines a structure of a sub-graph in a schema-based property graph. H
 
 *“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and he has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
-A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the [union of the elements of the] set of all the sub-graphs that conforms to the pattern.
+A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conforms to the pattern.
 
 A pattern language defines a syntax for expressing patterns.
 
@@ -450,7 +450,9 @@ A path connectes two entities - similar to a relationship. However, while relati
 
 Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always 1 + the number of entities along the path.
 
-In a pattern, a path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of these operators: _< n, ≤,n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
+In a pattern, a path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
+
+An assigment to a path consists of all the relationships and entities along the path.
 
 Here are two examples:
 
@@ -489,15 +491,19 @@ _**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
+## Shortest paths
+
+Instead of specifying a constraint on the path length - paths can be limited to the shortest ones (for example, suppose the shortest path length is 3 - all paths with length 3 are valid assignments).
+
+Here are two examples:
+
 _**Q47:** All shortest paths between these two phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q047.png)
 
-_**Q48:** All shortest paths between these two phones, which are not composed of 'call' relationships and 'phone' entities_
+_**Q48:** All shortest paths between these two phones, which are not composed of 'call' relationships nor 'phone' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
-
-
 
 ## Path components
 
