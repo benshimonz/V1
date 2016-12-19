@@ -743,6 +743,24 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
+_**Q121:** Any phone that (received calls from) or (made calls to) at least 10 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
+
+_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
+
+_**Q123:** Any phone that either (received a call) or (made a call) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
+
+_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+
+
 ## Property value tag
 
 todo
@@ -799,21 +817,6 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q121:** Any phone that (received calls from) or (made calls to) at least 10 phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
-
-_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
-
-_**Q123:** Any phone that either (received a call) or (made a call) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
-
-_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
 ## Aggregation tag
 
