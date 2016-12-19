@@ -894,9 +894,9 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
 
-Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it must still an assignment.
+Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
 
-- 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier the starts a pattern)
+- 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
 - 'X' may not appear directly after an 'L'
 - After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'L' is meaningless anyway
 
@@ -912,7 +912,7 @@ _**Q143:** Any person that owns a red vehicle, and has a parent that doesn't own
 
 Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
 
-- 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier the starts a pattern)
+- 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
 - 'O' may not appear (directly or indirectly) after an 'L'
 - 'X' may not appear directly after an 'O'
 - After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'O' is meaningless anyway
