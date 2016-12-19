@@ -507,13 +507,13 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ## Path segments
 
-An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. Each path is composed of consecutive path segment. 
-
-A path segment type is a valid chain of yellow / blue / red entities and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of yellow / blue / red entities and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
 - The type of the rightmost entity type in the last segment of a path must match the entity type following the path
+
+Each path is composed of consecutive path segments. 
 
 A red table below the path defines constraints on the path's segments types. The table has three columns:
 
