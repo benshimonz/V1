@@ -523,10 +523,22 @@ A red table below the path defines constraints on the path's segments types. The
 
 Here are some examples:
 
-_**Q56, Q57, Q58:** constraints on path segment types_
+_**Q56:** constraints on path segment types_
+
+In this example, 4 path segment types are allowed
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q056.png)
+
+_**Q57:** constraints on path segment types_
+
+In this example, one path segment type is disallowed, there must be between 2 and 3 path segments of one of two types, and any other path segments are allowed
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q057.png)
+
+_**Q58:** constraints on path segment types_
+
+In this example, the path must contain James Smith. Any other path segments are allowed
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
 ## Aggregations and aggregate conditions
