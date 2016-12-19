@@ -683,11 +683,11 @@ _**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-_**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that called (> 10 minutes calls) to at least 3 phones. For these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
+_**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that called (> 10 minutes calls) to at least 3 phones. From these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
-_**Q94:** First, pass only (> 10 minutes calls). Then, pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B. From these A's pass only those that called (> 10 minutes calls) to at least 3 phones_
+_**Q94:** First, pass only (> 10 minutes calls). Then, pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B. From these A's, pass only those that called (> 10 minutes calls) to at least 3 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
