@@ -567,7 +567,7 @@ _**Q63:** Any person that more than 2 people are not his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any phone that number of phone that didn't call him is 5_
+_**Q64:** Any phone that the number of phones that didn't call him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
@@ -822,7 +822,7 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 todo
 
-_**Q125:** Any phone that the number of phone it called is greater than the number of phones that called it_
+_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
 
