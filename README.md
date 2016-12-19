@@ -892,9 +892,15 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ## Latent and optional components
 
-todo
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
+
+Anything on the right of an 'L' is latent: It won't be part of the answer, though it must still an assignment.
+
+- 'L' may appear just before a relationship or a path
+- 'X' may not appear directly after an 'L'
+- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'L' is meaningless anyway
+
+Here are two sexamples:
 
 _**Q142:** Any person that owns a red vehicle, and has a parent that owns a vehicle. The parent and his vehicle are not part of the answer_
 
@@ -903,6 +909,15 @@ _**Q142:** Any person that owns a red vehicle, and has a parent that owns a vehi
 _**Q143:** Any person that owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
+
+Anything on the right of an 'O' is optional: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
+
+- 'O' may appear just before a relationship or a path
+- 'O' may not appear (directly or indirectly) after an 'L'
+- 'X' may not appear directly after an 'O'
+- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'O' is meaningless anyway
+
+Here are some sexamples:
 
 _**Q144:** Any person that owns a red vehicle. If he has a parent that owns a vehicle - the parent and his vehicle will be part of the answer as well_
 
@@ -931,6 +946,8 @@ _**Q149:** Any person. If (s)he owns a vehicle - it will be a part of the answer
 _**Q150:** Any person that owns a vehicle or a phone. If (s)he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
+
+The following examples combines 'L' and 'O' with aggregate conditions :
 
 _**Q151:** Any person that owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
 
