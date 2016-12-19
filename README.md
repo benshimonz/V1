@@ -271,7 +271,7 @@ This pattern can also be represented using the '0' quantifier:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
-_**Q21:** Any vehicle that is not owned by both James Smith and John Price(two versions)_
+_**Q21:** Any vehicle that is not owned by both James Smith and John Price (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
@@ -289,10 +289,9 @@ _**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
-_**Q24:** Any person that have (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents (two versions)_
+_**Q24:** Any person that have (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024-1.png)
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
 _**Q25:** Any of my friend's friends that isn't my friend (two versions)_
 
