@@ -450,7 +450,7 @@ A path connectes two entities - similar to a relationship. However, while a rela
 
 Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always larger by one than the number of entities along the path.
 
-In a pattern, a path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
+A path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
 
 An assigment to a path consists of all the relationships and entities along the path.
 
@@ -509,7 +509,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. Each path is composed of consecutive path segment. 
 
-In a pattern, a path segment type is a valid chain of entity types and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
+A path segment type is a valid chain of yellow / blue / red entities and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
