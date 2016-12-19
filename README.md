@@ -223,7 +223,7 @@ Entity tags are also used in Q24 and Q25 below.
 
 ## Component nonexistance
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. That left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
@@ -283,7 +283,7 @@ _**Q22:** Any vehicle that is not owned by a person that owns a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
-Note that left component is _'vehicle'_ while the right component is _'owned by a person that owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
+Note that the left component is _'vehicle'_ while the right component is _'owned by a person that owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
 _**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
