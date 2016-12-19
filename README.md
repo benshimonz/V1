@@ -446,9 +446,9 @@ _**Q52:** Any person that own (at least) two things of different types, both are
 
 ## Paths
 
-A path connectes two entities - similar to a relationship. However, while relationship is a direct connection between two entities, a path is an indirect connection: a sequence of relationships and entities between the two entities.
+A path connectes two entities - similar to a relationship. However, while a relationship is a direct connection between two entities, a path is an indirect connection : a path is a sequence of relationships and entities between the two entities.
 
-Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always 1 + the number of entities along the path.
+Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always larger by one than the number of entities along the path.
 
 In a pattern, a path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
 
@@ -464,7 +464,7 @@ _**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
-Constraints may be defined for the entities and relationships along the path:
+Optional constraints can be defined for the entities and relationships along the path:
 
 - Constraint on the allowed/disallowed types of relationships along the path
 - Constraint on the number of relationships of each allowed type
@@ -507,7 +507,21 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ## Path components
 
-todo
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. Each path is composed of consecutive path segment. 
+
+In a pattern, a path segment is a chain of entities and relationships, that starts and ends with an entity. There is an 'overlap' between successive segment types:
+
+- The type of the rightmost entity in one segment must be identical to the type of the leftmost entity in its successor
+- The type of the leftmost entity in the first segment of a path must match the type of the entity preceding the path
+- The type of the rightmost entity in the last segment of a path must match the type of the entity following the path
+
+A red box defines constraints on the path segment. It has three columns:
+
+- A constraint on th number of allowed path segments of this type along the path
+- The path segment
+- An indication if a 'mirror image' of this path segment can be used as well
+
+Here are some examples:
 
 _**Q56, Q57, Q58:** constraints on the count and types of the sub-paths that a path may be composed of_
 
