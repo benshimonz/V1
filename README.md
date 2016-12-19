@@ -289,7 +289,7 @@ _**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
-_**Q24:** Any person that have (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
+_**Q24:** Any person that has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
@@ -765,7 +765,7 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 todo
 
-_**Q108:** Any person that have the same birth-date as Lior Kogan_
+_**Q108:** Any person that has the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
