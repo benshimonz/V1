@@ -591,7 +591,7 @@ _**Q69:** The 2 things that own the largest number of things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
 
-_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them is the smallest_
+_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them, is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
