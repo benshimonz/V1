@@ -517,9 +517,9 @@ Each path is composed of consecutive path segments.
 
 A red table below the path defines constraints on the path's segments types. The table has three columns:
 
-- A constraint on th number of allowed path segments of this type along the path
+- A constraint on the number of allowed path segments of this type along the path
 - The path segment type
-- An indication whether a 'mirror image' of this path segment is valid as well
+- An indication whether a 'mirror image' of this path segment type is valid as well
 
 Here are some examples:
 
