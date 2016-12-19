@@ -947,7 +947,7 @@ _**Q150:** Any person that owns a vehicle or a phone. If (s)he has a parent - th
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
-The following examples combines 'L' and 'O' with aggregate conditions :
+The following examples combines 'L' and 'O' with aggregate conditions:
 
 _**Q151:** Any person that owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
 
