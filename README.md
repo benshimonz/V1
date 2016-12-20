@@ -671,18 +671,6 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
-
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
-
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
-
 _**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that called (> 10 minutes calls) to at least 3 phones. From these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
@@ -759,7 +747,41 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
+## _n_ with min/max aggregate conditions
 
+todo
+
+_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
+
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
+
+## Filtering relationships based on aggregate conditions
+
+todo
+
+_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
+
+_**Q161:** For any phone: the 4 longest outgoing calls_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
+
+_**Q162:** Any phones pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
+
+_**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
 ## Property value tag
 
