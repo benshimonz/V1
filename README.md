@@ -583,14 +583,6 @@ _**Q102:** Any phone that received calls from at least 2 phones that each of the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-_**Q104:** Any person that owned red vehicles at least 10 times (same of different vehicles)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
-
-_**Q105:** Any phone that received 2 calls (cumulatively) from phones that each of them was called from at least one phone_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
-
 ## Aggregations #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
@@ -654,6 +646,14 @@ _**Q83:** Any phone that didn't call (0 outgoing calls)_
 _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
+
+_**Q104:** Any person that owned red vehicles at least 10 times (same of different vehicles)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
+
+_**Q105:** Any phone that received 2 calls (cumulatively) from phones that each of them was called from at least one phone_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
 ## Aggregations #4
 
@@ -793,7 +793,7 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-## Combining aggregations #2
+## Chaining aggregations #2
 
 todo
 
@@ -809,7 +809,7 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Combining aggregations #3
+## Aggregations before quantifier
 
 todo
 
