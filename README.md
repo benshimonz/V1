@@ -541,11 +541,11 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-## Aggregations and aggregate conditions
+## Aggregations #1
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG01.png)
 
 todo
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -563,6 +563,12 @@ _**Q62:** Any person that is within graph distance ≤ 4 from more than 5 people
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
+## Aggregations #2
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
+
+todo
+
 _**Q63:** Any person that more than 2 people are not his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
@@ -579,6 +585,12 @@ _**Q66:** Any person that the number of people that are not within graph distanc
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
+## Aggregations #3
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
+
+todo
+
 _**Q67:** The 3 people with the maximal number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
@@ -594,6 +606,12 @@ _**Q69:** The 2 things that own the largest number of things_
 _**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them, is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
+
+## Aggregations #4
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
+
+todo
 
 _**Q71:** Any phone that made more that 10 calls (cumulatively)_
 
@@ -619,6 +637,16 @@ _**Q76:** Any phone that called between 8 to 10 times to 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to some person_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
+
+## Aggregations #5
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
+
+todo
+
 _**Q77:** The 5 phone pairs (A, B) where the number of calls from B to A is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
@@ -627,13 +655,12 @@ _**Q78:** The 4 phones that called the largest number of times to 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
-_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to some person_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
-
 _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
+
+
+------------------------
 
 _**Q81:** Any phone that didn't call (0 callees)_
 
@@ -651,9 +678,13 @@ _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q85:** Any phone that called at least 10 phones, and received calls from at least 10 phones_
+------------------------
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
+## Aggregations #6
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
+
+todo
 
 _**Q86:** Any phones pair (A, B) where the calls from A to B have a cumulative length of more than 100 minutes_
 
@@ -671,6 +702,46 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
+## Aggregations #7
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
+
+todo
+
+_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
+
+_**Q161:** For any phone: the 4 longest outgoing calls_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
+
+## Aggregations #8
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG08.png)
+
+todo
+
+_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
+
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
+
+## Combining aggregations #1
+
+todo
+
+_**Q85:** Any phone that called at least 10 phones, and received calls from at least 10 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
+
 _**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that called (> 10 minutes calls) to at least 3 phones. From these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
@@ -678,6 +749,14 @@ _**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that c
 _**Q94:** First, pass only (> 10 minutes calls). Then, pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B. From these A's, pass only those that called (> 10 minutes calls) to at least 3 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
+
+_**Q162:** Any phones pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
+
+_**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
 _**Q95:** Any phone that received at least 5 (> 10 minutes calls) with a total duration of > 100 minutes from 052-333-4444_
 
@@ -702,6 +781,10 @@ _**Q99:** Any phone to which 052-333-4444 called more than 10 calls of < 10 minu
 _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes calls), more than 10 calls after 1/1/2010, more than 15 (< 10 minutes calls) after 1/1/2010, and more than 100 calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
+
+## Combining aggregations #2
+
+todo
 
 _**Q101:** Any person than owns at least 10 red vehicles_
 
@@ -731,6 +814,10 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
+## Combining aggregations #3
+
+todo
+
 _**Q121:** Any phone that (received calls from) or (made calls to) at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
@@ -746,42 +833,6 @@ _**Q123:** Any phone that either (received a call) or (made a call) - at least 1
 _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
-## _n_ relationships with min/max _relationship-property_
-
-todo
-
-_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
-
-_**Q161:** For any phone: the 4 longest outgoing calls_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
-
-_**Q162:** Any phones pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
-
-_**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
-
-## _n_ ←/pairs with min/max _aggregate-func_(_relationship-property_)
-
-todo
-
-_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
-
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
-
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
 ## Property value tag
 
