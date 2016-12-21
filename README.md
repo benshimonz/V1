@@ -809,7 +809,7 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Aggregations before quantifier
+## Aggregate conditions before quantifiers
 
 todo
 
