@@ -958,7 +958,7 @@ _**Q132:** The 4 people that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
-_**Q133:** The 4 people that average model year of their vehicles is maximal_
+_**Q133:** The 4 people that the average model year of their vehicles is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
