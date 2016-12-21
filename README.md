@@ -767,7 +767,7 @@ _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-## _n_ entities/pairs with min/max aggregate-function(relationship-property)
+## _n_ ←/pairs with min/max aggregate-func(relationship-property)
 
 todo
 
