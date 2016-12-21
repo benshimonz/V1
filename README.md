@@ -142,10 +142,10 @@ Each branch may start with:
 
 The most useful quantifiers are:
 
-* & - For each assignment to the left component - there should be at least one assignment to any right component
-* &#124; - For each assignment to the left component - there should be at least one assignment to at least one right component
-* Crossed & - For each assignment to the left component - there should be no assignment to at least one right component
-* 0 - For each assignment to the left component - there should be at no assignment to any right component
+* & (all)- For each assignment to the left component - there should be at least one assignment to any right component
+* &#124; (at least one)- For each assignment to the left component - there should be at least one assignment to at least one right component
+* Crossed & (not all) - For each assignment to the left component - there should be no assignment to at least one right component
+* 0 (none) - For each assignment to the left component - there should be at no assignment to any right component
 
 Additional quantifiers:
 
