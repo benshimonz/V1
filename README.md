@@ -563,6 +563,14 @@ _**Q62:** Any person that is within graph distance ≤ 4 from more than 5 people
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
+_**Q81:** Any phone that didn't call (0 callees)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
+
+_**Q82:** Any phone that wasn't called (0 callers)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
+
 ## Aggregations #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
@@ -586,36 +594,6 @@ _**Q66:** Any person that the number of people that are not within graph distanc
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
 ## Aggregations #3
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
-
-todo
-
-_**Q67:** The 3 people with the maximal number of parents_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
-
-_**Q68:** The 2 phones that were called from the largest number of phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
-
-_**Q69:** The 2 things that own the largest number of things_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
-
-_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them, is the smallest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
-
-_**Q81:** Any phone that didn't call (0 callees)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
-
-_**Q82:** Any phone that wasn't called (0 callers)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
-
-## Aggregations #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
 
@@ -656,6 +634,28 @@ _**Q83:** Any phone that didn't call (0 outgoing calls)_
 _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
+
+## Aggregations #4
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
+
+todo
+
+_**Q67:** The 3 people with the maximal number of parents_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
+
+_**Q68:** The 2 phones that were called from the largest number of phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
+
+_**Q69:** The 2 things that own the largest number of things_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
+
+_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them, is the smallest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
 ## Aggregations #5
 
