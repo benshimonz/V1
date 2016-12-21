@@ -942,7 +942,7 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-# Aggregations #9
+# Prefix aggregations
 
 todo
 
@@ -962,7 +962,7 @@ _**Q133:** The 4 people that average model year of their vehicles is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q138:** The 4 people that know people that cumulatively own vehicles with the largest number of colors_
+_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
