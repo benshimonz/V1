@@ -541,7 +541,7 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-## Aggregations #1
+## Aggregate conditions #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG01.png)
 
@@ -583,7 +583,7 @@ _**Q102:** Any phone that received calls from at least 2 phones that each of the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-## Aggregations #2
+## Aggregate conditions #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
 
@@ -605,7 +605,7 @@ _**Q66:** Any person that the number of people that are not within graph distanc
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-## Aggregations #3
+## Aggregate conditions #3
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
 
@@ -655,7 +655,7 @@ _**Q105:** Any phone that received 2 calls (cumulatively) from phones that each 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-## Aggregations #4
+## Aggregate conditions #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
 
@@ -677,7 +677,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-## Aggregations #5
+## Min/Max aggregations #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
 
@@ -699,7 +699,7 @@ _**Q70:** The 5 people, that the number of people within graph distance ≤ 4 fr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-## Aggregations #6
+## Min/Max aggregations #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
 
@@ -717,7 +717,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Aggregations #7
+## Min/Max aggregations #3
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
 
@@ -731,7 +731,7 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-## Aggregations #8
+## Min/Max aggregations #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG08.png)
 
@@ -749,7 +749,7 @@ _**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-## Chaining aggregations #1
+## Aggregation chains
 
 todo
 
@@ -793,7 +793,7 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-## Chaining aggregations #2
+## Aggregation sequences
 
 todo
 
@@ -853,7 +853,7 @@ _**Q112:** Any person that owned a vehicle and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
-## Aggregations with property value tags
+## Aggregations and property value tags
 
 todo
 
@@ -868,6 +868,10 @@ _**Q114:** Any person that own more than 5 vehicles with the same color_
 _**Q115:** Any person that own more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
+
+## Aggregate conditions on property value tags
+
+todo
 
 _**Q116:** Any person that own vehicles with no more than 3 colors_
 
