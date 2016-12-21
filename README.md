@@ -853,6 +853,10 @@ _**Q112:** Any person that owned a vehicle and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
+## Aggregations with property value tags
+
+todo
+
 _**Q113:** Any person that know at least 5 person with a birth data similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
