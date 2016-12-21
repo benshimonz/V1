@@ -747,23 +747,7 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-## _n_ with min/max aggregate conditions
-
-todo
-
-_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
-
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
-
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
-
-## Filtering relationships based on aggregate conditions
+## _n_ relationships with min/max relationship-property
 
 todo
 
@@ -782,6 +766,22 @@ _**Q162:** Any phones pair (A, B) where the second shortest call from A to B is 
 _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
+
+## _n_ entities/pairs with min/max aggregate-function(relationship-property)
+
+todo
+
+_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
+
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
 ## Property value tag
 
