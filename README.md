@@ -607,6 +607,14 @@ _**Q70:** The 5 people, that the number of people within graph distance ≤ 4 fr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
+_**Q81:** Any phone that didn't call (0 callees)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
+
+_**Q82:** Any phone that wasn't called (0 callers)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
+
 ## Aggregations #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
@@ -641,6 +649,14 @@ _**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
+_**Q83:** Any phone that didn't call (0 outgoing calls)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
+
+_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
+
 ## Aggregations #5
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
@@ -658,27 +674,6 @@ _**Q78:** The 4 phones that called the largest number of times to 052-333-4444_
 _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
-
-
-------------------------
-
-_**Q81:** Any phone that didn't call (0 callees)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
-
-_**Q82:** Any phone that wasn't called (0 callers)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
-
-_**Q83:** Any phone that didn't call (0 outgoing calls)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
-
-_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
-
-------------------------
 
 ## Aggregations #6
 
