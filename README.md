@@ -914,22 +914,6 @@ _**Q129:** Any person than each of his offsprings (that owns at least one vehicl
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q130:** The 4 eldest people_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
-
-_**Q131:** The 4 eldest males_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
-
-_**Q132:** The 4 people that own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
-
-_**Q133:** The 4 people that average model year of their vehicles is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
-
 _**Q134:** Any person that the vehicle owners he know owns vehicles in not more than 3 colors cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
@@ -946,10 +930,6 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q138:** The 4 people that know people that cumulatively own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
-
 _**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
@@ -961,6 +941,30 @@ _**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 co
 _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
+# Aggregations #9
+
+todo
+
+_**Q130:** The 4 eldest people_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
+
+_**Q131:** The 4 eldest males_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
+
+_**Q132:** The 4 people that own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
+
+_**Q133:** The 4 people that average model year of their vehicles is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
+
+_**Q138:** The 4 people that know people that cumulatively own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
 ## Latent and optional components
 
