@@ -747,7 +747,7 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-## _n_ relationships with min/max relationship-property
+## _n_ relationships with min/max _relationship-property_
 
 todo
 
@@ -767,7 +767,7 @@ _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-## _n_ ←/pairs with min/max aggregate-func(relationship-property)
+## _n_ ←/pairs with min/max _aggregate-func_(_relationship-property_)
 
 todo
 
