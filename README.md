@@ -883,6 +883,26 @@ _**Q117:** Any person that the average model year of his owned vehicles is great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
+_**Q134:** Any person that the vehicle owners he know owns vehicles in not more than 3 colors cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
+
+_**Q135:** Any person that the vehicle owners he know owns vehicles with an average model year of at least 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
+
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
+
+_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
+
+_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
+
 ## Min/Max aggregations on property value tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
@@ -928,29 +948,9 @@ _**Q129:** Any person than each of his offsprings (that owns at least one vehicl
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q134:** Any person that the vehicle owners he know owns vehicles in not more than 3 colors cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
-
-_**Q135:** Any person that the vehicle owners he know owns vehicles with an average model year of at least 2010_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
-
-_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
-
-_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
-
 _**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
-
-_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
 _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
 
