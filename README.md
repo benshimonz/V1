@@ -9,7 +9,7 @@
 
 </script>
 
-## V1 - A visual query language for schema-based property graphs
+## V1 - A Visual Query Language for Schema-based Property Graphs
 
 Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail [dot] com)
 
@@ -17,7 +17,7 @@ This work is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommon
 
 **This is an early draft. It’s known to be incomplet and incorrekt.**
 
-## The property graph data model
+## The Property Graph Data Model
 
 A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair G = (V, E) comprising a set V of vertices (nodes) together with a set E of edges (arcs), which are 2-element subsets of V.
 
@@ -63,7 +63,7 @@ In order to ask and answer queries such as *“Any person that owns a red vehicl
 * Define a 'Color' property for the Vehicle entity type
 * Define that Color holds a string, or better, define a categorical data type
 
-## Patterns and pattern languages
+## Patterns and Pattern Languages
 
 A pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
 
@@ -81,7 +81,7 @@ Pattern languages differs in the following aspects:
 * Simplicity - How simple it is to construct new patterns and to understand existing patterns
 * Efficiency - to parse patterns and to execute pattern queries
 
-## The V1 pattern language
+## The V1 Pattern Language
 
 Many potential users won't use textual query languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that use textual query languages may spend a lot of time on the technicalities. 
 
@@ -91,7 +91,7 @@ Visual query languages are very attractive. They have the potential to be more '
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
 
-## V1 basics
+## V1 Basics
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
@@ -181,7 +181,7 @@ _**Q10:** Any person whose first name is Lior, that owns some phone B which call
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
 
-## Entity tags
+## Entity Tag
 
 There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an **'entity tag'**.
 
@@ -201,7 +201,7 @@ _**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-**Nonidenticality constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
+**Nonidenticality Constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
 
 _**Q5:** Any person that his phone was called from a phone owned by two of his parents_
 
@@ -221,7 +221,7 @@ _**Q7:** Any person that either his phone was called from a phone owned by two o
 
 Entity tags are also used in Q24 and Q25 below.
 
-## Component nonexistance
+## Component Nonexistance
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
 
@@ -304,7 +304,7 @@ _**Q26:** Any book, that is liked by people that like some book that I like, but
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-3.png)
 
-## Starting a pattern with a quantifier 
+## Starting a Pattern with a Quantifier 
 
 A pattern may start with a quantifier. Any branch of such quantifier must start with an entity (red / blue / yellow).
 
@@ -376,7 +376,7 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
-## Red entities
+## Red Entities
 
 Sometimes the same relationship type can hold between diferent pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the ownder can be either a person or a company.
  
@@ -426,7 +426,7 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
-## Red entities - entity type tag
+## Entity Type Tag
 
 A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
 
@@ -491,7 +491,7 @@ _**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
-## Shortest paths
+## Shortest Paths
 
 Instead of specifying a constraint on the path length - paths can be limited to the shortest ones that subject to the entities/relationships constraints. If, for example, the shortest path length that subject to the constraints is 3 - all paths with length 3 are valid assignments.
 
@@ -505,7 +505,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
-## Path segments
+## Path Segments
 
 An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of yellow / blue / red entities and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
@@ -541,7 +541,7 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-## Aggregate conditions #1
+## Aggregate Condition #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG01.png)
 
@@ -583,7 +583,7 @@ _**Q102:** Any phone that received calls from at least 2 phones that each of the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-## Aggregate conditions #2
+## Aggregate Condition #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
 
@@ -605,7 +605,7 @@ _**Q66:** Any person that the number of people that are not within graph distanc
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-## Aggregate conditions #3
+## Aggregate Condition #3
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
 
@@ -655,7 +655,7 @@ _**Q105:** Any phone that received 2 calls (cumulatively) from phones that each 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-## Aggregate conditions #4
+## Aggregate Condition #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
 
@@ -677,7 +677,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-## Min/Max aggregations #1
+## Min/Max Aggregation #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
 
@@ -699,7 +699,7 @@ _**Q70:** The 5 people, that the number of people within graph distance ≤ 4 fr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-## Min/Max aggregations #2
+## Min/Max Aggregation #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
 
@@ -717,7 +717,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Min/Max aggregations #3
+## Min/Max Aggregation #3
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
 
@@ -731,7 +731,7 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-## Min/Max aggregations #4
+## Min/Max Aggregation #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG08.png)
 
@@ -749,7 +749,7 @@ _**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-## Aggregation chains
+## Aggregation Chain
 
 todo
 
@@ -793,7 +793,7 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-## Aggregation sequences
+## Aggregation Sequence
 
 todo
 
@@ -809,7 +809,7 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Aggregate conditions before quantifiers
+## Aggregate Condition before Quantifier
 
 todo
 
@@ -829,7 +829,7 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-## Property value tag
+## Property Tag
 
 todo
 
@@ -853,7 +853,7 @@ _**Q112:** Any person that owned a vehicle and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
-## Aggregations and property value tags
+## Aggregations and Property Tag
 
 todo
 
@@ -869,7 +869,7 @@ _**Q115:** Any person that own more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
-## Aggregate conditions on property value tags
+## Aggregate Condition on Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG09.png)
 
@@ -899,7 +899,7 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-## Min/Max aggregations on property value tags
+## Min/Max Aggregation on Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
 
@@ -921,7 +921,7 @@ _**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 co
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-## Aggregation tag
+## Aggregation Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
 
@@ -955,7 +955,7 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Latent and optional components
+## Latent and Optional Components
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
 
@@ -1022,7 +1022,7 @@ _**Q152:** Any person that owns more than 10 vehicles. Only the Chinese vehicles
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
-## Splits
+## Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
 
@@ -1054,7 +1054,7 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-## Split tag
+## Split Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
 
@@ -1064,7 +1064,7 @@ _**Q159:** Any phones for which there are more days where (the number of phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-# Prefix aggregations
+# Prefix Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
 
