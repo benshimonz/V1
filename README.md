@@ -949,6 +949,10 @@ _**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 co
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
+_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
 ## Min/Max Aggregation on Aggregation Tag
 
 todo
@@ -956,10 +960,6 @@ todo
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
-_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
 ## Latent and Optional Components
 
