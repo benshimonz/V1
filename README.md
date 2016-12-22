@@ -831,6 +831,8 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ## Property Tag
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
+
 todo
 
 _**Q108:** Any person that has the same birth-date as Lior Kogan_
