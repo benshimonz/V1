@@ -585,6 +585,16 @@ _**Q102:** Any phone that received calls from at least 2 phones that each of the
 
 ## Aggregate Condition #2
 
+todo
+
+todo
+
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
+
+## Aggregate Condition #3
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
 
 todo
@@ -605,7 +615,7 @@ _**Q66:** Any person that the number of people that are not within graph distanc
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-## Aggregate Condition #3
+## Aggregate Condition #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
 
@@ -655,7 +665,7 @@ _**Q105:** Any phone that received 2 calls (cumulatively) from phones that each 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-## Aggregate Condition #4
+## Aggregate Condition #5
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
 
@@ -676,16 +686,6 @@ _**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulativ
 _**Q89:** Any phone that its outgoing calls have more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
-
-## Aggregate Condition #5
-
-todo
-
-todo
-
-_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
 
 ## Min/Max Aggregation #1
 
