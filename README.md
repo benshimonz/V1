@@ -927,10 +927,6 @@ _**Q139:** Any person that own vehicles with the same number of colors as the nu
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
-_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
-
 ## Min/Max Aggregation on Property Tag / Aggregation Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
@@ -957,6 +953,9 @@ _**Q128:** Any person and his 3 offspring that own vehicles with the largest num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
+_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
 ## Latent and Optional Components
 
