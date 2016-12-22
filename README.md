@@ -945,13 +945,13 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
-
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
+
+_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
 _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
 
