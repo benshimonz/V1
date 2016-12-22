@@ -595,28 +595,6 @@ _**Q136:** Any phone A that called phones B that called phones C. The cumulative
 
 ## Aggregate Condition #3
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
-
-todo
-
-_**Q63:** Any person that more than 2 people are not his parents_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
-
-_**Q64:** Any phone that the number of phones that didn't call him is 5_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
-
-_**Q65:** Anything that the number of things it doesn't own is greater than 2_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
-
-_**Q66:** Any person that the number of people that are not within graph distance ≤ 4 from him is 5_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
-
-## Aggregate Condition #4
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
 
 todo
@@ -665,7 +643,7 @@ _**Q105:** Any phone that received 2 calls (cumulatively) from phones that each 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-## Aggregate Condition #5
+## Aggregate Condition #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
 
@@ -686,6 +664,28 @@ _**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulativ
 _**Q89:** Any phone that its outgoing calls have more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
+
+## Aggregate Condition #5
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
+
+todo
+
+_**Q63:** Any person that more than 2 people are not his parents_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
+
+_**Q64:** Any phone that the number of phones that didn't call him is 5_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
+
+_**Q65:** Anything that the number of things it doesn't own is greater than 2_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
+
+_**Q66:** Any person that the number of people that are not within graph distance ≤ 4 from him is 5_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
 ## Min/Max Aggregation #1
 
