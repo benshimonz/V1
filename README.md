@@ -916,17 +916,9 @@ _**Q126:** Any phone that the number of phones it called is greater than the num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
-
-todo
-
 _**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
-
-todo
 
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
@@ -966,7 +958,7 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 
 # Prefix aggregations
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
 
 todo
 
