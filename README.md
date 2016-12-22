@@ -893,13 +893,17 @@ _**Q135:** Any person that the vehicle owners he know owns vehicles with an aver
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
-_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
-
 _**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
+
+## Aggregation ---todo---
+
+todo
+
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
 
 ## Aggregation Tag
 
