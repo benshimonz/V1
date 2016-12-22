@@ -901,7 +901,37 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-## Min/Max Aggregation on Property Tag
+## Aggregation Tag
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
+
+todo
+
+_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
+
+_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
+
+_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
+
+_**Q129:** Any person than each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
+
+_**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
+
+_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
+## Min/Max Aggregation on Property Tag / Aggregation Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
 
@@ -923,39 +953,10 @@ _**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 co
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-## Aggregation Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
-
-todo
-
-_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
-
-_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
-
-_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
-
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q129:** Any person than each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
-
-_**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
-
-_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more colors than those of his 3 younger daughters_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
 ## Latent and Optional Components
 
