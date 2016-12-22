@@ -927,7 +927,7 @@ _**Q139:** Any person that own vehicles with the same number of colors as the nu
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
-## Min/Max Aggregation on Property Tag / Aggregation Tag
+## Min/Max Aggregation on Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
 
@@ -945,13 +945,17 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
 _**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
+
+## Min/Max Aggregation on Aggregation Tag
+
+todo
+
+_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
 _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
 
