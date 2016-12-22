@@ -1028,8 +1028,6 @@ _**Q152:** Any person that owns more than 10 vehicles. Only the Chinese vehicles
 
 todo
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
-
 _**Q153:** Any phone that in at least 10 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
