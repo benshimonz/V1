@@ -677,6 +677,16 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
+## Aggregate Condition #5
+
+todo
+
+todo
+
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
+
 ## Min/Max Aggregation #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
@@ -896,14 +906,6 @@ _**Q135:** Any person that the vehicle owners he know owns vehicles with an aver
 _**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
-
-## Aggregation ---todo---
-
-todo
-
-_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
 
 ## Aggregation Tag
 
