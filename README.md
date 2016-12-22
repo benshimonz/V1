@@ -955,7 +955,7 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with the 
 
 ## Min/Max Aggregation on Aggregation Tag
 
-todo
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15.png)
 
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
