@@ -871,6 +871,8 @@ _**Q115:** Any person that own more than 5 vehicles since the same date_
 
 ## Aggregate conditions on property value tags
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG09.png)
+
 todo
 
 _**Q116:** Any person that own vehicles with no more than 3 colors_
@@ -880,6 +882,12 @@ _**Q116:** Any person that own vehicles with no more than 3 colors_
 _**Q117:** Any person that the average model year of his owned vehicles is greater than 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
+
+## Min/Max aggregations on property value tags
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
+
+todo
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -896,6 +904,8 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 ## Aggregation tag
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
+
 todo
 
 _**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
@@ -906,9 +916,17 @@ _**Q126:** Any phone that the number of phones it called is greater than the num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
+
+todo
+
 _**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
+
+todo
 
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
@@ -947,6 +965,8 @@ _**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with more
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
 # Prefix aggregations
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
 
 todo
 
