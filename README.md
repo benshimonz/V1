@@ -899,10 +899,6 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
-
 ## Min/Max aggregations on property value tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
@@ -921,6 +917,9 @@ _**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
+_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
 ## Aggregation tag
 
