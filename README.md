@@ -901,7 +901,7 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-## Aggregation Tag
+## Aggregation Tag #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
 
@@ -922,6 +922,12 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 _**Q129:** Any person than each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
+
+## Aggregation Tag #2
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG16.png)
+
+todo
 
 _**Q139:** Any person that owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
