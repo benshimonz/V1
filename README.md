@@ -593,7 +593,7 @@ _**Q102:** Any phone that received calls from at least 2 phones that each of the
 
 todo
 
-_**Q71:** Any phone that made more that 10 calls (cumulatively)_
+_**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
