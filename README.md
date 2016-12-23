@@ -551,7 +551,7 @@ _**Q59:** Any person having more than 2 parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
 
-_**Q60:** Any phone that received calls from exactly 5 phones_
+_**Q60:** Any phone that was called from exactly 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
 
@@ -575,7 +575,7 @@ _**Q82:** Any phone that wasn't called (0 callers)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q85:** Any phone that called at least 10 phones, and received calls from at least 10 phones_
+_**Q85:** Any phone that called at least 10 phones, and was called from at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
@@ -583,7 +583,7 @@ _**Q101:** Any person that owns at least 10 red vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
-_**Q102:** Any phone that received calls from at least 2 phones that each of them received calls from at least one phone_
+_**Q102:** Any phone that was called from at least 2 phones; each of these was called from at least one phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
@@ -597,7 +597,7 @@ _**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any phone that received exactly 10 calls (cumulatively)_
+_**Q72:** Any phone that was called exactly 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
 
@@ -605,11 +605,11 @@ _**Q73:** Any phone that made no more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
 
-_**Q74:** Any phone that the number of calls it received (cumulatively) is not 10_
+_**Q74:** Any phone that the number of times it was called (cumulatively) is not 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
-_**Q75:** Any phones pair (A, B) where A received between 8 to 10 calls from B_
+_**Q75:** Any phones pair (A, B) where A was called between 8 to 10 times from B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
@@ -629,11 +629,11 @@ _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q104:** Any person that owned red vehicles at least 10 times (same of different vehicles)_
+_**Q104:** Any person that owned red vehicles at least 10 times (same or different vehicles)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any phone that received 2 calls (cumulatively) from phones that each of them was called from at least one phone_
+_**Q105:** Any phone A that was called 2 times (cumulatively) from phones that each was called from at least one phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
@@ -817,7 +817,7 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 todo
 
-_**Q121:** Any phone that (received calls from) or (made calls to) at least 10 phones_
+_**Q121:** Any phone that (was called from) or (made calls to) at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
@@ -825,7 +825,7 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q123:** Any phone that either (received a call) or (made a call) - at least 10 times_
+_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
