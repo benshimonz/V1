@@ -432,15 +432,15 @@ A red rectangle may contain an **entity type tag**, depicted by a numeric index 
 
 Here are some examples:
 
-_**Q50:** Any person that own (at least) two things of the same type_
+_**Q50:** Any person that owns (at least) two things of the same type_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
 
-_**Q51:** Any person that own (at least) two things of different types_
+_**Q51:** Any person that owns (at least) two things of different types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
 
-_**Q52:** Any person that own (at least) two things of different types, both are not vehicles_
+_**Q52:** Any person that owns (at least) two things of different types, both are not vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
@@ -867,11 +867,11 @@ _**Q113:** Any person that know at least 5 person with a birth data similar to h
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
 
-_**Q114:** Any person that own more than 5 vehicles with the same color_
+_**Q114:** Any person that owns more than 5 vehicles with the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
-_**Q115:** Any person that own more than 5 vehicles since the same date_
+_**Q115:** Any person that owns more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
@@ -881,7 +881,7 @@ _**Q115:** Any person that own more than 5 vehicles since the same date_
 
 todo
 
-_**Q116:** Any person that own vehicles with no more than 3 colors_
+_**Q116:** Any person that owns vehicles with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
@@ -923,7 +923,7 @@ _**Q129:** Any person than each of his offsprings (that owns at least one vehicl
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q139:** Any person that own vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
+_**Q139:** Any person that owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
