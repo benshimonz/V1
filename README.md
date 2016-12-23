@@ -483,10 +483,6 @@ _**Q45:** Any path with length ≤ 4 between these two phones, which is composed
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
-_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
-
 _**Q54:** Any person within graph distance ≤ 3 from James Smith, John Price and George Davis_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
@@ -566,6 +562,10 @@ _**Q61:** Anything that owns more than 2 things_
 _**Q62:** Any person that is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
+
+_**Q136:** Any phone A that called phones B that called phones C. The cumulative number of C phones (per A) is more than 100_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136.png)
 
 _**Q81:** Any phone that didn't call (0 callees)_
 
