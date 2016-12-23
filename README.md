@@ -579,7 +579,7 @@ _**Q85:** Any phone that called at least 10 phones, and received calls from at l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
-_**Q101:** Any person than owns at least 10 red vehicles_
+_**Q101:** Any person that owns at least 10 red vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
@@ -919,7 +919,7 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
-_**Q129:** Any person than each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
+_**Q129:** Any person that each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
