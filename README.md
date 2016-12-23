@@ -67,7 +67,7 @@ In order to ask and answer queries such as *“Any person that owns a red vehicl
 
 A pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
 
-*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and he has a brother that called 5 or more phones belonging to employees of company X in the last month"*
+*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
 A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conforms to the pattern.
 
@@ -889,11 +889,11 @@ _**Q117:** Any person that the average model year of his owned vehicles is great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q134:** Any person that the vehicle owners he know owns vehicles in not more than 3 colors cumulatively_
+_**Q134:** Any person that the vehicle owners he know, cumulatively own vehicles in not more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the vehicle owners he know owns vehicles with an average model year of at least 2010_
+_**Q135:** Any person that the vehicle owners he know, cumulatively own vehicles with an average model year of at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
@@ -933,7 +933,7 @@ _**Q139:** Any person that owns vehicles with the same number of colors as the n
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
-_**Q164:** Any phone that the cumulative number of outgoing calls of the phones he called - is equal to the cumulative number of outgoing SMSes of the phones he SMSed_
+_**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
