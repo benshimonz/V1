@@ -927,6 +927,10 @@ _**Q139:** Any person that owns vehicles with the same number of colors as the n
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
+_**Q164:** Any phone that the cumulative number of outgoing calls of the phones he called - is equal to the cumulative number of outgoing SMSes of the phones he SMSed_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
+
 ## Min/Max Aggregation on Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
