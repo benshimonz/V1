@@ -677,7 +677,7 @@ _**Q65:** Anything that the number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any person for which the number of people that are not within graph distance ≤ 4 from him is 5_
+_**Q66:** Any person for whom the number of people that are not within graph distance ≤ 4 from him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
@@ -951,7 +951,7 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-_**Q120:** Any person for which the sum of the heights of his 3 eldest offsprings is less than his own height_
+_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
