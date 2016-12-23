@@ -889,11 +889,11 @@ _**Q117:** Any person that the average model year of his owned vehicles is great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q134:** Any person that the vehicle owners he know, cumulatively own vehicles in not more than 3 colors_
+_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the vehicle owners he know, cumulatively own vehicles with an average model year of at least 2010_
+_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
