@@ -54,7 +54,7 @@ A **schema-based property graph** is a property graph that conforms to a given s
 
 Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
-In order to ask and answer queries such as *“Any person that owns a red vehicle”* we first need to:
+In order to ask and answer queries such as *“Any person who owns a red vehicle”* we first need to:
 
 * Define 'Person' and 'Vehicle' entity types
 * Ensure that each Person and Vehicle entities are of the relevant entity types
@@ -67,7 +67,7 @@ In order to ask and answer queries such as *“Any person that owns a red vehicl
 
 A pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
 
-*“Any person that owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
+*“Any person who owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
 A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conforms to the pattern.
 
@@ -109,15 +109,15 @@ Patterns have a tree-like structure (as opposed to graph-like structure).
 
 Here are some basic patterns:
 
-_**Q1:** Any phone that Lior Kogan owns_
+_**Q1:** Any phone owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any phone that was called from a phone that Lior Kogan owns_
+_**Q2:** Any phone that received at least one call from a phone owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q3:** Any person that owns a phone, and his first name is Lior **(v1)**_
+_**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
@@ -126,7 +126,7 @@ _**Q3:** Any person that owns a phone, and his first name is Lior **(v1)**_
 
 Quantifiers are used when several conditions need to be checked. Here is a simple example:
 
-_**Q3:** Any person that owns a phone, and his first name is Lior **(v2)**_
+_**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
@@ -162,7 +162,7 @@ Additional quantifiers:
 
 Here are some more examples:
 
-_**Q8:** Any person that was born before 1970 and died, or that his father was born no later than 1/1/1950_
+_**Q8:** Any person born prior to 1970 and died, or that his father born no later than 1/1/1950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
@@ -176,7 +176,7 @@ Quantifiers can also be used for relationships. In such cases, each branch may s
 * An aggregate condition / an aggregation tag
 * A quantifier
 
-_**Q10:** Any person whose first name is Lior, that owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+_**Q10:** Any person whose first name is Lior, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
@@ -189,7 +189,7 @@ Entity tags serve two purposes. First, when a pattern is used as a query, entity
 
 **Identicality constraint** is used when two entites in the pattern must have identical assignment. Here is an example:
 
-_**Q4:** Any person that his phone was called from a phone owned by (at least one) of his parents_
+_**Q4:** Any person whose phone received a call from a phone owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
@@ -203,7 +203,7 @@ _**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 **Nonidenticality Constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
 
-_**Q5:** Any person that his phone was called from a phone owned by two of his parents_
+_**Q5:** Any person whose phone received a call from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
@@ -211,11 +211,11 @@ Without enforcing Nonidenticality, the same parent can be assigned to both C and
 
 Here are two more examples:
 
-_**Q6:** Any person that calls were made to his phone from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
+_**Q6:** Any person whose phone received calls from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
-_**Q7:** Any person that either his phone was called from a phone owned by two of his parents, or from two phones – one owned by one of his parents and the other owned by his other parent_
+_**Q7:** Any person whose phone was either (i) called from a phone owned by two of his parents, or (ii) from two phones – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
@@ -231,7 +231,7 @@ In the example above, there are actually two possibilities: there may be no red 
 
 Here are some examples:
 
-_**Q12:** Any person that doesn't own a vehicle_
+_**Q12:** Any person who doesn't own a vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q012.png)
 
@@ -247,7 +247,7 @@ _**Q15:** Get Lior Kogan, if he doesn't own a vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q015.png)
 
-_**Q16:** Any person that doesn't own vehicle 34-234-99_
+_**Q16:** Any person who doesn't own vehicle 34-234-99_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q016.png)
 
@@ -279,17 +279,17 @@ This pattern can also be represented using the 'not all' quantifier, but notice 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q22:** Any vehicle that is not owned by a person that owns a phone_
+_**Q22:** Any vehicle that is not owned by a person who owns a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
-Note that the left component is _'vehicle'_ while the right component is _'owned by a person that owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
+Note that the left component is _'vehicle'_ while the right component is _'owned by a person who owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
-_**Q23:** Any vehicle that is not owned by a person that doesn't own a phone_
+_**Q23:** Any vehicle that is not owned by a person who doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
-_**Q24:** Any person that has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
+_**Q24:** Any person who has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
@@ -326,15 +326,15 @@ The relationship / property types on an E-combiner's right side must match all t
 
 Here are some examples:
 
-_**Q27:** Any person with a Chinese citizenship that owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
+_**Q27:** Any person with a Chinese citizenship who owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
 
-_**Q28:** Any Chinese citizen that owns a red vehicle; Any person that doesn't know someone who owns a red vehicle_
+_**Q28:** Any Chinese citizen who owns a red vehicle; Any person who doesn't know someone who owns a red vehicle_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q35:** Any person that either (i) knows a Chinese citizen that owns a red vehicle (ii) know a person that doesn't know someone that owns a red vehicle (iii) know someone that doesn't own a phone_
+_**Q35:** Any person who either (i) knows a Chinese citizen who owns a red vehicle (ii) know a person who doesn't know someone who owns a red vehicle (iii) know someone who doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
@@ -382,7 +382,7 @@ Sometimes the same relationship type can hold between diferent pairs of entity t
  
  In it simplest form, a red rectangle represents an entity of any type.
 
-_**Q36:** Any person that owns something_
+_**Q36:** Any person who owns something_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q036.png)
 
@@ -396,11 +396,11 @@ Similarly, the entity type of all owners is implicitly constrained to things tha
 
 In addition to the implicit type constraints, explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
 
-_**Q37:** Any person that owns a vehicle or a phone_
+_**Q37:** Any person who owns a vehicle or a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any person that owns something which is not a vehicle nor a phone_
+_**Q38:** Any person who owns something which is not a vehicle nor a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
@@ -432,15 +432,15 @@ A red rectangle may contain an **entity type tag**, depicted by a numeric index 
 
 Here are some examples:
 
-_**Q50:** Any person that owns (at least) two things of the same type_
+_**Q50:** Any person who owns (at least) two things of the same type_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
 
-_**Q51:** Any person that owns (at least) two things of different types_
+_**Q51:** Any person who owns (at least) two things of different types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
 
-_**Q52:** Any person that owns (at least) two things of different types, both are not vehicles_
+_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
@@ -559,7 +559,7 @@ _**Q61:** Anything that owns more than 2 things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
 
-_**Q62:** Any person that is within graph distance ≤ 4 from more than 5 people_
+_**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
@@ -579,7 +579,7 @@ _**Q85:** Any phone that called at least 10 phones, and was called from at least
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
 
-_**Q101:** Any person that owns at least 10 red vehicles_
+_**Q101:** Any person who owns at least 10 red vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
@@ -629,7 +629,7 @@ _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q104:** Any person that owned red vehicles at least 10 times (same or different vehicles)_
+_**Q104:** Any person who owned red vehicles at least 10 times (same or different vehicles)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
@@ -665,7 +665,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 todo
 
-_**Q63:** Any person that more than 2 people are not his parents_
+_**Q63:** Any person who more than 2 people are not his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
@@ -677,7 +677,7 @@ _**Q65:** Anything that the number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any person that the number of people that are not within graph distance ≤ 4 from him is 5_
+_**Q66:** Any person for which the number of people that are not within graph distance ≤ 4 from him is 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
@@ -839,11 +839,11 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 todo
 
-_**Q108:** Any person that has the same birth-date as Lior Kogan_
+_**Q108:** Any person who has the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
-_**Q109:** Any person that his parent owned a vehicle and a phone prior to his birth_
+_**Q109:** Any person who his parent owned a vehicle and a phone prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
@@ -851,11 +851,11 @@ _**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in ch
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
 
-_**Q111:** Any person that doesn't know someone with a birth date similar to his_
+_**Q111:** Any person who doesn't know someone with a birth date similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
 
-_**Q112:** Any person that owned a vehicle and a phone in the same time frames_
+_**Q112:** Any person who owned a vehicle and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
@@ -863,15 +863,15 @@ _**Q112:** Any person that owned a vehicle and a phone in the same time frames_
 
 todo
 
-_**Q113:** Any person that know at least 5 person with a birth data similar to his_
+_**Q113:** Any person who knows at least 5 people with a birth data similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
 
-_**Q114:** Any person that owns more than 5 vehicles with the same color_
+_**Q114:** Any person who owns more than 5 vehicles with the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
-_**Q115:** Any person that owns more than 5 vehicles since the same date_
+_**Q115:** Any person who owns more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
@@ -881,19 +881,19 @@ _**Q115:** Any person that owns more than 5 vehicles since the same date_
 
 todo
 
-_**Q116:** Any person that owns vehicles with no more than 3 colors_
+_**Q116:** Any person who owns vehicles with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person that the average model year of his owned vehicles is greater than 2010_
+_**Q117:** Any person for whom the average model year of his owned vehicles is greater than 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
+_**Q134:** Any person for whom the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
+_**Q135:** Any person for whom the average model year of all vehicles owned by people he knows - is at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
@@ -919,7 +919,7 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
-_**Q129:** Any person that each of his offsprings (that owns at least one vehicle) owns a different number of vehicles_
+_**Q129:** Any person, that each of his offsprings who owns at least one vehicle, owns a different number of vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
@@ -929,7 +929,7 @@ _**Q129:** Any person that each of his offsprings (that owns at least one vehicl
 
 todo
 
-_**Q139:** Any person that owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
+_**Q139:** Any person who owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
@@ -951,15 +951,15 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-_**Q120:** Any person that the sum of the heights of his 3 eldest offsprings is less than his own height_
+_**Q120:** Any person for which the sum of the heights of his 3 eldest offsprings is less than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q140:** Any person that his 3 eldest sons cumilatively own vehicles with 3 colors_
+_**Q140:** Any person who his 3 eldest sons cumilatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person that his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
+_**Q141:** Any person who his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
@@ -1009,11 +1009,11 @@ Anything on the right of an **'L'** is **latent**: It won't be part of the answe
 
 Here are two examples:
 
-_**Q142:** Any person that owns a red vehicle, and has a parent that owns a vehicle. The parent and his vehicle are not part of the answer_
+_**Q142:** Any person who owns a red vehicle, and has a parent who owns a vehicle. The parent and his vehicle are not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
 
-_**Q143:** Any person that owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
+_**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
 
@@ -1026,15 +1026,15 @@ Anything on the right of an **'O'** is **optional**: if it has a valid assignmen
 
 Here are some examples:
 
-_**Q144:** Any person that owns a red vehicle. If he has a parent that owns a vehicle - the parent and his vehicle will be part of the answer as well_
+_**Q144:** Any person who owns a red vehicle. If he has a parent who owns a vehicle - the parent and his vehicle will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q144.png)
 
-_**Q145:** Any person that owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
+_**Q145:** Any person who owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q145.png)
 
-_**Q146:** Any person that owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
+_**Q146:** Any person who owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
 
@@ -1042,7 +1042,7 @@ _**Q147:** Any person. If (s)he owns both a vehicle and a phone - they will be a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
 
-_**Q148:** Any person that owns both a vehicle and a phone. If (s)he has a parent - the parent will be part of the answer as well_
+_**Q148:** Any person who owns both a vehicle and a phone. If (s)he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
 
@@ -1050,17 +1050,17 @@ _**Q149:** Any person. If (s)he owns a vehicle - it will be a part of the answer
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
 
-_**Q150:** Any person that owns a vehicle or a phone. If (s)he has a parent - the parent will be part of the answer as well_
+_**Q150:** Any person who owns a vehicle or a phone. If (s)he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
 The following examples combines 'L' and 'O' with aggregate conditions:
 
-_**Q151:** Any person that owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
+_**Q151:** Any person who owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
 
-_**Q152:** Any person that owns more than 10 vehicles. Only the Chinese vehicles will be returned_
+_**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
@@ -1086,7 +1086,7 @@ _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the da
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any person that owns at most 3 vehicles with the same color - for more than 5 colors_
+_**Q157:** Any person who owns at most 3 vehicles with the same color - for more than 5 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
