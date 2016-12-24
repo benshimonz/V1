@@ -673,7 +673,7 @@ _**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any **phone** that less than 5 (ABC employees that own a phone that didn't call **it**)_
+_**Q165:** Any **phone** that less than 5 (ABC employees own a phone that didn't call **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
