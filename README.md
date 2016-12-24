@@ -665,9 +665,13 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 todo
 
-_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
+_**Q63:** Any ABC employee who more than 5 (ABC employees don't know)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
+
+_**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
 _**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't call **it**_
 
@@ -676,10 +680,6 @@ _**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't 
 _**Q165:** Any **phone** that less than 5 (ABC employees own a phone that didn't call **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
-
-_**Q65:** Anything that doesn't own more than 2 things_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
 _**Q66:** Any person from whom more than 5 people are not within graph distance ≤ 6_
 
