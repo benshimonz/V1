@@ -297,7 +297,7 @@ _**Q25:** Any of my friend's friends that isn't my friend (two versions)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any book, that is liked by people that like some book that I like, but is not liked by me (four versions)_
+_**Q26:** Any book, that is liked by people who like some book that I like, but is not liked by me (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
@@ -1010,7 +1010,7 @@ _**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
-_**Q132:** The 4 people that own vehicles with the largest number of colors_
+_**Q132:** The 4 people who own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
@@ -1022,7 +1022,7 @@ _**Q138:** The 4 people that the people they know cumulatively own vehicles with
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**Q168:** The 3 people that own the number of types of things they own is maximal_
+_**Q168:** The 3 people who own the number of types of things they own is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
