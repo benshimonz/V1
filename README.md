@@ -675,7 +675,7 @@ _**Q64:** Any phone that didn't receive calls from at least 5 phones owned by AB
 
 _**Q165:** Any phone that didn't receive calls from phones owned by at least 5 ABC's employees_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/165.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
 _**Q65:** Anything that the number of things it doesn't own is greater than 2_
 
