@@ -99,7 +99,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constrainsts on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -130,7 +130,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
-In its simplest usage, a quantifier is connected to an entity on its left side, and has two or more branches on its right side. We'll call the left side of the quatifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
+In its simplest usage, a quantifier is connected to an entity on its left side, and has two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
 Each branch may start with:
 
@@ -186,7 +186,7 @@ There a letter in the top-left corner of every red, blue, or yellow rectangle. T
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
-**Identicality constraint** is used when two entites in the pattern must have identical assignment. Here is an example:
+**Identicality constraint** is used when two entities in the pattern must have identical assignment. Here is an example:
 
 _**Q4:** Any person whose phone received a call from a phone owned by (at least one) of his parents_
 
@@ -200,13 +200,13 @@ _**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-**Nonidenticality Constraint** is used when two entites in the pattern must have nonidentical assignments. Here is an example:
+**Nonidenticality Constraint** is used when two entities in the pattern must have nonidentical assignments. Here is an example:
 
 _**Q5:** Any person whose phone received a call from a phone owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
-Without enforcing Nonidenticality, the same parent can be assigned to both C and E. The 'C' and '≠C' tags are red - this is a visual indication that these tags are used to enforce nonidenticality.
+Without enforcing nonidenticality, the same parent can be assigned to both C and E. The 'C' and '≠C' tags are red - this is a visual indication that these tags are used to enforce nonidenticality.
 
 Here are two more examples:
 
@@ -222,7 +222,7 @@ Entity tags are also used in Q24 and Q25 below.
 
 ## Component Nonexistance
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assigment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assignment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
@@ -297,7 +297,7 @@ _**Q25:** Any of my friend's friends that isn't my friend (two versions)_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any book, that is liked by people who like some book that I like, but is not liked by me (four versions)_
+_**Q26:** Any book that is liked by people who like some book that I like, but is not liked by me (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
@@ -313,7 +313,7 @@ Here is a fourth way to represent Q26:
 
 ## E-combiner
 
-An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entitie,s and on its right side either:
+An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
 
 * A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
 * A green rectangle (entity's property value constraints / tag)
@@ -377,7 +377,7 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 
 ## Red Entities
 
-Sometimes the same relationship type can hold between diferent pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the ownder can be either a person or a company.
+Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the owner can be either a person or a company.
  
  In it simplest form, a red rectangle represents an entity of any type.
 
@@ -427,13 +427,13 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ## Paths
 
-A path connectes two entities - similar to a relationship. However, while a relationship is a direct connection between two entities, a path is an indirect connection : a path is a sequence of relationships and entities between the two entities.
+A path connects two entities - similar to a relationship. However, while a relationship is a direct connection between two entities, a path is an indirect connection : a path is a sequence of relationships and entities between the two entities.
 
 Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always larger by one than the number of entities along the path.
 
 A path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
 
-An assigment to a path consists of all the relationships and entities along the path.
+An assignment to a path consists of all the relationships and entities along the path.
 
 Here are two examples:
 
@@ -449,12 +449,12 @@ Optional constraints may be defined for the entities and relationships along the
 
 Optional relationship constraints are listed in red curly brackets above the path's line. The brackets may list:
 
-- Allowed relationship types - e.g {SMS, call}
+- Allowed relationship types - e.g. {SMS, call}
 - Constraints on the number of relationships of each allowed type - e.g. {call < 2, SMS = 2}
-- Constraints on the number of relationships of each allowed type in each directiopn - e.g. {→ call = 2, ← call = 1}
+- Constraints on the number of relationships of each allowed type in each direction - e.g. {→ call = 2, ← call = 1}
 - Disallowed relationships types constraints - e.g. {call = 0}
 
-Optional entity constraints are listed in red curly brackets belove the path's line. The brackets may list:
+Optional entity constraints are listed in red curly brackets below the path's line. The brackets may list:
 
 - Allowed entity types - e.g. {phone}
 - Constraint on the number of entities of each allowed type - e.g. {phone < 1}
@@ -494,7 +494,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ## Path Segments
 
-An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of yellow / blue / red entities and relationship types, that starts and ends with an entity. There is an 'overlap' between successive segment types:
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of yellow / blue / red entities and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
@@ -640,7 +640,7 @@ _**Q86:** Any phones pair (A, B) where the calls from A to B have a cumulative l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-_**Q87:** Any phone that was called at least once, where the cumulative calls duration is less that 100 minutes_
+_**Q87:** Any phone that was called at least once, where the cumulative calls duration is less than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
@@ -900,7 +900,7 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ## Entity Type Tag
 
-A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
+A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other red entities.
 
 Here are some examples:
 
@@ -980,11 +980,11 @@ _**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q140:** Any person who his 3 eldest sons cumilatively own vehicles with 3 colors_
+_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person who his 3 eldest sons cumilatively own vehicles with the same number of colors as his 3 younger daughters cumilatively_
+_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
@@ -1067,19 +1067,19 @@ _**Q146:** Any person who owns a red vehicle. If he has a parent - the parent wi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
 
-_**Q147:** Any person. If (s)he owns both a vehicle and a phone - they will be a part of the answer as well_
+_**Q147:** Any person. If he owns both a vehicle and a phone - they will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
 
-_**Q148:** Any person who owns both a vehicle and a phone. If (s)he has a parent - the parent will be part of the answer as well_
+_**Q148:** Any person who owns both a vehicle and a phone. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
 
-_**Q149:** Any person. If (s)he owns a vehicle - it will be a part of the answer as well. If (s)he owns a phone - it will be a part of the answer as well_
+_**Q149:** Any person. If he owns a vehicle - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
 
-_**Q150:** Any person who owns a vehicle or a phone. If (s)he has a parent - the parent will be part of the answer as well_
+_**Q150:** Any person who owns a vehicle or a phone. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
