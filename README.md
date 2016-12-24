@@ -665,11 +665,11 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 todo
 
-_**Q63:** Any person who more than 2 people are not his parents_
+_**Q63:** Any ABC's employee who more than 5 ABC's employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any phone that the number of phones that didn't call him is 5_
+_**Q64:** Any phone that didn't receive calls from phones owned by at least 5 ABC's employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
