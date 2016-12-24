@@ -681,7 +681,7 @@ _**Q65:** Anything that the number of things it doesn't own is greater than 2_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any person from whom the number of people that are not within graph distance ≤ 6 - is 5_
+_**Q66:** Any person from whom the number of people that are not within graph distance ≤ 6 - is more than 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
