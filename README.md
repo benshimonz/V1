@@ -426,24 +426,6 @@ _**Q43:** Any phone that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
-## Entity Type Tag
-
-A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
-
-Here are some examples:
-
-_**Q50:** Any person who owns (at least) two things of the same type_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
-
-_**Q51:** Any person who owns (at least) two things of different types_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
-
-_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
-
 ## Paths
 
 A path connectes two entities - similar to a relationship. However, while a relationship is a direct connection between two entities, a path is an indirect connection : a path is a sequence of relationships and entities between the two entities.
@@ -916,6 +898,30 @@ _**Q135:** Any person for whom the average model year of all vehicles owned by p
 _**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
+
+## Entity Type Tag
+
+A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constrainsts on the type of other red entities.
+
+Here are some examples:
+
+_**Q50:** Any person who owns (at least) two things of the same type_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
+
+_**Q51:** Any person who owns (at least) two things of different types_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
+
+_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
+
+## Aggregate Condition on Entity Type Tag
+
+todo
+
+todo
 
 ## Aggregation Tag #1
 
