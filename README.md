@@ -669,19 +669,19 @@ _**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any phone that the number of phones owned by ABC employees that didn't call it - is less than 5_
+_**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't call **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any phone that the number of ABC employees that own a phone that didn't call it - is less than 5_
+_**Q165:** Any **phone** that less than 5 (ABC employees that own a phone that didn't call **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
-_**Q65:** Anything that the number of things it doesn't own is greater than 2_
+_**Q65:** Anything that doesn't own more than 2 things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q66:** Any person from whom the number of people that are not within graph distance ≤ 6 - is more than 5_
+_**Q66:** Any person from whom more than 5 people are not within graph distance ≤ 6_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
