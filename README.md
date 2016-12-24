@@ -1022,6 +1022,10 @@ _**Q138:** The 4 people that the people they know cumulatively own vehicles with
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
+_**Q168:** The 3 people that own the number of types of things they own is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
+
 ## Latent and Optional Components
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
