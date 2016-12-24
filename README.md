@@ -665,15 +665,15 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 todo
 
-_**Q63:** Any ABC's employee who more than 5 ABC's employees don't know_
+_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any phone that didn't receive calls from up to 5 phones owned by ABC's employees_
+_**Q64:** Any phone that the number of phones owned by ABC employees that didn't call it - is less than 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any phone that didn't receive calls from phones owned by up to 5 ABC's employees_
+_**Q165:** Any phone that the number of ABC employees that own a phone that didn't call it - is less than 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
