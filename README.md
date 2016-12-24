@@ -180,7 +180,6 @@ _**Q10:** Any person whose first name is Lior, who owns some phone B which calle
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-
 ## Entity Tag
 
 There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an **'entity tag'**.
@@ -919,9 +918,13 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ## Aggregate Condition on Entity Type Tag
 
-todo
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG17.png)
 
 todo
+
+_**Q167:** Any person who owns things of at least 3 types_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
 ## Aggregation Tag #1
 
