@@ -464,14 +464,14 @@ _**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
-Optional constraints can be defined for the entities and relationships along the path.
+Optional constraints may be defined for the entities and relationships along the path.
 
 Optional relationship constraints are listed in red curly brackets above the path's line. The brackets may list:
 
 - Allowed relationship types - e.g {SMS, call}
 - Constraints on the number of relationships of each allowed type - e.g. {call < 2, SMS = 2}
 - Constraints on the number of relationships of each allowed type in each directiopn - e.g. {→ call = 2, ← call = 1}
-- Disallowed relationships types Constraints - e.g. {call = 0}
+- Disallowed relationships types constraints - e.g. {call = 0}
 
 Optional entity constraints are listed in red curly brackets belove the path's line. The brackets may list:
 
