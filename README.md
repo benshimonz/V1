@@ -669,11 +669,11 @@ _**Q63:** Any ABC's employee who more than 5 ABC's employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
-_**Q64:** Any phone that didn't receive calls from at least 5 phones owned by ABC's employees_
+_**Q64:** Any phone that didn't receive calls from up to 5 phones owned by ABC's employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any phone that didn't receive calls from phones owned by at least 5 ABC's employees_
+_**Q165:** Any phone that didn't receive calls from phones owned by up to 5 ABC's employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
