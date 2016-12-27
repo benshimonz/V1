@@ -900,6 +900,8 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ## Entity Type Tag
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
+
 A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other red entities.
 
 Here are some examples:
