@@ -550,7 +550,7 @@ _**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q136:** Any phone A that called phones that called phones B. The cumulative number of Bs (per A) is greater than 100  (two versions)_
+_**Q136:** Any phone A that called (phones that called phones B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
 
