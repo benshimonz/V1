@@ -826,7 +826,7 @@ _**Q123:** Any phone that either (was called) or (made a call) - at least 10 tim
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-_**Q121:** Any phone that (was called from) or (made calls to) at least 10 phones_
+_**Q121:** Any phone that (was called from) or (made a call to) at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
