@@ -810,34 +810,6 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Aggregate Condition before an 'at least one' Quantifier
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-1.png)
-
-todo
-
-_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
-_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
-
-## Aggregate Condition before Quantifier and R-Combiner
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-2.png)
-
-todo
-
-_**Q121:** Any phone that (was called from) or (made a call to) at least 10 phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
-
-_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
-
 ## Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
@@ -1148,3 +1120,31 @@ todo
 _**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
+
+## Aggregate Condition before an 'at least one' Quantifier
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-1.png)
+
+todo
+
+_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
+
+## Aggregate Condition before Quantifier and R-Combiner
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-2.png)
+
+todo
+
+_**Q121:** Any phone that (was called from) or (made a call to) at least 10 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
+
+_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
