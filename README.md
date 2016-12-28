@@ -954,10 +954,6 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
-_**Q129:** Any person, that each of his offsprings who owns at least one vehicle, owns a different number of vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
-
 ## Aggregation Tag #2
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG16.png)
@@ -978,7 +974,13 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 todo
 
-todo
+_**Q129:** Any person who each of his offsprings who owns at least one vehicle - owns a different number of vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
+
+_**Q169:** Any person each of his offsprings who owns at least one vehicle - owns vehicles with at least 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
 ## Min/Max Aggregation on Tags
 
