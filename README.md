@@ -142,10 +142,10 @@ Each branch may start with:
 
 The most useful quantifiers are:
 
-* & (all)- For each assignment to the left component - there should be at least one assignment to any right component
-* &#124; (at least one)- For each assignment to the left component - there should be at least one assignment to at least one right component
-* Crossed & (not all) - For each assignment to the left component - there should be no assignment to at least one right component
-* 0 (none) - For each assignment to the left component - there should be at no assignment to any right component
+* **All** (denoted '&') - For each assignment to the left component - there should be at least one assignment to any right component
+* **At least one** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
+* **Not all** (denoted by a crossed '&') - For each assignment to the left component - there should be no assignment to at least one right component
+* **None** (denoted '0') - For each assignment to the left component - there should be at no assignment to any right component
 
 Additional quantifiers:
 
@@ -810,7 +810,7 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Aggregate Condition before a Quantifier
+## Aggregate Condition before an 'at least one' Quantifier
 
 todo
 
