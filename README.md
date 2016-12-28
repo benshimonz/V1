@@ -984,36 +984,6 @@ _**Q128:** Any person and his 3 offspring that own vehicles with the largest num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-# Prefix Min/Max Aggregation on Tags
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
-
-todo
-
-_**Q130:** The 4 eldest people_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
-
-_**Q131:** The 4 eldest males_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
-
-_**Q132:** The 4 people who own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
-
-_**Q133:** The 4 people that the average model year of their vehicles is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
-
-_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
-
-_**Q168:** The 3 people that the number of types of things they own is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
-
 ## Latent and Optional Components
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
@@ -1120,6 +1090,36 @@ todo
 _**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
+
+# Prefix Min/Max Aggregation on Tags
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
+
+todo
+
+_**Q130:** The 4 eldest people_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
+
+_**Q131:** The 4 eldest males_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
+
+_**Q132:** The 4 people who own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
+
+_**Q133:** The 4 people that the average model year of their vehicles is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
+
+_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
+
+_**Q168:** The 3 people that the number of types of things they own is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
 ## Aggregate Condition before an 'at least one' Quantifier
 
