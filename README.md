@@ -1129,7 +1129,7 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ## Aggregate Condition before an 'at least one' Quantifier
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
 
 todo
 
@@ -1143,7 +1143,7 @@ _**Q123:** Any phone that either (was called) or (made a call) - at least 10 tim
 
 ## Aggregate Condition before Quantifier and R-Combiner
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
 
 todo
 
