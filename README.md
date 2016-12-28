@@ -970,7 +970,7 @@ _**Q139:** Any person who owns vehicles with the same number of colors as the nu
 
 todo
 
-_**Q169:** Any person who (each of his offsprings who owns at least one vehicle - owns vehicles with at least 3 colors)_
+_**Q169:** Any person who (each of his offsprings who owns at least 3 vehicles - owns vehicles with at least 3 colors)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
