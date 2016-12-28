@@ -1021,7 +1021,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
-## Split by Property
+## Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
 
@@ -1043,15 +1043,15 @@ _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the da
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-## Split by Tag
+_**Q157:** Any person who owns at most 3 vehicles with the same color - for more than 5 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
+
+## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
 todo
-
-_**Q157:** Any person who owns at most 3 vehicles with the same color - for more than 5 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
 _**Q158:** Any phone that in at least 10 days - the number of phones it called is greater than the number of phones that called it_
 
