@@ -954,36 +954,6 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-## Min/Max Aggregation on Tags
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
-
-todo
-
-_**Q118:** Any person and his 3 eldest offsprings_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
-
-_**Q119:** Any person and his 3 youngest sons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
-
-_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
-
-_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
-
-_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
-
-_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
 ## Latent and Optional Components
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
@@ -1090,6 +1060,36 @@ todo
 _**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
+
+## Min/Max Aggregation on Tags
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
+
+todo
+
+_**Q118:** Any person and his 3 eldest offsprings_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
+
+_**Q119:** Any person and his 3 youngest sons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
+
+_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
+
+_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
+
+_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
+_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
 # Prefix Min/Max Aggregation on Tags
 
