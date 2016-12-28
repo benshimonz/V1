@@ -964,7 +964,7 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-## Min/Max Aggregation on Property Tag
+## Min/Max Aggregation on Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG10.png)
 
@@ -990,15 +990,11 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Min/Max Aggregation on Aggregation Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15.png)
-
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-# Prefix Min/Max Aggregation
+# Prefix Min/Max Aggregation on Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
 
