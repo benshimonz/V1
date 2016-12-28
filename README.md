@@ -1063,7 +1063,7 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 todo
 
-_**Q159:** Any phones for which there are more days where (the number of phones it called is greater than the number of phones that called it) than days where (the number of phones that called it is greater than the number of phones it called)_
+_**Q159:** Any **phone** for which there are more days where (the number of phones **it** called is greater than the number of phones that called **it**) than days where (the number of phones that called **it** is greater than the number of phones **it** called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
