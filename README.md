@@ -1021,7 +1021,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
-## Split
+## Split by Property
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
 
@@ -1042,6 +1042,12 @@ _**Q155:** Any phone that in at least 11 days called more than 100 minutes cumul
 _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the days it called more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
+
+## Split by Tag
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
+
+todo
 
 _**Q157:** Any person who owns at most 3 vehicles with the same color - for more than 5 colors_
 
@@ -1123,7 +1129,7 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ## Aggregate Condition before an 'at least one' Quantifier
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
 
 todo
 
@@ -1137,7 +1143,7 @@ _**Q123:** Any phone that either (was called) or (made a call) - at least 10 tim
 
 ## Aggregate Condition before Quantifier and R-Combiner
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
 
 todo
 
