@@ -1127,20 +1127,6 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
-## Aggregate Condition before an 'at least one' Quantifier
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
-
-todo
-
-_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
-_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
-
 ## Aggregate Condition before Quantifier and R-Combiner
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
@@ -1154,3 +1140,17 @@ _**Q121:** Any phone that (was called from) or (made a call to) at least 10 phon
 _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
+
+## Aggregate Condition before an '|' Quantifier
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
+
+todo
+
+_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
