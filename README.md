@@ -812,19 +812,23 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ## Aggregate Condition before an 'at least one' Quantifier
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-1.png)
+
 todo
 
 _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-## Aggregate Condition before Quantifier and R-Combiner
-
-todo
-
 _**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
+
+## Aggregate Condition before Quantifier and R-Combiner
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15-2.png)
+
+todo
 
 _**Q121:** Any phone that (was called from) or (made a call to) at least 10 phones_
 
@@ -967,6 +971,14 @@ _**Q139:** Any person who owns vehicles with the same number of colors as the nu
 _**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
+
+## Aggregate Condition on Aggregation Tag
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG18.png)
+
+todo
+
+todo
 
 ## Min/Max Aggregation on Tags
 
