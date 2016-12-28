@@ -1023,7 +1023,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ## Split
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
 
 todo
 
@@ -1053,7 +1053,7 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 ## Split Tag
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
 todo
 
