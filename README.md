@@ -990,14 +990,6 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Min/Max Aggregation on Entity Type Tag
-
-todo
-
-todo
-
-todo
-
 ## Min/Max Aggregation on Aggregation Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15.png)
