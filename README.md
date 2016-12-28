@@ -405,7 +405,7 @@ _**Q38:** Any person who owns something which is not a vehicle nor a phone_
 
 Even when a red entity is on either side of an 'X' - the entity's type is constrained by relationship types. Here are some examples:
 
-_**Q39:** Anything that can own something, but doesn't_
+_**Q39:** Anything that can own a phone, but doesn't_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q039.png)
 
@@ -413,7 +413,7 @@ _**Q40:** Any phone that has no owner_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q040.png)
 
-_**Q41:** Anything that can be owned, and is not owned_
+_**Q41:** Anything that can be owned, but is not owned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q041.png)
 
@@ -572,7 +572,7 @@ _**Q101:** Any person who owns at least 10 red vehicles_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
-_**Q102:** Any phone that was called from at least 2 phones; each of these was called from at least one phone_
+_**Q102:** Any phone that was called from at least 2 phones; each of these 2 phones was called from at least one phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
@@ -602,15 +602,15 @@ _**Q74:** Any phone that the number of times it was called (cumulatively) is not
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
-_**Q75:** Any phones pair (A, B) where A was called between 8 to 10 times from B_
+_**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
-_**Q76:** Any phone that called between 8 to 10 times to 052-333-4444_
+_**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to some person_
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
@@ -626,7 +626,7 @@ _**Q104:** Any person who owned red vehicles at least 10 times (same or differen
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any phone A that was called 2 times (cumulatively) from phones that each was called from at least one phone_
+_**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phones that each was called from at least one phone)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
@@ -636,11 +636,11 @@ _**Q105:** Any phone A that was called 2 times (cumulatively) from phones that e
 
 todo
 
-_**Q86:** Any phones pair (A, B) where the calls from A to B have a cumulative length of more than 100 minutes_
+_**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-_**Q87:** Any phone that was called at least once, where the cumulative calls duration is less than 100 minutes_
+_**Q87:** Any phone that was called at least once, and the cumulative incoming calls duration is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
@@ -658,7 +658,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 todo
 
-_**Q63:** Any ABC employee who more than 5 (ABC employees don't know)_
+_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
@@ -696,7 +696,7 @@ _**Q69:** The 2 things that own the largest number of things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
 
-_**Q70:** The 5 people, that the number of people within graph distance ≤ 4 from them, is the smallest_
+_**Q70:** The 5 people that the number of people within graph distance ≤ 4 from them - is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
@@ -706,7 +706,7 @@ _**Q70:** The 5 people, that the number of people within graph distance ≤ 4 fr
 
 todo
 
-_**Q77:** The 5 phone pairs (A, B) where the number of calls from B to A is the largest_
+_**Q77:** The 5 phone pairs (A, B) with the largest number of calls from B to A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
@@ -778,7 +778,7 @@ _**Q96:** Any phone that received at least 10 (< 10 minutes calls) after 1/1/201
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q97:** Any phone that called at least 3 phones. For each callee, more than 10 calls, or calls with total duration of > 100 minutes_
+_**Q97:** Any phone that called at least 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
@@ -862,19 +862,20 @@ _**Q116:** Any person who owns vehicles with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person for whom the average model year of his owned vehicles is greater than 2010_
+_**Q117:** Any person whose owned vehicles have an average model year greater than 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q134:** Any person for whom the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
+_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
+Any person whose know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person for whom the average model year of all vehicles owned by people he knows - is at least 2010_
+_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
-_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all the calls that all these B phones made is more than 100 minutes_
+_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all calls that all these B phones made is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
