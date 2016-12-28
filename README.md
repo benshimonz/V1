@@ -970,13 +970,13 @@ _**Q139:** Any person who owns vehicles with the same number of colors as the nu
 
 todo
 
-_**Q129:** Any person who each of his offsprings who owns at least one vehicle - owns a different number of vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
-
 _**Q169:** Any person each of his offsprings who owns at least one vehicle - owns vehicles with at least 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
+
+_**Q129:** Any person who each of his offsprings who owns at least one vehicle - owns a different number of vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
 _**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
 
