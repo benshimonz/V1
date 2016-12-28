@@ -319,7 +319,7 @@ An E-combiner combines two or more branches (not necessarily of the same quantif
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
-The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar, used to save duplication when several branches terminates identically.
+The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar used to save duplication when several branches terminates identically.
 
 The relationship / property types on an E-combiner's right side must match all the entity types on its left side. 
 
