@@ -710,7 +710,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-_**Q171:** The 2 phones that called the largest number of times_
+_**Q171:** The 2 phones that were called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
 
