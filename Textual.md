@@ -30,11 +30,10 @@
 
 For each V1 element:
 
-* [M] **Eno** - The element number. distinct integer value for each element
-* [M] **Type** - String - the element type
-
-[M] indicates mandatory element
-[O] indicates optional element
+|Mandatory| name      | type   | description
+|---------|-----------|--------| ------
+| +       | Eno       | int    | element number. distinct value for each element
+| +       | Type      | string | JSON element type
 
 **TODO**: add entity tag inequalities
 
@@ -42,19 +41,20 @@ For each V1 element:
 
 There must be a single element with type 'Start'. Its Eno must equal to 1.
 
-* [M] **R** - Eno of the element on the right
- * Valid element types: Yellow, Blue, Red, Quant
-* [O] **B** - Eno of the element on the below
- * Valid element types: Agg
+|Mandatory| name      | type   | description
+|---------|-----------|--------| ------
+| +       | R         | int    | Eno of the element on the right. Valid element types: Yellow, Blue, Red, Quant
+|         | B         | int    | Eno of the element on the below. Valid element types: Agg
 
 ## E2: Yellow entity (Type = 'Yellow')
 
-* [M] **EID**   - Technical ID of the entity
-* [M] **EType** - Type of the entity (e.g. 'Person')
-* [M] **EName** - Display name of the entity (e.g. 'Lior Kogan')
-* [M] **Tag**   - Entity tag (e.g. 'A')
-* [O] **R**     - Eno of the element on the right
- * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|Mandatory| name      | type   | description
+|---------|-----------|--------| ------
+| +       | EID       | int    | Technical ID of the entity
+| +       | EType     | string | Type of the entity (e.g. 'Person')
+| +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
+| +       | Tag       | string | Entity tag (e.g. 'A')
+|         | R         | int    | Eno of the element on the right. Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E3: blue entity (Type = 'Blue')
 
