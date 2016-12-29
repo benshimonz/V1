@@ -43,8 +43,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of the element on the right.  Valid element types: Yellow, Blue, Red, Quant
-|         | B         | int    | Eno of the element on the below.  Valid element types: Agg
+| +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: Agg
 
 ## E2: Yellow entity (Type = 'Yellow')
 
@@ -54,7 +54,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | EType     | string | Type of the entity (e.g. 'Person')
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E3: blue entity (Type = 'Blue')
 
@@ -62,7 +62,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | EType     | string | Type of the entity (e.g. 'Person')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  <br/> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E4: red entity (Type = 'Red')
 
@@ -74,52 +74,103 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 ## E5: relationship (Type = 'Rel')
 
-* [O] **B** - Eno of the element on the below
- * Valid element types: RelProp, Agg
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, Agg
 
 ## E6: Entity's property (Type = 'EntProp') 
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E7: relationship's Property (Type = 'RelProp')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E8: Quantifier (Type = 'Quant')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E9: no-existance (Type = 'NoExis')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E10: no-connection (Type = 'NoConnect')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E11: E-Combiner (Type = 'EComb')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E12: R-Combiner (Type = 'RComb')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E13: Path (Type = 'Path') 
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E14: Path segment (Type = 'PathSeg')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E15: Horizontal quantifier (Type = 'HQuant')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E16: Horizontal combiner (Type = 'HComb')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E17: Latent (Type = 'Latent')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E18: Optional (Type = 'Optional')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E19: Split by (Type = 'SplitBy')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E20: Splits (Type = 'Splits')
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+|         |           |        |
 
 ## E21: Aggregate (Type = 'Agg')
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
