@@ -55,7 +55,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | EID       | int    | Technical ID of the entity
-| +       | EType     | int    | Type of the entity (e.g. of 'Person') <br> According to the ontology
+| +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
@@ -64,7 +64,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | EType     | string | Type of the entity (e.g. of 'Person') <br> According to the ontology
+| +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | Tag       | string | Entity tag (e.g. 'A')
 |         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
 
@@ -81,7 +81,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | RType     | string | Type of the relationship (e.g. of 'own') <br> According to the ontology
+| +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | Dir       | int    | 0: non-directional, 1: Arrow pointing right, 2: Arrow pointing left
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
 |         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, Agg
@@ -90,13 +90,18 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+|         | Tag       | string | Property tag (e.g. '1')
+|         | Cond      | string | condition
 
 ## E7: relationship's Property (Type = 'RelProp')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+|         | Tag       | string | Property tag (e.g. '1')
+|         | Cond      | string | condition
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: HQuant, HComb, Agg
 
 ## E8: Quantifier (Type = 'Quant')
 
