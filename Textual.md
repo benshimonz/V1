@@ -30,18 +30,93 @@
 
 For each V1 element:
 
-* Eno -  Mandatory JSON property for each V1 element type - The element number. distinct integer value for each element
-* Type - Mandatory JSON property for each V1 element type - String - the element type
+* [M] **Eno** - The element number. distinct integer value for each element
+* [M] **Type** - String - the element type
+
+[M] indicates mandatory element
+[O] indicates optional element
+
+**TODO**: add entity tag inequalities
+
+## E1: Query start (Type = 'Start')
 
 There must be a single element with type 'Start'. Its Eno must equal to 1.
 
-## Query start
+* [M] **R** - Eno of the element on the right
+ * Valid element types: Yellow, Blue, Red, Quant
+* [O] **B** - Eno of the element on the below
+ * Valid element types: Agg
 
-* **R** - Mandatory JSON property - Eno of the element of the right
-* **A** - Optional JSON property - optional Min/Max aggregate
+## E2: Yellow entity (Type = 'Yellow')
 
-## Yellow entity
+* [M] **EID**   - Technical ID of the entity
+* [M] **EType** - Type of the entity (e.g. 'Person')
+* [M] **EName** - Display name of the entity (e.g. 'Lior Kogan')
+* [M] **Tag**   - Entity tag (e.g. 'A')
+* [O] **R**     - Eno of the element on the right
+ * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
-* **R** - Optional JSON property - the Eno of the element on the right. 
- * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, 
-* **UID** - 
+## E3: blue entity (Type = 'Blue')
+
+* [M] **EType** - Type of the entity (e.g. 'Person')
+* [M] **Tag**   - Entity tag (e.g. 'A')
+* [O] **R**     - Eno of the element on the right
+ * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+
+## E4: red entity (Type = 'Red')
+
+* [M] **Tag**   - Entity tag (e.g. 'A')
+* [O] **R**     - Eno of the element on the right
+ * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+
+## E5: relationship (Type = 'Rel')
+
+* [O] **B** - Eno of the element on the below
+ * Valid element types: RelProp, Agg
+
+## E6: Entity's property (Type = 'EntProp') 
+
+
+## E7: relationship's Property (Type = 'RelProp')
+
+
+## E8: Quantifier (Type = 'Quant')
+
+
+## E9: no-existance (Type = 'NoExis')
+
+
+## E10: no-connection (Type = 'NoConnect')
+
+
+## E11: E-Combiner (Type = 'EComb')
+
+
+## E12: R-Combiner (Type = 'RComb')
+
+
+## E13: Path (Type = 'Path') 
+
+
+## E14: Path segment (Type = 'PathSeg')
+
+
+## E15: Horizontal quantifier (Type = 'HQuant')
+
+
+## E16: Horizontal combiner (Type = 'HComb')
+
+
+## E17: Latent (Type = 'Latent')
+
+
+## E18: Optional (Type = 'Optional')
+
+
+## E19: Split by (Type = 'SplitBy')
+
+
+## E20: Splits (Type = 'Splits')
+
+
+## E21: Aggregate (Type = 'Agg')
