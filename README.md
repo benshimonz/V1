@@ -774,7 +774,7 @@ _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q95:** Any phone that received at least 5 (> 10 minutes calls) with a total duration of > 100 minutes from 052-333-4444_
+_**Q95:** Any phone that received more than 5 (> 10 minutes calls) with a total duration of > 100 minutes from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095.png)
 
