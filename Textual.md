@@ -43,8 +43,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| name      | type   | description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of the element on the right. Valid element types: Yellow, Blue, Red, Quant
-|         | B         | int    | Eno of the element on the below. Valid element types: Agg
+| +       | R         | int    | Eno of the element on the right.  Valid element types: Yellow, Blue, Red, Quant
+|         | B         | int    | Eno of the element on the below.  Valid element types: Agg
 
 ## E2: Yellow entity (Type = 'Yellow')
 
@@ -54,20 +54,23 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | EType     | string | Type of the entity (e.g. 'Person')
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E3: blue entity (Type = 'Blue')
 
-* [M] **EType** - Type of the entity (e.g. 'Person')
-* [M] **Tag**   - Entity tag (e.g. 'A')
-* [O] **R**     - Eno of the element on the right
- * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|Mandatory| name      | type   | description
+|---------|-----------|--------| ------
+| +       | EType     | string | Type of the entity (e.g. 'Person')
+| +       | Tag       | string | Entity tag (e.g. 'A')
+|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E4: red entity (Type = 'Red')
 
-* [M] **Tag**   - Entity tag (e.g. 'A')
-* [O] **R**     - Eno of the element on the right
- * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|Mandatory| name      | type   | description
+|---------|-----------|--------| ------
+| +       | Tag       | string | Entity tag (e.g. 'A')
+|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | VTypes    | string | Valid entity types TODO
 
 ## E5: relationship (Type = 'Rel')
 
