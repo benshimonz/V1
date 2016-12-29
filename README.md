@@ -778,6 +778,8 @@ _**Q95:** Any phone that received more than 5 (> 10 minutes calls) with a total 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095.png)
 
+Note that the two 'per pair' conditions could be chained instead - the meaning would be similar.
+
 _**Q96:** Any phone that received more than 10 (< 10 minutes calls) after 1/1/2010 from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
