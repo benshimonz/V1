@@ -614,7 +614,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to persons_
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to other persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
