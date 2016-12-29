@@ -32,11 +32,11 @@
 |---------|-----------|--------| ------
 | +       | Ont       | string | Ontology name
 
-For each V1 element:
+**For each V1 element:**
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Eno       | int    | element number. distinct value for each element
+| +       | Eno       | int    | Element number. Distinct value for each element
 | +       | Type      | string | JSON element type
 
 **TODO**: add entity tag inequalities
