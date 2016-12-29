@@ -782,11 +782,11 @@ _**Q96:** Any phone that received more than 10 (< 10 minutes calls) after 1/1/20
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q97:** Any phone that called at least 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
+_**Q97:** Any phone that called more than 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
-_**Q98:** First, pass phones A that called at least 3 phones. Then, pass phone pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
+_**Q98:** First, pass phones A that called more than 3 phones. Then, pass phone pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
