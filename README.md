@@ -367,6 +367,10 @@ _**Q32:** Any phones pair (A, B) where A SMSed B, and A SMSed some phone that SM
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
+_**Q170:** Any phones triplet (A, B, D) where A SMSed B, A SMSed some phone that SMSed B, B called D, and B called some phone that called D_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q170.png)
+
 _**Q33:** Any phone A that called some phone B, called some phone that called B, and SMSed some phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q033.png)
