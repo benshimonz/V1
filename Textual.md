@@ -2,8 +2,7 @@
 
 ## V1 Element types
 
-|   | JSON type | V1 element type         | visual representation
-|   | property  |                         |
+|   | JSON type property | V1 element type         | visual representation
 |---|-----------|-------------------------|----------------------
 |1  | Start     | query start             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element01.png)
 |2  | Yellow    | yellow entity           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element02.png)
@@ -38,11 +37,11 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 ## Query start
 
-* R - Mandatory JSON property - Eno of the element of the right
-* A - Optional JSON property - optional Min/Max aggregate
+* **R** - Mandatory JSON property - Eno of the element of the right
+* **A** - Optional JSON property - optional Min/Max aggregate
 
 ## Yellow entity
 
-* R - Optional JSON property - the Eno of the element on the right. 
+* **R** - Optional JSON property - the Eno of the element on the right. 
  * Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, 
-* UID - 
+* **UID** - 
