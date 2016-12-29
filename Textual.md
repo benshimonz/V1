@@ -58,7 +58,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | EType     | int    | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
 
 ## E3: Blue Entity (Type = 'Blue')
 
@@ -66,23 +66,25 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | EType     | string | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
-|         | VTypes    | [int]  | Valid entity types <br> According to the ontology
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
+|         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
 ## E5: Relationship (Type = 'Rel')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, Agg
+| +       | RType     | string | Type of the relationship (e.g. of 'own') <br> According to the ontology
+| +       | Dir       | int    | 0: non-directional, 1: Arrow pointing right, 2: Arrow pointing left
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, Agg
 
 ## E6: Entity's Property (Type = 'EntProp') 
 
