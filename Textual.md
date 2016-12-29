@@ -1,4 +1,4 @@
-## V1 pattern textual representation
+## V1 Pattern Textual Representation
 
 ## V1 Element types
 
@@ -28,6 +28,10 @@
 
 ## JSON structure
 
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+| +       | Ont       | string | Ontology name
+
 For each V1 element:
 
 |Mandatory| Name      | Type   | Description
@@ -37,7 +41,7 @@ For each V1 element:
 
 **TODO**: add entity tag inequalities
 
-## E1: Query start (Type = 'Start')
+## E1: Query Start (Type = 'Start')
 
 There must be a single element with type 'Start'. Its Eno must equal to 1.
 
@@ -46,40 +50,41 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
 |         | B         | int    | Eno of the element on the below. <br> Valid element types: Agg
 
-## E2: Yellow entity (Type = 'Yellow')
+## E2: Yellow Entity (Type = 'Yellow')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | EID       | int    | Technical ID of the entity
-| +       | EType     | string | Type of the entity (e.g. 'Person')
+| +       | EType     | int    | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
-## E3: blue entity (Type = 'Blue')
+## E3: Blue Entity (Type = 'Blue')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | EType     | string | Type of the entity (e.g. 'Person')
+| +       | EType     | string | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | Tag       | string | Entity tag (e.g. 'A')
 |         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
-## E4: red entity (Type = 'Red')
+## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Tag       | string | Entity tag (e.g. 'A')
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
-|         | VTypes    | string | Valid entity types TODO
+|         | VTypes    | [int]  | Valid entity types <br> According to the ontology
+|         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
-## E5: relationship (Type = 'Rel')
+## E5: Relationship (Type = 'Rel')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 |         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, Agg
 
-## E6: Entity's property (Type = 'EntProp') 
+## E6: Entity's Property (Type = 'EntProp') 
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -97,13 +102,13 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E9: no-existance (Type = 'NoExis')
+## E9: No-existance (Type = 'NoExis')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E10: no-connection (Type = 'NoConnect')
+## E10: No-connection (Type = 'NoConnect')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -127,19 +132,19 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E14: Path segment (Type = 'PathSeg')
+## E14: Path Segment (Type = 'PathSeg')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E15: Horizontal quantifier (Type = 'HQuant')
+## E15: Horizontal Quantifier (Type = 'HQuant')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E16: Horizontal combiner (Type = 'HComb')
+## E16: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -170,6 +175,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |         |           |        |
 
 ## E21: Aggregate (Type = 'Agg')
+
 |Mandatory| Name      | Type   | Description
 
 |---------|-----------|--------| ------
