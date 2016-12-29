@@ -12,7 +12,7 @@
 |6  | EntProp   | Entity's property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
 |7  | RelProp   | relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
 |8  | Quant     | Quantifier              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
-|9  | NoExis    | no-existance            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
+|9  | NoExist   | no-existance            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
 |10 | NoConnect | no-connection           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
 |11 | EComb     | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
 |12 | RComb     | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
@@ -58,7 +58,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | EType     | int    | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
 
 ## E3: Blue Entity (Type = 'Blue')
 
@@ -66,14 +66,14 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | EType     | string | Type of the entity (e.g. of 'Person') <br> According to the ontology
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
@@ -104,7 +104,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E9: No-existance (Type = 'NoExis')
+## E9: No-existance (Type = 'NoExist')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
