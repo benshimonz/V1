@@ -30,7 +30,7 @@
 
 For each V1 element:
 
-|Mandatory| name      | type   | description
+|Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Eno       | int    | element number. distinct value for each element
 | +       | Type      | string | JSON element type
@@ -41,14 +41,14 @@ For each V1 element:
 
 There must be a single element with type 'Start'. Its Eno must equal to 1.
 
-|Mandatory| name      | type   | description
+|Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | R         | int    | Eno of the element on the right.  Valid element types: Yellow, Blue, Red, Quant
 |         | B         | int    | Eno of the element on the below.  Valid element types: Agg
 
 ## E2: Yellow entity (Type = 'Yellow')
 
-|Mandatory| name      | type   | description
+|Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | EID       | int    | Technical ID of the entity
 | +       | EType     | string | Type of the entity (e.g. 'Person')
@@ -58,18 +58,18 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 ## E3: blue entity (Type = 'Blue')
 
-|Mandatory| name      | type   | description
+|Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | EType     | string | Type of the entity (e.g. 'Person')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right.  <br/> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 
 ## E4: red entity (Type = 'Red')
 
-|Mandatory| name      | type   | description
+|Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExis, NoConnect, EComb, Path
 |         | VTypes    | string | Valid entity types TODO
 
 ## E5: relationship (Type = 'Rel')
