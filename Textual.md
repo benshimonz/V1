@@ -1,4 +1,4 @@
-## V1 Pattern Textual Representation
+## V1 Patterns - Textual Representation
 
 ## V1 Element types
 
