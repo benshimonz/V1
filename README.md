@@ -706,6 +706,20 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 ## Min/Max Aggregation #2
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15.png)
+
+todo
+
+_**Q171:** The 2 phones that called the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
+
+_**Q172:** The 5 people with the largest number of paths with length ≤ 4 to some person_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
+
+## Min/Max Aggregation #3
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
 
 todo
@@ -722,7 +736,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Min/Max Aggregation #3
+## Min/Max Aggregation #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
 
@@ -736,7 +750,7 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-## Min/Max Aggregation #4
+## Min/Max Aggregation #5
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG08.png)
 
