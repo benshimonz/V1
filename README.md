@@ -589,6 +589,121 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
+
+----------
+
+## L1C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
+
+59-62,136,81-82,85,101-102, 166,*113-115*,121-122
+63-66,165
+
+## L2C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
+
+71-74,83,104-105,123-124
+79,84
+
+## LA3C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
+
+87-89
+
+## LA4C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
+
+116-117, 134-135,137,167,139-140
+
+## D2C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
+
+75-76
+
+## DA3C Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
+
+86
+
+## LRM1 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
+
+None
+
+## PRM1 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
+
+67-69
+70
+
+## LRM2 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
+
+None
+
+## PRM2 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
+
+171
+172
+
+## LRMA3 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
+
+None
+
+## LRM4 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
+
+118-120
+
+## PRM4 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
+
+91-92,130-133,138,168
+
+## DM2 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
+
+77-78
+80
+
+## DMA3 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
+
+90
+
+## LDM3 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
+
+161
+
+## DDM3 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
+
+160
+
+----------
+
+
+
+
 ## Aggregate Condition #1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG01.png)
