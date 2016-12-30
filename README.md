@@ -379,6 +379,63 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
+## Latent and Optional Components
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
+
+Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
+
+- 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
+- 'X' may not appear directly after an 'L'
+- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'L' is meaningless anyway
+
+Here are two examples:
+
+_**Q142:** Any person who owns a red vehicle, and has a parent who owns a vehicle. The parent and his vehicle are not part of the answer_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
+
+_**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
+
+Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
+
+- 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
+- 'O' may not appear (directly or indirectly) after an 'L'
+- 'X' may not appear directly after an 'O'
+- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'O' is meaningless anyway
+
+Here are some examples:
+
+_**Q144:** Any person who owns a red vehicle. If he has a parent who owns a vehicle - the parent and his vehicle will be part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q144.png)
+
+_**Q145:** Any person who owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q145.png)
+
+_**Q146:** Any person who owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
+
+_**Q147:** Any person. If he owns both a vehicle and a phone - they will be a part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
+
+_**Q148:** Any person who owns both a vehicle and a phone. If he has a parent - the parent will be part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
+
+_**Q149:** Any person. If he owns a vehicle - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
+
+_**Q150:** Any person who owns a vehicle or a phone. If he has a parent - the parent will be part of the answer as well_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
+
 ## Red Entities
 
 Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the owner can be either a person or a company.
@@ -975,62 +1032,7 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-## Latent and Optional Components
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB07.png)
-
-Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
-
-- 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'X' may not appear directly after an 'L'
-- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'L' is meaningless anyway
-
-Here are two examples:
-
-_**Q142:** Any person who owns a red vehicle, and has a parent who owns a vehicle. The parent and his vehicle are not part of the answer_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
-
-_**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
-
-Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
-
-- 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'O' may not appear (directly or indirectly) after an 'L'
-- 'X' may not appear directly after an 'O'
-- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'O' is meaningless anyway
-
-Here are some examples:
-
-_**Q144:** Any person who owns a red vehicle. If he has a parent who owns a vehicle - the parent and his vehicle will be part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q144.png)
-
-_**Q145:** Any person who owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q145.png)
-
-_**Q146:** Any person who owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
-
-_**Q147:** Any person. If he owns both a vehicle and a phone - they will be a part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
-
-_**Q148:** Any person who owns both a vehicle and a phone. If he has a parent - the parent will be part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
-
-_**Q149:** Any person. If he owns a vehicle - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
-
-_**Q150:** Any person who owns a vehicle or a phone. If he has a parent - the parent will be part of the answer as well_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
+## Latent / Optional Components and aggregate conditions
 
 The following examples combines 'L' and 'O' with aggregate conditions:
 
