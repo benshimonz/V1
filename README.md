@@ -771,7 +771,7 @@ _**Q171:** The 2 phones that were called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
 
-_**Q172:** The 5 people with the largest number of paths with length ≤ 4 to some person_
+_**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to some person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
