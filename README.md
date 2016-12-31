@@ -932,14 +932,6 @@ _**Q119:** Any person and his 3 youngest sons_
 
 todo
 
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
-
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
-
 _**Q130:** The 4 eldest people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
@@ -947,6 +939,14 @@ _**Q130:** The 4 eldest people_
 _**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
+
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
 _**Q132:** The 4 people who own vehicles with the largest number of colors_
 
@@ -1012,16 +1012,6 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
-----------
-
-## Min/Max Aggregation #4
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
-
-todo
-
-
-
 ## Aggregation Chain
 
 todo
@@ -1084,7 +1074,6 @@ _**Q128:** Any person and his 3 offspring that own vehicles with the largest num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-
 ## Aggregation Sequence
 
 todo
@@ -1100,12 +1089,6 @@ _**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that 
 _**Q107:** Any phone that (the number of phones owned by 5 people each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
-
-## Aggregate Condition on Aggregation Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG18.png)
-
-todo
 
 _**Q169:** Any person who (each of his offsprings who owns at least 3 vehicles - owns vehicles with at least 3 colors)_
 
