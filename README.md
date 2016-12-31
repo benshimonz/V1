@@ -685,6 +685,10 @@ _**Q102:** Any phone that was called from at least 2 phones; each of these 2 pho
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
+_**Q166:** Any **phone** that more than 5 ABC employees own a phone that called **it**_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
+
 _**Q113:** Any person who knows at least 5 people with a birth data similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
@@ -696,10 +700,6 @@ _**Q114:** Any person who owns more than 5 vehicles with the same color_
 _**Q115:** Any person who owns more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
-
-_**Q166:** Any **phone** that more than 5 ABC employees own a phone that called **it**_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
 
 _**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
