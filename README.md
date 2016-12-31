@@ -701,6 +701,14 @@ _**Q115:** Any person who owns more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
+_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
+
+_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
+
 _**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
@@ -762,6 +770,10 @@ _**Q104:** Any person who owned red vehicles at least 10 times (same or differen
 _**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phones that each was called from at least one phone)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
+
+_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
 123-124
 
@@ -914,22 +926,6 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
-
-_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
-
-_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
-
-_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
 ## Prefix Min/Max Aggregation #4 (PRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
@@ -1072,6 +1068,23 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
+_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
+
+_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
+
+_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
+_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
+
+
 ## Aggregation Sequence
 
 todo
@@ -1087,24 +1100,6 @@ _**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that 
 _**Q107:** Any phone that (the number of phones owned by 5 people each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
-
-## Aggregation Tag #1
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG11.png)
-
-todo
-
-_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
-
-_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
-
-_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
 ## Aggregate Condition on Aggregation Tag
 
