@@ -689,6 +689,18 @@ _**Q166:** Any **phone** that more than 5 ABC employees own a phone that called 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
 
+_**Q113:** Any person who knows at least 5 people with a birth data similar to his_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
+
+_**Q114:** Any person who owns more than 5 vehicles with the same color_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
+
+_**Q115:** Any person who owns more than 5 vehicles since the same date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
+
 _**Q63:** Any ABC employee who more than 5 ABC employees don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
@@ -1063,22 +1075,6 @@ _**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that 
 _**Q107:** Any phone that (the number of phones owned by 5 people each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
-
-## Aggregations and Property Tag
-
-todo
-
-_**Q113:** Any person who knows at least 5 people with a birth data similar to his_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
-
-_**Q114:** Any person who owns more than 5 vehicles with the same color_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
-
-_**Q115:** Any person who owns more than 5 vehicles since the same date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
 ## Aggregation Tag #1
 
