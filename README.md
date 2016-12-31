@@ -589,12 +589,57 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
+## Property Tag
 
-----------
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
+
+todo
+
+_**Q108:** Any person who has the same birth-date as Lior Kogan_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
+
+_**Q109:** Any person who his parent owned a vehicle and a phone prior to his birth_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
+
+_**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in chronological order, and their owners_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
+
+_**Q111:** Any person who doesn't know someone with a birth date similar to his_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
+
+_**Q112:** Any person who owned a vehicle and a phone in the same time frames_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
+
+## Entity Type Tag
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
+
+A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other red entities.
+
+Here are some examples:
+
+_**Q50:** Any person who owns (at least) two things of the same type_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
+
+_**Q51:** Any person who owns (at least) two things of different types_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
+
+_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
 ## Aggregate Condition #1 (L1C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
+
+todo
 
 *113-115*,121-122
 
@@ -668,6 +713,8 @@ _**Q66:** Any person from whom more than 5 people are not within graph distance 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
+todo
+
 _**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
@@ -710,6 +757,8 @@ _**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
+todo
+
 _**Q87:** Any phone that was called at least once, and the cumulative incoming calls duration is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
@@ -722,15 +771,46 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-## Aggregate Condition #4 (LA4C) - On Property Tag
+## Aggregate Condition #4 (LA4C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
-116-117, 134-135,137,167,139-140
+todo
+
+_**Q116:** Any person who owns vehicles with no more than 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
+
+_**Q117:** Any person whose owned vehicles have an average model year greater than 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
+
+_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
+Any person whose know
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
+
+_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
+
+_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all calls that all these B phones made is greater than 100 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
+
+_**Q139:** Any person who owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
+
+_**Q167:** Any person who owns things of at least 3 types_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
 ## Aggregate Condition #5 (D2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
+
+todo
 
 _**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
 
@@ -967,32 +1047,6 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-## Property Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
-
-todo
-
-_**Q108:** Any person who has the same birth-date as Lior Kogan_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
-
-_**Q109:** Any person who his parent owned a vehicle and a phone prior to his birth_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
-
-_**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in chronological order, and their owners_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
-
-_**Q111:** Any person who doesn't know someone with a birth date similar to his_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
-
-_**Q112:** Any person who owned a vehicle and a phone in the same time frames_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
-
 ## Aggregations and Property Tag
 
 todo
@@ -1008,63 +1062,6 @@ _**Q114:** Any person who owns more than 5 vehicles with the same color_
 _**Q115:** Any person who owns more than 5 vehicles since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
-
-## Aggregate Condition on Property Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG09.png)
-
-todo
-
-_**Q116:** Any person who owns vehicles with no more than 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
-
-_**Q117:** Any person whose owned vehicles have an average model year greater than 2010_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
-
-_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
-Any person whose know
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
-
-_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
-
-_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all calls that all these B phones made is greater than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
-
-## Entity Type Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
-
-A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other red entities.
-
-Here are some examples:
-
-_**Q50:** Any person who owns (at least) two things of the same type_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q050.png)
-
-_**Q51:** Any person who owns (at least) two things of different types_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
-
-_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
-
-## Aggregate Condition on Entity Type Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG17.png)
-
-todo
-
-_**Q167:** Any person who owns things of at least 3 types_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
 ## Aggregation Tag #1
 
@@ -1083,16 +1080,6 @@ _**Q126:** Any phone that the number of phones it called is greater than the num
 _**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
-
-## Aggregation Tag #2
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG16.png)
-
-todo
-
-_**Q139:** Any person who owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
 ## Aggregate Condition on Aggregation Tag
 
