@@ -592,43 +592,161 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ----------
 
-## L1C Aggregation
+## Aggregate Condition #1 (L1C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
-59-62,136,81-82,85,101-102, 166,*113-115*,121-122
-63-66,165
+*113-115*,121-122
 
-## L2C Aggregation
+_**Q59:** Any person having more than 2 parents_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
+
+_**Q60:** Any phone that was called from exactly 5 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
+
+_**Q61:** Anything that owns more than 2 things_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
+
+_**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
+
+_**Q136:** Any phone A that called (phones that called phones B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-2.png)
+
+_**Q81:** Any phone that didn't call (0 callees)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
+
+_**Q82:** Any phone that wasn't called (0 callers)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
+
+_**Q85:** Any phone that called at least 10 phones, and was called from at least 10 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
+
+_**Q101:** Any person who owns at least 10 red vehicles_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
+
+_**Q102:** Any phone that was called from at least 2 phones; each of these 2 phones was called from at least one phone_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
+
+_**Q166:** Any **phone** that more than 5 ABC employees own a phone that called **it**_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
+
+_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
+
+_**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
+
+_**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't call **it**_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
+
+_**Q165:** Any **phone** that less than 5 (ABC employees own a phone that didn't call **it**)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
+
+_**Q66:** Any person from whom more than 5 people are not within graph distance ≤ 6_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
+
+## Aggregate Condition #2 (L2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
-71-74,83,104-105,123-124
-79,84
+_**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
-## LA3C Aggregation
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
+
+_**Q72:** Any phone that was called exactly 10 times (cumulatively)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
+
+_**Q73:** Any phone that made no more than 10 calls (cumulatively)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
+
+_**Q74:** Any phone that the number of times it was called (cumulatively) is not 10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
+
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to other persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
+
+_**Q83:** Any phone that didn't call (0 outgoing calls)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
+
+_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
+
+_**Q104:** Any person who owned red vehicles at least 10 times (same or different vehicles)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
+
+_**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phones that each was called from at least one phone)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
+
+123-124
+
+## Aggregate Condition #3 (LA3C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
-87-89
+_**Q87:** Any phone that was called at least once, and the cumulative incoming calls duration is smaller than 100 minutes_
 
-## LA4C Aggregation
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
+
+_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative calls duration is 0 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
+
+_**Q89:** Any phone that its outgoing calls have more than 3 different durations_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
+
+## Aggregate Condition #4 (LA4C) - On Property Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
 116-117, 134-135,137,167,139-140
 
-## D2C Aggregation
+## Aggregate Condition #5 (D2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
-75-76
+_**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
 
-## DA3C Aggregation
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
+
+_**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
+
+## Aggregate Condition #6 (DA3C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
-86
+_**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B is greater than 100 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
 ## LRM1 Aggregation
 
@@ -700,159 +818,6 @@ None
 160
 
 ----------
-
-
-
-
-## Aggregate Condition #1
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG01.png)
-
-todo
-
-_**Q59:** Any person having more than 2 parents_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
-
-_**Q60:** Any phone that was called from exactly 5 phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
-
-_**Q61:** Anything that owns more than 2 things_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q061.png)
-
-_**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
-
-_**Q136:** Any phone A that called (phones that called phones B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-2.png)
-
-_**Q81:** Any phone that didn't call (0 callees)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
-
-_**Q82:** Any phone that wasn't called (0 callers)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
-
-_**Q85:** Any phone that called at least 10 phones, and was called from at least 10 phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085.png)
-
-_**Q101:** Any person who owns at least 10 red vehicles_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
-
-_**Q102:** Any phone that was called from at least 2 phones; each of these 2 phones was called from at least one phone_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
-
-_**Q166:** Any **phone** that more than 5 ABC employees own a phone that called **it**_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
-
-## Aggregate Condition #2
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG04.png)
-
-todo
-
-_**Q71:** Any phone that made more than 10 calls (cumulatively)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
-
-_**Q72:** Any phone that was called exactly 10 times (cumulatively)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
-
-_**Q73:** Any phone that made no more than 10 calls (cumulatively)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
-
-_**Q74:** Any phone that the number of times it was called (cumulatively) is not 10_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
-
-_**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
-
-_**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
-
-_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to other persons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
-
-_**Q83:** Any phone that didn't call (0 outgoing calls)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
-
-_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
-
-_**Q104:** Any person who owned red vehicles at least 10 times (same or different vehicles)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
-
-_**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phones that each was called from at least one phone)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
-
-## Aggregate Condition #3
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG06.png)
-
-todo
-
-_**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B is greater than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
-
-_**Q87:** Any phone that was called at least once, and the cumulative incoming calls duration is smaller than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
-
-_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative calls duration is 0 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
-
-_**Q89:** Any phone that its outgoing calls have more than 3 different durations_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
-
-## Aggregate Condition #4
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG02.png)
-
-todo
-
-_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
-
-_**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
-
-_**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't call **it**_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
-
-_**Q165:** Any **phone** that less than 5 (ABC employees own a phone that didn't call **it**)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
-
-_**Q66:** Any person from whom more than 5 people are not within graph distance ≤ 6_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
 ## Min/Max Aggregation #1
 
