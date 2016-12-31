@@ -869,7 +869,7 @@ _**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B
 
 Aggregate Condition before Quantifier and R-Combiner
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG13.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier1.png)
 
 todo
 
@@ -883,7 +883,7 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 Aggregate Condition before an '|' Quantifier
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG14.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier2.png)
 
 todo
 
@@ -1057,6 +1057,17 @@ todo
 _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
+
+## Min/Max Aggregations before a Quantifier
+
+Min/Max Aggregations before Quantifier and R-Combiner
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier3.png)
+
+todo
+
+todo examples
+
 
 ## Aggregation Chains
 
