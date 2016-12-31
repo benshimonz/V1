@@ -635,7 +635,14 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
-## Aggregate Condition #1 (L1C)
+## Aggregate Conditions and Aggregate Tags
+
+todo
+
+todo: aggregate tag, aggregate tag's scope
+
+
+## Aggregate Conditions #1 (L1C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
@@ -737,7 +744,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
-## Aggregate Condition #2 (L2C)
+## Aggregate Conditions #2 (L2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
@@ -785,7 +792,7 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
-## Aggregate Condition #3 (LA3C)
+## Aggregate Conditions #3 (LA3C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
@@ -803,7 +810,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
-## Aggregate Condition #4 (LA4C)
+## Aggregate Conditions #4 (LA4C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
@@ -838,7 +845,7 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
-## Aggregate Condition #5 (D2C)
+## Aggregate Conditions #5 (D2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
@@ -852,7 +859,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-## Aggregate Condition #6 (DA3C)
+## Aggregate Conditions #6 (DA3C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
@@ -862,7 +869,11 @@ _**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-## Min/Max Aggregation #1 (LRM1)
+## Min/Max Aggregations
+
+todo
+
+## Min/Max Aggregations #1 (LRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
@@ -870,7 +881,7 @@ todo
 
 todo: examples
 
-## Prefix Min/Max Aggregation #1 (PRM1)
+## Prefix Min/Max Aggregations #1 (PRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
@@ -890,7 +901,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-## Min/Max Aggregation #2 (LRM2)
+## Min/Max Aggregations #2 (LRM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
@@ -898,7 +909,7 @@ todo
 
 todo: examples
 
-## Prefix Min/Max Aggregation #2 (PRM2)
+## Prefix Min/Max Aggregations #2 (PRM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
@@ -912,7 +923,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
-## Min/Max Aggregation #3 (LRMA3)
+## Min/Max Aggregations #3 (LRMA3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
@@ -920,7 +931,7 @@ todo
 
 todo: examples
 
-## Min/Max Aggregation #4 (LRM4)
+## Min/Max Aggregations #4 (LRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
@@ -934,7 +945,7 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-## Prefix Min/Max Aggregation #4 (PRM4)
+## Prefix Min/Max Aggregations #4 (PRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
@@ -972,7 +983,7 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
-## DM2 Aggregation
+## Min/Max Aggregations #5 (DM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
@@ -990,7 +1001,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## DMA3 Aggregation
+## Min/Max Aggregations #6 (DMA3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
@@ -1000,7 +1011,7 @@ _**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration fr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
-## LDM3 Aggregation
+## Min/Max Aggregations #7 (LDM3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
@@ -1010,7 +1021,7 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-## DDM3 Aggregation
+## Min/Max Aggregations #8 (DDM3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
@@ -1020,7 +1031,7 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
-## Aggregation Chain
+## Aggregation Chains
 
 todo
 
@@ -1078,7 +1089,7 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Aggregation Sequence
+## Aggregation Sequences
 
 todo
 
@@ -1110,7 +1121,7 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-## Split
+## Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
 
