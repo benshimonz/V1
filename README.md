@@ -641,7 +641,7 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 todo
 
-*113-115*,121-122
+121-122
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -729,11 +729,21 @@ _**Q66:** Any person from whom more than 5 people are not within graph distance 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
+_**Q151:** Any person who owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
+
+_**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles will be returned_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
+
 ## Aggregate Condition #2 (L2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
 todo
+
+123-124
 
 _**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
@@ -774,8 +784,6 @@ _**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phon
 _**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
-
-123-124
 
 ## Aggregate Condition #3 (LA3C)
 
@@ -1070,13 +1078,13 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
 ## Aggregation Sequence
 
 todo
+
+_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
 _**Q103:** Any phone A that called at least 3 phones that each of them was called from at least 4 phones other than A_
 
@@ -1101,18 +1109,6 @@ _**Q129:** Any person who (each of his offsprings who owns at least one vehicle 
 _**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
-
-## Latent / Optional Components and aggregate conditions
-
-The following examples combines 'L' and 'O' with aggregate conditions:
-
-_**Q151:** Any person who owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
-
-_**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles will be returned_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
 ## Split
 
