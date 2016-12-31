@@ -881,7 +881,7 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-Aggregate Condition before an '|' Quantifier
+Aggregate Condition before an '&#124;' Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier2.png)
 
