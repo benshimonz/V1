@@ -824,86 +824,23 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
+todo
+
 _**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-## LRM1 Aggregation
+## Min/Max Aggregation #1 (LRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-None
+todo
 
-## PRM1 Aggregation
+todo: examples
+
+## Prefix Min/Max Aggregation #1 (PRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
-
-67-69
-70
-
-## LRM2 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
-
-None
-
-## PRM2 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
-
-171
-172
-
-## LRMA3 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
-
-None
-
-## LRM4 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
-
-118-120
-
-## PRM4 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
-
-91-92,130-133,138,168
-
-## DM2 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
-
-77-78
-80
-
-## DMA3 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
-
-90
-
-## LDM3 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
-
-161
-
-## DDM3 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
-
-160
-
-----------
-
-## Min/Max Aggregation #1
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG03.png)
-
-todo
 
 _**Q67:** The 3 people with the maximal number of parents_
 
@@ -921,9 +858,17 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-## Min/Max Aggregation #2
+## Min/Max Aggregation #2 (LRM2)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG15.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
+
+todo
+
+todo: examples
+
+## Prefix Min/Max Aggregation #2 (PRM2)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
 todo
 
@@ -935,9 +880,73 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
-## Min/Max Aggregation #3
+## Min/Max Aggregation #3 (LRMA3)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG05.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
+
+todo
+
+todo: examples
+
+## Min/Max Aggregation #4 (LRM4)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
+
+todo
+
+_**Q118:** Any person and his 3 eldest offsprings_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
+
+_**Q119:** Any person and his 3 youngest sons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
+
+_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
+
+## Prefix Min/Max Aggregation #4 (PRM4)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
+
+todo
+
+_**Q91:** The 4 phones with the longest (shortest incoming call)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+
+_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
+
+_**Q130:** The 4 eldest people_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
+
+_**Q131:** The 4 eldest males_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
+
+_**Q132:** The 4 people who own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
+
+_**Q133:** The 4 people that the average model year of their vehicles is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
+
+_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
+
+_**Q168:** The 3 people that the number of types of things they own is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
+
+## DM2 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
 todo
 
@@ -953,23 +962,9 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Min/Max Aggregation #4
+## DMA3 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
-
-todo
-
-_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
-
-_**Q161:** For any phone: the 4 longest outgoing calls_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
-
-## Min/Max Aggregation #5
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG08.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
 todo
 
@@ -977,13 +972,35 @@ _**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration fr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
+## LDM3 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+todo
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
+_**Q161:** For any phone: the 4 longest outgoing calls_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
+
+## DDM3 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
+
+todo
+
+_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
+
+----------
+
+## Min/Max Aggregation #4
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG07.png)
+
+todo
+
+
 
 ## Aggregation Chain
 
@@ -1163,18 +1180,6 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 todo
 
-_**Q118:** Any person and his 3 eldest offsprings_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
-
-_**Q119:** Any person and his 3 youngest sons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
-
-_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
-
 _**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
@@ -1186,36 +1191,6 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 _**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
-
-# Prefix Min/Max Aggregation on Tags
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/AG12.png)
-
-todo
-
-_**Q130:** The 4 eldest people_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
-
-_**Q131:** The 4 eldest males_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
-
-_**Q132:** The 4 people who own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
-
-_**Q133:** The 4 people that the average model year of their vehicles is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
-
-_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
-
-_**Q168:** The 3 people that the number of types of things they own is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
 ## Aggregate Condition before Quantifier and R-Combiner
 
