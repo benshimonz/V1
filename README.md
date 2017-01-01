@@ -1223,7 +1223,7 @@ Scope rules:
 
 A tag cannot be reference before its definition
 
- * A tag defined after an 'X', '&#8603'; or 'O' - can not be used before it
+ * A tag defined after an 'X', '&#8603;' or 'O' - can not be used before it
  * A tag defined after an 'X' can not be referenced before the 'X'
 
 
