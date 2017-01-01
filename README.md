@@ -1216,6 +1216,7 @@ The rules are valid for all tag types:
 * Aggregate tags
 * Split tags
 
+
 ** Tag singularity:**
 
 * Only one tag can be assigned to any property
