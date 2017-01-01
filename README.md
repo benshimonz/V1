@@ -1238,11 +1238,11 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 * A tag defined after an aggregator - can't be referenced before the aggregator
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
 
 * For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
 
 * Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
 
@@ -1254,5 +1254,5 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 * A relationship with a property tag definition and an aggregation ...
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
 
