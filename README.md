@@ -1252,7 +1252,6 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
   * Aggregate conditions (e.g. 'sum {1} > 100)
   * Min/Max aggregations (e.g. '3 → with min {1}')
 
-* A relationship with a property tag definition and an aggregation ...
+* A relationship property defined as a part of an aggregation chain cannot be used outside of the chain
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
-
