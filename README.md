@@ -1226,6 +1226,10 @@ The rules are valid for all tag types:
 
 Tag's scope rules define where a tag can be referenced - in relation to where it is defined.
 
+* In a sequence - a tag can't be referenced before its definition
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal08.png)
+
 * For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
