@@ -313,10 +313,12 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 ## Starting a Pattern with a Quantifier 
 
-A third way to use a quantifier is at the start of a pattern. On its left side - the query's start, and each right component may start with either:
+A third way to use a quantifier is at the start of a pattern. On its left side - the pattern's start, while each right component may start with either:
 
 * An entity (red / blue / yellow)
 * A quantifier
+
+The '0' quantifier cannot start a pattern.
 
 Here is a fourth way to represent Q26:
 
