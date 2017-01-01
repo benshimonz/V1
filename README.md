@@ -885,6 +885,8 @@ _**Q175:** Any phone that called at least once, and SMSed at least once. The num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
+(counting the number of *distinct* entities on the right of the quantifier (on all all branches))
+
 _**Q176:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call. The number of phones it called/SMSes is at least 10 (ii) called at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
@@ -897,9 +899,9 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
-(counting the sum of the number of relationships to an entity on the right of the quantifier)
+(counting the sum (over all branches) of the number of relationships to each entity on the right of the quantifier)
 
-_**Q173:** Any phone that SMSed - at least 10 times, at least 2 phones_
+_**Q173:** Any phone that SMSed at least 2 phones - at least 10 times cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
 
