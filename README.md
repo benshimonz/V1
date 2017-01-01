@@ -134,7 +134,7 @@ In its simplest usage, a quantifier is connected to an entity on its left side, 
 
 Each branch may start with:
 
-* A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
+* A relationship / a path (optionally preceded by an 'X', rightswards arrow with stroke, 'O' or 'L')
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
@@ -144,7 +144,7 @@ The most useful quantifiers are:
 
 * **All** (denoted '&') - For each assignment to the left component - there should be at least one assignment to any right component
 * **At least one** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
-* **Not all** (denoted by a crossed '&') - For each assignment to the left component - there should be no assignment to at least one right component
+* **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - there should be no assignment to at least one right component
 * **None** (denoted '0') - For each assignment to the left component - there should be at no assignment to any right component
 
 Additional quantifiers:
@@ -226,7 +226,7 @@ Sometimes we are looking for things that are not in the graph (e.g. _any person 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink crossed-arrow box** can be used (more on this later).
+In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink rightwards arrow with stroke box** can be used (more on this later).
 
 Here are some examples:
 
@@ -315,7 +315,7 @@ Here is a fourth way to represent Q26:
 
 An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
 
-* A relationship / a path (optionally preceded by an 'X', crossed arrow, 'O' or 'L')
+* A relationship / a path (optionally preceded by an 'X', rightwards arrow with stroke, 'O' or 'L')
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
@@ -1213,7 +1213,6 @@ Tag's scope rules define where a tag can be referenced, in relation to where it 
 
 The rules are valid for all tag types:
 
-* Entity tags
 * Entity type tags
 * Property tags
 * Aggregate tags
@@ -1223,13 +1222,16 @@ Scope rules:
 
 A tag cannot be reference before its definition
 
- * A tag defined after an 'X', '&#8603;' or 'O' - can not be used before it
- * A tag defined after an 'X' can not be referenced before the 'X'
+* A tag defined after an 'X' - can not be used before it
+* A tag defined after an 'O' - can not be used before it
+* A tag defined after a 'rightwards arrow with stroke' - can not be used before it
 
+* A tag defined in one '&' quantifier's branch can be used in other branchs
+* Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
+* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
 
-* A tag defined in an quantifier's branch can not be referenced before the quantifier
-* A tag defined in an '|' quantifier's branch can be used in other branches
-- A tag
+* A tag defined after a quantifier - can be referenced before the quantifier only for
+ * Aggregate conditions (e.g. 'sum {1} > 100)
+ * Min/Max aggregations (e.g. '3 → with min {1}')
 
-
-
+* A relationship with a property tag definition and an aggregation
