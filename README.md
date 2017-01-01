@@ -1207,7 +1207,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-# Tags scope
+# Tag rules
 
 Tag's scope rules define where a tag can be referenced, in relation to where it was defined.
 
@@ -1218,20 +1218,41 @@ The rules are valid for all tag types:
 * Aggregate tags
 * Split tags
 
-Scope rules:
+** Tag singularity:
+
+* Only one tag can be assigned to any property
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal01.png)
+
+** Scope rules:
 
 A tag cannot be reference before its definition
 
 * A tag defined after an 'X' - can not be used before it
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal02.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal03.png)
+
 * A tag defined after an 'O' - can not be used before it
 * A tag defined after a 'rightwards arrow with stroke' - can not be used before it
 
 * A tag defined in one '&' quantifier's branch can be used in other branchs
+
 * Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
+
 * For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
 
 * A tag defined after a quantifier - can be referenced before the quantifier only for
  * Aggregate conditions (e.g. 'sum {1} > 100)
  * Min/Max aggregations (e.g. '3 → with min {1}')
 
-* A relationship with a property tag definition and an aggregation
+* A tag defined after an aggregator - can't be referenced before the aggregator
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
+
+* A relationship with a property tag definition and an aggregation ...
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
+
