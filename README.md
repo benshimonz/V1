@@ -1230,7 +1230,7 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal08.png)
 
-**R3:** For any quantifier except '&' - a tag defined in one branch cannot be referenced on other branches
+**R3:** For any quantifier except '&' - a tag defined in one branch cannot be referenced in other branches
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
 
@@ -1238,17 +1238,17 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
 
-**R5:** A tag defined on right of an 'X' on one branch - cannot be referenced on other brances
+**R5:** A tag defined on right of an 'X' on one branch - cannot be referenced in other brances
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal02.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal03.png)
 
-**R6:** A tag defined on right of an 'O' on one branch - cannot be referenced on other branches
+**R6:** A tag defined on right of an 'O' on one branch - cannot be referenced in other branches
 
-**R7:** A tag defined on right of a 'rightwards arrow with stroke' on one branch - cannot be referenced on other branches
+**R7:** A tag defined on right of a 'rightwards arrow with stroke' on one branch - cannot be referenced in other branches
 
-**R9:** A tag defined on right of an aggregator - cannot be referenced on other branches
+**R9:** A tag defined on right of an aggregator - cannot be referenced in other branches
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
 
