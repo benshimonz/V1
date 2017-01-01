@@ -1233,22 +1233,24 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal03.png)
 
 * A tag defined after an 'O' - can not be used before it
+
 * A tag defined after a 'rightwards arrow with stroke' - can not be used before it
 
-* A tag defined in one '&' quantifier's branch can be used in other branchs
+* A tag defined after an aggregator - can't be referenced before the aggregator
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
+
+* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
 
 * Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
 
-* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
-
 * A tag defined after a quantifier - can be referenced before the quantifier only for
- * Aggregate conditions (e.g. 'sum {1} > 100)
- * Min/Max aggregations (e.g. '3 → with min {1}')
-
-* A tag defined after an aggregator - can't be referenced before the aggregator
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
+  * Aggregate conditions (e.g. 'sum {1} > 100)
+  * Min/Max aggregations (e.g. '3 → with min {1}')
 
 * A relationship with a property tag definition and an aggregation ...
 
