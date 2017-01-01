@@ -869,8 +869,6 @@ _**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B
 
 ## Aggregate Conditions before a Quantifier
 
-**Aggregate conditions before quantifier and R-combiner**
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier1.png)
 
 todo
@@ -882,12 +880,6 @@ _**Q121:** Any phone that (was called from) or (made a call to) at least 10 phon
 _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
-
-**Aggregate conditions before an '&#124;' quantifier**
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier2.png)
-
-todo
 
 _**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
 
@@ -908,6 +900,14 @@ _**Q173:** Any phone that SMSed - at least 10 times, at least 2 phones_
 _**Q174:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call (ii) called at least two phones. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
+
+_**Q175:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
+
+_**Q176:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
 ## Min/Max Aggregations
 
@@ -1075,7 +1075,7 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 **Min/Max aggregations before quantifier and R-combiner**
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier3.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier2.png)
 
 todo
 
