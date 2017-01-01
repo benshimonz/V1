@@ -1269,6 +1269,6 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
 
-**R10:** A relationship's property tag defined as a part of an aggregation chain - cannot be used outside of the chain
+**R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
