@@ -1206,3 +1206,30 @@ todo: split tag, split tag's scope
 _**Q159:** Any **phone** for which there are more days where (the number of phones **it** called is greater than the number of phones that called **it**) than days where (the number of phones that called **it** is greater than the number of phones **it** called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
+
+# Tags scope
+
+Tag's scope rules define where a tag can be referenced, in relation to where it was defined.
+
+The rules are valid for all tag types:
+
+* Entity tags
+* Entity type tags
+* Property tags
+* Aggregate tags
+* Split tags
+
+Scope rules:
+
+A tag cannot be reference before its definition
+
+ * A tag defined after an 'X', '&#8603'; or 'O' - can not be used before it
+ * A tag defined after an 'X' can not be referenced before the 'X'
+
+
+* A tag defined in an quantifier's branch can not be referenced before the quantifier
+* A tag defined in an '|' quantifier's branch can be used in other branches
+- A tag
+
+
+
