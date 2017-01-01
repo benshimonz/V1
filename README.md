@@ -889,14 +889,25 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 todo
 
-_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
 _**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
+_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+(counting the sum of the number of relationships to an entity on the right of the quantifier)
+
+_**Q173:** Any phone that SMSed - at least 10 times, at least 2 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
+
+(counting the number of *distinct* SMS relationships)
+
+_**Q174:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call (ii) called at least two phones. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
 ## Min/Max Aggregations
 
