@@ -595,6 +595,8 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 todo
 
+todo: property tag's scope
+
 _**Q108:** Any person who has the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
@@ -637,7 +639,7 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ## Aggregate Conditions and Aggregate Tags
 
-todo
+todo: aggregate conditions
 
 todo: aggregate tag, aggregate tag's scope
 
@@ -1199,7 +1201,7 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
-todo
+todo: split tag, split tag's scope
 
 _**Q159:** Any **phone** for which there are more days where (the number of phones **it** called is greater than the number of phones that called **it**) than days where (the number of phones that called **it** is greater than the number of phones **it** called)_
 
