@@ -1207,9 +1207,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-# Tag rules
-
-Tag's scope rules define where a tag can be referenced, in relation to where it was defined.
+## Tag rules
 
 The rules are valid for all tag types:
 
@@ -1226,7 +1224,7 @@ The rules are valid for all tag types:
 
 ** Scope rules:
 
-A tag cannot be reference before its definition
+Tag's scope rules define where a tag can be referenced, in relation to where it was defined.
 
 * A tag defined after an 'X' - can not be used before it
 
