@@ -1218,44 +1218,44 @@ The rules are valid for all tag types:
 
 **Tag singularity:**
 
-* Only one tag can be assigned to any property
+**R1:** Only one tag can be assigned to any property
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal01.png)
 
 **Scope rules:**
 
-Tag's scope rules define where a tag can be referenced - in relation to where it is defined.
+Tag's scope rules define where a tag can be referenced - in relation to where it is defined
 
-* In a sequence - a tag can't be referenced before its definition
+**R2:** In a sequence - a tag can't be referenced left of its definition
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal08.png)
 
-* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
+**R3:** For any quantifier except '&' - a tag defined in one branch cannot be used in another branch
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
 
-* A tag defined after an 'X' - cannot be used before it
+**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
+
+**R5:** A tag defined on right of an 'X' - cannot be used on left of it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal02.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal03.png)
 
-* A tag defined after an 'O' - can not be used before it
+**R6:** A tag defined on right of an 'O' - cannot be used on left of it
 
-* A tag defined after a 'rightwards arrow with stroke' - can not be used before it
+**R7:** A tag defined on right of a 'rightwards arrow with stroke' - cannot be used on left of it
 
-* A tag defined after an aggregator - cannot be referenced before the aggregator
+**R8:** An aggregation can only reference a property tag defined on its right
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal09.png)
+
+**R9:** A tag defined on right of an aggregator - cannot be referenced on left of the aggregator
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
 
-* Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
-
-* A tag defined after a quantifier - can be referenced before the quantifier only for
-  * Aggregate conditions (e.g. 'sum {1} > 100)
-  * Min/Max aggregations (e.g. '3 → with min {1}')
-
-* A relationship's property defined as a part of an aggregation chain - cannot be used outside of the chain
+**R10:** A relationship's property tag defined as a part of an aggregation chain - cannot be used outside of the chain
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal07.png)
