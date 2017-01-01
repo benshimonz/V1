@@ -881,6 +881,14 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
+_**Q175:** Any phone that called at least once, and SMSed at least once. The number of phones it called/SMSed is at least 10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
+
+_**Q176:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call. The number of phones it called/SMSes is at least 10 (ii) called at least 10 phones_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
+
 _**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
@@ -900,14 +908,6 @@ _**Q173:** Any phone that SMSed - at least 10 times, at least 2 phones_
 _**Q174:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call (ii) called at least two phones. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
-
-_**Q175:** Any_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
-
-_**Q176:** Any_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
 ## Min/Max Aggregations
 
