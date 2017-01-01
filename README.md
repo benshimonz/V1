@@ -1226,7 +1226,11 @@ The rules are valid for all tag types:
 
 Tag's scope rules define where a tag can be referenced - in relation to where it is defined.
 
-* A tag defined after an 'X' - can not be used before it
+* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
+
+* A tag defined after an 'X' - cannot be used before it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal02.png)
 
@@ -1236,13 +1240,9 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 * A tag defined after a 'rightwards arrow with stroke' - can not be used before it
 
-* A tag defined after an aggregator - can't be referenced before the aggregator
+* A tag defined after an aggregator - cannot be referenced before the aggregator
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
-
-* For any quantifier except '&' - a tag defined in a branch cannot be used in other branches
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal05.png)
 
 * Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
 
