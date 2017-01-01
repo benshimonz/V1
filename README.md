@@ -1216,15 +1216,15 @@ The rules are valid for all tag types:
 * Aggregate tags
 * Split tags
 
-** Tag singularity:
+** Tag singularity:**
 
 * Only one tag can be assigned to any property
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal01.png)
 
-** Scope rules:
+** Scope rules:**
 
-Tag's scope rules define where a tag can be referenced, in relation to where it was defined.
+Tag's scope rules define where a tag can be referenced - in relation to where it is defined.
 
 * A tag defined after an 'X' - can not be used before it
 
