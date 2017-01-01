@@ -1251,23 +1251,23 @@ Tag's scope rules define where a tag can be referenced - in relation to where it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal04.png)
 
-**R5:** A tag defined on right of an 'X' on one branch - cannot be referenced in other brances
+**R5:** A tag defined right of an 'X' on one branch - cannot be referenced in other branches
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal02.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal03.png)
 
-**R6:** A tag defined on right of an 'O' on one branch - cannot be referenced in other branches
+**R6:** A tag defined right of an 'O' on one branch - cannot be referenced in other branches
 
-**R7:** A tag defined on right of a 'rightwards arrow with stroke' on one branch - cannot be referenced in other branches
-
-**R9:** A tag defined on right of an aggregator - cannot be referenced in other branches
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
+**R7:** A tag defined right of a 'rightwards arrow with stroke' on one branch - cannot be referenced in other branches
 
 **R8:** An aggregation can only reference property tags defined on its right
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal09.png)
+
+**R9:** A tag defined right of an aggregator - cannot be referenced in other branches
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Illegal06.png)
 
 **R10:** A relationship's property tag defined as a part of an aggregation chain - cannot be used outside of the chain
 
