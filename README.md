@@ -132,7 +132,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 A quantifier has one connection on its left side, and two or more connections on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-In its simplest usage, there is an entity at the right end of the left component, and each branch starts with either:
+In its simplest usage, there is an entity (red / blue / yellow) at the end of the left component, and each right component starts with either:
 
 * A relationship / a path (optionally preceded by an 'X', rightswards arrow with stroke, 'O' or 'L')
 * A green rectangle (entity's property value constraints / tag)
@@ -166,23 +166,29 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-Another way to use quantifiers is with a relationship at the right end of the left component, and each branch starts with an entity. Here is an example:
+A second way to use quantifiers is with a relationship at the right end of the left component, and each branch starts with either:
+
+* An entity (red / blue / yellow)
+* A quantifier
+
+Here is an example:
+
 
 _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-**Horizontal quantifier** can be used for a relationship. On its top there is a relationship, and on its bottom - each branch may start with either:
+**Horizontal quantifier** can be used with a relationship. On its top there is a relationship, and on its bottom - each branch may start with either:
 
 * A green rectangle (relationship's property value constraints / tag) 
 * An aggregate condition / an aggregation tag
-* A quantifier
+* An horizontal quantifier
 
 _**Q10:** Any person whose first name is Lior, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-## Entity Tag
+## Entity Tags
 
 There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an **'entity tag'**.
 
@@ -307,7 +313,10 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 ## Starting a Pattern with a Quantifier 
 
-A pattern may start with a quantifier. Any branch of such quantifier must start with an entity (red / blue / yellow).
+A third way to use a quantifier is at the start of a pattern. On its left side - the query's start, and each right component may start with either:
+
+* An entity (red / blue / yellow)
+* A quantifier
 
 Here is a fourth way to represent Q26:
 
