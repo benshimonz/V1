@@ -1235,12 +1235,13 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Entity Tag Rules
 
-**R1:** Identicality / nonidenticality constraints cannot be enforced between an aggregated entity and an entity in another branch
+**R1:** Identicality constraints cannot be enforced between an aggregated entity and an entity in another branch
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01-1.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01-2.png)
+**R2:** Nonidenticality constraints can be enforced between an aggregated entity and an entity in another branch - only if the ≠ sign is used for the aggregated entity
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01-2.png)
 
 ## Property Tag Rules
 
