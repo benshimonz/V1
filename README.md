@@ -178,9 +178,9 @@ _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-**Horizontal quantifier** can be used with a relationship. On its top there is a relationship, and on its bottom - each branch may start with either:
+An **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch may start with either:
 
-* A green rectangle (relationship's property value constraints / tag) 
+* A green rectangle (relationship only - relationship's property value constraints / tag) 
 * An aggregate condition / an aggregation tag
 * An horizontal quantifier
 
