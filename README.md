@@ -1237,34 +1237,34 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R1:** Identicality / nonidenticality constraints cannot be enforced between an aggregated entity and an entity in another branch
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01-1.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01-2.png)
 
 
 ## Property Tag Rules
 
 **R1:** Only one tag can be assigned to any property
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET01.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01.png)
 
 **R2:** In a sequence - a tag can't be referenced left of its definition
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET02.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT02.png)
 
 **R3:** For any quantifier except '&' - a tag defined in one branch cannot be referenced in other branches
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET03.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03.png)
 
 **R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET04.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
 
 **R5:** A tag defined right of an 'X' on one branch - cannot be referenced in other branches
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET05-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT05-1.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET05-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT05-2.png)
 
 **R6:** A tag defined right of an 'O' on one branch - cannot be referenced in other branches
 
@@ -1272,12 +1272,12 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R8:** An aggregation can only reference property tags defined on its right
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET08.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT08.png)
 
 **R9:** A tag defined right of an aggregator - cannot be referenced in other branches
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET09.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT09.png)
 
 **R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-ET10.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT10.png)
