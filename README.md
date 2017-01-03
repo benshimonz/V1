@@ -709,13 +709,13 @@ _**Q178:** Any phone A that was called from at least 10 phones and either (i) A 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q178.png)
 
-First, all triplets (A,B,C) that match the pattern are found, then, the aggregate condition is checked.
+First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregate condition is checked:
 
 For any assignment of A:
 
 * There are at least 10 assignments of B such that (B called A, and A called a phone that is not B)
 
-Hence:
+Hence, for any assignment of A:
 
 * At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 
@@ -723,15 +723,14 @@ _**Q179:** Any phone A that was called from at least 10 phones and either (i) A 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179.png)
 
-First, all triplets (A,B,C) that match the pattern are found, then, the aggregate conditions are checked.
+First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregate conditions are checked:
 
 For any assignment of A:
 
 * There are at least 10 assignments of B such that (B called A, and A called a phone that is not B)
 * There are at least 10 assignments of C such that (A called C, and A was called from a phone that is not C)
 
-Hence:
-For any assignment of A:
+Hence, for any assignment of A:
 
 * At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 and also
