@@ -145,11 +145,11 @@ The most useful quantifiers are:
 * **All** (denoted '&') - For each assignment to the left component - there should be at least one assignment to any right component
 * **At least one** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
 * **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - there should be no assignment to at least one right component
-* **None** (denoted '0') - For each assignment to the left component - there should be at no assignment to any right component
+* **None** (denoted '0') - For each assignment to the left component - there should be no assignment to any right component
 
 Additional quantifiers:
 
-* _n_ - For each assignment to the left component - there should be at least one assignment to exactly _n_ right components. _n_ ∈ [0, _b_]
+* _n_ - For each assignment to the left component - there should be at least one assignment to exactly _n_ right components. _n_ ∈ [1, _b_]
 * _> n_ - For each assignment to the left component - there should be at least one assignment to more than _n_ right components. _n_ ∈ [0, _b-1_]
 * _≥ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or more right components. _n_ ∈ [1, _b_]
 * _< n_ - For each assignment to the left component - there should be at least one assignment to less than _n_ (but more than 0) right components. _n_ ∈ [2, _b_]
