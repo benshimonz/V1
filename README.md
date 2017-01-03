@@ -154,7 +154,7 @@ Additional quantifiers:
 * _≥ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or more right components. _n_ ∈ [1, _b_]
 * _< n_ - For each assignment to the left component - there should be at least one assignment to less than _n_ (but more than 0) right components. _n_ ∈ [2, _b_]
 * _≤ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or less (but more than 0) right components. _n_ ∈ [1, _b_]
-* _n1..n2_ - For each assignment to the left component - there should be at least one assignment to _n1_ up to _n2_ right components. _n1_ ∈ [0, _b_], _n2_ ∈ [0, _b_], _n1_ < _n2_
+* _n1..n2_ - For each assignment to the left component - there should be at least one assignment to _n1_ up to _n2_ right components. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
 * _≠ n_ - For each assignment to the left component - there should be at least one assignment to any number (except 0, _n_) of right components. _n_ ∈ [1, _b_]
 * _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to (less than _n1_ but more than 0) or to (more than _n2_) right components. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
