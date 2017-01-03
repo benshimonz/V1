@@ -712,11 +712,12 @@ _**Q178:** Any phone A that was called from at least 10 phones and either (i) A 
 First, all triplets (A,B,C) that match the pattern are found, then, the aggregate condition is checked.
 
 For any assignment of A:
-- There are at least 10 assignments of B such that (B called A, and A called a phone that is not B)_
+
+* There are at least 10 assignments of B such that (B called A, and A called a phone that is not B)
 
 Hence:
-- At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 
+* At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 
 _**Q179:** Any phone A that was called from at least 10 phones and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones_
 
@@ -725,17 +726,20 @@ _**Q179:** Any phone A that was called from at least 10 phones and either (i) A 
 First, all triplets (A,B,C) that match the pattern are found, then, the aggregate conditions are checked.
 
 For any assignment of A:
+
 * There are at least 10 assignments of B such that (B called A, and A called a phone that is not B)
 * There are at least 10 assignments of C such that (A called C, and A was called from a phone that is not C)
 
 Hence:
 For any assignment of A:
-- At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
+
+* At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 and also
-- A called at least 10 phones and either (i) only one phone called A - which is not one of those (ii) at least 2 phones called A
+* A called at least 10 phones and either (i) only one phone called A - which is not one of those (ii) at least 2 phones called A
 
 Hence:
-- A called at least 10 phones, and at least 10 phones called A
+
+* A called at least 10 phones, and at least 10 phones called A
 
 _**Q101:** Any person who owns at least 10 red vehicles_
 
