@@ -1241,6 +1241,14 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
+_**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179.png)
+
+_**Q180:** Any phones pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
+
 ## Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
