@@ -719,7 +719,7 @@ Hence, for any assignment of A:
 
 * At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
 
-_**Q179:** Any phone A that A called at least 10 phones, and at least 10 phones called A_
+_**Q179:** Any phone A that called at least 10 phones, and at least 10 phones called A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179.png)
 
