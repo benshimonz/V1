@@ -693,6 +693,23 @@ _**Q82:** Any phone that wasn't called (0 callers)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
+_**Q177:** Any phone that was called from at least 10 phones, and called each one of those (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
+
+First, any pair (A,B) that matches the pattern is found. Then, the aggregate condition is checked:
+
+For any assignment of A:
+
+* There are at least 10 assignments of B such that (B called A, and A called B)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-2.png)
+
+For any assignment of A:
+
+* There are at least 10 assignments of B such that (B called A, and A called B)
+* There are at least 10 assignments of B such that (A called B, and B called A)
+
 _**Q85:** Any phone that called at least 10 phones, and was called from at least 10 phones (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-1.png)
@@ -711,20 +728,14 @@ For any assignment of A:
 Hence, for any assignment of A:
 
 * At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
+
 and also
+
 * A called at least 10 phones and either (i) only one phone called A - which is not one of those (ii) at least 2 phones called A
 
 Hence:
 
 * A called at least 10 phones, and at least 10 phones called A
-
-_**Q177:** Any phone that was called from at least 10 phones, and called each one of those (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-2.png)
-
-(For each assignment of A - there are at least 10 assignmens of B such that (B called A, and A called B)
 
 _**Q178:** Any phone A that was called from at least 10 phones and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones_
 
