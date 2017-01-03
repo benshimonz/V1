@@ -130,7 +130,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
-A quantifier has one connection on its left side, and two or more connections on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
+A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
 In its simplest usage, there is an entity (red / blue / yellow) at the end of the left component, and each right component starts with either:
 
