@@ -988,11 +988,15 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-todo
+{et} is an entity tag of an entity defined right of the aggregator. 
+
+except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch.
 
 todo: examples
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
+
+{et} is an entity tag of an entity defined right of the aggregator. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
