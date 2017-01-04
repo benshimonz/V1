@@ -1094,13 +1094,13 @@ _**Q138:** The 4 people that the people they know cumulatively own vehicles with
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**Q168:** The 3 people that the number of types of things they own is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
-
 _**183:** The 3 phones with the largest cummulative call duration from phones owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
+
+_**Q168:** The 3 people that the number of types of things they own is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
 ## Min/Max Aggregations #5 (DM2)
 
