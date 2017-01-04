@@ -236,7 +236,7 @@ Sometimes we are looking for things that are not in the graph (e.g. _any person 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** (no-existance) can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** (no-connection) can be used (more on this later).
+In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** (no-existance) can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** (no-connection) can be used. '↛' is usually used before a relationship with an aggregate condition - more on this later.
 
 - An 'X' may appear just before a relationship or a path
 - An 'X' may not appear just before a relationship or a path with an aggregation
