@@ -77,7 +77,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, EComb, Path
 
 ## E3: Blue Entity (Type = 'Blue')
 
@@ -85,14 +85,14 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, EComb, Path
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, NoExist, NoConnect, EComb, Path, Latent, Optional
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, EComb, Path
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
