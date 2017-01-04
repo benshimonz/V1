@@ -1339,6 +1339,6 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT10.png)
 
-**R11:** A property tag of a concrete entity can't have a condition.
+**R11:** Property tags of a concrete entity can't have conditions.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT11.png)
