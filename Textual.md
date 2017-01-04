@@ -64,7 +64,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: Agg
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: PRM1, PRM2, PRM4
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
@@ -100,7 +100,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | Dir       | int    | 0: non-directional, 1: Arrow pointing right, 2: Arrow pointing left
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, Agg
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, L1C, L2C, LA3C, LA4C, D2C, DA3C, LRM1, LRM2, LRMA3, LRM4, DM2, DMA3, LDM3, DDM3
 
 ## E6: Entity's Property (Type = 'EntProp') 
 
@@ -117,7 +117,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | Tag       | string | Property tag (e.g. '1')
 |         | Cond      | string | condition
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: HQuant, HComb, Agg
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: HQuant, HComb, L1C, L2C, LA3C, LA4C, D2C, DA3C, LRM1, LRM2, LRMA3, LRM4, DM2, DMA3, LDM3, DDM3
 
 ## E8: Quantifier (Type = 'Quant')
 
