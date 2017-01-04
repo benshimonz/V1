@@ -1303,7 +1303,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01.png)
 
-**R2:** In a sequence - a tag can't be referenced left of its definition
+**R2:** Circular conditions are invalid
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT02.png)
 
@@ -1311,7 +1311,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03.png)
 
-**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa)
+**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
 
