@@ -1022,7 +1022,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-_**182:** The 3 phones with the largest cummulative call duration from 052-333-4444_
+_**182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
@@ -1099,6 +1099,10 @@ _**Q138:** The 4 people that the people they know cumulatively own vehicles with
 _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
+
+_**183:** The 3 phones with the largest cummulative call duration from phones owned by Lior Kogan_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
 ## Min/Max Aggregations #5 (DM2)
 
