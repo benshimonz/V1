@@ -24,7 +24,27 @@
 |18 | Optional  | Optional                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
 |19 | SplitBy   | Split by                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
 |20 | Splits    | Splits                  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element20.png)
-|21 | Agg       | Aggregate               | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element21.png)
+|31 | AggL1C    | L1C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
+|32 | AggL2C    | L2C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
+|33 | AggLA3C   | LA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
+|34 | AggLA4C   | LA4C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
+|35 | AggD2C    | D2C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element35.png)
+|36 | AggDA3C   | DA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element36.png)
+|37 | AggLRM1   | LRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element37.png)
+|38 | AggLRM2   | LRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element38.png)
+|39 | AggLRMA3  | LRMA3 aggregatio        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element39.png)
+|40 | AggLRM4   | LRM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element40.png)
+|41 | AggPRM1   | PRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
+|42 | AggPRM2   | PRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
+|43 | AggPRM4   | PRM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
+|44 | AggLDM3   | LDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
+|45 | AggDDM3   | DDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
+|46 | AggDMA3   | DMA3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
+|47 | AggDM2    | DM2 aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
+
+
+
+
 
 ## JSON structure
 
