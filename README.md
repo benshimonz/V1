@@ -1305,19 +1305,19 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R1:** Only one property tag can be assigned to any property.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
 
 **R2:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-1.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-2.png)
 
 **R3:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannont be referenced in other branches.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT05-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-1.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT05-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
 **R4:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannont be referenced in other branches.
 
@@ -1325,24 +1325,27 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R6:** Circular conditions are invalid.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT02.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag02.png)
 
 **R7:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag04.png)
 
 **R8:** An aggregation can only reference tags defined on its right.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT08.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
 
 **R9:** A tag defined right of an aggregator - cannot be referenced in other branches.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT09.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag09.png)
 
 **R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT10.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag10.png)
 
 **R11:** Property tags of concrete entities can't have conditions.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT11.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag11.png)
+
+## Aggregation Rules
+
