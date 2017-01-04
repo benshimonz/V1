@@ -1022,7 +1022,9 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-todo: examples
+_**182:** The 3 phones with the largest cummulative call duration from 052-333-4444_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
