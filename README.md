@@ -401,8 +401,10 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
 
 - 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'X' may not appear directly after an 'L'
-- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'L' is meaningless anyway
+- 'L' may not appear right on a 'L', a 'X' or an '↛'
+- 'L' may not appear right of a '0' quantifier
+- 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
+
 
 Here are two examples:
 
@@ -417,9 +419,9 @@ _**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own 
 Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
 
 - 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'O' may not appear (directly or indirectly) after an 'L'
-- 'X' may not appear directly after an 'O'
-- After an 'X', after a '0' quantifier, or after an aggregate condition such as "relationships = 0" - 'O' is meaningless anyway
+- 'O' may not appear right of a 'L', a 'X' or an '↛'
+- 'O' may not appear right of a '0' quantifier
+- 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
 
 Here are some examples:
 
