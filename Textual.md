@@ -42,10 +42,6 @@
 |46 | AggDMA3   | DMA3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
 |47 | AggDM2    | DM2 aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
 
-
-
-
-
 ## JSON structure
 
 |Mandatory| Name      | Type   | Description
@@ -201,7 +197,119 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E21: Aggregate (Type = 'Agg')
+## E31: L1C aggregation  (Type = 'AggL1C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E32: L2C aggregation  (Type = 'AggL2C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E33: LA3C aggregation (Type = 'AggLA3C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E34: LA4C aggregation (Type = 'AggLA4C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E35: D2C aggregation  (Type = 'AggD2C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E36: DA3C aggregation (Type = 'AggDA3C')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E37: LRM1 aggregation (Type = 'AggLRM1')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E38: LRM2 aggregation (Type = 'AggLRM2')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E39: LRMA3 aggregatio (Type = 'AggLRMA')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E40: LRM4 aggregation (Type = 'AggLRM4')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E41: PRM1 aggregation (Type = 'AggPRM1')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E42: PRM2 aggregation (Type = 'AggPRM2')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E43: PRM4 aggregation (Type = 'AggPRM4')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E44: LDM3 aggregation (Type = 'AggLDM3')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E45: DDM3 aggregation (Type = 'AggDDM3')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E46: DMA3 aggregation (Type = 'AggDMA3')
+
+|Mandatory| Name      | Type   | Description
+
+|---------|-----------|--------| ------
+|         |           |        |
+
+## E47: DM2 aggregation  (Type = 'AggDM2')
 
 |Mandatory| Name      | Type   | Description
 
