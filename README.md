@@ -1219,10 +1219,6 @@ _**Q128:** Any person and his 3 offspring that own vehicles with the largest num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q181:** Any **phone** with no intersection between the groups of phones called by any two phones **it** called_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
-
 _**Q103:** Any phone A that called at least 3 phones that each of them was called from at least 4 phones other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
@@ -1242,6 +1238,10 @@ _**Q169:** Any person who (each of his offsprings who owns at least 3 vehicles -
 _**Q129:** Any person who (each of his offsprings who owns at least one vehicle - owns a different number of vehicles)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
+
+_**Q181:** Any **phone** with no intersection between the groups of phones called by any two phones **it** called_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
 _**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
 
