@@ -64,7 +64,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: PRM1, PRM2, PRM4
+|         | B         | int    | Eno of the element on the below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
