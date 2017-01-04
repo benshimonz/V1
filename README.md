@@ -230,13 +230,17 @@ _**Q7:** Any person whose phone was either (i) called from a phone owned by two 
 
 Entity tags are also used in Q24 and Q25 below.
 
-## Component Nonexistance
+## No-existance and No-connection
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assignment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** can be used (more on this later).
+In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** (no-existance) can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** (no-connection) can be used (more on this later).
+
+- An 'X' may appear just before a relationship or a path
+- An 'X' may not appear just before a relationship or a path with an aggregation
+- An '↛' may appear just before a relationship or a path
 
 Here are some examples:
 
@@ -400,11 +404,10 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 
 Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
 
-- 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'L' may not appear right on an 'L', an 'X' or an '↛'
-- 'L' may not appear right of a '0' quantifier
-- 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
-
+- An 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
+- An 'L' may not appear right on an 'L', an 'X' or an '↛'
+- An 'L' may not appear right of a '0' quantifier
+- An 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
 
 Here are two examples:
 
@@ -418,10 +421,10 @@ _**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own 
 
 Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
 
-- 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'O' may not appear right of an 'L', an 'X' or an '↛'
-- 'O' may not appear right of a '0' quantifier
-- 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
+- An 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
+- An 'O' may not appear right of an 'L', an 'X' or an '↛'
+- An 'O' may not appear right of a '0' quantifier
+- An 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
 
 Here are some examples:
 
