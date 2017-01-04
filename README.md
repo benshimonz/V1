@@ -1299,21 +1299,21 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Property Tag Rules
 
-**R1:** Only one tag can be assigned to any property
+**R1:** Only one tag can be assigned to any property.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01.png)
 
-**R2:** Circular conditions are invalid
+**R2:** Circular conditions are invalid.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT02.png)
 
-**R3:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier
+**R3:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-2.png)
 
-**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches
+**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
 
@@ -1327,14 +1327,18 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R7:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannont be referenced in other branches.
 
-**R8:** An aggregation can only reference property tags defined on its right
+**R8:** An aggregation can only reference property tags defined on its right.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT08.png)
 
-**R9:** A tag defined right of an aggregator - cannot be referenced in other branches
+**R9:** A tag defined right of an aggregator - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT09.png)
 
-**R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches
+**R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT10.png)
+
+**R11:** A property tag of a concrete entity can't have a condition.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT11.png)
