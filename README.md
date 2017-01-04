@@ -1219,9 +1219,9 @@ _**Q128:** Any person and his 3 offspring that own vehicles with the largest num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q180:** Any *phone* with no intersection between phones called by any two phone *it* called_
+_**Q181:** Any *phone* with no intersection between the groups of phones called by any two phones *it* called_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
 _**Q103:** Any phone A that called at least 3 phones that each of them was called from at least 4 phones other than A_
 
