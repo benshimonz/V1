@@ -134,7 +134,7 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 In its simplest usage, there is an entity (red / blue / yellow) at the end of the left component, and each right component starts with either:
 
-* A relationship / a path (optionally preceded by an 'X', rightswards arrow with stroke, 'O' or 'L')
+* A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
@@ -236,7 +236,7 @@ Sometimes we are looking for things that are not in the graph (e.g. _any person 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink rightwards arrow with stroke box** can be used (more on this later).
+In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if a valid assignment to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** can be used (more on this later).
 
 Here are some examples:
 
@@ -330,7 +330,7 @@ Here is a fourth way to represent Q26:
 
 An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
 
-* A relationship / a path (optionally preceded by an 'X', rightwards arrow with stroke, 'O' or 'L')
+* A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
@@ -401,7 +401,7 @@ _**Q34:** Any phone A that called some phone B, called some phone that called B,
 Anything on the right of an **'L'** is **latent**: It won't be part of the answer, though it still must have an assignment.
 
 - 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'L' may not appear right on a 'L', a 'X' or an '↛'
+- 'L' may not appear right on an 'L', an 'X' or an '↛'
 - 'L' may not appear right of a '0' quantifier
 - 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
 
@@ -419,7 +419,7 @@ _**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own 
 Anything on the right of an **'O'** is **optional**: if it has a valid assignment - it will be part of the answer. Otherwise - it won't.
 
 - 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
-- 'O' may not appear right of a 'L', a 'X' or an '↛'
+- 'O' may not appear right of an 'L', an 'X' or an '↛'
 - 'O' may not appear right of a '0' quantifier
 - 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
 
