@@ -1231,11 +1231,11 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-_**Q169:** Any person who (each of his offsprings who owns at least 3 vehicles - owns vehicles with at least 3 colors)_
+_**Q169:** Any person that (each of his offsprings who owns at least 3 vehicles - owns vehicles with at least 3 colors)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
-_**Q129:** Any person who (each of his offsprings who owns at least one vehicle - owns a different number of vehicles)_
+_**Q129:** Any person that (each of his offsprings who owns at least one vehicle - owns a different number of vehicles)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
