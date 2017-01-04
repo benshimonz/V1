@@ -1022,10 +1022,6 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-_**182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
-
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
@@ -1046,7 +1042,9 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 todo
 
-todo: examples
+_**182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
 ## Min/Max Aggregations #4 (LRM4)
 
