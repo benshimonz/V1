@@ -1297,9 +1297,9 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-## Property Tag Rules
+## Tag Rules
 
-**R1:** Only one tag can be assigned to any property.
+**R1:** Only one property tag can be assigned to any property.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT01.png)
 
@@ -1327,7 +1327,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
 
-**R8:** An aggregation can only reference property tags defined on its right.
+**R8:** An aggregation can only reference tags defined on its right.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT08.png)
 
@@ -1339,6 +1339,6 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT10.png)
 
-**R11:** Property tags of a concrete entity can't have conditions.
+**R11:** Property tags of concrete entities can't have conditions.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT11.png)
