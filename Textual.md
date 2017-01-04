@@ -101,10 +101,10 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
-| +       | Dir       | char   | '-': non-directional, 'R': Arrow pointing right, 'L': Arrow pointing left
-|         | Wrapper   | char   | 'X': no-existance, 'N': no-connection, 'L': Latent, 'O': Optional
+| +       | Dir       | char   | -: non-directional, R: Arrow pointing right, L: Arrow pointing left
+|         | Wrapper   | char   | X: no-existance, N: no-connection, L: Latent, O: Optional
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+|         | B         | int    | Eno of the element on the below. <br> Valid element types RelProp, HQuant, AggL1C (valid wrappers: NLO), AggL2C (valid wrappers: LO), AggLA3C (valid wrappers: LO), AggLA4C (valid wrappers: NLO), AggD2C (valid wrappers: LO), AggDA3C(valid wrappers: LO), AggLRM1 (valid wrappers: N), AggLRM2 (valid wrappers: none), AggLRMA3 (valid wrappers: none), AggLRM4 (valid wrappers: none), AggDM2 (valid wrappers: none), AggDMA3 (valid wrappers: none), AggLDM3 (valid wrappers: none), AggDDM3 (valid wrappers: none) 
 
 ## E6: Entity's Property (Type = 'EntProp') 
 
