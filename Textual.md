@@ -40,11 +40,10 @@
 
 ## Wrappers for relationships / paths
 
-| no-existance  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
-| no-connection | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
-| Latent        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
-| Optional      | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
-
+no-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
+no-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
+Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
+Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
 
 ## JSON structure
 
