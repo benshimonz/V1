@@ -1307,15 +1307,15 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT02.png)
 
-**R3:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
+**R3:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
+
+**R4:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT03-2.png)
-
-**R4:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-PT04.png)
 
 **R5:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannont be referenced in other branches.
 
