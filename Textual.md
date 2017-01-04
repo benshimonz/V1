@@ -12,16 +12,12 @@
 |6  | EntProp   | Entity's property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
 |7  | RelProp   | relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
 |8  | Quant     | Quantifier              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
-|9  | NoExist   | no-existance            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
-|10 | NoConnect | no-connection           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
 |11 | EComb     | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
 |12 | RComb     | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
 |13 | Path      | Path                    | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
 |14 | PathSeg   | Path segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element14.png)
 |15 | HQuant    | Horizontal quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
 |16 | HComb     | Horizontal combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
-|17 | Latent    | Latent                  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
-|18 | Optional  | Optional                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
 |19 | SplitBy   | Split by                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
 |20 | Splits    | Splits                  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element20.png)
 |31 | AggL1C    | L1C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
@@ -41,6 +37,14 @@
 |45 | AggDDM3   | DDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
 |46 | AggDMA3   | DMA3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
 |47 | AggDM2    | DM2 aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
+
+## Wrappers for relationships / paths
+
+| no-existance  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
+| no-connection | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
+| Latent        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
+| Optional      | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
+
 
 ## JSON structure
 
@@ -98,7 +102,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
-| +       | Dir       | int    | 0: non-directional, 1: Arrow pointing right, 2: Arrow pointing left
+| +       | Dir       | char   | '-': non-directional, 'R': Arrow pointing right, 'L': Arrow pointing left
+|         | Wrapper   | char   | 'X': no-existance, 'N': no-connection, 'L': Latent, 'O': Optional
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
 |         | B         | int    | Eno of the element on the below. <br> Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
