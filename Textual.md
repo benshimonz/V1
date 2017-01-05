@@ -176,13 +176,14 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | B         | int    | Eno of element below. Valid element types: <ul> <li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
+| +       | B         | int    | Eno of element below. Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+
 
 ## E15: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | B         | int    | Eno of elements below. <br> Valid element types: <ul> <li>HComb</li> <li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
+|         | B         | int    | Eno of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 ## E16: Split by (Type = 'SplitBy')
 
