@@ -147,8 +147,9 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 **The first way to use quanrifiers:** The left component ends with an entity (red / blue / yellow), and each right component starts with:
 
-* A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
-* A green rectangle (entity's property value constraints / tag), or
+* A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
+* A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
+* A green rectangle (entity's property value constraint / tag), or
 * A quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
