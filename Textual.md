@@ -176,7 +176,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | B         | int    | Eno of element below. Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+| +       | B         | int    | Eno of element below. <br> Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 
 ## E15: Horizontal Combiner (Type = 'HComb')
