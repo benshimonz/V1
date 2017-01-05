@@ -995,13 +995,17 @@ todo
 
 {et} is an entity tag of an entity defined right of the aggregator. 
 
-except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch.
+- LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- LRM1 may not appear directly before a quantifier
+- Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch.
 
 todo: examples
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
-{et} is an entity tag of an entity defined right of the aggregator. 
+{et} is an entity tag of an entity defined right of the aggregator.
+
+- PRM1 cannot be used when the pattern starts with a quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
@@ -1023,11 +1027,16 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 ## Min/Max Aggregations #2 (LRM2)
 
+- LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- LRM2 may not appear directly before a quantifier
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 todo
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
+
+- PRM1 cannot be used when the pattern starts with a quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
@@ -1043,6 +1052,8 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ## Min/Max Aggregations #3 (LRMA3)
 
+- LRMA3 may not appear directly before a quantifier
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
 todo
@@ -1052,6 +1063,8 @@ _**182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummu
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
 ## Min/Max Aggregations #4 (LRM4)
+
+- LRM4 may not appear directly before a quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
@@ -1066,6 +1079,8 @@ _**Q119:** Any person and his 3 youngest sons_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
 ## Prefix Min/Max Aggregations #4 (PRM4)
+
+- PRM1 cannot be used when the pattern starts with a quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
@@ -1109,6 +1124,8 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 ## Min/Max Aggregations #5 (DM2)
 
+- DM2 may not appear directly before a quantifier
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
 todo
@@ -1127,6 +1144,8 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ## Min/Max Aggregations #6 (DMA3)
 
+- DMA3 may not appear directly before a quantifier
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
 todo
@@ -1136,6 +1155,8 @@ _**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration fr
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
 ## Min/Max Aggregations #7 (LDM3)
+
+- LDM3 may not appear directly before a quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
@@ -1147,6 +1168,8 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 ## Min/Max Aggregations #8 (DDM3)
 
+- DDM3 may not appear directly before a quantifier
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
 todo
@@ -1154,17 +1177,6 @@ todo
 _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
-
-## Min/Max Aggregations before a Quantifier
-
-**Min/Max aggregations before quantifier and R-combiner**
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier2.png)
-
-todo
-
-todo examples
-
 
 ## Aggregation Chains
 
