@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
-|         | B         | int    | Eno of element below. Valid element types: AggL1C, AggL2C, AggLA4C
+|         | B         | int    | Eno of element below. Valid element types: AggL1C, AggL2C, AggLA4C (Aggregation is valid only if there is at least one entity right of the quantifier)
 
 ## E9: Quantifier 2 (Type = 'Quant2')
 
