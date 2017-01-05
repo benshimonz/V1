@@ -953,7 +953,7 @@ _**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B
 
 todo
 
-_**Q121:** Any phone that (was called from) or (made a call to) at least 10 phones_
+_**Q121:** Any phone that called or SMSed at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
