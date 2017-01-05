@@ -145,7 +145,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-In its simplest usage, there is an entity (red / blue / yellow) at the end of the left component, and each right component starts with either:
+**The first way to use quanrifiers:** The left component ends with an entity (red / blue / yellow), and each right component starts with either:
 
 * A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
 * A green rectangle (entity's property value constraints / tag)
@@ -173,21 +173,20 @@ Additional quantifiers:
 
 (_b_ denotes the number of branches)
 
-**Note:** If a branch contains only a property tag (without constraints) - it is evaluated as a valid assignment.
+If a branch contains only a property tag (without constraints) - any value is evaluated as valid.
 
-Here is an example of nested quantifiers:
+Here is an example of **nested quantifiers**:
 
 _**Q8:** Any person born prior to 1970 and died, or that his father born no later than 1/1/1950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-A second way to use quantifiers is with a relationship at the right end of the left component, and each branch starts with either:
+**A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
 * An entity (red / blue / yellow)
 * A quantifier
 
 Here is an example:
-
 
 _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
@@ -332,7 +331,7 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 ## Starting a Pattern with a Quantifier 
 
-A third way to use a quantifier is at the start of a pattern. On its left side - the pattern's start, while each right component may start with either:
+**A third way to use quantifiers** is at the start of a pattern. On its left side - the pattern's start, while each right component may start with either:
 
 * An entity (red / blue / yellow)
 * A quantifier
