@@ -114,7 +114,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |         | Tag       | string | Property tag (e.g. '1')
 |         | Cond      | string | condition
 
-## E7: relationship's Property (Type = 'RelProp')
+## E7: Relationship's Property (Type = 'RelProp')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
