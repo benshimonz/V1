@@ -11,15 +11,16 @@
 |5  | Rel       | relationship            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element05.png)
 |6  | EntProp   | Entity's property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
 |7  | RelProp   | relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
-|8  | Quant     | Quantifier              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
-|9  | EComb     | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
-|10 | RComb     | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
-|11 | Path      | Path                    | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
-|12 | PathSeg   | Path segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
-|13 | HQuant    | Horizontal quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
-|14 | HComb     | Horizontal combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element14.png)
-|15 | SplitBy   | Split by                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
-|16 | Splits    | Splits                  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
+|8  | Quant1    | Quantifier 1            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
+|9  | Quant2    | Quantifier 2            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
+|10  | EComb     | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
+|11 | RComb     | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
+|12 | Path      | Path                    | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
+|13 | PathSeg   | Path segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
+|14 | HQuant    | Horizontal quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element14.png)
+|15 | HComb     | Horizontal combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
+|16 | SplitBy   | Split by                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
+|17 | Splits    | Splits                  | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
 |31 | AggL1C    | L1C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
 |32 | AggL2C    | L2C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
 |33 | AggLA3C   | LA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
@@ -66,7 +67,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
+| +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant1
 |         | B         | int    | Eno of the element below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
 
 ## E2: Yellow Entity (Type = 'Yellow')
@@ -75,24 +76,24 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | EID       | int    | Technical ID of the entity
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-| +       | EName     | string | Display name of the entity (e.g. 'Lior Kogan')
-| +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, EComb, Path
+| +       | EName     | string | Display name of the entity (e.g. "Lior Kogan")
+| +       | Tag       | string | Entity tag (e.g. "A")
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E3: Blue Entity (Type = 'Blue')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-| +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant, EComb, Path
+| +       | Tag       | string | Entity tag (e.g. "A")
+|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Tag       | string | Entity tag (e.g. 'A')
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant, EComb, Path
+| +       | Tag       | string | Entity tag (e.g. "A")
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
@@ -101,9 +102,9 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
-| +       | Dir       | char   | -: non-directional, R: Arrow pointing right, L: Arrow pointing left
-|         | Wrapper   | char   | X: no-existance, N: no-connection, L: Latent, O: Optional
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
+| +       | Dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
+|         | Wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
+|         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant2, RComb
 |         | B         | int    | Eno of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
 
 ## E6: Entity's Property (Type = 'EntProp') 
@@ -111,7 +112,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | Tag       | string | Property tag (e.g. '1')
+|         | Tag       | string | Property tag (e.g. "1")
 |         | Cond      | string | condition
 
 ## E7: Relationship's Property (Type = 'RelProp')
@@ -119,88 +120,74 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | Tag       | string | Property tag (e.g. '1')
+|         | Tag       | string | Property tag (e.g. "1")
 |         | Cond      | string | condition
 |         | B         | int    | Eno of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
-## E8: Quantifier (Type = 'Quant')
+## E8: Quantifier 1 (Type = 'Quant1')
+
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
+| +       | Branches  | int    | number of branches (>1)
+| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
+
+## E9: Quantifier 2 (Type = 'Quant2')
+
+|Mandatory| Name      | Type   | Description
+|---------|-----------|--------| ------
+| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
+| +       | Branches  | int    | number of branches (>1)
+| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Yellow, Blue, Red, Quant2
+
+## E10: E-Combiner (Type = 'EComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E9: No-existance (Type = 'NoExist')
+## E11: R-Combiner (Type = 'RComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E10: No-connection (Type = 'NoConnect')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         |           |        |
-
-## E11: E-Combiner (Type = 'EComb')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         |           |        |
-
-## E12: R-Combiner (Type = 'RComb')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         |           |        |
-
-## E13: Path (Type = 'Path') 
+## E12: Path (Type = 'Path') 
 
 |Mandatory| Name      | Type       | Description
 |---------|-----------|------------| ------
-|         | ETypes    | [ * ]      | Entity types <br> For each entry: <ul><li>Entity type - according to the ontology</li> <li> Optional [string] operator ('eq', 'lt', or 'le') and [int] value</li></ul>
-|         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ('eq', 'lt', or 'le') and [int] value</li></ul>
-|         | Length    | *          | Path length. Either <ul><li>[string] operator ('eq', 'lt', 'le') and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
-|         | Wrapper   | char       | X: no-existance, N: no-connection, L: Latent, O: Optional
-|         | R         | int        | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
+|         | ETypes    | [ * ]      | Entity types <br> For each entry: <ul><li>Entity type - according to the ontology</li> <li> Optional [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
+|         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
+|         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
+|         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
+|         | R         | int        | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant1, RComb
 |         | B         | int        | Eno of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
 
-## E14: Path Segment (Type = 'PathSeg')
+## E13: Path Segment (Type = 'PathSeg')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E15: Horizontal Quantifier (Type = 'HQuant')
+## E14: Horizontal Quantifier (Type = 'HQuant')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E16: Horizontal Combiner (Type = 'HComb')
+## E15: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E17: Latent (Type = 'Latent')
+## E16: Split by (Type = 'SplitBy')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E18: Optional (Type = 'Optional')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         |           |        |
-
-## E19: Split by (Type = 'SplitBy')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         |           |        |
-
-## E20: Splits (Type = 'Splits')
+## E17: Splits (Type = 'Splits')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
