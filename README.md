@@ -97,10 +97,6 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined). For every blue rectangle and for every red rectangle, the query processor will look for **assignments** of concrete entities that match the pattern.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
-
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
 Any pattern starts with a small diamond, and is read from left to right. A pair of entities can be connected with a horizontal **black arrow** - denoting a **directional relationship**, with a horizontal **black line** - denoting either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or with a horizontal **red line** - denoting a **path** (more on paths - later). Each relationship has a label which denotes the relationship's type.
@@ -122,6 +118,10 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
 The call's direction does not matter. Therefore - a non-directional relationship is used in the pattern.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
+
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
