@@ -41,10 +41,10 @@
 
 ## Wrappers for relationships / paths
 
-no-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperX.png)
-no-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
-Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperL.png)
-Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperO.png)
+**N** - no-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperX.png)
+**X** - no-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
+**L** - Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperL.png)
+**O** - Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperO.png)
 
 ## JSON structure
 
@@ -131,6 +131,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
+|         | B         | int    | Eno of element below. Valid element types: AggL1C, AggL2C, AggLA4C
 
 ## E9: Quantifier 2 (Type = 'Quant2')
 
@@ -157,7 +158,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type       | Description
 |---------|-----------|------------| ------
 |         | ETypes    | [ * ]      | Entity types <br> For each entry: <ul><li>Entity type - according to the ontology</li> <li> Optional [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
-|         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
+|         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li> <li>Optional [string] direction ("R" or "L")</li></ul>
 |         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
 |         | R         | int        | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant1, RComb
