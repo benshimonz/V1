@@ -117,6 +117,10 @@ _**Q2:** Any phone that received at least one call from a phone owned by Lior Ko
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
+_**Q184:** Any phone that made or received at least one call from a phone owned by Lior Kogan_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
+
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
