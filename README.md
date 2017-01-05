@@ -103,7 +103,7 @@ Red, blue and yellow rectangles represent entities. **A yellow rectangle** repre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
-Any pattern starts with a small diamond, and is read from left to right. A pair of entities can be connected with a horizontal **black arrow** - denoting a **directional relationship**, with a horizontal **black line** - denoting **non-directional relationship** (if directional relationships are supported), or with a horizontal **red line** - denoting a **path** (more on paths - later). Each relationship has a label which denotes the relationship's type.
+Any pattern starts with a small diamond, and is read from left to right. A pair of entities can be connected with a horizontal **black arrow** - denoting a **directional relationship**, with a horizontal **black line** - denoting **non-directional relationship** (on directional relationship where the direction doesn't matter), or with a horizontal **red line** - denoting a **path** (more on paths - later). Each relationship has a label which denotes the relationship's type.
 
 Patterns have a tree-like structure (as opposed to graph-like structure).
 
