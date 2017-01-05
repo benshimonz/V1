@@ -105,7 +105,7 @@ A pair of entities can be connected with:
 
 * A horizontal **black arrow** - denoting a **directional relationship**,
 * A horizontal **black line** - denoting either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or
-* A horizontal **red line** - denoting a **path** (more on paths - later). 
+* A horizontal **red line** - denoting a **path** (explained later)
 
 Each relationship has a label which denotes the relationship's type.
 
@@ -129,12 +129,11 @@ The call's direction does not matter. Therefore - a non-directional relationship
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on this later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on property tags - later.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
-
 
 ## Quantifiers
 
@@ -157,7 +156,7 @@ In its simplest usage, there is an entity (red / blue / yellow) at the end of th
 The most useful quantifiers are:
 
 * **All** (denoted '&') - For each assignment to the left component - there should be at least one assignment to any right component
-* **At least one** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
+* **Some** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
 * **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - there should be no assignment to at least one right component
 * **None** (denoted '0') - For each assignment to the left component - there should be no assignment to any right component
 
