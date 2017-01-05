@@ -46,13 +46,13 @@ A **property graph's schema** is defined by
   * A set of properties. For each property: name (key) and value type
   * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Phone); owns(Person,Vehicle) )
 
-There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory attributes, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
+There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
 
 A **schema-based property graph** is a property graph that conforms to a given schema.
 
 **Why do we need a schema?**
 
-Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain attributes with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
+Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person who owns a red vehicle”* we first need to:
 
@@ -69,21 +69,21 @@ A pattern defines a structure of a sub-graph in a schema-based property graph. H
 
 *“Any person who owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
-A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conforms to the pattern.
+A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conform to the pattern.
 
-A pattern language defines a syntax for expressing patterns.
+**A pattern language defines syntax and semantics for expressing patterns.**
 
 Pattern languages differs in the following aspects:
 
-* Genericity - generic (e.g. schema-driven) vs. domain-specific
-* Representation - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
-* Expressivity - The richness of the patterns that can be expressed, The expressivity is always limited (in a Gödelian sense)
-* Simplicity - How simple it is to construct new patterns and to understand existing patterns
-* Efficiency - to parse patterns and to execute pattern queries
+* **Genericity** - generic (e.g. schema-driven) vs. domain-specific
+* **Representation** - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
+* **Expressivity** - The richness of the patterns that can be expressed. The expressivity is always limited (in a Gödelian sense)
+* **Simplicity** - How simple it is to construct new patterns and to understand existing patterns
+* **Efficiency** - to parse patterns and to execute pattern queries
 
 ## The V1 Pattern Language
 
-Many potential users won't use textual query languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that use textual query languages may spend a lot of time on the technicalities. 
+Many potential users won't use textual pattern (query) languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that do use textual query languages often spend a lot of time on the technicalities. 
 
 Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
 
