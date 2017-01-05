@@ -1283,7 +1283,7 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-_**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration_
+_**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179.png)
 
