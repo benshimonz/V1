@@ -995,10 +995,10 @@ todo
 
 {et} is an entity tag of an entity defined right of the aggregator. 
 
-This aggregation will limit the entities on its right to those with the minimal / maximal assignments of {et} entities. 
+This aggregation will limit the entities on its right (→'s) to those with the minimal / maximal number of assignments of {et}. 
 
 - Suppose the pattern is "5 → with max {et}" but there are only 3 →'s: Only these 3 will be included.
-- Suppose the pattern is "5 → with max {et}" but there are 10 →'s with identical max number of {et}'s - all 10 will be included.
+- Suppose the pattern is "5 → with max {et}" but there are 10 →'s with identical max number of assignments of {et} - all 10 will be included.
 
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - LRM1 may not appear directly before a quantifier
