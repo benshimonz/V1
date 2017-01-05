@@ -174,7 +174,7 @@ Additional quantifiers:
 
 (_b_ denotes the number of branches)
 
-If a branch contains only a property tag (without constraints) - any value is evaluated as valid.
+If a green rectangle contains only a property tag (with no constraints) - any property value is evaluated as valid.
 
 Here is an example of **nested quantifiers**:
 
