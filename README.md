@@ -193,10 +193,10 @@ _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-An **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch may start with either:
+An **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch starts with:
 
-* A green rectangle (relationship only - relationship's property value constraints / tag) 
-* An aggregate condition / an aggregation tag
+* A green rectangle (relationship only - relationship's property value constraints / tag),
+* An aggregate condition / an aggregation tag, or
 * An horizontal quantifier
 
 _**Q10:** Any person whose first name is Lior, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
