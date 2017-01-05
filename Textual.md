@@ -67,7 +67,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
+|         | B         | int    | Eno of the element below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
@@ -104,7 +104,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | Dir       | char   | -: non-directional, R: Arrow pointing right, L: Arrow pointing left
 |         | Wrapper   | char   | X: no-existance, N: no-connection, L: Latent, O: Optional
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Blue, Red, Quant, RComb
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: N)</li> <li>AggLRM2 (valid wrappers: none)</li> <li>AggLRMA3 (valid wrappers: none)</li> <li>AggLRM4 (valid wrappers: none)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
+|         | B         | int    | Eno of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: N)</li> <li>AggLRM2 (valid wrappers: none)</li> <li>AggLRMA3 (valid wrappers: none)</li> <li>AggLRM4 (valid wrappers: none)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
 
 ## E6: Entity's Property (Type = 'EntProp') 
 
@@ -121,7 +121,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | Tag       | string | Property tag (e.g. '1')
 |         | Cond      | string | condition
-|         | B         | int    | Eno of the element on the below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+|         | B         | int    | Eno of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 ## E8: Quantifier (Type = 'Quant')
 
