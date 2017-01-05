@@ -993,12 +993,12 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-{et} is an entity tag of an entity defined right of the aggregator. 
+{et} is a entity tag of a blue/red entity defined right of (but not directly right of) the aggregator. 
 
-This aggregation will limit the entities on its right (→'s) to those with the minimal / maximal number of assignments of {et}. 
+For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the minimal / maximal number of assignments to {et}. 
 
-- Suppose the pattern is "5 → with max {et}" but there are only 3 →'s: Only these 3 will be included.
-- Suppose the pattern is "5 → with max {et}" but there are 10 →'s with identical max number of assignments of {et} - all 10 will be included.
+- Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
+- Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
 
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - LRM1 may not appear directly before a quantifier
@@ -1008,7 +1008,7 @@ todo: examples
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
-{et} is an entity tag of an entity defined right of the aggregator.
+{et} is a entity tag of a blue/red entity defined right of (but not directly right of) the aggregator. 
 
 - PRM1 cannot be used when the pattern starts with a quantifier
 
