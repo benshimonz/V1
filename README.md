@@ -156,21 +156,21 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 The most useful quantifiers are:
 
-* **All** (denoted '&') - For each assignment to the left component - there should be at least one assignment to any right component
-* **Some** (denoted '&#124;') - For each assignment to the left component - there should be at least one assignment to at least one right component
-* **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - there should be no assignment to at least one right component
-* **None** (denoted '0') - For each assignment to the left component - there should be no assignment to any right component
+* **All** (denoted '&') - For each assignment to the left component - at least one assignment should exist for each right component
+* **Some** (denoted '&#124;') - For each assignment to the left component - at least one assignment should exist for at least one right component
+* **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - at least one assignment should exist for at least one right component
+* **None** (denoted '0') - For each assignment to the left component - no  assignment should exist for any right component
 
 Additional quantifiers:
 
-* _n_ - For each assignment to the left component - there should be at least one assignment to exactly _n_ right components. _n_ ∈ [1, _b_]
-* _> n_ - For each assignment to the left component - there should be at least one assignment to more than _n_ right components. _n_ ∈ [0, _b-1_]
-* _≥ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or more right components. _n_ ∈ [1, _b_]
-* _< n_ - For each assignment to the left component - there should be at least one assignment to less than _n_ (but more than 0) right components. _n_ ∈ [2, _b_]
-* _≤ n_ - For each assignment to the left component - there should be at least one assignment to _n_ or less (but more than 0) right components. _n_ ∈ [1, _b_]
-* _n1..n2_ - For each assignment to the left component - there should be at least one assignment to _n1_ up to _n2_ right components. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
-* _≠ n_ - For each assignment to the left component - there should be at least one assignment to any number (except 0, _n_) of right components. _n_ ∈ [1, _b_]
-* _∉ n1..n2_ - For each assignment to the left component - there should be at least one assignment to (less than _n1_ but more than 0) or to (more than _n2_) right components. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* _n_ - For each assignment to the left component - at least one assignment should exist for exactly _n_ right components. _n_ ∈ [1, _b_]
+* _> n_ - For each assignment to the left component - at least one assignment should exist for more than _n_ right components. _n_ ∈ [0, _b-1_]
+* _≥ n_ - For each assignment to the left component - at least one assignment should exist for _n_ or more right components. _n_ ∈ [1, _b_]
+* _< n_ - For each assignment to the left component - at least one assignment should exist for less than _n_ (but more than 0) right components. _n_ ∈ [2, _b_]
+* _≤ n_ - For each assignment to the left component - at least one assignment should exist for _n_ or less (but more than 0) right components. _n_ ∈ [1, _b_]
+* _n1..n2_ - For each assignment to the left component - at least one assignment should exist for _n1_ up to _n2_ right components. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
+* _≠ n_ - For each assignment to the left component - at least one assignment should exist for any number (except 0, _n_) of right components. _n_ ∈ [1, _b_]
+* _∉ n1..n2_ - For each assignment to the left component - at least one assignment should exist for (more than 0 but less than _n1_) or to (more than _n2_) right components. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
@@ -182,17 +182,47 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
+A **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch starts with:
+
+* A green rectangle (relationship only - relationship's property value constraints / tag),
+* An aggregate condition / an aggregation tag, or
+* An horizontal quantifier
+
+Horizontal quantifiers behaves quite differently from regular quantifiers: 
+
+* **All** (denoted '&') - For each branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
+* **Some** (denoted '&#124;') - For at least one branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
+* **Not all** (denoted by an '&' with stroke) - For at least one branch - there should be no assignment to the whole pattern for which the branch's condition is met
+* **None** (denoted '0') - For each branch - there should be no assignment to the whole pattern for which the branch's condition is met
+
+Additional horizontal quantifiers:
+
+* _n_ - For exactly _n_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
+* _> n_ - For more than _n_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [0, _b-1_]
+* _≥ n_ - For _n_ or more branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
+* _< n_ - For less than _n_ (but more than 0) branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [2, _b_]
+* _≤ n_ - For _n_ or less (but more than 0) branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
+* _n1..n2_ - For _n1_ up to _n2_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
+* _≠ n_ - For any number of branches except 0, _n_ - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
+* _∉ n1..n2_ - (for more than 0 but less than _n1_ branches) or (for more than _n2_ branches) - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+
+Here are two examples:
+
 _**Q187:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
-
 _**Q189:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 or longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
+
+Green rectangles, aggregate conditions, and aggregation tags  may also be *chained*. When elements are chained - they serve as filters. The branch's condition is met only if at least one assignment passes all these filters.
+
+Here is an example:
+
+_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
@@ -204,12 +234,6 @@ Here is an example:
 _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
-
-An **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch starts with:
-
-* A green rectangle (relationship only - relationship's property value constraints / tag),
-* An aggregate condition / an aggregation tag, or
-* An horizontal quantifier
 
 _**Q10:** Any person whose first name is Lior, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
 
