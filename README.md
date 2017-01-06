@@ -1296,7 +1296,9 @@ _**Q164:** Any phone that the cumulative number of outgoing calls of the phones 
 
 _**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-2.png)
 
 _**Q180:** Any phones pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
 
