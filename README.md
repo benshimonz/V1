@@ -228,7 +228,7 @@ _**Q188:** Any phone that was called from 052-333-4444: at least one call (after
 
 ## Quantifiers #2
 
-**A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
+A second way to use quantifiers: The left component ends with a relationship, and each right component starts with either:
 
 * An entity (red / blue / yellow)
 * A quantifier
@@ -372,7 +372,7 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 ## Quantifiers #3
 
-**A third way to use quantifiers** is at the start of a pattern. On its left side - the pattern's start, while each right component may start with either:
+A third way to use quantifiers is at the start of a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
 * An entity (red / blue / yellow)
 * A quantifier
