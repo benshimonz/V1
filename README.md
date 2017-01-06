@@ -1226,9 +1226,13 @@ _**Q95:** Any phone that received more than 5 (> 10 minutes calls) with a total 
 
 Note that the two 'per pair' conditions could be chained instead - the meaning would be similar.
 
-_**Q96:** Any phone that received more than 10 (< 10 minutes calls) after 1/1/2010 from 052-333-4444_
+_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes after 1/1/2010 from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
+
+_**Q185:** Any phone that received calls from 052-333-4444: at least one call after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (after 1/1/2010 or shorter than 10 minutes)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q0185.png)
 
 _**Q97:** Any phone that called more than 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
@@ -1238,7 +1242,11 @@ _**Q98:** First, pass phones A that called more than 3 phones. Then, pass phone 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
-_**Q99:** Any phone to which 052-333-4444 called more than 10 calls of < 10 minutes, and no calls of ≥ 10 minutes_
+_**Q186:** Any phone to that 052-333-4444 called more than 10 calls of less than 10 minutes, and at least one call of 10 minutes or more_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q186.png)
+
+_**Q99:** Any phone to that 052-333-4444 called more than 10 calls of less than 10 minutes, and no calls of 10 minutes or more_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
