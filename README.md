@@ -145,7 +145,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-**The first way to use quanrifiers:** The left component ends with an entity (red / blue / yellow), and each right component starts with:
+**The first way to use quantifiers:** The left component ends with an entity (red / blue / yellow), and each right component starts with:
 
 * A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
 * A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
