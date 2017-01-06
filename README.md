@@ -370,7 +370,7 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-3.png)
 
-## Starting a Pattern with a Quantifier 
+## Quantifiers #3
 
 **A third way to use quantifiers** is at the start of a pattern. On its left side - the pattern's start, while each right component may start with either:
 
