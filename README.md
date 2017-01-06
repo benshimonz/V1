@@ -1230,9 +1230,9 @@ _**Q96:** Any phone that received more than 10 calls that are shorter than 10 mi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q185:** Any phone that received calls from 052-333-4444: at least one call after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (after 1/1/2010 or shorter than 10 minutes)
+_**Q185:** Any phone that received calls from 052-333-4444: at least one call after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (after 1/1/2010 or shorter than 10 minutes)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q0185.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
 _**Q97:** Any phone that called more than 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
