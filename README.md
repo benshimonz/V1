@@ -218,7 +218,7 @@ _**Q189:** Any phone that was called from 052-333-4444: (at least one call after
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
-Elements below a horizontal quantifiers (green rectangles, aggregate conditions, and aggregation tags) may also be **chained**. When elements are chained - they serve as filters. The branch's condition is met only if at least one assignment passes all these filters.
+Elements below a horizontal quantifiers (green rectangles, aggregate conditions, and aggregation tags) may also be **chained**. When elements are chained - each element serves as a filtering step. The branch's condition is met only if there is an assignment that passes all the filtering steps.
 
 Here is an example:
 
