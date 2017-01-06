@@ -190,7 +190,7 @@ Horizontal quantifiers are used with relationships / paths. On top of a horizont
 * An aggregate condition / an aggregation tag, or
 * An horizontal quantifier
 
-Horizontal quantifiers behaves quite differently from regular quantifiers: 
+Horizontal quantifiers behave quite differently from regular quantifiers: 
 
 * **All** (denoted '&') - For each branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
 * **Some** (denoted '&#124;') - For at least one branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
