@@ -125,7 +125,7 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
-The call's direction does not matter. Therefore - a non-directional relationship is used in the pattern.
+The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
@@ -134,6 +134,10 @@ The call's direction does not matter. Therefore - a non-directional relationship
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
+
+_**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
 
 ## Quantifiers #1
 
