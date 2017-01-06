@@ -182,7 +182,9 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-A **horizontal quantifier** can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch starts with:
+## Horizontal quantifier
+
+A horizontal quantifier can be used with a relationship / path. On its top there is the relationship / path, and on its bottom - each branch starts with:
 
 * A green rectangle (relationship only - relationship's property value constraints / tag),
 * An aggregate condition / an aggregation tag, or
