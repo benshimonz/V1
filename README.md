@@ -182,6 +182,18 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
+_**Q187:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
+
+_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
+
+_**Q189:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 or longer than 10 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
+
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
 * An entity (red / blue / yellow)
