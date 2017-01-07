@@ -1014,7 +1014,7 @@ _**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q175:** Any phone that called at least once, and SMSed at least once. The number of phones it called/SMSed is at least 10_
+_**Q175:** Any phone that called at least once, and SMSed at least once. The number of phones it called/SMSed is at least 10 (if a phone was both called and SMSed - it would be counted twice)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
