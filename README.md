@@ -1018,8 +1018,6 @@ _**Q175:** Any phone that called at least once, and SMSed at least once. The num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-(counting the number of *distinct* entities on the right of the quantifier)
-
 _**Q176:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call. The number of phones it called/SMSes is at least 10 (ii) called at least 10 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
