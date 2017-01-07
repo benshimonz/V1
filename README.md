@@ -1044,6 +1044,26 @@ _**Q174:** Any phone that either (i) called at least one phone and SMSed at leas
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
+## Aggregate Conditions both before and after a Quantifier
+
+todo
+
+_**Q191:** Any phone that called X≥3 phones and SMSed to Y≥3 phones. X+Y≥10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q191.png)
+
+_**Q192:** Any phone that made X≥3 calls and sent Y≥3 SMSes. X+Y≥10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q192.png)
+
+_**Q193:** Any phone that called X≥3 phones, SMSed to Y phones, and sent Z≥3 SMSes. X+Y≥10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
+
+_**Q194:** Any phone that made X calls, sent Y≥3 SMSes, and called Z≥3 phones. X+Y≥10__
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
+
 ## Min/Max Aggregations
 
 todo
