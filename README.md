@@ -127,9 +127,9 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 
 The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
-
 ## Properties
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
 **A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on property tags - later.
 
