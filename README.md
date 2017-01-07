@@ -1048,7 +1048,7 @@ _**Q174:** Any phone that either (i) called at least one phone and SMSed at leas
 
 todo
 
-_**Q191:** Any phone that called X≥3 phones and SMSed to Y≥3 phones. X+Y≥10_
+_**Q191:** Any phone that called X≥3 phones and SMSed Y≥3 phones. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q191.png)
 
@@ -1056,7 +1056,7 @@ _**Q192:** Any phone that made X≥3 calls and sent Y≥3 SMSes. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q192.png)
 
-_**Q193:** Any phone that called X≥3 phones, SMSed to Y phones, and sent Z≥3 SMSes. X+Y≥10_
+_**Q193:** Any phone that called X≥3 phones, SMSed Y phones, and sent Z≥3 SMSes. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
 
