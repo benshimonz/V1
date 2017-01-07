@@ -162,21 +162,23 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 The most useful quantifiers are:
 
-* **All** (denoted '&') - For each assignment to the left component - at least one assignment should exist for each right component
-* **Some** (denoted '&#124;') - For each assignment to the left component - at least one assignment should exist for at least one right component
-* **Not all** (denoted by an '&' with stroke) - For each assignment to the left component - at least one assignment should exist for at least one right component
-* **None** (denoted '0') - For each assignment to the left component - no  assignment should exist for any right component
+* **All** (denoted '&') - An assignment is valid only if every branch's condition is satisfied
+* **Some** (denoted '&#124;') - An assignment is valid only if at least one branch's condition is satisfied
+* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if at least one branch's condition is not satisfied
+* **None** (denoted '0') - An assignment is valid only if no branch's condition is satisfied
+
+("_only if_" denotes a necessary but not sufficient condition)
 
 Additional quantifiers:
 
-* **_n_** - For each assignment to the left component - at least one assignment should exist for exactly _n_ right components. _n_ ∈ [1, _b_]
-* **_> n_** - For each assignment to the left component - at least one assignment should exist for more than _n_ right components. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - For each assignment to the left component - at least one assignment should exist for _n_ or more right components. _n_ ∈ [1, _b_]
-* **_< n_** - For each assignment to the left component - at least one assignment should exist for less than _n_ (but more than 0) right components. _n_ ∈ [2, _b_]
-* **_≤ n_** - For each assignment to the left component - at least one assignment should exist for _n_ or less (but more than 0) right components. _n_ ∈ [1, _b_]
-* **_n1..n2_** - For each assignment to the left component - at least one assignment should exist for _n1_ up to _n2_ right components. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
-* **_≠ n_** - For each assignment to the left component - at least one assignment should exist for any number (except 0, _n_) of right components. _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - For each assignment to the left component - at least one assignment should exist for (more than 0 but less than _n1_) or to (more than _n2_) right components. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **_n_** - An assignment is valid only if exactly _n_ branches' conditions are satisfied. _n_ ∈ [1, _b_]
+* **_> n_** - An assignment is valid only if more than _n_ branches' conditions are satisfied. _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment is valid only if _n_ or more branches' conditions are satisfied. _n_ ∈ [1, _b_]
+* **_< n_** - An assignment is valid only if less than _n_ (but more than 0) branches' conditions are satisfied. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is valid only if _n_ or less (but more than 0) branches' conditions are satisfied. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is valid only if _n1_ up to _n2_ branches' conditions are satisfied. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_≠ n_** - An assignment is valid only if any number (except 0, _n_) branches' conditions are satisfied. _n_ ∈ [1, _b_]
+* **_∉ n1..n2_** - An assignment is valid only if (more than 0 but less than _n1_) or (more than _n2_) branches' conditions are satisfied. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
@@ -198,21 +200,23 @@ Horizontal quantifiers are used with relationships / paths. On top of a horizont
 
 Horizontal quantifiers behave quite differently from vertical quantifiers: 
 
-* **All** (denoted '&') - For each branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
-* **Some** (denoted '&#124;') - For at least one branch - there should be at least one assignment to the whole pattern for which the branch's condition is met
-* **Not all** (denoted by an '&' with stroke) - For at least one branch - there should be no assignment to the whole pattern for which the branch's condition is met
-* **None** (denoted '0') - For each branch - there should be no assignment to the whole pattern for which the branch's condition is met
+* **All** (denoted '&') - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for each branch - there is least one assignment that satisfies its condition)
+* **Some** (denoted '&#124;') - An assignment is valid only if (it satisfies the condition of at least one branch)
+* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for at least one branch - there is no assignment that satisfies its condition)
+* **None** (denoted '0') - Each assignment is valid only if (for each branch - there is no assignment that satisfies its condition)
+
+("_only if_" denotes a necessary but not sufficient condition)
 
 Additional horizontal quantifiers:
 
-* **_n_** - For exactly _n_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
-* **_> n_** - For more than _n_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - For _n_ or more branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
-* **_< n_** - For less than _n_ (but more than 0) branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [2, _b_]
-* **_≤ n_** - For _n_ or less (but more than 0) branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
-* **_n1..n2_** - For _n1_ up to _n2_ branches - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n1_ ∈ [0, _b_], _n2_ ∈ [1, _b_], _n1_ < _n2_
-* **_≠ n_** - For any number of branches except 0, _n_ - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - (for more than 0 but less than _n1_ branches) or (for more than _n2_ branches) - there should be at least one assignment to the whole pattern for which the branch's condition is met. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **_n_** -  An assignment is valid only if (it satisfies the condition of at least one branch) and if (for exactly _n_ branches - there is least one assignment that satisfies the branch's condition). _n_ ∈ [1, _b_]
+* **_> n_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for more than _n_ branches - there is least one assignment that satisfies the branch's condition). _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for _n_ or more branches - there is least one assignment that satisfies the branch's condition). _n_ ∈ [1, _b_]
+* **_< n_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for less than _n_ (but more than 0) branches - there is least one assignment that satisfies the branch's condition). _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for _n_ or less (but more than 0) branches - there is least one assignment that satisfies the branch's condition). _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for _n1_ up to _n2_ branches - there is least one assignment that satisfies the branch's condition). _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_≠ n_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if (for any number of branches except 0, _n_ - there is least one assignment that satisfies the branch's condition). _n_ ∈ [1, _b_]
+* **_∉ n1..n2_** - An assignment is valid only if (it satisfies the condition of at least one branch) and if ((for more than 0 but less than _n1_ branches) or (for more than _n2_ branches) - there is least one assignment that satisfies the branch's condition). _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 Here are two examples:
 
