@@ -129,6 +129,8 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
+## Properties
+
 **A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on property tags - later.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
@@ -249,7 +251,7 @@ _**Q10:** Any person whose first name is Lior, who owns some phone B which calle
 
 ## Entity Tags
 
-There a letter in the top-left corner of every red, blue, or yellow rectangle. This letter is called an **'entity tag'**.
+In the top-left corner of any red, blue, or yellow rectangle - there a letter. This letter is called an **'entity tag'**.
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
