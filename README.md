@@ -1125,6 +1125,10 @@ _**Q197:** Any person and his 3 phones that the phones the called - called the l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
+_**Q198:** Any person and his 3 phones that (the 3 phones they called that called the largest number of phones) - called the largest number of distinct phones cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
+
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
 _et_ is a entity tag of a blue/red entity defined right of (but not directly right of) the aggregator. 
@@ -1516,3 +1520,6 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Aggregation Rules
 
+**R1:** Any _"per ... n → ..."_ aggregation (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) is illegal when the entity on the right is concrete (yellow).
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
