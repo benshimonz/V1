@@ -1115,6 +1115,8 @@ For each assignment to the entity on its left (←), this aggregation will limit
 - LRM1 may not appear directly before a quantifier
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch.
 
+todo:
+
 todo: examples
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
@@ -1149,6 +1151,8 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 todo
+
+todo: examples
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
