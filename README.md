@@ -1372,6 +1372,10 @@ _**Q199:** Any phone that (called more than 10 times to each of more than 10 pho
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q199.png)
 
+_**Q200:** Any phone that (called more than 10 times to each of more than 10 phones. For each of these 10 phones - there are calls with exactly 2 distinct durations) and (called more than 20 times to less than 10 phones. The average call duration with all these phones - is greater than 3 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
+
 _**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
