@@ -1115,9 +1115,11 @@ For each assignment to the entity on its left (←), this aggregation will limit
 - LRM1 may not appear directly before a quantifier
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch.
 
-todo:
+todo
 
-todo: examples
+_**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called that called the largest number of phones__
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
@@ -1152,7 +1154,9 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-todo: examples
+_**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times__
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
