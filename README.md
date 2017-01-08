@@ -1318,6 +1318,10 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 todo
 
+_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes after 1/1/2010 from 052-333-4444_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
+
 _**Q93:** Any phone that called (> 10 minutes calls) to at least 3 phones. The number of calls to each phone is at least 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
@@ -1345,10 +1349,6 @@ _**Q162:** Any phones pair (A, B) where the second shortest call from A to B is 
 _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
-
-_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes after 1/1/2010 from 052-333-4444_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
 _**Q185:** Any phone that received calls from 052-333-4444: at least one call after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (after 1/1/2010 or shorter than 10 minutes)_
 
