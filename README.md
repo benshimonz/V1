@@ -1522,4 +1522,4 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 **R1:** Any _"per ... n → ..."_ aggregation (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) is illegal when the entity on the right is concrete (yellow).
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
