@@ -291,7 +291,9 @@ _**Q7:** Any person whose phone was either (i) called from a phone owned by two 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
-Entity tags are also used in Q24 and Q25 below.
+_**Q24:** Any person who has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
 ## No-existance and No-connection
 
@@ -386,10 +388,6 @@ Note that the left component is _'vehicle'_ while the right component is _'owned
 _**Q23:** Any vehicle that is not owned by a person who doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
-
-_**Q24:** Any person who has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
 _**Q25:** Any of my friend's friends that isn't my friend (two versions)_
 
