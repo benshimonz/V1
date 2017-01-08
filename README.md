@@ -69,9 +69,9 @@ A pattern defines a structure of a sub-graph in a schema-based property graph. H
 
 *“Any person who owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
-A pattern can be viewed as a query that can be executed against a graph database (similar to SELECT statement in SQL). The answer to such query is the union of the elements (entities and relationships) of the set of all the sub-graphs that conform to the pattern.
-
 **A pattern language defines syntax and semantics for expressing patterns.**
+
+A pattern can be viewed as a query that can be executed against a property graph. **An assignment** is a concrete multi-set of graph elements (entities and relationships) that conform to the pattern (note that an element may appear in an assignment more than once). The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is usually prefered since it can avoid exponential explosion in many queries.
 
 Pattern languages differs in the following aspects:
 
