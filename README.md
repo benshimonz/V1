@@ -1117,7 +1117,7 @@ For each assignment to the entity on its left (←), this aggregation will limit
 
 todo
 
-_**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called that called the largest number of phones__
+_**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called that called the largest number of phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
@@ -1154,7 +1154,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 todo
 
-_**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times__
+_**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
