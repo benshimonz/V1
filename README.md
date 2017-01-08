@@ -297,14 +297,14 @@ Entity tags are also used in Q24 and Q25 below.
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of:
 
-* A left component that ends with an entity (_any person whose first name is Lior_)
-* A No-existance / a no-connection language element (_"and doesn't"_) 
+* A left component that ends with an entity (_any person whose first name is Lior_) 
+* A No-existance / a no-connection language element (_"doesn't"_) 
 * A relationship / path (_own)
 * A right component that starts with an entiy (_a red vehicle_)
 
 An assignment is a multi-set of concrete elements only to the left component.
 
-In the example above, there are actually two possibilities: (i) there may be no red vehicles at all, or (ii) there may be red vehicles, but none of them is owned by a person whose first name is Lior. 
+The example above covers two cases: (i) there may be no red vehicles at all, or (ii) there may be red vehicles, but none of them is owned by a person whose first name is Lior. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
@@ -315,17 +315,15 @@ An  assignment is valid only if:
 * it satisfies the left component (_a person whose first name is Lior_) 
 * There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
-In certain situations, however, we may want an assignments to be valid only if:
+In certain situations, however, we may want an assignment to be valid only if:
 
 * it satisfies the left component (_a person whose first name is Lior_) 
-* There is an assignment that satisfies the satisfies a query composed only of the right component (there is _a red vehicle_)
+* There is an assignment that satisfies a query composed only of the right component (there is _a red vehicle_)
 * There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
 This is where the **no-connection language element (depicted with a pink '↛' box)** can be used.
 
-- An 'X' may appear just before a relationship or a path
-- An 'X' may not appear just before a relationship or a path with an aggregation
-- An '↛' may appear just before a relationship or a path
+An 'X' may not appear just before a relationship or a path with an aggregation, while a '↛' may.
 
 Here are some examples:
 
@@ -360,6 +358,8 @@ _**Q18:** Get Lior Kogan, if he doesn't own vehicle 34-234-99_
 _**Q19:** Get Vehicle 34-234-99, if it is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
+
+An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
 _**Q20:** Any vehicle that is not owned by James Smith nor by John Price (two versions)_
 
