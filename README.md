@@ -295,11 +295,33 @@ Entity tags are also used in Q24 and Q25 below.
 
 ## No-existance and No-connection
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of a left component and a right component. The left component (_person whose first name is Lior_) should have assignments, while for any such assignment - the right component shouldn't have any assignment (_a relationship between an assignment of the left component to a red vehicle_). Needless to say, the answer to such queries contains only assignments to the left component.
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of:
+
+* A left component that ends with an entity (_any person whose first name is Lior_)
+* A No-existance / a no-connection language element (_"and doesn't"_) 
+* A relationship / path (_own)
+* A right component that starts with an entiy (_a red vehicle_)
+
+An assignment is a multi-set of concrete elements only to the left component.
+
+In the example above, there are actually two possibilities: (i) there may be no red vehicles at all, or (ii) there may be red vehicles, but none of them is owned by a person whose first name is Lior. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-In the example above, there are actually two possibilities: there may be no red vehicles at all, or there may be red vehicles, but none of them is owned by a person whose first name is Lior. Usually it doesn't matter which is the case since any person whose name is Lior is a valid assignment to the pattern. This is where a **pink 'X' box** (no-existance) can be used (see the examples below). However, in certain situations, we may want to get the valid assignments to left component only if valid assignments to the right component exist, except to the direct relationship between such components. In such cases, a **pink '↛' box** (no-connection) can be used. '↛' is usually used before a relationship with an aggregate condition - more on this later.
+Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a red vehicle_ is a valid assignment to the pattern. This is where the **no-existance language element (depicted with a pink 'X' box)** can be used.
+
+An  assignment is valid only if:
+
+* it satisfies the left component (_a person whose first name is Lior_) 
+* There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
+
+In certain situations, however, we may want an assignments to be valid only if:
+
+* it satisfies the left component (_a person whose first name is Lior_) 
+* There is an assignment that satisfies the satisfies a query composed only of the right component (there is _a red vehicle_)
+* There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
+
+This is where the **no-connection language element (depicted with a pink '↛' box)** can be used.
 
 - An 'X' may appear just before a relationship or a path
 - An 'X' may not appear just before a relationship or a path with an aggregation
