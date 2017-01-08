@@ -301,12 +301,12 @@ _**Q24:** Any person who has (at least) two parents and owns a phone that was ca
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
-## No-existance and No-connection
+## No-existence and No-connection
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of:
 
 * A left component that ends with an entity (_any person whose first name is Lior_) 
-* A No-existance / a no-connection language element (_"doesn't"_) 
+* A No-existence / a no-connection language element (_"doesn't"_) 
 * A relationship / path (_own)
 * A right component that starts with an entiy (_a red vehicle_)
 
@@ -316,7 +316,7 @@ The example above covers two cases: (i) there may be no red vehicles at all, or 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a red vehicle_ is a valid assignment to the pattern. This is where the **no-existance language element (depicted with a pink 'X' box)** can be used.
+Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a red vehicle_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
 An  assignment is valid only if:
 
