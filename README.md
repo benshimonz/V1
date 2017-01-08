@@ -1121,7 +1121,7 @@ _**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called tha
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
-_**Q197:** Any person and his 3 phones that the phones the called - called the largest number of distinct phone cumulatively_
+_**Q197:** Any person and his 3 phones that the phones the called - called the largest number of distinct phones cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
