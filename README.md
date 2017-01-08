@@ -1125,7 +1125,7 @@ _**Q197:** Any person and his 3 phones that the phones the called - called the l
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
-_**Q198:** Any person and his 3 phones that (the 3 phones they called that called the largest number of phones) - called the largest number of distinct phones cumulatively_
+_**Q198:** Any person and his 3 phones that (for each of them: the 4 phones it called that called the largest number of phones) - called the largest number of distinct phones cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
 
