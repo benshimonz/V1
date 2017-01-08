@@ -133,6 +133,8 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 
 **A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on property tags - later.
 
+If a green rectangle contains only a property tag (with no constraints) - any property value is evaluated as valid.
+
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
@@ -182,7 +184,7 @@ Additional quantifiers:
 
 (_b_ denotes the number of branches)
 
-If a green rectangle contains only a property tag (with no constraints) - any property value is evaluated as valid.
+Only satisfied branches are part of a query's answer.
 
 Here is an example of **nested quantifiers**:
 
