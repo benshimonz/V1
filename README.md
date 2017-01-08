@@ -1358,11 +1358,11 @@ _**Q95:** Any phone that received more than 5 (> 10 minutes calls) with a total 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-1.png)
 
+The two 'per pair' conditions could be chained instead. The meaning would be similar:
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-2.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-3.png)
-
-Note that the two 'per pair' conditions could be chained instead - the meaning would be similar.
 
 _**Q97:** Any phone that called more than 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
