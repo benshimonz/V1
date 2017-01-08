@@ -206,10 +206,10 @@ Horizontal quantifiers are used with relationships / paths. On top of a horizont
 
 Horizontal quantifiers behave quite differently from vertical quantifiers: 
 
-* **All** (denoted '&') - An assignment is valid only if (it satisfies at least one branch) and if (for each branch - there is least one assignment that satisfies its condition)
+* **All** (denoted '&') - An assignment is valid only if (it satisfies at least one branch) and if (for each branch: there is least one assignment that satisfies the branch)
 * **Some** (denoted '&#124;') - An assignment is valid only if (it satisfies at least one branch)
-* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies at least one branch) and if (for at least one branch - there is no assignment that satisfies its condition)
-* **None** (denoted '0') - Each assignment is valid only if (for each branch - there is no assignment that satisfies its condition)
+* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies at least one branch) and if (for at least one branch: there is no assignment that satisfies the branch)
+* **None** (denoted '0') - Each assignment is valid only if (for each branch: there is no assignment that satisfies the branch)
 
 ("_only if_" denotes a necessary but not sufficient condition, since the pattern may contain other quantifiers / conditions)
 
