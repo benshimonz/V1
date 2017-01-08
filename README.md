@@ -1318,11 +1318,23 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 todo
 
-_**Q93:** First, pass only (> 10 minutes calls). Then, pass only phones A that called (> 10 minutes calls) to at least 3 phones. From these, pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
+_**Q93:** Any phone that called (> 10 minutes calls) to at least 3 phones. The number of calls to each phone is at least 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
-_**Q94:** First, pass only (> 10 minutes calls). Then, pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B. From these A's, pass only those that called (> 10 minutes calls) to at least 3 phones_
+Filtering stages:
+
+- Pass only (> 10 minutes calls)
+- Pass only phones A that called (> 10 minutes calls) to at least 3 phones
+- Pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
+
+_**Q94:** Any phone that called at least 5 (> 10 minutes calls). The calls were made to at least 3 phones_
+
+Filtering stages:
+
+- Pass only (> 10 minutes calls)
+- Pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B
+- Pass only phones A that called (> 10 minutes calls) to at least 3 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
