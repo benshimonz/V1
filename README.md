@@ -323,17 +323,19 @@ An  assignment is valid only if:
 * it satisfies the left component (_a person whose first name is Lior_) 
 * There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
-In certain situations, however, we may want an assignment to be valid only if:
+An 'X' may not be used directly before a relationship or a path with an aggregation.
+
+In certain situations, however, we need an assignment to be valid only if:
 
 * it satisfies the left component (_a person whose first name is Lior_) 
 * There is an assignment that satisfies a query composed only of the right component (there is _a red vehicle_)
 * There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
-This is where the **no-connection language element (depicted with a pink '↛' box)** can be used.
+This is where the **no-connection language element (depicted with a pink '↛' box)** can be used. 
 
-An 'X' may not appear just before a relationship or a path with an aggregation, while a '↛' may.
+'↛''s are usually used directly before a relationship or a path with an aggregation.
 
-Here are some examples:
+Examples:
 
 _**Q12:** Any person who doesn't own a vehicle_
 
