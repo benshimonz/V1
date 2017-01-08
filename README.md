@@ -1368,6 +1368,10 @@ _**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
+_**Q199:** Any phone that (called more than 10 times to each of more than 10 phones) and (called more than 20 times to less than 10 phones)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q199.png)
+
 _**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
