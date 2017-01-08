@@ -1121,6 +1121,10 @@ _**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called tha
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
+_**Q197:** Any person and his 3 phones that the phones the called - called the largest number of distinct phone cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
+
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
 _et_ is a entity tag of a blue/red entity defined right of (but not directly right of) the aggregator. 
