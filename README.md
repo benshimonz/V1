@@ -131,9 +131,13 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains the property's name, and may contain constraints on the value of that property, expressed by an equation (e.g. 'age > 30'). A green rectangle may also contain a **property tag**, depicted by a numeric index wrapped in **purple curly brackets**. A property tag serves as a placeholder for the property's value in a given assignment, and can be used to define constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age of another entity). More on property tags - later.
+**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains:
 
-If a green rectangle contains only a property tag (with no constraints) - any property value is evaluated as valid.
+* The property's name
+* Optionally - constraint on the value of that property, expressed by an equation (e.g. 'age > 30')
+* Optionally - A **property tag**, depicted by an index wrapped in **purple curly brackets**. 
+
+A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age property of another entity). More on property tags - later.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
@@ -709,6 +713,8 @@ _**Q108:** Any person who has the same birth-date as Lior Kogan_
 _**Q109:** Any person who his parent owned a vehicle and a phone prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
+
+Note that if a branch contains only a green rectangle with no constraints (only with a property tag) - the branch is always satisfied.
 
 _**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in chronological order, and their owners_
 
