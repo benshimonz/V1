@@ -967,11 +967,11 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 todo
 
-_**Q87:** Any phone that was called at least once, and the cumulative incoming calls duration is smaller than 100 minutes_
+_**Q87:** Any phone that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative calls duration is 0 minutes_
+_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative call duration is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
@@ -1034,7 +1034,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 todo
 
-_**Q86:** Any phones pair (A, B) where the cumulative calls duration from A to B is greater than 100 minutes_
+_**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
@@ -1194,11 +1194,11 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 todo
 
-_**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
+_**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cumulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
-_**Q201:** For any phone that called at least 10 phones: the 3 phones it called with the maximal cumulative calls duration_
+_**Q201:** For any phone that called at least 10 phones: the 3 phones with the largest cumulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
@@ -1254,7 +1254,7 @@ _**Q138:** The 4 people that the people they know cumulatively own vehicles with
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**183:** The 3 phones with the largest cummulative call duration from phones owned by Lior Kogan_
+_**183:** The 3 phones with the largest cumulative call duration from phones owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
@@ -1290,7 +1290,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 todo
 
-_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative calls duration from A to B_
+_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative call duration from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
