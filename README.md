@@ -134,10 +134,14 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 **A green rectangle** is connected to an entity (red, blue, or yellow) or to a relationship, and represents an entity's / relationship's property. It contains:
 
 * The property's name
-* Optionally - constraint on the value of that property, expressed by an equation (e.g. 'age > 30')
-* Optionally - A **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later).
+* Optionally - a constraint on the value of that property, expressed by an equation (e.g. 'age > 30')
+* Optionally - a **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later).
 
-Constraints are not valid for yellow entities. Constraints are valid for red entities only if type constraints are defined, and all the allowed types have a property with the same name and the same type.
+A constraint, a property tag, or both - must be presented.
+
+Constraints cannot be defined for yellow entities. 
+
+Constraints are valid for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
@@ -569,7 +573,7 @@ _**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
 
 Similarly, the entity type of all owners is implicitly constrained to things that can own a phone.
 
-In addition to the implicit type constraints, explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
+In addition to the implicit type constraints - explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
 
 _**Q37:** Any person who owns a vehicle or a phone_
 
