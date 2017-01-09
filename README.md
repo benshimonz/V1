@@ -141,7 +141,7 @@ A constraint, a property tag, or both - must be presented.
 
 Constraints cannot be defined for yellow entities. 
 
-Constraints are valid for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
+Constraints can be defined for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
