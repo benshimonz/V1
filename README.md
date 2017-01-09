@@ -1194,11 +1194,11 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 todo
 
-_**182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
+_**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cummulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
-_**201:** For any phone that called at least 10 phones: the 3 phone it called with the maximal cumulative calls duration_
+_**Q201:** For any phone that called at least 10 phones: the 3 phone it called with the maximal cumulative calls duration_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
