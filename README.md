@@ -1000,7 +1000,6 @@ _**Q117:** Any person whose owned vehicles have an average model year greater th
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
 _**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
-Any person whose know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
