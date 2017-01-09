@@ -889,7 +889,7 @@ _**Q125:** Any phone that the number of phones it called is greater than the num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
 
-_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't called_
+_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't call_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
