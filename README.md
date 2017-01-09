@@ -1076,7 +1076,7 @@ _**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a
 
 (counting the number of relationships to each entity on the right of the quantifier)
 
-_**Q173:** Any phone that SMSed at least 2 phones - at least 10 times cumulatively_
+_**Q173:** Any phone that SMSed at least 2 phones, and sent at least 10 SMSes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
 
