@@ -1406,6 +1406,10 @@ _**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
+_**Q202:** Any person for whom the average height of his 3 eldest offsprings is less than the average height of all his offsprings_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
+
 _**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
