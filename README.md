@@ -131,13 +131,13 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity or to a relationship, and represents an entity's / relationship's property. It contains:
+**A green rectangle** is connected to an entity (red, blue, or yellow) or to a relationship, and represents an entity's / relationship's property. It contains:
 
 * The property's name
 * Optionally - constraint on the value of that property, expressed by an equation (e.g. 'age > 30')
-* Optionally - A **property tag**, depicted by an index wrapped in **purple curly brackets**. 
+* Optionally - A **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later).
 
-A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age property of another entity). More on property tags - later.
+Constraints are not valid for yellow entities. Constraints are valid for red entities only if type constraints are defined, and all the allowed types have a property with the same name and the same type.
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
 
@@ -708,9 +708,11 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
-todo
+A property tag is depicted by an index wrapped in **purple curly brackets**
 
-todo: property tag's scope
+A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age property of another entity)
+
+Here are some examples:
 
 _**Q108:** Any person who has the same birth-date as Lior Kogan_
 
@@ -1547,9 +1549,3 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 **R11:** Any _"... n → ..."_ aggregation (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) is illegal when the entity on the right is concrete (yellow).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
-
-## Other Rules
-
-**R12:** Properties of concrete entities can't have conditions.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag11.png)
