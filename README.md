@@ -65,13 +65,19 @@ In order to ask and answer queries such as *“Any person who owns a red vehicle
 
 ## Patterns and Pattern Languages
 
-A pattern defines a structure of a sub-graph in a schema-based property graph. Here is an example:
+**A pattern** defines a set of **acceptable** connected property graphs (entities and relationships), defined over a given property graph's schema.
+
+Here is an example:
 
 *“Any person who owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
 
-**A pattern language defines syntax and semantics for expressing patterns.**
+**Pattern matching** is the process of deciding whether a given graph is acceptable to a given pattern. 
 
-A pattern can be viewed as a query that can be executed against a property graph. **An assignment** is a concrete multi-set of graph elements (entities and relationships) that conform to the pattern (note that an element may appear in an assignment more than once). The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is usually prefered since it can avoid exponential explosion in many queries.
+**Pattern finding** is the process of finding all the subgraphs of a given property graph, which matches a given pattern. Any subgraph that matches the pattern is called **an assignment*.
+
+A pattern can be viewed as a query that can be executed against a property graph. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is usually prefered since it avoids exponential explosion in many queries.
+
+**A pattern language defines syntax and semantics for expressing patterns.**
 
 Pattern languages differs in the following aspects:
 
