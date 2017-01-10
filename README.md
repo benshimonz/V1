@@ -73,9 +73,9 @@ Here is an example:
 
 **Pattern matching** is the process of deciding whether a given graph is acceptable to a given pattern. 
 
-**Pattern finding** is the process of finding all the subgraphs of a given property graph, which matches a given pattern. Any subgraph that matches the pattern is called **an assignment**.
+**Pattern finding** is the process of finding all the subgraphs of a given property graph, which match a given pattern. Any subgraph that matches the pattern is called **an assignment**.
 
-Pattern finding can be viewed as a query that can be executed against a property graph. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
+A pattern can be viewed as a query that can be executed against a property graph. Similarly, pattern finding can be viewed as query answering. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
 
 **A pattern language defines syntax and semantics for expressing patterns.**
 
