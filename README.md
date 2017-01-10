@@ -73,9 +73,9 @@ Here is an example:
 
 **Pattern matching** is the process of deciding whether a given graph is acceptable to a given pattern. 
 
-**Pattern finding** is the process of finding all the subgraphs of a given property graph, which matches a given pattern. Any subgraph that matches the pattern is called **an assignment*.
+**Pattern finding** is the process of finding all the subgraphs of a given property graph, which matches a given pattern. Any subgraph that matches the pattern is called **an assignment**.
 
-A pattern can be viewed as a query that can be executed against a property graph. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is usually prefered since it avoids exponential explosion in many queries.
+Pattern finding can be viewed as a query that can be executed against a property graph. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
 
 **A pattern language defines syntax and semantics for expressing patterns.**
 
@@ -101,7 +101,7 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
-Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined). For every blue rectangle and for every red rectangle, the query processor will look for **assignments** of concrete entities that match the pattern.
+Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
@@ -114,6 +114,8 @@ A pair of entities can be connected with:
 * A horizontal **red line** - denoting a **path** (explained later)
 
 Each relationship has a label which denotes the relationship's type.
+
+For every blue rectangle, red rectangle and relationship - the query processor will look for concrete entities and relationships that match the pattern.
 
 Patterns have a tree-like structure (as opposed to graph-like structure).
 
