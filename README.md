@@ -1559,17 +1559,17 @@ Here are some definition examples:
 * _'Old Person'_ is defined as a person born before 1920
 * _'Old male'_ is defined as a male born before 1920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
-* _'Japanese'_ is defined as a a person with Japanese citizenship / a company registered in Japan
+* _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
 
 Entities of logical types do not appear in the query results. Their are resolved to concrete entities.
 
-Logical entities types have the following properties:
+Logical entity types have the following properties:
 
 * _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
 
 In a pattern, adjacent relationship types should support at least one of the entity types used in the definition.
 
-Here are some examples:
+Here are examples of patterns that incorporate the logical entity types defined above:
 
 _**Q203:** Any phone owned by a Beatle since 1/1/2011 or since a later date_
 
