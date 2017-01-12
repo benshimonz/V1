@@ -1570,20 +1570,19 @@ Using aggregate entities in queries:
 
 Here are some examples:
 
-_**Q203:** Any phone owner by an entity encapsulated within 'The Beatles' since 1/1/2011 or since a later date_
-
+_**Q203:** Any phone owned by an entity encapsulated within 'The Beatles' - since 1/1/2011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any person who called at least 3 phones owned by an entity encapsulated within 'Japanese'_
+_**Q204:** Any phone than called at least 3 phones owned by an entity encapsulated within 'Japanese'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
-_**Q205:** Any person with at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
+_**Q205:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated with 'The Beatles'_
+_**Q206:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated within 'The Beatles'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
@@ -1635,7 +1634,7 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ## Aggregation Rules
 
-**R11:** The entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be concrete (yellow).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
