@@ -67,17 +67,31 @@ In order to ask and answer queries such as *“Any person who owns a red vehicle
 
 **A pattern** defines a set of **acceptable** connected property graphs (entities and relationships), defined over a given property graph's schema.
 
-Here is an example:
+Here are two examples:
 
-*“Any person who owns a blue car, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month"*
+* *Any person who owns a blue vehicles, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
 
-**Pattern matching** is the process of deciding whether a given graph is acceptable to a given pattern. 
+* *Any person who owns at least 5 blue vehicles*
 
-**Pattern finding** is the process of finding all the subgraphs of a given property graph, which match a given pattern. Any subgraph that matches the pattern is called **an assignment**.
+**Pattern matching** is the process of deciding whether a given (sub)graph is acceptable to a given pattern. 
 
-A pattern can be viewed as a query that can be executed against a property graph. Similarly, pattern finding can be viewed as query answering. The answer to a query can be defined either as (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
+**Pattern finding** is the process of finding the subgraphs of a given property graph, which match a given pattern. Any subgraph that matches the pattern is called **an assignment**.
 
-**A pattern language defines syntax and semantics for expressing patterns.**
+A pattern can be viewed as a query that can be executed against a property graph. Similarly, pattern finding can be viewed as query answering.
+
+**A pattern language** defines:
+
+* Syntax and semantics for expressing patterns (queries)
+* Syntax and semantics for expressing query results (answers)
+
+The language semantics define which entities are part of an assignment. In the 2nd example above - an assignment may be:
+
+* For each person than owns at least 5 blue cars: a person entity
+* For each person than owns at least 5 blue cars: a person entity + 5 car entities (for 5 of his blue cars)
+* For each person than owns at least 5 blue cars: a person entity + car entities (for all of his blue cars)
+* For each person than owns at least 5 blue cars: a person entity + car entities (for all of his blue cars) + 'own' relationships between the owners and their cars.
+
+The language semantics also define if an answer to a query is either (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
 
 Pattern languages differs in the following aspects:
 
