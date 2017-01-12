@@ -121,11 +121,11 @@ The following sections define the syntax and semantics of the V1 langage. We sta
 
 **Syntax**
 
-Any pattern is written from left to right. It starts with (a small black diamond), continues with a (red, blue or yellow rectangle), continues with zero or more ((black arrow, black line, or red line) followed by a (red, blue, or yellow rectangle)).
+Any pattern is written from left to right. It starts with (a small black diamond), continues with a (yello, blue or red rectangle), and continues with zero or more ((black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle)).
 
 **Semantics**
 
-Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
+Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
 
 A pair of entities can be connected with:
 
@@ -150,6 +150,12 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
 The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
+
+**Syntax**
+
+The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Phone); owns(Person,Vehicle) ).
+
+**Semantics**
 
 For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all assignments.
 
