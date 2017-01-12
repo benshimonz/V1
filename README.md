@@ -1541,9 +1541,9 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-## Aggregative Entities
+## Aggregate Entities
 
-An aggregative entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregative entities can be defined, and then used in queries.
+An aggregate entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregate entities can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1555,7 +1555,40 @@ Here are some definition examples:
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
 * _'Japanese'_ is defined as an encapsulation of all persons with Japanese citizenship and all companies registered in Japan
 
+Aggregate entities have the following auto-generated aggregate properties:
 
+* _'count'_ - the number of encapsulated entities
+* _'e.count'_ - the number of encapsulated entities of type _e_ (_e_ is an encapsulated entity type)
+* _'p.distinct'_ - the number of distinct values of property _p_ (_p_ is a property of at least one encapsulated entity type)
+* _'p.min', 'p.max', 'p.avg', 'p.sum'_ - the min, max, sum, and average of property _p_ (_p_ is any numeric property of at least one encapsulated entity type)
+
+Using aggregate entities in queries:
+
+* Adjacent relationship types should support at least one encapsulated entity type
+* Constraints cannot be defined for aggregate entities
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+
+Here are some examples:
+
+_**Q203:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
+
+_**Q204:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
+
+_**Q205:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
+
+_**Q206:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
+
+_**Q207:** Any_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
 ## Tag Rules
 
@@ -1601,7 +1634,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Any _"... n → ..."_ aggregation (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) is illegal when the entity on the right is concrete (yellow).
+**R11:** The entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be concrete (yellow).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
