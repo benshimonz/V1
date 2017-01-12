@@ -975,7 +975,7 @@ _**Q74:** Any phone that the number of times it was called (cumulatively) is not
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
-_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to other persons_
+_**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to other people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
@@ -1550,10 +1550,10 @@ Here are some definition examples:
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
 
 * _'The Beatles'_ is defined as an encapsulation of 4 concrete entities
-* _'Old People'_ is defined as an encapsulation of all persons born before 1920
+* _'Old People'_ is defined as an encapsulation of all people born before 1920
 * _'Old males'_ is defined as an encapsulation of all males born before 1920
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
-* _'Japanese'_ is defined as an encapsulation of all persons with Japanese citizenship and all companies registered in Japan
+* _'Japanese'_ is defined as an encapsulation of all people with Japanese citizenship and all companies registered in Japan
 
 An Aggregate entity in a query will show as an aggregated entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
 
@@ -1598,17 +1598,17 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ## Bundles
 
-A bundle is a way to represent several entities, when the same pattern need to be expressed separately for each them. Bundles can be defined, and then used in queries.
+A bundle is a way to represent several entities, when the same pattern need to be expressed **separately** for each them. Bundles can be defined, and then used in queries.
 
 Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB13.png)
 
 * _'The Beatles'_ is defined as a bundle of 4 concrete entities
-* _'Old People'_ is defined as a bundle of all persons born before 1920
+* _'Old People'_ is defined as a bundle of all people born before 1920
 * _'Old males'_ is defined as a bundle of all males born before 1920
 * _'Red things'_ is defined as a bundle of all things which have a property 'color' with value 'red'
-* _'Japanese'_ is defined as a bundle of all persons with Japanese citizenship and all companies registered in Japan
+* _'Japanese'_ is defined as a bundle of all people with Japanese citizenship and all companies registered in Japan
 
 A bundle in a query will cause the query to be executed seperately for each bundled entity. The query results will be the union of the results of all these queries. A bundle never appear in the query results.
 
@@ -1624,27 +1624,29 @@ Here are some examples:
 
 _**Q208:** For each Beatles member: any phone owned by E since 1/1/2011 or since a later date_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q208.png)
 
 The query will be executed seperately for each of the bundle's members.
 
 _**Q209:** Any phone than called at least 3 phones owned by ane of the entities bundled in 'Japanese'_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
 If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Star - it **won't** be part of the answer.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with one of the entities bundled in 'Red Things'_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q210.png)
 
 _**Q211:** Any path with length ≤ 4 between an entity bundled in 'Japanese' and an entity bundled in 'The Beatles'_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q211.png)
+
+Assuming 'Japanese' bundles 1000 entities - this query is equivalent to 4000 queries for concrete entity pairs.
 
 _**Q212:** Are there more than 10 days in which at least 10 ownership relationships started between an entity bundled in 'Old People' and an entity bundled in 'Red Things'?_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q212.png)
 
 ## Tag Rules
 
