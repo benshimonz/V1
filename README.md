@@ -1555,6 +1555,8 @@ Here are some definition examples:
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
 * _'Japanese'_ is defined as an encapsulation of all persons with Japanese citizenship and all companies registered in Japan
 
+An Aggregate entity in a query will show as an aggregated entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
+
 Aggregate entities have the following auto-generated aggregate properties:
 
 * _'count'_ - the number of encapsulated entities
