@@ -1570,23 +1570,24 @@ Using aggregate entities in queries:
 
 Here are some examples:
 
-_**Q203:** Any_
+_**Q203:** Any phone owner by an entity encapsulated within 'The Beatles' since 1/1/2011 or since a later date_
+
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any_
+_**Q204:** Any person who called at least 3 phones owned by an entity encapsulated within 'Japanese'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
-_**Q205:** Any_
+_**Q205:** Any person with at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any_
+_**Q206:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated with 'The Beatles'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
-_**Q207:** Any_
+_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between entities encapsulated within 'Old People' and entities encapsulated within 'Red Things'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
