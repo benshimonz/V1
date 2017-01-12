@@ -113,25 +113,27 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ## V1 Basics
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
+The following sections define the syntax and semantics of the V1 langage. We start with the basics, adding more language elements as we go along.
 
-Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB04.png)
 
-Any pattern starts with a small black diamond, and is read from left to right. 
+**Syntax**
+
+Any pattern is written from left to right, starts with (a small black diamond), continues with a (red, blue or yellow rectangle), continues with zero or more ((black arrow, black line, or red line) followed by a (red, blue or yellow rectangle)).
+
+**Semantics**
+
+Red, blue and yellow rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
 
 A pair of entities can be connected with:
 
-* A horizontal **black arrow** - denoting a **directional relationship**,
-* A horizontal **black line** - denoting either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or
-* A horizontal **red line** - denoting a **path** (explained later)
+* A horizontal **black arrow** - representing a **directional relationship**,
+* A horizontal **black line** - representing either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or
+* A horizontal **red line** - representing a **path** (explained later)
 
 Each relationship has a label which denotes the relationship's type.
-
-For every blue rectangle, red rectangle and relationship - the query processor will look for concrete entities and relationships that match the pattern.
-
-Patterns have a tree-like structure (as opposed to graph-like structure).
 
 Here are some basic patterns:
 
@@ -148,6 +150,8 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
 The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
+
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look for concrete entities and relationships that match the pattern.
 
 ## Properties
 
