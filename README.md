@@ -193,7 +193,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-**The first way to use quantifiers:** The left component ends with an entity (red / blue / yellow), and each right component starts with:
+**The first way to use quantifiers:** The left component ends with an entity (yellow / blue / red), and each right component starts with:
 
 * A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
 * A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
@@ -284,9 +284,9 @@ _**Q188:** Any phone that was called from 052-333-4444: at least one call (after
 
 ## Quantifiers #2
 
-A second way to use quantifiers: The left component ends with a relationship, and each right component starts with either:
+**A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
-* An entity (red / blue / yellow)
+* An entity (yellow / blue / red)
 * A quantifier
 
 Here is an example:
@@ -450,9 +450,9 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 ## Quantifiers #3
 
-A third way to use quantifiers is at the start of a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
+**A third way to use quantifiers:** A quantifier may start of a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
-* An entity (red / blue / yellow)
+* An entity (yellow / blue / red)
 * A quantifier
 
 The '0' quantifier cannot start a pattern.
