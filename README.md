@@ -1560,9 +1560,9 @@ An Aggregate entity in a query will show as an aggregated entity in the query's 
 Aggregate entities have the following auto-generated aggregate properties:
 
 * _'count'_ - the number of encapsulated entities
-* _'e.count'_ - the number of encapsulated entities of type _e_ (_e_ is an encapsulated entity type)
-* _'p.distinct'_ - the number of distinct values of property _p_ (_p_ is a property of at least one encapsulated entity type)
-* _'p.min', 'p.max', 'p.avg', 'p.sum'_ - the min, max, sum, and average of property _p_ (_p_ is any numeric property of at least one encapsulated entity type)
+* _'e.count'_ - the number of encapsulated entities of type _e_ (valid for any encapsulated entity type)
+* _'e.p.distinct'_ - the number of distinct values of property _p_ of encapsulated entity type _e_ (valid for any property type of any encapsulated entity type)
+* _'e.p.min', 'e.p.max', 'e.p.avg', 'e.p.sum'_ - the min, max, sum, and average of property _p_ of entity type _e_ (valid for any numeric property type of any encapsulated entity type)
 
 Using aggregate entities in queries:
 
@@ -1576,9 +1576,13 @@ _**Q203:** Any phone owned by an entity encapsulated within 'The Beatles' - sinc
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any phone than called at least 3 phones owned by an entity encapsulated within 'Japanese'_
+The aggregate entity 'The Beatles' will be part of the query result. It won't be disassembled into its four members.
+
+_**Q204:** Any phone than called at least 3 phones owned by entities encapsulated within 'Japanese'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
+
+If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Star - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
 
 _**Q205:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
@@ -1589,6 +1593,56 @@ _**Q206:** Any path with length ≤ 4 between an entity encapsulated within 'Jap
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
 _**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between entities encapsulated within 'Old People' and entities encapsulated within 'Red Things'?_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
+
+## Bundles
+
+A bundle is a way to represent several entities, when the same pattern need to be expressed separately for each them. Bundles can be defined, and then used in queries.
+
+Here are some definition examples:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB13.png)
+
+* _'The Beatles'_ is defined as a bundle of 4 concrete entities
+* _'Old People'_ is defined as a bundle of all persons born before 1920
+* _'Old males'_ is defined as a bundle of all males born before 1920
+* _'Red things'_ is defined as a bundle of all things which have a property 'color' with value 'red'
+* _'Japanese'_ is defined as a bundle of all persons with Japanese citizenship and all companies registered in Japan
+
+A bundle in a query will cause the query to be executed seperately for each bundled entity. The query results will be the union of the results of all these queries. A bundle never appear in the query results.
+
+Bundle have no properties.
+
+Using bundles in queries:
+
+* Adjacent relationship types should support at least one encapsulated entity type
+* Constraints cannot be defined for bundles
+* Bundles can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be a bundle)
+
+Here are some examples:
+
+_**Q208:** For each Beatles member: any phone owned by E since 1/1/2011 or since a later date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
+
+The query will be executed seperately for each of the bundle's members.
+
+_**Q209:** Any phone than called at least 3 phones owned by ane of the entities bundled in 'Japanese'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
+
+If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Star - it **won't** be part of the answer.
+
+_**Q210:** Any person who has at least 3 'owns' relationships with one of the entities bundled in 'Red Things'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
+
+_**Q211:** Any path with length ≤ 4 between an entity bundled in 'Japanese' and an entity bundled in 'The Beatles'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
+
+_**Q212:** Are there more than 10 days in which at least 10 ownership relationships started between an entity bundled in 'Old People' and an entity bundled in 'Red Things'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
