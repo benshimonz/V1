@@ -1541,15 +1541,15 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-## Logical Entities
+## Logical Entity Types
 
-A logical entity is a way to define new entity type. It is defined as a union of:
+A logical entity type is a way to define new entity type. It is defined as a union of:
 
 * Concrete (yellow) entities
 * Entity types (blue) with constraints
 * Entities (red) with constraints
 
-Logical entities can be defined, and then used in queries.
+Logical entities type can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1561,9 +1561,9 @@ Here are some definition examples:
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
 * _'Japanese'_ is defined as a a person with Japanese citizenship / a company registered in Japan
 
-A logical does not appear in the query results. It is resolved to concrete entities.
+Entities of logical types do not appear in the query results. Their are resolved to concrete entities.
 
-Logical entities have the following properties:
+Logical entities types have the following properties:
 
 * _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
 
