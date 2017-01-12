@@ -121,7 +121,7 @@ The following sections define the syntax and semantics of the V1 langage. We sta
 
 **Syntax**
 
-Any pattern is written from left to right, starts with (a small black diamond), continues with a (red, blue or yellow rectangle), continues with zero or more ((black arrow, black line, or red line) followed by a (red, blue or yellow rectangle)).
+Any pattern is written from left to right. It starts with (a small black diamond), continues with a (red, blue or yellow rectangle), continues with zero or more ((black arrow, black line, or red line) followed by a (red, blue, or yellow rectangle)).
 
 **Semantics**
 
@@ -151,7 +151,7 @@ _**Q184:** Any phone that made or received at least one call from a phone owned 
 
 The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
 
-For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look for concrete entities and relationships that match the pattern.
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all assignments.
 
 ## Properties
 
