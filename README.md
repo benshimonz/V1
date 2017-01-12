@@ -1541,6 +1541,22 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
+## Aggregative Entities
+
+An aggregative entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregative entities can be defined, and then used in queries.
+
+Here are some definition examples:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
+
+* _'The Beatles'_ is defined as an encapsulation of 4 concrete entities
+* _'Old People'_ is defined as an encapsulation of all persons born before 1920
+* _'Old males'_ is defined as an encapsulation of all males born before 1920
+* _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
+* _'Japanese'_ is defined as an encapsulation of all persons with Japanese citizenship and all companies registered in Japan
+
+
+
 ## Tag Rules
 
 **R1:** Only one property tag can be assigned to any property.
