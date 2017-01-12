@@ -1622,7 +1622,7 @@ Using bundles in queries:
 
 Here are some examples:
 
-_**Q208:** For each Beatles member: any phone owned by E since 1/1/2011 or since a later date_
+_**Q208:** For each Beatles member E: any phone owned by E since 1/1/2011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q208.png)
 
