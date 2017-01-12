@@ -1543,53 +1543,51 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Logical Entities
 
-A logical entity ...
+A logical entity is a way to define new entity type. It is defined as a union of:
+
+* Concrete (yellow) entities
+* Entity types (blue) with constraints
+* Entities (red) with constraints
+
+Logical entities can be defined, and then used in queries.
 
 Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
 
-* _'A Beatle'_ is defined as a bundle of 4 concrete entities
+* _'A Beatle'_ is defined as one of 4 concrete entities
 * _'Old Person'_ is defined as a person born before 1920
 * _'Old male'_ is defined as a male born before 1920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
 * _'Japanese'_ is defined as a a person with Japanese citizenship / a company registered in Japan
 
-A logical entity  never appear in the query results.
+A logical does not appear in the query results. It is resolved to concrete entities.
 
-Properties: todo
+Logical entities have the following properties:
 
-Using logical entities:
+* _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
 
-* Adjacent relationship types should support at least one encapsulated entity type
-* Constraints cannot be defined for bundles
-* Bundles can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be a bundle)
+In a pattern, adjacent relationship types should support at least one of the entity types used in the definition.
 
 Here are some examples:
 
-_**Q203:** For each Beatles member E: any phone owned by E since 1/1/2011 or since a later date_
+_**Q203:** Any phone owned by a Beatle since 1/1/2011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-The query will be executed seperately for each of the bundle's members.
-
-_**Q204:** Any phone than called at least 3 phones owned by ane of the entities bundled in 'Japanese'_
+_**Q204:** Any phone than called at least 3 phones owned by a 'Japanese' (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
-If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Star - it **won't** be part of the answer.
-
-_**Q205:** Any person who has at least 3 'owns' relationships with one of the entities bundled in 'Red Things'_
+_**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any path with length ≤ 4 between an entity bundled in 'Japanese' and an entity bundled in 'The Beatles'_
+_**Q206:** Any path with length ≤ 4 between a 'Japanese' and a 'Beatle'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
-Assuming 'Japanese' bundles 1000 entities - this query is equivalent to 4000 queries for concrete entity pairs.
-
-_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between an entity bundled in 'Old People' and an entity bundled in 'Red Things'?_
+_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between a certain 'Old Person' and a certain 'Red Thing'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
