@@ -1543,11 +1543,13 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Logical Entity Types
 
-A logical entity type is a way to define new entity type. It is defined as a union of:
+A logical entity type is a way to define new entity type. It is defined by:
 
-* Concrete (yellow) entities
-* Entity types (blue) with optional constraints
-* Entities (red) with constraints
+* The entities it assigns a new type name to each:
+ * Concrete (yellow) entities
+ * Entity types (blue) with optional constraints
+ * Entities (red) with constraints
+* A entity type name assigned to all such entities
 
 Logical entities type can be defined, and then used in queries.
 
@@ -1567,7 +1569,10 @@ Logical entity types have the following properties:
 
 * _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
 
-In a pattern, adjacent relationship types should support at least one of the entity types used in the definition.
+Using logical entity types in queries:
+
+* Logical entity types are used in a similar manner to blue entities
+* Adjacent relationship types should support at least one entity type used in the definition
 
 Here are examples of patterns that incorporate the logical entity types defined above:
 
@@ -1593,7 +1598,15 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ## Aggregate Entities
 
-An aggregate entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregate entities can be defined, and then used in queries.
+An aggregate entity is a virtual concrete entity, that encapsulates several entities. It is defined by:
+
+* The entities it encapsulates: A set of
+ * Concrete (yellow) entities
+ * Entity types (blue) with optional constraints
+ * Entities (red) with constraints
+* A entity type name assigned to this aggregation
+
+Aggregate entities can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1616,6 +1629,7 @@ Aggregate entities have the following auto-generated aggregate properties:
 
 Using aggregate entities in queries:
 
+* Aggregate entities are used in a similar manner to yellow entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
 * Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
