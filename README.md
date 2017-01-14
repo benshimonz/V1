@@ -1638,7 +1638,7 @@ _**Q210:** Any person who has at least 3 'owns' relationships with entities enca
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q210.png)
 
-_**Q211:** Any (entity encapsulated within 'Japanese' and entity encapsulated within 'The Beatles') pair with graph distance ≤ 4_
+_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated within 'The Beatles'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q211.png)
 
