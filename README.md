@@ -1546,7 +1546,7 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 A logical entity type is a way to define new entity type. It is defined as a union of:
 
 * Concrete (yellow) entities
-* Entity types (blue) with constraints
+* Entity types (blue) with optional constraints
 * Entities (red) with constraints
 
 Logical entities type can be defined, and then used in queries.
@@ -1555,13 +1555,13 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
 
-* _'A Beatle'_ is defined as one of 4 concrete entities
+* _'Beatle'_ is defined as one of 4 concrete entities
 * _'Old Person'_ is defined as a person born before 1920
 * _'Old male'_ is defined as a male born before 1920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
 * _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
 
-Entities of logical types do not appear in the query results. Their are resolved to concrete entities.
+In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
 
 Logical entity types have the following properties:
 
@@ -1583,7 +1583,7 @@ _**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any path with length ≤ 4 between a 'Japanese' and a 'Beatle'_
+_**Q206:** Any 'Japanese' and 'Beatle' pair with graph distance ≤ 4_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
@@ -1591,9 +1591,9 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
-## Aggregate Entities
+## Aggregated Entities
 
-An aggregate entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregate entities can be defined, and then used in queries.
+An aggregated entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregated entities can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1605,7 +1605,7 @@ Here are some definition examples:
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
 * _'Japanese'_ is defined as an encapsulation of all people with Japanese citizenship and all companies registered in Japan
 
-An Aggregate entity in a query will show as an aggregated entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
+An encapsulated entity in a query will show as an aggregated entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
 
 Aggregate entities have the following auto-generated aggregate properties:
 
@@ -1638,7 +1638,7 @@ _**Q210:** Any person who has at least 3 'owns' relationships with entities enca
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q210.png)
 
-_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated within 'The Beatles'_
+_**Q211:** Any (entity encapsulated within 'Japanese' and entity encapsulated within 'The Beatles') pair with graph distance ≤ 4_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q211.png)
 
