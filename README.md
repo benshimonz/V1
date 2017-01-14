@@ -1543,15 +1543,15 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ## Logical Entity Types
 
-A logical entity type is a way to define new entity type. It is defined by:
+A logical entity type can be assigned to a set of entities. It is defined by:
 
-* The entities it assigns a new type name to each:
+* The entities it assigns a new type name to:
   * Concrete (yellow) entities
   * Entity types (blue) with optional constraints
   * Entities (red) with constraints
-* A entity type name assigned to all such entities
+* A entity type name assigned to each such entity
 
-Logical entities type can be defined, and then used in queries.
+Logical entities types can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1604,7 +1604,7 @@ An aggregate entity is a virtual concrete entity, that encapsulates several enti
   * Concrete (yellow) entities
   * Entity types (blue) with optional constraints
   * Entities (red) with constraints
-* A entity type name assigned to this aggregation
+* A entity type name assigned to the aggregation
 
 Aggregate entities can be defined, and then used in queries.
 
