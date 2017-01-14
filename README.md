@@ -1546,9 +1546,11 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 A logical entity type is a way to define new entity type. It is defined by:
 
 * The entities it assigns a new type name to each:
+
  * Concrete (yellow) entities
  * Entity types (blue) with optional constraints
  * Entities (red) with constraints
+ 
 * A entity type name assigned to all such entities
 
 Logical entities type can be defined, and then used in queries.
@@ -1601,9 +1603,11 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 An aggregate entity is a virtual concrete entity, that encapsulates several entities. It is defined by:
 
 * The entities it encapsulates: A set of
+
  * Concrete (yellow) entities
  * Entity types (blue) with optional constraints
  * Entities (red) with constraints
+ 
 * A entity type name assigned to this aggregation
 
 Aggregate entities can be defined, and then used in queries.
