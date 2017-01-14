@@ -1591,9 +1591,9 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
-## Aggregated Entities
+## Aggregate Entities
 
-An aggregated entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregated entities can be defined, and then used in queries.
+An aggregate entity is a virtual entity that encapsulates one or more yellow and blue entities. Aggregate entities can be defined, and then used in queries.
 
 Here are some definition examples:
 
@@ -1605,7 +1605,7 @@ Here are some definition examples:
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
 * _'Japanese'_ is defined as an encapsulation of all people with Japanese citizenship and all companies registered in Japan
 
-An encapsulated entity in a query will show as an aggregated entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
+An encapsulated entity in a query will show as an aggregate entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
 
 Aggregate entities have the following auto-generated aggregate properties:
 
