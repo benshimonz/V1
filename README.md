@@ -1710,6 +1710,11 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
+**R12:** Aggregations cannot be used when there is no entity on the right
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
+
+
 ## Missing Values
 
 todo
