@@ -1627,6 +1627,7 @@ Here are some definition examples:
 * _'Old male'_ is defined as a male born before 1920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
 * _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
+* _'Rock Band'_ is defined as one of 4 aggregate entities
 
 In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
 
