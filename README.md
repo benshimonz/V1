@@ -1541,61 +1541,6 @@ _**Q159:** Any **phone** for which there are more days where (the number of phon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
-## Logical Entity Types
-
-A logical entity type can be assigned to specific entities. It is defined by:
-
-* The entities it assigns a new type name to:
-  * Concrete (yellow) entities
-  * Entity types (blue) with optional constraints
-  * Entities (red) with constraints
-* A entity type name assigned to each such entity
-
-Logical entities types can be defined, and then used in queries.
-
-Here are some definition examples:
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
-
-* _'Beatle'_ is defined as one of 4 concrete entities
-* _'Old Person'_ is defined as a person born before 1920
-* _'Old male'_ is defined as a male born before 1920
-* _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
-* _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
-
-In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
-
-Logical entity types have the following properties:
-
-* _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
-
-Using logical entity types in queries:
-
-* Logical entity types are used in a similar manner to blue entities
-* Adjacent relationship types should support at least one entity type used in the definition
-
-Here are examples of patterns that incorporate the logical entity types defined above:
-
-_**Q203:** Any phone owned by a Beatle since 1/1/2011 or since a later date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
-
-_**Q204:** Any phone than called at least 3 phones owned by a 'Japanese' (cumulatively)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
-
-_**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
-
-_**Q206:** Any 'Japanese' and 'Beatle' pair with graph distance ≤ 4_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
-
-_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between a certain 'Old Person' and a certain 'Red Thing'?_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
-
 ## Aggregate Entities
 
 An aggregate entity is a virtual concrete entity, that encapsulates several entities. It is defined by:
@@ -1629,7 +1574,7 @@ Aggregate entities have the following auto-generated aggregate properties:
 
 Using aggregate entities in queries:
 
-* Aggregate entities are used in a similar manner to yellow entities
+* Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
 * Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
@@ -1659,6 +1604,62 @@ _**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Jap
 _**Q212:** Are there more than 10 days in which at least 10 ownership relationships started between entities encapsulated within 'Old People' and entities encapsulated within 'Red Things'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q212.png)
+
+## Logical Entity Types
+
+A logical entity type can be assigned to specific entities. It is defined by:
+
+* The entities it assigns a new type name to:
+  * Concrete (yellow) entities
+  * Aggregate entities
+  * Entity types (blue) with optional constraints
+  * Entities (red) with constraints
+* A entity type name assigned to each such entity
+
+Logical entities types can be defined, and then used in queries.
+
+Here are some definition examples:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
+
+* _'Beatle'_ is defined as one of 4 concrete entities
+* _'Old Person'_ is defined as a person born before 1920
+* _'Old male'_ is defined as a male born before 1920
+* _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
+* _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
+
+In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
+
+Logical entity types have the following properties:
+
+* _'et.p'_ - where _et_ is an entity type used in the definition, and _p_ is a name of a property of that entity type
+
+Using logical entity types in queries:
+
+* Logical entity types are used in a similar manner to **blue** entities
+* Adjacent relationship types should support at least one entity type used in the definition
+
+Here are examples of patterns that incorporate the logical entity types defined above:
+
+_**Q203:** Any phone owned by a Beatle since 1/1/2011 or since a later date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
+
+_**Q204:** Any phone than called at least 3 phones owned by a 'Japanese' (cumulatively)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
+
+_**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
+
+_**Q206:** Any 'Japanese' and 'Beatle' pair with graph distance ≤ 4_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
+
+_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between a certain 'Old Person' and a certain 'Red Thing'?_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
 ## Tag Rules
 
