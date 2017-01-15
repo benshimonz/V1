@@ -1714,6 +1714,13 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
 
+**R13:** The condition in an LA3C aggregation - cannot include a tag defined on its right
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg03.png)
+
+**R14:** A condition on the right of an LA3C aggregation - cannot include a tag defined in the aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
 
 ## Missing Values
 
