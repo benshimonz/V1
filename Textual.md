@@ -8,7 +8,7 @@
 |2  | Yellow    | yellow entity           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element02.png)
 |3  | Blue      | blue entity             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element03.png)
 |4  | Red       | red entity              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element04.png)
-|5  | Together  | aggregate entity        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element05.png)
+|5  | AggEnt    | aggregate entity        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element05.png)
 |6  | LogEnt    | logical entity          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
 |7  | Rel       | relationship            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
 |8  | EntProp   | Entity's property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
@@ -99,17 +99,19 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
-## E5: Aggregate Entity (Type = 'Together')
+## E5: Aggregate Entity (Type = 'AggEnt')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | FName     | string | file name, where defined
+| +       | EName     | string | name - as defined in file
 
 ## E6: Logical Entity (Type = 'LogEnt')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | FName     | string | file name, where defined
+| +       | EName     | string | name - as defined in file
 
 ## E7: Relationship (Type = 'Rel')
 
