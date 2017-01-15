@@ -1706,19 +1706,19 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
-**R12:** Aggregations cannot be used when there is no entity on the right
+**R12:** Aggregations cannot be used when there is no entity on the right.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
 
-**R13:** The condition in an LA3C aggregation - cannot include a tag defined on its right
+**R13:** A tag defined right of an LA3C aggregator - cannot be referenced in the aggregate condition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg03.png)
 
-**R14:** A condition on the right of an LA3C aggregation - cannot include a tag defined in the aggregation
+**R14:** A tag defined in an LA3C aggregator - cannot be referenced right of its definition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
 
