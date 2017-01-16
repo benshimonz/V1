@@ -1241,13 +1241,11 @@ _**Q201:** For any phone that called at least 10 phones: the 3 phones with the l
 
 ## Min/Max Aggregations #4 (LRM4)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
+
 - {pt} is an ordinal property of the entity directly right of the aggregator
 - {at}/{st} is a calculated property of the entity directly right of the aggregator
 - LRM4 may not appear directly before a quantifier
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
-
-todo
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1259,13 +1257,11 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ## Prefix Min/Max Aggregations #4 (PRM4)
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
+
 - {pt} is an ordinal property of the entity directly right of the aggregator
 - {at}/{st} is a calculated property of the entity directly right of the aggregator
 - PRM4 cannot be used when the pattern starts with a quantifier
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
-
-todo
 
 _**Q130:** The 4 eldest people_
 
