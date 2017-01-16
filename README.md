@@ -1491,6 +1491,10 @@ _**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is gre
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-2.png)
 
+_**Q213:** Out of the phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration - the 5 pairs with the largest number of calls from A to B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
+
 _**Q180:** Any phones pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
