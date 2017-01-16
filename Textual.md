@@ -207,13 +207,17 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | RelProp   | string | name of relationship's property to split by (e.g. "since")
+|         | tag       | string | pt/at/st to split by (e.g. "1")
+|         | ett       | string | ett to split by (e.g. "1")
+
+Exactly one of the above must be presented
 
 ## E19: Splits (Type = 'Splits')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | Cond      | string | condition
 
 ## E31: L1C aggregation (Type = 'AggL1C')
 
