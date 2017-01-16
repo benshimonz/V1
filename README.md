@@ -75,7 +75,7 @@ Here are two examples:
 
 **Pattern matching** is the process of deciding whether a given (sub)graph is acceptable to a given pattern. 
 
-**Pattern finding** is the process of finding the subgraphs of a given property graph, which match a given pattern. Any subgraph that matches the pattern is called **an assignment**.
+**Pattern finding** is the process of finding minimal subgraphs of a given property graph, which match a given pattern. Any minimal subgraph that matches the pattern is called **an assignment**. *Minimal* means that if a single entity or relationship is removed - it won't match the pattern anymore.
 
 A pattern can be viewed as a query that can be executed against a property graph. Similarly, pattern finding can be viewed as query answering.
 
@@ -84,12 +84,14 @@ A pattern can be viewed as a query that can be executed against a property graph
 * Syntax and semantics for expressing patterns (queries)
 * Syntax and semantics for expressing query results (answers)
 
-The language semantics define which entities are part of an assignment. In the 2nd example above - an assignment may be:
+The language semantics defines which elements (entities and relationships) are part of an assignment. 
 
-* For each person than owns at least 5 blue cars: a person entity
-* For each person than owns at least 5 blue cars: a person entity + 5 car entities (for 5 of his blue cars)
-* For each person than owns at least 5 blue cars: a person entity + car entities (for all of his blue cars)
-* For each person than owns at least 5 blue cars: a person entity + car entities (for all of his blue cars) + 'own' relationships between the owners and their cars.
+In the 2nd example above (which expressed in English, not in a pattern language) the set of assignments (expressed English as well) would be:
+
+* For each person than owns at least 5 blue cars: an assignment is composed of:
+  * The 'person' entity 
+  * The 'car' entities - of 5 of his cars with property "color" with value "blue"
+  * The 'own' relationships between the person entity the those car entities
 
 The language semantics also define if an answer to a query is either (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
 
@@ -157,7 +159,7 @@ The relationship type between two entities must be valid according to the schema
 
 **Semantics**
 
-For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all assignments.
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all the assignments.
 
 ## Properties
 
@@ -185,6 +187,8 @@ _**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
 
 ## Quantifiers #1
 
+TODO: explain here only & and |. Explain all other quantifiers after No-existence is explained (the explanation of other quantifiers required the no-existance assignment to be explained first)
+
 Vertical quantifiers (or simply 'quantifiers') are used when several conditions need to be checked. Here is a simple example:
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
@@ -202,27 +206,12 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
-The most useful quantifiers are:
+The two most useful quantifiers are:
 
 * **All** (denoted '&') - An assignment is valid only if it satisfies every branch
 * **Some** (denoted '&#124;') - An assignment is valid only if it satisfies at least one branch
-* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if it doesn't satisfy at least one branch
-* **None** (denoted '0') - An assignment is valid only if it satisfies no branch
 
-("_only if_" denotes a necessary but not sufficient condition, since the pattern may contain other quantifiers / conditions)
-
-Additional quantifiers:
-
-* **_n_** - An assignment is valid only if it satisfies exactly _n_ branches. _n_ ∈ [1, _b_]
-* **_> n_** - An assignment is valid only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
-* **_< n_** - An assignment is valid only if it satisfies less than _n_ (but more than 0) branches. _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment is valid only if it satisfies _n_ or less (but more than 0) branches. _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment is valid only if it satisfies _n1_ up to _n2_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_≠ n_** - An assignment is valid only if it satisfies any number (except 0, _n_) branches. _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - An assignment is valid only if it satisfies (more than 0 but less than _n1_) or (more than _n2_) branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
-
-(_b_ denotes the number of branches)
+("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
 
 Only satisfied branches are part of a query's answer.
 
@@ -251,7 +240,7 @@ Horizontal quantifiers behave quite differently from vertical quantifiers:
 * **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies at least one branch) and also (for at least one branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
 * **None** (denoted '0') - Each assignment is valid only if (for each branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
 
-("_only if_" denotes a necessary but not sufficient condition, since the pattern may contain other quantifiers / conditions)
+("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
 
 Additional horizontal quantifiers:
 
@@ -460,6 +449,25 @@ The '0' quantifier cannot start a pattern.
 Here is a fourth way to represent Q26:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
+
+## Additional Quantifiers
+
+TODO
+
+* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if it satisfies a no-assignment to at least one branch
+* **None** (denoted '0') - An assignment is valid only if it satisfies a non-assignment to all branches
+* **_n_** - An assignment is valid only if it satisfies exactly _n_ branches, has no superset that satisfies more than _n_ branches, and has no superset that satisfies less than _n_ branches. _n_ ∈ [1, _b_]
+* **_> n_** - An assignment is valid only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
+* **_< n_** - An assignment is valid only if it satisfies less than _n_ (but more than 0) branches. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is valid only if it satisfies _n_ or less (but more than 0) branches. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is valid only if it satisfies _n1_ up to _n2_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_≠ n_** - An assignment is valid only if it satisfies any number (except 0, _n_) branches. _n_ ∈ [1, _b_]
+* **_∉ n1..n2_** - An assignment is valid only if it satisfies (more than 0 but less than _n1_) or (more than _n2_) branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+
+(_b_ denotes the number of branches)
+
+
 
 ## E-combiner
 
