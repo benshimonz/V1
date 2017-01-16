@@ -1495,6 +1495,8 @@ _**Q213:** Out of the phones pair (A, B) where A's cumulative call duration to B
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
 
+Note that the order of the filtering stages along the left aggregation chain can be switched. The semantics would remain the same.
+
 _**Q180:** Any phones pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
