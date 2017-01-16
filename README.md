@@ -1145,7 +1145,7 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-_et_ is a entity tag of a blue/red/logical entity defined right of (but not directly right of) the aggregator. 
+- _et_ is a entity tag of a blue/red/logical entity defined right of (but not directly right of) the aggregator
 
 For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the minimal / maximal number of assignments to _et_. 
 
@@ -1172,11 +1172,10 @@ _**Q198:** Any person and his 3 phones that (for each of them: the 4 phones it c
 
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
-_et_ is a entity tag of a blue/red/logical entity defined right of (but not directly right of) the aggregator. 
-
-- PRM1 cannot be used when the pattern starts with a quantifier
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
+
+- _et_ is a entity tag of a blue/red/logical entity defined right of (but not directly right of) the aggregator
+- PRM1 cannot be used when the pattern starts with a quantifier
 
 _**Q67:** The 3 people with the maximal number of parents_
 
@@ -1196,12 +1195,10 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 
 ## Min/Max Aggregations #2 (LRM2)
 
-- LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
-todo
+- LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times_
 
@@ -1209,11 +1206,9 @@ _**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
-- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
-todo
+- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q171:** The 2 phones that were called the largest number of times_
 
@@ -1225,11 +1220,9 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ## Min/Max Aggregations #3 (LRMA3)
 
-- LRMA3 may not appear directly before a quantifier
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
-todo
+- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cumulative call duration from it_
 
