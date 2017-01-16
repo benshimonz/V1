@@ -805,7 +805,7 @@ todo: aggregate tag, aggregate tag's scope
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - If →: directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
-- If et: directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - et must be defined on right of an R-combiner
+- If et: directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - et must be defined right of an R-combiner
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -1023,7 +1023,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - pt/at/st/ett must be defined right of an R-combiner
 
 _**Q116:** Any person who owns vehicles with no more than 3 colors_
 
