@@ -218,6 +218,9 @@ Exactly one of the above must be presented
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | Cond      | string | condition
+|         | st        | string | split tag to assign (e.g. "1")
+
+At least one of the above must be presented
 
 ## E31: L1C aggregation (Type = 'AggL1C')
 
