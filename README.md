@@ -1197,7 +1197,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 ## Min/Max Aggregations #2 (LRM2)
 
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- LRM2 may not appear directly before a quantifier
+- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
@@ -1209,7 +1209,7 @@ _**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
-- PRM1 cannot be used when the pattern starts with a quantifier
+- On its right - a blue/red/logical entity (not yellow/aggregated entity, nor quantifier)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
