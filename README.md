@@ -803,8 +803,9 @@ todo: aggregate tag, aggregate tag's scope
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
-- If →: On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
-- If et: On its right - a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - et must be defined on right of an R-combiner
+- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
+- If →: directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- If et: directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - et must be defined on right of an R-combiner
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -958,7 +959,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
-todo
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
 
 _**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
@@ -1004,7 +1005,7 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
-todo
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
 
 _**Q87:** Any phone that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
 
@@ -1022,7 +1023,7 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
-todo
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
 
 _**Q116:** Any person who owns vehicles with no more than 3 colors_
 
@@ -1056,7 +1057,7 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
-todo
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
 
 _**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
 
@@ -1070,7 +1071,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
-todo
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
 
 _**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
 
@@ -1080,7 +1081,7 @@ _**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier1.png)
 
-todo
+- Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
 
 _**Q121:** Any phone that called or SMSed at least 10 phones_
 
@@ -1146,8 +1147,8 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-- _et_ is a entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
+- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
 
@@ -1172,8 +1173,8 @@ _**Q198:** Any person and his 3 phones that (for each of them: the 4 phones it c
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
-- _et_ is a entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
+- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q67:** The 3 people with the maximal number of parents_
 
@@ -1196,7 +1197,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times_
 
@@ -1206,7 +1207,7 @@ _**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
-- On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q171:** The 2 phones that were called the largest number of times_
 
@@ -1220,7 +1221,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
-- On its right - a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
 _**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cumulative call duration from it_
 
