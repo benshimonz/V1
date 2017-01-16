@@ -1261,7 +1261,7 @@ _**Q119:** Any person and his 3 youngest sons_
 
 - {pt} is an ordinal property of the entity directly right of the aggregator
 - {at}/{st} is a calculated property of the entity directly right of the aggregator
-- PRM4 cannot be used when the pattern starts with a quantifier
+- PRM4 may not be used when the pattern starts with a quantifier
 
 _**Q130:** The 4 eldest people_
 
