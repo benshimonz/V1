@@ -76,25 +76,25 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
+| +       | et        | string | Entity tag (e.g. "A")
 | +       | EID       | int    | Technical ID of the entity
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. "Lior Kogan")
-| +       | Tag       | string | Entity tag (e.g. "A")
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E3: Blue Entity (Type = 'Blue')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
+| +       | et        | string | Entity tag (e.g. "A")
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-| +       | Tag       | string | Entity tag (e.g. "A")
 |         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Tag       | string | Entity tag (e.g. "A")
+| +       | et        | string | Entity tag (e.g. "A")
 |         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
@@ -103,6 +103,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
+| +       | et        | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
 
@@ -110,6 +111,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
+| +       | et        | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
 
@@ -128,7 +130,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | Tag       | string | Property tag (e.g. "1")
+|         | pt        | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
@@ -136,7 +138,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | Tag       | string | Property tag (e.g. "1")
+|         | pt        | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
 |         | B         | int    | Eno of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
@@ -161,13 +163,13 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+| +       | R         | int    | Eno of elements on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E13: R-Combiner (Type = 'RComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, RComb, Quant2
+| +       | R         | int    | Eno of element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, RComb, Quant2
 
 ## E14: Path (Type = 'Path') 
 
@@ -213,104 +215,138 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 |         |           |        |
 
-## E31: L1C aggregation  (Type = 'AggL1C')
+## E31: L1C aggregation (Type = 'AggL1C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | et        | string | entity tag on the right of the aggregation. if not present: treat as '→'
+|         | at        | string | attribute tag to assign (e.g. "1")
+|         | Cond      | string | condition
 
-## E32: L2C aggregation  (Type = 'AggL2C')
+## E32: L2C aggregation (Type = 'AggL2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | at        | string | attribute tag to assign (e.g. "1")
+|         | Cond      | string | condition
 
 ## E33: LA3C aggregation (Type = 'AggLA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | at        | string | attribute tag to assign (e.g. "1")
+| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
+|         | Cond      | string | condition
 
 ## E34: LA4C aggregation (Type = 'AggLA4C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | at        | string | attribute tag to assign (e.g. "2")
+| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
+|         | Cond      | string | condition
 
 ## E35: D2C aggregation  (Type = 'AggD2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | at        | string | attribute tag to assign (e.g. "1")
+|         | Cond      | string | condition
 
 ## E36: DA3C aggregation (Type = 'AggDA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|         | at        | string | attribute tag to assign (e.g. "1")
+| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
+|         | Cond      | string | condition
 
 ## E37: LRM1 aggregation (Type = 'AggLRM1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | et        | string | entity tag on the right of the aggregation
+| +       | op        | string | "min" / "max"
 
 ## E38: LRM2 aggregation (Type = 'AggLRM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
 
-## E39: LRMA3 aggregatio (Type = 'AggLRMA')
+## E39: LRMA3 aggregatio (Type = 'AggLRMA3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
 ## E40: LRM4 aggregation (Type = 'AggLRM4')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
 
 ## E41: PRM1 aggregation (Type = 'AggPRM1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | et        | string | entity tag on the right of the aggregation
+| +       | op        | string | "min" / "max"
 
 ## E42: PRM2 aggregation (Type = 'AggPRM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
 
 ## E43: PRM4 aggregation (Type = 'AggPRM4')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
 
 ## E44: LDM3 aggregation (Type = 'AggLDM3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
 ## E45: DDM3 aggregation (Type = 'AggDDM3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
 ## E46: DMA3 aggregation (Type = 'AggDMA3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
+| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
 ## E47: DM2 aggregation  (Type = 'AggDM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+| +       | n         | int    | number of min/max entities
+| +       | op        | string | "min" / "max"
