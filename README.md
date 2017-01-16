@@ -1503,6 +1503,10 @@ _**Q153:** Any phone that in at least 10 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
+_**Q214:** Any person who owns entities of at least 4 types. For each type - at least 5 entities_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q214.png)
+
 _**Q154:** Any phone that in at least 4 years: in at least 11 days called no more than 5 phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q154.png)
