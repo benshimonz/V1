@@ -206,14 +206,16 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
-The two most useful quantifiers are:
+These four quantifiers are 'positive quantifiers' (additional quantifiers are explained later):
 
 * **All** (denoted '&') - An assignment is valid only if it satisfies every branch
 * **Some** (denoted '&#124;') - An assignment is valid only if it satisfies at least one branch
+* **_> n_** - An assignment is valid only if it satisfies more than _n_ brances. _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
 
-("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
-
-Only satisfied branches are part of a query's answer.
+- As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
+- "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern
+- Only satisfied branches are part of a query's answer.
 
 Here is an example of **nested quantifiers**:
 
@@ -245,8 +247,6 @@ Horizontal quantifiers behave quite differently from vertical quantifiers:
 Additional horizontal quantifiers:
 
 * **_n_** -  An assignment is valid only if (it satisfies at least one branch) and also (for exactly _n_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_> n_** - An assignment is valid only if (it satisfies at least one branch) and also (for more than _n_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n_ or more branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
 * **_< n_** - An assignment is valid only if (it satisfies at least one branch) and also (for less than _n_ (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [2, _b_]
 * **_≤ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n_ or less (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
 * **_n1..n2_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n1_ up to _n2_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
