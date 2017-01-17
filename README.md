@@ -208,14 +208,16 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 These four quantifiers are 'positive quantifiers' (additional quantifiers are explained later):
 
-* **All** (denoted '&') - An assignment is valid only if it satisfies every branch
-* **Some** (denoted '&#124;') - An assignment is valid only if it satisfies at least one branch
+* **_All_** (denoted '&') - An assignment is valid only if it satisfies every branch
+* **_Some_** (denoted '&#124;') - An assignment is valid only if it satisfies at least one branch
 * **_> n_** - An assignment is valid only if it satisfies more than _n_ brances. _n_ ∈ [0, _b-1_]
 * **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
 
-- As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
-- "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern
-- Only satisfied branches are part of a query's answer.
+As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
+
+"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern
+
+Only satisfied branches are part of a query's answer.
 
 Here is an example of **nested quantifiers**:
 
