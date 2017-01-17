@@ -244,6 +244,8 @@ _**Q10:** Any person whose first name is Lior, who owns some phone B which calle
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
+When a relationship need to satisfy several conditions - green rectangles can be chained. Chaining is not valid for entities. Chaining is explained below (see _Horizontal Quantifiers_)
+
 ## Entity Tags
 
 In the top-left corner of any red, blue, or yellow rectangle - there a letter. This letter is called an **'entity tag'**.
