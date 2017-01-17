@@ -210,7 +210,7 @@ These four quantifiers are 'positive quantifiers' (additional quantifiers are ex
 
 We'll define patterns _P1..Pb_ (where _b_ denotes the number of branches), as a set of patterns - each composed of the left component, and one of the right components.
 
-Given patterns _P1..Pb_, the quantifiers are defined accordingly:
+Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
 * **_All_** (denoted '&') - An assignment matches the pattern only if it matches _P1..Pb_ (though not necessarily minimal for each separately)
 * **_Some_** (denoted '&#124;') - An assignment matches the pattern only if it matches at least one of _P1..Pb_ (though not necessarily minimal for each separately)
