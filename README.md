@@ -225,54 +225,6 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-## Horizontal Quantifiers
-
-Horizontal quantifiers are used with relationships / paths. On top of a horizontal quantifier is a relationship / path, and on its bottom - two or more branches.
-
-Each branch starts with:
-
-* A green rectangle (relationship only - relationship's property value constraints / tag),
-* An aggregate condition / an aggregation tag, or
-* An horizontal quantifier
-
-We'll call the left side of the relationship 'the left component', and anything on the right of the relationship 'the right component'.
-
-Horizontal quantifiers behave quite differently from vertical quantifiers:
-
-* **All** (denoted '&') - An assignment is valid only if (it satisfies at least one branch) and also (for each branch: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch)
-* **Some** (denoted '&#124;') - An assignment is valid only if (it satisfies at least one branch)
-* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies at least one branch) and also (for at least one branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
-* **None** (denoted '0') - Each assignment is valid only if (for each branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
-
-("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
-
-Additional horizontal quantifiers:
-
-* **_n_** -  An assignment is valid only if (it satisfies at least one branch) and also (for exactly _n_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_< n_** - An assignment is valid only if (it satisfies at least one branch) and also (for less than _n_ (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n_ or less (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n1_ up to _n2_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_≠ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for any number of branches except 0, _n_: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - An assignment is valid only if (it satisfies at least one branch) and also ((for more than 0 but less than _n1_ branches) or (for more than _n2_ branches): there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
-
-Here are two examples:
-
-_**Q187:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
-
-_**Q189:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 or longer than 10 minutes)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
-
-Green rectangles, aggregate conditions, and aggregation tags  below an horizontal quantifier can also be **chained**. When chained, each element serves as a filtering step. The branch's condition is met only if there is an assignment that passes all the filtering steps.
-
-Here is an example:
-
-_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
-
 ## Quantifiers #2
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
@@ -469,7 +421,53 @@ TODO
 
 (_b_ denotes the number of branches)
 
+## Horizontal Quantifiers
 
+Horizontal quantifiers are used with relationships / paths. On top of a horizontal quantifier is a relationship / path, and on its bottom - two or more branches.
+
+Each branch starts with:
+
+* A green rectangle (relationship only - relationship's property value constraints / tag),
+* An aggregate condition / an aggregation tag, or
+* An horizontal quantifier
+
+We'll call the left side of the relationship 'the left component', and anything on the right of the relationship 'the right component'.
+
+Horizontal quantifiers behave quite differently from vertical quantifiers:
+
+* **All** (denoted '&') - An assignment is valid only if (it satisfies at least one branch) and also (for each branch: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch)
+* **Some** (denoted '&#124;') - An assignment is valid only if (it satisfies at least one branch)
+* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if (it satisfies at least one branch) and also (for at least one branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
+* **None** (denoted '0') - Each assignment is valid only if (for each branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
+
+("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
+
+Additional horizontal quantifiers:
+
+* **_n_** -  An assignment is valid only if (it satisfies at least one branch) and also (for exactly _n_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
+* **_< n_** - An assignment is valid only if (it satisfies at least one branch) and also (for less than _n_ (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n_ or less (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is valid only if (it satisfies at least one branch) and also (for _n1_ up to _n2_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_≠ n_** - An assignment is valid only if (it satisfies at least one branch) and also (for any number of branches except 0, _n_: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
+* **_∉ n1..n2_** - An assignment is valid only if (it satisfies at least one branch) and also ((for more than 0 but less than _n1_ branches) or (for more than _n2_ branches): there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+
+Here are two examples:
+
+_**Q187:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
+
+_**Q189:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 or longer than 10 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
+
+Green rectangles, aggregate conditions, and aggregation tags  below an horizontal quantifier can also be **chained**. When chained, each element serves as a filtering step. The branch's condition is met only if there is an assignment that passes all the filtering steps.
+
+Here is an example:
+
+_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
 ## E-combiner
 
