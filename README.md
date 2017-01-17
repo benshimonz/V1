@@ -444,7 +444,7 @@ Horizontal quantifiers behave quite differently from vertical quantifiers:
 * **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if (it satisfies at least one branch) and also (for at least one branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
 * **None** (denoted '0') - Each assignment matches the pattern only if (for each branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
 
-("_only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern)
+"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
 
 Additional horizontal quantifiers:
 
