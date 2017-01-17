@@ -410,6 +410,8 @@ Here is a fourth way to represent Q26:
 
 ## Additional Quantifiers
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB14.png)
+
 In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports the following quantifiers:
 
 * **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
@@ -473,6 +475,8 @@ _**Q188:** Any phone that was called from 052-333-4444: at least one call (after
 
 ## E-combiner
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB15.png)
+
 An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
 
 * A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
@@ -500,6 +504,8 @@ _**Q35:** Any person who either (i) knows a Chinese citizen who owns a red vehic
 An entity tag can't be used both on the left side and on the right side of an E-combiner (to prevent expressing identicality / nonidenticality constraints that are valid only in some branches).
 
 ## R-Combiner
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB15.png)
 
 An R-combiner combines two or more branches of the same quantifier. On its left side are relationships, and on its right side - an entity.
 
