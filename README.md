@@ -412,12 +412,12 @@ Here is a fourth way to represent Q26:
 
 In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports the following quantifiers:
 
-* **Not all** (denoted by an '&' with stroke) - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of one or more branches.
+* **Not all** (denoted by an '&' with stroke) - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of one or more branches.
 * **None** (denoted '0') - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of all branches.
-* **_< n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of more than _b-n_ branches. _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of _b-n_ or more branches. _n_ ∈ [1, _b_]
-* **_≠ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of any number but _b-n_ branches. _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_< n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
+* **_≠ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
 * **_∉ n1..n2_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning more than _b-n2_ and less than _b-n1_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
