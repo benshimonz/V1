@@ -210,7 +210,7 @@ These four quantifiers are 'positive quantifiers' (additional quantifiers are ex
 
 * **_All_** (denoted '&') - An assignment is _valid_ only if it satisfies every branch
 * **_Some_** (denoted '&#124;') - An assignment is _valid_ only if it satisfies at least one branch
-* **_> n_** - An assignment is _valid_ only if it satisfies more than _n_ brances. _n_ ∈ [0, _b-1_]
+* **_> n_** - An assignment is _valid_ only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
 * **_≥ n_** - An assignment is _valid_ only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
 
 As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
@@ -406,18 +406,15 @@ Here is a fourth way to represent Q26:
 
 ## Additional Quantifiers
 
-TODO
+In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports the following quantifiers:
 
-* **Not all** (denoted by an '&' with stroke) - An assignment is valid only if it satisfies a no-assignment to at least one branch
-* **None** (denoted '0') - An assignment is valid only if it satisfies a non-assignment to all branches
-* **_n_** - An assignment is valid only if it satisfies exactly _n_ branches, has no superset that satisfies more than _n_ branches, and has no superset that satisfies less than _n_ branches. _n_ ∈ [1, _b_]
-* **_> n_** - An assignment is valid only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
-* **_< n_** - An assignment is valid only if it satisfies less than _n_ (but more than 0) branches. _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment is valid only if it satisfies _n_ or less (but more than 0) branches. _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment is valid only if it satisfies _n1_ up to _n2_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_≠ n_** - An assignment is valid only if it satisfies any number (except 0, _n_) branches. _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - An assignment is valid only if it satisfies (more than 0 but less than _n1_) or (more than _n2_) branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **Not all** (denoted by an '&' with stroke) - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the beginning of one or more branches.
+* **None** (denoted '0') - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added (or removed) from the start of all branches.
+* **_< n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added at the beginning of more than _b-n_ branches. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added at the beginning of _b-n_ or more branches. _n_ ∈ [1, _b_]
+* **_≠ n_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added at the beginning of any number but _b-n_ branches. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added at the beginning of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - An assignment is _valid_ only if it satisfies a similar query, where the quantifer is replaced with _All_, and an 'X' is added at the beginning more than _b-n2_ and less than _b-n1_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
