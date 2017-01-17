@@ -213,6 +213,8 @@ These four quantifiers are 'positive quantifiers' (additional quantifiers are ex
 * **_> n_** - An assignment is _valid_ only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
 * **_≥ n_** - An assignment is _valid_ only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
 
+(_b_ denotes the number of branches)
+
 As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern
