@@ -204,9 +204,9 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
-These four quantifiers are 'positive quantifiers' (additional quantifiers are explained later):
+4 quantifiers are defined here, and another 8 quantifiers are defined later on - after No-existence is explained.
 
-We'll define patterns _P1..Pb_ (where _b_ denotes the number of branches), as a set of patterns - each composed of the left component, and one of the right components.
+We'll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, and one of the right components.
 
 Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
@@ -215,11 +215,11 @@ Given patterns _P1..Pb_, the quantifiers are defined as follows:
 * **_> n_** - An assignment matches the pattern only if it matches more than _n_ of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [0, _b-1_]
 * **_≥ n_** - An assignment matches the pattern only if it matches _n_ or more of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [1, _b_]
 
-As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
+As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore.
 
-"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other elements in the pattern
+"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
 
-Only satisfied branches are part of a query's answer.
+All (and only) matched sub-patterns are included in a query's answer.
 
 Here is an example of **nested quantifiers**:
 
@@ -400,17 +400,17 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 * An entity (yellow/aggregated/blue/logical/red)
 * A quantifier
 
-The '0' quantifier cannot start a pattern.
+The _None_ quantifier cannot start a pattern.
 
 Here is a fourth way to represent Q26:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-4.png)
 
-## Additional Quantifiers
+## Quantifiers #4
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB14.png)
 
-In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports the following quantifiers:
+In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports these 8 quantifiers:
 
 * **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
 * **None** (denoted '0') - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
