@@ -414,6 +414,7 @@ In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_)
 
 * **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
 * **None** (denoted '0') - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
+* **_n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
 * **_< n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
 * **_≤ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
 * **_≠ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
