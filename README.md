@@ -208,10 +208,10 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 These four quantifiers are 'positive quantifiers' (additional quantifiers are explained later):
 
-* **_All_** (denoted '&') - An assignment is valid only if it satisfies every branch
-* **_Some_** (denoted '&#124;') - An assignment is valid only if it satisfies at least one branch
-* **_> n_** - An assignment is valid only if it satisfies more than _n_ brances. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment is valid only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
+* **_All_** (denoted '&') - An assignment is _valid_ only if it satisfies every branch
+* **_Some_** (denoted '&#124;') - An assignment is _valid_ only if it satisfies at least one branch
+* **_> n_** - An assignment is _valid_ only if it satisfies more than _n_ brances. _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment is _valid_ only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
 
 As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
 
@@ -301,18 +301,18 @@ The example above covers two cases: (i) there may be no red vehicles at all, or 
 
 Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a red vehicle_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
-An assignment is valid only if:
+An assignment is _valid_ only if:
 
 * It satisfies the left component (_a person whose first name is Lior_) 
-* There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
+* It has no superset that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
 An 'X' may not be used directly before a relationship or a path with an aggregation.
 
-In certain situations, however, we need an assignment to be valid only if:
+In certain situations, however, we need an assignment to be _valid_ only if:
 
 * It satisfies the left component (_a person whose first name is Lior_) 
+* It has no superset that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 * There is an assignment that satisfies a query composed only of the right component (there is _a red vehicle_)
-* There is no assignment that satisfies a query composed of the left component, the relationship, and the right component (There is no _person whose first name is Lior and own's a red vehicle)_
 
 This is where the **no-connection language element (depicted with a pink '↛' box)** can be used. 
 
