@@ -195,7 +195,7 @@ _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-**The first way to use quantifiers:** The left component ends with an entity (yellow / blue / red), and each right component starts with:
+**The first way to use quantifiers:** The left component ends with an entity (yellow/aggregated/blue/logical/red), and each right component starts with:
 
 * A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
 * A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
@@ -231,7 +231,7 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
-* An entity (yellow / blue / red)
+* An entity (yellow/aggregated/blue/logical/red)
 * A quantifier
 
 Here is an example:
@@ -397,7 +397,7 @@ _**Q26:** Any book that is liked by people who like some book that I like, but i
 
 **A third way to use quantifiers:** A quantifier may start of a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
-* An entity (yellow / blue / red)
+* An entity (yellow/aggregated/blue/logical/red)
 * A quantifier
 
 The '0' quantifier cannot start a pattern.
@@ -720,7 +720,7 @@ _**Q48:** All shortest paths between these two phones, which are not composed of
 
 ## Path Segments
 
-An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of yellow / blue / red entities and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of entities (yellow/aggregated/blue/logical/red) and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
@@ -819,7 +819,7 @@ todo: aggregate tag, aggregate tag's scope
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - If →: directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
-- If et: directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - et must be defined right of an R-combiner
+- If et: directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier. If quantifier - et must be defined right of an R-combiner
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -973,7 +973,7 @@ _**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
+- Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
 _**Q71:** Any phone that made more than 10 calls (cumulatively)_
 
@@ -1019,7 +1019,7 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
+- Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
 _**Q87:** Any phone that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
 
@@ -1071,7 +1071,7 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
+- Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
 _**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
 
@@ -1085,7 +1085,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity
+- Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
 _**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
 
