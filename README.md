@@ -208,12 +208,14 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 These four quantifiers are 'positive quantifiers' (additional quantifiers are explained later):
 
-* **_All_** (denoted '&') - An assignment is _valid_ only if it satisfies every branch
-* **_Some_** (denoted '&#124;') - An assignment is _valid_ only if it satisfies at least one branch
-* **_> n_** - An assignment is _valid_ only if it satisfies more than _n_ branches. _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment is _valid_ only if it satisfies _n_ or more branches. _n_ ∈ [1, _b_]
+We'll define patterns _P1..Pb_ (where _b_ denotes the number of branches), as a set of patterns - each composed of the left component, and one of the right components.
 
-(_b_ denotes the number of branches)
+Given patterns _P1..Pb_, the quantifiers are defined accordingly:
+
+* **_All_** (denoted '&') - An assignment matches the pattern only if it matches _P1..Pb_ (though not necessarily minimal for each separately)
+* **_Some_** (denoted '&#124;') - An assignment matches the pattern only if it matches at least one of _P1..Pb_ (though not necessarily minimal for each separately)
+* **_> n_** - An assignment matches the pattern only if it matches more than _n_ of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [0, _b-1_]
+* **_≥ n_** - An assignment matches the pattern only if it matches _n_ or more of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [1, _b_]
 
 As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore
 
