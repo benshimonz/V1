@@ -187,8 +187,6 @@ _**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
 
 ## Quantifiers #1
 
-TODO: explain here only '&' and '&#124;'. Explain all other quantifiers after No-existence is explained (the explanation of other quantifiers required the no-existance assignment to be explained first)
-
 Vertical quantifiers (or simply 'quantifiers') are used when several conditions need to be checked. Here is a simple example:
 
 _**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
