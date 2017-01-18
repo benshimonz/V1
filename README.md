@@ -457,11 +457,11 @@ Additional horizontal quantifiers:
 
 Here are two examples:
 
-_**Q187:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
+_**Q187:** Any phone that was called from 052-333-4444: (at least one call on or after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q189:** Any phone that was called from 052-333-4444: (at least one call after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 or longer than 10 minutes)_
+_**Q189:** Any phone that was called from 052-333-4444: (at least one call on or after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (on or after 1/1/2010 or longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
@@ -469,7 +469,7 @@ Green rectangles, aggregate conditions, and aggregation tags  below an horizonta
 
 Here is an example:
 
-_**Q188:** Any phone that was called from 052-333-4444: at least one call (after 1/1/2010 and longer than 10 minutes)_
+_**Q188:** Any phone that was called from 052-333-4444: at least one call (on or after 1/1/2010 and longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
@@ -1367,7 +1367,7 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 todo
 
-_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes after 1/1/2010 from 052-333-4444_
+_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes on or after 1/1/2010 from 052-333-4444_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
@@ -1399,7 +1399,7 @@ _**Q163:** Any phone that the average duration of its 10 shortest outgoing calls
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any phone that received calls from 052-333-4444: at least one call after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (after 1/1/2010 or shorter than 10 minutes)_
+_**Q185:** Any phone that received calls from 052-333-4444: at least one call on or after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/2010 or shorter than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
@@ -1429,7 +1429,7 @@ _**Q99:** Any phone to that 052-333-4444 called more than 10 calls of less than 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
-_**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes calls), more than 10 calls after 1/1/2010, more than 15 (< 10 minutes calls) after 1/1/2010, and more than 100 calls_
+_**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes calls), more than 10 calls on or after 1/1/2010, more than 15 (< 10 minutes calls) on or after 1/1/2010, and more than 100 calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
