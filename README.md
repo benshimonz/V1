@@ -69,7 +69,7 @@ In order to ask and answer queries such as *“Any person who owns a red vehicle
 
 Here are two examples:
 
-* *Any person who owns a blue vehicles, his age is between 40 and 50, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
+* *Any person who owns a blue vehicles, his birth date is between 1/1/1970 and 1/1/1980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
 
 * *Any person who owns at least 5 blue vehicles*
 
@@ -762,7 +762,7 @@ In this example, the path must contain James Smith. Any other path segments are 
 
 A property tag is depicted by an index wrapped in **purple curly brackets**
 
-A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. age > {1}, where {1} is defined as the age property of another entity)
+A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. _birth date_ > {1}, where {1} is defined as the _birth date_ property of another entity)
 
 Here are some examples:
 
