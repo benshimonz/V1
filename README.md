@@ -380,9 +380,21 @@ _**Q22:** Any horse that is not owned by a person who owns a dragon_
 
 Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
+That includes:
+
+- Any horse that is not owned
+- Any horse that non of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that each person who owns it - doesn't own a dragon
+
 _**Q23:** Any horse that is not owned by a person who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
+
+That includes:
+
+- Any horse that is not owned
+- Any horse that non of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that each person who owns it - also owns a dragon
 
 _**Q25:** Any of my friend's friends that isn't my friend (two versions)_
 
