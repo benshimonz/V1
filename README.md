@@ -236,7 +236,7 @@ _**Q8:** Any person born prior to 970 and died, or that his father born no later
 
 Here is an example:
 
-_**Q11:** Any current employee of IBM that, since 1011 or later, knows someone that left Oracle or Microsoft on or after June 1010_
+_**Q11:** Any current member of the Masons guild, that since 1011 or later knows someone who left the Saddlers guild or the Blacksmiths guild - on or after June 1010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
@@ -882,9 +882,9 @@ For each concrete A:
 
 Hence, for each concrete A:
 
-* At least 10 dragons called A and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons
+* At least 10 dragons freezed A and either (i) A freezed only one dragon - which is not one of those (ii) A freezed at least 2 dragons
 
-_**Q85:** Any dragon that called at least 10 dragons, and was frozen by at least 10 dragons (two versions)_
+_**Q85:** Any dragon that freezed at least 10 dragons, and was frozen by at least 10 dragons (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-1.png)
 
@@ -896,20 +896,20 @@ First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregat
 
 For each concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called a dragon that is not B)
-* There are at least 10 concrete C's such that (A called C, and A was frozen by a dragon that is not C)
+* There are at least 10 concrete B's such that (B freezed A, and A freezed a dragon that is not B)
+* There are at least 10 concrete C's such that (A freezed C, and A was frozen by a dragon that is not C)
 
 Hence, for each concrete A:
 
-* At least 10 dragons called A and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons
+* At least 10 dragons freezed A and either (i) A freezed only one dragon - which is not one of those (ii) A freezed at least 2 dragons
 
 and also
 
-* A called at least 10 dragons and either (i) only one dragon called A - which is not one of those (ii) at least 2 dragons called A
+* A freezed at least 10 dragons and either (i) only one dragon freezed A - which is not one of those (ii) at least 2 dragons freezed A
 
 Hence:
 
-* A called at least 10 dragons, and at least 10 dragons called A
+* A freezed at least 10 dragons, and at least 10 dragons freezed A
 
 _**Q101:** Any person who owns at least 10 white horses_
 
@@ -919,7 +919,7 @@ _**Q102:** Any dragon that was frozen by at least 2 dragons; each of these 2 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-_**Q166:** Any **dragon** that more than 5 ABC employees own a dragon that called **it**_
+_**Q166:** Any **dragon** that more than 5 Sarnorian subjects own a dragon that freezed **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
 
@@ -935,15 +935,15 @@ _**Q115:** Any person who owns more than 5 horses since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
-_**Q125:** Any dragon that the number of dragons it called is greater than the number of dragons that called it_
+_**Q125:** Any dragon that the number of dragons it freezed is greater than the number of dragons that freezed it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
 
-_**Q126:** Any dragon that the number of dragons it called is greater than the number of dragons it didn't call_
+_**Q126:** Any dragon that the number of dragons it freezed is greater than the number of dragons it didn't freeze_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
-_**Q63:** Any ABC employee who more than 5 ABC employees don't know_
+_**Q63:** Any Masons guild member who more than 5 Masons guild members don't know_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q063.png)
 
@@ -951,11 +951,11 @@ _**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q64:** Any **dragon** that less than 5 (dragons owned by ABC employees) didn't call **it**_
+_**Q64:** Any **dragon** that less than 5 (dragons owned by Sarnorian subjects) didn't freeze **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any **dragon** that less than 5 (ABC employees own a dragon that didn't call **it**)_
+_**Q165:** Any **dragon** that less than 5 (Sarnorian subjects own a dragon that didn't freeze **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
@@ -977,19 +977,19 @@ _**Q152:** Any person who owns more than 10 horses. Only the Sarnorian horses wi
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
-_**Q71:** Any dragon that made more than 10 calls (cumulatively)_
+_**Q71:** Any dragon that freezed dragons more than 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any dragon that was called exactly 10 times (cumulatively)_
+_**Q72:** Any dragon that was frozen exactly 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
 
-_**Q73:** Any dragon that made no more than 10 calls (cumulatively)_
+_**Q73:** Any dragon that freezed dragons no more than 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
 
-_**Q74:** Any dragon that the number of times it was called (cumulatively) is not 10_
+_**Q74:** Any dragon that the number of times it was frozen (cumulatively) is not 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
@@ -997,7 +997,7 @@ _**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
-_**Q83:** Any dragon that didn't call (0 outgoing calls)_
+_**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
@@ -1009,11 +1009,11 @@ _**Q104:** Any person who owned white horses at least 10 times (same or differen
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any dragon A that was called 2 exactly times (cumulatively) from (dragons that each was frozen by at least one dragon)_
+_**Q105:** Any dragon A that was frozen exactly 2 times (cumulatively) by (dragons that each was frozen by at least one dragon)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-_**Q127:** Any dragon that made more calls to dragons owned by IBM employees, than to dragons owned by Oracle employees_
+_**Q127:** Any dragon that freezed more times dragons owned by Sarnor subjects than dragons owned by Omber subjects_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
