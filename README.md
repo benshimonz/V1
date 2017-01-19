@@ -489,15 +489,15 @@ The relationship / property types on an E-combiner's right side must match all t
 
 Here are some examples:
 
-_**Q27:** Any person with a Chinese citizenship who owns a horse and a dragon of the same origin; Any company registered in Japan that owns a horse and a dragon of the same origin_
+_**Q27:** Any Sarnorian subject who owns a horse and a dragon of the same origin; Any Obmerian guild that owns a horse and a dragon of the same origin_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
 
-_**Q28:** Any Chinese citizen who owns a white horse; Any person who doesn't know someone who owns a white horse_
+_**Q28:** Any Sarnorian subject who owns a white horse; Any person who doesn't know someone who owns a white horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q35:** Any person who either (i) knows a Chinese citizen who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a dragon_
+_**Q35:** Any person who either (i) knows a Sarnorian subject who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
@@ -776,7 +776,7 @@ _**Q109:** Any person who his parent owned a horse and a dragon prior to his bir
 
 Note that if a branch contains only a green rectangle with no constraints (only with a property tag) - the branch is always satisfied.
 
-_**Q110:** Any 3 bank accounts with a cyclic transfers of more than $10000 in chronological order, and their owners_
+_**Q110:** Any 3 dragons with a cyclic transfers of more than $10000 in chronological order, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
 
@@ -963,11 +963,11 @@ _**Q66:** Any person from whom more than 5 people are not within graph distance 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-_**Q151:** Any person who owns more than 10 horses, at least one is Chinese. Only the Chinese horses will be returned_
+_**Q151:** Any person who owns more than 10 horses, at least one is Sarnorian. Only the Sarnorian horses will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
 
-_**Q152:** Any person who owns more than 10 horses. Only the Chinese horses will be returned_
+_**Q152:** Any person who owns more than 10 horses. Only the Sarnorian horses will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
@@ -1579,7 +1579,7 @@ Here are some definition examples:
 * _'Old People'_ is defined as an encapsulation of all people born before 1920
 * _'Old males'_ is defined as an encapsulation of all males born before 1920
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
-* _'Japanese'_ is defined as an encapsulation of all people with Japanese citizenship and all companies registered in Japan
+* _'Sarnorian'_ is defined as an encapsulation of all Sarnorian subjects and all guilds registered in Sarnor
 
 An encapsulated entity in a query will show as an aggregate entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
 
@@ -1605,7 +1605,7 @@ _**Q208:** Any dragon owned by an entity encapsulated within 'The Beatles' - sin
 
 The aggregate entity 'The Beatles' will be part of the query result. It won't be disassembled into its four members.
 
-_**Q209:** Any dragon than called at least 3 dragons owned by entities encapsulated within 'Japanese'_
+_**Q209:** Any dragon than called at least 3 dragons owned by entities encapsulated within 'Sarnorian'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
@@ -1615,7 +1615,7 @@ _**Q210:** Any person who has at least 3 'owns' relationships with entities enca
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q210.png)
 
-_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Japanese' and an entity encapsulated within 'The Beatles'_
+_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Sarnorian' and an entity encapsulated within 'The Beatles'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q211.png)
 
@@ -1644,7 +1644,7 @@ Here are some definition examples:
 * _'Old Person'_ is defined as a person born before 1920
 * _'Old male'_ is defined as a male born before 1920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
-* _'Japanese'_ is defined as a a person with Japanese citizenship, or a company registered in Japan
+* _'Sarnorian'_ is defined as a a Sarnorian subject, or a Sarnorian registered guild
 * _'Rock Band'_ is defined as one of 4 aggregate entities
 
 In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
@@ -1664,7 +1664,7 @@ _**Q203:** Any dragon owned by a Beatle since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any dragon than called at least 3 dragon owned by a 'Japanese' (cumulatively)_
+_**Q204:** Any dragon than called at least 3 dragon owned by a 'Sarnorian' (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
@@ -1672,7 +1672,7 @@ _**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any 'Japanese' and 'Beatle' pair with graph distance ≤ 4_
+_**Q206:** Any 'Sarnorian' and 'Beatle' pair with graph distance ≤ 4_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
