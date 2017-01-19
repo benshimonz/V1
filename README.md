@@ -1053,7 +1053,7 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 
 - Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - pt/at/st/ett must be defined right of an R-combiner
 
-_**Q116:** Any person who owns horses with no more than 3 colors_
+_**Q116:** Any person who owns horses of no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
@@ -1073,7 +1073,7 @@ _**Q137:** Any dragon A that froze dragons B - each froze at least one dragon wh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q139:** Any person who owns horses with the same number of colors as the number of colors of the horses owned by his parents cumulatively_
+_**Q139:** Any person who owns horses of the same number of colors as the number of colors of the horses owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
@@ -1299,7 +1299,7 @@ _**Q92:** The 4 dragons with the maximal (average duration they froze dragons fo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-_**Q132:** The 4 people who own horses with the largest number of colors_
+_**Q132:** The 4 people who own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
@@ -1307,7 +1307,7 @@ _**Q133:** The 4 people that the average model year of their horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q138:** The 4 people that the people they know cumulatively own horses with the largest number of colors_
+_**Q138:** The 4 people that the people they know cumulatively own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
@@ -1453,19 +1453,19 @@ _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
-_**Q120:** Any person for whom the sum of the heights of his 3 eldest offsprings is less than his own height_
+_**Q120:** Any person whose 3 eldest offsprings cumulative height is smaller than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q202:** Any person for whom the average height of his 3 eldest offsprings is less than the average height of all his offsprings_
+_**Q202:** Any person whose 3 eldest offsprings average height is smaller than the average height of all his offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
 
-_**Q140:** Any person who his 3 eldest sons cumulatively own horses with 3 colors_
+_**Q140:** Any person who his 3 eldest sons cumulatively own horses of 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person who his 3 eldest sons cumulatively own horses with the same number of colors as his 3 younger daughters cumulatively_
+_**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same number of colors as those owned by his 3 younger daughters cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
@@ -1473,7 +1473,7 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own horses with the sam
 
 todo
 
-_**Q128:** Any person and his 3 offspring that own horses with the largest number of colors_
+_**Q128:** Any person and his 3 offspring that own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
@@ -1489,7 +1489,7 @@ _**Q107:** Any **dragon** that (the number of dragons owned by 5 people each, th
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-_**Q169:** Any person that (each of his offsprings who owns at least 3 horses - owns horses with at least 3 colors)_
+_**Q169:** Any person that (each of his offsprings who owns at least 3 horses - owns horses of at least 3 colors)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
