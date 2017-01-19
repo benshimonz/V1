@@ -396,12 +396,12 @@ That includes:
 - Any horse that non of his owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - also owns a dragon
 
-_**Q25:** Any of my friend's friends that isn't my friend (two versions)_
+_**Q25:** Any person who is Brandon Stark's friend's friend, but isn't his friend (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any book that is liked by people who like some book that I like, but is not liked by me (four versions)_
+_**Q26:** Any book that is liked by people who like some book that Brandon Stark likes, but is not liked by him (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
