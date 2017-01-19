@@ -143,7 +143,7 @@ _**Q1:** Any phone owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any phone that received at least one call from a phone owned by Lior Kogan_
+_**Q2:** Any phone that received at least one call from a phone owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
@@ -292,7 +292,7 @@ _**Q24:** Any person who has (at least) two parents and owns a phone that was ca
 
 Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Brandon, and doesn't own a white horse_). Such patterns are composed of:
 
-* A left component that ends with an entity (_any person whose first name is Lior_) 
+* A left component that ends with an entity (_any person whose first name is Brandon_) 
 * A No-existence / a no-connection language element (_"doesn't"_) 
 * A relationship / path (_own)
 * A right component that starts with an entiy (_a white horse_)
@@ -344,7 +344,7 @@ _**Q16:** Any person who doesn't own Sweetfoot_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q016.png)
 
-_**Q17:** Any horse that is not owned by Lior Kogan_
+_**Q17:** Any horse that is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q017.png)
 
