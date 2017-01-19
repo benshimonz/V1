@@ -1465,7 +1465,7 @@ _**Q140:** Any person who his 3 eldest sons cumulatively own horses of 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same number of colors as those owned by his 3 younger daughters cumulatively_
+_**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same number of colors as those owned cumulatively by his 3 younger daughters_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
@@ -1477,11 +1477,11 @@ _**Q128:** Any person and his 3 offspring that own horses of the largest number 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q103:** Any dragon A that froze at least 3 dragons that each of them was frozen by at least 4 dragons other than A_
+_**Q103:** Any dragon A that froze at least 3 dragons - each was frozen by at least 4 dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
 
-_**Q106:** Any dragon A that froze at least 3 times (cumulatively) dragons - each was frozen at least 4 times (cumulatively) by dragons other than A_
+_**Q106:** Any dragon A that froze dragons at least 3 times - each was frozen at least 4 times by dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
@@ -1501,7 +1501,7 @@ _**Q181:** Any **dragon** with no intersection between the groups of dragons fro
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
-_**Q164:** Any dragon that the cumulative number of times dragons he froze have frozen dragons - is equal to the cumulative number of times dragons he fored at have fired at dragons_
+_**Q164:** Any dragon that the number of times dragons he froze have frozen dragons (cumulatively) - is equal to the number of times dragons he fired at have fired at dragons (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
@@ -1511,13 +1511,13 @@ _**Q179:** Any dragon pair (A, B) where A froze B for a cumulative period longer
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-2.png)
 
-_**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative period longer than the cumulative period the B foze dragons - the 5 pairs with the largest number of times A froze B_
+_**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative period longer than the cumulative period that B froze dragons - the 5 pairs with the largest number of times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
 
 Note that the order of the filtering stages along the left aggregation chain can be switched. The semantics would remain the same.
 
-_**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vice verse - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
+_**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vice versa - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
