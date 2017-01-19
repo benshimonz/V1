@@ -1389,7 +1389,7 @@ _**Q93:** Any dragon that froze at least 3 dragons for more than 10 minutes. The
 
 Filtering stages:
 
-- Pass only (> 10 minutes freezes)
+- Pass only (freezes that are longer than 10 minutes)
 - Pass only dragons A that froze at least 3 dragons for more than 10 minutes
 - Pass only dragon pairs (A, B) where A froze B for more than 10 minutes - at least 5 times
 
@@ -1397,7 +1397,7 @@ _**Q94:** Any dragon that froze at least 3 dragons - each at least 5 times for m
 
 Filtering stages:
 
-- Pass only (> 10 minutes freezes)
+- Pass only (freezes that are longer than 10 minutes)
 - Pass dragon pairs (A, B) where A freezd B at least 5 time for more than 10 minutes
 - Pass only dragons A that froze for more than 10 minutes - at least 3 dragons
 
@@ -1415,7 +1415,7 @@ _**Q185:** Any dragon that was frozen by Balerion: at least one time on or after
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
-_**Q95:** Any dragon that was frozen by Balerion - more than 5 times for more than 10 minutes, with a total duration of > 100 minutes_ (3 versions)
+_**Q95:** Any dragon that was frozen by Balerion: there were more than 5 freezes for more than 10 minutes, and their total duration was longer than 100 minutes_ (3 versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-1.png)
 
