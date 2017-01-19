@@ -30,7 +30,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Each edge has a set of properties as well
 - Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Brandon")
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
-- Edges have types as well (e.g. 'owns', 'call'). Again - without schema - the type is just another property
+- Edges have types as well (e.g. 'owns', 'member of'). Again - without schema - the type is just another property
 
 More about property graphs can be found [here](http://tinkerpop.apache.org/docs/current/reference/) and [here](https://neo4j.com/developer/graph-database/).
 
@@ -143,15 +143,15 @@ _**Q1:** Any dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any dragon that received at least one call from a dragon owned by Brandon Stark_
+_**Q2:** Any dragon that was frozen at least one time by a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q184:** Any dragon that made or received at least one call from a dragon owned by Brandon Stark_
+_**Q184:** Any dragon that freezed or was frozen at least one time by a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
-The call's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
+The freeze's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
 
 **Syntax**
 
@@ -240,7 +240,7 @@ _**Q11:** Any current employee of IBM that, since 1011 or later, knows someone t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-_**Q10:** Any person whose first name is Brandon, who owns some dragon B which called a dragon C that belongs to an offspring of Rogar Bolton and called a dragon that belongs either to Robin Arryn or to Arrec Durrandon. At least one call from B to C was longer than 100 seconds, and took place in or after 1010_
+_**Q10:** Any person whose first name is Brandon, who owns some dragon B which freezed a dragon C that (i) belongs to an offspring of Rogar Bolton and (ii) freezed a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B freezed C at least once in or after 1010 for longer than 100 seconds_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
@@ -254,7 +254,7 @@ Entity tags serve two purposes. First, when a pattern is used as a query, entity
 
 **Identicality constraint** is used when two entities in the pattern must have identical assignment. Here is an example:
 
-_**Q4:** Any person whose dragon received a call from a dragon owned by (at least one) of his parents_
+_**Q4:** Any person whose dragon was frozen by a dragon owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
@@ -262,13 +262,13 @@ Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tag
 
 Here is another example:
 
-_**Q9:** Any dragon pair (A, B) where A called B both in 1980 and in 1984_
+_**Q9:** Any dragon pair (A, B) where A freezed B both in 980 and in 984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
 **Nonidenticality Constraint** is used when two entities in the pattern must have nonidentical assignments. Here is an example:
 
-_**Q5:** Any person whose dragon received a call from a dragon owned by two of his parents_
+_**Q5:** Any person whose dragon was frozen by a dragon owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
@@ -276,15 +276,15 @@ Without enforcing nonidenticality, the same parent can be assigned to both C and
 
 Here are two more examples:
 
-_**Q6:** Any person whose dragon received calls from two dragons – one owned by one of his parents, the other owned by another parent (note that none, one or both dragons may be owner by both parents)_
+_**Q6:** Any person whose dragon was frozen by two dragons – one owned by one of his parents, the other owned by another parent (note that none, one or both dragons may be owner by both parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
-_**Q7:** Any person whose dragon was either (i) called from a dragon owned by two of his parents, or (ii) from two dragons – one owned by one of his parents and the other owned by his other parent_
+_**Q7:** Any person whose dragon was either (i) frozen by a dragon owned by two of his parents, or (ii) from two dragons – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
-_**Q24:** Any person who has (at least) two parents and owns a dragon that was called from a dragon that is not owned by either of his parents_
+_**Q24:** Any person who has (at least) two parents and owns a dragon that was frozen by a dragon that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
@@ -457,11 +457,11 @@ Additional horizontal quantifiers:
 
 Here are two examples:
 
-_**Q187:** Any dragon that was called from Balerion: (at least one call on or after 1/1/1010) and (at least one call longer than 10 minutes) - same or different calls_
+_**Q187:** Any dragon that was frozen by Balerion: (at least once on or after 1/1/1010) and (at least once - for longer than 10 minutes) - same or different freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q189:** Any dragon that was called from Balerion: (at least one call on or after 1/1/1010) or (at least one call longer than 10 minutes) **Alternative wording:** Any dragon that was called from Balerion: at least one call (on or after 1/1/1010 or longer than 10 minutes)_
+_**Q189:** Any dragon that was frozen by Balerion: (at least once on or after 1/1/1010) or (at least once for longer than 10 minutes) **Alternative wording:** Any dragon that was frozen by Balerion: at least once (on or after 1/1/1010 or for longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
@@ -469,7 +469,7 @@ Green rectangles, aggregate conditions, and aggregation tags  below an horizonta
 
 Here is an example:
 
-_**Q188:** Any dragon that was called from Balerion: at least one call (on or after 1/1/1010 and longer than 10 minutes)_
+_**Q188:** Any dragon that was frozen by Balerion at least once - on or after 1/1/1010 for longer than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
@@ -513,19 +513,19 @@ The entity type on an R-combiner's right side must match all the relationship ty
 
 Here are some examples:
 
-_**Q29:** Any dragon that called or fired at some dragon (two versions)_
+_**Q29:** Any dragon that freezed or fired at some dragon (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any dragon pair (A, B) where A both called and fired at B (two versions)_
+_**Q30:** Any dragon pair (A, B) where A both freezed and fired at B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
 Note that the concrete entity on the right side of the R-combiner has the same assignment for all the branches.
 
-_**Q31:** Any dragon pair (A, B) where A called B, A fired at B, B called A, and B fired at A_
+_**Q31:** Any dragon pair (A, B) where A freezed B, A fired at B, B freezed A, and B fired at A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
 
@@ -533,15 +533,15 @@ _**Q32:** Any dragon pair (A, B) where A fired at B, and A fired at some dragon 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
-_**Q170:** Any dragons triplet (A, B, D) where A fired at B, A fired at some dragon that fired at B, B called D, and B called some dragon that called D_
+_**Q170:** Any dragons triplet (A, B, D) where A fired at B, A fired at some dragon that fired at B, B freezed D, and B freezed some dragon that freezed D_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q170.png)
 
-_**Q33:** Any dragon A that called some dragon B, called some dragon that called B, and fired at some dragon_
+_**Q33:** Any dragon A that freezed some dragon B, freezed some dragon that freezed B, and fired at some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q033.png)
 
-_**Q34:** Any dragon A that called some dragon B, called some dragon that called B, fired at some dragon D and fired at some dragon that fired at D (B and D may be the same dragon or different dragons)_
+_**Q34:** Any dragon A that freezed some dragon B, freezed some dragon that freezed B, fired at some dragon D and fired at some dragon that fired at D (B and D may be the same dragon or different dragons)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
@@ -615,7 +615,7 @@ _**Q36:** Any person who owns something_
 
 The entity type is implicitly constrained because of the relationship type. In Q36, the entity type is constrained to things that a person can own.
 
-_**Q49:** Any 3 dragons with a cyclic call pattern, and their owners_
+_**Q49:** Any 3 dragons with a cyclic freeze pattern, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
@@ -690,11 +690,11 @@ Optional entity constraints are listed in red curly brackets below the path's li
 
 Here are some examples:
 
-_**Q44:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' relationships_
+_**Q44:** Any path with length ≤ 4 between these two dragons, which is composed only of 'freezes' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
 
-_**Q45:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' and 'fired at' relationships_
+_**Q45:** Any path with length ≤ 4 between these two dragons, which is composed only of 'freezes' and 'fired at' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
@@ -702,7 +702,7 @@ _**Q54:** Any person within graph distance ≤ 3 from Rogar Bolton, Robin Arryn,
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
 
-_**Q46:** Any path with length ≤ 4 between a dragon owned by Rogar Bolton to a dragon owned by Robin Arryn, which is composed of up to 2 'call' relationships, and only of 'Dragon' entities_
+_**Q46:** Any path with length ≤ 4 between a dragon owned by Rogar Bolton to a dragon owned by Robin Arryn, which is composed of up to 2 'freezes' relationships, and only of 'Dragon' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
@@ -716,7 +716,7 @@ _**Q47:** All shortest paths between these two dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q047.png)
 
-_**Q48:** All shortest paths between these two dragons, which are not composed of 'call' relationships nor 'Dragon' entities_
+_**Q48:** All shortest paths between these two dragons, which are not composed of 'freezes' relationships nor 'Dragon' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
@@ -827,7 +827,7 @@ _**Q59:** Any person having more than 2 parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
 
-_**Q60:** Any dragon that was called from exactly 5 dragons_
+_**Q60:** Any dragon that was frozen by exactly 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
 
@@ -839,21 +839,21 @@ _**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q136:** Any dragon A that called (dragons that called dragons B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
+_**Q136:** Any dragon A that freezed (dragons that freezed dragons B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-2.png)
 
-_**Q81:** Any dragon that didn't call (0 callees)_
+_**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-_**Q82:** Any dragon that wasn't called (0 callers)_
+_**Q82:** Any dragon that wasn't frozen by any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q177:** Any dragon that was called from at least 10 dragons, and called each one of those (two versions)_
+_**Q177:** Any dragon that was frozen by at least 10 dragons, and freezed each one of those (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
@@ -861,16 +861,16 @@ First, any pair (A,B) that matches the pattern is found. Then, the aggregate con
 
 For any concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called B)
+* There are at least 10 concrete B's such that (B freezed A, and A freezed B)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-2.png)
 
 For any concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called B)
-* There are at least 10 concrete B's such that (A called B, and B called A)
+* There are at least 10 concrete B's such that (B freezed A, and A freezed B)
+* There are at least 10 concrete B's such that (A freezed B, and B freezed A)
 
-_**Q178:** Any dragon A that was called from at least 10 dragons and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons_
+_**Q178:** Any dragon A that was frozen by at least 10 dragons and either (i) A freezed only one dragon - which is not one of those (ii) A freezed at least 2 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q178.png)
 
@@ -878,13 +878,13 @@ First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregat
 
 For each concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called a dragon that is not B)
+* There are at least 10 concrete B's such that (B freezed A, and A freezed a dragon that is not B)
 
 Hence, for each concrete A:
 
 * At least 10 dragons called A and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons
 
-_**Q85:** Any dragon that called at least 10 dragons, and was called from at least 10 dragons (two versions)_
+_**Q85:** Any dragon that called at least 10 dragons, and was frozen by at least 10 dragons (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-1.png)
 
@@ -897,7 +897,7 @@ First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregat
 For each concrete A:
 
 * There are at least 10 concrete B's such that (B called A, and A called a dragon that is not B)
-* There are at least 10 concrete C's such that (A called C, and A was called from a dragon that is not C)
+* There are at least 10 concrete C's such that (A called C, and A was frozen by a dragon that is not C)
 
 Hence, for each concrete A:
 
@@ -915,7 +915,7 @@ _**Q101:** Any person who owns at least 10 white horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
-_**Q102:** Any dragon that was called from at least 2 dragons; each of these 2 dragons was called from at least one dragon_
+_**Q102:** Any dragon that was frozen by at least 2 dragons; each of these 2 dragons was frozen by at least one dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
@@ -1009,7 +1009,7 @@ _**Q104:** Any person who owned white horses at least 10 times (same or differen
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any dragon A that was called 2 exactly times (cumulatively) from (dragons that each was called from at least one dragon)_
+_**Q105:** Any dragon A that was called 2 exactly times (cumulatively) from (dragons that each was frozen by at least one dragon)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
@@ -1099,7 +1099,7 @@ _**Q86:** Any dragon pair (A, B) where the cumulative call duration from A to B 
 
 - Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
 
-_**Q121:** Any dragon that called or fired at least 10 dragons_
+_**Q121:** Any dragon that freezed or fired at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
@@ -1107,7 +1107,7 @@ _**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q175:** Any dragon that called at least once, and fired at least once. The number of dragons it called/fired is at least 10 (if a dragon was both called and fired - it would be counted twice)_
+_**Q175:** Any dragon that freezed at least once, and fired at least once. The number of dragons it freezed/fired at - is at least 10 (if a dragon was both freezed and fired at - it would be counted twice)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
@@ -1115,11 +1115,11 @@ _**Q176:** Any dragon that either (i) called at least one dragon and fired at le
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
-_**Q123:** Any dragon that either (was called) or (made a call) - at least 10 times_
+_**Q123:** Any dragon that either freezed a dragon or was frozen by a dragon - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-_**Q124:** Any dragon that either (called a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
+_**Q124:** Any dragon that either (freezed a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
@@ -1139,19 +1139,19 @@ _**Q174:** Any dragon that either (i) called at least one dragon and fired at le
 
 todo
 
-_**Q191:** Any dragon that called X≥3 dragons and fired at Y≥3 dragons. X+Y≥10_
+_**Q191:** Any dragon that freezed X≥3 dragons and fired at Y≥3 dragons. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q191.png)
 
-_**Q192:** Any dragon that made X≥3 calls and fired Y≥3 times. X+Y≥10_
+_**Q192:** Any dragon that freezed X≥3 times, and fired Y≥3 times. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q192.png)
 
-_**Q193:** Any dragon that called X≥3 dragons, fired at Y dragons, and fired Z≥3 times. X+Y≥10_
+_**Q193:** Any dragon that freezed X≥3 dragons, fired at Y dragons, and fired Z≥3 times. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
 
-_**Q194:** Any dragon that made X calls, fired Y≥3 times, and called Z≥3 dragons. X+Y≥10__
+_**Q194:** Any dragon that freezed X times, fired Y≥3 times, and freezed Z≥3 dragons. X+Y≥10__
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
@@ -1196,7 +1196,7 @@ _**Q67:** The 3 people with the maximal number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
 
-_**Q68:** The 2 dragons that were called from the largest number of dragons_
+_**Q68:** The 2 dragons that were frozen by the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
 
@@ -1299,7 +1299,7 @@ _**Q138:** The 4 people that the people they know cumulatively own horses with t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**183:** The 3 dragons with the largest cumulative call duration from dragons owned by Brandon Stark_
+_**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the largest cumulative duration_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
@@ -1315,11 +1315,11 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 todo
 
-_**Q77:** The 5 dragon pairs (A, B) with the largest number of calls from B to A_
+_**Q77:** The 5 dragon pairs (A, B) with the largest number of times B freezed A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
-_**Q78:** The 4 dragons that called the largest number of times to Balerion_
+_**Q78:** The 4 dragons that freezed Balerion the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
@@ -1367,27 +1367,27 @@ _**Q160:** For any dragon pair (A, B): The 4 longest calls from A to B_
 
 todo
 
-_**Q96:** Any dragon that received more than 10 calls that are shorter than 10 minutes on or after 1/1/1010 from Balerion_
+_**Q96:** Any dragon that was frozen by Balerion, on or after 1/1/1010, more than 10 times, for periods that are shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q93:** Any dragon that called (> 10 minutes calls) to at least 3 dragons. The number of calls to each dragon is at least 5_
+_**Q93:** Any dragon that freezed at least 3 dragons for more than 10 minutes. The number of times it freezed each of these dragons is at least 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
 Filtering stages:
 
-- Pass only (> 10 minutes calls)
-- Pass only dragons A that called (> 10 minutes calls) to at least 3 dragons
-- Pass only dragon pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
+- Pass only (> 10 minutes freezes)
+- Pass only dragons A that freezed at least 3 dragons for more than 10 minutes
+- Pass only dragon pairs (A, B) where A freezed B for more than 10 minutes - at least 5 times
 
-_**Q94:** Any dragon that called at least 5 (> 10 minutes calls). The calls were made to at least 3 dragons_
+_**Q94:** Any dragon that freezed at least 3 dragons - each at least 5 times for more than 10 minutes_
 
 Filtering stages:
 
-- Pass only (> 10 minutes calls)
-- Pass dragon pairs (A, B) where A made at least 5 (> 10 minutes calls) to B
-- Pass only dragons A that called (> 10 minutes calls) to at least 3 dragons_
+- Pass only (> 10 minutes freezes)
+- Pass dragon pairs (A, B) where A freezd B at least 5 time for more than 10 minutes
+- Pass only dragons A that freezed for more than 10 minutes - at least 3 dragons
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
@@ -1399,11 +1399,11 @@ _**Q163:** Any dragon that the average duration of its 10 shortest outgoing call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any dragon that received calls from Balerion: at least one call on or after 1/1/1010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/1010 or shorter than 10 minutes)_
+_**Q185:** Any dragon that was frozen by Balerion: at least one call on or after 1/1/1010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/1010 or shorter than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
-_**Q95:** Any dragon that received more than 5 (> 10 minutes calls) with a total duration of > 100 minutes from Balerion_ (3 versions)
+_**Q95:** Any dragon that was frozen by Balerion - more than 5 times for more than 10 minutes, with a total duration of > 100 minutes_ (3 versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-1.png)
 
@@ -1413,7 +1413,7 @@ The two 'per pair' conditions could be chained instead. The meaning would be sim
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-3.png)
 
-_**Q97:** Any dragon that called more than 3 dragons. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
+_**Q97:** Any dragon that freezed more than 3 dragons. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
@@ -1421,23 +1421,23 @@ _**Q98:** First, pass dragons A that called more than 3 dragons. Then, pass drag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
-_**Q186:** Any dragon to that Balerion called more than 10 calls of less than 10 minutes, and at least one call of 10 minutes or more_
+_**Q186:** Any dragon to that Balerion freezed more than 10 times for less than 10 minutes, and at least once for 10 minutes or more_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q186.png)
 
-_**Q99:** Any dragon to that Balerion called more than 10 calls of less than 10 minutes, and no calls of 10 minutes or more_
+_**Q99:** Any dragon to that Balerion freezed more than 10 times for less than 10 minutes, and not once for 10 minutes or more_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
-_**Q100:** Any dragon to which Balerion called with more then 10 (< 10 minutes calls), more than 10 calls on or after 1/1/1010, more than 15 (< 10 minutes calls) on or after 1/1/1010, and more than 100 calls_
+_**Q100:** Any dragon to which Balerion froze more than 10 times for less than 10 minutes, more than 10 times on or after 1/1/1010, more than 15 times for less than 10 minutes on or after 1/1/1010, and more than 100 times altogether_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-_**Q199:** Any dragon that (called more than 10 times to each of more than 10 dragons) and (called more than 20 times to less than 10 dragons)_
+_**Q199:** Any dragon that (freezed more than 10 times each of more than 10 dragons) and (freezed more than 20 times each of less than 10 dragons)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q199.png)
 
-_**Q200:** Any dragon that (called more than 10 times to each of more than 10 dragons. For each of these 10 dragons - the calls have exactly 2 distinct durations) and (called more than 20 times to less than 10 dragons. The average call duration with all these dragons - is greater than 3 minutes)_
+_**Q200:** Any dragon that (freezed more than 10 times each of more than 10 dragons. For each of these 10 dragons - the freezes had exactly 2 distinct durations) and (freezed more than 20 times each of less than 10 dragons. The average freeze duration of all these dragons - is greater than 3 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
@@ -1465,15 +1465,15 @@ _**Q128:** Any person and his 3 offspring that own horses with the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q103:** Any dragon A that called at least 3 dragons that each of them was called from at least 4 dragons other than A_
+_**Q103:** Any dragon A that freezed at least 3 dragons that each of them was frozen by at least 4 dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
 
-_**Q106:** Any dragon A that made at least 3 calls (cumulatively) to dragons that each of them received at least 4 calls (cumulatively) from dragons other than A_
+_**Q106:** Any dragon A that freezed at least 3 times (cumulatively) dragons that each of them was frozen at least 4 times (cumulatively) by dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
-_**Q107:** Any dragon that (the number of dragons owned by 5 people each that called it) is 5, and that the number of calls received from those dragons (cumulatively) is not 5_
+_**Q107:** Any **dragon** that (the number of dragons owned by 5 people each, that froze **it**) is 5, and that the number of times **it** was frozen by those dragons (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
@@ -1485,7 +1485,7 @@ _**Q129:** Any person that (each of his offsprings who owns at least one horse -
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q181:** Any **dragon** with no intersection between the groups of dragons called by any two dragons **it** called_
+_**Q181:** Any **dragon** with no intersection between the groups of dragons freezed by any two dragons **it** freezed_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
@@ -1515,7 +1515,7 @@ _**Q180:** Any dragon pair (A, B) where the cumulative call duration between A a
 
 todo
 
-_**Q153:** Any dragon that in at least 10 days called no more than 5 dragons_
+_**Q153:** Any dragon that in at least 10 days freezed no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
@@ -1523,15 +1523,15 @@ _**Q214:** Any person who owns entities of at least 4 types. For each type - at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q214.png)
 
-_**Q154:** Any dragon that in at least 4 years: in at least 11 days called no more than 5 dragons_
+_**Q154:** Any dragon that in at least 4 years - in at least 11 days - freezed no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q154.png)
 
-_**Q155:** Any dragon that in at least 11 days called more than 100 minutes cumulatively_
+_**Q155:** Any dragon that in at least 11 days - freezed more than 100 minutes cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q155.png)
 
-_**Q156:** Any dragon that called more than 1000 minutes cumulatively - in the days it called more than 100 minutes_
+_**Q156:** Any dragon that freezed for more than 1000 minutes cumulatively - in the days it freezed for more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
@@ -1545,7 +1545,7 @@ _**Q157:** Any person who owns at most 3 horses with the same color - for more t
 
 todo
 
-_**Q158:** Any dragon that in at least 10 days - the number of dragons it called is greater than the number of dragons that called it_
+_**Q158:** Any dragon that in at least 10 days - the number of dragons it freezed is greater than the number of dragons that froze it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
@@ -1555,7 +1555,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it called
 
 todo: split tag, split tag's scope
 
-_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** called is greater than the number of dragons that called **it**) than days where (the number of dragons that called **it** is greater than the number of dragons **it** called)_
+_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** freezed is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** freezed)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
@@ -1576,8 +1576,8 @@ Here are some definition examples:
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB13.png)
 
 * _'The Beatles'_ is defined as an encapsulation of 4 concrete entities
-* _'Old People'_ is defined as an encapsulation of all people born before 1920
-* _'Old males'_ is defined as an encapsulation of all males born before 1920
+* _'Old People'_ is defined as an encapsulation of all people born before 920
+* _'Old males'_ is defined as an encapsulation of all males born before 920
 * _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
 * _'Sarnorian'_ is defined as an encapsulation of all Sarnorian subjects and all guilds registered in Sarnor
 
@@ -1605,11 +1605,11 @@ _**Q208:** Any dragon owned by an entity encapsulated within 'The Beatles' - sin
 
 The aggregate entity 'The Beatles' will be part of the query result. It won't be disassembled into its four members.
 
-_**Q209:** Any dragon than called at least 3 dragons owned by entities encapsulated within 'Sarnorian'_
+_**Q209:** Any dragon than freezed at least 3 dragons owned by entities encapsulated within 'Sarnorian'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some dragon called 2 dragons owned by McCartney, and 1 dragon owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
+If, for example, some dragon freezed 2 dragons owned by McCartney, and 1 dragon owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
@@ -1641,8 +1641,8 @@ Here are some definition examples:
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
 
 * _'Beatle'_ is defined as one of 4 concrete entities
-* _'Old Person'_ is defined as a person born before 1920
-* _'Old male'_ is defined as a male born before 1920
+* _'Old Person'_ is defined as a person born before 920
+* _'Old male'_ is defined as a male born before 920
 * _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
 * _'Sarnorian'_ is defined as a a Sarnorian subject, or a Sarnorian registered guild
 * _'Rock Band'_ is defined as one of 4 aggregate entities
@@ -1664,7 +1664,7 @@ _**Q203:** Any dragon owned by a Beatle since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any dragon than called at least 3 dragon owned by a 'Sarnorian' (cumulatively)_
+_**Q204:** Any dragon than freezed at least 3 dragon owned by a 'Sarnorian' (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
