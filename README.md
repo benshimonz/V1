@@ -24,12 +24,12 @@ A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an or
 A **property graph** (AKA attributed graph) is a graph where
 
 - Graph vertices represent entities.
-  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a vehicle, a product)
+  An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a horse, a dragon)
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
 - Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Lior")
-- Usually each vertex has a type (e.g. Person, Phone, Vehicle), but in a schema-free graph - the type is just another property
+- Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'call'). Again - without schema - the type is just another property
 
 More about property graphs can be found [here](http://tinkerpop.apache.org/docs/current/reference/) and [here](https://neo4j.com/developer/graph-database/).
@@ -37,14 +37,14 @@ More about property graphs can be found [here](http://tinkerpop.apache.org/docs/
 A **property graph's schema** is defined by
 
 * A set of entity types.
-  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Vehicle, Product).
+  Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Horse, Dragon).
   For each entity type: 
   * A name 
   * A set of properties. For each property: name (key) and value type
 * A set of relationship types. For each relationship type:
   * A name
   * A set of properties. For each property: name (key) and value type
-  * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Phone); owns(Person,Vehicle) )
+  * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) )
 
 There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
 
@@ -54,13 +54,13 @@ A **schema-based property graph** is a property graph that conforms to a given s
 
 Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
-In order to ask and answer queries such as *“Any person who owns a red vehicle”* we first need to:
+In order to ask and answer queries such as *“Any person who owns a white horse”* we first need to:
 
-* Define 'Person' and 'Vehicle' entity types
-* Ensure that each Person and Vehicle entities are of the relevant entity types
+* Define 'Person' and 'Horse' entity types
+* Ensure that each Person and Horse entities are of the correct entity types
 * Define 'owns' relationship type
-* Defines that the 'owns' relationship type holds between Person and Vehicle
-* Define a 'Color' property for the Vehicle entity type
+* Defines that the 'owns' relationship type holds between Person entity type and Horse entity type
+* Define a 'Color' property for the Horse entity type
 * Define that Color holds a string, or better, define a categorical data type
 
 ## Patterns and Pattern Languages
@@ -69,9 +69,9 @@ In order to ask and answer queries such as *“Any person who owns a red vehicle
 
 Here are two examples:
 
-* *Any person who owns a blue vehicles, his birth date is between 1/1/1970 and 1/1/1980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
+* *Any person who owns a white Horse, his birth date is between 1/1/970 and 1/1/980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
 
-* *Any person who owns at least 5 blue vehicles*
+* *Any person who owns at least 5 white horses*
 
 **Pattern matching** is the process of deciding whether a given (sub)graph is acceptable to a given pattern. 
 
@@ -88,10 +88,10 @@ The language semantics defines which elements (entities and relationships) are p
 
 In the 2nd example above (which expressed in English, not in a pattern language) the set of assignments (expressed English as well) would be:
 
-* For each person than owns at least 5 blue cars: an assignment is composed of:
-  * The 'person' entity 
-  * The 'car' entities - of 5 of his cars with property "color" with value "blue"
-  * The 'own' relationships between the person entity the those car entities
+* For each person than owns at least 5 white horses: an assignment is composed of:
+  * The 'Person' entity 
+  * The 'Horse' entities - of 5 of his horses with property "color" with value "white"
+  * The 'own' relationships between the Person entity the those Horse entities
 
 The language semantics also define if an answer to a query is either (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
 
@@ -127,7 +127,7 @@ Any pattern is written from left to right. It starts with (a small black diamond
 
 **Semantics**
 
-Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific car, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
+Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific horse, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
 
 A pair of entities can be connected with:
 
@@ -155,7 +155,7 @@ The call's direction does not matter. Therefore - a **non-directional relationsh
 
 **Syntax**
 
-The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Phone); owns(Person,Vehicle) ).
+The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) ).
 
 **Semantics**
 
@@ -290,33 +290,33 @@ _**Q24:** Any person who has (at least) two parents and owns a phone that was ca
 
 ## No-existence and No-connection
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a red vehicle_). Such patterns are composed of:
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a white horse_). Such patterns are composed of:
 
 * A left component that ends with an entity (_any person whose first name is Lior_) 
 * A No-existence / a no-connection language element (_"doesn't"_) 
 * A relationship / path (_own)
-* A right component that starts with an entiy (_a red vehicle_)
+* A right component that starts with an entiy (_a white horse_)
 
 An assignment is a multi-set of concrete elements only to the left component.
 
-The example above covers two cases: (i) there may be no red vehicles at all, or (ii) there may be red vehicles, but none of them is owned by a person whose first name is Lior. 
+The example above covers two cases: (i) there may be no white horses at all, or (ii) there may be white horses, but none of them is owned by a person whose first name is Lior. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a red vehicle_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
+Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a white horse_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
 An assignment matches the pattern only if:
 
 * It matches a pattern composed only of the left component (there is _a person whose first name is Lior_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a red vehicle)_
+* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a white horse)_
 
 An 'X' may not be used directly before a relationship or a path with an aggregation.
 
 In certain situations, however, we need an assignment to match the pattern only if:
 
 * It matches a pattern composed only of the left component (there is _a person whose first name is Lior_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a red vehicle)_
-* There is an assignment that matches a pattern composed only of the right component (there is _a red vehicle_)
+* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a white horse)_
+* There is an assignment that matches a pattern composed only of the right component (there is _a whote horse_)
 
 This is where the **no-connection language element (depicted with a pink '↛' box)** can be used. 
 
@@ -324,41 +324,41 @@ This is where the **no-connection language element (depicted with a pink '↛' b
 
 Examples:
 
-_**Q12:** Any person who doesn't own a vehicle_
+_**Q12:** Any person who doesn't own a horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q012.png)
 
-_**Q13:** Any vehicle that is not owned by a person_
+_**Q13:** Any horse that is not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q013.png)
 
-_**Q14:** Get vehicle 34-234-99, if not owned by a person_
+_**Q14:** Get Sweetfoot, if not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q014.png)
 
-_**Q15:** Get Lior Kogan, if he doesn't own a vehicle_
+_**Q15:** Get Lior Kogan, if he doesn't own a horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q015.png)
 
-_**Q16:** Any person who doesn't own vehicle 34-234-99_
+_**Q16:** Any person who doesn't own Sweetfoot_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q016.png)
 
-_**Q17:** Any vehicle that is not owned by Lior Kogan_
+_**Q17:** Any horse that is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q017.png)
 
-_**Q18:** Get Lior Kogan, if he doesn't own vehicle 34-234-99_
+_**Q18:** Get Lior Kogan, if he doesn't own Sweetfoot_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q018.png)
 
-_**Q19:** Get Vehicle 34-234-99, if it is not owned by Lior Kogan_
+_**Q19:** Get Sweetfoot, if it is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
 An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
-_**Q20:** Any vehicle that is not owned by James Smith nor by John Price (two versions)_
+_**Q20:** Any horse that is not owned by James Smith nor by John Price (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
@@ -366,21 +366,21 @@ This pattern can also be represented using the '0' quantifier:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
-_**Q21:** Any vehicle that is not owned by both James Smith and John Price (two versions)_
+_**Q21:** Any horse that is not owned by both James Smith and John Price (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
-This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either James Smith or John Price owns the vehicle - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
+This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either James Smith or John Price owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q22:** Any vehicle that is not owned by a person who owns a phone_
+_**Q22:** Any horse that is not owned by a person who owns a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
-Note that the left component is _'vehicle'_ while the right component is _'owned by a person who owns a phone'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
+Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
-_**Q23:** Any vehicle that is not owned by a person who doesn't own a phone_
+_**Q23:** Any horse that is not owned by a person who doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
@@ -489,15 +489,15 @@ The relationship / property types on an E-combiner's right side must match all t
 
 Here are some examples:
 
-_**Q27:** Any person with a Chinese citizenship who owns a vehicle and a phone of the same origin; Any company registered in Japan that owns a vehicle and a phone of the same origin_
+_**Q27:** Any person with a Chinese citizenship who owns a hoorse and a phone of the same origin; Any company registered in Japan that owns a horse and a phone of the same origin_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
 
-_**Q28:** Any Chinese citizen who owns a red vehicle; Any person who doesn't know someone who owns a red vehicle_
+_**Q28:** Any Chinese citizen who owns a white horse; Any person who doesn't know someone who owns a white horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q35:** Any person who either (i) knows a Chinese citizen who owns a red vehicle (ii) know a person who doesn't know someone who owns a red vehicle (iii) know someone who doesn't own a phone_
+_**Q35:** Any person who either (i) knows a Chinese citizen who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
@@ -558,11 +558,11 @@ Anything on the right of an **'L'** is **latent**: It won't be part of the answe
 
 Here are two examples:
 
-_**Q142:** Any person who owns a red vehicle, and has a parent who owns a vehicle. The parent and his vehicle are not part of the answer_
+_**Q142:** Any person who owns a white horse, and has a parent who owns a horse. The parent and his horse are not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q142.png)
 
-_**Q143:** Any person who owns a red vehicle, and has a parent that doesn't own a vehicle. The parent is not part of the answer_
+_**Q143:** Any person who owns a white horse, and has a parent that doesn't own a horse. The parent is not part of the answer_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q143.png)
 
@@ -575,37 +575,37 @@ Anything on the right of an **'O'** is **optional**: if it has a valid assignmen
 
 Here are some examples:
 
-_**Q144:** Any person who owns a red vehicle. If he has a parent who owns a vehicle - the parent and his vehicle will be part of the answer as well_
+_**Q144:** Any person who owns a white horse. If he has a parent who owns a horse - the parent and his horse will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q144.png)
 
-_**Q145:** Any person who owns a red vehicle. If he has a parent that doesn't own a vehicle - the parent will be part of the answer as well_
+_**Q145:** Any person who owns a white horse. If he has a parent that doesn't own a horse - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q145.png)
 
-_**Q146:** Any person who owns a red vehicle. If he has a parent - the parent will be part of the answer as well. If his parent owns a vehicle - this vehicle will be part of the answer as well_
+_**Q146:** Any person who owns a white horse. If he has a parent - the parent will be part of the answer as well. If his parent owns a horse - this horse will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
 
-_**Q147:** Any person. If he owns both a vehicle and a phone - they will be a part of the answer as well_
+_**Q147:** Any person. If he owns both a horse and a phone - they will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
 
-_**Q148:** Any person who owns both a vehicle and a phone. If he has a parent - the parent will be part of the answer as well_
+_**Q148:** Any person who owns both a horse and a phone. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
 
-_**Q149:** Any person. If he owns a vehicle - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
+_**Q149:** Any person. If he owns a horse - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
 
-_**Q150:** Any person who owns a vehicle or a phone. If he has a parent - the parent will be part of the answer as well_
+_**Q150:** Any person who owns a horse or a phone. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
 ## Red Entities
 
-Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Vehicle); owns(Company, Vehicle) ). We need red entities to express patterns such as "_any red car and its owners_", when the owner can be either a person or a company.
+Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Dragon); owns(Guild, Dragon) ). We need red entities to express patterns such as "_any dragon and its owners_", when the owner can be either a person or a guild.
  
  In it simplest form, a red rectangle represents an entity of any type.
 
@@ -623,11 +623,11 @@ Similarly, the entity type of all owners is implicitly constrained to things tha
 
 In addition to the implicit type constraints - explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
 
-_**Q37:** Any person who owns a vehicle or a phone_
+_**Q37:** Any person who owns a horse or a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any person who owns something which is not a vehicle nor a phone_
+_**Q38:** Any person who owns something which is not a horse nor a phone_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
@@ -770,7 +770,7 @@ _**Q108:** Any person who has the same birth-date as Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
-_**Q109:** Any person who his parent owned a vehicle and a phone prior to his birth_
+_**Q109:** Any person who his parent owned a horse and a phone prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
@@ -784,7 +784,7 @@ _**Q111:** Any person who doesn't know someone with a birth date similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
 
-_**Q112:** Any person who owned a vehicle and a phone in the same time frames_
+_**Q112:** Any person who owned a horse and a phone in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
@@ -804,7 +804,7 @@ _**Q51:** Any person who owns (at least) two things of different types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q051.png)
 
-_**Q52:** Any person who owns (at least) two things of different types, both are not vehicles_
+_**Q52:** Any person who owns (at least) two things of different types, both are not horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
@@ -911,7 +911,7 @@ Hence:
 
 * A called at least 10 phones, and at least 10 phones called A
 
-_**Q101:** Any person who owns at least 10 red vehicles_
+_**Q101:** Any person who owns at least 10 white horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
@@ -927,11 +927,11 @@ _**Q113:** Any person who knows at least 5 people with a birth data similar to h
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
 
-_**Q114:** Any person who owns more than 5 vehicles with the same color_
+_**Q114:** Any person who owns more than 5 horses with the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
-_**Q115:** Any person who owns more than 5 vehicles since the same date_
+_**Q115:** Any person who owns more than 5 horses since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
@@ -963,11 +963,11 @@ _**Q66:** Any person from whom more than 5 people are not within graph distance 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q066.png)
 
-_**Q151:** Any person who owns more than 10 vehicles, at least one is Chinese. Only the Chinese vehicles will be returned_
+_**Q151:** Any person who owns more than 10 horses, at least one is Chinese. Only the Chinese horses will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q151.png)
 
-_**Q152:** Any person who owns more than 10 vehicles. Only the Chinese vehicles will be returned_
+_**Q152:** Any person who owns more than 10 horses. Only the Chinese horses will be returned_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
@@ -1005,7 +1005,7 @@ _**Q84:** Any phone with no paths with length ≤ 3 to other phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q104:** Any person who owned red vehicles at least 10 times (same or different vehicles)_
+_**Q104:** Any person who owned white horses at least 10 times (same or different horsess)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
@@ -1041,19 +1041,19 @@ _**Q89:** Any phone that its outgoing calls have more than 3 different durations
 
 - Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - pt/at/st/ett must be defined right of an R-combiner
 
-_**Q116:** Any person who owns vehicles with no more than 3 colors_
+_**Q116:** Any person who owns horses with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person whose owned vehicles have an average model year greater than 2010_
+_**Q117:** Any person whose owned horses have an average model year greater than 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
-_**Q134:** Any person that the number of distinct colors of all vehicles owned by people he knows - is not more than 3_
+_**Q134:** Any person that the number of distinct colors of all horses owned by people he knows - is not more than 3_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the average model year of all vehicles owned by people he knows - is at least 2010_
+_**Q135:** Any person that the average model year of all horses owned by people he knows - is at least 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
@@ -1061,7 +1061,7 @@ _**Q137:** Any phone A that called phones B that made calls. The cumulative dura
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
-_**Q139:** Any person who owns vehicles with the same number of colors as the number of colors of the vehicles owned by his parents cumulatively_
+_**Q139:** Any person who owns horses with the same number of colors as the number of colors of the horses owned by his parents cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q139.png)
 
@@ -1287,15 +1287,15 @@ _**Q92:** The 4 phones with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
-_**Q132:** The 4 people who own vehicles with the largest number of colors_
+_**Q132:** The 4 people who own horses with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
-_**Q133:** The 4 people that the average model year of their vehicles is maximal_
+_**Q133:** The 4 people that the average model year of their horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q138:** The 4 people that the people they know cumulatively own vehicles with the largest number of colors_
+_**Q138:** The 4 people that the people they know cumulatively own horses with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
@@ -1449,11 +1449,11 @@ _**Q202:** Any person for whom the average height of his 3 eldest offsprings is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
 
-_**Q140:** Any person who his 3 eldest sons cumulatively own vehicles with 3 colors_
+_**Q140:** Any person who his 3 eldest sons cumulatively own horses with 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the same number of colors as his 3 younger daughters cumulatively_
+_**Q141:** Any person who his 3 eldest sons cumulatively own horses with the same number of colors as his 3 younger daughters cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
@@ -1461,7 +1461,7 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own vehicles with the s
 
 todo
 
-_**Q128:** Any person and his 3 offspring that own vehicles with the largest number of colors_
+_**Q128:** Any person and his 3 offspring that own horses with the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
@@ -1477,11 +1477,11 @@ _**Q107:** Any phone that (the number of phones owned by 5 people each that call
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-_**Q169:** Any person that (each of his offsprings who owns at least 3 vehicles - owns vehicles with at least 3 colors)_
+_**Q169:** Any person that (each of his offsprings who owns at least 3 horses - owns horses with at least 3 colors)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
-_**Q129:** Any person that (each of his offsprings who owns at least one vehicle - owns a different number of vehicles)_
+_**Q129:** Any person that (each of his offsprings who owns at least one horse - owns a different number of horses)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
@@ -1535,7 +1535,7 @@ _**Q156:** Any phone that called more than 1000 minutes cumulatively - in the da
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any person who owns at most 3 vehicles with the same color - for more than 5 colors_
+_**Q157:** Any person who owns at most 3 horses with the same color - for more than 5 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
@@ -1609,7 +1609,7 @@ _**Q209:** Any phone than called at least 3 phones owned by entities encapsulate
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Star - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
+If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
