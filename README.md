@@ -497,6 +497,8 @@ An E-combiner combines two or more branches (not necessarily of the same quantif
 
 The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar used to save duplication when several branches terminates identically.
 
+The usage of an entity tag both before and after an E-combiner (to express identicality / nonidenticality constraints) subjects to tag rules (again - anything after the E-comniner is duplicated to each branch).
+
 The relationship / property types on an E-combiner's right side must match all the entity types on its left side. 
 
 Here are some examples:
@@ -509,11 +511,9 @@ _**Q28:** Any Sarnorian subject who owns a white horse; Any person who doesn't k
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q35:** Any person who either (i) knows a Sarnorian subject who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a dragon_
+_**Q35:** Any person who (i) knows a Sarnorian subject who knows a person who owns a white horse, or (ii) know a person who doesn't know a person who owns a white horse, or (iii) know someone who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
-
-An entity tag can't be used both on the left side and on the right side of an E-combiner (to prevent expressing identicality / nonidenticality constraints that are valid only in some branches).
 
 ## R-Combiner
 
@@ -939,7 +939,7 @@ _**Q113:** Any person who knows at least 5 people with a birth data similar to h
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q113.png)
 
-_**Q114:** Any person who owns more than 5 horses with the same color_
+_**Q114:** Any person who owns more than 5 horses of the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
@@ -1547,7 +1547,7 @@ _**Q156:** Any dragon that froze dragon for more than 1000 minutes cumulatively 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
-_**Q157:** Any person who owns at most 3 horses with the same color - for more than 5 colors_
+_**Q157:** Any person who owns at most 3 horses of the same color - for more than 5 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
