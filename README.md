@@ -374,11 +374,11 @@ This pattern can also be represented using the 'not all' quantifier, but notice 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q22:** Any horse that is not owned by a person who owns a dragon_
+_**Q22:** Any horse not owned by a person who owns a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
-Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
+Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the 'X' - up to the end of the branch.
 
 That includes:
 
@@ -386,7 +386,7 @@ That includes:
 - Any horse that non of his owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - doesn't own a dragon
 
-_**Q23:** Any horse that is not owned by a person who doesn't own a dragon_
+_**Q23:** Any horse not owned by a person who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
@@ -865,7 +865,7 @@ _**Q82:** Any dragon that wasn't frozen by any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q177:** Any dragon that was frozen by at least 10 dragons, and froze each one of those (two versions)_
+_**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 dragons, and froze each one of those (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
