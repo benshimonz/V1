@@ -28,7 +28,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Lior")
+- Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Brandon")
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'call'). Again - without schema - the type is just another property
 
@@ -139,7 +139,7 @@ Each relationship has a label which denotes the relationship's type.
 
 Here are some basic patterns:
 
-_**Q1:** Any phone owned by Lior Kogan_
+_**Q1:** Any phone owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
@@ -147,7 +147,7 @@ _**Q2:** Any phone that received at least one call from a phone owned by Lior Ko
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q184:** Any phone that made or received at least one call from a phone owned by Lior Kogan_
+_**Q184:** Any phone that made or received at least one call from a phone owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
@@ -177,7 +177,7 @@ Constraints cannot be defined for yellow entities.
 
 Constraints can be defined for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
 
-_**Q3:** Any person who owns a phone, and his first name is Lior **(v1)**_
+_**Q3:** Any person who owns a phone, and his first name is Brandon **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
@@ -189,7 +189,7 @@ _**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
 
 Vertical quantifiers (or simply 'quantifiers') are used when several conditions need to be checked. Here is a simple example:
 
-_**Q3:** Any person who owns a phone, and his first name is Lior **(v2)**_
+_**Q3:** Any person who owns a phone, and his first name is Brandon **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
@@ -240,7 +240,7 @@ _**Q11:** Any current employee of IBM that, since 2011 or later, knows someone t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-_**Q10:** Any person whose first name is Lior, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+_**Q10:** Any person whose first name is Brandon, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
@@ -290,7 +290,7 @@ _**Q24:** Any person who has (at least) two parents and owns a phone that was ca
 
 ## No-existence and No-connection
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Lior, and doesn't own a white horse_). Such patterns are composed of:
+Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Brandon, and doesn't own a white horse_). Such patterns are composed of:
 
 * A left component that ends with an entity (_any person whose first name is Lior_) 
 * A No-existence / a no-connection language element (_"doesn't"_) 
@@ -299,23 +299,23 @@ Sometimes we are looking for things that are not in the graph (e.g. _any person 
 
 An assignment is a multi-set of concrete elements only to the left component.
 
-The example above covers two cases: (i) there may be no white horses at all, or (ii) there may be white horses, but none of them is owned by a person whose first name is Lior. 
+The example above covers two cases: (i) there may be no white horses at all, or (ii) there may be white horses, but none of them is owned by a person whose first name is Brandon. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-Usually it doesn't matter which is the case, since _any person whose name is Lior and doesn't own a white horse_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
+Usually it doesn't matter which is the case, since _any person whose name is Brandon and doesn't own a white horse_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
 An assignment matches the pattern only if:
 
-* It matches a pattern composed only of the left component (there is _a person whose first name is Lior_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a white horse)_
+* It matches a pattern composed only of the left component (there is _a person whose first name is Brandon_) 
+* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Brandon and own's a white horse)_
 
 An 'X' may not be used directly before a relationship or a path with an aggregation.
 
 In certain situations, however, we need an assignment to match the pattern only if:
 
-* It matches a pattern composed only of the left component (there is _a person whose first name is Lior_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Lior and own's a white horse)_
+* It matches a pattern composed only of the left component (there is _a person whose first name is Brandon_) 
+* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Brandon and own's a white horse)_
 * There is an assignment that matches a pattern composed only of the right component (there is _a whote horse_)
 
 This is where the **no-connection language element (depicted with a pink '↛' box)** can be used. 
@@ -336,7 +336,7 @@ _**Q14:** Get Sweetfoot, if not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q014.png)
 
-_**Q15:** Get Lior Kogan, if he doesn't own a horse_
+_**Q15:** Get Brandon Stark, if he doesn't own a horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q015.png)
 
@@ -348,11 +348,11 @@ _**Q17:** Any horse that is not owned by Lior Kogan_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q017.png)
 
-_**Q18:** Get Lior Kogan, if he doesn't own Sweetfoot_
+_**Q18:** Get Brandon Stark, if he doesn't own Sweetfoot_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q018.png)
 
-_**Q19:** Get Sweetfoot, if it is not owned by Lior Kogan_
+_**Q19:** Get Sweetfoot, if it is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
@@ -766,7 +766,7 @@ A property tag serves as a placeholder for the property's value in a given assig
 
 Here are some examples:
 
-_**Q108:** Any person who has the same birth-date as Lior Kogan_
+_**Q108:** Any person who has the same birth-date as Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
@@ -1173,7 +1173,7 @@ For each assignment to the entity on its left (←), this aggregation will limit
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
 
-_**Q196:** Any **phone** owned by Lior Kogan, and the 3 phones **it** called that called the largest number of phones_
+_**Q196:** Any **phone** owned by Brandon Stark, and the 3 phones **it** called that called the largest number of phones_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
@@ -1215,7 +1215,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q195:** Any phone owned by Lior Kogan, and the 3 phones it called the largest number of times_
+_**Q195:** Any phone owned by Brandon Stark, and the 3 phones it called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
@@ -1239,7 +1239,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q182:** Any phone owned by Lior Kogan, and the 3 phones with the largest cumulative call duration from it_
+_**Q182:** Any phone owned by Brandon Stark, and the 3 phones with the largest cumulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
@@ -1299,7 +1299,7 @@ _**Q138:** The 4 people that the people they know cumulatively own horses with t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**183:** The 3 phones with the largest cumulative call duration from phones owned by Lior Kogan_
+_**183:** The 3 phones with the largest cumulative call duration from phones owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
