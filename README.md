@@ -69,7 +69,7 @@ In order to ask and answer queries such as *“Any person who owns a white horse
 
 Here are two examples:
 
-* *Any person who owns a white Horse, his birth date is between 1/1/970 and 1/1/980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to employees of company X in the last month*
+* *Any person who owns a white Horse, his birth date is between 1/1/970 and 1/1/980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to member of guild X in the last month*
 
 * *Any person who owns at least 5 white horses*
 
@@ -513,35 +513,35 @@ The entity type on an R-combiner's right side must match all the relationship ty
 
 Here are some examples:
 
-_**Q29:** Any dragon that called or SMSed some dragon (two versions)_
+_**Q29:** Any dragon that called or fired at some dragon (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any dragon pair (A, B) where A both called and SMSed B (two versions)_
+_**Q30:** Any dragon pair (A, B) where A both called and fired at B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
 Note that the concrete entity on the right side of the R-combiner has the same assignment for all the branches.
 
-_**Q31:** Any dragon pair (A, B) where A called B, A SMSed B, B called A, and B SMSed A_
+_**Q31:** Any dragon pair (A, B) where A called B, A fired at B, B called A, and B fired at A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
 
-_**Q32:** Any dragon pair (A, B) where A SMSed B, and A SMSed some dragon that SMSed B_
+_**Q32:** Any dragon pair (A, B) where A fired at B, and A fired at some dragon that fired at B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
-_**Q170:** Any dragons triplet (A, B, D) where A SMSed B, A SMSed some dragon that SMSed B, B called D, and B called some dragon that called D_
+_**Q170:** Any dragons triplet (A, B, D) where A fired at B, A fired at some dragon that fired at B, B called D, and B called some dragon that called D_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q170.png)
 
-_**Q33:** Any dragon A that called some dragon B, called some dragon that called B, and SMSed some dragon_
+_**Q33:** Any dragon A that called some dragon B, called some dragon that called B, and fired at some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q033.png)
 
-_**Q34:** Any dragon A that called some dragon B, called some dragon that called B, SMSed some dragon D and SMSed some dragon that SMSed D (B and D may be the same dragon or different dragons)_
+_**Q34:** Any dragon A that called some dragon B, called some dragon that called B, fired at some dragon D and fired at some dragon that fired at D (B and D may be the same dragon or different dragons)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
@@ -677,10 +677,10 @@ Optional constraints may be defined for the entities and relationships along the
 
 Optional relationship constraints are listed in red curly brackets above the path's line. The brackets may list:
 
-- Allowed relationship types - e.g. {SMS, call}
-- Constraints on the number of relationships of each allowed type - e.g. {call < 2, SMS = 2}
-- Constraints on the number of relationships of each allowed type in each direction - e.g. {→ call = 2, ← call = 1}
-- Disallowed relationships types constraints - e.g. {call = 0}
+- Allowed relationship types - e.g. {'fires at', 'freezes'}
+- Constraints on the number of relationships of each allowed type - e.g. {freezes < 2, fires at = 2}
+- Constraints on the number of relationships of each allowed type in each direction - e.g. {→ freezes = 2, ← freezes = 1}
+- Disallowed relationships types constraints - e.g. {freezes = 0}
 
 Optional entity constraints are listed in red curly brackets below the path's line. The brackets may list:
 
@@ -694,7 +694,7 @@ _**Q44:** Any path with length ≤ 4 between these two dragons, which is compose
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
 
-_**Q45:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' and 'SMS' relationships_
+_**Q45:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' and 'fired at' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
@@ -1099,19 +1099,19 @@ _**Q86:** Any dragon pair (A, B) where the cumulative call duration from A to B 
 
 - Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
 
-_**Q121:** Any dragon that called or SMSed at least 10 dragons_
+_**Q121:** Any dragon that called or fired at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
-_**Q122:** Any dragon that SMSed dragon B, and SMSed a dragon that SMSed B - for at least 10 different B's_
+_**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired at B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q175:** Any dragon that called at least once, and SMSed at least once. The number of dragons it called/SMSed is at least 10 (if a dragon was both called and SMSed - it would be counted twice)_
+_**Q175:** Any dragon that called at least once, and fired at least once. The number of dragons it called/fired is at least 10 (if a dragon was both called and fired - it would be counted twice)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-_**Q176:** Any dragon that either (i) called at least one dragon and SMSed at least one dragon it didn't call. The number of dragons it called/SMSes is at least 10 (ii) called at least 10 dragons_
+_**Q176:** Any dragon that either (i) called at least one dragon and fired at least one dragon it didn't call. The number of dragons it called/fired is at least 10 (ii) called at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
@@ -1119,19 +1119,19 @@ _**Q123:** Any dragon that either (was called) or (made a call) - at least 10 ti
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-_**Q124:** Any dragon that either (called a dragon) or (SMSed a dragon that SMSed a dragon) - at least 10 times_
+_**Q124:** Any dragon that either (called a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
 (counting the number of relationships to each entity on the right of the quantifier)
 
-_**Q173:** Any dragon that SMSed at least 2 dragons, and sent at least 10 SMSes_
+_**Q173:** Any dragon that fired at least 2 dragons, and fired at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
 
-(counting the number of *distinct* SMS relationships)
+(counting the number of *distinct* 'fired at' relationships)
 
-_**Q174:** Any dragon that either (i) called at least one dragon and SMSed at least one dragon it didn't call (ii) called at least two dragons. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
+_**Q174:** Any dragon that either (i) called at least one dragon and fired at least one dragon it didn't call (ii) called at least two dragons. If (i): the number of fires and calls is at least 10. otherwise: The number of calls is at least 10._
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
@@ -1139,19 +1139,19 @@ _**Q174:** Any dragon that either (i) called at least one dragon and SMSed at le
 
 todo
 
-_**Q191:** Any dragon that called X≥3 dragons and SMSed Y≥3 dragons. X+Y≥10_
+_**Q191:** Any dragon that called X≥3 dragons and fired at Y≥3 dragons. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q191.png)
 
-_**Q192:** Any dragon that made X≥3 calls and sent Y≥3 SMSes. X+Y≥10_
+_**Q192:** Any dragon that made X≥3 calls and fired Y≥3 times. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q192.png)
 
-_**Q193:** Any dragon that called X≥3 dragons, SMSed Y dragons, and sent Z≥3 SMSes. X+Y≥10_
+_**Q193:** Any dragon that called X≥3 dragons, fired at Y dragons, and fired Z≥3 times. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
 
-_**Q194:** Any dragon that made X calls, sent Y≥3 SMSes, and called Z≥3 dragons. X+Y≥10__
+_**Q194:** Any dragon that made X calls, fired Y≥3 times, and called Z≥3 dragons. X+Y≥10__
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
@@ -1489,7 +1489,7 @@ _**Q181:** Any **dragon** with no intersection between the groups of dragons cal
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
-_**Q164:** Any dragon that the cumulative number of outgoing calls of the dragons it called - is equal to the cumulative number of outgoing SMSes of the dragons it SMSed_
+_**Q164:** Any dragon that the cumulative number of outgoing calls of the dragons it called - is equal to the cumulative number of times it fired_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
