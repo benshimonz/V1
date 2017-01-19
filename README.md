@@ -1023,15 +1023,15 @@ _**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q87:** Any dragon that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
+_**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any dragon pair (A,B) where A called B at least once, but the cumulative call duration is 0 minutes_
+_**Q88:** Any dragon pair (A,B) where A froze B at least once, but the cumulative freezing duration is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
-_**Q89:** Any dragon that its outgoing calls have more than 3 different durations_
+_**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
@@ -1089,7 +1089,7 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q86:** Any dragon pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
+_**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
@@ -1099,7 +1099,7 @@ _**Q86:** Any dragon pair (A, B) where the cumulative call duration from A to B 
 
 - Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
 
-_**Q121:** Any dragon that froze or fired at least 10 dragons_
+_**Q121:** Any dragon that froze or fired at at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
@@ -1111,7 +1111,7 @@ _**Q175:** Any dragon that froze at least once, and fired at least once. The num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-_**Q176:** Any dragon that either (i) called at least one dragon and fired at least one dragon it didn't call. The number of dragons it called/fired is at least 10 (ii) called at least 10 dragons_
+_**Q176:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze. The number of dragons it frozed/fired at is at least 10 (ii) froze at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
@@ -1125,13 +1125,13 @@ _**Q124:** Any dragon that either (froze a dragon) or (fired a dragon that fired
 
 (counting the number of relationships to each entity on the right of the quantifier)
 
-_**Q173:** Any dragon that fired at least 2 dragons, and fired at least 10 times_
+_**Q173:** Any dragon that fired at at least 2 dragons, and fired at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
 
 (counting the number of *distinct* 'fired at' relationships)
 
-_**Q174:** Any dragon that either (i) called at least one dragon and fired at least one dragon it didn't call (ii) called at least two dragons. If (i): the number of fires and calls is at least 10. otherwise: The number of calls is at least 10._
+_**Q174:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. If (i): the number times it froze / fired at dragons is at least 10. otherwise: The number of times it froze dragons is at least 10._
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
@@ -1173,15 +1173,15 @@ For each assignment to the entity on its left (←), this aggregation will limit
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
 
-_**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** called that called the largest number of dragons_
+_**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
-_**Q197:** Any person and his 3 dragons that the dragons they called - called the largest number of distinct dragons cumulatively_
+_**Q197:** Any person and his 3 dragons that the dragons they froze - froze the largest number of distinct dragons cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
-_**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it called that called the largest number of dragons) - called the largest number of distinct dragons cumulatively_
+_**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it froze that froze the largest number of dragons) - froze the largest number of distinct dragons cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
 
@@ -1215,7 +1215,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it called the largest number of times_
+_**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
@@ -1225,7 +1225,7 @@ _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it called the la
 
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q171:** The 2 dragons that were called the largest number of times_
+_**Q171:** The 2 dragons that were frozen the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
 
@@ -1239,11 +1239,11 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons with the largest cumulative call duration from it_
+_**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
-_**Q201:** For any dragon that called at least 10 dragons: the 3 dragons with the largest cumulative call duration from it_
+_**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
@@ -1279,11 +1279,11 @@ _**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
-_**Q91:** The 4 dragons with the longest (shortest incoming call)_
+_**Q91:** The 4 dragons with the maximal (shortest period they were frozen for)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
 
-_**Q92:** The 4 dragons with the longest (outgoing calls average duration)_
+_**Q92:** The 4 dragons with the maximal (average duration they froze dragons for)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
@@ -1335,7 +1335,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 todo
 
-_**Q90:** The 4 dragon pairs (A, B) with the maximal cumulative call duration from A to B_
+_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
@@ -1347,7 +1347,7 @@ _**Q90:** The 4 dragon pairs (A, B) with the maximal cumulative call duration fr
 
 todo
 
-_**Q161:** For any dragon: the 4 longest outgoing calls_
+_**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
@@ -1359,7 +1359,7 @@ _**Q161:** For any dragon: the 4 longest outgoing calls_
 
 todo
 
-_**Q160:** For any dragon pair (A, B): The 4 longest calls from A to B_
+_**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
@@ -1367,7 +1367,7 @@ _**Q160:** For any dragon pair (A, B): The 4 longest calls from A to B_
 
 todo
 
-_**Q96:** Any dragon that was frozen by Balerion, on or after 1/1/1010, more than 10 times, for periods that are shorter than 10 minutes_
+_**Q96:** Any dragon that was frozen by Balerion, on or after 1/1/1010, more than 10 times, for periods shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
@@ -1391,15 +1391,15 @@ Filtering stages:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
-_**Q162:** Any dragon pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
+_**Q162:** Any dragon pair (A, B) where the second shortest period A froze B is longer than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
 
-_**Q163:** Any dragon that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
+_**Q163:** Any dragon that the average duration of the 10 shortest times it freezes is greater than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any dragon that was frozen by Balerion: at least one call on or after 1/1/1010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/1010 or shorter than 10 minutes)_
+_**Q185:** Any dragon that was frozen by Balerion: at least one time on or after 1/1/1010, at least one time for less than 10 minutes, more than 10 times (on or after 1/1/1010 or for less than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
@@ -1413,11 +1413,11 @@ The two 'per pair' conditions could be chained instead. The meaning would be sim
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-3.png)
 
-_**Q97:** Any dragon that froze more than 3 dragons. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
+_**Q97:** Any dragon that froze more than 3 dragons - each more than 10 times, or for a cumulative duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
-_**Q98:** First, pass dragons A that called more than 3 dragons. Then, pass dragon pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
+_**Q98:** First, pass dragons A that froze more than 3 dragons. Then, pass dragon pairs (A,B) where A froze B more than 10 times, or froze B for a cumulative duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
@@ -1489,23 +1489,23 @@ _**Q181:** Any **dragon** with no intersection between the groups of dragons fro
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
-_**Q164:** Any dragon that the cumulative number of outgoing calls of the dragons it called - is equal to the cumulative number of times it fired_
+_**Q164:** Any dragon that the cumulative number of times dragons he froze have frozen dragons - is equal to the cumulative number of times dragons he fored at have fired at dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-_**Q179:** Any dragon pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration (two versions)_
+_**Q179:** Any dragon pair (A, B) where A froze B for a cumulative period longer than the cumulative period that B froze dragons (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-2.png)
 
-_**Q213:** Out of the dragon pairs (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration - the 5 pairs with the largest number of calls from A to B_
+_**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative period longer than the cumulative period the B foze dragons - the 5 pairs with the largest number of times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
 
 Note that the order of the filtering stages along the left aggregation chain can be switched. The semantics would remain the same.
 
-_**Q180:** Any dragon pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
+_**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vice verse - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
