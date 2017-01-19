@@ -115,7 +115,7 @@ V1 is a rich simple generic visual pattern language for schema-based property gr
 
 ## V1 Basics
 
-The following sections define the syntax and semantics of the V1 langage. We start with the basics, adding more language elements as we go along.
+The following sections define the syntax and semantics of the V1 language. We start with the basics, adding more language elements as we go along.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB01.png)
 
