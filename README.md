@@ -358,7 +358,7 @@ _**Q19:** Get Sweetfoot, if it is not owned by Brandon Stark_
 
 An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
-_**Q20:** Any horse that is not owned by James Smith nor by John Price (two versions)_
+_**Q20:** Any horse that is not owned by Rogar Bolton nor by Robin Arryn (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
@@ -366,11 +366,11 @@ This pattern can also be represented using the '0' quantifier:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
-_**Q21:** Any horse that is not owned by both James Smith and John Price (two versions)_
+_**Q21:** Any horse that is not owned by both Rogar Bolton and Robin Arryn (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
-This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either James Smith or John Price owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
+This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either Rogar Bolton or Robin Arryn owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
@@ -665,11 +665,11 @@ An assignment to a path consists of all the relationships and entities along the
 
 Here are two examples:
 
-_**Q53:** Any person within graph distance ≤ 4 from James Smith_
+_**Q53:** Any person within graph distance ≤ 4 from Rogar Bolton_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q053.png)
 
-_**Q55:** Anything within graph distance ≤ 3 from James Smith, John Price and George Davis_
+_**Q55:** Anything within graph distance ≤ 3 from Rogar Bolton, Robin Arryn, and Arrec Durrandon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q055.png)
 
@@ -752,7 +752,7 @@ In this example, one path segment type is disallowed, there must be between 2 an
 
 _**Q58:** constraints on path segment types_
 
-In this example, the path must contain James Smith. Any other path segments are allowed
+In this example, the path must contain Rogar Bolton. Any other path segments are allowed
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
@@ -776,7 +776,7 @@ _**Q109:** Any person who his parent owned a horse and a dragon prior to his bir
 
 Note that if a branch contains only a green rectangle with no constraints (only with a property tag) - the branch is always satisfied.
 
-_**Q110:** Any 3 dragons with a cyclic transfers of more than $10000 in chronological order, and their owners_
+_**Q110:** Any 3 dragons with cyclic freezes of more than 100 minutes in chronological order, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q110.png)
 
@@ -1045,7 +1045,7 @@ _**Q116:** Any person who owns horses with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person whose owned horses have an average model year greater than 1010_
+_**Q117:** Any person whose owned horses have an average weight greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
@@ -1053,11 +1053,11 @@ _**Q134:** Any person that the number of distinct colors of all horses owned by 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the average model year of all horses owned by people he knows - is at least 1010_
+_**Q135:** Any person that the average weight of all horses owned by people he knows - is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
-_**Q137:** Any dragon A that called dragons B that made calls. The cumulative duration of all calls that all these B dragons made is greater than 100 minutes_
+_**Q137:** Any dragon A that freezed dragons B - each freezed at least one dragon which is not A. All these B's together freezed dragons for more than 100 minutes cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
@@ -1075,11 +1075,11 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q75:** Any dragon pair (A, B) where B called A between 8 and 10 times_
+_**Q75:** Any dragon pair (A, B) where B freezed A between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
-_**Q76:** Any dragon that called Balerion between 8 and 10 times_
+_**Q76:** Any dragon that freezed Balerion between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
