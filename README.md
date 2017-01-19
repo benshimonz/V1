@@ -139,15 +139,15 @@ Each relationship has a label which denotes the relationship's type.
 
 Here are some basic patterns:
 
-_**Q1:** Any phone owned by Brandon Stark_
+_**Q1:** Any dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any phone that received at least one call from a phone owned by Brandon Stark_
+_**Q2:** Any dragon that received at least one call from a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q184:** Any phone that made or received at least one call from a phone owned by Brandon Stark_
+_**Q184:** Any dragon that made or received at least one call from a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
@@ -177,11 +177,11 @@ Constraints cannot be defined for yellow entities.
 
 Constraints can be defined for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
 
-_**Q3:** Any person who owns a phone, and his first name is Brandon **(v1)**_
+_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
-_**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
+_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
 
@@ -189,7 +189,7 @@ _**Q190:** Any person who owns a phone since 1/1/2011 or since a later date_
 
 Vertical quantifiers (or simply 'quantifiers') are used when several conditions need to be checked. Here is a simple example:
 
-_**Q3:** Any person who owns a phone, and his first name is Brandon **(v2)**_
+_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
@@ -223,7 +223,7 @@ All (and only) matched sub-patterns are included in a query's answer.
 
 Here is an example of **nested quantifiers**:
 
-_**Q8:** Any person born prior to 1970 and died, or that his father born no later than 1/1/1950_
+_**Q8:** Any person born prior to 970 and died, or that his father born no later than 1/1/950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
@@ -236,11 +236,11 @@ _**Q8:** Any person born prior to 1970 and died, or that his father born no late
 
 Here is an example:
 
-_**Q11:** Any current employee of IBM that, since 2011 or later, knows someone that left Oracle or Microsoft on or after June 2010_
+_**Q11:** Any current employee of IBM that, since 1011 or later, knows someone that left Oracle or Microsoft on or after June 1010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-_**Q10:** Any person whose first name is Brandon, who owns some phone B which called a phone C that belongs to an offspring of James Smith and called a phone that belongs either to John Price or to George Davis. At least one call from B to C was longer than 100 seconds, and took place in or after 2010_
+_**Q10:** Any person whose first name is Brandon, who owns some dragon B which called a dragon C that belongs to an offspring of Rogar Bolton and called a dragon that belongs either to Robin Arryn or to Arrec Durrandon. At least one call from B to C was longer than 100 seconds, and took place in or after 1010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
@@ -254,7 +254,7 @@ Entity tags serve two purposes. First, when a pattern is used as a query, entity
 
 **Identicality constraint** is used when two entities in the pattern must have identical assignment. Here is an example:
 
-_**Q4:** Any person whose phone received a call from a phone owned by (at least one) of his parents_
+_**Q4:** Any person whose dragon received a call from a dragon owned by (at least one) of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
@@ -262,13 +262,13 @@ Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tag
 
 Here is another example:
 
-_**Q9:** Any phones pair (A, B) where A called B both in 1980 and in 1984_
+_**Q9:** Any dragon pair (A, B) where A called B both in 1980 and in 1984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
 **Nonidenticality Constraint** is used when two entities in the pattern must have nonidentical assignments. Here is an example:
 
-_**Q5:** Any person whose phone received a call from a phone owned by two of his parents_
+_**Q5:** Any person whose dragon received a call from a dragon owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
@@ -276,15 +276,15 @@ Without enforcing nonidenticality, the same parent can be assigned to both C and
 
 Here are two more examples:
 
-_**Q6:** Any person whose phone received calls from two phones – one owned by one of his parents, the other owned by another parent (note that none, one or both phones may be owner by both parents)_
+_**Q6:** Any person whose dragon received calls from two dragons – one owned by one of his parents, the other owned by another parent (note that none, one or both dragons may be owner by both parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
-_**Q7:** Any person whose phone was either (i) called from a phone owned by two of his parents, or (ii) from two phones – one owned by one of his parents and the other owned by his other parent_
+_**Q7:** Any person whose dragon was either (i) called from a dragon owned by two of his parents, or (ii) from two dragons – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
-_**Q24:** Any person who has (at least) two parents and owns a phone that was called from a phone that is not owned by either of his parents_
+_**Q24:** Any person who has (at least) two parents and owns a dragon that was called from a dragon that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
 
@@ -374,13 +374,13 @@ This pattern can also be represented using the 'not all' quantifier, but notice 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q22:** Any horse that is not owned by a person who owns a phone_
+_**Q22:** Any horse that is not owned by a person who owns a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
 
 Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the pink 'X' box - up to the end of the branch.
 
-_**Q23:** Any horse that is not owned by a person who doesn't own a phone_
+_**Q23:** Any horse that is not owned by a person who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
 
@@ -457,11 +457,11 @@ Additional horizontal quantifiers:
 
 Here are two examples:
 
-_**Q187:** Any phone that was called from 052-333-4444: (at least one call on or after 1/1/2010) and (at least one call longer than 10 minutes) - same or different calls_
+_**Q187:** Any dragon that was called from Balerion: (at least one call on or after 1/1/1010) and (at least one call longer than 10 minutes) - same or different calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q189:** Any phone that was called from 052-333-4444: (at least one call on or after 1/1/2010) or (at least one call longer than 10 minutes) **Alternative wording:** Any phone that was called from 052-333-4444: at least one call (on or after 1/1/2010 or longer than 10 minutes)_
+_**Q189:** Any dragon that was called from Balerion: (at least one call on or after 1/1/1010) or (at least one call longer than 10 minutes) **Alternative wording:** Any dragon that was called from Balerion: at least one call (on or after 1/1/1010 or longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
@@ -469,7 +469,7 @@ Green rectangles, aggregate conditions, and aggregation tags  below an horizonta
 
 Here is an example:
 
-_**Q188:** Any phone that was called from 052-333-4444: at least one call (on or after 1/1/2010 and longer than 10 minutes)_
+_**Q188:** Any dragon that was called from Balerion: at least one call (on or after 1/1/1010 and longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
@@ -489,7 +489,7 @@ The relationship / property types on an E-combiner's right side must match all t
 
 Here are some examples:
 
-_**Q27:** Any person with a Chinese citizenship who owns a hoorse and a phone of the same origin; Any company registered in Japan that owns a horse and a phone of the same origin_
+_**Q27:** Any person with a Chinese citizenship who owns a horse and a dragon of the same origin; Any company registered in Japan that owns a horse and a dragon of the same origin_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
 
@@ -497,7 +497,7 @@ _**Q28:** Any Chinese citizen who owns a white horse; Any person who doesn't kno
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
 
-_**Q35:** Any person who either (i) knows a Chinese citizen who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a phone_
+_**Q35:** Any person who either (i) knows a Chinese citizen who owns a white horse (ii) know a person who doesn't know someone who owns a white horse (iii) know someone who doesn't own a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
 
@@ -513,35 +513,35 @@ The entity type on an R-combiner's right side must match all the relationship ty
 
 Here are some examples:
 
-_**Q29:** Any phone that called or SMSed some phone (two versions)_
+_**Q29:** Any dragon that called or SMSed some dragon (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any phones pair (A, B) where A both called and SMSed B (two versions)_
+_**Q30:** Any dragon pair (A, B) where A both called and SMSed B (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
 Note that the concrete entity on the right side of the R-combiner has the same assignment for all the branches.
 
-_**Q31:** Any phones pair (A, B) where A called B, A SMSed B, B called A, and B SMSed A_
+_**Q31:** Any dragon pair (A, B) where A called B, A SMSed B, B called A, and B SMSed A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
 
-_**Q32:** Any phones pair (A, B) where A SMSed B, and A SMSed some phone that SMSed B_
+_**Q32:** Any dragon pair (A, B) where A SMSed B, and A SMSed some dragon that SMSed B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q032.png)
 
-_**Q170:** Any phones triplet (A, B, D) where A SMSed B, A SMSed some phone that SMSed B, B called D, and B called some phone that called D_
+_**Q170:** Any dragons triplet (A, B, D) where A SMSed B, A SMSed some dragon that SMSed B, B called D, and B called some dragon that called D_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q170.png)
 
-_**Q33:** Any phone A that called some phone B, called some phone that called B, and SMSed some phone_
+_**Q33:** Any dragon A that called some dragon B, called some dragon that called B, and SMSed some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q033.png)
 
-_**Q34:** Any phone A that called some phone B, called some phone that called B, SMSed some phone D and SMSed some phoned that SMSed D (B and D may be the same phone or different phones)_
+_**Q34:** Any dragon A that called some dragon B, called some dragon that called B, SMSed some dragon D and SMSed some dragon that SMSed D (B and D may be the same dragon or different dragons)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q034.png)
 
@@ -587,19 +587,19 @@ _**Q146:** Any person who owns a white horse. If he has a parent - the parent wi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q146.png)
 
-_**Q147:** Any person. If he owns both a horse and a phone - they will be a part of the answer as well_
+_**Q147:** Any person. If he owns both a horse and a dragon - they will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q147.png)
 
-_**Q148:** Any person who owns both a horse and a phone. If he has a parent - the parent will be part of the answer as well_
+_**Q148:** Any person who owns both a horse and a dragon. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q148.png)
 
-_**Q149:** Any person. If he owns a horse - it will be a part of the answer as well. If he owns a phone - it will be a part of the answer as well_
+_**Q149:** Any person. If he owns a horse - it will be a part of the answer as well. If he owns a dragon - it will be a part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q149.png)
 
-_**Q150:** Any person who owns a horse or a phone. If he has a parent - the parent will be part of the answer as well_
+_**Q150:** Any person who owns a horse or a dragon. If he has a parent - the parent will be part of the answer as well_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
@@ -615,29 +615,29 @@ _**Q36:** Any person who owns something_
 
 The entity type is implicitly constrained because of the relationship type. In Q36, the entity type is constrained to things that a person can own.
 
-_**Q49:** Any 3 phones with a cyclic call pattern, and their owners_
+_**Q49:** Any 3 dragons with a cyclic call pattern, and their owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q049.png)
 
-Similarly, the entity type of all owners is implicitly constrained to things that can own a phone.
+Similarly, the entity type of all owners is implicitly constrained to things that can own a dragon.
 
 In addition to the implicit type constraints - explicit type constraints can be enforced by defining a set of allowed types or a set of disallowed types. Here are two examples:
 
-_**Q37:** Any person who owns a horse or a phone_
+_**Q37:** Any person who owns a horse or a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any person who owns something which is not a horse nor a phone_
+_**Q38:** Any person who owns something which is not a horse nor a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
 Even when a red entity is on either side of an 'X' - the entity's type is constrained by relationship types. Here are some examples:
 
-_**Q39:** Anything that can own a phone, but doesn't_
+_**Q39:** Anything that can own a dragon, but doesn't_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q039.png)
 
-_**Q40:** Any phone that has no owner_
+_**Q40:** Any dragon that has no owner_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q040.png)
 
@@ -649,7 +649,7 @@ _**Q42:** Anything that can own something, but owns nothing_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q042.png)
 
-_**Q43:** Any phone that all of its owners (if any) are people_
+_**Q43:** Any dragon that all of its owners (if any) are people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q043.png)
 
@@ -684,25 +684,25 @@ Optional relationship constraints are listed in red curly brackets above the pat
 
 Optional entity constraints are listed in red curly brackets below the path's line. The brackets may list:
 
-- Allowed entity types - e.g. {phone}
-- Constraint on the number of entities of each allowed type - e.g. {phone < 1}
-- Disallowed entity types - e.g. {phone = 0}
+- Allowed entity types - e.g. {Dragon}
+- Constraint on the number of entities of each allowed type - e.g. {Dragon < 1}
+- Disallowed entity types - e.g. {Dragon = 0}
 
 Here are some examples:
 
-_**Q44:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' relationships_
+_**Q44:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q044.png)
 
-_**Q45:** Any path with length ≤ 4 between these two phones, which is composed only of 'call' and 'SMS' relationships_
+_**Q45:** Any path with length ≤ 4 between these two dragons, which is composed only of 'call' and 'SMS' relationships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q045.png)
 
-_**Q54:** Any person within graph distance ≤ 3 from James Smith, John Price and George Davis_
+_**Q54:** Any person within graph distance ≤ 3 from Rogar Bolton, Robin Arryn, and Arrec Durrandon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q054.png)
 
-_**Q46:** Any path with length ≤ 4 between a phone owned by James Smith to a phone owned by John Price, which is composed of up to 2 'call' relationships, and only of 'phone' entities_
+_**Q46:** Any path with length ≤ 4 between a dragon owned by Rogar Bolton to a dragon owned by Robin Arryn, which is composed of up to 2 'call' relationships, and only of 'Dragon' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q046.png)
 
@@ -712,11 +712,11 @@ Instead of specifying a constraint on the path length - paths can be limited to 
 
 Here are two examples:
 
-_**Q47:** All shortest paths between these two phones_
+_**Q47:** All shortest paths between these two dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q047.png)
 
-_**Q48:** All shortest paths between these two phones, which are not composed of 'call' relationships nor 'phone' entities_
+_**Q48:** All shortest paths between these two dragons, which are not composed of 'call' relationships nor 'Dragon' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
@@ -770,7 +770,7 @@ _**Q108:** Any person who has the same birth-date as Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
-_**Q109:** Any person who his parent owned a horse and a phone prior to his birth_
+_**Q109:** Any person who his parent owned a horse and a dragon prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
@@ -784,7 +784,7 @@ _**Q111:** Any person who doesn't know someone with a birth date similar to his_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q111.png)
 
-_**Q112:** Any person who owned a horse and a phone in the same time frames_
+_**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
@@ -827,7 +827,7 @@ _**Q59:** Any person having more than 2 parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
 
-_**Q60:** Any phone that was called from exactly 5 phones_
+_**Q60:** Any dragon that was called from exactly 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q060.png)
 
@@ -839,21 +839,21 @@ _**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q136:** Any phone A that called (phones that called phones B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
+_**Q136:** Any dragon A that called (dragons that called dragons B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-2.png)
 
-_**Q81:** Any phone that didn't call (0 callees)_
+_**Q81:** Any dragon that didn't call (0 callees)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-_**Q82:** Any phone that wasn't called (0 callers)_
+_**Q82:** Any dragon that wasn't called (0 callers)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q177:** Any phone that was called from at least 10 phones, and called each one of those (two versions)_
+_**Q177:** Any dragon that was called from at least 10 dragons, and called each one of those (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
@@ -870,7 +870,7 @@ For any concrete A:
 * There are at least 10 concrete B's such that (B called A, and A called B)
 * There are at least 10 concrete B's such that (A called B, and B called A)
 
-_**Q178:** Any phone A that was called from at least 10 phones and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones_
+_**Q178:** Any dragon A that was called from at least 10 dragons and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q178.png)
 
@@ -878,13 +878,13 @@ First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregat
 
 For each concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called a phone that is not B)
+* There are at least 10 concrete B's such that (B called A, and A called a dragon that is not B)
 
 Hence, for each concrete A:
 
-* At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
+* At least 10 dragons called A and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons
 
-_**Q85:** Any phone that called at least 10 phones, and was called from at least 10 phones (two versions)_
+_**Q85:** Any dragon that called at least 10 dragons, and was called from at least 10 dragons (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-1.png)
 
@@ -896,30 +896,30 @@ First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregat
 
 For each concrete A:
 
-* There are at least 10 concrete B's such that (B called A, and A called a phone that is not B)
-* There are at least 10 concrete C's such that (A called C, and A was called from a phone that is not C)
+* There are at least 10 concrete B's such that (B called A, and A called a dragon that is not B)
+* There are at least 10 concrete C's such that (A called C, and A was called from a dragon that is not C)
 
 Hence, for each concrete A:
 
-* At least 10 phones called A and either (i) A called only one phone - which is not one of those (ii) A called at least 2 phones
+* At least 10 dragons called A and either (i) A called only one dragon - which is not one of those (ii) A called at least 2 dragons
 
 and also
 
-* A called at least 10 phones and either (i) only one phone called A - which is not one of those (ii) at least 2 phones called A
+* A called at least 10 dragons and either (i) only one dragon called A - which is not one of those (ii) at least 2 dragons called A
 
 Hence:
 
-* A called at least 10 phones, and at least 10 phones called A
+* A called at least 10 dragons, and at least 10 dragons called A
 
 _**Q101:** Any person who owns at least 10 white horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q101.png)
 
-_**Q102:** Any phone that was called from at least 2 phones; each of these 2 phones was called from at least one phone_
+_**Q102:** Any dragon that was called from at least 2 dragons; each of these 2 dragons was called from at least one dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-_**Q166:** Any **phone** that more than 5 ABC employees own a phone that called **it**_
+_**Q166:** Any **dragon** that more than 5 ABC employees own a dragon that called **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
 
@@ -935,11 +935,11 @@ _**Q115:** Any person who owns more than 5 horses since the same date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
-_**Q125:** Any phone that the number of phones it called is greater than the number of phones that called it_
+_**Q125:** Any dragon that the number of dragons it called is greater than the number of dragons that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
 
-_**Q126:** Any phone that the number of phones it called is greater than the number of phones it didn't call_
+_**Q126:** Any dragon that the number of dragons it called is greater than the number of dragons it didn't call_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q126.png)
 
@@ -951,11 +951,11 @@ _**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q64:** Any **phone** that less than 5 (phones owned by ABC employees) didn't call **it**_
+_**Q64:** Any **dragon** that less than 5 (dragons owned by ABC employees) didn't call **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any **phone** that less than 5 (ABC employees own a phone that didn't call **it**)_
+_**Q165:** Any **dragon** that less than 5 (ABC employees own a dragon that didn't call **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
@@ -977,19 +977,19 @@ _**Q152:** Any person who owns more than 10 horses. Only the Chinese horses will
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
-_**Q71:** Any phone that made more than 10 calls (cumulatively)_
+_**Q71:** Any dragon that made more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any phone that was called exactly 10 times (cumulatively)_
+_**Q72:** Any dragon that was called exactly 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
 
-_**Q73:** Any phone that made no more than 10 calls (cumulatively)_
+_**Q73:** Any dragon that made no more than 10 calls (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
 
-_**Q74:** Any phone that the number of times it was called (cumulatively) is not 10_
+_**Q74:** Any dragon that the number of times it was called (cumulatively) is not 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
 
@@ -997,11 +997,11 @@ _**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q079.png)
 
-_**Q83:** Any phone that didn't call (0 outgoing calls)_
+_**Q83:** Any dragon that didn't call (0 outgoing calls)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
-_**Q84:** Any phone with no paths with length ≤ 3 to other phones_
+_**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
@@ -1009,11 +1009,11 @@ _**Q104:** Any person who owned white horses at least 10 times (same or differen
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
-_**Q105:** Any phone A that was called 2 exactly times (cumulatively) from (phones that each was called from at least one phone)_
+_**Q105:** Any dragon A that was called 2 exactly times (cumulatively) from (dragons that each was called from at least one dragon)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-_**Q127:** Any phone that made more calls to phones owned by IBM employees, than to phones owned by Oracle employees_
+_**Q127:** Any dragon that made more calls to dragons owned by IBM employees, than to dragons owned by Oracle employees_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
@@ -1023,15 +1023,15 @@ _**Q127:** Any phone that made more calls to phones owned by IBM employees, than
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q87:** Any phone that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
+_**Q87:** Any dragon that was called at least once, and the cumulative incoming call duration is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
-_**Q88:** Any phone pair (A,B) where A called B at least once, but the cumulative call duration is 0 minutes_
+_**Q88:** Any dragon pair (A,B) where A called B at least once, but the cumulative call duration is 0 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q088.png)
 
-_**Q89:** Any phone that its outgoing calls have more than 3 different durations_
+_**Q89:** Any dragon that its outgoing calls have more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
 
@@ -1045,7 +1045,7 @@ _**Q116:** Any person who owns horses with no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person whose owned horses have an average model year greater than 2010_
+_**Q117:** Any person whose owned horses have an average model year greater than 1010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
@@ -1053,11 +1053,11 @@ _**Q134:** Any person that the number of distinct colors of all horses owned by 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
-_**Q135:** Any person that the average model year of all horses owned by people he knows - is at least 2010_
+_**Q135:** Any person that the average model year of all horses owned by people he knows - is at least 1010_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
 
-_**Q137:** Any phone A that called phones B that made calls. The cumulative duration of all calls that all these B phones made is greater than 100 minutes_
+_**Q137:** Any dragon A that called dragons B that made calls. The cumulative duration of all calls that all these B dragons made is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q137.png)
 
@@ -1075,11 +1075,11 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q75:** Any phones pair (A, B) where B called A between 8 and 10 times_
+_**Q75:** Any dragon pair (A, B) where B called A between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
 
-_**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
+_**Q76:** Any dragon that called Balerion between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
@@ -1089,7 +1089,7 @@ _**Q76:** Any phone that called 052-333-4444 between 8 and 10 times_
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
-_**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
+_**Q86:** Any dragon pair (A, B) where the cumulative call duration from A to B is greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
@@ -1099,39 +1099,39 @@ _**Q86:** Any phones pair (A, B) where the cumulative call duration from A to B 
 
 - Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
 
-_**Q121:** Any phone that called or SMSed at least 10 phones_
+_**Q121:** Any dragon that called or SMSed at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
-_**Q122:** Any phone that SMSed phone B, and SMSed a phone that SMSed B - for at least 10 different B's_
+_**Q122:** Any dragon that SMSed dragon B, and SMSed a dragon that SMSed B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
 
-_**Q175:** Any phone that called at least once, and SMSed at least once. The number of phones it called/SMSed is at least 10 (if a phone was both called and SMSed - it would be counted twice)_
+_**Q175:** Any dragon that called at least once, and SMSed at least once. The number of dragons it called/SMSed is at least 10 (if a dragon was both called and SMSed - it would be counted twice)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-_**Q176:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call. The number of phones it called/SMSes is at least 10 (ii) called at least 10 phones_
+_**Q176:** Any dragon that either (i) called at least one dragon and SMSed at least one dragon it didn't call. The number of dragons it called/SMSes is at least 10 (ii) called at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
-_**Q123:** Any phone that either (was called) or (made a call) - at least 10 times_
+_**Q123:** Any dragon that either (was called) or (made a call) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-_**Q124:** Any phone that either (called a phone) or (SMSed a phone that SMSed a phone) - at least 10 times_
+_**Q124:** Any dragon that either (called a dragon) or (SMSed a dragon that SMSed a dragon) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
 
 (counting the number of relationships to each entity on the right of the quantifier)
 
-_**Q173:** Any phone that SMSed at least 2 phones, and sent at least 10 SMSes_
+_**Q173:** Any dragon that SMSed at least 2 dragons, and sent at least 10 SMSes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
 
 (counting the number of *distinct* SMS relationships)
 
-_**Q174:** Any phone that either (i) called at least one phone and SMSed at least one phone it didn't call (ii) called at least two phones. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
+_**Q174:** Any dragon that either (i) called at least one dragon and SMSed at least one dragon it didn't call (ii) called at least two dragons. If (i): the number of SMSes and calls is at least 10. otherwise: The number of calls is at least 10._
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
@@ -1139,19 +1139,19 @@ _**Q174:** Any phone that either (i) called at least one phone and SMSed at leas
 
 todo
 
-_**Q191:** Any phone that called X≥3 phones and SMSed Y≥3 phones. X+Y≥10_
+_**Q191:** Any dragon that called X≥3 dragons and SMSed Y≥3 dragons. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q191.png)
 
-_**Q192:** Any phone that made X≥3 calls and sent Y≥3 SMSes. X+Y≥10_
+_**Q192:** Any dragon that made X≥3 calls and sent Y≥3 SMSes. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q192.png)
 
-_**Q193:** Any phone that called X≥3 phones, SMSed Y phones, and sent Z≥3 SMSes. X+Y≥10_
+_**Q193:** Any dragon that called X≥3 dragons, SMSed Y dragons, and sent Z≥3 SMSes. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
 
-_**Q194:** Any phone that made X calls, sent Y≥3 SMSes, and called Z≥3 phones. X+Y≥10__
+_**Q194:** Any dragon that made X calls, sent Y≥3 SMSes, and called Z≥3 dragons. X+Y≥10__
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
@@ -1173,15 +1173,15 @@ For each assignment to the entity on its left (←), this aggregation will limit
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
 
-_**Q196:** Any **phone** owned by Brandon Stark, and the 3 phones **it** called that called the largest number of phones_
+_**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** called that called the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
-_**Q197:** Any person and his 3 phones that the phones they called - called the largest number of distinct phones cumulatively_
+_**Q197:** Any person and his 3 dragons that the dragons they called - called the largest number of distinct dragons cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
-_**Q198:** Any person and his 3 phones that (for each of them: the 4 phones it called that called the largest number of phones) - called the largest number of distinct phones cumulatively_
+_**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it called that called the largest number of dragons) - called the largest number of distinct dragons cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
 
@@ -1196,7 +1196,7 @@ _**Q67:** The 3 people with the maximal number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
 
-_**Q68:** The 2 phones that were called from the largest number of phones_
+_**Q68:** The 2 dragons that were called from the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
 
@@ -1215,7 +1215,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q195:** Any phone owned by Brandon Stark, and the 3 phones it called the largest number of times_
+_**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
@@ -1225,7 +1225,7 @@ _**Q195:** Any phone owned by Brandon Stark, and the 3 phones it called the larg
 
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q171:** The 2 phones that were called the largest number of times_
+_**Q171:** The 2 dragons that were called the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
 
@@ -1239,11 +1239,11 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 - Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
 
-_**Q182:** Any phone owned by Brandon Stark, and the 3 phones with the largest cumulative call duration from it_
+_**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons with the largest cumulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
-_**Q201:** For any phone that called at least 10 phones: the 3 phones with the largest cumulative call duration from it_
+_**Q201:** For any dragon that called at least 10 dragons: the 3 dragons with the largest cumulative call duration from it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
@@ -1279,11 +1279,11 @@ _**Q131:** The 4 eldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
-_**Q91:** The 4 phones with the longest (shortest incoming call)_
+_**Q91:** The 4 dragons with the longest (shortest incoming call)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
 
-_**Q92:** The 4 phones with the longest (outgoing calls average duration)_
+_**Q92:** The 4 dragons with the longest (outgoing calls average duration)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q092.png)
 
@@ -1299,7 +1299,7 @@ _**Q138:** The 4 people that the people they know cumulatively own horses with t
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**183:** The 3 phones with the largest cumulative call duration from phones owned by Brandon Stark_
+_**183:** The 3 dragons with the largest cumulative call duration from dragons owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
@@ -1315,11 +1315,11 @@ _**Q168:** The 3 people that the number of types of things they own is maximal_
 
 todo
 
-_**Q77:** The 5 phone pairs (A, B) with the largest number of calls from B to A_
+_**Q77:** The 5 dragon pairs (A, B) with the largest number of calls from B to A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
-_**Q78:** The 4 phones that called the largest number of times to 052-333-4444_
+_**Q78:** The 4 dragons that called the largest number of times to Balerion_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
@@ -1335,7 +1335,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 todo
 
-_**Q90:** The 4 phone pairs (A, B) with the maximal cumulative call duration from A to B_
+_**Q90:** The 4 dragon pairs (A, B) with the maximal cumulative call duration from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
@@ -1347,7 +1347,7 @@ _**Q90:** The 4 phone pairs (A, B) with the maximal cumulative call duration fro
 
 todo
 
-_**Q161:** For any phone: the 4 longest outgoing calls_
+_**Q161:** For any dragon: the 4 longest outgoing calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
@@ -1359,7 +1359,7 @@ _**Q161:** For any phone: the 4 longest outgoing calls_
 
 todo
 
-_**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
+_**Q160:** For any dragon pair (A, B): The 4 longest calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
@@ -1367,43 +1367,43 @@ _**Q160:** For any phones pair (A, B): The 4 longest calls from A to B_
 
 todo
 
-_**Q96:** Any phone that received more than 10 calls that are shorter than 10 minutes on or after 1/1/2010 from 052-333-4444_
+_**Q96:** Any dragon that received more than 10 calls that are shorter than 10 minutes on or after 1/1/1010 from Balerion_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q93:** Any phone that called (> 10 minutes calls) to at least 3 phones. The number of calls to each phone is at least 5_
+_**Q93:** Any dragon that called (> 10 minutes calls) to at least 3 dragons. The number of calls to each dragon is at least 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q093.png)
 
 Filtering stages:
 
 - Pass only (> 10 minutes calls)
-- Pass only phones A that called (> 10 minutes calls) to at least 3 phones
-- Pass only phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
+- Pass only dragons A that called (> 10 minutes calls) to at least 3 dragons
+- Pass only dragon pairs (A, B) where A made at least 5 (> 10 minutes calls) to B_
 
-_**Q94:** Any phone that called at least 5 (> 10 minutes calls). The calls were made to at least 3 phones_
+_**Q94:** Any dragon that called at least 5 (> 10 minutes calls). The calls were made to at least 3 dragons_
 
 Filtering stages:
 
 - Pass only (> 10 minutes calls)
-- Pass phone pairs (A, B) where A made at least 5 (> 10 minutes calls) to B
-- Pass only phones A that called (> 10 minutes calls) to at least 3 phones_
+- Pass dragon pairs (A, B) where A made at least 5 (> 10 minutes calls) to B
+- Pass only dragons A that called (> 10 minutes calls) to at least 3 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
-_**Q162:** Any phones pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
+_**Q162:** Any dragon pair (A, B) where the second shortest call from A to B is longer than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
 
-_**Q163:** Any phone that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
+_**Q163:** Any dragon that the average duration of its 10 shortest outgoing calls is greater than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any phone that received calls from 052-333-4444: at least one call on or after 1/1/2010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/2010 or shorter than 10 minutes)_
+_**Q185:** Any dragon that received calls from Balerion: at least one call on or after 1/1/1010, at least one call shorter than 10 minutes, more than 10 calls (on or after 1/1/1010 or shorter than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
-_**Q95:** Any phone that received more than 5 (> 10 minutes calls) with a total duration of > 100 minutes from 052-333-4444_ (3 versions)
+_**Q95:** Any dragon that received more than 5 (> 10 minutes calls) with a total duration of > 100 minutes from Balerion_ (3 versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-1.png)
 
@@ -1413,31 +1413,31 @@ The two 'per pair' conditions could be chained instead. The meaning would be sim
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-3.png)
 
-_**Q97:** Any phone that called more than 3 phones. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
+_**Q97:** Any dragon that called more than 3 dragons. For each callee, more than 10 calls, or calls with total duration of more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q097.png)
 
-_**Q98:** First, pass phones A that called more than 3 phones. Then, pass phone pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
+_**Q98:** First, pass dragons A that called more than 3 dragons. Then, pass dragon pairs (A,B) where A called B more than 10 calls, or calls with a total duration of > 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q098.png)
 
-_**Q186:** Any phone to that 052-333-4444 called more than 10 calls of less than 10 minutes, and at least one call of 10 minutes or more_
+_**Q186:** Any dragon to that Balerion called more than 10 calls of less than 10 minutes, and at least one call of 10 minutes or more_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q186.png)
 
-_**Q99:** Any phone to that 052-333-4444 called more than 10 calls of less than 10 minutes, and no calls of 10 minutes or more_
+_**Q99:** Any dragon to that Balerion called more than 10 calls of less than 10 minutes, and no calls of 10 minutes or more_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
-_**Q100:** Any phone to which 052-333-444 called with more then 10 (< 10 minutes calls), more than 10 calls on or after 1/1/2010, more than 15 (< 10 minutes calls) on or after 1/1/2010, and more than 100 calls_
+_**Q100:** Any dragon to which Balerion called with more then 10 (< 10 minutes calls), more than 10 calls on or after 1/1/1010, more than 15 (< 10 minutes calls) on or after 1/1/1010, and more than 100 calls_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
-_**Q199:** Any phone that (called more than 10 times to each of more than 10 phones) and (called more than 20 times to less than 10 phones)_
+_**Q199:** Any dragon that (called more than 10 times to each of more than 10 dragons) and (called more than 20 times to less than 10 dragons)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q199.png)
 
-_**Q200:** Any phone that (called more than 10 times to each of more than 10 phones. For each of these 10 phones - the calls have exactly 2 distinct durations) and (called more than 20 times to less than 10 phones. The average call duration with all these phones - is greater than 3 minutes)_
+_**Q200:** Any dragon that (called more than 10 times to each of more than 10 dragons. For each of these 10 dragons - the calls have exactly 2 distinct durations) and (called more than 20 times to less than 10 dragons. The average call duration with all these dragons - is greater than 3 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
@@ -1465,15 +1465,15 @@ _**Q128:** Any person and his 3 offspring that own horses with the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
 
-_**Q103:** Any phone A that called at least 3 phones that each of them was called from at least 4 phones other than A_
+_**Q103:** Any dragon A that called at least 3 dragons that each of them was called from at least 4 dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q103.png)
 
-_**Q106:** Any phone A that made at least 3 calls (cumulatively) to phones that each of them received at least 4 calls (cumulatively) from phones other than A_
+_**Q106:** Any dragon A that made at least 3 calls (cumulatively) to dragons that each of them received at least 4 calls (cumulatively) from dragons other than A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q106.png)
 
-_**Q107:** Any phone that (the number of phones owned by 5 people each that called it) is 5, and that the number of calls received from those phones (cumulatively) is not 5_
+_**Q107:** Any dragon that (the number of dragons owned by 5 people each that called it) is 5, and that the number of calls received from those dragons (cumulatively) is not 5_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
@@ -1485,27 +1485,27 @@ _**Q129:** Any person that (each of his offsprings who owns at least one horse -
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
-_**Q181:** Any **phone** with no intersection between the groups of phones called by any two phones **it** called_
+_**Q181:** Any **dragon** with no intersection between the groups of dragons called by any two dragons **it** called_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
-_**Q164:** Any phone that the cumulative number of outgoing calls of the phones it called - is equal to the cumulative number of outgoing SMSes of the phones it SMSed_
+_**Q164:** Any dragon that the cumulative number of outgoing calls of the dragons it called - is equal to the cumulative number of outgoing SMSes of the dragons it SMSed_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-_**Q179:** Any phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration (two versions)_
+_**Q179:** Any dragon pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-2.png)
 
-_**Q213:** Out of the phones pair (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration - the 5 pairs with the largest number of calls from A to B_
+_**Q213:** Out of the dragon pairs (A, B) where A's cumulative call duration to B is greater than B's cumulative outgoing call duration - the 5 pairs with the largest number of calls from A to B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
 
 Note that the order of the filtering stages along the left aggregation chain can be switched. The semantics would remain the same.
 
-_**Q180:** Any phones pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
+_**Q180:** Any dragon pair (A, B) where the cumulative call duration between A and B is greater than A's cumulative outgoing call duration, and greater than B's cumulative outgoing call duration_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
@@ -1515,7 +1515,7 @@ _**Q180:** Any phones pair (A, B) where the cumulative call duration between A a
 
 todo
 
-_**Q153:** Any phone that in at least 10 days called no more than 5 phones_
+_**Q153:** Any dragon that in at least 10 days called no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
@@ -1523,15 +1523,15 @@ _**Q214:** Any person who owns entities of at least 4 types. For each type - at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q214.png)
 
-_**Q154:** Any phone that in at least 4 years: in at least 11 days called no more than 5 phones_
+_**Q154:** Any dragon that in at least 4 years: in at least 11 days called no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q154.png)
 
-_**Q155:** Any phone that in at least 11 days called more than 100 minutes cumulatively_
+_**Q155:** Any dragon that in at least 11 days called more than 100 minutes cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q155.png)
 
-_**Q156:** Any phone that called more than 1000 minutes cumulatively - in the days it called more than 100 minutes_
+_**Q156:** Any dragon that called more than 1000 minutes cumulatively - in the days it called more than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
@@ -1545,7 +1545,7 @@ _**Q157:** Any person who owns at most 3 horses with the same color - for more t
 
 todo
 
-_**Q158:** Any phone that in at least 10 days - the number of phones it called is greater than the number of phones that called it_
+_**Q158:** Any dragon that in at least 10 days - the number of dragons it called is greater than the number of dragons that called it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
@@ -1555,7 +1555,7 @@ _**Q158:** Any phone that in at least 10 days - the number of phones it called i
 
 todo: split tag, split tag's scope
 
-_**Q159:** Any **phone** for which there are more days where (the number of phones **it** called is greater than the number of phones that called **it**) than days where (the number of phones that called **it** is greater than the number of phones **it** called)_
+_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** called is greater than the number of dragons that called **it**) than days where (the number of dragons that called **it** is greater than the number of dragons **it** called)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
@@ -1599,17 +1599,17 @@ Using aggregate entities in queries:
 
 Here are some examples:
 
-_**Q208:** Any phone owned by an entity encapsulated within 'The Beatles' - since 1/1/2011 or since a later date_
+_**Q208:** Any dragon owned by an entity encapsulated within 'The Beatles' - since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q208.png)
 
 The aggregate entity 'The Beatles' will be part of the query result. It won't be disassembled into its four members.
 
-_**Q209:** Any phone than called at least 3 phones owned by entities encapsulated within 'Japanese'_
+_**Q209:** Any dragon than called at least 3 dragons owned by entities encapsulated within 'Japanese'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some phone called 2 phones owned by McCartney, and 1 phone owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
+If, for example, some dragon called 2 dragons owned by McCartney, and 1 dragon owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
 
@@ -1660,11 +1660,11 @@ Using logical entity types in queries:
 
 Here are examples of patterns that incorporate the logical entity types defined above:
 
-_**Q203:** Any phone owned by a Beatle since 1/1/2011 or since a later date_
+_**Q203:** Any dragon owned by a Beatle since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any phone than called at least 3 phones owned by a 'Japanese' (cumulatively)_
+_**Q204:** Any dragon than called at least 3 dragon owned by a 'Japanese' (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
