@@ -865,7 +865,7 @@ _**Q82:** Any dragon that wasn't frozen by any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 dragons, and froze each one of those (two versions)_
+_**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 B's, and froze each one of those (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
