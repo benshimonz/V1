@@ -103,19 +103,19 @@ Pattern languages differs in the following aspects:
 * **Simplicity** - How simple it is to construct new patterns and to understand existing patterns
 * **Efficiency** - to parse patterns and to execute pattern queries
 
+## Dragons of fire and ice
+
+The subjects of Sarnor, Omber and the other kingdoms of Essos, Westeros, Sothoryos and Ulthos like their horses. But there is one thing they like even more - that is their dragons. They own dragons of fire and ice. Like any well-behaved dargon, their dragons love to play. Dragons always play in couples. When playing, dragons fire at each other (fire breathing) and freeze each other (ice breathing). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are realy furious, they can freeze each other for periods of up to 2 hours. The subjects of the 4 continents enjoy watching their dragons play. Amazed by these magnificant creatures, they wrote thousands of books, which list any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). Lately, the kings of or Sarnor and Omber had called their royal analysts and their royal historians, and commanded them to develop of a system which they can use to pose queries about their history. The analysts started their work by collecting all the queries that their masters posed in the last few years. These queries will serve us to to demonstrate the power of the V1 language.
+
 ## The V1 Pattern Language
 
-Many potential users won't use textual pattern (query) languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that do use textual query languages often spend a lot of time on the technicalities. 
+Like the kings of Sarnor and Omber, many potential users won't use textual pattern (query) languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that do use textual query languages often spend a lot of time on the technicalities. 
 
-Users want to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
+Kings and other query-posers like to be able to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
 
 Visual query languages are very attractive. They have the potential to be more 'user friendly' in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
-
-## Dragons of fire and ice
-
-The subjects of Sarnor, Omber and the other kingdoms of Essos, Westeros, Sothoryos and Ulthos like their horses. But there is one thing they like even more - that is their dragons. They own dragons of fire and ice. Like any well-behaved dargon, their dragons love to play. Dragons always play in couples. When playing, dragons fire at each other (fire breathing) and freeze each other (ice breathing). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are realy furious, they can freeze each other for periods of up to 2 hours. The subjects of the 4 continents enjoy watching their dragons play. Amazed by these magnificant creatures, they wrote thousands of books, which list any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). Lately, the kings of or Sarnor and Omber had called their royal analysts and their royal historians, and commanded them to develop of a system which they can use to pose queries about their history. The analysts started their work by collecting all the queries that their masters posed in the last few years. These queries will serve us to to demonstrate the power of the V1 language.
 
 ## V1 Basics
 
