@@ -643,7 +643,7 @@ _**Q37:** Any person who owns a horse or a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q037.png)
 
-_**Q38:** Any person who owns something which is not a horse nor a dragon_
+_**Q38:** Any person who owns something which is neither a horse nor a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
