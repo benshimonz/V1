@@ -1220,7 +1220,7 @@ _**Q69:** The 2 things that own the largest number of things_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
 
-_**Q70:** The 5 people that the number of people within graph distance ≤ 4 from them - is the smallest_
+_**Q70:** The 5 people who the number of people within graph distance ≤ 4 from them - is the smallest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
@@ -1307,19 +1307,19 @@ _**Q132:** The 4 people who own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
-_**Q133:** The 4 people that the average model year of their horses is maximal_
+_**Q133:** The 4 people who the average model year of their horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q138:** The 4 people that the people they know cumulatively own horses of the largest number of colors_
+_**Q138:** The 4 people who the people they know cumulatively own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
-_**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the largest cumulative duration_
+_**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
-_**Q168:** The 3 people that the number of types of things they own is maximal_
+_**Q168:** The 3 people who the number of types of things they own is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
