@@ -109,9 +109,9 @@ The subjects of Sarnor, Omber and all the other kingdoms of the four continents:
 
 ## The V1 Pattern Language
 
-Like the kings of Sarnor and Omber, many potential users won't use textual pattern (query) languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that do use textual query languages often spend a lot of time on the technicalities. 
+Like the king of Sarnor, many potential users won't use textual pattern (query) languages. The learning curve may be too sharp for someone with little prior experience in programming. Even users that do use textual query languages often spend a lot of time on the technicalities. 
 
-Kings and other query-posers would like to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
+Kings, as well as other query-posers would like to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
 
 Visual query languages are very attractive. They have the potential to be more 'user friendly' in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
 
