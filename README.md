@@ -240,7 +240,7 @@ _**Q8:** Any person born prior to 970 and died, or that his father born no later
 
 Here is an example:
 
-_**Q11:** Any current member of the Masons guild, that since 1011 or later knows someone who left the Saddlers guild or the Blacksmiths guild - on or after June 1010_
+_**Q11:** Any current member of the Masons guild, who since 1011 or later knows someone who left the Saddlers guild or the Blacksmiths guild - on June 1010 or later_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
@@ -473,11 +473,11 @@ Additional horizontal quantifiers:
 
 Here are two examples:
 
-_**Q187:** Any dragon that was frozen by Balerion: (at least once on or after 1/1/1010) and (at least once - for longer than 10 minutes) - same or different freezes_
+_**Q187:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or later) and (at least once - for longer than 10 minutes) - same or different freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q189:** Any dragon that was frozen by Balerion: (at least once on or after 1/1/1010) or (at least once for longer than 10 minutes) **Alternative wording:** Any dragon that was frozen by Balerion: at least once (on or after 1/1/1010 or for longer than 10 minutes)_
+_**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or later) or (at least once for longer than 10 minutes) **Alternative wording:** Any dragon that was frozen by Balerion: at least once (in 1/1/1010 or later, or for longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
@@ -485,7 +485,7 @@ Green rectangles, aggregate conditions, and aggregation tags  below an horizonta
 
 Here is an example:
 
-_**Q188:** Any dragon that was frozen by Balerion at least once - on or after 1/1/1010 for longer than 10 minutes_
+_**Q188:** Any dragon that was frozen by Balerion at least once - in 1/1/1010 or later - for longer than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
@@ -1383,7 +1383,7 @@ _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 todo
 
-_**Q96:** Any dragon that was frozen by Balerion, on or after 1/1/1010, more than 10 times, for periods shorter than 10 minutes_
+_**Q96:** Any dragon that was frozen by Balerion, in  1/1/1010 or later, more than 10 times, for periods shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
@@ -1415,7 +1415,7 @@ _**Q163:** Any dragon that the average duration of the 10 shortest times it free
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any dragon that was frozen by Balerion: at least one time on or after 1/1/1010, at least one time for less than 10 minutes, more than 10 times (on or after 1/1/1010 or for less than 10 minutes)_
+_**Q185:** Any dragon that was frozen by Balerion: at least one time in 1/1/1010 or later, at least one time for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
@@ -1445,7 +1445,7 @@ _**Q99:** Any dragon to that Balerion froze more than 10 times for less than 10 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
 
-_**Q100:** Any dragon to which Balerion froze more than 10 times for less than 10 minutes, more than 10 times on or after 1/1/1010, more than 15 times for less than 10 minutes on or after 1/1/1010, and more than 100 times altogether_
+_**Q100:** Any dragon to which Balerion froze more than 10 times for less than 10 minutes, more than 10 times in 1/1/1010 or later, more than 15 times for less than 10 minutes in 1/1/1010 or later, and more than 100 times altogether_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q100.png)
 
