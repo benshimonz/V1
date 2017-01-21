@@ -52,7 +52,7 @@ A **schema-based property graph** is a property graph that conforms to a given s
 
 **Why do we need a schema?**
 
-Schema-free property graphs do not define nor enforce entity-types nor relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
+Schema-free property graphs neither define nor enforce entity-types and relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person who owns a white horse”* we first need to:
 
@@ -362,7 +362,7 @@ _**Q19:** Get Sweetfoot, if it is not owned by Brandon Stark_
 
 An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
-_**Q20:** Any horse that is not owned by Rogar Bolton nor by Robin Arryn (two versions)_
+_**Q20:** Any horse that is neither owned by Rogar Bolton nor by Robin Arryn (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
@@ -732,7 +732,7 @@ _**Q47:** All shortest paths between these two dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q047.png)
 
-_**Q48:** All shortest paths between these two dragons, which are not composed of 'freezes' relationships nor 'Dragon' entities_
+_**Q48:** All shortest paths between these two dragons, which are neither composed of 'freezes' relationships nor 'Dragon' entities_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q048.png)
 
@@ -836,7 +836,7 @@ todo: aggregate tag, aggregate tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- If →: directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- If →: directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 - If et: directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier. If quantifier - et must be defined right of an R-combiner
 
 _**Q59:** Any person having more than 2 parents_
@@ -1180,7 +1180,7 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
 
@@ -1206,7 +1206,7 @@ _**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q67:** The 3 people with the maximal number of parents_
 
@@ -1229,7 +1229,7 @@ _**Q70:** The 5 people that the number of people within graph distance ≤ 4 fro
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
@@ -1239,7 +1239,7 @@ _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the lar
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
-- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
@@ -1253,7 +1253,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
-- Directly right of the aggregator: a blue/logical/red entity (not yellow/aggregated entity, nor quantifier)
+- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
