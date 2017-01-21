@@ -1307,11 +1307,11 @@ _**Q132:** The 4 people who own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q132.png)
 
-_**Q133:** The 4 people who the average model year of their horses is maximal_
+_**Q133:** The 4 people who the average weight of their horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q133.png)
 
-_**Q138:** The 4 people who the people they know cumulatively own horses of the largest number of colors_
+_**Q138:** The 4 people who the people each of them knows - cumulatively own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q138.png)
 
@@ -1319,7 +1319,7 @@ _**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the longe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q183.png)
 
-_**Q168:** The 3 people who the number of types of things they own is maximal_
+_**Q168:** The 3 people who the number of types of things each of them owns - is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
