@@ -1184,7 +1184,7 @@ todo
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the minimal / maximal number of assignments to _et_. 
+For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1208,7 +1208,7 @@ _**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
-_**Q67:** The 3 people with the maximal number of parents_
+_**Q67:** The 3 people with the largest number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
 
