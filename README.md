@@ -103,7 +103,7 @@ Pattern languages differs in the following aspects:
 * **Simplicity** - How simple it is to construct new patterns and to understand existing patterns
 * **Efficiency** - to parse patterns and to execute pattern queries
 
-## Dragons of fire and ice
+## Dragons of ice and fire
 
 The subjects of Sarnor, Omber and the other kingdoms of Essos, Westeros, Sothoryos and Ulthos like their horses. But there is one thing they like even more - that is their dragons. They own dragons of fire and ice. Like any well-behaved dargon, their dragons love to play. Dragons always play in couples. When playing, dragons fire at each other (fire breathing) and freeze each other (ice breathing). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are realy furious, they can freeze each other for periods of up to 2 hours. The subjects of the 4 continents enjoy watching their dragons play. Amazed by these magnificant creatures, they wrote thousands of books, which list any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). Lately, the kings of or Sarnor and Omber had called their royal analysts and their royal historians, and commanded them to develop of a system which they can use to pose queries about their history. The analysts started their work by collecting all the queries that their masters posed in the last few years. These queries will serve us to to demonstrate the power of the V1 language.
 
