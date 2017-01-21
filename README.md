@@ -69,9 +69,9 @@ In order to ask and answer queries such as *“Any person who owns a white horse
 
 Here are two examples:
 
-* *Any person who owns a white Horse, his birth date is between 1/1/970 and 1/1/980, his cell-phone number ends with “156”, and has a brother that called 5 or more phones belonging to member of guild X in the last month*
-
 * *Any person who owns at least 5 white horses*
+
+* *Any person whose birth date is between 1/1/970 and 1/1/980, owns a white Horse, owns a dragon that his name starts with 'M', and his  dragon froze at least 3 dragons belonging to members of the Masons guild in the last month*
 
 **Pattern matching** is the process of deciding whether a given (sub)graph is acceptable to a given pattern. 
 
@@ -86,11 +86,11 @@ A pattern can be viewed as a query that can be executed against a property graph
 
 The language semantics defines which elements (entities and relationships) are part of an assignment. 
 
-In the 2nd example above (which expressed in English, not in a pattern language) the set of assignments (expressed English as well) would be:
+In the 1st example above (which is expressed in English, not in a pattern language) the set of assignments (expressed in English as well) would be:
 
 * For each person than owns at least 5 white horses: an assignment is composed of:
   * The 'Person' entity 
-  * The 'Horse' entities - of 5 of his horses with property "color" with value "white"
+  * The 'Horse' entities - of 5 of his horses with property "color" that has the value "white"
   * The 'own' relationships between the Person entity the those Horse entities
 
 The language semantics also define if an answer to a query is either (i) the set of all assignments, or (ii) the union of all assignments. (ii) is often prefered since it avoids exponential explosion in many queries.
@@ -112,6 +112,10 @@ Users want to be able to pose complex queries in a manner that is coherent with 
 Visual query languages are very attractive. They have the potential to be more 'user friendly' in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
 
 V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
+
+## Dragons of fire and ice
+
+The people of 
 
 ## V1 Basics
 
