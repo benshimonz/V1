@@ -400,7 +400,7 @@ That includes:
 - Any horse that non of his owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - also owns a dragon
 
-_**Q25:** Any person who is Brandon Stark's friend's friend, but isn't his friend (two versions)_
+_**Q25:** Any dragon, that a dragon that Balerion fired at - fired at, but Balerion didn't fire at (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
