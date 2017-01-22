@@ -133,7 +133,7 @@ and of the following relationship types:
 * originated in(Horse  , Kingdom)
 * originated in(Dragon , Kingdom)
 
-This schema and the queries will serve us to to demonstrate the power of the V1 language.
+This schema and the queries will serve us to demonstrate the power of the V1 language.
 
 ## The V1 Pattern Language
 
