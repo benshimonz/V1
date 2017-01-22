@@ -105,7 +105,35 @@ Pattern languages differs in the following aspects:
 
 ## Dragons of Ice and Fire
 
-The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dargons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificant creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which they can use to pose queries about their history and quickly get results. The engineers started their work by collecting all the queries that their master posed in the last few years. These queries will serve us to to demonstrate the power of the V1 language.
+The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dargons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificant creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which they can use to pose queries about their history and quickly get results. 
+
+The engineers started their work by 
+
+* Collecting all queries that their master posed in the last few years
+* Constructing a schema (entity types, relationship types - and their properties) using which these queries can be expressed
+
+The schema is composed of the following entity types:
+
+* Person : first name, last name, gender, birth date, death date, height
+* Dragon : name
+* Horse  : name, color, weight
+* Guild  : name
+* Kingdom: name
+
+and of the following relationship types:
+
+* owns         (Person , Horse  ): since, till
+* owns         (Person , Dragon ): since, till
+* fires at     (Dragon , Dragon ): time
+* freezes      (Dragon , Dragon ): time, duration
+* offspring    (Person , Person )
+* member of    (Person , Guild  ): since, till
+* subject of   (Person , Kingdom)
+* registered in(Guild  , Kingdom)
+* originated in(Horse  , Kingdom)
+* originated in(Dragon , Kingdom)
+
+This schema and the queries will serve us to to demonstrate the power of the V1 language.
 
 ## The V1 Pattern Language
 
