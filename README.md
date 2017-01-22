@@ -255,7 +255,7 @@ All (and only) matched sub-patterns are included in a query's answer.
 
 Here is an example of **nested quantifiers**:
 
-_**Q8:** Any person born prior to 970 and died, or that his father born no later than 1/1/950_
+_**Q8:** Any person born prior to 970 and is still alive, or that his father born no later than 1/1/950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
