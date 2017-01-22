@@ -1619,10 +1619,10 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB13.png)
 
-* _'The Beatles'_ is defined as an encapsulation of 4 concrete entities
+* _'Kings'_ is defined as an encapsulation of 4 concrete entities
 * _'Old People'_ is defined as an encapsulation of all people born before 920
 * _'Old males'_ is defined as an encapsulation of all males born before 920
-* _'Red things'_ is defined as an encapsulation of all things which have a property 'color' with value 'red'
+* _'Black things'_ is defined as an encapsulation of all things which have a property 'color' with value 'black'
 * _'Sarnorian'_ is defined as an encapsulation of all Sarnorian subjects and all guilds registered in Sarnor
 
 An encapsulated entity in a query will show as an aggregate entity in the query's result. It won't 'disassemble' into the entities it encapsulates. 
@@ -1643,27 +1643,27 @@ Using aggregate entities in queries:
 
 Here are some examples:
 
-_**Q208:** Any dragon owned by an entity encapsulated within 'The Beatles' - since 1/1/1011 or since a later date_
+_**Q208:** Any dragon owned by an entity encapsulated within 'Kings' - since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q208.png)
 
-The aggregate entity 'The Beatles' will be part of the query result. It won't be disassembled into its four members.
+The aggregate entity 'Kings' will be part of the query result. It won't be disassembled into its four members.
 
 _**Q209:** Any dragon than froze at least 3 dragons owned by entities encapsulated within 'Sarnorian'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some dragon froze 2 dragons owned by McCartney, and 1 dragon owned by Starr - it would be part of the answer. Again, 'The Beatles' will be aprt of the query result.
+If, for example, some dragon froze 2 dragons owned by Stark, and 1 dragon owned by Bolton - it would be part of the answer. Again, 'Kings' will be aprt of the query result.
 
-_**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Red Things'_
+_**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Black Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q210.png)
 
-_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Sarnorian' and an entity encapsulated within 'The Beatles'_
+_**Q211:** Any path with length ≤ 4 between an entity encapsulated within 'Sarnorian' and an entity encapsulated within 'Kings'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q211.png)
 
-_**Q212:** Are there more than 10 days in which at least 10 ownership relationships started between entities encapsulated within 'Old People' and entities encapsulated within 'Red Things'?_
+_**Q212:** Are there more than 10 days in which at least 10 ownership relationships started between entities encapsulated within 'Old People' and entities encapsulated within 'Black Things'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q212.png)
 
@@ -1684,10 +1684,10 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB12.png)
 
-* _'Beatle'_ is defined as one of 4 concrete entities
+* _'King'_ is defined as one of 4 concrete entities
 * _'Old Person'_ is defined as a person born before 920
 * _'Old male'_ is defined as a male born before 920
-* _'Red thing'_ is defined as a an entity that has a property 'color' with value 'red'
+* _'Black thing'_ is defined as a an entity that has a property 'color' with value 'black'
 * _'Sarnorian'_ is defined as a a Sarnorian subject, or a Sarnorian registered guild
 * _'Rock Band'_ is defined as one of 4 aggregate entities
 
@@ -1712,7 +1712,7 @@ _**Q204:** Any dragon than froze at least 3 dragon owned by a 'Sarnorian' (cumul
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
-_**Q205:** Any person who has at least 3 'owns' relationships with 'Red Things'_
+_**Q205:** Any person who has at least 3 'owns' relationships with 'Black Things'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
@@ -1720,7 +1720,7 @@ _**Q206:** Any 'Sarnorian' and 'Beatle' pair with graph distance ≤ 4_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
-_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between a certain 'Old Person' and a certain 'Red Thing'?_
+_**Q207:** Are there more than 10 days in which at least 10 ownership relationships started between a certain 'Old Person' and a certain 'Black Thing'?_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
