@@ -814,7 +814,7 @@ _**Q108:** Any person who has the same birth-date as Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q108.png)
 
-_**Q109:** Any person who his parent owned a horse and a dragon prior to his birth_
+_**Q109:** Any person who his parent owned a horse or a dragon prior to his birth_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q109.png)
 
