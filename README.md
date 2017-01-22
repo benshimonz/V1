@@ -405,7 +405,7 @@ _**Q25:** Any person who is Brandon Stark's friend's friend, but isn't his frien
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any book that is liked by people who like some book that Brandon Stark likes, but is not liked by him (four versions)_
+_**Q26:** Any guild that people who are members of the same guild as Brandon Stark are member of, but Brandom is not a member of these guild (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
