@@ -1093,6 +1093,8 @@ _**Q117:** Any person whose owned horses have an average weight greater than 450
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
+If a horse was owned twice - it would be counted only once.
+
 _**Q134:** Any person that the number of distinct colors of all horses owned by people he knows - is not more than 3_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
