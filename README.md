@@ -1593,7 +1593,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-# Min/Max Aggregations below a Split
+## Min/Max Aggregations below a Split
 
 _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
 
