@@ -1726,17 +1726,19 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ## Logical Relationship Types
 
-A logical relationship is defined by:
+A logical relationship type is defined by:
 
 * A pattern
-* 2 blue/red entities in the pattern
+* Two blue/red entities in the pattern
 * A relationship type name assigned to each such relationship
 
 A logical relationship type can be either symmetrical or asymmetrical.
 
 Logical relationship types can be defined, and then used in queries.
 
-In a query's result - relationships of logical are displayed as logical relationships as well.
+Logical relationships in a query - appear as logical relationships in the query's result as well.
+
+Here are some definition examples:
 
 **LR1:** _sibling_ - a symmetrical relationship. Two people are siblings if they share a patrent
 
@@ -1746,7 +1748,7 @@ In a query's result - relationships of logical are displayed as logical relation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR02.png)
 
-**LR3:** _prison-mate_ - a symmetrical relationship. Two people are prison-mates if the were imprisoned in the same prison at intersecting periods
+**LR3:** _prison-mate_ - a symmetrical relationship. Two people are prison-mates if they were imprisoned in the same prison at intersecting timeframes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR03.png)
 
@@ -1758,11 +1760,11 @@ In a query's result - relationships of logical are displayed as logical relation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR05.png)
 
-**LR6:** _familiy friend_ - an asymmetrical relationship. A person is family friend of person A if (s)he is A's friend, if (s)he is a friend of A's 1st degree, or if (s)he is a friend of A's 2nd degree
+**LR6:** _family friend_ - an asymmetrical relationship. A person is family friend of person A if (s)he is A's friend, if (s)he is a friend of A's 1st degree, or if (s)he is a friend of A's 2nd degree
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR06.png)
 
-**LR7:** _tmo_ - An asymmetrical relationship. Person A is a tradition maintainer offspring of person C if A is an offspring of B, and they are both members of the same guild.
+**LR7:** _tmo_ - An asymmetrical relationship. Person A is a tradition maintainer offspring of person C if A is an offspring of C, and they are both members of the same guild.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR07.png)
 
