@@ -1689,7 +1689,7 @@ Here are some definition examples:
 * _'Old male'_ is defined as a male born before 920
 * _'Black thing'_ is defined as a an entity that has a property 'color' with value 'black'
 * _'Sarnorian'_ is defined as a a Sarnorian subject, or a Sarnorian registered guild
-* _'Rock Band'_ is defined as one of 4 aggregate entities
+* _'Royalty'_ is defined as one of 4 aggregate entities
 
 In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
 
