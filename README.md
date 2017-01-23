@@ -1715,7 +1715,7 @@ Using logical entity types in queries:
 
 Here are examples of patterns that incorporate the logical entity types defined above:
 
-_**Q203:** Any dragon owned by a Beatle since 1/1/1011 or since a later date_
+_**Q203:** Any dragon owned by a King since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
@@ -1727,7 +1727,7 @@ _**Q205:** Any person who has at least 3 'owns' relationships with 'Black Things
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q205.png)
 
-_**Q206:** Any 'Sarnorian' and 'Beatle' pair with graph distance ≤ 4_
+_**Q206:** Any 'Sarnorian' and 'King' pair with graph distance ≤ 4_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q206.png)
 
