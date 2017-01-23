@@ -1583,6 +1583,10 @@ _**Q157:** Any person who owns at most 3 horses of the same color - for more tha
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
+_**Q215:** For any dragon color that Balerion froze - the 3 dragons it froze the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
+
 ## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
@@ -1602,6 +1606,13 @@ todo: split tag, split tag's scope
 _**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
+
+# zzz
+
+_**Q216:** The 3 30-day timeframes when Balerion froze the largest number of dragons__
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q216.png)
+
 
 ## Aggregate Entities
 
