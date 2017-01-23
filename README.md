@@ -1583,7 +1583,7 @@ _**Q157:** Any person who owns at most 3 horses of the same color - for more tha
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
-_**Q215:** For any dragon color that Balerion froze - the 3 dragons it froze the largest number of times_
+_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
 
