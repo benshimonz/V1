@@ -1593,17 +1593,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-## Split Tag
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
-
-todo: split tag, split tag's scope
-
-_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
-
-# Min/Max Aggregations below a split
+# Min/Max Aggregations below a Split
 
 _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
 
@@ -1613,6 +1603,15 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q216.png)
 
+## Split Tag
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
+
+todo: split tag, split tag's scope
+
+_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
 ## Aggregate Entities
 
