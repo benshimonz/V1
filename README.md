@@ -1724,6 +1724,48 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q207.png)
 
+## Logical Relationship Types
+
+A logical relationship is defined by:
+
+* A pattern
+* 2 blue/red entities in the pattern
+* A relationship type name assigned to each such relationship
+
+A logical relationship type can be either symmetrical or asymmetrical.
+
+Logical relationship types can be defined, and then used in queries.
+
+In a query's result - relationships of logical are displayed as logical relationships as well.
+
+**LR1:** _sibling_ - a symmetrical relationship. Two people are siblings if they share a patrent
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR01.png)
+
+**LR2:** _cousin_ - a symmetrical relationship. Two people are cousins if their parents are siblings
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR02.png)
+
+**LR3:** _prison-mate_ - a symmetrical relationship. Two people are prison-mates if the were imprisoned in the same prison at intersecting periods
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR03.png)
+
+**LR4:** _1st degree_ - a symmetrical relationship. Two people have a 1st degree relationship if one is an offspring of the other, if they are siblings, or if they are spouses
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR04.png)
+
+**LR5:** _2nd degree_ - a symmetrical relationship. Two people have a 2nd degree relationship if there is a person who have 1st degree relationship with both of them
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR05.png)
+
+**LR6:** _familiy friend_ - an asymmetrical relationship. A person is family friend of person A if (s)he is A's friend, if (s)he is a friend of A's 1st degree, or if (s)he is a friend of A's 2nd degree
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR06.png)
+
+**LR7:** _tmo_ - An asymmetrical relationship. Person A is a tradition maintainer offspring of person C if A is an offspring of B, and they are both members of the same guild.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR07.png)
+
 ## Tag Rules
 
 **R1:** Only one property tag can be assigned to any property.
