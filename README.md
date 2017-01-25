@@ -1645,7 +1645,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
 
-_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships_
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
