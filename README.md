@@ -1621,7 +1621,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM1.png)
 
-_**Q220:** Any person, and his horses of the 3 colors he owns the largest number of horses_
+_**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
@@ -1629,7 +1629,7 @@ _**Q220:** Any person, and his horses of the 3 colors he owns the largest number
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
 
-_**Q224:** Any person with his horses - of the 3 horse colors with the smallest positive number of owners_
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
 
@@ -1645,7 +1645,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
 
-_**Q225:** Any person with his horses - of the 3 horse colors with the smallest positive number of horse ownerships_
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
@@ -1669,7 +1669,7 @@ _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulativ
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
 
-_**Q226:** Any person with his horses - of the 3 horse colors with the smallest positive number of owners (same as Q224)_
+_**Q226:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners (same as Q224)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
