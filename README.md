@@ -1569,7 +1569,7 @@ _**Q218:** Any Person and the entities he owns - of types he owns at least 5 ent
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q218.png)
 
-_**Q219:** Any Persons and all his horses - of colors he owns at least 3 horses_
+_**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
@@ -1625,6 +1625,14 @@ _**Q220:** Any person, and his horses of the 3 colors he owns the largest number
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
+## Prefix Min/Max Aggregations on Splits #1 (PSM1)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
+
+_**Q224:** Any person with his horses - of the 3 horse colors with the smallest positive number of owners_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
+
 ## Min/Max Aggregations on Splits #2 (LSM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM2.png)
@@ -1632,6 +1640,14 @@ _**Q220:** Any person, and his horses of the 3 colors he owns the largest number
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
+
+## Prefix Min/Max Aggregations on Splits #2 (PSM2)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
+
+_**Q225:** Any person with his horses - of the 3 horse colors with the smallest positive number of horse ownerships_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
 ## Min/Max Aggregations on Splits #3 (LSMA3)
 
@@ -1648,6 +1664,14 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
+
+## Prefix Min/Max Aggregations on Splits #4 (PSM4)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
+
+_**Q226:** Any person with his horses - of the 3 horse colors with the smallest positive number of owners (same as Q224)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 ## Min/Max Aggregations on Splits before a Quantifier
 
