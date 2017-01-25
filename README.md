@@ -1619,7 +1619,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ## Min/Max Aggregations on Splits #1
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM1.png)
 
 _**Q220:** Any person, and his horses of the 3 colors he owns the largest number of horses_
 
@@ -1627,7 +1627,7 @@ _**Q220:** Any person, and his horses of the 3 colors he owns the largest number
 
 ## Min/Max Aggregations on Splits #2
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM2.png)
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
@@ -1635,15 +1635,19 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ## Min/Max Aggregations on Splits #3
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-MA3.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
-_**Q222:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
+_**Q222:** Any Person, and his horses of the 3 colors with the latest average ownership start date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
 
 ## Min/Max Aggregations on Splits #4
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M4.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM4.png)
+
+_**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
 ## Min/Max Aggregations on Splits before a Quantifier
 
