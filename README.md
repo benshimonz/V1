@@ -1617,7 +1617,35 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-## Min/Max Aggregations below a Split
+## Min/Max Aggregations on Splits #1
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
+
+_**Q220:** Any person and his horses of the 3 colors he owns the largest number of horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
+
+## Min/Max Aggregations on Splits #2
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
+
+_**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
+
+## Min/Max Aggregations on Splits #3
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-MA3.png)
+
+## Min/Max Aggregations on Splits #4
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M4.png)
+
+## Min/Max Aggregations on Splits before a Quantifier
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier2.png)
+
+todo
 
 _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in which it froze the largest number of dragons_
 
