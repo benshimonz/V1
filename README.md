@@ -1557,7 +1557,29 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 
 ## Splits
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-1.png)
+
+todo
+
+_**Q217:** Any Dragon and the dragon it froze - on days it froze not more than 5 dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q217.png)
+
+_**Q218:** Any Person and the entities he owns - of types he owns at least 5 entities_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q218.png)
+
+_**Q219:** Any Persons and all his horses - of colors he owns at least 3 horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
+
+_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
+
+## Condition on number of splits
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
 todo
 
@@ -1587,7 +1609,7 @@ _**Q157:** Any person who owns at most 3 horses of the same color - for more tha
 
 ## Split before a Quantifier
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
 
 todo
 
@@ -1596,10 +1618,6 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
 ## Min/Max Aggregations below a Split
-
-_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
 
 _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in which it froze the largest number of dragons_
 
