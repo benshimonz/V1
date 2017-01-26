@@ -171,7 +171,7 @@ Each relationship has a label above the arrow/line that denotes the relationship
 
 The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) ).
 
-For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all the assignments.
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments. Concrete entities are assigned to blue and red rectangles. Concrete relationships are assigned to black arrows and lines. An assigment to to pattern is a set of concrete entities and relationships that match the whole pattern. A answer to a V1 query is the union of all assignments.
 
 Here are some basic patterns:
 
@@ -193,7 +193,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity (red, blue, or yellow) on its right, or to a relationship on its bottom, and represents an entity's / relationship's property. It contains:
+**A green rectangle** is connected to an entity (red, blue, or yellow) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
 * The property's name
 * A constraint on the value of that property, expressed by an equation (e.g. 'age > 30'), and/or
@@ -232,22 +232,16 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
-4 quantifiers are defined now, and another 8 quantifiers are defined later on - after No-existence is explained.
+4 quantifiers are defined now, and 8 other quantifiers are defined later on - after No-existence is explained.
 
-We’ll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, and one of the right components.
+* _**All**_ (denoted '&') - An assignment matches the pattern only if it matches the left component and all the right components. 
+* _**Some**_ (denoted '&#124;') - An assignment matches the pattern only if it matches the left component and at least one right component.
+* _**>**_ n - An assignment matches the pattern only if it matches the left component and more than n right components. n ∈ [0, b-1]
+* _**≥**_ n - An assignment matches the pattern only if it matches the left component and n or more right components. n ∈ [1, b]
 
-Given sub-patterns _P1..Pb_, the quantifiers are defined as follows:
-
-* _**All**_ (denoted '&') - An assignment matches the pattern only if it matches P1..Pb (though not necessarily minimal for each separately)
-* _**Some**_ (denoted '&#124;') - An assignment matches the pattern only if it matches at least one of P1..Pb (though not necessarily minimal for each separately)
-* _**>**_ n - An assignment matches the pattern only if it matches more than n of P1..Pb (though not necessarily minimal for each separately). n ∈ [0, b-1]
-* _**≥**_ n - An assignment matches the pattern only if it matches n or more of P1..Pb (though not necessarily minimal for each separately). n ∈ [1, b]
-
-As said - an assignment is a _minimal_ subgraph: if any entity or relationship is removed - it won't match the pattern anymore.
+As said - an assignment must be a _minimal_ subgraph: if any entity or relationship is removed - it won't match the pattern anymore.
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other requirements expressed by the pattern.
-
-The query's answer is composed of all matched patterns.
 
 Quantifiers can be nested. Here is an example:
 
