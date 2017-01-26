@@ -75,7 +75,7 @@ Here are two examples:
 
 **Pattern matching** is the process of deciding whether a given (sub)graph is acceptable to a given pattern. 
 
-**Pattern finding** is the process of finding minimal subgraphs of a given property graph, which match a given pattern. Any minimal subgraph that matches the pattern is called **an assignment**. *Minimal* means that if a single entity or relationship is removed - it won't match the pattern anymore.
+**Pattern finding** is the process of finding minimal subgraphs of a given property graph, which match a given pattern. Any minimal subgraph that matches the pattern is called **an assignment**. _Minimal_ means that if any entity or relationship is removed - it won't match the pattern anymore.
 
 A pattern can be viewed as a query that can be executed against a property graph. Similarly, pattern finding can be viewed as query answering.
 
@@ -243,7 +243,7 @@ Given sub-patterns _P1..Pb_, the quantifiers are defined as follows:
 * _**>**_ n - An assignment matches the pattern only if it matches more than n of P1..Pb (though not necessarily minimal for each separately). n ∈ [0, b-1]
 * _**≥**_ n - An assignment matches the pattern only if it matches n or more of P1..Pb (though not necessarily minimal for each separately). n ∈ [1, b]
 
-As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore.
+As said - an assignment is a _minimal_ subgraph: if any entity or relationship is removed - it won't match the pattern anymore.
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other requirements expressed by the pattern.
 
