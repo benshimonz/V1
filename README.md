@@ -65,7 +65,7 @@ In order to ask and answer queries such as *“Any person who owns a white horse
 
 ## Patterns and Pattern Languages
 
-**A pattern** defines a set of **acceptable** connected property graphs (entities and relationships), defined over a given property graph's schema.
+**A pattern** defines **acceptable** connected property graphs (entities and relationships), defined over a given property graph's schema.
 
 Here are two examples:
 
@@ -155,19 +155,23 @@ The following sections define the syntax and semantics of the V1 language. We st
 
 **Syntax**
 
-Any pattern is written from left to right. It starts with (a small black diamond), continues with a (yellow, blue or red rectangle), and continues with zero or more ((black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle)).
+Patterns are written from left to right. Each pattern starts with (a small black diamond), continues with a (yellow, blue or red rectangle), and continues with zero or more ( (black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle) ).
 
 **Semantics**
 
-Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific horse, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example represents any person. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
+Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific horse, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example means that in any assignment - only concrete 'Person' entities can match the pattern. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
 
 A pair of entities can be connected with:
 
-* A horizontal **black arrow** - representing a **directional relationship**,
+* A horizontal **black arrow** - representing a **directional relationship**, or
 * A horizontal **black line** - representing either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or
 * A horizontal **red line** - representing a **path** (explained later)
 
-Each relationship has a label which denotes the relationship's type.
+Each relationship has a label above the arrow/line that denotes the relationship's type.
+
+The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) ).
+
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all the assignments.
 
 Here are some basic patterns:
 
@@ -183,31 +187,23 @@ _**Q184:** Any dragon that froze or was frozen at least once by a dragon owned b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
-The freeze's direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
-
-**Syntax**
-
-The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) ).
-
-**Semantics**
-
-For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments - sets of concrete entities and relationships that match the given pattern. A answer to a V1 query is the union of all the assignments.
+The freeze direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
 
 ## Properties
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity (red, blue, or yellow) or to a relationship, and represents an entity's / relationship's property. It contains:
+**A green rectangle** is connected to an entity (red, blue, or yellow) on its right, or to a relationship on its bottom, and represents an entity's / relationship's property. It contains:
 
 * The property's name
-* Optionally - a constraint on the value of that property, expressed by an equation (e.g. 'age > 30')
-* Optionally - a **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later).
+* A constraint on the value of that property, expressed by an equation (e.g. 'age > 30'), and/or
+* A **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later)
 
 A constraint, a property tag, or both - must be presented.
 
 Constraints cannot be defined for yellow entities. 
 
-Constraints can be defined for red entities only if entity type constraints (explained later) are defined, and all the allowed types have a property with the same name and the same type.
+For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
@@ -219,7 +215,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ## Quantifiers #1
 
-Vertical quantifiers (or simply 'quantifiers') are used when several conditions need to be checked. Here is a simple example:
+Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be checked. Here is a simple example:
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
@@ -236,28 +232,30 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
-4 quantifiers are defined here, and another 8 quantifiers are defined later on - after No-existence is explained.
+4 quantifiers are defined now, and another 8 quantifiers are defined later on - after No-existence is explained.
 
-We'll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, and one of the right components.
+We’ll define _b_ sub-patterns, _P1..Pb_ (where _b) denotes the number of branches), each composed of the left component, and one of the right components.
 
 Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
-* **_All_** (denoted '&') - An assignment matches the pattern only if it matches _P1..Pb_ (though not necessarily minimal for each separately)
-* **_Some_** (denoted '&#124;') - An assignment matches the pattern only if it matches at least one of _P1..Pb_ (though not necessarily minimal for each separately)
-* **_> n_** - An assignment matches the pattern only if it matches more than _n_ of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [0, _b-1_]
-* **_≥ n_** - An assignment matches the pattern only if it matches _n_ or more of _P1..Pb_ (though not necessarily minimal for each separately). _n_ ∈ [1, _b_]
+_**All**_ (denoted ‘&’) - An assignment matches the pattern only if it matches P1..Pb (though not necessarily minimal for each separately)
+_**Some**_ (denoted ‘|’) - An assignment matches the pattern only if it matches at least one of P1..Pb (though not necessarily minimal for each separately)
+_**>**_ n - An assignment matches the pattern only if it matches more than n of P1..Pb (though not necessarily minimal for each separately). n ∈ [0, b-1]
+_**≥**_ n - An assignment matches the pattern only if it matches n or more of P1..Pb (though not necessarily minimal for each separately). n ∈ [1, b]
 
 As said - an assignment is a _minimal_ subgraph: if a single entity or relationship is removed - it won't match the pattern anymore.
 
-"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
+"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other requirements expressed by the pattern.
 
-All (and only) matched sub-patterns are included in a query's answer.
+The query's answer is composed of all matched patterns.
 
-Here is an example of **nested quantifiers**:
+Quantifiers can be nested. Here is an example:
 
 _**Q8:** Any person born prior to 970 and is still alive, or that his father born no later than 1/1/950_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
+
+'Empty' and 'Not empty' conditions are valid for any property for which empty values are allowed.
 
 ## Quantifiers #2
 
@@ -272,25 +270,25 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-_**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in or after 1010 for longer than 100 seconds_
+_**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-When a relationship need to satisfy several conditions - green rectangles can be chained. Chaining is not valid for entities. Chaining is explained below (see _Horizontal Quantifiers_)
+When a relationship need to satisfy several conditions - green rectangles can be chained (this is not valid for entities). Chaining is explained below (see _Horizontal Quantifiers_)
 
 ## Entity Tags
 
-In the top-left corner of any red, blue, or yellow rectangle - there a letter. This letter is called an **'entity tag'**.
+There is a letter in the top-left corner of any entity rectangle (yellow/aggregated/blue/logical/red). This letter is called an **'entity tag'**.
 
-Entity tags serve two purposes. First, when a pattern is used as a query, entity tags should appear in the query's answer as well. Any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
+Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's answer as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
-**Identicality constraint** is used when two entities in the pattern must have identical assignment. Here is an example:
+**Identicality constraint** is used when two entities in the pattern should have an identical assignment. Here is an example:
 
-_**Q4:** Any person whose dragon was frozen by a dragon owned by (at least one) of his parents_
+_**Q4:** Any person whose dragon was frozen by a dragon owned by (at least) one of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
-Entity tag 'B' is used enforce identical assignment to two entities. The 'B' tags are green - this is a visual indication that these tags are used to enforce identicality.
+Entity tag 'B' is used to enforce identical assignment to two blue rectangles. The 'B' tags are bold and green - this is a visual indication that these tags are used to enforce identicality.
 
 Here is another example:
 
@@ -298,21 +296,21 @@ _**Q9:** Any dragon pair (A, B) where A froze B both in 980 and in 984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-**Nonidenticality Constraint** is used when two entities in the pattern must have nonidentical assignments. Here is an example:
+**Nonidenticality Constraint** is used when two entities in the pattern should have nonidentical assignments. Here is an example:
 
 _**Q5:** Any person whose dragon was frozen by a dragon owned by two of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q005.png)
 
-Without enforcing nonidenticality, the same parent can be assigned to both C and E. The 'C' and '≠C' tags are red - this is a visual indication that these tags are used to enforce nonidenticality.
+Without enforcing nonidenticality, the same parent can be assigned to both C and E. The 'C' and '≠C' tags are bold and red - this is a visual indication that these tags are used to enforce nonidenticality.
 
 Here are two more examples:
 
-_**Q6:** Any person whose dragon was frozen by two dragons – one owned by one of his parents, the other owned by another parent (note that none, one or both dragons may be owner by both parents)_
+_**Q6:** Any person whose dragon was frozen by two dragons – one owned by one of his parents, the other owned by another parent (none, one, or both dragons may be owned by both parents)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q006.png)
 
-_**Q7:** Any person whose dragon was either (i) frozen by a dragon owned by two of his parents, or (ii) from two dragons – one owned by one of his parents and the other owned by his other parent_
+_**Q7:** Any person whose dragon was either (i) frozen by a dragon owned by two of his parents, or (ii) frozen by two dragons – one owned by one of his parents and the other owned by his other parent_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q007.png)
 
@@ -322,35 +320,32 @@ _**Q24:** Any person who has (at least) two parents and owns a dragon that was f
 
 ## No-existence and No-connection
 
-Sometimes we are looking for things that are not in the graph (e.g. _any person whose first name is Brandon, and doesn't own a white horse_). Such patterns are composed of:
+Sometimes we need to express a pattern using negative terms. For example: _any person whose first name is Brandon, and **doesn't** own a white horse_. Such patterns are composed of:
 
-* A left component that ends with an entity (_any person whose first name is Brandon_) 
-* A No-existence / a no-connection language element (_"doesn't"_) 
-* A relationship / path (_own)
-* A right component that starts with an entiy (_a white horse_)
-
-An assignment is a multi-set of concrete elements only to the left component.
+* The left 'positive' component - ends with an entity (_any person whose first name is Brandon_) 
+* A no-existence / a no-connection language element (_"doesn't"_) 
+* The right 'negative' component - starts with a relationship/path (_own a white horse_)
 
 The example above covers two cases: (i) there may be no white horses at all, or (ii) there may be white horses, but none of them is owned by a person whose first name is Brandon. 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB05.png)
 
-Usually it doesn't matter which is the case, since _any person whose name is Brandon and doesn't own a white horse_ is a valid assignment to the pattern. This is where the **no-existence language element (depicted with a pink 'X' box)** can be used.
+When it doesn't matter which is the case - _any person whose name is Brandon and doesn't own a white horse_ is a valid assignment to the pattern - the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
 An assignment matches the pattern only if:
 
-* It matches a pattern composed only of the left component (there is _a person whose first name is Brandon_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Brandon and own's a white horse)_
+* It matches a pattern composed only of the left component (there is an assignment to _a person whose first name is Brandon_) 
+* It has no superset that matches a pattern composed of the left component chained to the right component (There is no assignment to _a person whose first name is Brandon and own's a white horse)_
 
-An 'X' may not be used directly before a relationship or a path with an aggregation.
+An 'X' may not be used directly before a relationship or a path with an aggregation (aggregations are explained later on)
 
-In certain situations, however, we need an assignment to match the pattern only if:
+In certain cases, we need an assignment to match the pattern only if:
 
-* It matches a pattern composed only of the left component (there is _a person whose first name is Brandon_) 
-* It has no superset that matches a pattern composed of the left component, the relationship, and the right component (There is no assignment for _a person whose first name is Brandon and own's a white horse)_
+* It matches a pattern composed only of the left component (there is an assignment to _a person whose first name is Brandon_) 
+* It has no superset that matches a pattern composed of the left component chained to the right component (There is no assignment to _a person whose first name is Brandon and own's a white horse)_
 * There is an assignment that matches a pattern composed only of the right component (there is _a whote horse_)
 
-This is where the **no-connection language element (depicted with a pink '↛' box)** can be used. 
+In such cases, the **no-connection language element (depicted with a pink '↛' box)** can be used. 
 
 '↛''s are usually used directly before a relationship or a path with an aggregation.
 
@@ -364,11 +359,11 @@ _**Q13:** Any horse that is not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q013.png)
 
-_**Q14:** Get Sweetfoot, if not owned by a person_
+_**Q14:** Sweetfoot - if it is not owned by a person_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q014.png)
 
-_**Q15:** Get Brandon Stark, if he doesn't own a horse_
+_**Q15:** Brandon Stark - if he doesn't own a horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q015.png)
 
@@ -380,11 +375,11 @@ _**Q17:** Any horse that is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q017.png)
 
-_**Q18:** Get Brandon Stark, if he doesn't own Sweetfoot_
+_**Q18:** Brandon Stark - if he doesn't own Sweetfoot_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q018.png)
 
-_**Q19:** Get Sweetfoot, if it is not owned by Brandon Stark_
+_**Q19:** Sweetfoot - if it is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
@@ -394,7 +389,7 @@ _**Q20:** Any horse that is neither owned by Rogar Bolton nor by Robin Arryn (tw
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
-This pattern can also be represented using the '0' quantifier:
+This pattern can also be represented using the '0' quantifier (explained below)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
@@ -402,7 +397,7 @@ _**Q21:** Any horse that is not owned by both Rogar Bolton and Robin Arryn (two 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
-This pattern can also be represented using the 'not all' quantifier, but notice that there is a slight difference: in the version above if either Rogar Bolton or Robin Arryn owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
+This pattern can also be represented using the 'not all' quantifier (explained below), but there is a slight difference: in the version above if either Rogar Bolton or Robin Arryn owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
@@ -415,7 +410,7 @@ Note that the left component is _'horse'_ while the right component is _'owned b
 That includes:
 
 - Any horse that is not owned
-- Any horse that non of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that none of his owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - doesn't own a dragon
 
 _**Q23:** Any horse not owned by a person who doesn't own a dragon_
@@ -425,15 +420,15 @@ _**Q23:** Any horse not owned by a person who doesn't own a dragon_
 That includes:
 
 - Any horse that is not owned
-- Any horse that non of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that none of his owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - also owns a dragon
 
-_**Q25:** Any dragon, that a dragon that Balerion fired at - fired at, but Balerion didn't fire at (two versions)_
+_**Q25:** Any dragon (C) that wasn't fired at by Balerion, but was fired at by a dragon that Balerion fired at (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any guild that people who are members of the same guild as Brandon Stark are member of, but Brandom is not a member of these guild (four versions)_
+_**Q26:** Any guild that people who are members of the same guild as Brandon Stark are member of, but Brandom is not a member of that guild (four versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
@@ -441,7 +436,7 @@ _**Q26:** Any guild that people who are members of the same guild as Brandon Sta
 
 ## Quantifiers #3
 
-**A third way to use quantifiers:** A quantifier may start of a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
+**A third way to use quantifiers:** A quantifier may start a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
 * An entity (yellow/aggregated/blue/logical/red)
 * A quantifier
@@ -465,7 +460,7 @@ In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_)
 * **_≤ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
 * **_≠ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
 * **_n1..n2_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_∉ n1..n2_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
@@ -475,13 +470,21 @@ Horizontal quantifiers are used with relationships / paths. On top of a horizont
 
 Each branch starts with:
 
-* A green rectangle (relationship only - relationship's property value constraints / tag),
+* A green rectangle (relationship only - relationship's property value constraints / tag), or
 * An aggregate condition / an aggregation tag, or
 * An horizontal quantifier
 
+Horizontal quantifiers behave quite differently from vertical quantifiers:
+
+We'll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, the relationship / path, the right component, and one of the branches.
+
+Given patterns _P1..Pb_, the quantifiers are defined as follows:
+
+* **_All_** (denoted '&') - An assignment matches the pattern only if it matches _P1..Pb_ (though it is not necessarily minimal for each _Pn_ separately)
+
+
 We'll call the left side of the relationship 'the left component', and anything on the right of the relationship 'the right component'.
 
-Horizontal quantifiers behave quite differently from vertical quantifiers:
 
 * **All** (denoted '&') - An assignment matches the pattern only if (it satisfies at least one branch) and also (for each branch: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch)
 * **Some** (denoted '&#124;') - An assignment matches the pattern only if (it satisfies at least one branch)
