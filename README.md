@@ -155,7 +155,7 @@ The following sections define the syntax and semantics of the V1 language. We st
 
 **Syntax**
 
-Any pattern is written from left to right. It starts with (a small black diamond), continues with a (yello, blue or red rectangle), and continues with zero or more ((black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle)).
+Any pattern is written from left to right. It starts with (a small black diamond), continues with a (yellow, blue or red rectangle), and continues with zero or more ((black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle)).
 
 **Semantics**
 
@@ -175,11 +175,11 @@ _**Q1:** Any dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
 
-_**Q2:** Any dragon that was frozen at least one time by a dragon owned by Brandon Stark_
+_**Q2:** Any dragon that was frozen at least once by a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q184:** Any dragon that froze or was frozen at least one time by a dragon owned by Brandon Stark_
+_**Q184:** Any dragon that froze or was frozen at least once by a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
@@ -1445,7 +1445,7 @@ _**Q163:** Any dragon that the average duration of the 10 shortest times it free
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
 
-_**Q185:** Any dragon that was frozen by Balerion: at least one time in 1/1/1010 or later, at least one time for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
+_**Q185:** Any dragon that was frozen by Balerion: at least once in 1/1/1010 or later, at least once for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
 
