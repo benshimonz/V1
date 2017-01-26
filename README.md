@@ -234,7 +234,7 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 4 quantifiers are defined now, and another 8 quantifiers are defined later on - after No-existence is explained.
 
-We’ll define _b_ sub-patterns, _P1..Pb_ (where _b) denotes the number of branches), each composed of the left component, and one of the right components.
+We’ll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, and one of the right components.
 
 Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
