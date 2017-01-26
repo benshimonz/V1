@@ -238,8 +238,8 @@ We’ll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branc
 
 Given sub-patterns _P1..Pb_, the quantifiers are defined as follows:
 
-* _**All**_ (denoted ‘&’) - An assignment matches the pattern only if it matches P1..Pb (though not necessarily minimal for each separately)
-* _**Some**_ (denoted ‘|’) - An assignment matches the pattern only if it matches at least one of P1..Pb (though not necessarily minimal for each separately)
+* _**All**_ (denoted '&') - An assignment matches the pattern only if it matches P1..Pb (though not necessarily minimal for each separately)
+* _**Some**_ (denoted '&#124;') - An assignment matches the pattern only if it matches at least one of P1..Pb (though not necessarily minimal for each separately)
 * _**>**_ n - An assignment matches the pattern only if it matches more than n of P1..Pb (though not necessarily minimal for each separately). n ∈ [0, b-1]
 * _**≥**_ n - An assignment matches the pattern only if it matches n or more of P1..Pb (though not necessarily minimal for each separately). n ∈ [1, b]
 
