@@ -478,15 +478,15 @@ Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
 Given assignment _A_ we'll define _S(A)_, as a set of sub-assignments of A, all with the same concrete elements in its left component and its right components - but with different concrete elements in _r_.
 
-An assignment _A_ matches the pattern _only if_ _A_ matches _P0_ and:
+An assignment _A_ matches the pattern _only if_:
 
 * **All** (denoted '&') - There is _S(A)_ such that each of _P1..Pb_ is matched - by at least one element of _S(A)_
 * **Some** (denoted '&#124;') - There is _S(A)_ such that at least one of _P1..Pb_ is matched - each by at least one element of _S(A)_
 * _**> n**_ - There is _S(A)_ such that more than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_
 * _**≥ n**_ - There is _S(A)_ such that _n_ or more of _P1..Pb_ are matched - each by at least one element of _S(A)_
 
-* **Not all** (denoted by an '&' with stroke) - There is no _S(A)_ such that each of _P1..Pb_ is matched by at least one element of _S(A)_
-* **None** (denoted '0') - There is no _S(A)_ such that all _P1..Pb_ are matched - each by at least one element of _S(A)_
+* **Not all** (denoted by an '&' with stroke) - there is no _S(A)_ such that each of _P1..Pb_ is matched by at least one element of _S(A)_
+* **None** (denoted '0') - _A_ matches _P0_  and there is no _S(A)_ such that all _P1..Pb_ are matched - each by at least one element of _S(A)_
 * **_n_** - Exactly _n_ of _P1..Pb are matched - each by at least one element of _S(A)_
 * **_< n_** - Less than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [2, _b_]
 * **_≤ n_** - _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
