@@ -234,10 +234,10 @@ A quantifier has one connection on its left side, and two or more branches on it
 
 4 quantifiers are defined now, and 8 other quantifiers are defined later on - after No-existence is explained.
 
-* _**All**_ (denoted '&') - An assignment matches the pattern only if it matches the left component and all the right components. 
-* _**Some**_ (denoted '&#124;') - An assignment matches the pattern only if it matches the left component and at least one right component.
-* _**>**_ n - An assignment matches the pattern only if it matches the left component and more than n right components. n ∈ [0, b-1]
-* _**≥**_ n - An assignment matches the pattern only if it matches the left component and n or more right components. n ∈ [1, b]
+* _**All**_ (denoted '&') - An assignment matches the pattern _only if_ it matches the left component and all the right components. 
+* _**Some**_ (denoted '&#124;') - An assignment matches the pattern _only if_ it matches the left component and at least one right component.
+* _**> n**_ - An assignment matches the pattern _only if_ it matches the left component and more than _n_ right components. _n_ ∈ [0, _b_-1]
+* _**≥ n**_ - An assignment matches the pattern _only if_ it matches the left component and _n_ or more right components. _n_ ∈ [1, _b_]
 
 As said - an assignment must be a _minimal_ subgraph: if any entity or relationship is removed - it won't match the pattern anymore.
 
@@ -326,14 +326,14 @@ The example above covers two cases: (i) there may be no white horses at all, or 
 
 When it doesn't matter which is the case - _any person whose name is Brandon and doesn't own a white horse_ is a valid assignment to the pattern - the **no-existence language element (depicted with a pink 'X' box)** can be used.
 
-An assignment matches the pattern only if:
+An assignment matches the pattern _only if_:
 
 * It matches a pattern composed only of the left component (there is an assignment to _a person whose first name is Brandon_) 
 * It has no superset that matches a pattern composed of the left component chained to the right component (There is no assignment to _a person whose first name is Brandon and own's a white horse)_
 
 An 'X' may not be used directly before a relationship or a path with an aggregation (aggregations are explained later on)
 
-In certain cases, we need an assignment to match the pattern only if:
+In certain cases, we need an assignment to match the pattern _only if_:
 
 * It matches a pattern composed only of the left component (there is an assignment to _a person whose first name is Brandon_) 
 * It has no superset that matches a pattern composed of the left component chained to the right component (There is no assignment to _a person whose first name is Brandon and own's a white horse)_
@@ -447,14 +447,14 @@ Here is a fourth way to represent Q26:
 
 In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports these 8 quantifiers:
 
-* **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
-* **None** (denoted '0') - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
-* **_n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
-* **_< n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
-* **_≠ n_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_∉ n1..n2_** - An assignment matches the pattern only if it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
+* **None** (denoted '0') - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
+* **_n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
+* **_< n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
+* **_≠ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
@@ -470,31 +470,31 @@ Each branch starts with:
 
 Horizontal quantifiers behave quite differently from vertical quantifiers:
 
-We'll define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, the relationship / path, the right component, and one of the branches.
+We'll call the relationship / path to which the horizontal quantifier is attached _r_; We'll call the left side of _r_ 'the left component', and anything on the right of _r_ 'the right component'.
+
+We'll define pattern _P0_ which is identical to the original pattern, but without the horizontal quantifier and anything that is below it. We'll also define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, _r_, the right component, and one of the branches.
 
 Given patterns _P1..Pb_, the quantifiers are defined as follows:
 
-* **_All_** (denoted '&') - An assignment matches the pattern only if it matches _P1..Pb_ (though it is not necessarily minimal for each _Pn_ separately)
+Given assignment _A_ we'll define _S(A)_, as a set of sub-assignments of A, all with the same concrete elements in its left component and its right components - but with different concrete elements in _r_.
 
+An assignment _A_ matches the pattern _only if_ _A_ matches _P0_ and:
 
-We'll call the left side of the relationship 'the left component', and anything on the right of the relationship 'the right component'.
+* **All** (denoted '&') - There is _S(A)_ such that each of _P1..Pb_ is matched - by at least one element of _S(A)_
+* **Some** (denoted '&#124;') - There is _S(A)_ such that at least one of _P1..Pb_ is matched - each by at least one element of _S(A)_
+* _**> n**_ - There is _S(A)_ such that more than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_
+* _**≥ n**_ - There is _S(A)_ such that _n_ or more of _P1..Pb_ are matched - each by at least one element of _S(A)_
 
-
-* **All** (denoted '&') - An assignment matches the pattern only if (it satisfies at least one branch) and also (for each branch: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch)
-* **Some** (denoted '&#124;') - An assignment matches the pattern only if (it satisfies at least one branch)
-* **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern only if (it satisfies at least one branch) and also (for at least one branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
-* **None** (denoted '0') - Each assignment matches the pattern only if (for each branch: there is no assignment with the same concrete elements in its left and right components - that satisfies the branch)
+* **Not all** (denoted by an '&' with stroke) - There is no _S(A)_ such that each of _P1..Pb_ is matched by at least one element of _S(A)_
+* **None** (denoted '0') - There is no _S(A)_ such that all _P1..Pb_ are matched - each by at least one element of _S(A)_
+* **_n_** - Exactly _n_ of _P1..Pb are matched - each by at least one element of _S(A)_
+* **_< n_** - Less than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [2, _b_]
+* **_≤ n_** - _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
+* **_≠ n_** - Any number but _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
+* **_n1..n2_** - _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - Less than _n1_ or more than _n2_ of  _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
-
-Additional horizontal quantifiers:
-
-* **_n_** -  An assignment matches the pattern only if (it satisfies at least one branch) and also (for exactly _n_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_< n_** - An assignment matches the pattern only if (it satisfies at least one branch) and also (for less than _n_ (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment matches the pattern only if (it satisfies at least one branch) and also (for _n_ or less (but more than 0) branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment matches the pattern only if (it satisfies at least one branch) and also (for _n1_ up to _n2_ branches: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_≠ n_** - An assignment matches the pattern only if (it satisfies at least one branch) and also (for any number of branches except 0, _n_: there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n_ ∈ [1, _b_]
-* **_∉ n1..n2_** - An assignment matches the pattern only if (it satisfies at least one branch) and also ((for more than 0 but less than _n1_ branches) or (for more than _n2_ branches): there is at least one assignment with the same concrete elements in its left and right components - that satisfies the branch). _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 Here are two examples:
 
