@@ -474,7 +474,7 @@ Each branch starts with:
 * An aggregate condition / an aggregation tag, or
 * An horizontal quantifier
 
-Horizontal quantifiers behave quite differently from vertical quantifiers:
+The semantics of horizontal quantifiers is quite different from the semantics of vertical quantifiers:
 
 We'll call the relationship / path to which the horizontal quantifier is attached _r_; We'll call the left side of _r_ 'the left component', and anything on the right of _r_ 'the right component'.
 
