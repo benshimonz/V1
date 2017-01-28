@@ -225,11 +225,10 @@ The data model may support empty (missing) values for some properties. empty val
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
-* A green rectangle with a condition, where the comparion operator is blue: If a value is missing - the condition is false
-* A green rectangle with a condition, where the comparion operator is red: If a value is missing - the condition is true
-* An 'empty' condition - if the value is missing - the condition is false
-* A 'not empty' condition - if the value is missing - the condition is false
-
+* An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
+* A 'not empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as false
+* A green rectangle with a condition, where the comparion operator is blue: If a value is missing - the condition is evaluated as false; otherwise - the condition is evaluated according to the value and the expression
+* A green rectangle with a condition, where the comparion operator is red: If a value is missing - the condition is evaluated as true; otherwise - the condition is evaluated according to the value and the expression
 
 ## Quantifiers #1
 
