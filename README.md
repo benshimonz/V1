@@ -221,7 +221,7 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
-A quantifier has one connection on its left side, and two or more branches on its right side. We'll call the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
+A quantifier has one connection on its left side, and two or more branches on its right side. We'll name the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
 **The first way to use quantifiers:** The left component ends with an entity (yellow/aggregated/blue/logical/red), and each right component starts with:
 
@@ -476,7 +476,7 @@ Each branch starts with:
 
 The semantics of horizontal quantifiers is quite different from the semantics of vertical quantifiers:
 
-We'll call the relationship / path to which the horizontal quantifier is attached _r_; We'll call the left side of _r_ 'the left component', and anything on the right of _r_ 'the right component'.
+We'll name the relationship / path to which the horizontal quantifier is attached _r_; We'll name the left side of _r_ 'the left component', and anything on the right of _r_ 'the right component'.
 
 We'll define pattern _P0_ which is identical to the original pattern, but without the horizontal quantifier and anything that is below it. We'll also define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, _r_, the right component, and one of the branches.
 
