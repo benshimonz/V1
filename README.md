@@ -543,7 +543,8 @@ _**Q188:** Any dragon that was frozen by Balerion at least once - in 1/1/1010 or
 
 An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
 
-* A relationship / a path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
+* A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
+* A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
 * A green rectangle (entity's property value constraints / tag)
 * A quantifier
 
