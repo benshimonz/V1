@@ -223,7 +223,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ## Empty (Missing) Values
 
-The data model may support empty (missing) values for some properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases:
+The data model may support empty (missing) values for one or more properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
