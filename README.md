@@ -52,7 +52,7 @@ There is no standard way to define property graph schemas. Implementations may v
 
 **Why do we need a schema?**
 
-Schema-free property graphs neither define nor enforce entity-types and relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
+Schema-free property graphs neither define nor enforce entity-types or relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person who owns a white horse”* we first need to:
 
