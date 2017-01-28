@@ -264,11 +264,13 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
+Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
+
 _**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-When a relationship need to satisfy several conditions - green rectangles can be chained (this is not valid for entities). Chaining is explained below (see _Horizontal Quantifiers_)
+When a relationship need to satisfy several conditions (as in Q10: the freeze time is in 1010 or after, _and_ the the freeze duration is longer than 100 seconds) - green rectangles can be chained. This is not valid for entities. Chaining is explained below (see _Horizontal Quantifiers_)
 
 ## Entity Tags
 
