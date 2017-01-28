@@ -48,7 +48,7 @@ A **property graph's schema** is defined by
 
 A **schema-based property graph** is a property graph which conforms to a given schema.
 
-There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties vs. support of missing values, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
+There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties, relationships cardinality, etc.), support of empty (missing) values, entity type hierarchies, relationship type hierarchies, etc.
 
 **Why do we need a schema?**
 
@@ -1921,6 +1921,8 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
 
-## Missing Values
+## Empty (Missing) Values
 
-todo
+The data model may support empty (missing) values for some properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases.
+
+
