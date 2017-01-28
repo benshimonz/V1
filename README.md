@@ -268,8 +268,6 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-'Empty' and 'Not empty' conditions are valid for properties for which empty (missing) values are allowed.
-
 ## Quantifiers #2
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
