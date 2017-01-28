@@ -258,7 +258,7 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 * An entity (yellow/aggregated/blue/logical/red)
 * A quantifier
 
-Here is an example:
+The quantifiers in following examples are used in both ways:
 
 _**Q11:** Any current member of the Masons guild, who since 1011 or later knows someone who left the Saddlers guild or the Blacksmiths guild - on June 1010 or later_
 
