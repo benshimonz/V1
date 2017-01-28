@@ -46,9 +46,9 @@ A **property graph's schema** is defined by
   * A set of properties. For each property: name (key) and value type
   * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) )
 
-There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
+A **schema-based property graph** is a property graph which conforms to a given schema.
 
-A **schema-based property graph** is a property graph that conforms to a given schema.
+There is no standard way to define property graph schemas. Implementations may vary in many aspects: the properties' data types (basic types, categorical, multivalued, composite, nested) and supported operators, the relationship types supported directionality (unidirectional, bidirectional, mixed), constraints (mandatory properties vs. support of missing values, relationships cardinality, etc.), entity type hierarchies, relationship type hierarchies, etc.
 
 **Why do we need a schema?**
 
@@ -215,7 +215,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ## Quantifiers #1
 
-Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be checked. Here is a simple example:
+Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
@@ -249,7 +249,7 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q008.png)
 
-'Empty' and 'Not empty' conditions are valid for any property for which empty values are allowed.
+'Empty' and 'Not empty' conditions are valid for properties for which empty (missing) values are allowed.
 
 ## Quantifiers #2
 
