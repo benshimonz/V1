@@ -316,7 +316,7 @@ _**Q24:** Any person who has (at least) two parents and owns a dragon that was f
 
 Several nonidenticality constraints may be defined for the same rectangle (see Q170 for example)
 
-For any quantifier except ‘&’ - identicality/nonidenticality constraints defined between rectangles in different branches, or between rectangles in a branch and rectangles left of the quantifier - may me meaningless.
+For any quantifier except ‘&’ - identicality/nonidenticality constraints defined between rectangles in different branches, or between rectangles in a branch and rectangles left of the quantifier - may be meaningless.
 
 ## No-existence and No-connection
 
