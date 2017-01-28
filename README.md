@@ -278,7 +278,7 @@ There is a letter in the top-left corner of any entity rectangle (yellow/aggrega
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's answer as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
-**Identicality constraint** is used when the same (identical) concrete entity must be assigned to several entities in the pattern. Here is an example:
+**Identicality constraint** is used when the same (identical) concrete entity must be assigned to several rectangles in the pattern. Here is an example:
 
 _**Q4:** Any person whose dragon was frozen by a dragon owned by (at least) one of his parents_
 
@@ -292,7 +292,7 @@ _**Q9:** Any dragon pair (A, B) where A froze B both in 980 and in 984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-**Nonidenticality Constraint** is used when different (nonidentical) concrete entities must be assigned to several entities in the pattern. Here is an example:
+**Nonidenticality Constraint** is used when different (nonidentical) concrete entities must be assigned to several rectangles in the pattern. Here is an example:
 
 _**Q5:** Any person whose dragon was frozen by a dragon owned by two of his parents_
 
@@ -313,6 +313,8 @@ _**Q7:** Any person whose dragon was either (i) frozen by a dragon owned by two 
 _**Q24:** Any person who has (at least) two parents and owns a dragon that was frozen by a dragon that is not owned by either of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q024.png)
+
+Several nonidenticality constraints may be defined for the same rectangle (see Q170 for example)
 
 ## No-existence and No-connection
 
