@@ -205,11 +205,13 @@ Constraints cannot be defined for yellow entities.
 
 For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
-For ordinal value types, the following comparion operators are supported:
+For ordinal data types and string data types, the following comparion operators are supported:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
 
-For other value types, the supported operators are imlementation-defined.
+Implementations may support other operators as well.
+
+For other data types, the supported operators are implementation-defined.
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
