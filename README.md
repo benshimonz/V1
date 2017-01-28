@@ -205,6 +205,12 @@ Constraints cannot be defined for yellow entities.
 
 For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
+For ordinal value types, the following comparion operators are supported:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
+
+For other value types, the supported operators are imlementation-defined.
+
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
@@ -212,6 +218,18 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
+
+## Empty (Missing) Values
+
+The data model may support empty (missing) values for some properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
+
+* A green rectangle with a condition, where the comparion operator is blue: If a value is missing - the condition is false
+* A green rectangle with a condition, where the comparion operator is red: If a value is missing - the condition is true
+* An 'empty' condition - if the value is missing - the condition is false
+* A 'not empty' condition - if the value is missing - the condition is false
+
 
 ## Quantifiers #1
 
@@ -706,7 +724,7 @@ A path connects two entities - similar to a relationship. However, while a relat
 
 Each path has a length. The length of the path is equal to the number of entities along the path. Relationships are actually paths with length 0. The number of relationships along a path is always larger by one than the number of entities along the path.
 
-A path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in [n1, n2, ...]_, where all numbers a positive integers.
+A path is depicted by a red line between two entities. Above the line there must be a limitation to the path length, which is  expressed using one of the following operators: _< n, ≤ n, in [n1..n2], in {n1, n2, ...}_, where all numbers a positive integers.
 
 An assignment to a path consists of all the relationships and entities along the path.
 
@@ -1920,9 +1938,3 @@ Here are some definition examples:
 **R14:** A tag defined in an LA3C aggregator - cannot be referenced right of its definition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
-
-## Empty (Missing) Values
-
-The data model may support empty (missing) values for some properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases.
-
-
