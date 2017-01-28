@@ -227,8 +227,8 @@ The data model may support empty (missing) values for one or more properties. em
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
-* A condition with blue comparison operator: If the value is missing - the condition is evaluated as false; otherwise - the condition is evaluated according to the value and the expression
-* A condition with red comparison operator: If the value is missing - the condition is evaluated as true; otherwise - the condition is evaluated according to the value and the expression
+* A condition with a blue comparison operator: If the value is missing - the condition is evaluated as false; otherwise - it is evaluated according to the value and the expression
+* A condition with a red comparison operator: If the value is missing - the condition is evaluated as true; otherwise - it is evaluated according to the value and the expression
 * An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
 * A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
 
