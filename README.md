@@ -480,9 +480,9 @@ We'll name the relationship / path to which the horizontal quantifier is attache
 
 We'll define pattern _P0_ which is identical to the original pattern, but without the horizontal quantifier and anything that is below it. We'll also define _b_ sub-patterns, _P1..Pb_ (where _b_ denotes the number of branches), each composed of the left component, _r_, the right component, and one of the branches.
 
-Given patterns _P1..Pb_, the quantifiers are defined as follows:
-
 Given assignment _A_ we'll define _S(A)_, as a set of sub-assignments of A, all with the same concrete elements in its left component and its right components - but with different concrete elements in _r_.
+
+The 12 quantifiers are defined as follows:
 
 An assignment _A_ matches the pattern _only if_:
 
