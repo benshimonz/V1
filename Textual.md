@@ -54,8 +54,9 @@
 |---------|-----------|--------| ------
 | +       | Ont       | string | Ontology name
 | +       | Name      | string | Query name
+| +       | Elements  | [...]  | Elements composing the query
 
-**For each V1 element:**
+**Elements: for each query element:**
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
