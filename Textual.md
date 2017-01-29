@@ -74,7 +74,7 @@
 
 ## E1: Query Start (Type = 'Start')
 
-There must be a single element with type 'Start'. Its ENum must equal to 1.
+There must be a single element with type 'Start'. Its ENum must equal to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
