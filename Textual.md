@@ -132,7 +132,7 @@ There must be a single element with type 'Start'. Its ENum must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | pt        | string | Property tag to assign (e.g. "1")
+|         | PTag      | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
@@ -140,7 +140,7 @@ There must be a single element with type 'Start'. Its ENum must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | pt        | string | Property tag to assign (e.g. "1")
+|         | PTag      | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
 |         | B         | int    | ENum of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
@@ -210,8 +210,8 @@ There must be a single element with type 'Start'. Its ENum must equal to 1.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | RelProp   | string | name of relationship's property to split by (e.g. "since")
-|         | tag       | string | pt/at/st to split by (e.g. "1")
-|         | ett       | string | ett to split by (e.g. "1")
+|         | Tag       | string | pt/at/st to split by (e.g. "1")
+|         | ETTag     | string | entity type tag to split by (e.g. "1")
 
 Exactly one of the above must be presented
 
@@ -220,7 +220,7 @@ Exactly one of the above must be presented
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | Cond      | string | condition
-|         | st        | string | split tag to assign (e.g. "1")
+|         | STag      | string | split tag to assign (e.g. "1")
 
 At least one of the above must be presented
 
@@ -229,21 +229,21 @@ At least one of the above must be presented
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | ETag      | string | entity tag on the right of the aggregation. if not present: treat as '→'
-|         | at        | string | attribute tag to assign (e.g. "1")
+|         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
 ## E32: L2C aggregation (Type = 'AggL2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | at        | string | attribute tag to assign (e.g. "1")
+|         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
 ## E33: LA3C aggregation (Type = 'AggLA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | at        | string | attribute tag to assign (e.g. "1")
+|         | ATag      | string | attribute tag to assign (e.g. "1")
 | +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 |         | Cond      | string | condition
@@ -252,23 +252,23 @@ At least one of the above must be presented
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | at        | string | attribute tag to assign (e.g. "2")
+|         | ATag      | string | attribute tag to assign (e.g. "2")
 | +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
+| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 |         | Cond      | string | condition
 
 ## E35: D2C aggregation  (Type = 'AggD2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | at        | string | attribute tag to assign (e.g. "1")
+|         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
 ## E36: DA3C aggregation (Type = 'AggDA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | at        | string | attribute tag to assign (e.g. "1")
+|         | ATag      | string | attribute tag to assign (e.g. "1")
 | +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 |         | Cond      | string | condition
@@ -303,7 +303,7 @@ At least one of the above must be presented
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
 | +       | op        | string | "min" / "max"
-| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
+| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 
 ## E41: PRM1 aggregation (Type = 'AggPRM1')
 
@@ -326,7 +326,7 @@ At least one of the above must be presented
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
 | +       | op        | string | "min" / "max"
-| +       | tag       | string | pt/at/st to aggregate (e.g. "1")
+| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 
 ## E44: LDM3 aggregation (Type = 'AggLDM3')
 
