@@ -31,7 +31,7 @@
 |36 | AggDA3C   | DA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element36.png)
 |37 | AggLRM1   | LRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element37.png)
 |38 | AggLRM2   | LRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element38.png)
-|39 | AggLRMA3  | LRMA3 aggregatio        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element39.png)
+|39 | AggLRMA3  | LRMA3 aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element39.png)
 |40 | AggLRM4   | LRM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element40.png)
 |41 | AggPRM1   | PRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
 |42 | AggPRM2   | PRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
@@ -40,6 +40,13 @@
 |45 | AggDDM3   | DDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
 |46 | AggDMA3   | DMA3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
 |47 | AggDM2    | DM2 aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
+|51 | AggLSM1   | LSM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
+|52 | AggLSM2   | LSM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
+|53 | AggLSMA3  | LSMA3 aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
+|54 | AggLSM4   | LSM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
+|55 | AggPSM1   | PSM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element55.png)
+|56 | AggPSM2   | PSM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element56.png)
+|57 | AggPSM4   | PSM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element57.png)
 
 ## Wrappers for relationships / paths
 
@@ -47,6 +54,8 @@
 **X** - no-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
 **L** - Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperL.png)
 **O** - Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperO.png)
+
+**TODO**: add entity tag inequalities
 
 ## JSON structure
 
@@ -62,8 +71,6 @@
 |---------|-----------|--------| ------
 | +       | ENum      | int    | Element number. Distinct value for each element
 | +       | Type      | string | JSON element type
-
-**TODO**: add entity tag inequalities
 
 ## E1: Query Start (Type = 'Start')
 
