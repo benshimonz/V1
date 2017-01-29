@@ -1238,7 +1238,7 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
-- LRM1 may appear before of a quantifier followed by an R-combiner
+- LRM1 may appear before a quantifier followed by an R-combiner
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
@@ -1288,7 +1288,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- LRM2 may appear before of a quantifier followed by an R-combiner
+- LRM2 may appear before a quantifier followed by an R-combiner
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
@@ -1314,7 +1314,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
 - LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
-- LRMA3 may not appear before of a quantifier
+- LRMA3 may not appear before a quantifier
 - Directly right of the relationship / path : a blue/logical/red entity (neither yellow/aggregated entity)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1333,7 +1333,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
-- LRM4 may appear before of a quantifier followed by an R-combiner
+- LRM4 may appear before a quantifier followed by an R-combiner
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - {pt} is an ordinal property of the entity directly right of the aggregator
 - {at}/{st} is a calculated ordinal property of the entity directly right of the aggregator
