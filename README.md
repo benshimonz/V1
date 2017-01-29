@@ -1451,6 +1451,10 @@ _**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fire
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
+_**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is sibling of - is not more than 3_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q229.png)
+
 ## Aggregation Chains
 
 todo
