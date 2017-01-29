@@ -885,9 +885,10 @@ todo: aggregate tag, aggregate tag's scope
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
-- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- If →: directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
-- If et: directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier. If quantifier - et must be defined right of an R-combiner
+- L1C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
+- L1C may appear before a quantifier followed by an R-combiner
+- If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
+- If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -1041,6 +1042,8 @@ _**Q152:** Any person who owns more than 10 horses. Only the Sarnorian horses wi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
 
+- L2C appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
+- L2C may appear before a quantifier
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
@@ -1087,6 +1090,8 @@ _**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
+- LA3C appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
+- LA3C may not appear before a quantifier
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1107,7 +1112,11 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier. If quantifier - pt/at/st/ett must be defined right of an R-combiner
+- LA4C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
+- LA4C may appear before a quantifier followed by an R-combiner
+- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
+- {pt}/{at}/{st}/< ett > is defined right of the aggregator / R-combiner
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
@@ -1143,6 +1152,8 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
+- D2C appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
+- D2C may not appear before a quantifier
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 
 _**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
@@ -1157,6 +1168,8 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
+- DA3C appears below a relationship. The relationship / path may be wrapped by an 'L' or an 'O'
+- DA3C may not appear before a quantifier
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1686,6 +1699,9 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM1.png)
 
+- LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- LSM1 may appear before a quantifier followed by an R-combiner
+
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
@@ -1701,6 +1717,9 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 ## Min/Max Aggregations on Splits #2 (LSM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM2.png)
+
+- LSM2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- LSM2 may appear before a quantifier followed by an R-combiner
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
@@ -1718,6 +1737,9 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
+- LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
+- LSMA3 may not appear before a quantifier
+
 _**Q222:** Any Person, and his horses of the 3 colors with the latest average ownership start date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
@@ -1725,6 +1747,9 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 ## Min/Max Aggregations on Splits #4 (LSM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM4.png)
+
+- LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- LSM4 may appear before a quantifier followed by an R-combiner
 
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
