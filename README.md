@@ -1235,6 +1235,7 @@ todo
 - Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
+- If directly right of a quantifier - _et_ must be defined right of an R-combiner
 
 For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
 
@@ -1244,6 +1245,10 @@ For each assignment to the entity on its left (←), this aggregation will limit
 _**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
+
+_**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
 
 _**Q197:** Any person and his 3 dragons that the dragons they froze - froze the largest number of distinct dragons cumulatively_
 
