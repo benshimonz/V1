@@ -122,16 +122,17 @@ The schema is composed of the following entity types:
 
 and of the following relationship types:
 
-* owns(Person , Horse  ): since, till
-* owns(Person , Dragon ): since, till
-* fires at(Dragon , Dragon ): time
-* freezes(Dragon , Dragon ): time, duration
-* offspring(Person , Person )
-* member of(Person , Guild  ): since, till
-* subject of(Person , Kingdom)
-* registered in(Guild  , Kingdom)
-* originated in(Horse  , Kingdom)
-* originated in(Dragon , Kingdom)
+* owns(Person, Horse): since, till
+* owns(Person, Dragon): since, till
+* fires at(Dragon, Dragon): time
+* freezes(Dragon, Dragon): time, duration
+* offspring(Person, Person)
+* knows(Person, Person) : since
+* member of(Person, Guild): since, till
+* subject of(Person, Kingdom)
+* registered in(Guild, Kingdom)
+* originated in(Horse, Kingdom)
+* originated in(Dragon, Kingdom)
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
