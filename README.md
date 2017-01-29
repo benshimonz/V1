@@ -1170,6 +1170,10 @@ _**Q134:** Any person that the number of distinct colors of all horses owned by 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q134.png)
 
+_**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is offspring of - is not more than 3_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q229.png)
+
 _**Q135:** Any person that the average weight of all horses owned by people he knows - is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q135.png)
@@ -1477,9 +1481,6 @@ _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 todo
 
-_**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is offspring of - is not more than 3_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q229.png)
 
 ## Aggregation Chains
 
