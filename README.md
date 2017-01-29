@@ -1233,7 +1233,7 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
-- LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - LRM1 may appear before of a quantifier followed by an R-combiner
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
@@ -1283,7 +1283,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
-- LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - LRM2 may appear before of a quantifier followed by an R-combiner
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 
@@ -1323,9 +1323,12 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
+- LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- LRM4 may appear before of a quantifier followed by an R-combiner
+- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - {pt} is an ordinal property of the entity directly right of the aggregator
-- {at}/{st} is a calculated property of the entity directly right of the aggregator
-- LRM4 may not appear directly before a quantifier
+- {at}/{st} is a calculated ordinal property of the entity directly right of the aggregator
+- Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1451,7 +1454,7 @@ _**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fire
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
-_**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is sibling of - is not more than 3_
+_**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is offspring of - is not more than 3_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q229.png)
 
