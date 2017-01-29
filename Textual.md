@@ -53,49 +53,50 @@
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | Ont       | string | Ontology name
+| +       | Name      | string | Query name
 
 **For each V1 element:**
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Eno       | int    | Element number. Distinct value for each element
+| +       | ENum      | int    | Element number. Distinct value for each element
 | +       | Type      | string | JSON element type
 
 **TODO**: add entity tag inequalities
 
 ## E1: Query Start (Type = 'Start')
 
-There must be a single element with type 'Start'. Its Eno must equal to 1.
+There must be a single element with type 'Start'. Its ENum must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1
-|         | B         | int    | Eno of the element below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
+| +       | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1
+|         | B         | int    | ENum of the element below. <br> Valid element types: AggPRM1, AggPRM2, AggPRM4
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | et        | string | Entity tag (e.g. "A")
+| +       | ETag      | string | Entity tag (e.g. "A")
 | +       | EID       | int    | Technical ID of the entity
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. "Lior Kogan")
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E3: Blue Entity (Type = 'Blue')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | et        | string | Entity tag (e.g. "A")
+| +       | ETag      | string | Entity tag (e.g. "A")
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-|         | R         | int    | Eno of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | et        | string | Entity tag (e.g. "A")
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+| +       | ETag      | string | Entity tag (e.g. "A")
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 
@@ -103,7 +104,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | et        | string | Entity tag (e.g. "A")
+| +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
 
@@ -111,7 +112,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | et        | string | Entity tag (e.g. "A")
+| +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
 
@@ -122,8 +123,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | Dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
 |         | Wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int    | Eno of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2, RComb
-|         | B         | int    | Eno of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2, RComb
+|         | B         | int    | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
 
 ## E8: Entity's Property (Type = 'EntProp') 
 
@@ -140,7 +141,7 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | pt        | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
-|         | B         | int    | Eno of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+|         | B         | int    | ENum of the element below. <br> Valid element types: HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
@@ -148,8 +149,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
-|         | B         | int    | Eno of element below. Valid element types: AggL1C, AggL2C, AggLA4C (Aggregation is valid only if there is at least one entity right of the quantifier)
+| +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
+|         | B         | int    | ENum of element below. Valid element types: AggL1C, AggL2C, AggLA4C (Aggregation is valid only if there is at least one entity right of the quantifier)
 
 ## E11: Quantifier 2 (Type = 'Quant2')
 
@@ -157,19 +158,19 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | R         | [int]  | Eno of elements on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2
+| +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2
 
 ## E12: E-Combiner (Type = 'EComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of elements on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+| +       | R         | int    | ENum of elements on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E13: R-Combiner (Type = 'RComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | Eno of element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, RComb, Quant2
+| +       | R         | int    | ENum of element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, RComb, Quant2
 
 ## E14: Path (Type = 'Path') 
 
@@ -179,8 +180,8 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li> <li>Optional [string] direction ("R" or "L")</li></ul>
 |         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int        | Eno of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1, RComb
-|         | B         | int        | Eno of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
+|         | R         | int        | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1, RComb
+|         | B         | int        | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1C (valid wrappers: NLO)</li> <li>AggL2C (valid wrappers: LO)</li> <li>AggLA3C (valid wrappers: LO)</li> <li>AggLA4C (valid wrappers: NLO)</li> <li>AggD2C (valid wrappers: LO)</li> <li>AggDA3C(valid wrappers: LO)</li> <li>AggLRM1 (valid wrappers: NL)</li> <li>AggLRM2 (valid wrappers: L)</li> <li>AggLRMA3 (valid wrappers: L)</li> <li>AggLRM4 (valid wrappers: L)</li> <li>AggDM2 (valid wrappers: none)</li> <li>AggDMA3 (valid wrappers: none)</li> <li>AggLDM3 (valid wrappers: none)</li> <li>AggDDM3 (valid wrappers: none)</li></ul> 
 
 ## E15: Path Segment (Type = 'PathSeg')
 
@@ -194,14 +195,14 @@ There must be a single element with type 'Start'. Its Eno must equal to 1.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | B         | int    | Eno of element below. <br> Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+| +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 
 ## E17: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | B         | int    | Eno of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
+|         | B         | int    | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1C, AggL2C, AggLA3C, AggLA4C, AggD2C, AggDA3C, AggLRM1, AggLRM2, AggLRMA3, AggLRM4, AggDM2, AggDMA3, AggLDM3, AggDDM3
 
 ## E18: Split by (Type = 'SplitBy')
 
@@ -226,7 +227,7 @@ At least one of the above must be presented
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | et        | string | entity tag on the right of the aggregation. if not present: treat as '→'
+|         | ETag      | string | entity tag on the right of the aggregation. if not present: treat as '→'
 |         | at        | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
@@ -276,7 +277,7 @@ At least one of the above must be presented
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
-| +       | et        | string | entity tag on the right of the aggregation
+| +       | ETag      | string | entity tag on the right of the aggregation
 | +       | op        | string | "min" / "max"
 
 ## E38: LRM2 aggregation (Type = 'AggLRM2')
@@ -308,7 +309,7 @@ At least one of the above must be presented
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
-| +       | et        | string | entity tag on the right of the aggregation
+| +       | ETag      | string | entity tag on the right of the aggregation
 | +       | op        | string | "min" / "max"
 
 ## E42: PRM2 aggregation (Type = 'AggPRM2')
