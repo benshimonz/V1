@@ -1187,11 +1187,11 @@ _**Q123:** Any dragon that either froze a dragon or was frozen by a dragon - at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
+(counting the number of cocrete relationships directly right of the quantifier)
+
 _**Q124:** Any dragon that either (froze a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
-(counting the number of relationships to each entity on the right of the quantifier)
 
 _**Q173:** Any dragon that fired at at least 2 dragons, and fired at least 10 times_
 
@@ -1232,8 +1232,8 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - LRM1 may appear below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
-- LRM1 may appear before of a quantifier
-- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
+- LRM1 may appear before of a quantifier followed by an R-combiner
+- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
 
@@ -1286,12 +1286,18 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 may appear below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
-
+- LRM2 may appear before of a quantifier followed by an R-combiner
+- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
+
+_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
+
+(counting the number of cocrete relationships directly right of the quantifier)
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
