@@ -1152,9 +1152,9 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 
 - LA4C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - LA4C may appear before a quantifier followed by an R-combiner
-- Directly right of the aggregator: a yellow/aggregated/blue/logical/red entity, or a quantifier
+- Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity, or a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or on right of the aggregator / R-combiner
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
@@ -1361,6 +1361,9 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - {pt} is an ordinal property of the entity directly right of the aggregator
 - {at}/{st} is a calculated ordinal property of the entity directly right of the aggregator
 - Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+
+todo: add < ett > zzz
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1750,7 +1753,9 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 - LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - If not split by _relprop_ : LSM4 may appear before a quantifier followed by an R-combiner
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or on right of the aggregator / R-combiner
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+
+todo: add < ett > zzz
 
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
