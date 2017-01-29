@@ -1370,6 +1370,8 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
+todo: 230 based on 229 zzz
+
 ## Prefix Min/Max Aggregations #4 (PRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
@@ -1476,11 +1478,6 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
-
-## Min/Max Aggregations before a Quantifier
-
-todo
-
 
 ## Aggregation Chains
 
