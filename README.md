@@ -1267,6 +1267,12 @@ _**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
 
+_**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
+
+('→' is the entity directly right of the R-combiner (in this example - C))
+
 ## Prefix Min/Max Aggregations #1 (PRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
@@ -1301,6 +1307,12 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
+
+_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
+
+(counting the number of cocrete relationships directly right of the quantifier)
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
@@ -1464,18 +1476,6 @@ _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 ## Min/Max Aggregations before a Quantifier
 
 todo
-
-_**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
-
-('→' is the entity directly right of the R-combiner (in this example - C))
-
-_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
-
-(counting the number of cocrete relationships directly right of the quantifier)
 
 _**Q229:** Any person that the number of distinct colors of all horses owned by people he knows or he is offspring of - is not more than 3_
 
