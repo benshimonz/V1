@@ -1364,6 +1364,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 todo: add < ett > zzz
+todo: LRM4 before a quantifier zzz
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1753,9 +1754,10 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 - LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - If not split by _relprop_ : LSM4 may appear before a quantifier followed by an R-combiner
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step - see Q223) or right of the '→' entity
 
 todo: add < ett > zzz
+todo: LSM4 before a quantifier zzz
 
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
