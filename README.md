@@ -1171,6 +1171,8 @@ _**Q121:** Any dragon that froze or fired at at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
+('→' is the entity directly right of the R-combiner (in this example - B))
+
 _**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired at B - for at least 10 different B's_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
@@ -1219,7 +1221,7 @@ _**Q193:** Any dragon that froze X≥3 dragons, fired at Y dragons, and fired Z�
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q193.png)
 
-_**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, and froze Z≥3 dragons. X+Y≥10__
+_**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, and froze Z≥3 dragons. X+Y≥10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
