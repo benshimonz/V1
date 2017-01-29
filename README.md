@@ -1248,12 +1248,6 @@ _**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q196.png)
 
-_**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
-
-('→' is the entity directly right of the R-combiner (in this example - C))
-
 _**Q197:** Any person and his 3 dragons that the dragons they froze - froze the largest number of distinct dragons cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
@@ -1296,12 +1290,6 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
-
-_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
-
-(counting the number of cocrete relationships directly right of the quantifier)
 
 ## Prefix Min/Max Aggregations #2 (PRM2)
 
@@ -1446,6 +1434,22 @@ todo
 _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
+
+## Min/Max Aggregations before a Quantifier
+
+todo
+
+_**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
+
+('→' is the entity directly right of the R-combiner (in this example - C))
+
+_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
+
+(counting the number of cocrete relationships directly right of the quantifier)
 
 ## Aggregation Chains
 
