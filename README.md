@@ -1091,7 +1091,7 @@ _**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
 - LA3C appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
-- LA3C may not appear before a quantifier
+- LA3C may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1153,7 +1153,7 @@ _**Q167:** Any person who owns things of at least 3 types_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
 
 - D2C appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
-- D2C may not appear before a quantifier
+- D2C may not appear directly before a quantifier
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red)
 
 _**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
@@ -1169,7 +1169,7 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
 - DA3C appears below a relationship. The relationship / path may be wrapped by an 'L' or an 'O'
-- DA3C may not appear before a quantifier
+- DA3C may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1327,7 +1327,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
 - LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
-- LRMA3 may not appear before a quantifier
+- LRMA3 may not appear directly before a quantifier
 - Directly right of the relationship / path : a blue/logical/red entity (neither yellow/aggregated entity)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1742,7 +1742,7 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
 - LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
-- LSMA3 may not appear before a quantifier
+- LSMA3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
