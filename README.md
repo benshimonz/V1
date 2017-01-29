@@ -1088,6 +1088,8 @@ _**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 _**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
@@ -1156,6 +1158,8 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
 - Directly right of the aggregator: an entity (yellow/aggregated/blue/logical/red)
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
 
@@ -1309,7 +1313,12 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
-- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
+- LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- LRMA3 may not appear before of a quantifier
+- Directly right of the relationship / path : a blue/logical/red entity (neither yellow/aggregated entity)
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
+- Except for '&' quantifer - LRMA3 aggregator cannot start a quantifier's branch
 
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
@@ -1405,6 +1414,8 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 ## Min/Max Aggregations #6 (DMA3)
 
 - DMA3 may not appear directly before a quantifier
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
@@ -1417,6 +1428,8 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 ## Min/Max Aggregations #7 (LDM3)
 
 - LDM3 may not appear directly before a quantifier
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
@@ -1429,6 +1442,8 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 ## Min/Max Aggregations #8 (DDM3)
 
 - DDM3 may not appear directly before a quantifier
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
