@@ -1393,11 +1393,12 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 
 ## Min/Max Aggregations #5 (DM2)
 
-- DM2 may not appear directly before a quantifier
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
-todo
+- DM2 appears below a relationship / path. The relationship / path may not be wrapped
+- DM2 may not appear directly before a quantifier
+- Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity
+- DM2 cannot start a quantifier's branch
 
 _**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
 
@@ -1413,13 +1414,14 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ## Min/Max Aggregations #6 (DMA3)
 
-- DMA3 may not appear directly before a quantifier
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
-todo
+- DMA3 appears below a relationship. The relationship may not be wrapped
+- DMA3 may not appear directly before a quantifier
+- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
+- DMA3 cannot start a quantifier's branch
 
 _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
 
@@ -1427,13 +1429,12 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 
 ## Min/Max Aggregations #7 (LDM3)
 
-- LDM3 may not appear directly before a quantifier
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
-todo
+- LDM3 appears below a relationship. The relationship may not be wrapped
+- LDM3 may not appear directly before a quantifier
+- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
+- _relprop_ is an ordinal property of the relationship
 
 _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
@@ -1441,13 +1442,13 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ## Min/Max Aggregations #8 (DDM3)
 
-- DDM3 may not appear directly before a quantifier
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
-todo
+- DDM3 appears below a relationship. The relationship may not be wrapped
+- DDM3 may not appear directly before a quantifier
+- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
+- _relprop_ is an ordinal property of the relationship
+- DDM3 cannot start a quantifier's branch
 
 _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
