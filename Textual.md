@@ -4,54 +4,54 @@
 
 |   | JSON type property | V1 element type         | visual representation
 |---|------------|-------------------------|----------------------
-|1  | Start      | query start             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element01.png)
-|2  | Yellow     | yellow entity           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element02.png)
-|3  | Blue       | blue entity             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element03.png)
-|4  | Red        | red entity              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element04.png)
-|5  | AggEnt     | aggregate entity        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element05.png)
-|6  | LogEnt     | logical entity          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
-|7  | Rel        | relationship            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
-|8  | EntProp    | Entity's property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
-|9  | RelProp    | relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
+|1  | Start      | Query Start             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element01.png)
+|2  | Yellow     | Yellow Entity           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element02.png)
+|3  | Blue       | Blue Entity             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element03.png)
+|4  | Red        | Red Entity              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element04.png)
+|5  | AggEnt     | Aggregate Entity        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element05.png)
+|6  | LogEnt     | Logical Entity          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element06.png)
+|7  | Rel        | Relationship            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element07.png)
+|8  | EntProp    | Entity's Property       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element08.png)
+|9  | RelProp    | Relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
 |10 | Quant1     | Quantifier 1            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
 |11 | Quant2     | Quantifier 2            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
 |12 | EComb      | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
 |13 | RComb      | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
 |14 | Path       | Path                    | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element14.png)
-|15 | PathSeg    | Path segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
-|16 | HQuant     | Horizontal quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
-|17 | HComb      | Horizontal combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
-|18 | SplitBy    | Split by                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
-|19 | SplitsCond | Splits condition        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
-|31 | AggL1C     | L1C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
-|32 | AggL2C     | L2C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
-|33 | AggLA3C    | LA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
-|34 | AggLA4C    | LA4C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
-|35 | AggD2C     | D2C aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element35.png)
-|36 | AggDA3C    | DA3C aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element36.png)
-|37 | AggLRM1    | LRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element37.png)
-|38 | AggLRM2    | LRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element38.png)
-|39 | AggLRMA3   | LRMA3 aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element39.png)
-|40 | AggLRM4    | LRM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element40.png)
-|41 | AggPRM1    | PRM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
-|42 | AggPRM2    | PRM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
-|43 | AggPRM4    | PRM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
-|44 | AggLDM3    | LDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
-|45 | AggDDM3    | DDM3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
-|46 | AggDMA3    | DMA3 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
-|47 | AggDM2     | DM2 aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
-|51 | AggLSM1    | LSM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
-|52 | AggLSM2    | LSM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
-|53 | AggLSMA3   | LSMA3 aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
-|54 | AggLSM4    | LSM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
-|55 | AggPSM1    | PSM1 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element55.png)
-|56 | AggPSM2    | PSM2 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element56.png)
-|57 | AggPSM4    | PSM4 aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element57.png)
+|15 | PathSeg    | Path Segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
+|16 | HQuant     | Horizontal Quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
+|17 | HComb      | Horizontal Combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
+|18 | SplitBy    | Split By                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
+|19 | SplitsCond | Splits Condition        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
+|31 | AggL1C     | L1C Aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
+|32 | AggL2C     | L2C Aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
+|33 | AggLA3C    | LA3C Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
+|34 | AggLA4C    | LA4C Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
+|35 | AggD2C     | D2C Aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element35.png)
+|36 | AggDA3C    | DA3C Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element36.png)
+|37 | AggLRM1    | LRM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element37.png)
+|38 | AggLRM2    | LRM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element38.png)
+|39 | AggLRMA3   | LRMA3 Aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element39.png)
+|40 | AggLRM4    | LRM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element40.png)
+|41 | AggPRM1    | PRM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
+|42 | AggPRM2    | PRM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
+|43 | AggPRM4    | PRM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
+|44 | AggLDM3    | LDM3 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
+|45 | AggDDM3    | DDM3 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
+|46 | AggDMA3    | DMA3 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element46.png)
+|47 | AggDM2     | DM2 Aggregation         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element47.png)
+|51 | AggLSM1    | LSM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
+|52 | AggLSM2    | LSM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
+|53 | AggLSMA3   | LSMA3 Aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
+|54 | AggLSM4    | LSM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
+|55 | AggPSM1    | PSM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element55.png)
+|56 | AggPSM2    | PSM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element56.png)
+|57 | AggPSM4    | PSM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element57.png)
 
 ## Wrappers for relationships / paths
 
-**N** - no-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperX.png)
-**X** - no-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
+**N** - No-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperX.png)
+**X** - No-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
 **L** - Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperL.png)
 **O** - Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperO.png)
 
@@ -74,7 +74,7 @@
 
 ## E1: Query Start (Type = 'Start')
 
-There must be a single element with type 'Start'. Its ENum must equal to 0.
+There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -231,7 +231,7 @@ Exactly one of the above must be presented
 
 At least one of the above must be presented
 
-## E31: L1C aggregation (Type = 'AggL1C')
+## E31: L1C Aggregation (Type = 'AggL1C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -239,14 +239,14 @@ At least one of the above must be presented
 |         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
-## E32: L2C aggregation (Type = 'AggL2C')
+## E32: L2C Aggregation (Type = 'AggL2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
-## E33: LA3C aggregation (Type = 'AggLA3C')
+## E33: LA3C Aggregation (Type = 'AggLA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -255,7 +255,7 @@ At least one of the above must be presented
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 |         | Cond      | string | condition
 
-## E34: LA4C aggregation (Type = 'AggLA4C')
+## E34: LA4C Aggregation (Type = 'AggLA4C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -264,14 +264,14 @@ At least one of the above must be presented
 | +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 |         | Cond      | string | condition
 
-## E35: D2C aggregation  (Type = 'AggD2C')
+## E35: D2C Aggregation  (Type = 'AggD2C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | ATag      | string | attribute tag to assign (e.g. "1")
 |         | Cond      | string | condition
 
-## E36: DA3C aggregation (Type = 'AggDA3C')
+## E36: DA3C Aggregation (Type = 'AggDA3C')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -280,7 +280,7 @@ At least one of the above must be presented
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 |         | Cond      | string | condition
 
-## E37: LRM1 aggregation (Type = 'AggLRM1')
+## E37: LRM1 Aggregation (Type = 'AggLRM1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -288,14 +288,14 @@ At least one of the above must be presented
 | +       | ETag      | string | entity tag on the right of the aggregation
 | +       | op        | string | "min" / "max"
 
-## E38: LRM2 aggregation (Type = 'AggLRM2')
+## E38: LRM2 Aggregation (Type = 'AggLRM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
 | +       | op        | string | "min" / "max"
 
-## E39: LRMA3 aggregatio (Type = 'AggLRMA3')
+## E39: LRMA3 Aggregatio (Type = 'AggLRMA3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -304,7 +304,7 @@ At least one of the above must be presented
 | +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
-## E40: LRM4 aggregation (Type = 'AggLRM4')
+## E40: LRM4 Aggregation (Type = 'AggLRM4')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -312,7 +312,7 @@ At least one of the above must be presented
 | +       | op        | string | "min" / "max"
 | +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 
-## E41: PRM1 aggregation (Type = 'AggPRM1')
+## E41: PRM1 Aggregation (Type = 'AggPRM1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -320,14 +320,14 @@ At least one of the above must be presented
 | +       | ETag      | string | entity tag on the right of the aggregation
 | +       | op        | string | "min" / "max"
 
-## E42: PRM2 aggregation (Type = 'AggPRM2')
+## E42: PRM2 Aggregation (Type = 'AggPRM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | n         | int    | number of min/max entities
 | +       | op        | string | "min" / "max"
 
-## E43: PRM4 aggregation (Type = 'AggPRM4')
+## E43: PRM4 Aggregation (Type = 'AggPRM4')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -335,7 +335,7 @@ At least one of the above must be presented
 | +       | op        | string | "min" / "max"
 | +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
 
-## E44: LDM3 aggregation (Type = 'AggLDM3')
+## E44: LDM3 Aggregation (Type = 'AggLDM3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -343,7 +343,7 @@ At least one of the above must be presented
 | +       | op        | string | "min" / "max"
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
-## E45: DDM3 aggregation (Type = 'AggDDM3')
+## E45: DDM3 Aggregation (Type = 'AggDDM3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -351,7 +351,7 @@ At least one of the above must be presented
 | +       | op        | string | "min" / "max"
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
-## E46: DMA3 aggregation (Type = 'AggDMA3')
+## E46: DMA3 Aggregation (Type = 'AggDMA3')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
@@ -360,7 +360,7 @@ At least one of the above must be presented
 | +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
 
-## E47: DM2 aggregation  (Type = 'AggDM2')
+## E47: DM2 Aggregation  (Type = 'AggDM2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
