@@ -1038,6 +1038,24 @@ _**Q152:** Any person who owns more than 10 horses. Only the Sarnorian horses wi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q152.png)
 
+_**Q121:** Any dragon that froze or fired at at least 10 dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
+
+('→' is the entity directly right of the R-combiner (in this example - B))
+
+_**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired at B - for at least 10 different B's_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
+
+_**Q175:** Any dragon that froze at least once, and fired at least once. The number of dragons it froze/fired at - is at least 10 (if a dragon was both froze and fired at - it would be counted twice)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
+
+_**Q176:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze. The number of dragons it frozed/fired at is at least 10 (ii) froze at least 10 dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
+
 ## Aggregate Conditions #2 (L2C)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
@@ -1085,6 +1103,26 @@ _**Q105:** Any dragon A that was frozen exactly 2 times (cumulatively) by (drago
 _**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects than dragons owned by Omberian subjects_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
+
+_**Q123:** Any dragon that either froze a dragon or was frozen by a dragon - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
+
+(counting the number of cocrete relationships directly right of the quantifier)
+
+_**Q124:** Any dragon that either (froze a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
+
+_**Q173:** Any dragon that fired at at least 2 dragons, and fired at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
+
+(counting the number of *distinct* 'fired at' relationships)
+
+_**Q174:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. If (i): the number times it froze / fired at dragons is at least 10. otherwise: The number of times it froze dragons is at least 10._
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
 ## Aggregate Conditions #3 (LA3C)
 
@@ -1177,50 +1215,6 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
-
-## Aggregate Conditions before a Quantifier
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Before-Quantifier1.png)
-
-- Valid only for L1C followed by an R-Combiner, L2C, and LA4C followed by an R-Combiner
-
-_**Q121:** Any dragon that froze or fired at at least 10 dragons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
-
-('→' is the entity directly right of the R-combiner (in this example - B))
-
-_**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired at B - for at least 10 different B's_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q122.png)
-
-_**Q175:** Any dragon that froze at least once, and fired at least once. The number of dragons it froze/fired at - is at least 10 (if a dragon was both froze and fired at - it would be counted twice)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
-
-_**Q176:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze. The number of dragons it frozed/fired at is at least 10 (ii) froze at least 10 dragons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
-
-_**Q123:** Any dragon that either froze a dragon or was frozen by a dragon - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
-
-(counting the number of cocrete relationships directly right of the quantifier)
-
-_**Q124:** Any dragon that either (froze a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q124.png)
-
-_**Q173:** Any dragon that fired at at least 2 dragons, and fired at least 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q173.png)
-
-(counting the number of *distinct* 'fired at' relationships)
-
-_**Q174:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. If (i): the number times it froze / fired at dragons is at least 10. otherwise: The number of times it froze dragons is at least 10._
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
 ## Aggregate Conditions both before and after a Quantifier
 
