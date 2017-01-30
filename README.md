@@ -1240,7 +1240,7 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
-## Min/Max Filter
+## Min/Max Filters
 
 todo
 
@@ -1255,7 +1255,7 @@ todo
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
 - Except for '&' quantifer - LRM1 filter cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this filter will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
+For each assignment to the entity on its left (←), this filter will limit the number of assignments to the '→' / _et1_ entity - to those with the smallest / largest number of assignments to _et2_. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1669,7 +1669,7 @@ _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
 
-## Condition on number of splits
+## Condition on Number of Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
