@@ -1310,6 +1310,8 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 
+For each assignment to the entity on its left (←), this filter will limit the number of assignments to the '→' / _et1_ entity - to those with the smallest / largest number of relationships / paths on its right. 
+
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
@@ -1710,6 +1712,10 @@ _**Q235:** Any dragon that the number of dragons it froze on average - on months
 _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
+
+## Min/Max Filters on Splits
+
+todo
 
 ## Min/Max Filter on Splits #1 (LSM1)
 
