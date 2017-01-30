@@ -1394,6 +1394,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
+- PRM4 may not appear directly before a quantifier
 - {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 - {at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
