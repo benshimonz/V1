@@ -1240,11 +1240,11 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
-## Min/Max Aggregations
+## Min/Max Filter
 
 todo
 
-## Min/Max Aggregations #1 (LRM1)
+## Min/Max Filter #1 (LRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
@@ -1253,9 +1253,9 @@ todo
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
-- Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
+- Except for '&' quantifer - LRM1 filter cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
+For each assignment to the entity on its left (←), this filter will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1278,12 +1278,12 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ('→' is the entity directly right of the R-combiner (in this example - C))
 
-## Prefix Min/Max Aggregations #1 (PRM1)
+## Prefix Min/Max Filter #1 (PRM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
+- Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q67:** The 3 people with the largest number of parents_
 
@@ -1301,7 +1301,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
-## Min/Max Aggregations #2 (LRM2)
+## Min/Max Filter #2 (LRM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
@@ -1324,11 +1324,11 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
-## Prefix Min/Max Aggregations #2 (PRM2)
+## Prefix Min/Max Filter #2 (PRM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
-- Directly right of the aggregator: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
+- Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
@@ -1338,7 +1338,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
-## Min/Max Aggregations #3 (LRMA3)
+## Min/Max Filter #3 (LRMA3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
@@ -1348,7 +1348,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
-- Except for '&' quantifer - LRMA3 aggregator cannot start a quantifier's branch
+- Except for '&' quantifer - LRMA3 filter cannot start a quantifier's branch
 
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
@@ -1362,7 +1362,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
-## Min/Max Aggregations #4 (LRM4)
+## Min/Max Filter #4 (LRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
@@ -1370,9 +1370,9 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - LRM4 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
-- {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
-- {at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
-- Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
+- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
+- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
+- Except for '&' quantifer - LRM4 filter cannot start a quantifier's branch
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1390,13 +1390,13 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
-## Prefix Min/Max Aggregations #4 (PRM4)
+## Prefix Min/Max Filter #4 (PRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
 - PRM4 may not appear directly before a quantifier
-- {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
-- {at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' entity
+- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' entity
 
 _**Q130:** The 4 eldest people_
 
@@ -1434,7 +1434,7 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
-## Min/Max Aggregations #5 (DM2)
+## Min/Max Filter #5 (DM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
@@ -1455,7 +1455,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Min/Max Aggregations #6 (DMA3)
+## Min/Max Filter #6 (DMA3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
@@ -1470,7 +1470,7 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
-## Min/Max Aggregations #7 (LDM3)
+## Min/Max Filter #7 (LDM3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
@@ -1483,7 +1483,7 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-## Min/Max Aggregations #8 (DDM3)
+## Min/Max Filter #8 (DDM3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
@@ -1497,7 +1497,7 @@ _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
-## Aggregation Chains
+## Aggregation/Filter Chains
 
 todo
 
@@ -1591,7 +1591,7 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Aggregation Sequences
+## Aggregation/Filter Sequences
 
 todo
 
@@ -1641,7 +1641,7 @@ _**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative perio
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q213.png)
 
-Note that the order of the filtering stages along the left aggregation chain can be switched. The semantics would remain the same.
+Note that the order of the filtering stages along the left chain can be switched. The semantics would remain the same.
 
 _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vice versa - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
 
@@ -1711,7 +1711,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-## Min/Max Aggregations on Splits #1 (LSM1)
+## Min/Max Filter on Splits #1 (LSM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM1.png)
 
@@ -1725,7 +1725,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
-## Prefix Min/Max Aggregations on Splits #1 (PSM1)
+## Prefix Min/Max Filter on Splits #1 (PSM1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
 
@@ -1733,20 +1733,20 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
 
-## Min/Max Aggregations on Splits #2 (LSM2)
+## Min/Max Filter on Splits #2 (LSM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM2.png)
 
 - LSM2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of relationship / path
+- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step) or right of relationship / path
 - If not split by _relprop_ : LSM2 may appear before a quantifier
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
-## Prefix Min/Max Aggregations on Splits #2 (PSM2)
+## Prefix Min/Max Filter on Splits #2 (PSM2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
 
@@ -1754,12 +1754,12 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
-## Min/Max Aggregations on Splits #3 (LSMA3)
+## Min/Max Filter on Splits #3 (LSMA3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
 - LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the relationship
+- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step) or right of the relationship
 - LSMA3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
@@ -1769,14 +1769,14 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
 
-## Min/Max Aggregations on Splits #4 (LSM4)
+## Min/Max Filter on Splits #4 (LSM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM4.png)
 
 - LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - If not split by _relprop_ : LSM4 may appear before a quantifier followed by an R-combiner
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step - see Q223) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
 todo: LSM4 before a quantifier zzz
 
@@ -1784,7 +1784,7 @@ _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulativ
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
-## Prefix Min/Max Aggregations on Splits #4 (PSM4)
+## Prefix Min/Max Filter on Splits #4 (PSM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
 
@@ -1792,7 +1792,7 @@ _**Q226:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
-## Min/Max Aggregations on Splits before a Quantifier
+## Min/Max Filter on Splits before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier2.png)
 
