@@ -1249,7 +1249,7 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
-- LRM1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- LRM1 may appear directly before a quantifier followed by an R-combiner. If so - '→' is the entity directly right of the R-combiner)
 - if '→' : '→' is a blue/logical/red entity
 - if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
@@ -1306,7 +1306,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- LRM2 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- LRM2 may appear directly before a quantifier followed by an R-combiner. If so - '→' is the entity directly right of the R-combiner)
 - if '→' : '→' is a blue/logical/red entity
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 
@@ -1367,7 +1367,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
-- LRM4 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- LRM4 may appear directly before a quantifier followed by an R-combiner. If so - '→' is the entity directly right of the R-combiner)
 - if '→' : '→' is a blue/logical/red entity
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 - {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
