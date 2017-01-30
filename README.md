@@ -1268,6 +1268,10 @@ _**Q197:** Any person and his 3 dragons that the dragons they froze - froze the 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
+_**Q234:** Any person and the 3 dragons whose dragon froze - that froze the largest number of dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q234.png)
+
 _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
