@@ -1691,19 +1691,21 @@ _**Q155:** Any dragon that in at least 11 days - froze more than 100 minutes cum
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q155.png)
 
-_**Q156:** Any dragon that froze dragon for more than 1000 minutes cumulatively - in the days it froze dragons for more than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
-
 _**Q157:** Any person who owns at most 3 horses of the same color - for more than 5 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q157.png)
 
+_**Q156:** Any dragon that froze dragon for more than 1000 minutes cumulatively - in the days it froze dragons for more than 100 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
+
+_**Q235:** Any dragon that in number of dragons it froze on average - on months it froze dragons in - is at least 10_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q235.png)
+
 ## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
-
-todo
 
 _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
 
