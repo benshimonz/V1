@@ -1393,9 +1393,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
-- {pt} is an ordinal property of the entity directly right of the aggregator
-- {at}/{st} is a calculated property of the entity directly right of the aggregator
-- PRM4 may not be used when the pattern starts with a quantifier
+- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 _**Q130:** The 4 eldest people_
 
