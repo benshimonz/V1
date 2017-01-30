@@ -1381,10 +1381,6 @@ _**Q230:** Any person and the 3 people he (knows or knows an ofspring of) - that
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q230.png)
 
-_**Q231:** Any person and the 3 people he (knows or knows an ofspring of) - that their heaviest horse is the heaviest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q231.png)
-
 _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or knows an ofspring of)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
