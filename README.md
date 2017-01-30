@@ -1306,7 +1306,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- LRM2 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
+- LRM2 may appear before a quantifier (followed by an R-combiner - if so, '→' is the entity directly right of the R-combiner)
 - if '→' : '→' is a blue/logical/red entity
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 
@@ -1314,7 +1314,7 @@ _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the lar
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
-_**Q228:** Any dragon owned by Brandon Stark, and the 3 dragons it froze or fired at the largest number of times_
+_**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, and the 3 dragon-pairs on which it cumulatively fired at the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
 
