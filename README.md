@@ -1370,7 +1370,8 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - LRM4 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - if '→' : '→' is a blue/logical/red entity
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
-- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
+- {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
+- {at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
 - Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
 
 _**Q118:** Any person and his 3 eldest offsprings_
@@ -1393,7 +1394,8 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
-- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt} is an ordinal property defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 _**Q130:** The 4 eldest people_
 
