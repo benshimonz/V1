@@ -1268,10 +1268,6 @@ _**Q197:** Any person and his 3 dragons that the dragons they froze - froze the 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
-_**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it froze that froze the largest number of dragons) - froze the largest number of distinct dragons cumulatively_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
-
 _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
@@ -1313,6 +1309,10 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
+
+_**Q231:** Any person and the 3 dragons whose dragon froze - that froze dragons the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q231.png)
 
 _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, and the 3 dragon-pairs on which it cumulatively fired at the largest number of times_
 
@@ -1593,6 +1593,10 @@ todo
 _**Q128:** Any person and his 3 offspring that own horses of the largest number of colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q128.png)
+
+_**Q198:** Any person and his 3 dragons that (for each of them: the 4 dragons it froze that froze the largest number of dragons) - froze the largest number of distinct dragons cumulatively_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q198.png)
 
 _**Q103:** Any dragon A that froze at least 3 dragons - each was frozen by at least 4 dragons other than A_
 
