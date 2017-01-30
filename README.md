@@ -886,7 +886,7 @@ todo: aggregate tag, aggregate tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
 - L1C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L1C may appear before a quantifier followed by an R-combiner
+- L1C may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
@@ -1249,7 +1249,7 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
-- LRM1 may appear before a quantifier followed by an R-combiner
+- LRM1 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
@@ -1305,7 +1305,7 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- LRM2 may appear before a quantifier followed by an R-combiner
+- LRM2 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
@@ -1356,14 +1356,10 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
-- LRM4 may appear before a quantifier followed by an R-combiner
+- LRM4 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
 - Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
-- {pt} is an ordinal property of the entity directly right of the aggregator
-- {at}/{st} is a calculated ordinal property of the entity directly right of the aggregator
 - Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
-
-todo: LRM4 before a quantifier zzz
+- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
@@ -1373,9 +1369,17 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-_**Q230:** Any person and the 3 people he (knows or knows an ofspring of) than owns the heaviest horses_
+_**Q230:** Any person and the 3 people he (knows or knows an ofspring of) - that owns the heaviest horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q230.png)
+
+_**Q231:** Any person and the 3 people he (knows or knows an ofspring of) - that their heaviest horse is the heaviest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q231.png)
+
+_**Q232:** Any person and the 3 heaviest horse owned by people he (knows or knows an ofspring of)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
 ## Prefix Min/Max Aggregations #4 (PRM4)
 
@@ -1698,7 +1702,7 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 - LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _relprop_ is a property of the relationship
-- If not split by _relprop_ : LSM1 may appear before a quantifier followed by an R-combiner
+- If not split by _relprop_ : LSM1 may appear before a quantifier followed by an R-combiner 
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
