@@ -1250,8 +1250,9 @@ todo
 
 - LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - LRM1 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
-- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
-- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
+- if '→' : '→' is a blue/logical/red entity
+- if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
+- _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
 - Except for '&' quantifer - LRM1 aggregator cannot start a quantifier's branch
 
 For each assignment to the entity on its left (←), this aggregation will limit the number of assignments to the entity on its right (→) - to those (→) with the smallest / largest number of assignments to _et_. 
@@ -1306,7 +1307,8 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - LRM2 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
-- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
+- if '→' : '→' is a blue/logical/red entity
+- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
@@ -1338,7 +1340,8 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 - LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
 - LRMA3 may not appear directly before a quantifier
-- Directly right of the relationship / path : a blue/logical/red entity (neither yellow/aggregated entity)
+- if '→' : '→' is a blue/logical/red entity
+- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 - Except for '&' quantifer - LRMA3 aggregator cannot start a quantifier's branch
@@ -1357,9 +1360,10 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
 - LRM4 may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
-- Directly right of the relationship / path / R-combiner : a blue/logical/red entity (neither yellow/aggregated entity)
+- if '→' : '→' is a blue/logical/red entity
+- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
+- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' / _et_ entity
 - Except for '&' quantifer - LRM4 aggregator cannot start a quantifier's branch
-- {pt}/{at}/{st} is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
