@@ -1350,6 +1350,10 @@ _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
 
+_**Q233:** Any dragon A than froze dragons Bs that froze dragons Cs, and the 3 Cs for which A froze Bs for the longest cumulative period_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q233.png)
+
 _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
