@@ -886,7 +886,7 @@ todo: aggregate tag, aggregate tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
 
 - L1C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L1C may appear before a quantifier followed by an R-combiner (if so, '→' is the entity directly right of the R-combiner)
+- L1C may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
@@ -1714,9 +1714,9 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 - LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _relprop_ is a property of the relationship
-- If not split by _relprop_ : LSM1 may appear before a quantifier followed by an R-combiner 
-- If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
-- If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- If not split by _relprop_ : LSM1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- '→' / _et_ is a blue/logical/red entity
 
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
@@ -1736,6 +1736,7 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 
 - LSM2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of relationship / path
 - If not split by _relprop_ : LSM2 may appear before a quantifier
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
@@ -1755,10 +1756,11 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
 - LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
+- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the relationship
 - LSMA3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
+- _relprop1_, _relprop2_ are different properties of the relationship
 
 _**Q222:** Any Person, and his horses of the 3 colors with the latest average ownership start date_
 
