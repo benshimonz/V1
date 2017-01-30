@@ -1373,7 +1373,9 @@ _**Q119:** Any person and his 3 youngest sons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
 
-todo: 230 based on 229 zzz
+_**Q230:** Any person and the 3 people he (knows or knows an ofspring of) than owns the heaviest horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q230.png)
 
 ## Prefix Min/Max Aggregations #4 (PRM4)
 
