@@ -1287,6 +1287,8 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
+this filter will limit the the assignments to the '→' entity - to the _n_ assignments with the smallest / largest number of assignments to _et_. 
+
 _**Q67:** The 3 people with the largest number of parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
@@ -1335,6 +1337,8 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 - _n_ is a positive integer
 - Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
+
+This filter will limit the assignments to the '→' entity - to the _n_ assignments with the smallest / largest number of relationships / paths on its right. 
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
