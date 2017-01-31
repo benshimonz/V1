@@ -1357,6 +1357,8 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 - _relprop_ is a property of the relationship
 - Except for '&' quantifer - LRMA3 filter cannot start a quantifier's branch
 
+For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the minimal / maximal _aggop(relprop)_ of the relationships on its top. 
+
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
@@ -1381,6 +1383,8 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
 - {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
 - Except for '&' quantifer - LRM4 filter cannot start a quantifier's branch
+
+For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the minimal / maximal {pt}/{at}/{st}. 
 
 _**Q118:** Any person and his 3 eldest offsprings_
 
