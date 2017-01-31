@@ -1249,13 +1249,14 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
 
 - LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- _n_ is a positive integer
 - LRM1 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
 - Except for '&' quantifer - LRM1 filter cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this filter will limit the number of assignments to the '→' / _et1_ entity - to those with the smallest / largest number of assignments to _et2_. 
+For each assignment to the entity on its left (←), this filter will limit the the assignments to the '→' / _et1_ entity - to the _n_ assignments with the smallest / largest number of assignments to _et2_. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1282,6 +1283,7 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
 
+- _n_ is a positive integer
 - _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
 - Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
@@ -1306,11 +1308,12 @@ _**Q70:** The 5 people who the number of people within graph distance ≤ 4 from
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- _n_ is a positive integer
 - LRM2 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
 
-For each assignment to the entity on its left (←), this filter will limit the number of assignments to the '→' / _et1_ entity - to those with the smallest / largest number of relationships / paths on its top. 
+For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the smallest / largest number of relationships / paths on its top. 
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
@@ -1330,6 +1333,7 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
+- _n_ is a positive integer
 - Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
@@ -1345,6 +1349,7 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
 
 - LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- _n_ is a positive integer
 - LRMA3 may not appear directly before a quantifier
 - if '→' : '→' is a blue/logical/red entity
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
@@ -1369,6 +1374,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- _n_ is a positive integer
 - LRM4 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
@@ -1397,6 +1403,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
 
 - PRM4 may not appear directly before a quantifier
+- _n_ is a positive integer
 - {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' entity
 - {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' entity
 
@@ -1441,6 +1448,7 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
 
 - DM2 appears below a relationship / path. The relationship / path may not be wrapped
+- _n_ is a positive integer
 - DM2 may not appear directly before a quantifier
 - Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity
 - DM2 cannot start a quantifier's branch
@@ -1462,6 +1470,7 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
 
 - DMA3 appears below a relationship. The relationship may not be wrapped
+- _n_ is a positive integer
 - DMA3 may not appear directly before a quantifier
 - Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
@@ -1477,6 +1486,7 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
 
 - LDM3 appears below a relationship. The relationship may not be wrapped
+- _n_ is a positive integer
 - LDM3 may not appear directly before a quantifier
 - Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
 - _relprop_ is an ordinal property of the relationship
@@ -1490,6 +1500,7 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
 
 - DDM3 appears below a relationship. The relationship may not be wrapped
+- _n_ is a positive integer
 - DDM3 may not appear directly before a quantifier
 - Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
 - _relprop_ is an ordinal property of the relationship
