@@ -1244,17 +1244,17 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 todo
 
-## Min/Max Filter #1 (LRM1)
+## Min/Max Filter #1 (M1)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
-- LRM1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- M1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _n_ is a positive integer
-- LRM1 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
+- M1 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
 - if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
-- Except for '&' quantifer - LRM1 filter cannot start a quantifier's branch
+- Except for '&' quantifer - M1 filter cannot start a quantifier's branch
 
 For each assignment to the entity on its left (←), this filter will limit the the assignments to the '→' / _et1_ entity - to the _n_ assignments with the smallest / largest number of assignments to _et2_. 
 
@@ -1873,7 +1873,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2046,7 +2046,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, LRM1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
