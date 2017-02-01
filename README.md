@@ -1313,7 +1313,7 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 - _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
 - if '←' : '←' should be defined, and should be a blue/logical/red entity  
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
-- if _'pair'_ : both '←' and '→' should be defined and be a blue/logical/red entity
+- if _'pair'_ : both '←' and '→' should be defined and be blue/logical/red entities
 
 If list [1] is not given:
 
@@ -1322,6 +1322,14 @@ This filter will limit the assignments to the entity on its left ('←') / to th
 If list [1] is given:
 
 For each assignment combination to entities [1] - This filter will limit the assignments to the entity on its left ('←') / to the entity on its right ('→') or to the combination of both  - to the _n_ assignments / assignment combinations with the smallest / largest number of relationships / paths on its top. 
+
+_**Q171:** The 2 dragons that were frozen the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
+
+_**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to some person_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
@@ -1337,16 +1345,17 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
+_**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
 
+_**Q78:** The 4 dragons that froze Balerion the largest number of times_
 
-_**Q171:** The 2 dragons that were frozen the largest number of times_
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
+_**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
 
-_**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to some person_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
 ## Min/Max Filter #3 (LRMA3)
 
@@ -1450,28 +1459,6 @@ _**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the longe
 _**Q168:** The 3 people who the number of types of things each of them owns - is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
-
-## Min/Max Filter #5 (DM2)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DM2.png)
-
-- DM2 appears below a relationship / path. The relationship / path may not be wrapped
-- _n_ is a positive integer
-- DM2 may not appear directly before a quantifier
-- Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity
-- DM2 cannot start a quantifier's branch
-
-_**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
-
-_**Q78:** The 4 dragons that froze Balerion the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
-
-_**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
 ## Min/Max Filter #6 (DMA3)
 
