@@ -1322,6 +1322,10 @@ If list [1] is given:
 
 For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
+_**Q78:** The 4 dragons that froze Balerion the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
+
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q171.png)
@@ -1347,10 +1351,6 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 _**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
-
-_**Q78:** The 4 dragons that froze Balerion the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q078.png)
 
 _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
 
