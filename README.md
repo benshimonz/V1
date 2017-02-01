@@ -1251,7 +1251,7 @@ todo
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
 - M1 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
 - _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the filter
 - Lists [1], [2] and [3] may not intersect
@@ -1307,10 +1307,10 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
-- M2 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
+- M2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - M2 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
 - Lists [1] and [2] may not intersect
 
@@ -1360,16 +1360,23 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
-- LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- M3 appears below a relationship. The relationship may be wrapped by an 'L'.
+- M3 may appear directly before a quantifier
 - _n_ is a positive integer
-- LRMA3 may not appear directly before a quantifier
-- if '→' : '→' is a blue/logical/red entity
-- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- Lists [1] and [2] may not intersect
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
-- Except for '&' quantifer - LRMA3 filter cannot start a quantifier's branch
+- Except for '&' quantifer - M3 filter cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the minimal / maximal _aggop(relprop)_ of the relationships on its top. 
+If list [1] is not given:
+
+This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top. 
+
+If list [1] is given:
+
+For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.
 
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
