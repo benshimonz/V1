@@ -1251,7 +1251,7 @@ todo
 - M1 appears below a relationship / path / query-start. A relationship / path may be wrapped by an '↛' or an 'L'
 - _n_ is a positive integer
 - M1 may appear directly before a quantifier
-- <font color="green">_{et, et, ...}_</font> is a a blue/logical/red entity right of the '→' entity
+- <font color="green"><i>{et, et, ...}</i></font>is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
 - Except for '&' quantifer - M1 filter cannot start a quantifier's branch
 
