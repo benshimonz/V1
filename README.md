@@ -1356,9 +1356,9 @@ _**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
-## Min/Max Filter #3 (LRMA3)
+## Min/Max Filter #3 (M3)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRMA3.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
 - LRMA3 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _n_ is a positive integer
@@ -1459,22 +1459,6 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
-## Min/Max Filter #6 (DMA3)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DMA3.png)
-
-- DMA3 appears below a relationship. The relationship may not be wrapped
-- _n_ is a positive integer
-- DMA3 may not appear directly before a quantifier
-- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-- DMA3 cannot start a quantifier's branch
-
-_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
-
 ## Min/Max Filter #7 (LDM3)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
@@ -1483,11 +1467,16 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 - _n_ is a positive integer
 - LDM3 may not appear directly before a quantifier
 - Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
-- _relprop_ is an ordinal property of the relationship
+- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _relprop_ is a property of the relationship
 
 _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
+
+_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
 ## Min/Max Filter #8 (DDM3)
 
@@ -1859,7 +1848,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, LRM4 and PRM4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2032,7 +2021,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, LRM4 and PRM4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
