@@ -1260,11 +1260,11 @@ todo
 
 If list [1] is not given:
 
-This filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3]. 
+This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3]. 
 
 If list [1] is given:
 
-For each assignment combination to entities [1] - this filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3]. 
+For each assignment combination to entities [1] - this filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3]. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1311,17 +1311,16 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 - M2 may appear directly before a quantifier
 - _n_ is a positive integer
 - _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
-- if '←' : '←' should be defined, and should be a blue/logical/red entity  
-- if '→' : '→' should be defined, and should be a blue/logical/red entity  
-- if _'pair'_ : both '←' and '→' should be defined and be blue/logical/red entities
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- Lists [1] and [2] may not intersect
 
 If list [1] is not given:
 
-This filter will limit the assignments to the entity on its left ('←') / to the entity on its right ('→') or to the combination of both  - to the _n_ assignments / assignment combinations with the smallest / largest number of relationships / paths on its top. 
+This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
 If list [1] is given:
 
-For each assignment combination to entities [1] - This filter will limit the assignments to the entity on its left ('←') / to the entity on its right ('→') or to the combination of both  - to the _n_ assignments / assignment combinations with the smallest / largest number of relationships / paths on its top. 
+For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
