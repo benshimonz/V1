@@ -1338,7 +1338,7 @@ _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the lar
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
 
-_**Q231:** Any person and the 3 dragons whose dragon froze - that froze dragons the largest number of times_
+_**Q231:** Any person and the 3 dragons (D) that was frozen by dragons that where frozen the largest number of times by his dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q231.png)
 
