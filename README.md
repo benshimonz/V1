@@ -1248,11 +1248,10 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
-- M1 appears below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- M1 appears below a relationship / path / query-start. A relationship / path may be wrapped by an '↛' or an 'L'
 - _n_ is a positive integer
-- M1 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
-- if '→' : '→' should be defined, and should be a blue/logical/red entity  
-- if _et1_ : _et1_ is a a blue/logical/red entity right of the '→' entity
+- M1 may appear directly before a quantifier
+- <font color="green">_{et, et, ...}_</font> is a a blue/logical/red entity right of the '→' entity
 - _et2_ is an entity tag of a blue/logical/red entity defined right of the '→' / _et1_ entity
 - Except for '&' quantifer - M1 filter cannot start a quantifier's branch
 
@@ -1260,6 +1259,22 @@ For each assignment to the entity on its left (←), this filter will limit the 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
+
+_**Q67:** The 3 people with the largest number of parents_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
+
+_**Q68:** The 2 dragons that were frozen by the largest number of dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
+
+_**Q69:** The 2 things that own the largest number of things_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
+
+_**Q70:** The 5 people who the number of people within graph distance ≤ 4 from them - is the smallest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
 _**Q196:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze that froze the largest number of dragons_
 
@@ -1278,32 +1293,6 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
 
 ('→' is the entity directly right of the R-combiner (in this example - C))
-
-## Prefix Min/Max Filter #1 (PRM1)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM1.png)
-
-- _n_ is a positive integer
-- _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator
-- Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
-
-this filter will limit the the assignments to the '→' entity - to the _n_ assignments with the smallest / largest number of assignments to _et_. 
-
-_**Q67:** The 3 people with the largest number of parents_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q067.png)
-
-_**Q68:** The 2 dragons that were frozen by the largest number of dragons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q068.png)
-
-_**Q69:** The 2 things that own the largest number of things_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q069.png)
-
-_**Q70:** The 5 people who the number of people within graph distance ≤ 4 from them - is the smallest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q070.png)
 
 ## Min/Max Filter #2 (LRM2)
 
@@ -1873,7 +1862,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2046,7 +2035,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, PRM1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
