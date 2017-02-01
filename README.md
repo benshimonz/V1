@@ -1255,6 +1255,7 @@ todo
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
 - _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the filter
 - Lists [1], [2] and [3] may not intersect
+- M1 appear on left of every entity mentioned in lists [1], [2] and [3]
 - Except for '&' quantifer - M1 filter cannot start a quantifier's branch
 
 If list [1] is not given:
@@ -1302,9 +1303,9 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ('→' is the entity directly right of the R-combiner (in this example - C))
 
-## Min/Max Filter #2 (LRM2)
+## Min/Max Filter #2 (M2)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
 - LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - _n_ is a positive integer
@@ -1328,14 +1329,8 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
-## Prefix Min/Max Filter #2 (PRM2)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM2.png)
 
-- _n_ is a positive integer
-- Directly right of the filter: a blue/logical/red entity (neither yellow/aggregated entity, nor quantifier)
-
-This filter will limit the assignments to the '→' entity - to the _n_ assignments with the smallest / largest number of relationships / paths on its right. 
 
 _**Q171:** The 2 dragons that were frozen the largest number of times_
 
