@@ -1248,21 +1248,22 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
-- M1 appears below a relationship / path / query-start. A relationship / path may be wrapped by an '↛' or an 'L'
-- _n_ is a positive integer
+- M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
 - M1 may appear directly before a quantifier
+- _n_ is a positive integer
 - _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
 - _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the filter
+- Lists [1], [2] and [3] may not intersect
 - Except for '&' quantifer - M1 filter cannot start a quantifier's branch
 
-If [1] is not given:
+If list [1] is not given:
 
-This filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations that minimizes / maximizes the number of assignment combinations of entities [3]. 
+This filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3]. 
 
-If [1] is not given:
+If list [1] is given:
 
-For each assignment combination to entities [1], this filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations that minimizes / maximizes the number of assignment combinations of entities [3]. 
+For each assignment combination to entities [1] - this filter will limit the assignments combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3]. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
