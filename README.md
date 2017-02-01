@@ -1383,6 +1383,10 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
+_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
+
 ## Min/Max Filter #4 (LRM4)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
@@ -1473,10 +1477,6 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
-
-_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
 ## Min/Max Filter #8 (DDM3)
 
