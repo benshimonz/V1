@@ -1334,6 +1334,14 @@ _**Q172:** The 5 people with the smallest number of paths with length ≤ 4 to s
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q172.png)
 
+_**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
+
+_**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
+
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q195.png)
@@ -1347,14 +1355,6 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
 
 (counting the number of cocrete relationships directly right of the quantifier)
-
-_**Q77:** The 5 dragon pairs (A, B) with the largest number of times B froze A_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q077.png)
-
-_**Q80:** The 3 person pairs with the largest number of paths with length ≤ 4 between them_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q080.png)
 
 ## Min/Max Filter #3 (M3)
 
@@ -1378,6 +1378,10 @@ If list [1] is given:
 
 For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.
 
+_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
+
 _**Q182:** Any dragon owned by Brandon Stark, and the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q182.png)
@@ -1389,10 +1393,6 @@ _**Q233:** Any dragon A than froze dragons Bs that froze dragons Cs, and the 3 C
 _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze for the longest cumulative period_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
-
-_**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q090.png)
 
 ## Min/Max Filter #4 (LRM4)
 
@@ -1408,31 +1408,6 @@ _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative p
 - Except for '&' quantifer - LRM4 filter cannot start a quantifier's branch
 
 For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the minimal / maximal {pt}/{at}/{st}. 
-
-_**Q118:** Any person and his 3 eldest offsprings_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
-
-_**Q119:** Any person and his 3 youngest sons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
-
-_**Q230:** Any person and the 3 people he (knows or knows an ofspring of) - that owns the heaviest horses_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q230.png)
-
-_**Q232:** Any person and the 3 heaviest horse owned by people he (knows or knows an ofspring of)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
-
-## Prefix Min/Max Filter #4 (PRM4)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PRM4.png)
-
-- PRM4 may not appear directly before a quantifier
-- _n_ is a positive integer
-- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' entity
-- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' entity
 
 _**Q130:** The 4 eldest people_
 
@@ -1469,6 +1444,22 @@ _**Q183:** The 3 dragons that dragons owned by Brandon Stark froze for the longe
 _**Q168:** The 3 people who the number of types of things each of them owns - is the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
+
+_**Q118:** Any person and his 3 eldest offsprings_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
+
+_**Q119:** Any person and his 3 youngest sons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q119.png)
+
+_**Q230:** Any person and the 3 people he (knows or knows an ofspring of) - that owns the heaviest horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q230.png)
+
+_**Q232:** Any person and the 3 heaviest horse owned by people he (knows or knows an ofspring of)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
 ## Min/Max Filter #7 (LDM3)
 
