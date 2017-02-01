@@ -1307,13 +1307,21 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
-- LRM2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- M2 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
+- M2 may appear directly before a quantifier
 - _n_ is a positive integer
-- LRM2 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
+- _per {et, et, ...}_ - a optional list [1] of blue/logical/red entities right of the filter
+- if '←' : '←' should be defined, and should be a blue/logical/red entity  
 - if '→' : '→' should be defined, and should be a blue/logical/red entity  
-- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
+- if _'pair'_ : both '←' and '→' should be defined and be a blue/logical/red entity
 
-For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the smallest / largest number of relationships / paths on its top. 
+If list [1] is not given:
+
+This filter will limit the assignments to the entity on its left ('←') / to the entity on its right ('→') or to the combination of both  - to the _n_ assignments / assignment combinations with the smallest / largest number of relationships / paths on its top. 
+
+If list [1] is given:
+
+For each assignment combination to entities [1] - This filter will limit the assignments to the entity on its left ('←') / to the entity on its right ('→') or to the combination of both  - to the _n_ assignments / assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
 _**Q195:** Any dragon owned by Brandon Stark, and the 3 dragons it froze the largest number of times_
 
@@ -1865,7 +1873,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, LRMA3, LRM4 and PRM4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2038,7 +2046,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, LRM2, PRM2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, LRMA3, LRM4 and PRM4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
