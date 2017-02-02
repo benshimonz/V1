@@ -1398,7 +1398,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
-- M4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
 - M4 may appear directly before a quantifier
 - _n_ is a positive integer
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
