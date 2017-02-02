@@ -1524,7 +1524,7 @@ _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-_**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
+_**Q160:** For any dragon pair (A, B) where A froze B at least once: The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
