@@ -1244,7 +1244,7 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 todo
 
-## Min/Max Filter #1 (M1)
+## M1 Min/Max Filter
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
@@ -1303,7 +1303,7 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ('→' is the entity directly right of the R-combiner (in this example - C))
 
-## Min/Max Filter #2 (M2)
+## M2 Min/Max Filter
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
@@ -1356,7 +1356,7 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
-## Min/Max Filter #3 (M3)
+## M3 Min/Max Filter
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
@@ -1394,7 +1394,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
-## Min/Max Filter #4 (M4)
+## M4 Min/Max Filter
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
@@ -1468,16 +1468,15 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
-## Min/Max Filter #7 (M5)
+## M5 Min/Max Filter
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
-- LDM3 appears below a relationship. The relationship may not be wrapped
+- M5 appears below a relationship. The relationship may not be wrapped
 - _n_ is a positive integer
-- LDM3 may not appear directly before a quantifier
-- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
+- _relprop_ is an ordinal property of the relationship
+
+M5 limits the assignment to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_. 
 
 _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
