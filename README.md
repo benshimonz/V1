@@ -890,6 +890,12 @@ todo: aggregate tag, aggregate tag's scope
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
+- For each assignment to the '←' entity: _at_ is an optional attribute tag - equal to the number of '→' / _et_ entities that satisfy the pattern. _at_ is set as a calculated property of the '←' assignment.
+- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+L1C filters assignments to the '←' entity - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.
+
 _**Q59:** Any person having more than 2 parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q059.png)
@@ -1064,6 +1070,12 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 - L2C may appear before a quantifier
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
+- For each assignment to the '←' entity: _at_ is an optional attribute tag - equal to the number of relationships / paths that satisfy the pattern. _at_ is set as a calculated property of the '←' assignment.
+- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+L2C filters assignments to the '←' entity - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.
+
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
@@ -1134,6 +1146,12 @@ _**Q174:** Any dragon that either (i) froze at least one dragon and fired at at 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
+- For each assignment to the '←' entity: _at_ is an optional attribute tag - equal to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _at_ is set as a calculated property of the '←' assignment.
+- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+LA3C filters assignments to the '←' entity - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.
+
 _**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
@@ -1155,6 +1173,12 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 - Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity, or a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+
+- For each assignment to the '←' entity: _at_ is an optional attribute tag - equal to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _at_ is set as a calculated property of the '←' assignment.
+- An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+LA4C filters assignments to the '←' entity - to only those for which the value of  _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
@@ -1198,6 +1222,13 @@ _**Q167:** Any person who owns things of at least 3 types_
 - D2C may not appear directly before a quantifier
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red)
 
+- For each assignment combination to the pair of '←' and '→' entities: _at_ is an optional attribute tag - equal to the number of relationships / paths that satisfy the pattern. _at_ is set as a calculated property.
+- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+D2C filters assignments to the pair of '←' and '→' entities - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.
+
+
 _**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
@@ -1215,6 +1246,12 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
+
+- For each assignment combination to the pair of '←' and '→' entities: _at_ is an optional attribute tag - equal to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _at_ is set as a calculated property.
+- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
+- A condition, an attribute tag, or both - must be presented
+
+DA3C filters assignments to the pair of '←' and '→' entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.
 
 _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
 
