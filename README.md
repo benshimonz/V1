@@ -1298,11 +1298,13 @@ _**Q234:** Any person and the 3 dragons whose dragon froze - that froze the larg
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q234.png)
 
+_**Q236:** Any person and the 3 dragons whose dragon froze - that were frozen by the largest number of his dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q236.png)
+
 _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
-
-('→' is the entity directly right of the R-combiner (in this example - C))
 
 ## M2 Min/Max Filter
 
