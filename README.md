@@ -1468,9 +1468,9 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
-## Min/Max Filter #7 (LDM3)
+## Min/Max Filter #7 (M5)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LDM3.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
 - LDM3 appears below a relationship. The relationship may not be wrapped
 - _n_ is a positive integer
@@ -1482,17 +1482,6 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 _**Q161:** For any dragon: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
-
-## Min/Max Filter #8 (DDM3)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DDM3.png)
-
-- DDM3 appears below a relationship. The relationship may not be wrapped
-- _n_ is a positive integer
-- DDM3 may not appear directly before a quantifier
-- Directly right of the relationship : a yellow/aggregated/blue/logical/red entity
-- _relprop_ is an ordinal property of the relationship
-- DDM3 cannot start a quantifier's branch
 
 _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
