@@ -1294,11 +1294,11 @@ _**Q197:** Any person and his 3 dragons that the dragons they froze - froze the 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q197.png)
 
-_**Q234:** Any person and the 3 dragons whose dragon froze - that froze the largest number of dragons_
+_**Q234:** Any person and the 3 dragons whose dragons froze - that froze the largest number of dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q234.png)
 
-_**Q236:** Any person and the 3 dragons whose dragon froze - that were frozen by the largest number of his dragons_
+_**Q236:** Any person and the 3 dragons whose dragons froze - that were frozen by the largest number of his dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q236.png)
 
