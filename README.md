@@ -1260,11 +1260,11 @@ todo
 
 If list [1] is not given:
 
-This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3]. 
+M1 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3]. 
 
 If list [1] is given:
 
-For each assignment combination to entities [1] - this filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3]. 
+For each assignment combination to entities [1] - M1 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3]. 
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1316,11 +1316,11 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 If list [1] is not given:
 
-This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
+M2 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
 If list [1] is given:
 
-For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
+For each assignment combination to entities [1] - M2 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top. 
 
 _**Q78:** The 4 dragons that froze Balerion the largest number of times_
 
@@ -1372,11 +1372,11 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 If list [1] is not given:
 
-This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top. 
+M3 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top. 
 
 If list [1] is given:
 
-For each assignment combination to entities [1] - This filter will limit the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.
+For each assignment combination to entities [1] - M3 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.
 
 _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
 
@@ -1398,16 +1398,23 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
-- LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
+- M4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
+- M4 may appear directly before a quantifier
 - _n_ is a positive integer
-- LRM4 may appear directly before a quantifier. If followed by an R-combiner - '→' is the entity directly right of the R-combiner. Otherwise - '→' is not defined
-- if '→' : '→' should be defined, and should be a blue/logical/red entity  
-- if _et_ : _et_ is a a blue/logical/red entity right of the '→' entity
-- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
-- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the '→' / _et_ entity
-- Except for '&' quantifer - LRM4 filter cannot start a quantifier's branch
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- Lists [1] and [2] may not intersect
+- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the filter
+- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the filter
+- Except for '&' quantifer - M4 filter cannot start a quantifier's branch
 
-For each assignment to the entity on its left (←), this filter will limit the assignments to the '→' / _et_ entity - to the _n_ assignments with the minimal / maximal {pt}/{at}/{st}. 
+If list [1] is not given:
+
+M4 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}. 
+
+If list [1] is given:
+
+For each assignment combination to entities [1] - M4 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.
 
 _**Q130:** The 4 eldest people_
 
