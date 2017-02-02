@@ -428,7 +428,7 @@ Note that the left component is _'horse'_ while the right component is _'owned b
 That includes:
 
 - Any horse that is not owned
-- Any horse that none of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - doesn't own a dragon
 
 _**Q23:** Any horse not owned by a person who doesn't own a dragon_
@@ -438,7 +438,7 @@ _**Q23:** Any horse not owned by a person who doesn't own a dragon_
 That includes:
 
 - Any horse that is not owned
-- Any horse that none of his owners is a person (e.g. a horse owned by a guild)
+- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
 - Any horse that each person who owns it - also owns a dragon
 
 _**Q25:** Any dragon (C) that wasn't fired at by Balerion, but was fired at by a dragon that Balerion fired at (two versions)_
