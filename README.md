@@ -1394,9 +1394,9 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
-## Min/Max Filter #4 (LRM4)
+## Min/Max Filter #4 (M4)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LRM4.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - LRM4 appears below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _n_ is a positive integer
@@ -1846,7 +1846,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, LRM4 and PRM4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, M4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2019,7 +2019,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, LRM4 and PRM4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, M4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
