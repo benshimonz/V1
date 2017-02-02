@@ -1257,6 +1257,7 @@ todo
 - Lists [1], [2] and [3] may not intersect
 - M1 appear on left of every entity mentioned in lists [1], [2] and [3]
 - Except for '&' quantifer - M1 filter cannot start a quantifier's branch
+- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1313,6 +1314,7 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
 - Lists [1] and [2] may not intersect
+- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1369,6 +1371,7 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 - Except for '&' quantifer - M3 filter cannot start a quantifier's branch
+- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1407,6 +1410,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the filter
 - {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the filter
 - Except for '&' quantifer - M4 filter cannot start a quantifier's branch
+- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
 
 If list [1] is not given:
 
