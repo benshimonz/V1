@@ -1277,24 +1277,24 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
-## Min/Max Filters
+## Min/Max Aggregations
 
 todo
 
-## M1 Min/Max Filter
+## M1 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
 - M1 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
-- _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
+- _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the aggregation
 - Lists [1], [2] and [3] may not intersect
 - M1 appear on left of every entity mentioned in lists [1], [2] and [3]
-- Except for '&' quantifer - M1 filter cannot start a quantifier's branch
-- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
+- Except for '&' quantifer - M1 aggregation cannot start a quantifier's branch
+- For the entity directly left of the aggregation: '←' is used instead of _et_. Similarly, for the entity directly right of the aggregation: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1343,17 +1343,17 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
 
-## M2 Min/Max Filter
+## M2 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
 - M2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - M2 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
-- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
+- For the entity directly left of the aggregation: '←' is used instead of _et_. Similarly, for the entity directly right of the aggregation: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1397,20 +1397,20 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 (counting the number of cocrete relationships directly right of the quantifier)
 
-## M3 Min/Max Filter
+## M3 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
 - M3 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
-- Except for '&' quantifer - M3 filter cannot start a quantifier's branch
-- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
+- Except for '&' quantifer - M3 aggregation cannot start a quantifier's branch
+- For the entity directly left of the aggregation: '←' is used instead of _et_. Similarly, for the entity directly right of the aggregation: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1436,20 +1436,20 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q201.png)
 
-## M4 Min/Max Filter
+## M4 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
 - M4 may appear directly before a quantifier
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the filter
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the filter
+- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
+- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
-- {pt} is an ordinal property defined on top of the filter (in a previous filtering step) or right of the filter
-- {at}/{st} is defined on top of the filter (in a previous filtering step) or right of the filter
-- Except for '&' quantifer - M4 filter cannot start a quantifier's branch
-- For the entity directly left of the filter: '←' is used instead of _et_. Similarly, for the entity directly right of the filter: '→' is used instead of _et_
+- {pt} is an ordinal property defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {at}/{st} is defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- Except for '&' quantifer - M4 aggregation cannot start a quantifier's branch
+- For the entity directly left of the aggregation: '←' is used instead of _et_. Similarly, for the entity directly right of the aggregation: '→' is used instead of _et_
 
 If list [1] is not given:
 
@@ -1511,7 +1511,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
-## M5 Min/Max Filter
+## M5 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
@@ -1529,7 +1529,7 @@ _**Q160:** For any dragon pair (A, B): The 4 longest times A froze B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
-## Aggregation/Filter Chains
+## Aggregation Chains
 
 todo
 
@@ -1623,7 +1623,7 @@ _**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
-## Aggregation/Filter Sequences
+## Aggregation Sequences
 
 todo
 
