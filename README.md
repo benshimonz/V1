@@ -1396,7 +1396,7 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
 
-_**Q237:** For any pair of (Dragons owner A, Dragon that was frozen by A's dragons C) - the 3 dragons owned by A that froze C the largest number of times_
+_**Q237:** For any pair of (A - a dragons owner, and C - a dragon that was frozen by A's dragons) - the 3 dragons owned by A that froze C the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q237.png)
 
