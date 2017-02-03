@@ -1344,6 +1344,8 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A's 3 dragon that froze the largest number of D's dragons_
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q238.png)
+
 ## M2 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
@@ -1401,8 +1403,6 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 _**Q237:** For any pair of (A - a dragons owner, and C - a dragon that was frozen by A's dragons) - the 3 dragons owned by A that froze C the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q237.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q238.png)
 
 _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - the 3 pairs of (A's dragon, D's dragon) where A's dragon froze D's dragon the largest number of times_
 
