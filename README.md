@@ -1174,7 +1174,7 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 - LA4C may appear before a quantifier followed by an R-combiner
 - Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity, or a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
 - For each assignment to the '←' entity: _at_ is an optional attribute tag - equal to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _at_ is set as a calculated property of the '←' assignment.
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
@@ -1445,8 +1445,8 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
-- {pt} is an ordinal property defined on top of the aggregation (in a previous filtering step) or right of the aggregation
-- {at}/{st} is defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifer - M4 aggregation cannot start a quantifier's branch
 - For the entity directly left of the aggregation: '←' is used instead of _et_. Similarly, for the entity directly right of the aggregation: '→' is used instead of _et_
 
@@ -1752,7 +1752,7 @@ todo
 
 - LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 - If not split by _relprop_ : LSM1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - '→' / _et_ is a blue/logical/red entity
 
@@ -1774,7 +1774,7 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 
 - LSM2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step) or right of relationship / path
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
 - If not split by _relprop_ : LSM2 may appear before a quantifier
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
@@ -1794,7 +1794,7 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
 
 - LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step) or right of the relationship
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of the relationship
 - LSMA3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
@@ -1811,7 +1811,7 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 - LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - If not split by _relprop_ : LSM4 may appear before a quantifier followed by an R-combiner
-- {pt}/{at}/{st}/< ett > is defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
 todo: LSM4 before a quantifier zzz
 
