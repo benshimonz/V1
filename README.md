@@ -874,11 +874,11 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
-## Aggregate Conditions and Aggregate Tags
+## Aggregate Conditions and Aggregation Tags
 
 todo: aggregate conditions
 
-todo: aggregate tag, aggregate tag's scope
+todo: aggregation tag, aggregation tag's scope
 
 
 ## Aggregate Conditions #1 (L1C)
