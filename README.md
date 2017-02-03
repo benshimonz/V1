@@ -892,7 +892,7 @@ todo: aggregate tag, aggregate tag's scope
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
-- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the number of '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of the '←' assignment.
+- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1072,7 +1072,7 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 - L2C may appear before a quantifier
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
-- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of the '←' assignment.
+- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the number of concrete relationships / paths that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1148,7 +1148,7 @@ _**Q174:** Any dragon that either (i) froze at least one dragon and fired at at 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
-- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a calculated property of the '←' assignment.
+- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1176,7 +1176,7 @@ _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
-- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a calculated property of the '←' assignment.
+- For each assignment to the '←' entity: _{at}_ is an optional aggregation tag - equal to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
