@@ -1404,7 +1404,7 @@ _**Q237:** For any pair of (A - a dragons owner, and C - a dragon that was froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q237.png)
 
-_**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - the 3 pairs of (A's dragon, D's dragon) where A's dragon froze D's dragon the largest number of times_
+_**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - the 3 pairs of (A's dragon B, D's dragon C) where B froze C the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q239.png)
 
