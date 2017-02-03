@@ -1340,8 +1340,6 @@ _**Q236:** Any person and the 3 dragons whose dragons froze - that were frozen b
 
 _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze or fired at - that froze the largest number of dragons_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
-
 ## M2 Min/Max Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
@@ -1395,6 +1393,12 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
 
 (counting the number of cocrete relationships directly right of the quantifier)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
+
+_**Q237:** For any pair of (Dragons owner A, Dragon that was frozen by A's dragons C) - the 3 dragons owned by A that froze C the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q237.png)
 
 ## M3 Min/Max Aggregation
 
