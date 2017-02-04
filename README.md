@@ -1456,7 +1456,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
-- M4 appear directly right of the leftmost member of lists [1], [2] and [3]
+- M4 appear directly right of the leftmost member of lists [1] and [2]
 - M4 may appear directly left of a quantifier
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
