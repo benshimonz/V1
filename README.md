@@ -885,16 +885,20 @@ todo: aggregation tag, aggregation tag's scope
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
-**L1 filters assignments to the '←' entity - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
-
 - L1 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- L1 may appear before a quantifier
+- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
+- L1 appear directly right of the leftmost member of _S1_
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
-- For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
-- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
+- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
+
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+
+**L1 filters assignments to _S1_ entities - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -1186,17 +1190,20 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
-**L4 filters assignments to the '←' entity - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
-
 - L4 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L4 may appear before a quantifier followed by an R-combiner
-- Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity, or a quantifier
+- L4 may appear before a quantifier
+- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
+- L1 appear directly right of the leftmost member of _S1_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
 
-- For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
-- An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- For each assignment to the _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
+- An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
+
+**L4 filters assignments to _S1_ entities - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
+
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
