@@ -1541,6 +1541,10 @@ _**Q160:** For any dragon pair (A, B) where A froze B at least once: The 4 longe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
+_**Q240:** For any pair of people (A,D) where A's dragons froze D's dragons - the 3 longest freezes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q240.png)
+
 ## Aggregation Chains
 
 todo
