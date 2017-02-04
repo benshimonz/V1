@@ -1535,6 +1535,10 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 **M5 limits the assignment to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
 
+_**Q241:** The 4 longest freezes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q241.png)
+
 _**Q161:** For any dragon that froze at least one dragon at least once: the 4 longest times it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
