@@ -881,14 +881,14 @@ todo: aggregate conditions
 todo: aggregation tag, aggregation tag's scope
 
 
-## Aggregate Conditions #1 (L1C)
+## L1 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1C.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
-**L1C filters assignments to the '←' entity - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
+**L1 filters assignments to the '←' entity - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
 
-- L1C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L1C may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- L1 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
+- L1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
 - If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
 
@@ -1182,14 +1182,14 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
-## Aggregate Conditions #4 (LA4C)
+## L4 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
-**LA4C filters assignments to the '←' entity - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
+**L4 filters assignments to the '←' entity - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
 
-- LA4C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- LA4C may appear before a quantifier followed by an R-combiner
+- L4 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
+- L4 may appear before a quantifier followed by an R-combiner
 - Directly right of the relationship / path : a yellow/aggregated/blue/logical/red entity, or a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
@@ -1888,7 +1888,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, M4) can't be an aggregate entity)
+* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1, M1, M2, M3, M4) can't be an aggregate entity)
 
 Here are some examples:
 
@@ -2061,7 +2061,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1C, M1, M2, M3, M4) can't be an aggregate entity).
+**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1, M1, M2, M3, M4) can't be an aggregate entity).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
