@@ -1062,19 +1062,28 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
-## Aggregate Conditions #2 (L2C)
+## L2 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2C.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
-**L2C filters assignments to the '←' entity - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
+**L2 filters assignments to the '←' entity - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
 
-- L2C appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
-- L2C may appear before a quantifier
+**D2C filters assignments to the pair of '←' and '→' entities - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
+
+- L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
+- L2 may appear before a quantifier
+- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
 - For each assignment to the '←' entity: _{at}_ is an optional **aggregation** tag - equals to the number of concrete relationships / paths that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
+
+- For each assignment combination to the pair of '←' and '→' entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
+- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
+
+
+
 
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
@@ -1136,17 +1145,21 @@ _**Q174:** Any dragon that either (i) froze at least one dragon and fired at at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
+_**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
+
+_**Q76:** Any dragon that froze Balerion between 8 and 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
+
 ## L3 Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
-
-**L3 filters assignments to the '←' entity - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
-
-**DA3C filters assignments to the pair of '←' and '→' entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - L3 may not appear directly before a quantifier
+- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
@@ -1154,6 +1167,8 @@ _**Q174:** Any dragon that either (i) froze at least one dragon and fired at at 
 - For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
+
+**L3 filters assignment combinations to L1 entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
 
 _**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
@@ -1221,28 +1236,6 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
-## Aggregate Conditions #5 (D2C)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-D2C.png)
-
-**D2C filters assignments to the pair of '←' and '→' entities - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
-
-- D2C appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
-- D2C may not appear directly before a quantifier
-- Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red)
-
-- For each assignment combination to the pair of '←' and '→' entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
-- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
-
-_**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q075.png)
-
-_**Q76:** Any dragon that froze Balerion between 8 and 10 times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
-
 ## Aggregate Conditions both before and after a Quantifier
 
 todo
@@ -1272,23 +1265,23 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
+- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
-- _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the aggregation
-- Lists [1], [2] and [3] may not intersect
-- M1 appear directly right of the leftmost member of lists [1], [2] and [3]
+- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
+- _with min/max {et, et, ...}_ - a set, _S3_, of blue/logical/red entities
+- _S1_, _S2_ and _S3_ may not intersect
+- M1 appear directly right of the leftmost member of _S1_, _S2_ and _S3_
 - M1 may appear directly left of a quantifier
 - Except for '&' quantifer - M1 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
-If list [1] is not given:
+If _S1_ is not given:
 
-**M1 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities [3].**
+**M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities _S3_.**
 
-If list [1] is given:
+If _S1_ is given:
 
-**For each assignment combination to entities [1] - M1 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities [3].**
+**For each assignment combination to entities _S1_ - M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities _S3_.**
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1339,19 +1332,19 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 
 - M2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - M2 may appear directly before a quantifier
+- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
-- Lists [1] and [2] may not intersect
+- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
+- _S1_ and _S2_ may not intersect
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
-If list [1] is not given:
+If _S1_ is not given:
 
-**M2 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
+**M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
 
-If list [1] is given:
+If _S1_ is given:
 
-**For each assignment combination to entities [1] - M2 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
+**For each assignment combination to entities _S1_ - M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
 
 _**Q78:** The 4 dragons that froze Balerion the largest number of times_
 
@@ -1401,22 +1394,22 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
 - M3 may appear directly before a quantifier
+- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
-- Lists [1] and [2] may not intersect
+- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
+- _S1_ and _S2_ may not intersect
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 - Except for '&' quantifer - M3 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
-If list [1] is not given:
+If _S1_ is not given:
 
-**M3 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.**
+**M3 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.**
 
-If list [1] is given:
+If _S1_ is given:
 
-**For each assignment combination to entities [1] - M3 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.**
+**For each assignment combination to entities _S1_ - M3 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal value of _aggop(relprop)_ of the assignments to the relationship on its top.**
 
 _**Q90:** The 4 dragon pairs (A, B) where A froze B for the longest cumulative period_
 
@@ -1439,24 +1432,24 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
+- _per {et, et, ...}_ - an optional set _S1_ of blue/logical/red entities
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
-- _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
-- Lists [1] and [2] may not intersect
-- M4 appear directly right of the leftmost member of lists [1] and [2]
+- _n {et, et, ...}_ - a set _S2_ of blue/logical/red entities
+- _S1_ and _S2_ may not intersect
+- M4 appear directly right of the leftmost member of _S1_ and _S2_
 - M4 may appear directly left of a quantifier
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifer - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
-If list [1] is not given:
+If _S1_ is not given:
 
-**M4 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.**
+**M4 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.**
 
-If list [1] is given:
+If _S1_ is given:
 
-**For each assignment combination to entities [1] - M4 limits the assignment combinations to entities [2] - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.**
+**For each assignment combination to entities _S1_ - M4 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.**
 
 _**Q130:** The 4 eldest people_
 
@@ -1515,12 +1508,18 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
 - M5 appears below a relationship. The relationship may not be wrapped
+- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _per {et, et, ...}_ - an optional list of blue/logical/red entities right of the aggregation
 - _relprop_ is an ordinal property of the relationship
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
-**M5 limits the assignment to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
+If _S1_ is not given:
+
+**M5 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
+
+If _S1_ is given:
+
+**For each assignment combination to entities _S1_ - M5 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
 
 _**Q241:** The 4 longest freezes_
 
