@@ -1293,7 +1293,7 @@ todo
 - Lists [1], [2] and [3] may not intersect
 - M1 appear on left of every entity mentioned in lists [1], [2] and [3]
 - Except for '&' quantifer - M1 aggregation cannot start a quantifier's branch
-- The visual notation for the entity directly right of the aggregation is '→' instead of '_et_'
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 If list [1] is not given:
 
