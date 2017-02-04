@@ -1075,6 +1075,8 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+
 **L2 filters assignment combinations to _S1_ entities - to only those for which number of relationships / paths that satisfy the pattern - satisfy the condition.**
 
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
@@ -1159,6 +1161,8 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
+
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 **L3 filters assignment combinations to _S1_ entities - to only those for which the value of _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
 
