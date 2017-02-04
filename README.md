@@ -1529,7 +1529,9 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 - M5 appears below a relationship. The relationship may not be wrapped
 - _n_ is a positive integer
+- _per {et, et, ...}_ - an optional list of blue/logical/red entities right of the aggregation
 - _relprop_ is an ordinal property of the relationship
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 **M5 limits the assignment to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
 
