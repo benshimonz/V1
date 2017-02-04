@@ -1136,19 +1136,22 @@ _**Q174:** Any dragon that either (i) froze at least one dragon and fired at at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
 
-## Aggregate Conditions #3 (LA3C)
+## L3 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA3C.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
 
-**LA3C filters assignments to the '←' entity - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
+**L3 filters assignments to the '←' entity - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
 
-- LA3C appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
-- LA3C may not appear directly before a quantifier
+**DA3C filters assignments to the pair of '←' and '→' entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
+
+- L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
+- L3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
-- For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
+- For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1163,6 +1166,10 @@ _**Q88:** Any dragon pair (A,B) where A froze B at least once, but the cumulativ
 _**Q89:** Any dragon that freezes dragons for more than 3 different durations_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q089.png)
+
+_**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
 ## Aggregate Conditions #4 (LA4C)
 
@@ -1235,26 +1242,6 @@ _**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
 _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
-
-## Aggregate Conditions #6 (DA3C)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-DA3C.png)
-
-**DA3C filters assignments to the pair of '←' and '→' entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
-
-- DA3C appears below a relationship. The relationship / path may be wrapped by an 'L' or an 'O'
-- DA3C may not appear directly before a quantifier
-- Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-
-- For each assignment combination to the pair of '←' and '→' entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a calculated property.
-- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
-
-_**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration greater than 100 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q086.png)
 
 ## Aggregate Conditions both before and after a Quantifier
 
@@ -2087,10 +2074,10 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
 
-**R13:** A tag defined right of an LA3C aggregator - cannot be referenced in the aggregate condition.
+**R13:** A tag defined right of an L3 aggregator - cannot be referenced in the aggregate condition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg03.png)
 
-**R14:** A tag defined in an LA3C aggregator - cannot be referenced right of its definition.
+**R14:** A tag defined in an L3 aggregator - cannot be referenced right of its definition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
