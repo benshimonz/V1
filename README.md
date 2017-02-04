@@ -1285,13 +1285,13 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
-- M1 may appear directly before a quantifier
 - _n_ is a positive integer
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - _with min/max {et, et, ...}_ - a list [3] of blue/logical/red entities right of the aggregation
 - Lists [1], [2] and [3] may not intersect
-- M1 appear on left of every entity mentioned in lists [1], [2] and [3]
+- M1 appear directly right of the leftmost member of lists [1], [2] and [3]
+- M1 may appear directly left of a quantifier
 - Except for '&' quantifer - M1 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
@@ -1452,11 +1452,12 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
-- M4 may appear directly before a quantifier
 - _n_ is a positive integer
 - _per {et, et, ...}_ - an optional list [1] of blue/logical/red entities right of the aggregation
 - _n {et, et, ...}_ - a list [2] of blue/logical/red entities right of the aggregation
 - Lists [1] and [2] may not intersect
+- M4 appear directly right of the leftmost member of lists [1], [2] and [3]
+- M4 may appear directly left of a quantifier
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifer - M4 aggregation cannot start a quantifier's branch
