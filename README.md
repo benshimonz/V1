@@ -516,7 +516,7 @@ An assignment _A_ matches the pattern _only if_:
 * **_≤ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
 * **_≠ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and any number but _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
 * **_n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of  _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
 
@@ -1066,24 +1066,16 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
-**L2 filters assignments to the '←' entity - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
-
-**D2C filters assignments to the pair of '←' and '→' entities - to only those for which the number of relationships / paths that satisfy the pattern - satisfy the condition.**
-
 - L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - L2 may appear before a quantifier
-- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
+- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
-- For each assignment to the '←' entity: _{at}_ is an optional **aggregation** tag - equals to the number of concrete relationships / paths that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
-- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
+- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-- For each assignment combination to the pair of '←' and '→' entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
-- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to the pair of '←' and '→' entities, expressed by an equation (e.g. '> 30')
-
-
-
+**L2 filters assignment combinations to _S1_ entities - to only those for which number of relationships / paths that satisfy the pattern - satisfy the condition.**
 
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
@@ -1164,11 +1156,11 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
-- For each assignment to the '←' entity: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
-- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment to the '←' entity, expressed by an equation (e.g. '> 30')
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
+- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-**L3 filters assignment combinations to L1 entities - to only those for which the value of  _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
+**L3 filters assignment combinations to _S1_ entities - to only those for which the value of _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
 
 _**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
@@ -1190,7 +1182,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LA4C.png)
 
-**LA4C filters assignments to the '←' entity - to only those for which the value of  _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
+**LA4C filters assignments to the '←' entity - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
 
 - LA4C appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - LA4C may appear before a quantifier followed by an R-combiner
