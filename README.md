@@ -1195,7 +1195,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
 - L1 appear directly right of the leftmost member of _S1_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
 - For each assignment to the _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by an equation (e.g. '> 30')
@@ -1764,7 +1764,7 @@ todo
 
 - LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregator (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the LSM1 (in a previous filtering step) or right of the '→' entity
 - If not split by _relprop_ : LSM1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - '→' / _et_ is a blue/logical/red entity
 
