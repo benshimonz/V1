@@ -887,10 +887,10 @@ todo: aggregation tag, aggregation tag's scope
 
 - L1 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - L1 may appear before a quantifier
-- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - L1 appear directly right of the leftmost member of _S1_
-- If →: directly right of the aggregator / R-combiner: a blue/logical/red entity (not a yellow/aggregated entity)
-- If _et_: _et_ is an entity tag of a blue/logical/red entity defined right of (but not directly right of) the aggregator / right of the R-combiner
+- '→' is one or more (when following a quantifier) blue/logical/red entities
+- _et_ is an entity tag of a blue/logical/red entity defined right of the aggregator
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
@@ -1071,8 +1071,7 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
 - L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
-- L2 may appear before a quantifier
-- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
@@ -1160,9 +1159,8 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
-- L3 may not appear directly before a quantifier
-- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
-- Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- Right of the relationship : an entity (yellow/aggregated/blue/logical/red). L3 may not appear directly before a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
@@ -1196,7 +1194,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 - L4 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - L4 may appear before a quantifier
-- _per {et, et, ...}_ - a set, _S1_, of blue/logical/red entities
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - L1 appear directly right of the leftmost member of _S1_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
@@ -1274,8 +1272,8 @@ todo
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
 - _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
-- _with min/max {et, et, ...}_ - a set, _S3_, of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
+- _with min/max {et, et, ...}_ - a set, _S3_, of entity tags of blue/logical/red entities
 - _S1_, _S2_ and _S3_ may not intersect
 - M1 appear directly right of the leftmost member of _S1_, _S2_ and _S3_
 - M1 may appear directly left of a quantifier
@@ -1341,7 +1339,7 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 - M2 may appear directly before a quantifier
 - _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
@@ -1403,7 +1401,7 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - M3 may appear directly before a quantifier
 - _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
