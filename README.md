@@ -1151,9 +1151,9 @@ _**Q76:** Any dragon that froze Balerion between 8 and 10 times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q076.png)
 
-_**Q241:** Any pair of people (A, D) where at least 5 times any of A's dragons froze any of D's dragons_
+_**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons froze any of D's dragons_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q241.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q242.png)
 
 ## L3 Aggregation
 
