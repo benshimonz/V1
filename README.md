@@ -44,7 +44,7 @@ A **property graph's schema** is defined by
 * A set of relationship types. For each relationship type:
   * A name
   * A set of properties. For each property: name (key) and value type
-  * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) )
+  * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person, Horse); owns(Person, Dragon) )
 
 A **schema-based property graph** is a property graph which conforms to a given schema.
 
@@ -105,7 +105,7 @@ Pattern languages differs in the following aspects:
 
 ## Dragons of Ice and Fire
 
-The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dargons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificant creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which they can use to pose queries about their history and quickly get results. 
+The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dragons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificent creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which they can use to pose queries about their history and quickly get results. 
 
 The engineers started their work by 
 
@@ -170,9 +170,9 @@ A pair of entities can be connected with:
 
 Each relationship has a label above the arrow/line that denotes the relationship's type.
 
-The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person,Horse); owns(Person,Dragon) ).
+The relationship type between two entities must be valid according to the schema. As said before - for each relationship type, the schema defines a set of pairs of entity types for which the relationship type holds (e.g. owns(Person, Horse); owns(Person, Dragon) ).
 
-For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments. Concrete entities are assigned to blue and red rectangles. Concrete relationships are assigned to black arrows and lines. An assigment to to pattern is a set of concrete entities and relationships that match the whole pattern. A answer to a V1 query is the union of all assignments.
+For every blue rectangle, red rectangle, black arrow, and black line - the query processor will look in the property graph for assignments. Concrete entities are assigned to blue and red rectangles. Concrete relationships are assigned to black arrows and lines. An assignment to the pattern is a set of concrete entities and relationships that match the whole pattern. A answer to a V1 query is the union of all assignments.
 
 Here are some basic patterns:
 
@@ -361,7 +361,7 @@ In certain cases, we need an assignment to match the pattern _only if_:
 
 * It matches a pattern composed only of the left component (there is an assignment to _a person whose first name is Brandon_) 
 * It has no superset that matches a pattern composed of the left component chained to the right component (There is no assignment to _a person whose first name is Brandon and own's a white horse)_
-* There is an assignment that matches a pattern composed only of the right component (there is _a whote horse_)
+* There is an assignment that matches a pattern composed only of the right component (there is _a white horse_)
 
 In such cases, the **no-connection language element (depicted with a pink '↛' box)** can be used. 
 
@@ -471,14 +471,14 @@ Here is a fourth way to represent Q26:
 
 In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_), V1 supports these 8 quantifiers:
 
-* **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
-* **None** (denoted '0') - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
-* **_n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
-* **_< n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
-* **_≤ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
-* **_≠ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
-* **_n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_∉ n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifer is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **Not all** (denoted by an '&' with stroke) - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of one or more branches.
+* **None** (denoted '0') - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from)  the start of all branches.
+* **_n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
+* **_< n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
+* **_≤ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
+* **_≠ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
+* **_n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 (_b_ denotes the number of branches)
 
@@ -551,7 +551,7 @@ An E-combiner combines two or more branches (not necessarily of the same quantif
 
 The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar used to save duplication when several branches terminates identically.
 
-The usage of an entity tag both before and after an E-combiner (to express identicality / nonidenticality constraints) subjects to tag rules (again - anything after the E-comniner is duplicated to each branch).
+The usage of an entity tag both before and after an E-combiner (to express identicality / nonidenticality constraints) subjects to tag rules (again - anything after the E-combiner is duplicated to each branch).
 
 The relationship / property types on an E-combiner's right side must match all the entity types on its left side. 
 
@@ -673,7 +673,7 @@ _**Q150:** Any person who owns a horse or a dragon. If he has a parent - the par
 
 Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Dragon); owns(Guild, Dragon) ). We need red entities to express patterns such as "_any dragon and its owners_", when the owner can be either a person or a guild.
  
- In it simplest form, a red rectangle represents an entity of any type.
+ In its simplest form, a red rectangle represents an entity of any type.
 
 _**Q36:** Any person who owns something_
 
@@ -1110,7 +1110,7 @@ _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-_**Q104:** Any person who owned white horses at least 10 times (same or different horsess)_
+_**Q104:** Any person who owned white horses at least 10 times (same or different horses)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q104.png)
 
@@ -1118,7 +1118,7 @@ _**Q105:** Any dragon A that was frozen exactly 2 times (cumulatively) by (drago
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
-_**Q127:** Any dragon that frozed more times dragons owned by Sarnorian subjects than dragons owned by Omberian subjects_
+_**Q127:** Any dragon that froze more times dragons owned by Sarnorian subjects than dragons owned by Omberian subjects_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
 
@@ -1126,7 +1126,7 @@ _**Q123:** Any dragon that either froze a dragon or was frozen by a dragon - at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q123.png)
 
-(counting the number of cocrete relationships directly right of the quantifier)
+(counting the number of concrete relationships directly right of the quantifier)
 
 _**Q124:** Any dragon that either (froze a dragon) or (fired a dragon that fired a dragon) - at least 10 times_
 
@@ -1277,7 +1277,7 @@ todo
 - _S1_, _S2_ and _S3_ may not intersect
 - M1 appear directly right of the leftmost member of _S1_, _S2_ and _S3_
 - M1 may appear directly left of a quantifier
-- Except for '&' quantifer - M1 aggregation cannot start a quantifier's branch
+- Except for '&' quantifier - M1 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 If _S1_ is not given:
@@ -1383,7 +1383,7 @@ _**Q228:** Any dragon owned by Brandon Stark that fired at at least 2 dragons, a
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q228.png)
 
-(counting the number of cocrete relationships directly right of the quantifier)
+(counting the number of concrete relationships directly right of the quantifier)
 
 _**Q237:** For any pair of (A - a dragons owner, and C - a dragon that was frozen by A's dragons) - the 3 dragons owned by A that froze C the largest number of times_
 
@@ -1405,7 +1405,7 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - _S1_ and _S2_ may not intersect
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
-- Except for '&' quantifer - M3 aggregation cannot start a quantifier's branch
+- Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 If _S1_ is not given:
@@ -1445,7 +1445,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - M4 may appear directly left of a quantifier
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
-- Except for '&' quantifer - M4 aggregation cannot start a quantifier's branch
+- Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 If _S1_ is not given:
@@ -1565,7 +1565,7 @@ _**Q94:** Any dragon that froze at least 3 dragons - each at least 5 times for m
 Filtering stages:
 
 - Pass only (freezes that are longer than 10 minutes)
-- Pass dragon pairs (A, B) where A freezd B at least 5 time for more than 10 minutes
+- Pass dragon pairs (A, B) where A froze B at least 5 time for more than 10 minutes
 - Pass only dragons A that froze for more than 10 minutes - at least 3 dragons
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
@@ -1620,11 +1620,11 @@ _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
-_**Q120:** Any person whose 3 eldest offsprings cumulative height is smaller than his own height_
+_**Q120:** Any person whose 3 eldest offspring cumulative height is smaller than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q202:** Any person whose 3 eldest offsprings average height is smaller than the average height of all his offsprings_
+_**Q202:** Any person whose 3 eldest offspring average height is smaller than the average height of all his offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
 
@@ -1660,11 +1660,11 @@ _**Q107:** Any **dragon** that (the number of dragons owned by 5 people each, th
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q107.png)
 
-_**Q169:** Any person that (each of his offsprings who owns at least 3 horses - owns horses of at least 3 colors)_
+_**Q169:** Any person that (each of his offspring who owns at least 3 horses - owns horses of at least 3 colors)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q169.png)
 
-_**Q129:** Any person that (each of his offsprings who owns at least one horse - owns a different number of horses)_
+_**Q129:** Any person that (each of his offspring who owns at least one horse - owns a different number of horses)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q129.png)
 
@@ -1911,7 +1911,7 @@ _**Q209:** Any dragon than froze at least 3 dragons owned by entities encapsulat
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some dragon froze 2 dragons owned by Stark, and 1 dragon owned by Bolton - it would be part of the answer. Again, 'Kings' will be aprt of the query result.
+If, for example, some dragon froze 2 dragons owned by Stark, and 1 dragon owned by Bolton - it would be part of the answer. Again, 'Kings' will be a part of the query result.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Black Things'_
 
@@ -1998,7 +1998,7 @@ Logical relationships in a query - appear as logical relationships in the query'
 
 Here are some definition examples:
 
-**LR1:** _sibling_ - a symmetrical relationship. Two people are siblings if they share a patrent
+**LR1:** _sibling_ - a symmetrical relationship. Two people are siblings if they share a parent
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR01.png)
 
@@ -2038,21 +2038,21 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-2.png)
 
-**R3:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannont be referenced in other branches.
+**R3:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
-**R4:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannont be referenced in other branches.
+**R4:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannot be referenced in other branches.
 
-**R5:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannont be referenced in other branches.
+**R5:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
 **R6:** Circular conditions are invalid.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag02.png)
 
-**R7:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must must a valid order to evaluate branches.
+**R7:** Several branches of an '&' quantifier may not reference tags circularly (e.g. branch 1 reference a tag defined in branch 2 and vice versa). There must be a valid order to evaluate branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag04.png)
 
