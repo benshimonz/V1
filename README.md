@@ -2076,7 +2076,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
 
-**R9 - Tag scope:** A tag defined right of an aggregator - cannot be referenced in other branches.
+**R9 todo: delete:** A tag defined right of an aggregator - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag09.png)
 
