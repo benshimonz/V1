@@ -886,9 +886,10 @@ todo: aggregation tag, aggregation tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
 - L1 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L1 may appear before a quantifier
+- L1 may appear directly before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - L1 appear directly right of the leftmost member of _S1_
+- all _S1_ entities should be within scope at the relationship
 - '→' is one or more (when following a quantifier) blue/logical/red entities
 - _et_ is an entity tag of a blue/logical/red entity defined right of the aggregator
 
@@ -1080,8 +1081,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
 - L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _S1_ can not contain entities that are both before and after an 'X'
-- _S1_ can not contain entities that are both before and after a quantifier other than '&'
+- all _S1_ entities should be within scope at the relationship
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
@@ -1176,6 +1176,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - L3 may not appear directly before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- all _S1_ entities should be within scope at the relationship
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
