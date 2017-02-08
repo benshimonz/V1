@@ -1080,7 +1080,6 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
 - L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
 - _S1_ can not contain entities that are both before and after an 'X'
 - _S1_ can not contain entities that are both before and after a quantifier other than '&'
 
@@ -1175,8 +1174,8 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
+- L3 may not appear directly before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- Right of the relationship : an entity (yellow/aggregated/blue/logical/red). L3 may not appear directly before a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
