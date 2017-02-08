@@ -243,7 +243,7 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll name the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-**The first way to use quantifiers:** The left component ends with an entity (yellow/aggregated/blue/logical/red), and each right component starts with:
+**The first way to use quantifiers:** The left component ends with an entity (yellow/aggregate/blue/logical/red), and each right component starts with:
 
 * A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
 * A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
@@ -273,7 +273,7 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
-* An entity (yellow/aggregated/blue/logical/red)
+* An entity (yellow/aggregate/blue/logical/red)
 * A quantifier
 
 The following examples demonstrate both ways to use quantifiers:
@@ -292,7 +292,7 @@ When a relationship need to satisfy several conditions (as in Q10: the freeze ti
 
 ## Entity Tags
 
-There is a letter in the top-left corner of any entity rectangle (yellow/aggregated/blue/logical/red). This letter is called an **'entity tag'**.
+There is a letter in the top-left corner of any entity rectangle (yellow/aggregate/blue/logical/red). This letter is called an **'entity tag'**.
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's answer as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
@@ -456,7 +456,7 @@ _**Q26:** Any guild that people who are members of the same guild as Brandon Sta
 
 **A third way to use quantifiers:** A quantifier may start a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
-* An entity (yellow/aggregated/blue/logical/red)
+* An entity (yellow/aggregate/blue/logical/red)
 * A quantifier
 
 The _None_ quantifier cannot start a pattern.
@@ -788,7 +788,7 @@ _**Q48:** All shortest paths between these two dragons, which are neither compos
 
 ## Path Segments
 
-An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of entities (yellow/aggregated/blue/logical/red) and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of entities (yellow/aggregate/blue/logical/red) and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
@@ -893,7 +893,7 @@ todo: aggregation tag, aggregation tag's scope
 - '→' is one or more (when following a quantifier) blue/logical/red entities
 - _et_ is an entity tag of a blue/logical/red entity defined right of the aggregator
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1083,7 +1083,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - all _S1_ entities should be within scope at the relationship
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1180,7 +1180,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
+- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1211,11 +1211,11 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - L4 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - L4 may appear before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- L1 appear directly right of the leftmost member of _S1_
+- L4 appear directly right of the leftmost member of _S1_
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
-- For each assignment to the _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a _calculated property_ of each concrete entity assigned to '←'.
+- For each assignment to the _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
@@ -1826,7 +1826,7 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 - LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of the relationship
 - LSMA3 may not appear directly before a quantifier
-- Right of the relationship : an entity (yellow/aggregated/blue/logical/red)
+- Right of the relationship : an entity (yellow/aggregate/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop1_, _relprop2_ are different properties of the relationship
 
@@ -1913,7 +1913,7 @@ Using aggregate entities in queries:
 * Aggregate entities are used in a similar manner to **yellow** entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
-* Aggregate entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1, M1, M2, M3, M4) can't be an aggregate entity)
+* Aggregate entities cannot be counted (L1, M1, M2, M3, M4 aggregations)
 
 Here are some examples:
 
@@ -2054,15 +2054,15 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-2.png)
 
-**R3:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannot be referenced in other branches.
+**R3 - Tag scope:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
-**R4:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannot be referenced in other branches.
+**R4 - Tag scope:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannot be referenced in other branches.
 
-**R5:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
+**R5 - Tag scope:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
 **R6:** Circular conditions are invalid.
 
@@ -2072,21 +2072,21 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag04.png)
 
-**R8:** An aggregation can only reference tags defined on its right.
+**R8 todo: delete:** An aggregation can only reference tags defined on its right.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
 
-**R9:** A tag defined right of an aggregator - cannot be referenced in other branches.
+**R9 - Tag scope: ** A tag defined right of an aggregator - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag09.png)
 
-**R10:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches.
+**R10 - Tag scope:** A relationship's property tag defined as part of an aggregation chain - cannot be used in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag10.png)
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow) entities can't be counted. (e.g. the entity on the right of an “… n → …“ aggregations (L1, M1, M2, M3, M4) can't be an aggregate entity).
+**R11:** Concrete (yellow/aggregate) entities cannot be counted (L1, M1, M2, M3, M4 aggregation).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
