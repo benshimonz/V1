@@ -1094,9 +1094,11 @@ _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any dragon that was frozen exactly 10 times (cumulatively)_
+_**Q72:** Any dragon A that was frozen exactly 10 times (cumulatively) (2 versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072-2.png)
 
 _**Q73:** Any dragon that froze dragons no more than 10 times (cumulatively)_
 
