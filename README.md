@@ -1066,6 +1066,14 @@ _**Q176:** Any dragon that either (i) froze at least one dragon and fired at at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q176.png)
 
+_**Q243:** Any pair of people (A, D) where at least 5 of A's dragons froze some D's dragon_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q243.png)
+
+_**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze some D's dragons, and at least 5 D's dragons were frozen by some A's dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q244.png)
+
 ## L2 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
