@@ -2048,7 +2048,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
 
-**R2:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
+**R2 - Tag scope:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-1.png)
 
@@ -2076,7 +2076,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
 
-**R9 - Tag scope: ** A tag defined right of an aggregator - cannot be referenced in other branches.
+**R9 - Tag scope:** A tag defined right of an aggregator - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag09.png)
 
