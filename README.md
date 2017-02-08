@@ -1081,6 +1081,8 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - Right of the relationship / path : an entity (yellow/aggregated/blue/logical/red) or a quantifier
+- _S1_ can not contain entities that are both before and after an 'X'
+- _S1_ can not contain entities that are both before and after a quantifier other than '&'
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
