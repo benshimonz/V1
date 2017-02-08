@@ -1128,6 +1128,10 @@ _**Q105:** Any dragon A that was frozen exactly 2 times (cumulatively) by (drago
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q105.png)
 
+_**Q245:** Any dragon B that was frozen at least once, and froze dragons exactly twice (cumulatively)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q245.png)
+
 _**Q127:** Any dragon that froze more times dragons owned by Sarnorian subjects than dragons owned by Omberian subjects_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q127.png)
