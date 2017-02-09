@@ -1075,11 +1075,11 @@ _**Q175:** Any dragon that froze at least once, and fired at least once. The num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-_**Q249:**  Any dragon that froze at least once, and fired at least once. Any dragon frozen - was frozen by at least 10 dragons, And dragon fired at - was fired at by at least 10 dragons_
+_**Q249:**  Any dragon that froze at least once, and fired at least once. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q249.png)
 
-_**Q250:**  Any dragon that froze at least once, or fired at least once. Any dragon frozen - was frozen by at least 10 dragons, And dragon fired at - was fired at by at least 10 dragons_
+_**Q250:**  Any dragon that froze at least once, or fired at least once. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q250.png)
 
