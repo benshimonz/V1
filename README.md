@@ -997,15 +997,15 @@ _**Q102:** Any dragon that was frozen by at least 2 dragons; each of these 2 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
-_**Q246:** Any dragon B that froze dragons and that was frozen by more than 100 dragons_
+_**Q246:** Any dragon B that froze dragons and that was frozen by more than 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q246.png)
 
-_**Q247:** Any dragon C that more than 100 dragons (cumulatively) froze dragons that froze it_
+_**Q247:** Any dragon C that more than 10 dragons (cumulatively) froze dragons that froze it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q247.png)
 
-_**Q248:** Any dragon pair (A, C) where A froze more than 100 dragons that froze C_
+_**Q248:** Any dragon pair (A, C) where A froze more than 10 dragons that froze C_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q248.png)
 
