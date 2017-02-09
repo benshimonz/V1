@@ -888,10 +888,10 @@ todo: aggregation tag, aggregation tag's scope
 - L1 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
 - L1 may appear directly before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- L1 appear directly right of the leftmost member of _S1_
 - all _S1_ entities should be within scope at the relationship
 - '→' is one or more (when following a quantifier) blue/logical/red entities
 - _et_ is an entity tag of a blue/logical/red entity defined right of the aggregator
+- L1 appear directly right of the leftmost member of _S1 ∪ et_
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
