@@ -997,6 +997,18 @@ _**Q102:** Any dragon that was frozen by at least 2 dragons; each of these 2 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q102.png)
 
+_**Q246:** Any dragon B that froze dragons and that was frozen by more than 100 dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q246.png)
+
+_**Q247:** Any dragon C that more than 100 dragons (cumulatively) froze dragons that froze it_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q247.png)
+
+_**Q248:** Any dragon pair (A, C) where A froze more than 100 dragons that froze C_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q248.png)
+
 _**Q166:** Any **dragon** that more than 5 Sarnorian subjects own a dragon that froze **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q166.png)
