@@ -886,7 +886,7 @@ todo: aggregation tag, aggregation tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - → denotes the entity directly right of the aggregation (which must be blue/logical/red). When the aggregation is followed by a quantifier - → denotes all blue/logical/red entities directly right of the quantifier (see Q175, Q176)
 - _et_ is an entity tag of a blue/logical/red entity
@@ -1077,11 +1077,11 @@ _**Q175:** Any dragon that froze at least once, and fired at least once. The num
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q175.png)
 
-_**Q249:**  Any dragon that froze at least once, and fired at least once. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
+_**Q249:**  Any dragon that froze at least one dragon, **and** fired at at least one dragon. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q249.png)
 
-_**Q250:**  Any dragon that froze at least once, or fired at least once. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
+_**Q250:**  Any dragon that froze at least one dragon, **or** fired at at least one dragon. Any dragon frozen - was frozen by at least 10 dragons. Any dragon fired at - was fired at by at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q250.png)
 
@@ -1102,7 +1102,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q251) blue/logical/red entities directly right of the aggregation
 
 - L2 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
@@ -1177,9 +1177,13 @@ _**Q173:** Any dragon that fired at at least 2 dragons, and fired at least 10 ti
 
 (counting the number of *distinct* 'fired at' relationships)
 
-_**Q174:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. If (i): the number times it froze / fired at dragons is at least 10. otherwise: The number of times it froze dragons is at least 10._
+_**Q174:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. If (i): the number times it froze / fired at dragons is at least 10; otherwise: the number of times it froze dragons is at least 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q174.png)
+
+_**Q251:** Any dragon that either (i) froze at least one dragon and fired at at least one dragon it didn't froze (ii) froze at least two dragons. Any dragon that was frozen - was frozen at least 10 times; any dragon that was fired at - was fired at at least 10 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q251.png)
 
 _**Q75:** Any dragon pair (A, B) where B froze A between 8 and 10 times_
 
@@ -1198,7 +1202,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
@@ -1235,7 +1239,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - L4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
 - L1 appear directly right of the leftmost member of _S1 ∪ →/et_
