@@ -1202,7 +1202,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier) blue/logical/red entities directly right of the aggregation
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
@@ -1239,7 +1239,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+- _per →_ - _S1_ is the set of one or more (when following a quantifier) blue/logical/red entities directly right of the aggregation
 
 - L4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
 - L1 appear directly right of the leftmost member of _S1 ∪ →/et_
