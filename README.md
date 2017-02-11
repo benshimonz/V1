@@ -1318,8 +1318,11 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
+Optional:
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+
 - M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
-- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _with min/max {et, et, ...}_ - a set, _S3_, of entity tags of blue/logical/red entities
@@ -1384,9 +1387,12 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
+Optional:
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+
 - M2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
 - M2 may appear directly before a quantifier
-- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
@@ -1446,9 +1452,12 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
+Optional:
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
 - M3 may appear directly before a quantifier
-- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
@@ -1485,8 +1494,11 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
+Optional:
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+
 - M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
-- _per {et, et, ...}_ - an optional set _S1_ of blue/logical/red entities
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set _S2_ of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
@@ -1561,8 +1573,11 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
+Optional:
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+
 - M5 appears below a relationship. The relationship may not be wrapped
-- _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
