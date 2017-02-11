@@ -1321,8 +1321,8 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
 - Optional:
- - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
- - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
@@ -1393,8 +1393,8 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
 - Optional:
- - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
- - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
@@ -1460,8 +1460,8 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
 - Optional:
- - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
- - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
@@ -1504,8 +1504,8 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - Optional:
- - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
- - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set _S2_ of blue/logical/red entities
@@ -1585,8 +1585,8 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
 - Optional:
- - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
- - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
