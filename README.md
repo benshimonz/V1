@@ -886,18 +886,19 @@ todo: aggregation tag, aggregation tag's scope
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- '→' is one or more (when following a quantifier) blue/logical/red entities
+- _per →_ - a set, _S1_, of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+- '→' is one or more (when following a quantifier - see Q175, Q176) blue/logical/red entities directly right of the aggregation
 - _et_ is an entity tag of a blue/logical/red entity
 
 - L1 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
 - L1 appear directly right of the leftmost member of _S1 ∪ →/et_
-- all _S1 ∪ →/et_ entities should be within scope at the relationship (see scope later on)
+- all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for a single entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
 
 **L1 filters assignments to _S1_ entities - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
 
@@ -1099,10 +1100,11 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
-- L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+
 - all _S1_ entities should be within scope at the relationship
 
+- L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
