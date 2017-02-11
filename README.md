@@ -887,7 +887,8 @@ todo: aggregation tag, aggregation tag's scope
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
 - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
-- '→' is one or more (when following a quantifier - see Q175, Q176) blue/logical/red entities directly right of the aggregation
+
+- → denotes the entity directly right of the aggregation (which must be blue/logical/red). When the aggregation is followed by a quantifier - → denotes all blue/logical/red entities directly right of the quantifier (see Q175, Q176)
 - _et_ is an entity tag of a blue/logical/red entity
 
 - L1 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
@@ -898,7 +899,7 @@ todo: aggregation tag, aggregation tag's scope
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}' when there is a single entity directly left of the aggregation and a single entity directly right of the aggregation.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 **L1 filters assignments to _S1_ entities - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
 
@@ -1101,15 +1102,16 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
 
-- all _S1_ entities should be within scope at the relationship
+- L2 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L' or an 'O'
+- all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
-- L2 appears below a relationship / path. The relationship / path may be wrapped by an 'L' or an 'O'
 - For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 **L2 filters assignment combinations to _S1_ entities - to only those for which number of relationships / paths that satisfy the pattern - satisfy the condition.**
 
@@ -1195,10 +1197,12 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
-- L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
-- L3 may not appear directly before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- all _S1_ entities should be within scope at the relationship
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+
+- L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
+- all _S1_ entities should be within scope at the relationship (see _scope_ later on)
+
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
@@ -1206,7 +1210,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 **L3 filters assignment combinations to _S1_ entities - to only those for which the value of _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
 
@@ -1230,10 +1234,13 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
-- L4 appears below a relationship / path. The relationship / path may be wrapped by an '↛', an 'L' or an 'O'
-- L4 may appear before a quantifier
 - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- L4 appear directly right of the leftmost member of _S1_
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q245, Q250) blue/logical/red entities directly right of the aggregation
+
+- L4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
+- L1 appear directly right of the leftmost member of _S1 ∪ →/et_
+- all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
+
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
@@ -1241,9 +1248,9 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by an equation (e.g. '> 30')
 - A condition, an aggregation tag, or both - must be presented
 
-**L4 filters assignments to _S1_ entities - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+**L4 filters assignments to _S1_ entities - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
@@ -1316,7 +1323,7 @@ todo
 - M1 appear directly right of the leftmost member of _S1_, _S2_ and _S3_
 - M1 may appear directly left of a quantifier
 - Except for '&' quantifier - M1 aggregation cannot start a quantifier's branch
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
@@ -1379,7 +1386,7 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 - _n_ is a positive integer
 - _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
 - _S1_ and _S2_ may not intersect
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
@@ -1444,7 +1451,7 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 - Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
@@ -1484,7 +1491,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
@@ -1554,7 +1561,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 - _per {et, et, ...}_ - an optional set, _S1_, of blue/logical/red entities
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
-- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entity directly right of the aggregation is '→' instead of '_et_'. The visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'.
+- The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
