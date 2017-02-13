@@ -194,14 +194,14 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
 ## E17: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | B         | int    | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int    | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E18: Split by (Type = 'SplitBy')
 
@@ -230,7 +230,7 @@ At least one of the above must be presented
 | +       | ETag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 |         | ATag      | string   | attribute tag to assign (e.g. "1")
 |         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
 ## E32: L2 Aggregation (Type = 'AggL2')
@@ -240,7 +240,7 @@ At least one of the above must be presented
 | +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 |         | ATag      | string   | attribute tag to assign (e.g. "1")
 |         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E33: L3 Aggregation (Type = 'AggL3')
 
@@ -251,7 +251,7 @@ At least one of the above must be presented
 | +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
 |         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E34: L4 Aggregation (Type = 'AggL4')
 
@@ -262,7 +262,7 @@ At least one of the above must be presented
 | +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
 |         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E41: M1 Aggregation (Type = 'AggM1')
 
@@ -273,7 +273,7 @@ At least one of the above must be presented
 | +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | ETag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E42: M2 Aggregation (Type = 'AggM2')
 
@@ -283,7 +283,7 @@ At least one of the above must be presented
 | +       | n         | int      | number of min/max entities
 | +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E43: M3 Aggregation (Type = 'AggLM3')
 
@@ -295,7 +295,7 @@ At least one of the above must be presented
 | +       | op        | string   | "min" / "max"
 | +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E44: M4 Aggregation (Type = 'AggM4')
 
@@ -306,7 +306,7 @@ At least one of the above must be presented
 | +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E45: M5 Aggregation (Type = 'AggM5')
 
@@ -316,4 +316,4 @@ At least one of the above must be presented
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
 | +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
