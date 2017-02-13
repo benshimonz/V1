@@ -67,7 +67,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1
+| +       | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant1
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
@@ -119,7 +119,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | Dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
 |         | Wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2, RComb
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2, RComb
 |         | B         | int    | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL3 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li></ul> 
 
 ## E8: Entity's Property (Type = 'EntProp') 
@@ -154,7 +154,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
-| +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant2
+| +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2
 
 ## E12: E-Combiner (Type = 'EComb')
 
@@ -166,7 +166,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | ENum of element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, RComb, Quant2
+| +       | R         | int    | ENum of element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, RComb, Quant2
 
 ## E14: Path (Type = 'Path') 
 
@@ -176,7 +176,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li> <li>Optional [string] direction ("R" or "L")</li></ul>
 |         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int        | ENum of the element on the right. <br> Valid element types: Yellow, Together, Blue, LogEnt, Red, Quant1, RComb
+|         | R         | int        | ENum of the element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant1, RComb
 |         | B         | int        | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
 
 ## E15: Path Segment (Type = 'PathSeg')
