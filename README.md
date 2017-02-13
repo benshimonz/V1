@@ -1331,9 +1331,8 @@ todo
 
 - _S1_, _S2_ and _S3_ may not intersect
 
-- M1 appears below a query-start / relationship / path. A relationship / path may be wrapped by an '↛' or an 'L'
+- M1 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
 - M1 appear directly right of the leftmost member of _S1_, _S2_ and _S3_
-- M1 may appear directly left of a quantifier
 - Except for '&' quantifier - M1 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
 
@@ -1401,8 +1400,7 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 
 - _S1_ and _S2_ may not intersect
 
-- M2 appears below a relationship / path. The relationship / path may be wrapped by an 'L'.
-- M2 may appear directly before a quantifier
+- M2 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
 
 If _S1_ is not given:
@@ -1469,7 +1467,6 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - _S1_ and _S2_ may not intersect
 
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
-- M3 may appear directly before a quantifier
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 - Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
@@ -1512,9 +1509,8 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 - _S1_ and _S2_ may not intersect
 
-- M4 appears below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'.
+- M4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - M4 appear directly right of the leftmost member of _S1_ and _S2_
-- M4 may appear directly left of a quantifier
 - {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
