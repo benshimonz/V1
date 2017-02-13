@@ -27,11 +27,11 @@
 |32 | AggL2     | L2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
 |33 | AggL3     | L3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
 |34 | AggL4     | L4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
-|35 | AggM1     | M1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
-|36 | AggM2     | M2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
-|37 | AggM3     | M3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
-|38 | AggM4     | M4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
-|39 | AggM5     | M5 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
+|41 | AggM1     | M1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
+|42 | AggM2     | M2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
+|43 | AggM3     | M3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
+|44 | AggM4     | M4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
+|45 | AggM5     | M5 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
 |51 | AggLSM1    | LSM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
 |52 | AggLSM2    | LSM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
 |53 | AggLSMA3   | LSMA3 Aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
@@ -222,138 +222,98 @@ Exactly one of the above must be presented
 
 At least one of the above must be presented
 
-## E31: L1C Aggregation (Type = 'AggL1C')
+## E31: L1 Aggregation (Type = 'AggL1')
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ETag      | string | entity tag on the right of the aggregation. if not present: treat as '→'
-|         | ATag      | string | attribute tag to assign (e.g. "1")
-|         | Cond      | string | condition
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | ETag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
+|         | ATag      | string   | attribute tag to assign (e.g. "1")
+|         | Cond      | string   | condition
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-## E32: L2C Aggregation (Type = 'AggL2C')
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ATag      | string | attribute tag to assign (e.g. "1")
-|         | Cond      | string | condition
+## E32: L2 Aggregation (Type = 'AggL2')
 
-## E33: LA3C Aggregation (Type = 'AggLA3C')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | ATag      | string   | attribute tag to assign (e.g. "1")
+|         | Cond      | string   | condition
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ATag      | string | attribute tag to assign (e.g. "1")
-| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
-|         | Cond      | string | condition
+## E33: L3 Aggregation (Type = 'AggL3')
 
-## E34: LA4C Aggregation (Type = 'AggLA4C')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | ATag      | string   | attribute tag to assign (e.g. "1")
+| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | Cond      | string   | condition
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ATag      | string | attribute tag to assign (e.g. "2")
-| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
-|         | Cond      | string | condition
+## E34: L4 Aggregation (Type = 'AggL4')
 
-## E35: D2C Aggregation  (Type = 'AggD2C')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | ATag      | string   | attribute tag to assign (e.g. "2")
+| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
+|         | Cond      | string   | condition
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ATag      | string | attribute tag to assign (e.g. "1")
-|         | Cond      | string | condition
+## E41: M1 Aggregation (Type = 'AggM1')
 
-## E36: DA3C Aggregation (Type = 'AggDA3C')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | n         | int      | number of min/max entities
+| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | op        | string   | "min" / "max"
+| +       | ETag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-|         | ATag      | string | attribute tag to assign (e.g. "1")
-| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
-|         | Cond      | string | condition
+## E42: M2 Aggregation (Type = 'AggM2')
 
-## E37: LRM1 Aggregation (Type = 'AggLRM1')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | n         | int      | number of min/max entities
+| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | op        | string   | "min" / "max"
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | ETag      | string | entity tag on the right of the aggregation
-| +       | op        | string | "min" / "max"
+## E43: M3 Aggregation (Type = 'AggLM3')
 
-## E38: LRM2 Aggregation (Type = 'AggLRM2')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | n         | int      | number of min/max entities
+| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | op        | string   | "min" / "max"
+| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
+## E44: M4 Aggregation (Type = 'AggM4')
 
-## E39: LRMA3 Aggregatio (Type = 'AggLRMA3')
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | n         | int      | number of min/max entities
+| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | op        | string   | "min" / "max"
+| +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
+## E45: M5 Aggregation (Type = 'AggM5')
 
-## E40: LRM4 Aggregation (Type = 'AggLRM4')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
-
-## E41: PRM1 Aggregation (Type = 'AggPRM1')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | ETag      | string | entity tag on the right of the aggregation
-| +       | op        | string | "min" / "max"
-
-## E42: PRM2 Aggregation (Type = 'AggPRM2')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-
-## E43: PRM4 Aggregation (Type = 'AggPRM4')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | Tag       | string | pt/at/st to aggregate (e.g. "1")
-
-## E44: LDM3 Aggregation (Type = 'AggLDM3')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
-
-## E45: DDM3 Aggregation (Type = 'AggDDM3')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
-
-## E46: DMA3 Aggregation (Type = 'AggDMA3')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
-| +       | AggOp     | string | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string | name of relationship's property to aggregate (e.g. "since")
-
-## E47: DM2 Aggregation  (Type = 'AggDM2')
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | n         | int    | number of min/max entities
-| +       | op        | string | "min" / "max"
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | n         | int      | number of min/max entities
+| +       | op        | string   | "min" / "max"
+| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggLA4, AggM1, AggM2, AggM3, AggM4, AggM5
