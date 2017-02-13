@@ -67,7 +67,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | R         | int    | ENum of the element on the right. <br> Valid element types: SplitBy
+| +       | R         | int    | ENum of element on the right. <br> Valid element types: SplitBy
 
 ## E2: Yellow Entity (Type = 'Yellow')
 
@@ -77,7 +77,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | EID       | int    | Technical ID of the entity
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | EName     | string | Display name of the entity (e.g. "Lior Kogan")
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E3: Blue Entity (Type = 'Blue')
 
@@ -85,8 +85,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-|         | R         | int    | ENum of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
-|         | B         | int    | ENum of the element below. <br> Valid element types: AggP1, AggP4
+|         | R         | int    | ENum of element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | B         | int    | ENum of element below. <br> Valid element types: AggP1, AggP4
 
 ## E4: Red Entity (Type = 'Red')
 
@@ -95,7 +95,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E5: Aggregate Entity (Type = 'AggEnt')
 
@@ -104,7 +104,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E6: Logical Entity (Type = 'LogEnt')
 
@@ -113,7 +113,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
-|         | R         | int    | ENum of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | R         | int    | ENum of element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E7: Relationship (Type = 'Rel')
 
@@ -122,8 +122,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | Dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
 |         | Wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2, RComb
-|         | B         | int    | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
+|         | R         | int    | ENum of element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2, RComb
+|         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
 
 ## E8: Entity's Property (Type = 'EntProp') 
 
@@ -140,7 +140,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
 |         | Cond      | string | condition
-|         | B         | int    | ENum of the element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | B         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
@@ -149,7 +149,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
-|         | B         | int    | ENum of element below. Valid element types: AggL1, AggL2, AggL4, AggM1, AggM2, AggM4, SplitBy (Aggregation is valid only if there is at least one entity right of the quantifier)
+|         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
 
 ## E11: Quantifier 2 (Type = 'Quant2')
 
@@ -179,8 +179,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li> <li>Optional [string] direction ("R" or "L")</li></ul>
 |         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | R         | int        | ENum of the element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant1, RComb
-|         | B         | int        | ENum of the element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
+|         | R         | int        | ENum of element on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant1, RComb
+|         | B         | int        | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
 
 ## E15: Path Segment (Type = 'PathSeg')
 
