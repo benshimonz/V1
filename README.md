@@ -1828,18 +1828,19 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
-## Min/Max Filters on Splits
+## Min/Max Aggregations on Splits
 
 todo
 
-## Min/Max Filter on Splits #1 (P1)
+## P1 Min/Max Aggregation on Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P1.png)
 
-- P1 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- P1 appears below a 'split by _relprop_' below a relationship. The relationship / path may be wrapped by an '↛' or an 'L'
+- P1 appears below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
+
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
-- If not split by _relprop_ : P1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - '→' / _et_ is a blue/logical/red entity
 
 _**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners_
@@ -1850,14 +1851,16 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
-## Min/Max Filter on Splits #2 (P2)
+## P2 Min/Max Aggregation on Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
-- P2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- P2 appears below a 'split by _relprop_' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- P2 appears below a 'split by _{pt/at/st}/< ett >_' below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
 - If not split by _relprop_ : P2 may appear before a quantifier
+
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
 
 _**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
 
@@ -1867,14 +1870,14 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
-## Min/Max Filter on Splits #3 (P3)
+## P3 Min/Max Aggregation on Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P3.png)
 
-- P3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
+- P3 appears below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
+- P3 appears below a 'split by _{pt/at/st}/< ett >_' below a relationship. The relationship may be wrapped by an 'L'
+
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of the relationship
-- P3 may not appear directly before a quantifier
-- Right of the relationship : an entity (yellow/aggregate/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop1_, _relprop2_ are different properties of the relationship
 
@@ -1882,13 +1885,14 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
 
-## Min/Max Filter on Splits #4 (P4)
+## P4 Min/Max Aggregation on Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
-- P4 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'
+- P4 appears below a 'split by _relprop_' below a relationship. The relationship / path may be wrapped by an '↛' or an 'L'
+- P4 appears below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
+
 - _relprop_ is a property of the relationship
-- If not split by _relprop_ : P4 may appear before a quantifier followed by an R-combiner
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
 todo: P4 before a quantifier zzz
