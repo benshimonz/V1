@@ -32,13 +32,10 @@
 |43 | AggM3     | M3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
 |44 | AggM4     | M4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
 |45 | AggM5     | M5 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
-|51 | AggLSM1    | LSM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
-|52 | AggLSM2    | LSM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
-|53 | AggLSMA3   | LSMA3 Aggregation       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
-|54 | AggLSM4    | LSM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
-|55 | AggPSM1    | PSM1 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element55.png)
-|56 | AggPSM2    | PSM2 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element56.png)
-|57 | AggPSM4    | PSM4 Aggregation        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element57.png)
+|51 | AggP1     | P1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
+|52 | AggP2     | P2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
+|53 | AggP3     | P3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
+|54 | AggP4     | P4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
 
 ## Wrappers for relationships / paths
 
