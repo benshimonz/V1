@@ -1836,7 +1836,7 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P1.png)
 
-- P1 appears below a 'split by _relprop_' below a relationship. The relationship / path may be wrapped by an '↛' or an 'L'
+- P1 appears below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
 - P1 appears below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
 
 - _relprop_ is a property of the relationship
@@ -1855,7 +1855,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
-- P2 appears below a 'split by _relprop_' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- P2 appears below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
 - P2 appears below a 'split by _{pt/at/st}/< ett >_' below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - If not split by _relprop_ : P2 may appear before a quantifier
@@ -1889,13 +1889,11 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
-- P4 appears below a 'split by _relprop_' below a relationship. The relationship / path may be wrapped by an '↛' or an 'L'
+- P4 appears below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
 - P4 appears below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
 
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
-
-todo: P4 before a quantifier zzz
 
 _**Q226:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners (same as Q224)_
 
