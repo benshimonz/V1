@@ -1842,38 +1842,30 @@ todo
 - If not split by _relprop_ : P1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - '→' / _et_ is a blue/logical/red entity
 
-_**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
-
-- When P1 appears below a query start - the 'Per ←' is not displayed.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
-
 _**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
+
+_**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
 ## Min/Max Filter on Splits #2 (P2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
-- P2 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'
+- P2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
 - If not split by _relprop_ : P2 may appear before a quantifier
 
-_**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
-
-- When P2 appears below a query start - the 'Per ←' is not displayed.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
-
 _**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
+
+_**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
 ## Min/Max Filter on Splits #3 (P3)
 
@@ -1901,17 +1893,13 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 
 todo: P4 before a quantifier zzz
 
-_**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
-
-- When P4 appears below a query start - the 'Per ←' is not displayed.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
-
 _**Q226:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners (same as Q224)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
+
+_**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
 ## Min/Max Filter on Splits before a Quantifier
 
