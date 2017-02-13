@@ -1832,21 +1832,21 @@ _**Q158:** Any dragon that in at least 10 days - the number of dragons it froze 
 
 todo
 
-## Min/Max Filter on Splits #1 (LSM1)
+## Min/Max Filter on Splits #1 (P1)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P1.png)
 
-- LSM1 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
+- P1 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an '↛' or an 'L'
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the LSM1 (in a previous filtering step) or right of the '→' entity
-- If not split by _relprop_ : LSM1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+- If not split by _relprop_ : P1 may appear before a quantifier (if followed by an R-combiner - '→' is the entity directly right of the R-combiner)
 - '→' / _et_ is a blue/logical/red entity
 
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
-LSM1 may appear below a query start. The 'Per ←' is not displayed.
+- When P1 appears below a query start - the 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
 
@@ -1854,20 +1854,20 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
 
-## Min/Max Filter on Splits #2 (LSM2)
+## Min/Max Filter on Splits #2 (P2)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
-- LSM2 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- P2 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
-- If not split by _relprop_ : LSM2 may appear before a quantifier
+- If not split by _relprop_ : P2 may appear before a quantifier
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
-LSM2 may appear below a query start. The 'Per ←' is not displayed.
+- When P2 appears below a query start - the 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
 
@@ -1875,13 +1875,13 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
-## Min/Max Filter on Splits #3 (LSMA3)
+## Min/Max Filter on Splits #3 (P3)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSMA3.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P3.png)
 
-- LSMA3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
+- P3 appears below a 'split by' below a relationship. The relationship may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of the relationship
-- LSMA3 may not appear directly before a quantifier
+- P3 may not appear directly before a quantifier
 - Right of the relationship : an entity (yellow/aggregate/blue/logical/red)
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop1_, _relprop2_ are different properties of the relationship
@@ -1890,22 +1890,22 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
 
-## Min/Max Filter on Splits #4 (LSM4)
+## Min/Max Filter on Splits #4 (P4)
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-LSM4.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
-- LSM4 appears below a 'split by' below a relationship / path. The relationship / path may be wrapped by an 'L'
+- P4 appears below a 'split by' below a query-start / relationship / path. The relationship / path may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
-- If not split by _relprop_ : LSM4 may appear before a quantifier followed by an R-combiner
+- If not split by _relprop_ : P4 may appear before a quantifier followed by an R-combiner
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
-todo: LSM4 before a quantifier zzz
+todo: P4 before a quantifier zzz
 
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
-LSM4 may appear below a query start. The 'Per ←' is not displayed.
+- When P4 appears below a query start - the 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
 
