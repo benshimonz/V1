@@ -1846,7 +1846,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
 
-## Prefix Min/Max Filter on Splits #1 (PSM1)
+- LSM1 may also appear below a query start. The 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM1.png)
 
@@ -1867,7 +1867,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
-## Prefix Min/Max Filter on Splits #2 (PSM2)
+- LSM2 may also appear below a query start. The 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM2.png)
 
@@ -1905,7 +1905,7 @@ _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulativ
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
-## Prefix Min/Max Filter on Splits #4 (PSM4)
+- LSM4 may also appear below a query start. The 'Per ←' is not displayed.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-PSM4.png)
 
