@@ -86,15 +86,16 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 |         | R         | int    | ENum of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
+|         | B         | int    | ENum of the element below. <br> Valid element types: AggP1, AggP4
 
 ## E4: Red Entity (Type = 'Red')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | ETag      | string | Entity tag (e.g. "A")
-|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 |         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E5: Aggregate Entity (Type = 'AggEnt')
 
@@ -103,6 +104,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
+|         | R         | int    | ENum of the element on the right. <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E6: Logical Entity (Type = 'LogEnt')
 
@@ -111,6 +113,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | ETag      | string | Entity tag (e.g. "A")
 | +       | FName     | string | file name, where defined
 | +       | EName     | string | name - as defined in file
+|         | R         | int    | ENum of the element on the right.  <br> Valid element types: Rel, EntProp, Quant1, EComb, Path
 
 ## E7: Relationship (Type = 'Rel')
 
