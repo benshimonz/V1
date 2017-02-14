@@ -206,15 +206,41 @@ Constraints cannot be defined for yellow entities.
 
 For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
-For ordinal data types (e.g. integer, floating-point, date) - the following conditional are supported:
+## Properties - functions and comparison operators
+
+The following comparison operators are defined for ordinal properties (e.g. _int_, _double_, _date_, _time_, _datetime_):
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
-For string data type - the following conditional are supported:
+The following functions are defined for _date_ properties:
+
+* _Year(date), Month(date), Day(date)_ → int
+* _DayOfWeek(datetime)_ → int
+* _DayOfYear(datetime)_ → int
+* _WeekOfYear(datetime)_ → int
+
+The following functions are defined for _time_ properties:
+
+* Hour(datetime), Min(datetime), Sec(datetime)_ → int
+
+The following functions are defined for _datetime_ properties:
+
+* _Date(datetime)_ → date
+* _Time(datetime)_ → time (00:00:00 - 23:59:59)
+* _Year(datetime), Month(datetime), Day(datetime), Hour(datetime), Min(datetime), Sec(datetime)_ → int
+* _DayOfWeek(datetime)_ → int
+* _DayOfYear(datetime)_ → int
+* _WeekOfYear(datetime)_ → int
+
+The following comparison operators are defined for _string_ properties:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
-Implementations may support other operators as well.
+The following functions are defined for string properties:
+
+* _Length(string)_ → int
+
+Implementations may support additional data types, functions and comarison operators.
 
 For other data types, the supported operators are implementation-defined.
 
