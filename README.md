@@ -281,6 +281,22 @@ _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 * In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
 * In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
 
+Functions over multivalued properties:
+
+* _count([t])_ → int
+* _distinct([t])_ → int
+
+Functions over multivalued ordinal properties:
+
+* _min([t])_ → t
+* _min([t])_ → t
+* _avg([t])_ → t
+* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
+
+## Enumerated Properties
+
+todo
+
 ## Quantifiers #1
 
 Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
