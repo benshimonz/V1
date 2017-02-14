@@ -219,7 +219,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ## Properties - Functions and Comparison Operators
 
-Comparison operators over ordinal property / function range (e.g. _int_, _double_, _date_, _time_, _datetime_):
+Comparison operators over ordinal property / function-range (e.g. _int_, _double_, _date_, _time_, _datetime_):
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
@@ -243,7 +243,7 @@ Functions over _datetime_ properties:
 * _DayOfYear(datetime)_ → int
 * _WeekOfYear(datetime)_ → int
 
-Comparison operators over _string_ property / function range:
+Comparison operators over _string_ property / function-range:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
@@ -264,13 +264,17 @@ The data model may support empty (missing) values for one or more properties. em
 * An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
 * A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
 
-## Array Properties
+## Multivalued Properties
 
-* Array properties contain an ordered set of values of the same property type.
+Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
 
+Comparison operators over multivalued properties:
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
+_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
 
 ## Quantifiers #1
 
