@@ -217,7 +217,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ## Properties - Functions and Comparison Operators
 
-Comparison operators over ordinal properties (e.g. _int_, _double_, _date_, _time_, _datetime_):
+Comparison operators over ordinal property / function range (e.g. _int_, _double_, _date_, _time_, _datetime_):
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
@@ -241,7 +241,7 @@ Functions over _datetime_ properties:
 * _DayOfYear(datetime)_ → int
 * _WeekOfYear(datetime)_ → int
 
-Comparison operators over _string_ properties:
+Comparison operators over _string_ property / function range:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
