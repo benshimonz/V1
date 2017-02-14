@@ -268,9 +268,11 @@ The data model may support empty (missing) values for one or more properties. em
 
 Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
 
-Comparison operators over multivalued properties:
-
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
+
+An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: (_cmp_op expr1_) is evaluated over each value in the array. Then the number of values that satisfies the constraint is evaluated.
+
+Here is an example:
 
 _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 
