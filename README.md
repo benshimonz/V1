@@ -206,9 +206,13 @@ Constraints cannot be defined for yellow entities.
 
 For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
-For ordinal data types (e.g. integer, floating-point, date) and string data types, the following comparison operators are supported:
+For ordinal data types (e.g. integer, floating-point, date) - the following conditional are supported:
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
+
+For string data type - the following conditional are supported:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
 Implementations may support other operators as well.
 
