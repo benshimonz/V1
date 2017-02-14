@@ -198,7 +198,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 * The property's name (_'prop'_)
 * An optional function to apply to the property's value (_'f'_)
-* An optional constraint on the property's value / on _f_(property's value), expressed using a comparion operator and an expression (e.g. '> 30')
+* An optional condition on the property's value / on _f_(property's value), expressed using a comparion operator ('_cmp_op_')and an expression ('_expr_')  - e.g. '> 30'
 * An optional **property tag**, _{'pt'}_ - depicted by an index wrapped in purple curly brackets (explained later)
 
 A constraint, a property tag, or both - must be present.
