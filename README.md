@@ -278,6 +278,9 @@ _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
 
+* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
+* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+
 ## Quantifiers #1
 
 Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
