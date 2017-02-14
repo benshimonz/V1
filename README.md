@@ -214,7 +214,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
 
-## Properties - functions and comparison operators
+## Properties - Functions and Comparison Operators
 
 Comparison operators over ordinal properties (e.g. _int_, _double_, _date_, _time_, _datetime_):
 
@@ -260,6 +260,14 @@ The data model may support empty (missing) values for one or more properties. em
 * A condition with a red comparison operator: If the value is missing - the condition is evaluated as true; otherwise - it is evaluated according to the value and the expression
 * An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
 * A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
+
+## Array Properties
+
+* Array properties contain an ordered set of values of the same property type.
+
+
+
+
 
 ## Quantifiers #1
 
