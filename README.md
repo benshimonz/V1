@@ -270,7 +270,7 @@ Properties can contain a set of values of the same type. For example, a dragon m
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
-An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: (_cmp_op expr1_) is evaluated over each value in the array. Then the number of values that satisfies the constraint is evaluated.
+An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
 
 Here is an example:
 
@@ -284,7 +284,7 @@ _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 Functions over multivalued properties:
 
 * _count([t])_ → int
-* _distinct([t])_ → int
+* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
 
 Functions over multivalued ordinal properties:
 
