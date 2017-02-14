@@ -211,9 +211,11 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
-_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
+_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
 ## Properties - Functions and Comparison Operators
 
