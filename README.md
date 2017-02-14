@@ -196,11 +196,12 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 **A green rectangle** is connected to an entity (red, blue, or yellow) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
-* The property's name
-* A constraint on the value of that property, expressed by an equation (e.g. 'age > 30'), and/or
-* A **property tag**, depicted by an index wrapped in **purple curly brackets** (explained later)
+* The property's name (_'prop'_)
+* An optional function to apply to the property's value (_'f'_)
+* An optional constraint on the property's value / on _f_(property's value), expressed using a comparion operator and an expression (e.g. '> 30')
+* An optional **property tag**, _{'pt'}_ - depicted by an index wrapped in purple curly brackets (explained later)
 
-A constraint, a property tag, or both - must be presented.
+A constraint, a property tag, or both - must be present.
 
 Constraints cannot be defined for yellow entities. 
 
