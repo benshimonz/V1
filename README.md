@@ -206,24 +206,32 @@ Constraints cannot be defined for yellow entities.
 
 For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
 
+_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
+
+_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
+
 ## Properties - functions and comparison operators
 
-The following comparison operators are defined for ordinal properties (e.g. _int_, _double_, _date_, _time_, _datetime_):
+Comparison operators over ordinal properties (e.g. _int_, _double_, _date_, _time_, _datetime_):
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
-The following functions are defined for _date_ properties:
+Functions over _date_ properties:
 
 * _Year(date), Month(date), Day(date)_ → int
 * _DayOfWeek(datetime)_ → int
 * _DayOfYear(datetime)_ → int
 * _WeekOfYear(datetime)_ → int
 
-The following functions are defined for _time_ properties:
+Functions over _time_ properties:
 
 * Hour(datetime), Min(datetime), Sec(datetime)_ → int
 
-The following functions are defined for _datetime_ properties:
+Functions over _datetime_ properties:
 
 * _Date(datetime)_ → date
 * _Time(datetime)_ → time (00:00:00 - 23:59:59)
@@ -232,25 +240,15 @@ The following functions are defined for _datetime_ properties:
 * _DayOfYear(datetime)_ → int
 * _WeekOfYear(datetime)_ → int
 
-The following comparison operators are defined for _string_ properties:
+Comparison operators over _string_ properties:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
-The following functions are defined for string properties:
+Functions over string properties:
 
 * _Length(string)_ → int
 
 Implementations may support additional data types, functions and comarison operators.
-
-For other data types, the supported operators are implementation-defined.
-
-_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
-
-_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190.png)
 
 ## Empty (Missing) Values
 
