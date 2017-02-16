@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> op: "eq", "ne", gt", "ge", "lt", "le", "in set", "not in set", "in range", "not in range" <br> R: right side
+|         | Cond      | [...]  | condition <br> op: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> R: string - right side of the condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
@@ -139,14 +139,14 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> op: "eq", "ne", gt", "ge", "lt", "le", "in set", "not in set", "in range", "not in range" <br> R: right side
+|         | Cond      | [...]  | condition <br> op: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> R: string - right side of the condition
 |         | B         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
+| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
 |         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
@@ -155,7 +155,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
+| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2
 
@@ -192,7 +192,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
+| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
