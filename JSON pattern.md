@@ -175,9 +175,9 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type       | Description
 |---------|-----------|------------| ------
-|         | ETypes    | [ * ]      | Entity types and constraints <br> For each: <br> **EType**: string - entity type - according to the ontology<br> _not mandatory_ **op**: string - operator ("eq", "lt", or "le") and **val**: int - value</li></ul>
-|         | RTypes    | [ * ]      | Relationship types and constraints <br> For each: <ul><li>Relationship type - according to the ontology</li> <li>_not mandatory_ [string] operator ("eq", "lt", or "le") and [int] value</li> <li>_not mandatory_ [string] direction ("R" or "L")</li></ul>
-|         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
+|         | ETypes    | [ * ]      | Entity types and constraints <br> For each: <br> **EType**: string - entity type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and **Val**: int - value
+|         | RTypes    | [ * ]      | Relationship types and constraints <br> For each: <br> **RelType**: string - Relationship type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and and **Val**: int - value <br> _not mandatory_ **Dir** - string - direction ("-"/"R"/"L")</li></ul>
+|         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq"/"lt"/"le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
 |         | Next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, RComb
 |         | B         | int        | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
