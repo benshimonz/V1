@@ -48,11 +48,12 @@
 
 ## JSON structure
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | Ont       | string | Ontology name
-| +       | Name      | string | Query name
-| +       | Elements  | [...]  | Elements composing the query
+|Mandatory| Name         | Type   | Description
+|---------|--------------|--------| ------
+| +       | Ont          | string | Ontology name
+| +       | Name         | string | Query name
+| +       | Elements     | [...]  | Elements composing the query
+|         | Nonidentical | [...]  | nonidenticality constraints between entity tags
 
 **Elements: for each query element:**
 
@@ -317,3 +318,14 @@ At least one of the above must be presented
 | +       | op        | string   | "min" / "max"
 | +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
 |         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+
+**Nonidenticality constraints between entity tags**
+
+The following snippet demonstrates Nonidenticality constraints between tags "C" and "E", as well as between tags "C" and "F":
+
+  "Nonidentical": [ 
+    ["C", "E"]
+    ["C", "F"]
+  ]
+  
+  
