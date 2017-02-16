@@ -44,8 +44,6 @@
 **L** - Latent        ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperL.png)
 **O** - Optional      ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperO.png)
 
-**TODO**: add entity tag inequalities
-
 ## JSON structure
 
 |Mandatory| Name         | Type   | Description
@@ -319,7 +317,7 @@ At least one of the above must be presented
 | +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
 |         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-**Nonidenticality constraints between entity tags**
+## Nonidenticality constraints between entity tags
 
 The following snippet demonstrates Nonidenticality constraints between tags "C" and "E", as well as between tags "C" and "F":
 
@@ -327,5 +325,3 @@ The following snippet demonstrates Nonidenticality constraints between tags "C" 
     ["C", "E"]
     ["C", "F"]
   ]
-  
-  
