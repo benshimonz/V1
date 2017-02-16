@@ -1,0 +1,317 @@
+# entity types:
+# 
+# 1 Person : (1) first name (2) last name (3) gender (4) birth date (5) death date (6) height
+# 2 Dragon : (1) name
+# 3 Horse  : (1) name (2) color (3) weight
+# 4 Guild  : (1) name
+# 5 Kingdom: (1) name
+#
+# relationship types:
+#
+# 1 owns         (Person      , Dragon/Horse): (1) since (2) till
+# 2 fires at     (Dragon      , Dragon      ): (1) time
+# 3 freezes      (Dragon      , Dragon      ): (1) time  (2) duration
+# 4 offspring    (Person      , Person      )
+# 5 knows        (Person      , Person      ): (1) since
+# 6 member of    (Person      , Guild       ): (1) since (2) till
+# 7 subject of   (Person      , Kingdom     )
+# 8 registered in(Guild       , Kingdom     )
+# 9 originated in(Dragon/Horse, Kingdom     )
+
+# =====================================
+# JSON
+# =====================================
+
+{
+  "Ont": "Dragons",
+  "EntityTypes": [
+    {
+      "EType": 1,
+      "Name": "Person",
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "first name",
+          "Type": "string"
+        },
+        {
+          "PType": 2,
+          "Name": "last name",
+          "Type": "string"
+        },
+        {
+          "PType": 3,
+          "Name": "gender",
+          "Type": "TYPE_Gender"
+        },
+        {
+          "PType": 4,
+          "Name": "birth date",
+          "Type": "date"
+        },
+        {
+          "PType": 5,
+          "Name": "death date",
+          "Type": "date"
+        },
+        {
+          "PType": 6,
+          "Height": "height",
+          "Type": "int",
+          "Units": "cm"
+        }
+      ]
+    },
+    {
+      "EType": 2,
+      "Name": "Dragon",
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "name",
+          "Type": "string"
+        }
+      ]
+    },
+    {
+      "EType": 3,
+      "Name": "Horse",
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "name",
+          "Type": "string"
+        },
+        {
+          "PType": 2,
+          "Name": "color",
+          "Type": "TYPE_HorseColor"
+        },
+        {
+          "PType": 3,
+          "Height": "weight",
+          "Type": "int",
+          "Units": "Kg"
+        }
+      ]
+    },
+    {
+      "EType": 4,
+      "Name": "Guild",
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "name",
+          "Type": "string"
+        }
+      ]
+    },
+    {
+      "EType": 5,
+      "Name": "Kingdom",
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "name",
+          "Type": "string"
+        }
+      ]
+    }
+  ],
+  "RelationshipTypes": [
+    {
+      "RType": 1,
+      "Name": "own",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 1,
+          "ETypeB": 2
+        },
+        {
+          "ETypeA": 1,
+          "ETypeB": 3
+        }
+      ],
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "since",
+          "Type": "date"
+        },
+        {
+          "PType": 2,
+          "Name": "till",
+          "Type": "date"
+        }
+      ]
+    },
+    {
+      "RType": 2,
+      "Name": "fires at",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 2,
+          "ETypeB": 2
+        }
+      ],
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "time",
+          "Type": "datetime"
+        }
+      ]
+    },
+    {
+      "RType": 3,
+      "Name": "freezes",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 2,
+          "ETypeB": 2
+        }
+      ],
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "time",
+          "Type": "datetime"
+        },
+        {
+          "PType": 2,
+          "Name": "duration",
+          "Type": "int",
+          "Units": "min"
+        }
+      ]
+    },
+    {
+      "RType": 4,
+      "Name": "offspring of",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 1,
+          "ETypeB": 1
+        }
+      ]
+    },
+    {
+      "RType": 5,
+      "Name": "knows",
+      "Directional": false,
+      "EPairs": [
+        {
+          "ETypeA": 1,
+          "ETypeB": 1
+        }
+      ],
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "since",
+          "Type": "date"
+        }
+      ]
+    },
+    {
+      "RType": 6,
+      "Name": "member of",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 1,
+          "ETypeB": 4
+        }
+      ],
+      "Properties": [
+        {
+          "PType": 1,
+          "Name": "since",
+          "Type": "date"
+        },
+        {
+          "PType": 2,
+          "Name": "till",
+          "Type": "date"
+        }
+      ]
+    },
+    {
+      "RType": 7,
+      "Name": "subject of",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 1,
+          "ETypeB": 5
+        }
+      ]
+    },
+    {
+      "RType": 8,
+      "Name": "registered in",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 4,
+          "ETypeB": 5
+        }
+      ]
+    },
+    {
+      "RType": 9,
+      "Name": "originated in",
+      "Directional": true,
+      "EPairs": [
+        {
+          "ETypeA": 2,
+          "ETypeB": 5
+        },
+        {
+          "ETypeA": 3,
+          "ETypeB": 5
+        }
+      ]
+    }
+  ],
+  "EnumeratedTypes": [
+    {
+      "EType": "TYPE_Gender",
+      "Values": [
+        {
+          "Val": 1,
+          "Name": "Female"
+        },
+        {
+          "Val": 2,
+          "Name": "Male"
+        },
+        {
+          "Val": 3,
+          "Name": "Other"
+        }
+      ]
+    },
+    {
+      "EType": "TYPE_HorseColor",
+      "Values": [
+        {
+          "Val": 1,
+          "Name": "Black"
+        },
+        {
+          "Val": 2,
+          "Name": "White"
+        },
+        {
+          "Val": 3,
+          "Name": "Brown"
+        }
+      ]
+    }
+  ]
+}
