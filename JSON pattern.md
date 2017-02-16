@@ -23,19 +23,19 @@
 |17 | HComb      | Horizontal Combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
 |18 | SplitBy    | Split By                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
 |19 | SplitsCond | Splits Condition        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
-|31 | AggL1     | L1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
-|32 | AggL2     | L2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
-|33 | AggL3     | L3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
-|34 | AggL4     | L4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
-|41 | AggM1     | M1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
-|42 | AggM2     | M2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
-|43 | AggM3     | M3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
-|44 | AggM4     | M4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
-|45 | AggM5     | M5 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
-|51 | AggP1     | P1 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
-|52 | AggP2     | P2 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
-|53 | AggP3     | P3 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
-|54 | AggP4     | P4 Aggregation           | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
+|31 | AggL1      | L1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
+|32 | AggL2      | L2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
+|33 | AggL3      | L3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
+|34 | AggL4      | L4 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element34.png)
+|41 | AggM1      | M1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element41.png)
+|42 | AggM2      | M2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
+|43 | AggM3      | M3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
+|44 | AggM4      | M4 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
+|45 | AggM5      | M5 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
+|51 | AggP1      | P1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
+|52 | AggP2      | P2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
+|53 | AggP3      | P3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
+|54 | AggP4      | P4 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
 
 ## Wrappers for relationships / paths
 
@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | string | condition
+|         | Cond      | [...]  | condition <br> op: "eq", "ne", gt", "ge", "lt", "le", "in set", "not in set", "in range", "not in range" <br> "R": right side
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
@@ -139,14 +139,14 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | string | condition
+|         | Cond      | [...]  | condition <br> op: "eq", "ne", gt", "ge", "lt", "le", "in set", "not in set", "in range", "not in range" <br> "R": right side
 |         | B         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
+| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Rel, Path, EntProp, Quant1
 |         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
@@ -155,7 +155,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
+| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | R         | [int]  | ENum of elements on the right. <br> Valid element types: Yellow, Blue, Red, AggEnt, LogEnt, Quant2
 
@@ -192,7 +192,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "gt", "ge", "lt", "le", "ne", "range", "notrange"
+| +       | QType     | string | "all", "notall", "none", "notnone", "eq", "ne", "gt", "ge", "lt", "le", "range", "notrange"
 | +       | Branches  | int    | number of branches (>1)
 | +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
