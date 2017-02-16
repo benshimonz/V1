@@ -1,0 +1,44 @@
+{
+  "Ont": "Dragons",
+  "Name": "Q190-1",
+  "Elements": [
+    {
+      "ENum": 0,
+      "Type": "Start",
+      "Next": 1
+    },
+    {
+      "ENum": 1,
+      "Type": "ETyped",
+      "ETag": "A",
+      "EType": 1,
+      "Next": 2
+    },
+    {
+      "ENum": 2,
+      "Type": "Rel",
+      "RType": 1,
+      "Dir": "R",
+      "Next": 3,
+      "B": 4
+    },
+    {
+      "ENum": 3,
+      "Type": "ETyped",
+      "ETag": "B",
+      "EType": 2
+    },
+    {
+      "ENum": 4,
+      "Type": "RelProp",
+      "PType": 1,
+      "Cond": [
+        {
+          "L": "year",
+          "Op": "ge",
+          "R": "1011"
+        }
+      ]
+    }
+  ]
+}
