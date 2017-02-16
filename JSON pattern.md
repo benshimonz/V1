@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> "(not mandatory) L: function to apply to property <br> (mandatory) Op: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> (mandatory) R: string - right side of the condition
+|         | Cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **R**: string - right side of the condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
@@ -139,7 +139,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> "(not mandatory) L: function to apply to property <br> (mandatory) Op: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> (mandatory) R: string - right side of the condition
+|         | Cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **R**: string - right side of the condition
 |         | B         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
