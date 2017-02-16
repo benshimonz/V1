@@ -175,8 +175,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type       | Description
 |---------|-----------|------------| ------
-|         | ETypes    | [ * ]      | Entity types <br> For each entry: <ul><li>Entity type - according to the ontology</li> <li> Optional [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
-|         | RTypes    | [ * ]      | Relationship types <br> For each entry: <ul><li>Relationship type - according to the ontology</li> <li>Optional [string] operator ("eq", "lt", or "le") and [int] value</li> <li>Optional [string] direction ("R" or "L")</li></ul>
+|         | ETypes    | [ * ]      | Entity types and constraints <br> For each: <ul><li>Entity type - according to the ontology</li> <li> _not mandatory_ [string] operator ("eq", "lt", or "le") and [int] value</li></ul>
+|         | RTypes    | [ * ]      | Relationship types and constraints <br> For each: <ul><li>Relationship type - according to the ontology</li> <li>_not mandatory_ [string] operator ("eq", "lt", or "le") and [int] value</li> <li>_not mandatory_ [string] direction ("R" or "L")</li></ul>
 |         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq", "lt", "le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
 |         | Next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, RComb
