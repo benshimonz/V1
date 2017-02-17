@@ -226,22 +226,19 @@ Comparison operators over ordinal property / function-range (integer types, floa
 Functions over _date_ properties:
 
 * _Year(date), Month(date), Day(date)_ → int
-* _DayOfWeek(datetime)_ → int
-* _DayOfYear(datetime)_ → int
-* _WeekOfYear(datetime)_ → int
+* _DayOfWeek(date), DayOfYear(date), WeekOfYear(date)_ → int
 
-Functions over _time_ properties:
+Functions over _time_ properties (00:00:00 - 23:59:59):
 
-* _Hour(datetime), Min(datetime), Sec(datetime)_ → int
+* _Hour(time), Min(time), Sec(time)_ → int
 
 Functions over _datetime_ properties:
 
 * _Date(datetime)_ → date
-* _Time(datetime)_ → time (00:00:00 - 23:59:59)
-* _Year(datetime), Month(datetime), Day(datetime), Hour(datetime), Min(datetime), Sec(datetime)_ → int
-* _DayOfWeek(datetime)_ → int
-* _DayOfYear(datetime)_ → int
-* _WeekOfYear(datetime)_ → int
+* _Time(datetime)_ → time
+* _Year(datetime), Month(datetime), Day(datetime)_ → int
+* _Hour(datetime), Min(datetime), Sec(datetime)_ → int
+* _DayOfWeek(datetime), DayOfYear(datetime), WeekOfYear(datetime)_ → int
 
 Comparison operators over _string_ property / function-range:
 
