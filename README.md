@@ -219,7 +219,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ## Properties - Functions and Comparison Operators
 
-Comparison operators over ordinal property / function-range (e.g. _int_, _double_, _date_, _time_, _datetime_):
+Comparison operators over ordinal property / function-range (integer types, floating-point types, _date_, _datetime_):
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
@@ -232,7 +232,7 @@ Functions over _date_ properties:
 
 Functions over _time_ properties:
 
-* Hour(datetime), Min(datetime), Sec(datetime)_ → int
+* _Hour(datetime), Min(datetime), Sec(datetime)_ → int
 
 Functions over _datetime_ properties:
 
