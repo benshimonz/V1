@@ -145,18 +145,16 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
-| +       | Branches  | int    | number of branches (>1)
-| +       | Next      | [int]  | ENum of next elements. <br> Valid element types: Rel, Path, EProp, Quant1
+| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | Next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
 |         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
 
 ## E11: Quantifier 2 (Type = 'Quant2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
-| +       | Branches  | int    | number of branches (>1)
-| +       | Next      | [int]  | ENum of next elements. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
+| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | Next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
 
 ## E12: E-Combiner (Type = 'EComb')
 
@@ -191,9 +189,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"notall"/"none"/"notnone"/"eq"/"ne"/"gt"/"ge"/"lt"/"le"/"range"/"notrange"
-| +       | Branches  | int    | number of branches (>1)
-| +       | B         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | B         | int    | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
 ## E17: Horizontal Combiner (Type = 'HComb')
