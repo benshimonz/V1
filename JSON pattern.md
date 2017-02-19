@@ -129,16 +129,18 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | pTag      | string | Property tag to assign (e.g. "1")
-|         | cond      | [...]  | condition <br> _not mandatory_ **f**: function to apply to property <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
+|         | f         | string | function to apply to property
+|         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
+|         | cond      | {...}  | condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | pTag      | string | Property tag to assign (e.g. "1")
-|         | cond      | [...]  | condition <br> _not mandatory_ **f**: function to apply to property <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
+|         | f         | string | function to apply to property
+|         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
+|         | cond      | {...}  | condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
 |         | b         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
