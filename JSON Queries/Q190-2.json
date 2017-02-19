@@ -1,42 +1,42 @@
 {
-  "Ont": "Dragons",
-  "Name": "Q190-1",
-  "Elements": [
+  "ont": "Dragons",
+  "name": "Q190-1",
+  "elements": [
     {
-      "ENum": 0,
-      "Type": "Start",
-      "Next": 1
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
     },
     {
-      "ENum": 1,
-      "Type": "ETyped",
-      "ETag": "A",
-      "EType": 1,
-      "Next": 2
+      "eNum": 1,
+      "type": "ETyped",
+      "eTag": "A",
+      "eType": 1,
+      "next": 2
     },
     {
-      "ENum": 2,
-      "Type": "Rel",
-      "RType": 1,
-      "Dir": "R",
-      "Next": 3,
-      "B": 4
+      "eNum": 2,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 3,
+      "b": 4
     },
     {
-      "ENum": 3,
-      "Type": "ETyped",
-      "ETag": "B",
-      "EType": 2
+      "eNum": 3,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
     },
     {
-      "ENum": 4,
-      "Type": "RelProp",
-      "PType": 1,
-      "Cond": [
+      "eNum": 4,
+      "type": "RelProp",
+      "pType": 1,
+      "cond": [
         {
-          "L": "year",
-          "Op": "ge",
-          "R": "1011"
+          "f": "year",
+          "op": "ge",
+          "r": "1011"
         }
       ]
     }

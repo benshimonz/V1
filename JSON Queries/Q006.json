@@ -1,126 +1,126 @@
 {
-  "Ont": "Dragons",
-  "Name": "Q6",
-  "Elements": [
+  "ont": "Dragons",
+  "name": "Q6",
+  "elements": [
     {
-      "ENum": 0,
-      "Type": "Start",
-      "Next": 1
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
     },
     {
-      "ENum": 1,
-      "Type": "ETyped",
-      "ETag": "A",
-      "EType": 1,
-      "Next": 2
+      "eNum": 1,
+      "type": "ETyped",
+      "eTag": "A",
+      "eType": 1,
+      "next": 2
     },
     {
-      "ENum": 2,
-      "Type": "Quant1",
-      "QType": "all",
-      "Next": [
+      "eNum": 2,
+      "type": "Quant1",
+      "qType": "all",
+      "next": [
         3,
         5,
         11
       ]
     },
     {
-      "ENum": 3,
-      "Type": "Rel",
-      "RType": 1,
-      "Dir": "R",
-      "Next": 4
+      "eNum": 3,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 4
     },
     {
-      "ENum": 4,
-      "Type": "ETyped",
-      "ETag": "B",
-      "EType": 2
+      "eNum": 4,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
     },
     {
-      "ENum": 5,
-      "Type": "Rel",
-      "RType": 4,
-      "Dir": "R",
-      "Next": 6
+      "eNum": 5,
+      "type": "Rel",
+      "rType": 4,
+      "dir": "R",
+      "next": 6
     },
     {
-      "ENum": 6,
-      "Type": "ETyped",
-      "ETag": "C",
-      "EType": 1,
-      "Next": 7
+      "eNum": 6,
+      "type": "ETyped",
+      "eTag": "C",
+      "eType": 1,
+      "next": 7
     },
     {
-      "ENum": 7,
-      "Type": "Rel",
-      "RType": 1,
-      "Dir": "R",
-      "Next": 8
+      "eNum": 7,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 8
     },
     {
-      "ENum": 8,
-      "Type": "ETyped",
-      "ETag": "D",
-      "EType": 2,
-      "Next": 9
+      "eNum": 8,
+      "type": "ETyped",
+      "eTag": "D",
+      "eType": 2,
+      "next": 9
     },
     {
-      "ENum": 9,
-      "Type": "Rel",
-      "RType": 3,
-      "Dir": "R",
-      "Next": 10
+      "eNum": 9,
+      "type": "Rel",
+      "rType": 3,
+      "dir": "R",
+      "next": 10
     },
     {
-      "ENum": 10,
-      "Type": "ETyped",
-      "ETag": "B",
-      "EType": 2
+      "eNum": 10,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
     },
     {
-      "ENum": 11,
-      "Type": "Rel",
-      "RType": 4,
-      "Dir": "R",
-      "Next": 12
+      "eNum": 11,
+      "type": "Rel",
+      "rType": 4,
+      "dir": "R",
+      "next": 12
     },
     {
-      "ENum": 12,
-      "Type": "ETyped",
-      "ETag": "E",
-      "EType": 1,
-      "Next": 13
+      "eNum": 12,
+      "type": "ETyped",
+      "eTag": "E",
+      "eType": 1,
+      "next": 13
     },
     {
-      "ENum": 13,
-      "Type": "Rel",
-      "RType": 1,
-      "Dir": "R",
-      "Next": 14
+      "eNum": 13,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 14
     },
     {
-      "ENum": 14,
-      "Type": "ETyped",
-      "ETag": "F",
-      "EType": 2,
-      "Next": 15
+      "eNum": 14,
+      "type": "ETyped",
+      "eTag": "F",
+      "eType": 2,
+      "next": 15
     },
     {
-      "ENum": 15,
-      "Type": "Rel",
-      "RType": 3,
-      "Dir": "R",
-      "Next": 16
+      "eNum": 15,
+      "type": "Rel",
+      "rType": 3,
+      "dir": "R",
+      "next": 16
     },
     {
-      "ENum": 16,
-      "Type": "ETyped",
-      "ETag": "B",
-      "EType": 2
+      "eNum": 16,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
     }
   ],
-  "Nonidentical": [ 
+  "nonidentical": [ 
     ["C", "E"],
     ["D", "F"]
   ]

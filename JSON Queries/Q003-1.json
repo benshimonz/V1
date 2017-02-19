@@ -1,41 +1,41 @@
 {
-  "Ont": "Dragons",
-  "Name": "Q3-1",
-  "Elements": [
+  "ont": "Dragons",
+  "name": "Q3-1",
+  "elements": [
     {
-      "ENum": 0,
-      "Type": "Start",
-      "Next": 1
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
     },
     {
-      "ENum": 1,
-      "Type": "ETyped",
-      "ETag": "A",
-      "EType": 2,
-      "Next": 2
+      "eNum": 1,
+      "type": "ETyped",
+      "eTag": "A",
+      "eType": 2,
+      "next": 2
     },
     {
-      "ENum": 2,
-      "Type": "Rel",
-      "RType": 1,
-      "Dir": "L",
-      "Next": 3
+      "eNum": 2,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "L",
+      "next": 3
     },
     {
-      "ENum": 3,
-      "Type": "ETyped",
-      "ETag": "B",
-      "EType": 1,
-      "Next": 4
+      "eNum": 3,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 1,
+      "next": 4
     },
     {
-      "ENum": 4,
-      "Type": "EProp",
-      "PType": 1,
-      "Cond": [
+      "eNum": 4,
+      "type": "EProp",
+      "pType": 1,
+      "cond": [
         {
-          "Op": "eq",
-          "R": "Brandon"
+          "op": "eq",
+          "r": "Brandon"
         }
       ]
     }

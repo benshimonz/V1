@@ -1,0 +1,91 @@
+{
+  "ont": "Dragons",
+  "name": "Q8",
+  "elements": [
+    {
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
+    },
+    {
+      "eNum": 1,
+      "type": "ETyped",
+      "eTag": "A",
+      "eType": 1,
+      "next": 2
+    },
+    {
+      "eNum": 2,
+      "type": "Quant1",
+      "qType": "some",
+      "next": [
+        3,
+        6
+      ]
+    },
+    {
+      "eNum": 3,
+      "type": "Quant1",
+      "qType": "all",
+      "next": [
+        4,
+        5
+      ]
+    },
+    {
+      "eNum": 4,
+      "type": "EProp",
+      "pType": 4,
+      "cond":
+      {
+        "op": "lt",
+        "r": "970-1-1"
+      }
+    },
+    {
+      "eNum": 5,
+      "type": "EProp",
+      "pType": 5,
+      "cond":
+      {
+        "op": "not empty"
+      }
+    },
+    {
+      "eNum": 6,
+      "type": "Rel",
+      "rType": 4,
+      "dir": "R",
+      "next": 7
+    },
+    {
+      "eNum": 7,
+      "type": "Quant1",
+      "qType": "all",
+      "next": [
+        8,
+        9
+      ]
+    },
+    {
+      "eNum": 8,
+      "type": "EProp",
+      "pType": 4,
+      "cond":
+      {
+        "op": "le",
+        "r": "950-1-1"
+      }
+    },
+    {
+      "eNum": 9,
+      "type": "EProp",
+      "pType": 5,
+      "cond":
+      {
+        "op": "eq"
+        "r": 2
+      }
+    }
+ ]
+}
