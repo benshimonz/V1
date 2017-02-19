@@ -60,6 +60,8 @@
 | +       | eNum      | int    | Element number. Distinct value for each element
 | +       | type      | string | JSON element type
 
+**Additional JSON elements for each V1 element type:**
+
 ## E1: Query Start (Type = 'Start')
 
 There must be a single element with type 'Start'. Its ENum must equals to 0.
