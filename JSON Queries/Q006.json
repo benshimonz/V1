@@ -18,7 +18,6 @@
       "ENum": 2,
       "Type": "Quant1",
       "QType": "all",
-      "Branches": 3,
       "Next": [
         3,
         5,
