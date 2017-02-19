@@ -143,7 +143,7 @@ A condition, a property tag, or both - must be present
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
-|         | b         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 A condition, a property tag, or both - must be present
 
