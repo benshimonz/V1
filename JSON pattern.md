@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": **value**: right side of the condition. array [same type as pType / f's domain]
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": _mandatory_ **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": _mandatory_ **value**: right side of the condition. array [same type as pType / f's domain]
 
 At least one of {pTag, cond} must be present
 
@@ -142,7 +142,7 @@ At least one of {pTag, cond} must be present
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": **value**: right side of the condition. array [same type as pType / f's domain]
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": _mandatory_ **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": _mandatory_ **value**: right side of the condition. array [same type as pType / f's domain]
 |         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 At least one of {pTag, cond} must be present
@@ -209,7 +209,7 @@ At least one of {pTag, cond} must be present
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | relProp   | string | name of relationship's property to split by (e.g. "since")
+|         | pType     | int    | Relationship's property type (e.g. of 'since') to split by
 |         | tag       | string | pt/at/st to split by (e.g. "1")
 |         | eTTag     | string | entity type tag to split by (e.g. "1")
 
@@ -254,8 +254,8 @@ At least one of {aTag, cond} must be present
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as relProp. For "in set"/"not in set"/"in range"/"not in range" - array [same type as relProp].
+| +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as pType. For "in set"/"not in set"/"in range"/"not in range" - array [same type as pType].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
@@ -303,7 +303,7 @@ At least one of {aTag, cond} must be present
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
+| +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E44: M4 Aggregation (Type = 'AggM4')
@@ -324,7 +324,7 @@ At least one of {aTag, cond} must be present
 |         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
-| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
+| +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## Nonidenticality constraints between entity tags
