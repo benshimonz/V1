@@ -189,7 +189,7 @@ A condition, a property tag, or both - must be present
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         |           |        |
+|todo     |           |        |
 
 ## E16: Horizontal Quantifier (Type = 'HQuant')
 
