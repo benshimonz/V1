@@ -69,6 +69,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
+|         | b         | int    | ENum of element below. <br> Valid element types: SplitBy
 
 ## E2: Concrete Entity (Type = 'EConcrete')
 
