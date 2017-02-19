@@ -231,7 +231,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **r**: non-negative int - right side of the condition
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
@@ -241,7 +241,7 @@ At least one of the above must be presented
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **r**: non-negative int - right side of the condition
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E33: L3 Aggregation (Type = 'AggL3')
@@ -252,7 +252,7 @@ At least one of the above must be presented
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **r**: same type as _relProp_ - right side of the condition
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as relProp. For "in set"/"not in set"/"in range"/"not in range" - array [same type as relProp].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E34: L4 Aggregation (Type = 'AggL4')
@@ -263,7 +263,7 @@ At least one of the above must be presented
 |         | aTag      | string   | attribute tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **r**: non-negative int - right side of the condition
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E41: M1 Aggregation (Type = 'AggM1')
