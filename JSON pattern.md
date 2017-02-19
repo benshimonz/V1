@@ -287,7 +287,7 @@ At least one of the above must be presented
 | +       | op        | string   | "min" / "max"
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-## E43: M3 Aggregation (Type = 'AggLM3')
+## E43: M3 Aggregation (Type = 'AggM3')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
