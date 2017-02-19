@@ -141,7 +141,7 @@
     },
     {
       "eNum": 18,
-      "type": "Quant1",
+      "type": "Quant2",
       "qType": "some",
       "next": [
         19,
