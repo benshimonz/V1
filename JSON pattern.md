@@ -131,9 +131,9 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **value**: string - right side of the condition
 
-A condition, a property tag, or both - must be present
+At least one of {pTag, cond} must be present
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
@@ -142,10 +142,10 @@ A condition, a property tag, or both - must be present
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **r**: string - right side of the condition
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **value**: string - right side of the condition
 |         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
-A condition, a property tag, or both - must be present
+At least one of {pTag, cond} must be present
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
@@ -234,7 +234,7 @@ At least one of the above must be presented
 |         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-A condition, an attribute tag, or both - must be present
+At least one of {aTag, cond} must be present
 
 ## E32: L2 Aggregation (Type = 'AggL2')
 
@@ -245,7 +245,7 @@ A condition, an attribute tag, or both - must be present
 |         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-A condition, an attribute tag, or both - must be present
+At least one of {aTag, cond} must be present
 
 ## E33: L3 Aggregation (Type = 'AggL3')
 
@@ -258,7 +258,7 @@ A condition, an attribute tag, or both - must be present
 |         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as relProp. For "in set"/"not in set"/"in range"/"not in range" - array [same type as relProp].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-A condition, an attribute tag, or both - must be present
+At least one of {aTag, cond} must be present
 
 ## E34: L4 Aggregation (Type = 'AggL4')
 
@@ -271,7 +271,7 @@ A condition, an attribute tag, or both - must be present
 |         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
-A condition, an attribute tag, or both - must be present
+At least one of {aTag, cond} must be present
 
 ## E41: M1 Aggregation (Type = 'AggM1')
 
