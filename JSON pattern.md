@@ -131,7 +131,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **value**: string - right side of the condition
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": **value**: right side of the condition. array [same type as pType / f's domain]
 
 At least one of {pTag, cond} must be present
 
@@ -142,7 +142,7 @@ At least one of {pTag, cond} must be present
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **value**: string - right side of the condition
+|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": **value**: right side of the condition. same type as pType / f's domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": **value**: right side of the condition. array [same type as pType / f's domain]
 |         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 At least one of {pTag, cond} must be present
@@ -268,7 +268,7 @@ At least one of {aTag, cond} must be present
 |         | aTag      | string   | attribute tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as property with _pt_ / non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [same type as property with _pt_ / non-negative int].
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
