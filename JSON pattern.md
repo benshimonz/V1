@@ -48,17 +48,17 @@
 
 |Mandatory| Name         | Type   | Description
 |---------|--------------|--------| ------
-| +       | Ont          | string | Ontology name
-| +       | Name         | string | Query name
-| +       | Elements     | [...]  | Elements composing the query
-|         | Nonidentical | [...]  | nonidenticality constraints between entity tags
+| +       | ont          | string | Ontology name
+| +       | name         | string | Query name
+| +       | elements     | [...]  | Elements composing the query
+|         | nonidentical | [...]  | nonidenticality constraints between entity tags
 
 **Elements: for each query element:**
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ENum      | int    | Element number. Distinct value for each element
-| +       | Type      | string | JSON element type
+| +       | eNum      | int    | Element number. Distinct value for each element
+| +       | type      | string | JSON element type
 
 ## E1: Query Start (Type = 'Start')
 
@@ -66,118 +66,118 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Next      | int    | ENum of next element. <br> Valid element types: SplitBy
+| +       | next      | int    | ENum of next element. <br> Valid element types: SplitBy
 
 ## E2: Concrete Entity (Type = 'EConcrete')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ETag      | string | Entity tag (e.g. "A")
-| +       | EID       | int    | Technical ID of the entity
-| +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-| +       | EName     | string | Display name of the entity (e.g. "Lior Kogan"). It is better to read the name from the database. This  was the name when the pattern was stored
-|         | Next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+| +       | eTag      | string | Entity tag (e.g. "A")
+| +       | eID       | int    | Technical ID of the entity
+| +       | eType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
+| +       | eName     | string | Display name of the entity (e.g. "Lior Kogan"). It is better to read the name from the database. This  was the name when the pattern was stored
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## E3: Typed Entity (Type = 'ETyped')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ETag      | string | Entity tag (e.g. "A")
-| +       | EType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-|         | Next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
-|         | B         | int    | ENum of element below. <br> Valid element types: AggP1, AggP4
+| +       | eTag      | string | Entity tag (e.g. "A")
+| +       | eType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
+|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | b         | int    | ENum of element below. <br> Valid element types: AggP1, AggP4
 
 ## E4: Untyped Entity (Type = 'EUntyped')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ETag      | string | Entity tag (e.g. "A")
-|         | VTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
-|         | NVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
-|         | Next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+| +       | eTag      | string | Entity tag (e.g. "A")
+|         | vTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
+|         | nVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## E5: Aggregate Entity (Type = 'EAgg')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ETag      | string | Entity tag (e.g. "A")
-| +       | FName     | string | file name, where defined
-| +       | EName     | string | name - as defined in file
-|         | Next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+| +       | eTag      | string | Entity tag (e.g. "A")
+| +       | fName     | string | file name, where defined
+| +       | eName     | string | name - as defined in file
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## E6: Logical Entity (Type = 'ELog')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | ETag      | string | Entity tag (e.g. "A")
-| +       | FName     | string | file name, where defined
-| +       | EName     | string | name - as defined in file
-|         | Next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+| +       | eTag      | string | Entity tag (e.g. "A")
+| +       | fName     | string | file name, where defined
+| +       | eName     | string | name - as defined in file
+|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## E7: Relationship (Type = 'Rel')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | RType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
-| +       | Dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
-|         | Wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | Next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, RComb
-|         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
+| +       | rType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
+| +       | dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
+|         | wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
+|         | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, RComb
+|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
 
 ## E8: Entity's Property (Type = 'EProp') 
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **R**: string - right side of the condition
+| +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+|         | pTag      | string | Property tag to assign (e.g. "1")
+|         | cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **R**: string - right side of the condition
 
 ## E9: Relationship's Property (Type = 'RelProp')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | PType     | int    | Property type (e.g. of 'own') <br> According to the ontology
-|         | PTag      | string | Property tag to assign (e.g. "1")
-|         | Cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **R**: string - right side of the condition
-|         | B         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+| +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+|         | pTag      | string | Property tag to assign (e.g. "1")
+|         | cond      | [...]  | condition <br> _not mandatory_ **L**: function to apply to property <br> _mandatory_ **Op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> _mandatory for some ops_ **R**: string - right side of the condition
+|         | b         | int    | ENum of element below. <br> Valid element types: HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## E10: Quantifier 1 (Type = 'Quant1')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
-| +       | Next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
-|         | B         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
+|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
 
 ## E11: Quantifier 2 (Type = 'Quant2')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
-| +       | Next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
 
 ## E12: E-Combiner (Type = 'EComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Next      | int    | ENum of next elements. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+| +       | next      | int    | ENum of next elements. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## E13: R-Combiner (Type = 'RComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | Next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, RComb, Quant2
+| +       | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, RComb, Quant2
 
 ## E14: Path (Type = 'Path') 
 
 |Mandatory| Name      | Type       | Description
 |---------|-----------|------------| ------
-|         | ETypes    | [ * ]      | Entity types and constraints <br> For each: <br> **EType**: string - entity type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and **Val**: int - value
-|         | RTypes    | [ * ]      | Relationship types and constraints <br> For each: <br> **RelType**: string - Relationship type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and **Val**: int - value <br> _not mandatory_ **Dir** - string - direction ("-"/"R"/"L")</li></ul>
-|         | Length    | *          | Path length. Either <ul><li>[string] operator ("eq"/"lt"/"le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
-|         | Wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | Next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, RComb
-|         | B         | int        | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
+|         | eTypes    | [ * ]      | Entity types and constraints <br> For each: <br> **EType**: string - entity type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and **Val**: int - value
+|         | rTypes    | [ * ]      | Relationship types and constraints <br> For each: <br> **RelType**: string - Relationship type - according to the ontology <br> _not mandatory_ **Op**: string - operator ("eq"/"lt"/"le") and **Val**: int - value <br> _not mandatory_ **Dir** - string - direction ("-"/"R"/"L")</li></ul>
+|         | length    | *          | Path length. Either <ul><li>[string] operator ("eq"/"lt"/"le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
+|         | wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
+|         | next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, RComb
+|         | b         | int        | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
 
 ## E15: Path Segment (Type = 'PathSeg')
 
@@ -189,23 +189,23 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | QType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
-| +       | B         | int    | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | b         | int    | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
 ## E17: Horizontal Combiner (Type = 'HComb')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | B         | int    | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | b         | int    | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E18: Split by (Type = 'SplitBy')
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | RelProp   | string | name of relationship's property to split by (e.g. "since")
-|         | Tag       | string | pt/at/st to split by (e.g. "1")
-|         | ETTag     | string | entity type tag to split by (e.g. "1")
+|         | relProp   | string | name of relationship's property to split by (e.g. "since")
+|         | tag       | string | pt/at/st to split by (e.g. "1")
+|         | eTTag     | string | entity type tag to split by (e.g. "1")
 
 Exactly one of the above must be presented
 
@@ -213,8 +213,8 @@ Exactly one of the above must be presented
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | Cond      | string | condition
-|         | STag      | string | split tag to assign (e.g. "1")
+|         | cond      | string | condition
+|         | sTag      | string | split tag to assign (e.g. "1")
 
 At least one of the above must be presented
 
@@ -222,103 +222,103 @@ At least one of the above must be presented
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
-| +       | ETag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
-|         | ATag      | string   | attribute tag to assign (e.g. "1")
-|         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+| +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
+|         | aTag      | string   | attribute tag to assign (e.g. "1")
+|         | cond      | string   | condition
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 
 ## E32: L2 Aggregation (Type = 'AggL2')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
-|         | ATag      | string   | attribute tag to assign (e.g. "1")
-|         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | aTag      | string   | attribute tag to assign (e.g. "1")
+|         | cond      | string   | condition
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E33: L3 Aggregation (Type = 'AggL3')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
-|         | ATag      | string   | attribute tag to assign (e.g. "1")
-| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | aTag      | string   | attribute tag to assign (e.g. "1")
+| +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | cond      | string   | condition
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E34: L4 Aggregation (Type = 'AggL4')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-| +       | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
-|         | ATag      | string   | attribute tag to assign (e.g. "2")
-| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | Cond      | string   | condition
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | aTag      | string   | attribute tag to assign (e.g. "2")
+| +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
+|         | cond      | string   | condition
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E41: M1 Aggregation (Type = 'AggM1')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
-| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-| +       | ETag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | eTag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E42: M2 Aggregation (Type = 'AggM2')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
-| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E43: M3 Aggregation (Type = 'AggLM3')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
-| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-| +       | AggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
+| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E44: M4 Aggregation (Type = 'AggM4')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
-| +       | ETag      | [string] | entity tags on the 'n {et,et,...} clause
+| +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-| +       | Tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## E45: M5 Aggregation (Type = 'AggM5')
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
-|         | Per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
-| +       | RelProp   | string   | name of relationship's property to aggregate (e.g. "since")
-|         | B         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | relProp   | string   | name of relationship's property to aggregate (e.g. "since")
+|         | b         | int      | ENum of elements below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## Nonidenticality constraints between entity tags
 
 The following snippet demonstrates Nonidenticality constraints between tags "C" and "E", as well as between tags "C" and "F":
 
-  "Nonidentical": [ 
+  "nonidentical": [ 
     ["C", "E"]
     ["C", "F"]
   ]
