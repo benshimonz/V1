@@ -11,7 +11,7 @@
       "enum": 1,
       "type": "EConcrete",
       "eTag": "A",
-      "eID": 12345678,
+      "eID": "12345678",
       "eType": 1,
       "eName": "Brandon Stark",
       "next": 2

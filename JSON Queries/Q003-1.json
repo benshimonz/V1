@@ -32,12 +32,10 @@
       "eNum": 4,
       "type": "EProp",
       "pType": 1,
-      "cond": [
-        {
-          "op": "eq",
-          "r": "Brandon"
-        }
-      ]
+      "cond": {
+        "op": "eq",
+        "r": "Brandon"
+      }
     }
   ]
 }

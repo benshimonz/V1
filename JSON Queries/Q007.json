@@ -72,7 +72,7 @@
       "dir": "R",
       "next": 10
     },
-        {
+    {
       "eNum": 10,
       "type": "ETyped",
       "eTag": "D",
@@ -142,8 +142,14 @@
       "eType": 2
     }
   ],
-  "nonidentical": [ 
-    ["B", "E"],
-    ["C", "F"]
+  "nonidentical": [
+    [
+      "B",
+      "E"
+    ],
+    [
+      "C",
+      "F"
+    ]
   ]
 }

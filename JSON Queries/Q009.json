@@ -1,0 +1,75 @@
+{
+  "ont": "Dragons",
+  "name": "Q9",
+  "elements": [
+    {
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
+    },
+    {
+      "eNum": 1,
+      "type": "ETyped",
+      "eTag": "A",
+      "eType": 2,
+      "next": 2
+    },
+    {
+      "eNum": 2,
+      "type": "Quant1",
+      "qType": "all",
+      "next": [
+        3,
+        6
+      ]
+    },
+    {
+      "eNum": 3,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 4,
+      "b": 5
+    },
+    {
+      "eNum": 4,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
+    },
+    {
+      "eNum": 5,
+      "type": "RelProp",
+      "pType": 1,
+      "cond": {
+        "op": "in",
+        "r": "980-01-01T00:00:00.000Z, 981-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "eNum": 6,
+      "type": "Rel",
+      "rType": 1,
+      "dir": "R",
+      "next": 7,
+      "b": 8
+    },
+    {
+      "eNum": 7,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
+    },
+    {
+      "eNum": 8,
+      "type": "RelProp",
+      "pType": 1,
+      "cond": [
+        {
+          "op": "in",
+          "r": "984-01-01T00:00:00.000, 985-01-01T00:00:00.000"
+        }
+      ]
+    }
+  ]
+}

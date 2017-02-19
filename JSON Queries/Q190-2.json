@@ -1,6 +1,6 @@
 {
   "ont": "Dragons",
-  "name": "Q190-1",
+  "name": "Q190-2",
   "elements": [
     {
       "eNum": 0,
@@ -32,13 +32,11 @@
       "eNum": 4,
       "type": "RelProp",
       "pType": 1,
-      "cond": [
-        {
-          "f": "year",
-          "op": "ge",
-          "r": "1011"
-        }
-      ]
+      "f": "year",
+      "cond": {
+        "op": "ge",
+        "r": "1011"
+      }
     }
   ]
 }

@@ -36,8 +36,7 @@
       "eNum": 4,
       "type": "EProp",
       "pType": 4,
-      "cond":
-      {
+      "cond": {
         "op": "lt",
         "r": "970-1-1"
       }
@@ -46,8 +45,7 @@
       "eNum": 5,
       "type": "EProp",
       "pType": 5,
-      "cond":
-      {
+      "cond": {
         "op": "not empty"
       }
     },
@@ -71,8 +69,7 @@
       "eNum": 8,
       "type": "EProp",
       "pType": 4,
-      "cond":
-      {
+      "cond": {
         "op": "le",
         "r": "950-1-1"
       }
@@ -81,11 +78,10 @@
       "eNum": 9,
       "type": "EProp",
       "pType": 5,
-      "cond":
-      {
-        "op": "eq"
+      "cond": {
+        "op": "eq",
         "r": 2
       }
     }
- ]
+  ]
 }

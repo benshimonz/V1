@@ -120,8 +120,14 @@
       "eType": 2
     }
   ],
-  "nonidentical": [ 
-    ["C", "E"],
-    ["D", "F"]
+  "nonidentical": [
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "F"
+    ]
   ]
 }

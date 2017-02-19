@@ -106,7 +106,10 @@
       "eType": 2
     }
   ],
-  "nonidentical": [ 
-    ["C", "E"]
+  "nonidentical": [
+    [
+      "C",
+      "E"
+    ]
   ]
 }
