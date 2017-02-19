@@ -11,7 +11,7 @@
 # 1 owns         (Person      , Dragon/Horse): (1) since (2) till
 # 2 fires at     (Dragon      , Dragon      ): (1) time
 # 3 freezes      (Dragon      , Dragon      ): (1) time  (2) duration
-# 4 offspring    (Person      , Person      )
+# 4 offspring of (Person      , Person      )
 # 5 knows        (Person      , Person      ): (1) since
 # 6 member of    (Person      , Guild       ): (1) since (2) till
 # 7 subject of   (Person      , Kingdom     )
@@ -23,293 +23,293 @@
 # =====================================
 
 {
-  "Ont": "Dragons",
-  "EntityTypes": [
+  "ont": "Dragons",
+  "entityTypes": [
     {
-      "EType": 1,
-      "Name": "Person",
-      "Properties": [
+      "eType": 1,
+      "name": "Person",
+      "properties": [
         {
-          "PType": 1,
-          "Name": "first name",
-          "Type": "string"
+          "pType": 1,
+          "name": "first name",
+          "type": "string"
         },
         {
-          "PType": 2,
-          "Name": "last name",
-          "Type": "string"
+          "pType": 2,
+          "name": "last name",
+          "type": "string"
         },
         {
-          "PType": 3,
-          "Name": "gender",
-          "Type": "TYPE_Gender"
+          "pType": 3,
+          "name": "gender",
+          "type": "TYPE_Gender"
         },
         {
-          "PType": 4,
-          "Name": "birth date",
-          "Type": "date"
+          "pType": 4,
+          "name": "birth date",
+          "type": "date"
         },
         {
-          "PType": 5,
-          "Name": "death date",
-          "Type": "date"
+          "pType": 5,
+          "name": "death date",
+          "type": "date"
         },
         {
-          "PType": 6,
-          "Height": "height",
-          "Type": "int",
-          "Units": "cm"
+          "pType": 6,
+          "height": "height",
+          "type": "int",
+          "units": "cm"
         }
       ]
     },
     {
-      "EType": 2,
-      "Name": "Dragon",
-      "Properties": [
+      "eType": 2,
+      "name": "Dragon",
+      "properties": [
         {
-          "PType": 1,
-          "Name": "name",
-          "Type": "string"
+          "pType": 1,
+          "name": "name",
+          "type": "string"
         }
       ]
     },
     {
-      "EType": 3,
-      "Name": "Horse",
-      "Properties": [
+      "eType": 3,
+      "name": "Horse",
+      "properties": [
         {
-          "PType": 1,
-          "Name": "name",
-          "Type": "string"
+          "pType": 1,
+          "name": "name",
+          "type": "string"
         },
         {
-          "PType": 2,
-          "Name": "color",
-          "Type": "TYPE_HorseColor"
+          "pType": 2,
+          "name": "color",
+          "type": "TYPE_HorseColor"
         },
         {
-          "PType": 3,
-          "Height": "weight",
-          "Type": "int",
-          "Units": "Kg"
+          "pType": 3,
+          "height": "weight",
+          "type": "int",
+          "units": "Kg"
         }
       ]
     },
     {
-      "EType": 4,
-      "Name": "Guild",
-      "Properties": [
+      "eType": 4,
+      "name": "Guild",
+      "properties": [
         {
-          "PType": 1,
-          "Name": "name",
-          "Type": "string"
+          "pType": 1,
+          "name": "name",
+          "type": "string"
         }
       ]
     },
     {
-      "EType": 5,
-      "Name": "Kingdom",
-      "Properties": [
+      "eType": 5,
+      "name": "Kingdom",
+      "properties": [
         {
-          "PType": 1,
-          "Name": "name",
-          "Type": "string"
+          "pType": 1,
+          "name": "name",
+          "type": "string"
         }
       ]
     }
   ],
-  "RelationshipTypes": [
+  "relationshipTypes": [
     {
-      "RType": 1,
-      "Name": "own",
-      "Directional": true,
-      "EPairs": [
+      "rType": 1,
+      "name": "own",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 1,
-          "ETypeB": 2
+          "eTypeA": 1,
+          "eTypeB": 2
         },
         {
-          "ETypeA": 1,
-          "ETypeB": 3
+          "eTypeA": 1,
+          "eTypeB": 3
         }
       ],
-      "Properties": [
+      "properties": [
         {
-          "PType": 1,
-          "Name": "since",
-          "Type": "date"
+          "pType": 1,
+          "name": "since",
+          "type": "date"
         },
         {
-          "PType": 2,
-          "Name": "till",
-          "Type": "date"
+          "pType": 2,
+          "name": "till",
+          "type": "date"
         }
       ]
     },
     {
-      "RType": 2,
-      "Name": "fires at",
-      "Directional": true,
-      "EPairs": [
+      "rType": 2,
+      "name": "fires at",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 2,
-          "ETypeB": 2
+          "eTypeA": 2,
+          "eTypeB": 2
         }
       ],
-      "Properties": [
+      "properties": [
         {
-          "PType": 1,
-          "Name": "time",
-          "Type": "datetime"
+          "pType": 1,
+          "name": "time",
+          "type": "datetime"
         }
       ]
     },
     {
-      "RType": 3,
-      "Name": "freezes",
-      "Directional": true,
-      "EPairs": [
+      "rType": 3,
+      "name": "freezes",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 2,
-          "ETypeB": 2
+          "eTypeA": 2,
+          "eTypeB": 2
         }
       ],
-      "Properties": [
+      "properties": [
         {
-          "PType": 1,
-          "Name": "time",
-          "Type": "datetime"
+          "pType": 1,
+          "name": "time",
+          "type": "datetime"
         },
         {
-          "PType": 2,
-          "Name": "duration",
-          "Type": "int",
-          "Units": "min"
+          "pType": 2,
+          "name": "duration",
+          "type": "int",
+          "units": "min"
         }
       ]
     },
     {
-      "RType": 4,
-      "Name": "offspring of",
-      "Directional": true,
-      "EPairs": [
+      "rType": 4,
+      "name": "offspring of",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 1,
-          "ETypeB": 1
+          "eTypeA": 1,
+          "eTypeB": 1
         }
       ]
     },
     {
-      "RType": 5,
-      "Name": "knows",
-      "Directional": false,
-      "EPairs": [
+      "rType": 5,
+      "name": "knows",
+      "directional": false,
+      "ePairs": [
         {
-          "ETypeA": 1,
-          "ETypeB": 1
+          "eTypeA": 1,
+          "eTypeB": 1
         }
       ],
-      "Properties": [
+      "properties": [
         {
-          "PType": 1,
-          "Name": "since",
-          "Type": "date"
+          "pType": 1,
+          "name": "since",
+          "type": "date"
         }
       ]
     },
     {
-      "RType": 6,
-      "Name": "member of",
-      "Directional": true,
-      "EPairs": [
+      "rType": 6,
+      "name": "member of",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 1,
-          "ETypeB": 4
+          "eTypeA": 1,
+          "eTypeB": 4
         }
       ],
-      "Properties": [
+      "properties": [
         {
-          "PType": 1,
-          "Name": "since",
-          "Type": "date"
+          "pType": 1,
+          "name": "since",
+          "type": "date"
         },
         {
-          "PType": 2,
-          "Name": "till",
-          "Type": "date"
+          "pType": 2,
+          "name": "till",
+          "type": "date"
         }
       ]
     },
     {
-      "RType": 7,
-      "Name": "subject of",
-      "Directional": true,
-      "EPairs": [
+      "rType": 7,
+      "name": "subject of",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 1,
-          "ETypeB": 5
+          "eTypeA": 1,
+          "eTypeB": 5
         }
       ]
     },
     {
-      "RType": 8,
-      "Name": "registered in",
-      "Directional": true,
-      "EPairs": [
+      "rType": 8,
+      "name": "registered in",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 4,
-          "ETypeB": 5
+          "eTypeA": 4,
+          "eTypeB": 5
         }
       ]
     },
     {
-      "RType": 9,
-      "Name": "originated in",
-      "Directional": true,
-      "EPairs": [
+      "rType": 9,
+      "name": "originated in",
+      "directional": true,
+      "ePairs": [
         {
-          "ETypeA": 2,
-          "ETypeB": 5
+          "eTypeA": 2,
+          "eTypeB": 5
         },
         {
-          "ETypeA": 3,
-          "ETypeB": 5
+          "eTypeA": 3,
+          "eTypeB": 5
         }
       ]
     }
   ],
-  "EnumeratedTypes": [
+  "enumeratedTypes": [
     {
-      "EType": "TYPE_Gender",
-      "Values": [
+      "eType": "TYPE_Gender",
+      "values": [
         {
-          "Val": 1,
-          "Name": "Female"
+          "val": 1,
+          "name": "Female"
         },
         {
-          "Val": 2,
-          "Name": "Male"
+          "val": 2,
+          "name": "Male"
         },
         {
-          "Val": 3,
-          "Name": "Other"
+          "val": 3,
+          "name": "Other"
         }
       ]
     },
     {
-      "EType": "TYPE_HorseColor",
-      "Values": [
+      "eType": "TYPE_HorseColor",
+      "values": [
         {
-          "Val": 1,
-          "Name": "Black"
+          "val": 1,
+          "name": "Black"
         },
         {
-          "Val": 2,
-          "Name": "White"
+          "val": 2,
+          "name": "White"
         },
         {
-          "Val": 3,
-          "Name": "Brown"
+          "val": 3,
+          "name": "Brown"
         }
       ]
     }
