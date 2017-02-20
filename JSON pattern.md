@@ -122,8 +122,8 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | rType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
-| +       | dir       | char   | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
-|         | wrapper   | char   | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
+| +       | dir       | string | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
+|         | wrapper   | string | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
 |         | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, RComb
 |         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
 
