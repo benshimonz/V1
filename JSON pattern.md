@@ -134,7 +134,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": _mandatory_ **value**: right side of the condition. same type as pType / f(pType) domain <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": _mandatory_ **value**: right side of the condition. array [same type as pType / f(pType)]
+|         | cond      | {...}  | Condition <br> **Over any property:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: right side of the condition. same type as property / f(property) <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: right side of the condition. string. <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: right side of the condition. array [string].
 
 At least one of {pTag, cond} must be present
 
@@ -145,8 +145,7 @@ At least one of {pTag, cond} must be present
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range"/"empty"/"not empty" <br> if _op_ is "eq"/"ne"/gt"/"ge"/"lt"/"le": _mandatory_ **value**: right side of the condition. same type as pType / f(pType) <br> if _op_ is "in set"/"not in set"/"in range"/"not in range": _mandatory_ **value**: right side of the condition. array [same type as pType / f(pType)]
-|         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | cond      | {...}  | Condition <br> **Over any property:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: right side of the condition. same type as property / f(property) <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: right side of the condition. string. <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: right side of the condition. array [string].
 
 At least one of {pTag, cond} must be present
 
