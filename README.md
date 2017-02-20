@@ -2056,7 +2056,7 @@ A logical entity type can be assigned to specific entities. It is defined by:
   * Concrete entities
   * Aggregate entities
   * Typed entities with optional constraints
-  * Untyped entities with constraints
+  * Untyped entities with constraints
 * A entity type name assigned to each such entity
 
 Logical entities types can be defined, and then used in queries.
