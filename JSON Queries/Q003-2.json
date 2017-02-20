@@ -29,7 +29,7 @@
       "pType": 1,
       "cond": {
         "op": "eq",
-        "r": "Brandon"
+        "value": "Brandon"
       }
     },
     {
