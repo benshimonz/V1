@@ -8,7 +8,7 @@
       "next": 1
     },
     {
-      "enum": 1,
+      "eNum": 1,
       "type": "EConcrete",
       "eTag": "A",
       "eID": "12345678",
