@@ -134,7 +134,7 @@ There must be a single element with type 'Start'. Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string. <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string].
+|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
 
 At least one of {pTag, cond} must be present
 
@@ -145,7 +145,7 @@ At least one of {pTag, cond} must be present
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 |         | f         | string | function to apply to property
 |         | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string. <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string].
+|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
 
 At least one of {pTag, cond} must be present
 
@@ -233,7 +233,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [non-negative int]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
