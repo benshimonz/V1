@@ -2,7 +2,7 @@
 
 ## V1 Element types
 
-|   | JSON type property | V1 element type         | visual representation
+|   | JSON type  | V1 element type         | visual representation
 |---|------------|-------------------------|----------------------
 |1  | Start      | Query Start             | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element01.png)
 |2  | EConcrete  | Concrete Entity         | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element02.png)
