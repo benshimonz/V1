@@ -8,12 +8,18 @@
         {
           "pType": 1,
           "name": "first name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 2,
           "name": "last name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 3,
@@ -23,7 +29,10 @@
         {
           "pType": 4,
           "name": "birth date",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 5,
@@ -34,8 +43,16 @@
           "pType": 6,
           "height": "height",
           "type": "int",
-          "units": "cm"
+          "units": "cm",
+          "report": [
+            "raw"
+          ]
         }
+      ],
+      "display": [
+        "%1 %2",
+        "%4",
+        "%6"
       ]
     },
     {
@@ -45,8 +62,14 @@
         {
           "pType": 1,
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         }
+      ],
+      "display": [
+        "name: %1"
       ]
     },
     {
@@ -56,19 +79,33 @@
         {
           "pType": 1,
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 2,
           "name": "color",
-          "type": "TYPE_HorseColor"
+          "type": "TYPE_HorseColor",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 3,
           "height": "weight",
           "type": "int",
-          "units": "Kg"
+          "units": "Kg",
+          "report": [
+            "raw"
+          ]
         }
+      ],
+      "display": [
+        "%1",
+        "%2",
+        "%3"
       ]
     },
     {
@@ -78,7 +115,10 @@
         {
           "pType": 1,
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         }
       ]
     },
@@ -89,8 +129,14 @@
         {
           "pType": 1,
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "report": [
+            "raw"
+          ]
         }
+      ],
+      "display": [
+        "%1"
       ]
     }
   ],
@@ -113,12 +159,20 @@
         {
           "pType": 1,
           "name": "since",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "min",
+            "max"
+          ]
         },
         {
           "pType": 2,
           "name": "till",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "min",
+            "max"
+          ]
         }
       ]
     },
@@ -136,7 +190,11 @@
         {
           "pType": 1,
           "name": "time",
-          "type": "datetime"
+          "type": "datetime",
+          "report": [
+            "min",
+            "max"
+          ]
         }
       ]
     },
@@ -154,13 +212,22 @@
         {
           "pType": 1,
           "name": "time",
-          "type": "datetime"
+          "type": "datetime",
+          "report": [
+            "min",
+            "max"
+          ]
         },
         {
           "pType": 2,
           "name": "duration",
           "type": "int",
-          "units": "min"
+          "units": "min",
+          "report": [
+            "avg",
+            "min,",
+            "max"
+          ]
         }
       ]
     },
@@ -189,7 +256,10 @@
         {
           "pType": 1,
           "name": "since",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "raw"
+          ]
         }
       ]
     },
@@ -207,12 +277,18 @@
         {
           "pType": 1,
           "name": "since",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "raw"
+          ]
         },
         {
           "pType": 2,
           "name": "till",
-          "type": "date"
+          "type": "date",
+          "report": [
+            "raw"
+          ]
         }
       ]
     },
