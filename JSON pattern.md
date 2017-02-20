@@ -244,7 +244,7 @@ At least one of {aTag, cond} must be present
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted '->'
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [non-negative int].
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [non-negative int]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
@@ -257,7 +257,7 @@ At least one of {aTag, cond} must be present
 |         | aTag      | string   | attribute tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as pType. For "in set"/"not in set"/"in range"/"not in range" - array [same type as pType].
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
@@ -270,7 +270,7 @@ At least one of {aTag, cond} must be present
 |         | aTag      | string   | attribute tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le"/"in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: right side of the condition. For "eq"/"ne"/gt"/"ge"/"lt"/"le": same type as property with _pt_ / non-negative int. For "in set"/"not in set"/"in range"/"not in range" - array [same type as property with _pt_ / non-negative int].
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 At least one of {aTag, cond} must be present
