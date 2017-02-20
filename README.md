@@ -160,7 +160,7 @@ Patterns are written from left to right. Each pattern starts with (a small black
 
 **Semantics**
 
-Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a concrete entity: a specific person, a specific horse, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents an entity of a given type. A blue 'Person' for example means that in any assignment - only concrete 'Person' entities can match the pattern. **A red rectangle** represents an entity of any type (unless type constraints are defined - see later).
+Yellow, blue and red rectangles represent entities. **A yellow rectangle** represents a **concrete entity**: a specific person, a specific horse, etc. The text inside a yellow rectangle denotes the entity type, and the value of the entity's leading properties (e.g. first name and last name of a person). **A blue rectangle** represents a **typed entity**: an entity of a given type. A blue 'Person' for example means that in any assignment - only concrete 'Person' entities can match the pattern. **A red rectangle** represents an **untyped entity**: an entity of any type (unless type constraints are defined - see later).
 
 A pair of entities can be connected with:
 
@@ -194,7 +194,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity (red, blue, or yellow) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
+**A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
 * The property's name (_'prop'_)
 * An optional function to apply to the property's value (_'f'_)
@@ -203,9 +203,9 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 A constraint, a property tag, or both - must be present.
 
-Constraints cannot be defined for yellow entities. 
+Constraints cannot be defined for concrete entities. 
 
-For red entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for a red entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the red entity).
+For untyped entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for an untyped entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the untyped entity).
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
 
@@ -304,7 +304,7 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
 
 A quantifier has one connection on its left side, and two or more branches on its right side. We'll name the left side of the quantifier 'the left component', and anything that follows a branch, up to the end of the branch, 'a right component'.
 
-**The first way to use quantifiers:** The left component ends with an entity (yellow/aggregate/blue/logical/red), and each right component starts with:
+**The first way to use quantifiers:** The left component ends with an entity (concrete/aggregate/typed/logical/untyped), and each right component starts with:
 
 * A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
 * A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L'),
@@ -334,7 +334,7 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 
 **A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
 
-* An entity (yellow/aggregate/blue/logical/red)
+* An entity (concrete/aggregate/typed/logical/untyped)
 * A quantifier
 
 The following examples demonstrate both ways to use quantifiers:
@@ -353,17 +353,17 @@ When a relationship need to satisfy several conditions (as in Q10: the freeze ti
 
 ## Entity Tags
 
-There is a letter in the top-left corner of any entity rectangle (yellow/aggregate/blue/logical/red). This letter is called an **'entity tag'**.
+There is a letter in the top-left corner of any entity rectangle (concrete/aggregate/typed/logical/untyped). This letter is called an **'entity tag'**.
 
 Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's answer as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
-**Identicality constraint** is used when the same (identical) concrete entity must be assigned to several rectangles in the pattern. Here is an example:
+**Identicality constraint** is used when the same (identical) concrete entity must be assigned to several typed entities of the same type / several untyped entities. Here is an example:
 
 _**Q4:** Any person whose dragon was frozen by a dragon owned by (at least) one of his parents_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q004.png)
 
-Entity tag 'B' is used to enforce identical assignment to two blue rectangles. The 'B' tags are bold and green - this is a visual indication that these tags are used to enforce identicality.
+Entity tag 'B' is used to enforce identical assignment to two typed entities. The 'B' tags are bold and green - this is a visual indication that these tags are used to enforce identicality.
 
 Here is another example:
 
@@ -371,7 +371,7 @@ _**Q9:** Any dragon pair (A, B) where A froze B both in 980 and in 984_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q009.png)
 
-**Nonidenticality Constraint** is used when different (nonidentical) concrete entities must be assigned to several rectangles in the pattern. Here is an example:
+**Nonidenticality Constraint** is used when different (nonidentical) concrete entities must be assigned to several typed entities of the same type / several untyped entities. Here is an example:
 
 _**Q5:** Any person whose dragon was frozen by a dragon owned by two of his parents_
 
@@ -517,7 +517,7 @@ _**Q26:** Any guild that people who are members of the same guild as Brandon Sta
 
 **A third way to use quantifiers:** A quantifier may start a pattern. On the quantifier's left side - the pattern's start, while each right component may start with either:
 
-* An entity (yellow/aggregate/blue/logical/red)
+* An entity (concrete/aggregate/typed/logical/untyped)
 * A quantifier
 
 The _None_ quantifier cannot start a pattern.
@@ -730,11 +730,11 @@ _**Q150:** Any person who owns a horse or a dragon. If he has a parent - the par
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q150.png)
 
-## Red Entities
+## Untyped Entities
 
-Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Dragon); owns(Guild, Dragon) ). We need red entities to express patterns such as "_any dragon and its owners_", when the owner can be either a person or a guild.
+Sometimes the same relationship type can hold between different pairs of entity types (e.g. owns(Person, Dragon); owns(Guild, Dragon) ). We need untyped entities to express patterns such as "_any dragon and its owners_", when the owner can be either a person or a guild.
  
- In its simplest form, a red rectangle represents an entity of any type.
+ In its simplest form, a empty red rectangle represents an entity of any type.
 
 _**Q36:** Any person who owns something_
 
@@ -758,7 +758,7 @@ _**Q38:** Any person who owns something which is neither a horse nor a dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q038.png)
 
-Even when a red entity is on either side of an 'X' - the entity's type is constrained by relationship types. Here are some examples:
+Even when an untyped entity is on either side of an 'X' - the entity's type is constrained by relationship types. Here are some examples:
 
 _**Q39:** Anything that can own a dragon, but doesn't_
 
@@ -849,7 +849,7 @@ _**Q48:** All shortest paths between these two dragons, which are neither compos
 
 ## Path Segments
 
-An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of entities (yellow/aggregate/blue/logical/red) and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
+An alternative to constraints on the entities and relationships along the path, are constraints on **path segment types**. A path segment type is a valid chain of entities (concrete/aggregate/typed/logical/untyped) and relationship types that starts and ends with an entity. There is an 'overlap' between successive segment types:
 
 - The type of the rightmost entity type of a segment must match the type of the leftmost entity in its successor
 - The type of the leftmost entity type in the first segment of a path must match the entity type preceding the path
@@ -919,7 +919,7 @@ _**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
 
-A red rectangle may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other red entities.
+A red rectangle (denoting an untyped entity) may contain an **entity type tag**, depicted by a numeric index wrapped in **purple triangular brackets**. An entity type tag serves as a placeholder for the entity type in a given assignment, and can be used to define constraints on the type of other untyped entities.
 
 Here are some examples:
 
@@ -946,11 +946,11 @@ todo: aggregation tag, aggregation tag's scope
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L1.png)
 
-- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
-- → denotes the entity directly right of the aggregation (which must be blue/logical/red). When the aggregation is followed by a quantifier - → denotes all blue/logical/red entities directly right of the quantifier (see Q175, Q176)
-- _et_ is an entity tag of a blue/logical/red entity
+- → denotes the entity directly right of the aggregation (which must be typed/logical/untyped). When the aggregation is followed by a quantifier - → denotes all typed/logical/untyped entities directly right of the quantifier (see Q175, Q176)
+- _et_ is an entity tag of a typed/logical/untyped entity
 
 - _S1_ and _→/et_ may not intersect
 
@@ -1164,8 +1164,8 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L2.png)
 
-- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q251) blue/logical/red entities directly right of the aggregation
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q251) typed/logical/untyped entities directly right of the aggregation
 
 - L2 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
@@ -1264,8 +1264,8 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
 
-- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier) blue/logical/red entities directly right of the aggregation
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier) typed/logical/untyped entities directly right of the aggregation
 
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
@@ -1301,8 +1301,8 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L4.png)
 
-- _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-- _per →_ - _S1_ is the set of one or more (when following a quantifier) blue/logical/red entities directly right of the aggregation
+- _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+- _per →_ - _S1_ is the set of one or more (when following a quantifier) typed/logical/untyped entities directly right of the aggregation
 
 - L4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an '↛', an 'L' or an 'O'
 - L1 appear directly right of the leftmost member of _S1 ∪ →/et_
@@ -1382,13 +1382,13 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M1.png)
 
 - Optional:
-  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of typed/logical/untyped entities
 
-- _with min/max {et, et, ...}_ - a set, _S3_, of entity tags of blue/logical/red entities
+- _with min/max {et, et, ...}_ - a set, _S3_, of entity tags of typed/logical/untyped entities
 
 - _S1_, _S2_ and _S3_ may not intersect
 
@@ -1453,11 +1453,11 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M2.png)
 
 - Optional:
-  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of typed/logical/untyped entities
 
 - _S1_ and _S2_ may not intersect
 
@@ -1519,11 +1519,11 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M3.png)
 
 - Optional:
-  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set, _S2_, of entity tags of blue/logical/red entities
+- _n {et, et, ...}_ - a set, _S2_, of entity tags of typed/logical/untyped entities
 
 - _S1_ and _S2_ may not intersect
 
@@ -1562,11 +1562,11 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M4.png)
 
 - Optional:
-  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
-- _n {et, et, ...}_ - a set _S2_ of blue/logical/red entities
+- _n {et, et, ...}_ - a set _S2_ of typed/logical/untyped entities
 
 - _S1_ and _S2_ may not intersect
 
@@ -1642,8 +1642,8 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
 
 - Optional:
-  - _per {et, et, ...}_ - a set, _S1_, of entity tags of blue/logical/red entities
-  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) blue/logical/red entities directly right of the aggregation
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
@@ -1902,7 +1902,7 @@ todo
 
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
-- '→' / _et_ is a blue/logical/red entity
+- '→' / _et_ is a typed/logical/untyped entity
 
 _**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of owners_
 
@@ -1989,9 +1989,9 @@ _**Q159:** Any **dragon** for which there are more days where (the number of dra
 An aggregate entity is a virtual concrete entity, that encapsulates several entities. It is defined by:
 
 * The entities it encapsulates: A set of
-  * Concrete (yellow) entities
-  * Entity types (blue) with optional constraints
-  * Entities (red) with constraints
+  * Concrete entities
+  * Typed entities with optional constraints
+  * Untyped entities with constraints
 * A entity type name assigned to the aggregation
 
 Aggregate entities can be defined, and then used in queries.
@@ -2017,7 +2017,7 @@ Aggregate entities have the following auto-generated aggregate properties:
 
 Using aggregate entities in queries:
 
-* Aggregate entities are used in a similar manner to **yellow** entities
+* Aggregate entities are used in a similar manner to concrete entities
 * Adjacent relationship types should support at least one encapsulated entity type
 * Constraints cannot be defined for aggregate entities
 * Aggregate entities cannot be counted (L1, M1, M2, M3, M4 aggregations)
@@ -2053,10 +2053,10 @@ _**Q212:** Are there more than 10 days in which at least 10 ownership relationsh
 A logical entity type can be assigned to specific entities. It is defined by:
 
 * The entities it assigns a new type name to:
-  * Concrete (yellow) entities
+  * Concrete entities
   * Aggregate entities
-  * Entity types (blue) with optional constraints
-  * Entities (red) with constraints
+  * Typed entities with optional constraints
+  * Untyped entities with constraints
 * A entity type name assigned to each such entity
 
 Logical entities types can be defined, and then used in queries.
@@ -2072,7 +2072,7 @@ Here are some definition examples:
 * _'Sarnorian'_ is defined as a a Sarnorian subject, or a Sarnorian registered guild
 * _'Royalty'_ is defined as one of 4 aggregate entities
 
-In a query's result - entities of logical type are resolved to concrete entities (similar to blue and red entities).
+In a query's result - entities of logical type are resolved to concrete entities (similar to typed and untyped entities).
 
 Logical entity types have the following properties:
 
@@ -2080,7 +2080,7 @@ Logical entity types have the following properties:
 
 Using logical entity types in queries:
 
-* Logical entity types are used in a similar manner to **blue** entities
+* Logical entity types are used in a similar manner to typed entities
 * Adjacent relationship types should support at least one entity type used in the definition
 
 Here are examples of patterns that incorporate the logical entity types defined above:
@@ -2110,7 +2110,7 @@ _**Q207:** Are there more than 10 days in which at least 10 ownership relationsh
 A logical relationship type is defined by:
 
 * A pattern
-* Two blue/red entities in the pattern
+* Two typed/untyped entities in the pattern
 * A relationship type name assigned to each such relationship
 
 A logical relationship type can be either symmetrical or asymmetrical.
@@ -2193,7 +2193,7 @@ Here are some definition examples:
 
 ## Aggregation Rules
 
-**R11:** Concrete (yellow/aggregate) entities cannot be counted (L1, M1, M2, M3, M4 aggregation).
+**R11:** Concrete/aggregate entities cannot be counted (L1, M1, M2, M3, M4 aggregation).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg01.png)
 
