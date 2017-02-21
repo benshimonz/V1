@@ -9,7 +9,7 @@
 
 </script>
 
-## V1 - A Visual Query Language for Schema-based Property Grapfhs
+## V1 - A Visual Query Language for Schema-based Property Graphs
 
 Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail [dot] com)
 
