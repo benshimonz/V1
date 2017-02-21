@@ -41,6 +41,7 @@
       "eNum": 5,
       "type": "RelProp",
       "pType": 1,
+      "pTag": 1,
       "cond": {
         "op": "in",
         "value": "980-01-01T00:00:00.000Z, 981-01-01T00:00:00.000Z"
@@ -64,6 +65,7 @@
       "eNum": 8,
       "type": "RelProp",
       "pType": 1,
+      "pTag": 2,
       "cond": [
         {
           "op": "in",

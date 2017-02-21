@@ -36,6 +36,7 @@
       "eNum": 4,
       "type": "EProp",
       "pType": 4,
+      "pTag": 1,
       "cond": {
         "op": "lt",
         "value": "970-1-1"
@@ -44,6 +45,7 @@
     {
       "eNum": 5,
       "type": "EProp",
+      "pTag": 2,
       "pType": 5,
       "cond": {
         "op": "not empty"
@@ -76,6 +78,7 @@
       "eNum": 9,
       "type": "EProp",
       "pType": 4,
+      "pTag": 3,
       "cond": {
         "op": "le",
         "value": "950-1-1"
@@ -85,6 +88,7 @@
       "eNum": 10,
       "type": "EProp",
       "pType": 5,
+      "pTag": 4,
       "cond": {
         "op": "eq",
         "value": 2

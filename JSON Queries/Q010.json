@@ -27,6 +27,7 @@
       "eNum": 3,
       "type": "EProp",
       "pType": 1,
+      "pTag": 1,
       "cond": {
         "op": "eq",
         "value": "Brandon"
@@ -58,6 +59,7 @@
       "eNum": 7,
       "type": "RelProp",
       "pType": 1,
+      "pTag": 2,
       "cond": {
         "op": "ge",
         "value": "1010-01-01T00:00:00.000"
@@ -68,6 +70,7 @@
       "eNum": 8,
       "type": "RelProp",
       "pType": 2,
+      "pTag": 3,
       "cond": {
         "op": "gt",
         "value": "100"
