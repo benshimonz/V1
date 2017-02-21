@@ -199,9 +199,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 * The property's name (_'prop'_)
 * An optional function to apply to the property's value (_'f'_)
 * An optional constraint on the property's value / on _f_(property's value), expressed using a comparion operator ('_cmp_op_')and an expression ('_expr_')  - e.g. '> 30'
-* An optional **property tag**, ('_{pt}_') - depicted by an index wrapped in purple curly brackets (explained later)
-
-A constraint, a property tag, or both - must be present.
+* A **property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets (explained later)
 
 Constraints cannot be defined for concrete entities. 
 
@@ -885,9 +883,9 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 ## Property Tag
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-A property tag is depicted by an index wrapped in **purple curly brackets**
+**Property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets
 
 A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. _birth date_ > {1}, where {1} is defined as the _birth date_ property of another entity)
 
@@ -958,9 +956,8 @@ todo: aggregation tag, aggregation tag's scope
 - L1 appear directly right of the leftmost member of _S1 ∪ →/et_
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of S1.
+- For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
@@ -1170,9 +1167,8 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - L2 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of S1.
+- For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
@@ -1273,9 +1269,8 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
 
-- For each assignment combination to _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a calculated property of S1.
+- For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
@@ -1311,9 +1306,8 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
-- For each assignment to the _S1_ entities: _{at}_ is an optional **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a calculated property of S1.
+- For each assignment to the _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern. _{at}_ is set as a calculated property of S1.
 - An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by an equation (e.g. '> 30')
-- A condition, an aggregation tag, or both - must be presented
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
@@ -1572,7 +1566,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 - M4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - M4 appear directly right of the leftmost member of _S1_ and _S2_
-- {pt} is an property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {pt} is a property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
