@@ -58,15 +58,22 @@
     },
     {
       "eNum": 7,
-      "type": "Quant1",
-      "qType": "all",
-      "next": [
-        8,
-        9
-      ]
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 1,
+      "next": 8
     },
     {
       "eNum": 8,
+      "type": "Quant1",
+      "qType": "all",
+      "next": [
+        9,
+        10
+      ]
+    },
+    {
+      "eNum": 9,
       "type": "EProp",
       "pType": 4,
       "cond": {
@@ -75,7 +82,7 @@
       }
     },
     {
-      "eNum": 9,
+      "eNum": 10,
       "type": "EProp",
       "pType": 5,
       "cond": {
