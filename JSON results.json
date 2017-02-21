@@ -1,7 +1,9 @@
 {
-  "ont": "Dragons",
-  "name": "Q1",
-  "elements": [],
+  "pattern": {
+    "ont": "Dragons",
+    "name": "Q1",
+    "elements": []
+  },
   "assignments": [
     {
       "entities": [
