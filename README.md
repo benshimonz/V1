@@ -1970,7 +1970,7 @@ _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulativ
 
 todo
 
-_**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in which it froze the largest number of dragons_
+_**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in which it froze dragons the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q216.png)
 
