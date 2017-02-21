@@ -1,6 +1,7 @@
 {
   "ont": "Dragons",
   "name": "Q1",
+  "queryElements": [],
   "assignments": [
     {
       "entities": [
