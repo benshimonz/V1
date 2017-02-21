@@ -887,7 +887,7 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 **Property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets
 
-A property tag serves as a placeholder for the property's value in a given assignment, and used for defining constraints on the value of other properties (e.g. _birth date_ > {1}, where {1} is defined as the _birth date_ property of another entity)
+A property tag serves as a placeholder for the property's value in a given assignment. Property tag can be used in constraints on the value of other properties (e.g. _birth date_ > {1}, where {1} is defined as the _birth date_ property of another entity)
 
 Here are some examples:
 
@@ -1972,7 +1972,9 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
-todo: split tag, split tag's scope
+**Split tag**, ('_{st}_') - depicted by an index wrapped in curly brackets
+
+A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tag can be used in constraints on the value of other splits.
 
 _**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
