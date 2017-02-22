@@ -462,6 +462,28 @@ _**Q19:** Sweetfoot - if it is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
+_**Q22:** Any horse not owned by a person who owns a dragon_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
+
+Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the 'X' - up to the end of the branch.
+
+That includes:
+
+- Any horse that is not owned
+- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
+- Any horse that each person who owns it - doesn't own a dragon
+
+_**Q23:** Any horse not owned by a person who doesn't own a dragon_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
+
+That includes:
+
+- Any horse that is not owned
+- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
+- Any horse that each person who owns it - also owns a dragon
+
 _**Q256:** Any person who doesn't own a white horse_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q256.png)
@@ -491,28 +513,6 @@ _**Q21:** Any horse that is not owned by both Rogar Bolton and Robin Arryn (two 
 This pattern can also be represented using the 'not all' quantifier (explained below), but there is a slight difference: in the version above if either Rogar Bolton or Robin Arryn owns the horse - the owner won't be a part of the answer, while in the version below - the owner will be a part of the answer.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
-
-_**Q22:** Any horse not owned by a person who owns a dragon_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q022.png)
-
-Note that the left component is _'horse'_ while the right component is _'owned by a person who owns a dragon'_. The right component is anything that follows the 'X' - up to the end of the branch.
-
-That includes:
-
-- Any horse that is not owned
-- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
-- Any horse that each person who owns it - doesn't own a dragon
-
-_**Q23:** Any horse not owned by a person who doesn't own a dragon_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q023.png)
-
-That includes:
-
-- Any horse that is not owned
-- Any horse that none of its owners is a person (e.g. a horse owned by a guild)
-- Any horse that each person who owns it - also owns a dragon
 
 _**Q25:** Any dragon (C) that wasn't fired at by Balerion, but was fired at by a dragon that Balerion fired at (two versions)_
 
