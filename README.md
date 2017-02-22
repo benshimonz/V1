@@ -1703,9 +1703,9 @@ _**Q96:** Any dragon that was frozen by Balerion, in  1/1/1010 or later, more th
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-_**Q258:** Any person who become owner of 0 to 4 horses since 1011_
+_**Q259:** Any person who become owner of 0 to 4 horses since 1011_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q258.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
 
 _**Q115:** Any person who owns more than 5 horses since the same date_
 
