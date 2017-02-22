@@ -942,11 +942,11 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
-## Aggregations, Aggregate Conditions and Aggregation Tags
+## Aggregations and Aggregation Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
-todo: explain aggregation, aggregate condition
+todo: explain aggregation, aggregation constraint
 
 **Aggregation tag**, ('_{at}_') - depicted by an index wrapped in curly brackets. Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower pert. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
@@ -975,11 +975,11 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
-- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
+- An optional constraint on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-**L1 filters assignments to _S1_ entities - to only those for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the condition.**
+**L1 filters assignments to _S1_ entities - to only those assignments for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the constraint.**
 
 _**Q59:** Any person having more than 2 parents_
 
@@ -1015,7 +1015,7 @@ _**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 B's, and froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
-First, any pair (A,B) that matches the pattern is found. Then, the aggregate condition is checked:
+First, any pair (A,B) that matches the pattern is found. Then, the aggregation constraint is checked:
 
 For any concrete A:
 
@@ -1032,7 +1032,7 @@ _**Q178:** Any dragon A that was frozen by at least 10 dragons and either (i) A 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q178.png)
 
-First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregate condition is checked:
+First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregation constraint is checked:
 
 For each concrete A:
 
@@ -1050,7 +1050,7 @@ This 2nd version is for illustrative purposes only...
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-2.png)
 
-First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregate conditions are checked:
+First, any triplet (A,B,C) that matches the pattern is found. Then, the aggregation constraints are checked:
 
 For each concrete A:
 
@@ -1182,11 +1182,11 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern.
-- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
+- An optional constraint on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-**L2 filters assignment combinations to _S1_ entities - to only those for which number of relationships / paths that satisfy the pattern - satisfy the condition.**
+**L2 filters assignment combinations to _S1_ entities - to only those assignments for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
 
 _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
@@ -1284,11 +1284,11 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - _relprop_ is a property of the relationship
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
-- An optional condition on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" can be used only if _aggop_ is not _distinct_.
+- An optional constraint on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" can be used only if _aggop_ is not _distinct_.
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-**L3 filters assignment combinations to _S1_ entities - to only those for which the value of _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the condition.**
+**L3 filters assignment combinations to _S1_ entities - to only those assignments for which the value of _aggop(relprop)_ of the relationships that satisfy the pattern - satisfy the constraint.**
 
 _**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
 
@@ -1321,11 +1321,11 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
 - For each assignment to the _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern.
-- An optional condition on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" can be used only if _aggop_ is not _distinct_.
+- An optional constraint on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" can be used only if _aggop_ is not _distinct_.
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-**L4 filters assignments to _S1_ entities - to only those for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the condition.**
+**L4 filters assignments to _S1_ entities - to only those assignments for which the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - satisfy the constraint.**
 
 _**Q116:** Any person who owns horses of no more than 3 colors_
 
