@@ -975,7 +975,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
-- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are avoided to force explicit lower limit (0 or 1) with "in range".
+- An optional condition on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
@@ -1182,7 +1182,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern.
-- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are avoided to force explicit lower limit (0 or 1) with "in range".
+- An optional condition on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities, expressed by a comparison operator ("=" / "≠" / ">" / "≥" / "in" [set] / "in" {range}) and an expression. "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
