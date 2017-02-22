@@ -1897,6 +1897,14 @@ _**Q235:** Any dragon that the number of dragons it froze on average - on months
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q235.png)
 
+_**Q254:** Any person that the number of years in which he started to own a dragon - equals to the number of dragons he owns_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q254.png)
+
+_**Q255:** Any person the that number of days in which he started to own a dragon - equal to his height in centimeters_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
+
 ## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
