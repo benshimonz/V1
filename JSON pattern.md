@@ -229,7 +229,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int]
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided so an explicit lower limit (0 or 1) must be specified with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L2 Aggregation (type = "AggL2")
@@ -238,7 +238,7 @@ At least one of the above must be presented
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int]
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided so an explicit lower limit (0 or 1) must be specified with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L3 Aggregation (type = "AggL3")
@@ -249,7 +249,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L4 Aggregation (type = "AggL4")
@@ -260,7 +260,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## M1 Aggregation (type = "AggM1")
