@@ -1204,6 +1204,8 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}
 
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
+
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 **L2 filters assignment combinations to _S1_ entities - to only those assignments for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
