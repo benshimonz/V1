@@ -229,7 +229,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided so an explicit lower limit (0 or 1) must be specified with "in range".
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L2 Aggregation (type = "AggL2")
@@ -238,7 +238,7 @@ At least one of the above must be presented
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided so an explicit lower limit (0 or 1) must be specified with "in range".
+|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L3 Aggregation (type = "AggL3")
