@@ -992,7 +992,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}
   
-  "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - _in [0 .. expr]_ or _in [1 .. expr]_ are used instead.
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
