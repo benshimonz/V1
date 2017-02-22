@@ -990,7 +990,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 - An optional constraint on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _in {expr, expr, ... expr}
+  - _in {expr, expr, ... expr}_
   
   _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
 
@@ -1202,7 +1202,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - An optional constraint on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _in {expr, expr, ... expr}
+  - _in {expr, expr, ... expr}_
 
   _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
 
@@ -1309,7 +1309,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - An optional constraint on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _in {expr, expr, ... expr}
+  - _in {expr, expr, ... expr}_
   - _< expr_ / _≤ expr_ can be used only of _aggop_ is not _distinct_
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
@@ -1350,7 +1350,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - An optional constraint on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _in {expr, expr, ... expr}
+  - _in {expr, expr, ... expr}_
   - _< expr_ / _≤ expr_ can be used only of _aggop_ is not _distinct_
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
@@ -1904,7 +1904,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 - A constraint on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _in {expr, expr, ... expr}
+  - _in {expr, expr, ... expr}_
   
   _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
 
