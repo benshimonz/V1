@@ -1895,11 +1895,11 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
-## Condition on Number of Splits
+## Constraint on Number of Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
-- A constraint on the number of splits that satisfy the pattern is expressed in one of these forms:
+- A constraint on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}
