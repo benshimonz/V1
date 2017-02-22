@@ -883,7 +883,7 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q058.png)
 
-## Property Tag
+## Property Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
@@ -1998,7 +1998,7 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q216.png)
 
-## Split Tag
+## Split Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
