@@ -462,6 +462,18 @@ _**Q19:** Sweetfoot - if it is not owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q019.png)
 
+_**Q256:** Any person who doesn't own a white horse_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q256.png)
+
+_**Q257:** Any person who didn't become a horse owner on or after 1011_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q257.png)
+
+_**Q258:** Any person who didn't become a white horse owner on or after 1011_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q258.png)
+
 An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
 _**Q20:** Any horse that is neither owned by Rogar Bolton nor by Robin Arryn (two versions)_
