@@ -1897,11 +1897,11 @@ _**Q235:** Any dragon that the number of dragons it froze on average - on months
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q235.png)
 
-_**Q254:** Any person that the number of years in which he started to own a dragon - equals to the number of dragons he owns_
+_**Q254:** Any dragon that in each year it froze dragons - if froze more than 3 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q254.png)
 
-_**Q255:** Any person the that number of days in which he started to own a dragon - equal to his height in centimeters_
+_**Q255:** Any dragon that number of days in which it forze more than 10 dragons - equals to the length of his name_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
 
