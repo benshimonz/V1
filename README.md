@@ -1707,13 +1707,13 @@ Filtering stages:
 
 _**Q94:** Any dragon that froze at least 3 dragons - each at least 5 times for more than 10 minutes_
 
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
+
 Filtering stages:
 
 - Pass only (freezes that are longer than 10 minutes)
 - Pass dragon pairs (A, B) where A froze B at least 5 time for more than 10 minutes
 - Pass only dragons A that froze for more than 10 minutes - at least 3 dragons
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q094.png)
 
 _**Q162:** Any dragon pair (A, B) where the second shortest period A froze B is longer than 60 minutes_
 
