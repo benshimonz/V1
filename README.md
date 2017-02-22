@@ -1117,11 +1117,11 @@ _**Q65:** Any person who doesn't own more than 2 (things that his spouse owns)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q065.png)
 
-_**Q64:** Any **dragon** that less than 5 (dragons owned by Sarnorian subjects) didn't freeze **it**_
+_**Q64:** Any **dragon** that between 0 and 4 (dragons owned by Sarnorian subjects) didn't freeze **it**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q064.png)
 
-_**Q165:** Any **dragon** that less than 5 (Sarnorian subjects own a dragon that didn't freeze **it**)_
+_**Q165:** Any **dragon** that between 0 and 4 (Sarnorian subjects own a dragon that didn't freeze **it**)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q165.png)
 
