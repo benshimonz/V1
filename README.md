@@ -885,9 +885,13 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**Property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets
+**Property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets. Each green rectangle (entity's property / relationship property) has a property tag on its top-left corner. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A property tag serves as a placeholder for the property's value in a given assignment. Property tag can be used in constraints on the value of other properties (e.g. _birth date_ > {1}, where {1} is defined as the _birth date_ property of another entity)
+A property tag serves as a placeholder for the property's value in a given assignment. Property tags can be used:
+
+* to force constraints on the value of other properties (see Q108, Q109)
+* as part on an aggregation tag's definition (see Q116, Q117)
+* to force constraints on the value of aggregation tags (see Q120)
 
 Here are some examples:
 
@@ -935,10 +939,9 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ## Aggregate Conditions and Aggregation Tags
 
-todo: aggregate conditions
+**Aggregation tag**, ('_{at}_') - depicted by an index wrapped in curly brackets. Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower pert. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-todo: aggregation tag, aggregation tag's scope
-
+An aggregation tag serves as a placeholder for the result of the left part of the aggregate condition. Aggregation tags can be used to force constraints on the value of other aggregation tags.
 
 ## L1 Aggregation
 
@@ -1972,9 +1975,9 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
-**Split tag**, ('_{st}_') - depicted by an index wrapped in curly brackets
+**Split tag**, ('_{st}_') - depicted by an index wrapped in curly brackets. Each 'splits' purple rectangle has a property tag on its top-left corner. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tag can be used in constraints on the value of other splits.
+A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags can be used to force constraints on the value of other split tags.
 
 _**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
