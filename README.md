@@ -198,8 +198,10 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 * The property's name (_'prop'_)
 * An optional function to apply to the property's value (_'f'_)
-* An optional constraint on the property's value / on _f_(property's value), expressed using a comparion operator ('_cmp_op_')and an expression ('_expr_')  - e.g. '> 30'
-* A **property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets (explained later)
+* An optional constraint on the property's value / on _f_(property's value) expressed as a condition:
+  * a comparison operator ('_cmp_op_') 
+  * an expression ('_expr_')
+* A **property tag**, ('_{pt}_') - explained later
 
 Constraints cannot be defined for concrete entities. 
 
@@ -889,9 +891,11 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 A property tag serves as a placeholder for the property's value in a given assignment. Property tags can be used:
 
-* to force constraints on the value of other properties (see Q108, Q109)
-* as part on an aggregation tag's definition (see Q116, Q117)
-* to force constraints on the value of aggregation tags (see Q120)
+* as part of a property tag's constraint (see Q108, Q109)
+* as part of an aggregation tag's definition (see Q116, Q117)
+* as part of an aggregation tag's constraint (see Q120)
+* as part of a min/max aggregation tag's definition (see Q131,Q132)
+* as a part of a split definition (see Q226,Q227)
 
 Here are some examples:
 
@@ -938,6 +942,8 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
 ## Aggregate Conditions and Aggregation Tags
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
 **Aggregation tag**, ('_{at}_') - depicted by an index wrapped in curly brackets. Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower pert. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
