@@ -1101,10 +1101,6 @@ _**Q114:** Any person who owns more than 5 horses of the same color_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q114.png)
 
-_**Q115:** Any person who owns more than 5 horses since the same date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
-
 _**Q125:** Any dragon that the number of dragons it froze is greater than the number of dragons that froze it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q125.png)
@@ -1690,6 +1686,10 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 ## Aggregation Chains
 
 todo
+
+_**Q115:** Any person who owns more than 5 horses since the same date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
 _**Q96:** Any dragon that was frozen by Balerion, in  1/1/1010 or later, more than 10 times, for periods shorter than 10 minutes_
 
