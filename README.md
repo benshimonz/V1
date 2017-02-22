@@ -988,13 +988,11 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
 - An optional constraint on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
-  - _= expr_
-  - _≠ expr_
-  - > expr_
-  - ≥ expr_
+  - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}
-"<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
+  
+  "<" / "≤" are not used - to avoid ambiguity by forcing explicit lower limit (0 or 1) with "in range".
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
