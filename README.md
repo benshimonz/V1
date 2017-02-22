@@ -2006,19 +2006,9 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags can be used:
 
-
-
-
-
-* as part of another property tag's constraint (see Q108, Q109)
-* as part of an aggregation tag's definition (see Q116, Q117)
-* as part of an aggregation tag's constraint (see Q120)
-* as part of a min/max aggregation (see Q131,Q132)
-* as part of a split definition (see Q226,Q227)
-
-
-
-to force constraints on the value of other split tags.
+* as part of a another split definition
+* as part of a another split constraint (see Q159)
+* as part of a min/max aggregation
 
 _**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
