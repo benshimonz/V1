@@ -1687,13 +1687,13 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 
 todo
 
-_**Q115:** Any person who owns more than 5 horses since the same date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
-
 _**Q96:** Any dragon that was frozen by Balerion, in  1/1/1010 or later, more than 10 times, for periods shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
+
+_**Q115:** Any person who owns more than 5 horses since the same date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
 _**Q93:** Any dragon that froze at least 3 dragons for more than 10 minutes. The number of times it froze each of these dragons is at least 5_
 
