@@ -895,7 +895,8 @@ A property tag serves as a placeholder for the property's value in a given assig
 * as part of an aggregation tag's definition (see Q116, Q117)
 * as part of an aggregation tag's constraint (see Q120)
 * as part of a min/max aggregation (see Q131,Q132)
-* as a part of a split definition (see Q226,Q227)
+* as part of a split definition (see Q226,Q227)
+* as part of a split constraint (see Q255)
 
 Here are some examples:
 
@@ -951,10 +952,11 @@ todo: explain aggregation, aggregate condition
 
 An aggregation tag serves as a placeholder for the result of an aggregation. Aggregation tags can be used:
 
-* as part of another aggregation tag's constraint (see Q125,Q127)
 * as part of another aggregation tag's definition (see Q129,Q181)
+* as part of another aggregation tag's constraint (see Q125,Q127)
 * as part of a min/max aggregation (see Q91,Q132)
-* as a part of a split definition (see Q253)
+* as part of a split definition (see Q253)
+* as part of a split constraint (see Q254)
 
 ## L1 Aggregation
 
@@ -1994,7 +1996,21 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 **Split tag**, ('_{st}_') - depicted by an index wrapped in curly brackets. Each 'splits' purple rectangle has a property tag on its top-left corner. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags can be used to force constraints on the value of other split tags.
+A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags can be used:
+
+
+
+
+
+* as part of another property tag's constraint (see Q108, Q109)
+* as part of an aggregation tag's definition (see Q116, Q117)
+* as part of an aggregation tag's constraint (see Q120)
+* as part of a min/max aggregation (see Q131,Q132)
+* as part of a split definition (see Q226,Q227)
+
+
+
+to force constraints on the value of other split tags.
 
 _**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
