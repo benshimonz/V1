@@ -891,10 +891,10 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 A property tag serves as a placeholder for the property's value in a given assignment. Property tags can be used:
 
-* as part of a property tag's constraint (see Q108, Q109)
+* as part of another property tag's constraint (see Q108, Q109)
 * as part of an aggregation tag's definition (see Q116, Q117)
 * as part of an aggregation tag's constraint (see Q120)
-* as part of a min/max aggregation tag's definition (see Q131,Q132)
+* as part of a min/max aggregation (see Q131,Q132)
 * as a part of a split definition (see Q226,Q227)
 
 Here are some examples:
@@ -941,13 +941,20 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
 
-## Aggregate Conditions and Aggregation Tags
+## Aggregations, Aggregate Conditions and Aggregation Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
+todo: explain aggregation, aggregate condition
+
 **Aggregation tag**, ('_{at}_') - depicted by an index wrapped in curly brackets. Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower pert. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-An aggregation tag serves as a placeholder for the result of the left part of the aggregate condition. Aggregation tags can be used to force constraints on the value of other aggregation tags.
+An aggregation tag serves as a placeholder for the result of an aggregation. Aggregation tags can be used:
+
+* as part of another aggregation tag's constraint (see Q125,Q127)
+* as part of another aggregation tag's definition (see Q129,Q181)
+* as part of a min/max aggregation (see Q91,Q132)
+* as a part of a split definition (see Q253)
 
 ## L1 Aggregation
 
@@ -1849,6 +1856,10 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
+
+_**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
 ## Condition on Number of Splits
 
