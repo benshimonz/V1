@@ -1899,7 +1899,12 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
-todo
+- A constraint on the number of splits that satisfy the pattern is expressed in one of these forms:
+  - _= expr / ≠ expr / > expr / ≥ expr_
+  - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
+  - _in {expr, expr, ... expr}
+  
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
 
 _**Q153:** Any dragon that in at least 10 days froze no more than 5 dragons_
 
