@@ -996,7 +996,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
   
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used.
 
   **L1 filters assignment combinations to _S1_ entities - to only those combinations for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the constraint.**
 
@@ -1208,7 +1208,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
 
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used.
 
   **L2 filters assignment combinations to _S1_ entities - to only those combinations for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
 
@@ -1910,7 +1910,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
   
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ are used.
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used.
 
 _**Q153:** Any dragon that in at least 10 days froze no more than 5 dragons_
 
