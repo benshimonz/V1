@@ -2059,7 +2059,7 @@ A split tag serves as a placeholder for the number of splits that satisfy the co
 * as part of a another split constraint (see Q159)
 * as part of a min/max aggregation
 
-_**Q159:** Any **dragon** for which there are more days where (the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
+_**Q159:** Any **dragon** for which there are more days where (he froze/was frozen at least 5 times, and the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (he froze/was frozen at least 5 times, and the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
