@@ -201,7 +201,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 - An optional **constraint** on the property's value / on _f_(property's value). The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
   - _[not] in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _[not] in {expr, expr, ... expr}_
+  - _[not] in {expr, expr, ...}_
 
   **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
