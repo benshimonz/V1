@@ -94,7 +94,7 @@
         },
         {
           "pType": 3,
-          "height": "weight",
+          "name": "weight",
           "type": "int",
           "units": "Kg",
           "report": [
