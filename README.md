@@ -1415,6 +1415,10 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
+_**Q158:** Any dragon that in at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
+
 ## Min/Max Aggregations
 
 todo
@@ -1952,9 +1956,7 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
 
-_**Q158:** Any dragon that in at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
+todo: Q158 removed
 
 ## Min/Max Aggregations on Splits
 
