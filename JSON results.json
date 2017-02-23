@@ -2,7 +2,8 @@
   "pattern": {
     "ont": "Dragons",
     "name": "Q1",
-    "elements": []
+    "elements": [],
+    "nonidentical": []
   },
   "assignments": [
     {
