@@ -220,7 +220,7 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ## Properties - Functions and Constraints
 
-Comparison operators over ordinal properties / function-range (integer types, floating-point types, _date_, _datetime_):
+Constraints over ordinal properties / function-range (integer types, floating-point types, _date_, _datetime_):
 
 * _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
 * _[not] in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
@@ -245,7 +245,7 @@ Functions over _datetime_ properties:
 * _Hour(datetime), Min(datetime), Sec(datetime)_ → int
 * _DayOfWeek(datetime), DayOfYear(datetime), WeekOfYear(datetime)_ → int
 
-Comparison operators over _string_ properties / function-range:
+Constraints over _string_ properties / function-range:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-02.png)
 
