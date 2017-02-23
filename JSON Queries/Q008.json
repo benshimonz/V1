@@ -37,7 +37,7 @@
       "type": "EProp",
       "pType": 4,
       "pTag": 1,
-      "cond": {
+      "con": {
         "op": "lt",
         "value": "970-1-1"
       }
@@ -47,7 +47,7 @@
       "type": "EProp",
       "pTag": 2,
       "pType": 5,
-      "cond": {
+      "con": {
         "op": "not empty"
       }
     },
@@ -79,7 +79,7 @@
       "type": "EProp",
       "pType": 4,
       "pTag": 3,
-      "cond": {
+      "con": {
         "op": "le",
         "value": "950-1-1"
       }
@@ -89,9 +89,9 @@
       "type": "EProp",
       "pType": 5,
       "pTag": 4,
-      "cond": {
+      "con": {
         "op": "eq",
-        "value": 2
+        "value": "2"
       }
     }
   ]

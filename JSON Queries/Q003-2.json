@@ -28,7 +28,7 @@
       "type": "EProp",
       "pType": 1,
       "pTag": 1,
-      "cond": {
+      "con": {
         "op": "eq",
         "value": "Brandon"
       }

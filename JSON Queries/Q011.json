@@ -36,7 +36,7 @@
       "type": "RelProp",
       "pType": 2,
       "pTag": 1,
-      "cond": {
+      "con": {
         "op": "empty"
       }
     },
@@ -61,7 +61,7 @@
       "type": "RelProp",
       "pType": 1,
       "pTag": 2,
-      "cond": {
+      "con": {
         "op": "ge",
         "value": "1011-01-01T00:00:00.000"
       }
@@ -86,7 +86,7 @@
       "type": "RelProp",
       "pType": 2,
       "pTag": 3,
-      "cond": {
+      "con": {
         "op": "ge",
         "value": "1010-06-01T00:00:00.000"
       }

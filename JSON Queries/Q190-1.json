@@ -33,7 +33,7 @@
       "type": "RelProp",
       "pType": 1,
       "pTag": 1,
-      "cond": {
+      "con": {
         "op": "ge",
         "value": "1011-01-01"
       }
