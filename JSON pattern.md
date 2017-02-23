@@ -78,7 +78,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | eTag      | string | Entity tag (e.g. "A")
 | +       | eID       | string | Technical ID of the entity
 | +       | eType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-| +       | eName     | string | Display name of the entity (e.g. "Lior Kogan"). It is better to read the name from the database. This  was the display name when the pattern was stored
+| +       | eName     | string | Display name of the entity (e.g. "Brandon Stark"). It is better to read the name from the database. This  was the display name when the pattern was stored
 |         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
 
 ## Typed Entity (type = "ETyped")
