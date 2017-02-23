@@ -1956,7 +1956,11 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
 
-todo: Q158 removed
+_**Q260:** Any dragon that in any day of at least 10 days: (i) the number of dragons it froze is greater than the number of dragons that froze it and (ii) it froze / was frozen at least 5 times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q260.png)
+
+(See Q158 for comparison)
 
 ## Min/Max Aggregations on Splits
 
