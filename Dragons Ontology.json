@@ -41,7 +41,7 @@
         },
         {
           "pType": 6,
-          "height": "height",
+          "name": "height",
           "type": "int",
           "units": "cm",
           "report": [
