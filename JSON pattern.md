@@ -229,7 +229,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string]. <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iTtype**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> op "lt" and "le" are not used. To avoid ambiguity - either _in_ [0 .. expr] or _in_ [1 .. expr] are used. <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
+|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string]. <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iTtype**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in_ [0 .. expr] or _in_ [1 .. expr] should be used. <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L2 Aggregation (type = "AggL2")
@@ -238,7 +238,7 @@ At least one of the above must be presented
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **expr**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range". 
+|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string]. <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iTtype**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in_ [0 .. expr] or _in_ [1 .. expr] should be used. <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L3 Aggregation (type = "AggL3")
@@ -249,7 +249,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
-|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **expr**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **expr**: array [same type as aggOp(property)]
+|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "lt"/"le" - only if aggOp is not "distinct" <br> _mandatory_ **expr**: string <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string]. <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iTtype**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L4 Aggregation (type = "AggL4")
@@ -260,7 +260,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **expr**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **expr**: array [same type as aggOp(property)]
+|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "lt"/"le" - only if aggOp is not "distinct" <br> _mandatory_ **expr**: string <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string]. <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iTtype**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## M1 Aggregation (type = "AggM1")
