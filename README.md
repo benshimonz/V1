@@ -198,10 +198,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 - The property's name (_'prop'_)
 - An optional function to apply to the property's value (_'f'_)
-- An optional **constraint** on the property's value / on _f_(property's value). The constraint is in one of these forms:
-  - _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
-  - _[not] in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
-  - _[not] in {expr, expr, ...}_
+- An optional **constraint** on the property's value / on _f_(property's value)
 
   **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
@@ -221,9 +218,13 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
-## Properties - Functions and Comparison Operators
+## Properties - Functions and Constraints
 
 Comparison operators over ordinal properties / function-range (integer types, floating-point types, _date_, _datetime_):
+
+* _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
+* _[not] in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
+* _[not] in {expr, expr, ...}_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-01.png)
 
