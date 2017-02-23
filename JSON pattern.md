@@ -22,7 +22,7 @@
 | HQuant     | Horizontal Quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
 | HComb      | Horizontal Combiner     | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element17.png)
 | SplitBy    | Split By                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element18.png)
-| SplitsCond | Splits Condition        | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
+| SplitsCond | Splits Constraint       | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element19.png)
 | AggL1      | L1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element31.png)
 | AggL2      | L2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element32.png)
 | AggL3      | L3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element33.png)
@@ -134,7 +134,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | f         | string | function to apply to property
-|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
+|         | cond      | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in" (set) <br> _mandatory_ **value**: array [same type as property / f(property)] <br> or <br> _mandatory_ **op**: "in" (range) <br> _mandatory_ **value**: array of size 2: [same type as property / f(property)]  <br> **inttype**: interval type: "oo"/"oc"/"co"/"cc" <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
 
 ## Relationship's Property (type = "RelProp")
 
@@ -143,7 +143,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | f         | string | function to apply to property
-|         | cond      | {...}  | Condition <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
+|         | cond      | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **value**: same type as property / f(property) <br> or <br> _mandatory_ **op**: "in set"/"not in set"/"in range"/"not in range" <br> _mandatory_ **value**: array [same type as property / f(property)] <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"not fuzzy eq" <br> _mandatory_ **value**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **value**: array [string]
 
 ## Quantifier 1 (type = "Quant1")
 
@@ -229,7 +229,7 @@ At least one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted '->'
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
+|         | cond      | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L2 Aggregation (type = "AggL2")
@@ -238,7 +238,7 @@ At least one of the above must be presented
 |---------|-----------|----------| ------
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
+|         | cond      | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **value**: non-negative int <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [non-negative int] <br> <br> "lt"/"le" are avoided to force explicit lower limit (0 or 1) with "in range".
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L3 Aggregation (type = "AggL3")
@@ -249,7 +249,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | pType     | int      | Relationship's property type (e.g. of 'since') to aggregate
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
+|         | cond      | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## L4 Aggregation (type = "AggL4")
@@ -260,7 +260,7 @@ At least one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "2")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | cond      | {...}    | Condition <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
+|         | cond      | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"; "lt"/"le": only if aggOp is not "distinct" <br> _mandatory_ **value**: same type as aggOp(property) <br> or <br> _mandatory_ **op**: "in set"/"in range" <br> _mandatory_ **value**: array [same type as aggOp(property)]
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
 
 ## M1 Aggregation (type = "AggM1")
