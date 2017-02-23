@@ -1901,7 +1901,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
-## Constraint on Number of Splits
+## Constraint on the Number of Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
