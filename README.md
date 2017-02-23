@@ -203,7 +203,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
 
-  ** a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
+  **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
 - A **property tag**, ('_{pt}_') - explained later
 
