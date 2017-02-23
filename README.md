@@ -198,7 +198,7 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 - The property's name (_'prop'_)
 - An optional function to apply to the property's value (_'f'_)
-- An optional constraint on the property's value / on _f_(property's value). The constraint is in one of these forms:
+- An optional **constraint** on the property's value / on _f_(property's value). The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -991,7 +991,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of concrete '→' / _et_ entities that satisfy the pattern.
-- An optional constraint on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
+- An optional **constraint** on the number of '→' / _et_ entities that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1203,7 +1203,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the number of relationships / paths that satisfy the pattern.
-- An optional constraint on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
+- An optional **constraint** on the number of relationships / paths that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1310,7 +1310,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - _relprop_ is a property of the relationship
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
-- An optional constraint on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
+- An optional **constraint** on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1351,7 +1351,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
 
 - For each assignment to the _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern.
-- An optional constraint on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities. The constraint is in one of these forms:
+- An optional **constraint**F on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1905,7 +1905,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
 
-- A constraint on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
+- A **constraint** on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
