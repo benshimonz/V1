@@ -1,0 +1,63 @@
+{
+  "ont": "Dragons",
+  "name": "Q189",
+  "elements": [
+    {
+      "eNum": 0,
+      "type": "Start",
+      "next": 1
+    },
+    {
+      "eNum": 1,
+      "type": "EConcrete",
+      "eTag": "A",
+      "eID": "1234",
+      "eType": 2,
+      "eName": "Balerion",
+      "next": 2
+    },
+    {
+      "eNum": 2,
+      "type": "Rel",
+      "rType": 3,
+      "dir": "R",
+      "next": 4,
+      "b": 5
+    },
+    {
+      "eNum": 4,
+      "type": "ETyped",
+      "eTag": "B",
+      "eType": 2
+    },
+    {
+      "eNum": 5,
+      "type": "HQuant",
+      "qType": "some",
+      "b": [
+        6,
+        7
+      ]
+    },
+    {
+      "eNum": 6,
+      "type": "RelProp",
+      "pType": 1,
+      "pTag": 1,
+      "con": {
+        "op": "gt",
+        "expr": "1010-01-01T00:00:00.000"
+      }
+    },
+    {
+      "eNum": 7,
+      "type": "RelProp",
+      "pType": 2,
+      "pTag": 2,
+      "con": {
+        "op": "lt",
+        "expr": "10"
+      }
+    }
+  ]
+}
