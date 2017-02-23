@@ -19,7 +19,7 @@ This work is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommon
 
 ## The Property Graph Data Model
 
-A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair G = (V, E) comprising a set V of vertices (nodes) together with a set E of edges (arcs), which are 2-element subsets of V.
+A [*graph*](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) is an ordered pair _G = (V, E)_ comprising a set _V_ of vertices (nodes) together with a set _E_ of edges (arcs), which are 2-element subsets of _V_.
 
 A **property graph** (AKA attributed graph) is a graph where
 
@@ -105,9 +105,9 @@ Pattern languages differs in the following aspects:
 
 ## Dragons of Ice and Fire
 
-The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dragons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificent creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which they can use to pose queries about their history and quickly get results. 
+The subjects of Sarnor, Omber and all the other kingdoms of the four continents: Essos, Westeros, Sothoryos and Ulthos like their horses. There is one thing they love even more - that is their dragons. They own dragons of fire and ice. Like all well-behaved dragons, their dragons love to play. Dragons always play in couples. When playing, dragons often get furious, fire at each other (fire breath) and freeze each other (cold breath). Dragons usually freeze each other for periods of several minutes, but on occasion, if they are really raging, they can freeze each other for periods of to 2 hours or even more. The subjects of the 4 continents enjoy watching their dragons play. Fascinated by these magnificent creatures, they wrote thousands of books, which document any play, any fire breathing, and any ice breathing in the last 900 years (that's not so much in dragon-years). The kings of Sarnor and Omber regularly pose queries about their history. Quite often, it takes the royal historians and royal analysts several days to come up with answers, during which the kings are quite nervous. Lately, the king of Sarnor posed a very complex query, and after waiting for results for more than two moons, he ordered the chief analyst to be executed. He then summoned his chief mechanics, and ordered them to develop an apparatus which he would use to pose queries and quickly get results. 
 
-The engineers started their work by 
+The engineers started their work by:
 
 * Collecting all queries that their master posed in the last few years
 * Constructing a schema (entity types, relationship types - and their properties) using which these queries can be expressed
