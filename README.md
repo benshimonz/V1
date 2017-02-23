@@ -1415,7 +1415,7 @@ _**Q194:** Any dragon that froze dragons X times, fired at dragons Y≥3 times, 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q194.png)
 
-_**Q158:** Any dragon that in at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
+_**Q158:** Any dragon that in any day of at least 10 days - the number of dragons it froze is greater than the number of dragons that froze it_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q158.png)
 
