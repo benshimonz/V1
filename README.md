@@ -196,12 +196,16 @@ The freeze direction does not matter. Therefore - a **non-directional relationsh
 
 **A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
-* The property's name (_'prop'_)
-* An optional function to apply to the property's value (_'f'_)
-* An optional constraint on the property's value / on _f_(property's value) expressed as a condition:
-  * a comparison operator ('_cmp_op_') 
-  * an expression ('_expr_')
-* A **property tag**, ('_{pt}_') - explained later
+- The property's name (_'prop'_)
+- An optional function to apply to the property's value (_'f'_)
+- An optional constraint on the property's value / on _f_(property's value). The constraint is in one of these forms:
+  - _= expr / ≠ expr / > expr / ≥ expr_ / _< expr_ / _≤ expr_ 
+  - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
+  - _in {expr, expr, ... expr}_
+
+  ** a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
+  
+- A **property tag**, ('_{pt}_') - explained later
 
 Constraints cannot be defined for concrete entities. 
 
