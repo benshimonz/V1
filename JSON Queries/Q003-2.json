@@ -30,7 +30,7 @@
       "pTag": 1,
       "con": {
         "op": "eq",
-        "value": "Brandon"
+        "expr": "Brandon"
       }
     },
     {
