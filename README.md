@@ -1446,11 +1446,11 @@ todo
 
 If _S1_ is not given:
 
-**M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimial / maximial number of assignment combinations of entities _S3_.**
+**M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimial / maximial positive number of assignment combinations of entities _S3_.**
 
 If _S1_ is given:
 
-**For each assignment combination to entities _S1_ - M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal number of assignment combinations of entities _S3_.**
+**For each assignment combination to entities _S1_ - M1 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal positive number of assignment combinations of entities _S3_.**
 
 - Suppose the pattern is "5 → with max D" but there are only 3 →'s with >0 assignments to D - Only these 3 will be included.
 - Suppose the pattern is "5 → with max D" but there are 10 →'s with identical max number of assignments to D - all 10 will be included.
@@ -1513,11 +1513,11 @@ _**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A'
 
 If _S1_ is not given:
 
-**M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
+**M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal positive number of relationships / paths on its top.**
 
 If _S1_ is given:
 
-**For each assignment combination to entities _S1_ - M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the smallest / largest number of relationships / paths on its top.**
+**For each assignment combination to entities _S1_ - M2 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal positive number of relationships / paths on its top.**
 
 _**Q78:** The 4 dragons that froze Balerion the largest number of times_
 
