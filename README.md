@@ -1978,9 +1978,11 @@ todo
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 - '→' / _et_ is a typed/logical/untyped entity
 
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners_
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
 
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
@@ -2030,7 +2032,7 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
-_**Q226:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners_
+_**Q226:** todo_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
