@@ -1734,7 +1734,7 @@ _**Q259:** Any person who become owner of 0 to 4 horses since 1011_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
 
-_**Q115:** Any person who owns more than 5 horses since the same date_
+_**Q115:** Any person who at a certain date became an owner of more than 5 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
 
