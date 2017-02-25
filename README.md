@@ -1734,9 +1734,9 @@ _**Q259:** Any person who become owner of 0 to 4 horses since 1011_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
 
-_**Q115:** Any person who at a certain date became an owner of more than 5 horses_
+_**Q115:** Any person who at a certain date became an owner of more than 5 horses (version 1)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115-1.png)
 
 _**Q93:** Any dragon that froze at least 3 dragons for more than 10 minutes. The number of times it froze each of these dragons is at least 5_
 
@@ -1885,6 +1885,10 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-1.png)
 
 todo
+
+_**Q115:** Any person who at a certain date became an owner of more than 5 horses (version 2)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q115-2.png)
 
 _**Q217:** Any Dragon and the dragon it froze - on days it froze not more than 5 dragons_
 
