@@ -1880,9 +1880,9 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
-## Splits
+## Splits and L aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-1.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L.png)
 
 todo
 
@@ -1903,6 +1903,12 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
 _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
+
+## Splits and M aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M.png)
+
+todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
 
