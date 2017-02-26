@@ -1642,11 +1642,11 @@ If _S1_ is given:
 
 **For each assignment combination to entities _S1_ - M4 limits the assignment combinations to entities _S2_ - to the _n_ assignment combinations with the minimal / maximal value of {pt}/{at}/{st}.**
 
-_**Q130:** The 4 eldest people_
+_**Q130:** The 4 oldest people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q130.png)
 
-_**Q131:** The 4 eldest males_
+_**Q131:** The 4 oldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
@@ -1678,7 +1678,7 @@ _**Q168:** The 3 people who the number of types of things each of them owns - is
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q168.png)
 
-_**Q118:** Any person and his 3 eldest offsprings_
+_**Q118:** Any person and his 3 oldest offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q118.png)
 
@@ -1818,19 +1818,19 @@ _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
-_**Q120:** Any person whose 3 eldest offspring cumulative height is smaller than his own height_
+_**Q120:** Any person whose 3 oldest offspring cumulative height is smaller than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q202:** Any person whose 3 eldest offspring average height is smaller than the average height of all his offsprings_
+_**Q202:** Any person whose 3 oldest offspring average height is smaller than the average height of all his offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
 
-_**Q140:** Any person who his 3 eldest sons cumulatively own horses of 3 colors_
+_**Q140:** Any person who his 3 oldest sons cumulatively own horses of 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
 
-_**Q141:** Any person who his 3 eldest sons cumulatively own horses of the same number of colors as those owned cumulatively by his 3 younger daughters_
+_**Q141:** Any person who his 3 oldest sons cumulatively own horses of the same number of colors as those owned cumulatively by his 3 youngest daughters_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
