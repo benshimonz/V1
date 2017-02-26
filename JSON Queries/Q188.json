@@ -34,7 +34,7 @@
       "eNum": 5,
       "type": "RelProp",
       "pType": 1,
-      "pTag": 1,
+      "pTag": "1",
       "con": {
         "op": "gt",
         "expr": "1010-01-01T00:00:00.000"
@@ -45,7 +45,7 @@
       "eNum": 6,
       "type": "RelProp",
       "pType": 2,
-      "pTag": 2,
+      "pTag": "2",
       "con": {
         "op": "lt",
         "expr": "10"
