@@ -1880,7 +1880,7 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
-## Splits and L aggregation
+## Split and L1/L2/L3/L4 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L1.png)
 
@@ -1902,7 +1902,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
-## Constraint on the Number of Splits
+## Split, L1/L2/L3/L4 Aggregation and Constraint on the Number of Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
@@ -1949,9 +1949,25 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
 
-## Splits and M aggregation
+## Global Splits and L Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L3.png)
+
+_**Q261:** Any color of which that are at least 10 horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
+
+_**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
+
+_**Q265:** Any horse color of which the average horses' owners' height is at least 180 cm_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
+
+## Split and M1/M2/M3/M4 Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
 
 todo
 
@@ -1962,6 +1978,28 @@ _**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze
 _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
+
+## Global Splits and M Aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
+
+_**Q262:** The 3 colors of which the number of horses is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
+
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
+
+_**Q264:** The 3 colors of which the average horses' weight is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
+
+_**Q226:** The 3 horse colors of which the the average height of the horse owners is minimal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 ## Split before a Quantifier
 
@@ -2039,40 +2077,6 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
-
-## Global Aggregation on Splits
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Global.png)
-
-_**Q261:** Any color of which that are at least 10 horses_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
-
-_**Q262:** The 3 colors of which the number of horses is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
-
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
-
-_**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
-
-_**Q265:** Any horse color of which the average horses' owners' height is at least 180 cm_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
-
-_**Q264:** The 3 colors of which the average horses' weight is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
-
-_**Q226:** The 3 horse colors of which the the average height of the horse owners is minimal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 ## Min/Max Filter on Splits before a Quantifier
 
