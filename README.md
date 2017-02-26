@@ -1967,10 +1967,6 @@ _**Q261:** Any color of which that are at least 10 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
 
-_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
-
 _**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
@@ -2006,6 +2002,10 @@ _**Q224:** Any person and his horses - of the 3 horse colors with the smallest p
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
+
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
 _**Q264:** The 3 colors of which the average horses' weight is maximal_
 
