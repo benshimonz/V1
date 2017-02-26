@@ -1902,13 +1902,13 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
-_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
-
 ## Splits and M aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M.png)
 
 todo
+
+_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
 
