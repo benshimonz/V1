@@ -1959,13 +1959,17 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
 
-## Global Split and L1/L4 Aggregation
+## Global Split and L1/L2/L4 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L3.png)
 
 _**Q261:** Any color of which that are at least 10 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
+
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
 _**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
 
@@ -2050,10 +2054,6 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 - If not split by _relprop_ : P2 may appear before a quantifier
 
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
-
-_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
