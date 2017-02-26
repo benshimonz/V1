@@ -1882,7 +1882,7 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 
 ## Splits and L aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L1.png)
 
 todo
 
@@ -1902,23 +1902,9 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
-## Splits and M aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M.png)
-
-todo
-
-_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
-
-_**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the largest number of times_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
-
 ## Constraint on the Number of Splits
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-2.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
 - A **constraint** on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
@@ -1962,6 +1948,20 @@ _**Q254:** Any dragon that in each year it froze dragons - it froze more than 3 
 _**Q255:** Any dragon that the number of days in which it forze more than 10 dragons - equals to the length of his name_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
+
+## Splits and M aggregation
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M.png)
+
+todo
+
+_**Q215:** For any color of dragons that Balerion froze - the 3 dragons it froze the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q215.png)
+
+_**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the largest number of times_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
 ## Split before a Quantifier
 
