@@ -28,7 +28,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a value type (e.g. string / integer), and a value (e.g. "First_Name": string = "Brandon")
+- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "First_Name": string = "Brandon")
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'member of'). Again - without schema - the type is just another property
 
@@ -40,10 +40,10 @@ A **property graph's schema** is defined by
   Entities with the same basic properties are grouped (typed) into an entity type (e.g. Person, Horse, Dragon).
   For each entity type: 
   * A name 
-  * A set of properties. For each property: name (key) and value type
+  * A set of properties. For each property: name (key) and data type
 * A set of relationship types. For each relationship type:
   * A name
-  * A set of properties. For each property: name (key) and value type
+  * A set of properties. For each property: name (key) and data type
   * A set of pairs of entity types for which the relationship type holds (e.g. owns(Person, Horse); owns(Person, Dragon) )
 
 A **schema-based property graph** is a property graph which conforms to a given schema.
@@ -52,7 +52,7 @@ There is no standard way to define property graph schemas. Implementations may v
 
 **Why do we need a schema?**
 
-Schema-free property graphs neither define nor enforce entity-types or relationships-types; each vertex and each edge may contain properties with any name and any value type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
+Schema-free property graphs neither define nor enforce entity-types or relationships-types; each vertex and each edge may contain properties with any name and any data type. Without schema we can’t enforce integrity. Without such integrity we can't define formal building-blocks for representing patterns.
 
 In order to ask and answer queries such as *“Any person who owns a white horse”* we first need to:
 
@@ -294,6 +294,16 @@ Functions over multivalued ordinal properties:
 * _min([t])_ → t
 * _avg([t])_ → t
 * _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
+
+## Composite Properties
+
+Composite properties containst sub-properties. For example: address = { city, street, house number, postcode }. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. address.street"). 
+
+Is it frequently required to use an expression that reference two or more subproperties of the same property (e.g. any person lives in ("city= "Oldtown", street = "Park Road") or in ("city= "Volantis", street = "Castle Street"), that has an offspring that lives in the same city and street.
+
+todo
+
+
 
 ## Enumerated Properties
 
