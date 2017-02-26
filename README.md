@@ -2044,6 +2044,26 @@ _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulativ
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
+## Global Aggregation on Splits
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-Global.png)
+
+_**Q261:** Any color of which that are at least 10 horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
+
+_**Q262:** The 3 colors of which the number of horses is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
+
+_**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
+
+_**Q264:** The 3 colors of which the average horses' weight is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
+
 ## Min/Max Filter on Splits before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier2.png)
