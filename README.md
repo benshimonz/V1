@@ -1982,12 +1982,6 @@ todo
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 - '→' / _et_ is a typed/logical/untyped entity
 
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
-
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
@@ -2031,14 +2025,10 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
 - P4 appears below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
-- P4 appears below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
+- P4 appears below a 'split by _{pt/at/st}/< ett >_' below a relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
 
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
-
-_**Q226:** todo_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 _**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
 
@@ -2056,13 +2046,27 @@ _**Q262:** The 3 colors of which the number of horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
 
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
+
 _**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
 
+_**Q265:** Any horse color of which the average horses' owners' height is at least 180 cm_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
+
 _**Q264:** The 3 colors of which the average horses' weight is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
+
+_**Q226:** The 3 horse colors of which the the average height of the horse owners is minimal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 ## Min/Max Filter on Splits before a Quantifier
 
