@@ -42,6 +42,9 @@
           "eID": "12345678",
           "eType": 1,
           "properties": [
+		    {
+              "pType": "1",
+              "subProp": [
             {
               "pType": "1",
               "agg": "raw",
@@ -52,6 +55,9 @@
               "agg": "raw",
               "value": "Stark"
             },
+			  
+               ]
+			},
             {
               "pType": "4",
               "agg": "raw",
