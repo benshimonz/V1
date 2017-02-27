@@ -276,18 +276,25 @@
       "properties": [
         {
           "pType": 1,
-          "name": "since",
-          "type": "date",
-          "report": [
-            "raw"
-          ]
-        },
-        {
-          "pType": 2,
-          "name": "till",
-          "type": "date",
-          "report": [
-            "raw"
+          "name": "tf",
+          "type": "_composite",
+          "subProp": [
+            {
+              "pType": 1,
+              "name": "since",
+              "type": "date",
+              "report": [
+                "raw"
+              ]
+            },
+            {
+              "pType": 2,
+              "name": "till",
+              "type": "date",
+              "report": [
+                "raw"
+              ]
+            }
           ]
         }
       ]
