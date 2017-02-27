@@ -33,7 +33,7 @@
     {
       "eNum": 5,
       "type": "RelProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "1",
       "con": {
         "op": "gt",
@@ -44,7 +44,7 @@
     {
       "eNum": 6,
       "type": "RelProp",
-      "pType": 2,
+      "pType": "2",
       "pTag": "2",
       "con": {
         "op": "lt",

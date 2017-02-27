@@ -40,7 +40,7 @@
     {
       "eNum": 5,
       "type": "RelProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "1",
       "con": {
         "op": "in range",
@@ -68,7 +68,7 @@
     {
       "eNum": 8,
       "type": "RelProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "2",
       "con": {
         "op": "in range",

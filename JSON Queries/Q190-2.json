@@ -31,7 +31,7 @@
     {
       "eNum": 4,
       "type": "RelProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "1",
       "f": "year",
       "con": {

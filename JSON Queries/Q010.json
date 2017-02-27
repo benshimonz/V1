@@ -26,7 +26,7 @@
     {
       "eNum": 3,
       "type": "EProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "1",
       "con": {
         "op": "eq",
@@ -58,7 +58,7 @@
     {
       "eNum": 7,
       "type": "RelProp",
-      "pType": 1,
+      "pType": "1",
       "pTag": "2",
       "con": {
         "op": "ge",
@@ -69,7 +69,7 @@
     {
       "eNum": 8,
       "type": "RelProp",
-      "pType": 2,
+      "pType": "2",
       "pTag": "3",
       "con": {
         "op": "gt",
