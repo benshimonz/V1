@@ -975,7 +975,7 @@ _**Q268:** Any person who was a member of two guilds in intersecting periods_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
 
-(Assuming that at least one of the _tf.till_ values is not empty). Note the red comparison operator.
+(Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
 
 ## Enumerated Properties
 
