@@ -130,7 +130,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+| +       | pType     | string | Property type (e.g. "2" for "last name" of "Person") <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | f         | string | function to apply to property
 |         | con       | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **expr**: array [string] of size 2 or more<br> or <br> _mandatory_ **op**: "in range"/"not in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"fuzzy ne" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] or size 2 or more <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). Its type should match the property's type / f(property)'s type
@@ -139,7 +139,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | pType     | int    | Property type (e.g. of 'own') <br> According to the ontology
+| +       | pType     | int    | Property type (e.g. "1.2" for "till" of "member of") <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | f         | string | function to apply to property
 |         | con       | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> or <br> _mandatory_ **op**: "in range"/"not in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"fuzzy ne" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). Its type should match the property's type / f(property)'s type
