@@ -959,15 +959,17 @@ Functions over multivalued ordinal properties:
 
 Composite properties composed of sub-properties. For example: address = { city, street, house number, postcode }. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "address.street").
 
-Composite properties can be tagged and referenced as ordinary properties. In addition, sub-properties can be tagged and addressed as well. A sub-property tag is in the form ('_{pt.spt}_').
+Composite properties can be tagged and referenced as ordinary properties. In addition, sub-properties can be tagged and referenced as well. A sub-property tag is in the form ('_{pt.spt}_').
 
 _**Q266:** Any person who lives in the same address as his parent_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q0266.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266.png)
 
 _**Q267:** Any person who lives in the same city and street as his parent_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q0267.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
+
+For relationship properties,
 
 ## Enumerated Properties
 
