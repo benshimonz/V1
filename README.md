@@ -969,7 +969,7 @@ _**Q266:** Any person who has the same name (first and last) as his parent (two 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-2.png)
 
-_**Q267:** Any person who was a member of two guilds in intersecting periods_
+_**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
 
