@@ -112,7 +112,7 @@ The engineers started their work by:
 * Collecting all queries that their master posed in the last few years
 * Constructing a schema (entity types, relationship types - and their properties) using which these queries can be expressed
 
-The schema is composed of the following entity types:
+The schema is composed of the following entity types (and their properties):
 
 * **Person** - name {first : string, last : string}, gender : enum, birth date : date, death date : date, height : int [cm]
 * **Dragon** - name : string
@@ -120,7 +120,7 @@ The schema is composed of the following entity types:
 * **Guild** - name : string
 * **Kingdom** - name : string
 
-and of the following relationship types:
+and of the following relationship types (and their properties):
 
 * **owns**(Person, Horse) - since : date, till : date
 * **owns**(Person, Dragon) - since : date, till : date
@@ -128,15 +128,15 @@ and of the following relationship types:
 * **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
 * **offspring**(Person, Person)
 * **knows**(Person, Person) -: since : date
-* **member of**(Person, Guild) - timeframe {since : date, till : date}
+* **member of**(Person, Guild) - tf {since : date, till : date} ("tf" stands for timeframe)
 * **subject of**(Person, Kingdom)
 * **registered in**(Guild, Kingdom)
 * **originated in**(Horse, Kingdom)
 * **originated in**(Dragon, Kingdom)
 
-This schema and the queries will serve us to demonstrate the power of the V1 language.
+Person's name is a composite property. "member of"'s _tf_ (stands for "timeframe") is a composite property as well. Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. 
 
-Note that person's name and membership's timeframe are composite properties (explained later).
+This schema and the queries will serve us to demonstrate the power of the V1 language.
 
 ## The V1 Pattern Language
 
@@ -316,8 +316,6 @@ The following examples demonstrate both ways to use quantifiers:
 _**Q11:** Any current member of the Masons guild, who since 1011 or later knows someone who left the Saddlers guild or the Blacksmiths guild - on June 1010 or later_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
-
-_tf_ (stands for "time frame") is a composite property (explained later).
 
 Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
 
@@ -963,7 +961,7 @@ Functions over multivalued ordinal properties:
 
 Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "name.first").
 
-Composite properties, as well as sub-properties, are tagged and referenced similar to ordinary properties.
+Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
 
 _**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
 
