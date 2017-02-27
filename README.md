@@ -959,21 +959,19 @@ Functions over multivalued ordinal properties:
 
 ## Composite Properties
 
-Composite properties composed of sub-properties. For example: address = { city, street, house number, postcode }. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "address.street").
+Composite properties composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "name.first").
 
 Composite properties, as well as sub-properties -  are tagged and referenced similar to ordinary properties.
 
-_**Q266:** Any person who lives in the same address as his parent_
+_**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-1.png)
 
-_**Q267:** Any person who lives in the same city and street as his parent_
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-2.png)
+
+_**Q267:** Any person who was a member of two guilds in intersecting periods_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
-
-_**Q268:** Any person who was a member of two guilds in intersecting periods_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
 
 (Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
 
