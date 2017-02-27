@@ -315,6 +315,8 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
+_tf_ (stands for "time frame") is a composite property (explained later).
+
 Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
 
 _**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
@@ -972,6 +974,8 @@ _**Q267:** Any person who lives in the same city and street as his parent_
 _**Q268:** Any person who was a member of two guilds in intersecting periods_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
+
+(Assuming that at least one of the tf.till values is not empty). Note the red comparison operator.
 
 ## Enumerated Properties
 
