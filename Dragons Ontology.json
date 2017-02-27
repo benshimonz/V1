@@ -7,18 +7,25 @@
       "properties": [
         {
           "pType": 1,
-          "name": "first name",
-          "type": "string",
-          "report": [
-            "raw"
-          ]
-        },
-        {
-          "pType": 2,
-          "name": "last name",
-          "type": "string",
-          "report": [
-            "raw"
+          "name": "name",
+          "type": "_composite",
+          "subProp": [
+            {
+              "pType": 1,
+              "name": "first",
+              "type": "string",
+              "report": [
+                "raw"
+              ]
+            },
+            {
+              "pType": 2,
+              "name": "last",
+              "type": "string",
+              "report": [
+                "raw"
+              ]
+            }
           ]
         },
         {
