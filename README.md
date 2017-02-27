@@ -114,7 +114,7 @@ The engineers started their work by:
 
 The schema is composed of the following entity types:
 
-* **Person** - first name : string, last name : string, gender : enum, birth date : date, death date : date, height : int [cm]
+* **Person** - name {first : string, last : string}, gender : enum, birth date : date, death date : date, height : int [cm]
 * **Dragon** - name : string
 * **Horse** - name : string, color : enum, weight : int [Kg]
 * **Guild** - name : string
@@ -128,13 +128,15 @@ and of the following relationship types:
 * **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
 * **offspring**(Person, Person)
 * **knows**(Person, Person) -: since : date
-* **member of**(Person, Guild) - since : date, till : date
+* **member of**(Person, Guild) - timeframe {since : date, till : date}
 * **subject of**(Person, Kingdom)
 * **registered in**(Guild, Kingdom)
 * **originated in**(Horse, Kingdom)
 * **originated in**(Dragon, Kingdom)
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
+
+Note that person's name and membership's timeframe are composite properties (explained later).
 
 ## The V1 Pattern Language
 
