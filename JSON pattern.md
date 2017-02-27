@@ -207,7 +207,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | pType     | string | Relationship's property type (e.g. of 'since') to split by
+|         | pType     | string | Relationship's property type (e.g. of "tf.since" of "member of") to split by
 |         | tag       | string | pt/at/st to split by (e.g. "1")
 |         | eTTag     | string | entity type tag to split by (e.g. "1")
 | +       | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitsCon
@@ -248,7 +248,7 @@ Exactly one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
-| +       | pType     | string   | Relationship's property type (e.g. of 'since') to aggregate
+| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
 |         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "lt"/"le" - only if aggOp is not "distinct" <br> or <br> _mandatory_ **expr**: string <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]"  <br> <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in_ [0 .. expr] or _in_ [1 .. expr] should be used. <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
 
@@ -293,7 +293,7 @@ Exactly one of the above must be presented
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
-| +       | pType     | string   | Relationship's property type (e.g. of 'since') to aggregate
+| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## M4 Aggregation (type = "AggM4")
@@ -314,7 +314,7 @@ Exactly one of the above must be presented
 |         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
-| +       | pType     | string   | Relationship's property type (e.g. of 'since') to aggregate
+| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
 
 ## Nonidenticality constraints between entity tags
