@@ -266,49 +266,6 @@ The data model may support empty (missing) values for one or more properties. em
 * An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
 * A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
 
-## Multivalued Properties
-
-Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
-
-An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
-
-Here is an example:
-
-_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
-
-* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
-* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
-
-Functions over multivalued properties:
-
-* _count([t])_ → int
-* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
-
-Functions over multivalued ordinal properties:
-
-* _min([t])_ → t
-* _min([t])_ → t
-* _avg([t])_ → t
-* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
-
-## Composite Properties
-
-Composite properties containst sub-properties. For example: address = { city, street, house number, postcode }. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. address.street"). 
-
-Is it frequently required to use an expression that reference two or more subproperties of the same property (e.g. any person lives in ("city= "Oldtown", street = "Park Road") or in ("city= "Volantis", street = "Castle Street"), that has an offspring that lives in the same city and street.
-
-todo
-
-
-
-## Enumerated Properties
-
-todo
-
 ## Quantifiers #1
 
 Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
@@ -968,6 +925,49 @@ _**Q51:** Any person who owns (at least) two things of different types_
 _**Q52:** Any person who owns (at least) two things of different types, both are not horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
+
+## Multivalued Properties
+
+Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
+
+An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
+
+Here is an example:
+
+_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
+
+* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
+* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+
+Functions over multivalued properties:
+
+* _count([t])_ → int
+* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
+
+Functions over multivalued ordinal properties:
+
+* _min([t])_ → t
+* _min([t])_ → t
+* _avg([t])_ → t
+* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
+
+## Composite Properties
+
+Composite properties composed of sub-properties. For example: address = { city, street, house number, postcode }. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "address.street").
+
+
+
+Is it frequently required to use an expression that reference two or more subproperties of the same property (e.g. any person lives in ("city= "Oldtown", street = "Park Road") or in ("city= "Volantis", street = "Castle Street"), that has an offspring that lives in the same city and street.
+
+todo
+
+## Enumerated Properties
+
+todo
 
 ## Aggregations and Aggregation Tags
 
