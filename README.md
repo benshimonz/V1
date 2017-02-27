@@ -114,25 +114,25 @@ The engineers started their work by:
 
 The schema is composed of the following entity types:
 
-* Person: first name, last name, gender, birth date, death date, height
-* Dragon: name
-* Horse: name, color, weight
-* Guild: name
-* Kingdom: name
+* **Person** - first name : string, last name : string, gender : enum, birth date : date, death date : date, height : int [cm]
+* **Dragon** - name : string
+* **Horse** - name : string, color : enum, weight : int [Kg]
+* **Guild** - name : string
+* **Kingdom** - name : string
 
 and of the following relationship types:
 
-* owns(Person, Horse): since, till
-* owns(Person, Dragon): since, till
-* fires at(Dragon, Dragon): time
-* freezes(Dragon, Dragon): time, duration
-* offspring(Person, Person)
-* knows(Person, Person) : since
-* member of(Person, Guild): since, till
-* subject of(Person, Kingdom)
-* registered in(Guild, Kingdom)
-* originated in(Horse, Kingdom)
-* originated in(Dragon, Kingdom)
+* **owns**(Person, Horse) - since : date, till : date
+* **owns**(Person, Dragon) - since : date, till : date
+* **fires at**(Dragon, Dragon) - time : datetime
+* **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
+* **offspring**(Person, Person)
+* **knows**(Person, Person) -: since : date
+* **member of**(Person, Guild) - since : date, till : date
+* **subject of**(Person, Kingdom)
+* **registered in**(Guild, Kingdom)
+* **originated in**(Horse, Kingdom)
+* **originated in**(Dragon, Kingdom)
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
