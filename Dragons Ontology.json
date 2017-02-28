@@ -165,20 +165,27 @@
       "properties": [
         {
           "pType": 1,
-          "name": "since",
-          "type": "date",
-          "report": [
-            "min",
-            "max"
-          ]
-        },
-        {
-          "pType": 2,
-          "name": "till",
-          "type": "date",
-          "report": [
-            "min",
-            "max"
+          "name": "tf",
+          "type": "_composite",
+          "subProp": [
+            {
+              "pType": 1,
+              "name": "since",
+              "type": "date",
+              "report": [
+                "min",
+                "max"
+              ]
+            },
+            {
+              "pType": 2,
+              "name": "till",
+              "type": "date",
+              "report": [
+                "min",
+                "max"
+              ]
+            }
           ]
         }
       ]
