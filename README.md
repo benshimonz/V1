@@ -315,7 +315,7 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-Sub-properties of a composite property is denoted as "property name"."sub-property name" (e.g. "name.first").
+Sub-properties of a composite property are denoted as "property name"."sub-property name" (e.g. "tf.till").
 
 Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
 
