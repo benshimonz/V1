@@ -28,7 +28,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "First_Name": string = "Brandon")
+- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties have are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = {"First": string = "Brandon", "Last": string = "Stark"}
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'member of'). Again - without schema - the type is just another property
 
@@ -132,7 +132,7 @@ and of the following relationship types (and their properties):
 * **registered in**(Guild, Kingdom)
 * **originated in**(Horse/Dragon, Kingdom)
 
-"Person"'s name, "owns"'s _tf_, as well as "member of"'s _tf_ - are composite properties. Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. 
+Note that "Person"'s name, "owns"'s _tf_, as well as "member of"'s _tf_ - are composite properties.
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
