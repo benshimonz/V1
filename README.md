@@ -1784,7 +1784,7 @@ _**Q162:** Any dragon pair (A, B) where the second shortest period A froze B is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
 
-_**Q268:** Any dragon pair (A, B) where the average duration of the 11-20 longest periods A forze B is longer than 60 minutes_
+_**Q268:** Any dragon pair (A, B) where the average duration of the 11th-20th longest periods A forze B is longer than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
 
