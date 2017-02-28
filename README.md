@@ -122,8 +122,7 @@ The schema is composed of the following entity types (and their properties):
 
 and of the following relationship types (and their properties):
 
-* **owns**(Person, Horse) - since : date, till : date
-* **owns**(Person, Dragon) - since : date, till : date
+* **owns**(Person, Horse/Dragon) - tf {since : date, till : date} ("tf" stands for timeframe)
 * **fires at**(Dragon, Dragon) - time : datetime
 * **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
 * **offspring**(Person, Person)
@@ -131,10 +130,9 @@ and of the following relationship types (and their properties):
 * **member of**(Person, Guild) - tf {since : date, till : date} ("tf" stands for timeframe)
 * **subject of**(Person, Kingdom)
 * **registered in**(Guild, Kingdom)
-* **originated in**(Horse, Kingdom)
-* **originated in**(Dragon, Kingdom)
+* **originated in**(Horse/Dragon, Kingdom)
 
-Person's name is a composite property. "member of"'s _tf_ (stands for "timeframe") is a composite property as well. Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. 
+"Person"'s name, "owns"'s _tf_, as well as "member of"'s _tf_ - are composite properties. Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. 
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
