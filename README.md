@@ -315,6 +315,8 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
+Sub-properties of a composite property is denoted as "property name"."sub-property name" (e.g. "name.first").
+
 Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
 
 _**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
@@ -906,6 +908,22 @@ _**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
+Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
+
+_**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-2.png)
+
+_**Q267:** Any person who was a member of two guilds at intersecting timeframes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
+
+(Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
+
+
+
 ## Entity Type Tag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB08.png)
@@ -954,24 +972,6 @@ Functions over multivalued ordinal properties:
 * _min([t])_ → t
 * _avg([t])_ → t
 * _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
-
-## Composite Properties
-
-Composite properties are composed of sub-properties. A person's name is composed of {first, last}. A guild membership's timeframe is composed of {since, till}. Each sub-property has its own name and data type. At the query level, a sub-property is referenced as "property name"."sub-property name" (e.g. "name.first").
-
-Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
-
-_**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-2.png)
-
-_**Q267:** Any person who was a member of two guilds at intersecting timeframes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
-
-(Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
 
 ## Enumerated Properties
 
