@@ -1776,13 +1776,17 @@ Filtering stages:
 - Pass dragon pairs (A, B) where A froze B at least 5 time for more than 10 minutes
 - Pass only dragons A that froze for more than 10 minutes - at least 3 dragons
 
+_**Q163:** Any dragon that the average duration of the 10 shortest times it freezes is greater than 60 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
+
 _**Q162:** Any dragon pair (A, B) where the second shortest period A froze B is longer than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
 
-_**Q163:** Any dragon that the average duration of the 10 shortest times it freezes is greater than 60 minutes_
+_**Q268:** Any dragon pair (A, B) where the average duration of the 11-20 longest periods A forze B is longer than 60 minutes_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q163.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
 
 _**Q185:** Any dragon that was frozen by Balerion: at least once in 1/1/1010 or later, at least once for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
