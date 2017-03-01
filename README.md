@@ -1975,11 +1975,11 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L3.png)
 
-_**Q261:** Any color of which that are at least 10 horses_
+_**Q261:** Any horse of any color of which there are at least 10 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
 
-_**Q263:** Any color of which that average horses' weight is greater than 450 Kg_
+_**Q263:** Any horse of each color of which the average horses' weight is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
 
@@ -2005,7 +2005,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
 
-_**Q262:** The 3 colors of which the number of horses is maximal_
+_**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
 
@@ -2019,15 +2019,15 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
-_**Q269:** The 3 horse colors of which the average ownership start date is the latest_
+_**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
 
-_**Q264:** The 3 colors of which the average horses' weight is maximal_
+_**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
 
-_**Q226:** The 3 horse colors of which the average height of the horse owners is minimal_
+_**Q226:** Any person and his horses - of the 3 horse colors of which the average height of the horse owners is minimal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
