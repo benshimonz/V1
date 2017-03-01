@@ -323,7 +323,7 @@ _**Q10:** Any person whose first name is Brandon, who owns some dragon B which f
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-When a relationship need to satisfy several conditions (as in Q10: the freeze time is in 1010 or after _and_ the the freeze duration is longer than 100 seconds) - green rectangles can be chained. Chaining is not valid for entities. Chaining is explained below (see _Horizontal Quantifiers_)
+When a relationship need to satisfy several conditions (as in Q10: the freeze time is in 1010 or after _and_ the freeze duration is longer than 100 seconds) - green rectangles can be chained. Chaining is not valid for entities. Chaining is explained below (see _Horizontal Quantifiers_)
 
 ## Entity Tags
 
@@ -2019,11 +2019,15 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
+_**Q269:** The 3 horse colors of which the average ownership start date is the latest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
+
 _**Q264:** The 3 colors of which the average horses' weight is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
 
-_**Q226:** The 3 horse colors of which the the average height of the horse owners is minimal_
+_**Q226:** The 3 horse colors of which the average height of the horse owners is minimal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
