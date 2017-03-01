@@ -304,7 +304,7 @@ _**Q8:** Any person born prior to 970 and is still alive, or that his father bor
 
 ## Quantifiers #2
 
-**A second way to use quantifiers:** The left component ends with a relationship, and each right component starts with either:
+**A second way to use quantifiers:** The left component ends with a relationship or with a path, and each right component starts with either:
 
 * An entity (concrete/aggregate/typed/logical/untyped)
 * A quantifier
