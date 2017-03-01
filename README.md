@@ -208,7 +208,7 @@ Constraints cannot be defined for concrete entities.
 
 For untyped entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for an untyped entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the untyped entity).
 
-_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v1)**_
+_**Q3:** Any person who owns a dragon, and his first name is Brandon **(first version)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
@@ -270,7 +270,7 @@ The data model may support empty (missing) values for one or more properties. em
 
 Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
 
-_**Q3:** Any person who owns a dragon, and his first name is Brandon **(v2)**_
+_**Q3:** Any person who owns a dragon, and his first name is Brandon **(second version)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-2.png)
 
