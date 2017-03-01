@@ -1784,9 +1784,13 @@ _**Q162:** Any dragon pair (A, B) where the second shortest period A froze B is 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q162.png)
 
-_**Q268:** Any dragon pair (A, B) where the average duration of the 11th-20th longest periods A forze B is longer than 60 minutes_
+_**Q268:** Any dragon pair (A, B) where the average duration of the 11th-20th longest freezes A forze B is longer than 60 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q268.png)
+
+_**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 10 times longer than the shortest freeze duration_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
 _**Q185:** Any dragon that was frozen by Balerion: at least once in 1/1/1010 or later, at least once for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
