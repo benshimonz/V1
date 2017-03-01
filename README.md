@@ -2243,7 +2243,7 @@ _**Q203:** Any dragon owned by a King since 1/1/1011 or since a later date_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q203.png)
 
-_**Q204:** Any dragon than froze at least 3 dragon owned by a 'Sarnorian' (cumulatively)_
+_**Q204:** Any dragon than froze at least 3 dragons owned by Sarnorians_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q204.png)
 
