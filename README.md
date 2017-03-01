@@ -573,7 +573,7 @@ _**Q187:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q187.png)
 
-_**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or later) or (at least once for longer than 10 minutes) **Alternative wording:** Any dragon that was frozen by Balerion: at least once (in 1/1/1010 or later, or for longer than 10 minutes)_
+_**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or later) or (at least once for longer than 10 minutes) **Alternative wording:** Any dragon that was frozen by Balerion at least once: (in 1/1/1010 or later, or for longer than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
