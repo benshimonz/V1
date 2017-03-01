@@ -2001,7 +2001,7 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
-## Global Split and M1/M2/M* Aggregation
+## Global Split and M1/M2/M3/M4 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
 
