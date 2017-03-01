@@ -1509,7 +1509,7 @@ _**Q227:** Any **dragon** owned by Brandon Stark, and the 3 dragons **it** froze
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q227.png)
 
-_**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A's 3 dragon that froze the largest number of D's dragons_
+_**Q238:** For any pair of people (A,D) where A's dragons froze D's dragons - A's 3 dragons that froze the largest number of D's dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q238.png)
 
