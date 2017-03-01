@@ -1979,6 +1979,14 @@ _**Q261:** Any horse of any color of which there are at least 10 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q261.png)
 
+_**Q270:** Any person and his horses - of the horse colors for which there are more than 5 horse ownerships by persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q270.png)
+
+_**Q271:** Any person and his horses - of the horse colors for which the average ownership start date is at least 1/1/1010_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q271.png)
+
 _**Q263:** Any horse of each color of which the average horses' weight is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q263.png)
