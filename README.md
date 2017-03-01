@@ -2082,7 +2082,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop1_, _relprop2_ are different properties of the relationship
 
-_**Q222:** Any Person, and his horses of the 3 colors with the latest average ownership start date_
+_**Q222:** Any Person, and his horses - of the 3 colors for which his average ownership start date is the latest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
 
@@ -2096,7 +2096,7 @@ _**Q222:** Any Person, and his horses of the 3 colors with the latest average ow
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
-_**Q223:** Any Person, and his horses of the 3 colors with the largest cumulative weight_
+_**Q223:** Any Person, and his horses - of the 3 colors for which the cumulative weight if his horses in the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
