@@ -1971,7 +1971,7 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
 
-## Global Split and L1/L4 Aggregation
+## Global Split and L1/L2/L3/L4 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L3.png)
 
