@@ -28,7 +28,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties have are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = {"First": string = "Brandon", "Last": string = "Stark"}
+- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = {"First": string = "Brandon", "Last": string = "Stark"}
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'member of'). Again - without schema - the type is just another property
 
