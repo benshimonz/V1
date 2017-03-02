@@ -1947,11 +1947,11 @@ _**Q214:** Any person who owns entities of at least 4 types. For each type - at 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q214.png)
 
-_**Q154:** Any dragon that in at least 4 years - in at least 11 days - froze no more than 5 dragons_
+_**Q154:** Any dragon that in each of at least 4 years - in each of at least 11 days - froze no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q154.png)
 
-_**Q155:** Any dragon that in at least 11 days - froze more than 100 minutes cumulatively_
+_**Q155:** Any dragon that in each of at least 11 days - froze more than 100 minutes cumulatively_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q155.png)
 
