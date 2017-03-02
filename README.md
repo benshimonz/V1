@@ -1906,7 +1906,7 @@ _**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
-## Split and L1/L2/L3/L4 Aggregation
+## L1/L2/L3/L4 Aggregation below a Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L1.png)
 
@@ -1928,7 +1928,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q219.png)
 
-## Split, L1/L2/L3/L4 Aggregation and Constraint on the Number of Splits
+## L1/L2/L3/L4 Aggregation below a Split, and Constraint on the Number of Splits
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
@@ -1975,7 +1975,7 @@ _**Q255:** Any dragon that the number of days in which it forze more than 10 dra
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q255.png)
 
-## Global Split and L1/L2/L3/L4 Aggregation
+## Global L1/L2/L3/L4 Aggregation below a Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L3.png)
 
@@ -1999,7 +1999,7 @@ _**Q265:** Any horse color of which the average horses' owners' height is at lea
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
 
-## Split and M1/M2/M3/M4/M5 Aggregation
+## M1/M2/M3/M4/M5 Aggregation below a Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
 
