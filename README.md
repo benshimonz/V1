@@ -2042,6 +2042,16 @@ todo
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 - '→' / _et_ is a typed/logical/untyped entity
 
+_**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
+
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
+
 _**Q220:** Any person and his horses - of the 3 colors he owns the largest number of horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q220.png)
@@ -2056,6 +2066,10 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 - If not split by _relprop_ : P2 may appear before a quantifier
 
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
+
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
 _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
 
@@ -2072,6 +2086,10 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop1_, _relprop2_ are different properties of the relationship
 
+_**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
+
 _**Q222:** Any Person, and his horses - of the 3 colors for which his average ownership start date is the latest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q222.png)
@@ -2086,32 +2104,6 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 - _relprop_ is a property of the relationship
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
 
-_**Q223:** Any Person, and his horses - of the 3 colors for which the cumulative weight if his horses in the largest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
-
-## Global P1/P2/P3/P4 Min/Max Aggregation on Splits
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
-
-_**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
-
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
-
-_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
-
-_**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
-
 _**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
@@ -2119,6 +2111,10 @@ _**Q264:** Any horse of the 3 colors of which the average horses' weight is maxi
 _**Q226:** Any person and his horses - of the 3 horse colors of which the average height of the horse owners is minimal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
+
+_**Q223:** Any Person, and his horses - of the 3 colors for which the cumulative weight if his horses in the largest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
 
 ## Min/Max Filter on Splits before a Quantifier
 
