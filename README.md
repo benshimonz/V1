@@ -2106,8 +2106,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - _n_ is a positive integer
 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-
-- _relprop1_, _relprop2_ are different properties of the relationship
+- _relprop2_ is a property of the relationship (different from _relprop1_)
 
 _**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
 
