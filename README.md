@@ -1999,7 +1999,7 @@ _**Q265:** Any horse color of which the average horses' owners' height is at lea
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
 
-## Split and M1/M2/M3/M4 Aggregation
+## Split and M1/M2/M3/M4/M5 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
 
@@ -2013,7 +2013,11 @@ _**Q253:** For each number of dragon's owners - the 3 dragons Balerion froze the
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q253.png)
 
-## Global Split and M1/M2/M3/M4/M5 Aggregation
+_**Q273:** For each horse color - the 3 horse ownership with the latest ownership start date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q273.png)
+
+## Global Split and M1/M2/M3/M4 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
 
@@ -2042,10 +2046,6 @@ _**Q264:** Any horse of the 3 colors of which the average horses' weight is maxi
 _**Q226:** Any person and his horses - of the 3 horse colors of which the average height of the horse owners is minimal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
-
-_**Q273:** For each horse color - the 3 horse ownership with the latest ownership start date_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q273.png)
 
 ## Split before a Quantifier
 
