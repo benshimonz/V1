@@ -2071,10 +2071,15 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 - P2 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
 - P2 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
-- _relprop_ is a property of the relationship
-- If not split by _relprop_ : P2 may appear before a quantifier
 
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of relationship / path
+- _relprop_ is a property of the relationship
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+
+- Optional:
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
+
+- _n_ is a positive integer
 
 _**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
 
@@ -2091,8 +2096,17 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - P3 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
 - P3 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship. The relationship may be wrapped by an 'L'
 
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step) or right of the relationship
+- _relprop1_ is a property of the relationship
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+
+- Optional:
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
+
+- _n_ is a positive integer
+
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+
 - _relprop1_, _relprop2_ are different properties of the relationship
 
 _**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
@@ -2111,7 +2125,16 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 - P4 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
 
 - _relprop_ is a property of the relationship
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the filter (in a previous filtering step - see Q223) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+
+- Optional:
+  - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
+  - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
+
+- _n_ is a positive integer
+
+- {pt} is a property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step - see Q223) or right of the aggregation
 
 _**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
 
