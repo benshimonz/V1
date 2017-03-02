@@ -2017,36 +2017,6 @@ _**Q273:** For each horse color - the 3 horse ownership with the latest ownershi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q273.png)
 
-## Global Split and M1/M2/M3/M4 Aggregation
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
-
-_**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
-
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
-
-_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
-
-_**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
-
-_**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
-
-_**Q226:** Any person and his horses - of the 3 horse colors of which the average height of the horse owners is minimal_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
-
 ## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
@@ -2119,6 +2089,36 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 _**Q223:** Any Person, and his horses - of the 3 colors for which the cumulative weight if his horses in the largest_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q223.png)
+
+## Global P1/P2/P3/P4 Min/Max Aggregation on Splits
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M2.png)
+
+_**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
+
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-2.png)
+
+_**Q225:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse ownerships by persons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
+
+_**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q269.png)
+
+_**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q264.png)
+
+_**Q226:** Any person and his horses - of the 3 horse colors of which the average height of the horse owners is minimal_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
 ## Min/Max Filter on Splits before a Quantifier
 
