@@ -1932,7 +1932,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
-- A **constraint** on the number of splits that satisfy the pattern is may appear below a split. The constraint is in one of these forms:
+- A **constraint** on the number of splits that satisfy the pattern may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
