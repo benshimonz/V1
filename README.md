@@ -2043,6 +2043,10 @@ _**Q226:** Any person and his horses - of the 3 horse colors of which the averag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q226.png)
 
+_**Q273:** For each horse color - the 3 horse ownership with the latest ownership start date_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q273.png)
+
 ## Split before a Quantifier
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-Before-Quantifier1.png)
