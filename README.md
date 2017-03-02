@@ -1939,7 +1939,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
   
   _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used.
 
-_**Q153:** Any dragon that in at least 10 days froze no more than 5 dragons_
+_**Q153:** Any dragon that in each day of at least 11 days - froze no more than 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
