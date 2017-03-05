@@ -132,8 +132,8 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | pType     | string | Property type (e.g. "2" for "last name" of "Person") <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | f         | string | function to apply to property
-|         | con       | {...}  | constraint. see below
+|         | f         | string | Function to apply to property
+|         | con       | {...}  | Constraint. see below
 
 ## Relationship's Property (type = "RelProp")
 
@@ -141,15 +141,15 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | pType     | string | Property type (e.g. "1.2" for "tf.till" of "member of") <br> According to the ontology
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
-|         | f         | string | function to apply to property
-|         | con       | {...}  | constraint. see below
+|         | f         | string | Function to apply to property
+|         | con       | {...}  | Constraint. see below
 |         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li> <li>SplitsCon</li></ul> 
 
 ## constraint ("con") for EProp/RelProp
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | con       | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **expr**: array [string] of size 2 or more<br> or <br> _mandatory_ **op**: "in range"/"not in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> **Over  string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"fuzzy ne" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] or size 2 or more <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). Its type should match the property's type / f(property)'s type
+|         | con       | {...}  | Constraint <br> **Over any property type:** <br> _mandatory_ **op**: "empty"/"not empty" <br> <br> **Over ordinal properties / function-range** (integer types, floating-point types, date, datetime): <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge"/"lt"/"le" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set"/"not in set" <br> _mandatory_ **expr**: array [string] of size 2 or more<br> or <br> _mandatory_ **op**: "in range"/"not in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> **Over string properties / function-range:** <br> _mandatory_ **op**: "eq"/"ne"/"contains"/"not contains"/"starts with"/"not starts with"/"ends with"/"not ends with"/"match"/"not match"/"fuzzy eq"/"fuzzy ne" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] or size 2 or more <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). Its type should match the property's type / f(property)'s type <br> <br> ** Over timespan / datetimespan properties / function-range:** <br> _mandatory_ **op**: xxx/yyy
 
 ## Quantifier 1 (type = "Quant1")
 
