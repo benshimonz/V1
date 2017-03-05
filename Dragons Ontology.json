@@ -1,5 +1,73 @@
 {
   "ont": "Dragons",
+  "enumeratedTypes": [
+    {
+      "eType": "TYPE_Gender",
+      "values": [
+        {
+          "val": 1,
+          "name": "Female"
+        },
+        {
+          "val": 2,
+          "name": "Male"
+        },
+        {
+          "val": 3,
+          "name": "Other"
+        }
+      ]
+    },
+    {
+      "eType": "TYPE_HorseColor",
+      "values": [
+        {
+          "val": 1,
+          "name": "Black"
+        },
+        {
+          "val": 2,
+          "name": "White"
+        },
+        {
+          "val": 3,
+          "name": "Brown"
+        }
+      ]
+    }
+  ],
+  "compositeTypes": [
+    {
+      "cType": "datespan",
+      "properties": [
+        {
+          "pType": 1,
+          "name": "since",
+          "type": "date"
+        },
+        {
+          "pType": 2,
+          "name": "till",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "cType": "personName",
+      "properties": [
+        {
+          "pType": 1,
+          "name": "first",
+          "type": "string"
+        },
+        {
+          "pType": 2,
+          "name": "last",
+          "type": "string"
+        }
+      ]
+    }
+  ],
   "entityTypes": [
     {
       "eType": 1,
@@ -8,24 +76,10 @@
         {
           "pType": 1,
           "name": "name",
-          "type": "_composite",
-          "subProp": [
-            {
-              "pType": 1,
-              "name": "first",
-              "type": "string",
-              "report": [
-                "raw"
-              ]
-            },
-            {
-              "pType": 2,
-              "name": "last",
-              "type": "string",
-              "report": [
-                "raw"
-              ]
-            }
+          "type": "personName",
+          "report": [
+            "raw(first)",
+            "raw(last)"
           ]
         },
         {
@@ -166,26 +220,12 @@
         {
           "pType": 1,
           "name": "tf",
-          "type": "_composite",
-          "subProp": [
-            {
-              "pType": 1,
-              "name": "since",
-              "type": "date",
-              "report": [
-                "min",
-                "max"
-              ]
-            },
-            {
-              "pType": 2,
-              "name": "till",
-              "type": "date",
-              "report": [
-                "min",
-                "max"
-              ]
-            }
+          "type": "datespan",
+          "report": [
+            "min(since)",
+            "max(since)",
+            "min(till)",
+            "max(till)"
           ]
         }
       ]
@@ -206,8 +246,7 @@
           "name": "time",
           "type": "datetime",
           "report": [
-            "min",
-            "max"
+            "raw"
           ]
         }
       ]
@@ -228,8 +267,7 @@
           "name": "time",
           "type": "datetime",
           "report": [
-            "min",
-            "max"
+            "raw"
           ]
         },
         {
@@ -238,9 +276,7 @@
           "type": "int",
           "units": "min",
           "report": [
-            "avg",
-            "min,",
-            "max"
+            "raw"
           ]
         }
       ]
@@ -291,24 +327,12 @@
         {
           "pType": 1,
           "name": "tf",
-          "type": "_composite",
-          "subProp": [
-            {
-              "pType": 1,
-              "name": "since",
-              "type": "date",
-              "report": [
-                "raw"
-              ]
-            },
-            {
-              "pType": 2,
-              "name": "till",
-              "type": "date",
-              "report": [
-                "raw"
-              ]
-            }
+          "type": "datespan",
+          "report": [
+            "raw(since)",
+            "raw(since)",
+            "raw(till)",
+            "raw(till)"
           ]
         }
       ]
@@ -347,42 +371,6 @@
         {
           "eTypeA": 3,
           "eTypeB": 5
-        }
-      ]
-    }
-  ],
-  "enumeratedTypes": [
-    {
-      "eType": "TYPE_Gender",
-      "values": [
-        {
-          "val": 1,
-          "name": "Female"
-        },
-        {
-          "val": 2,
-          "name": "Male"
-        },
-        {
-          "val": 3,
-          "name": "Other"
-        }
-      ]
-    },
-    {
-      "eType": "TYPE_HorseColor",
-      "values": [
-        {
-          "val": 1,
-          "name": "Black"
-        },
-        {
-          "val": 2,
-          "name": "White"
-        },
-        {
-          "val": 3,
-          "name": "Brown"
         }
       ]
     }
