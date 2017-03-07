@@ -188,7 +188,7 @@ _**Q184:** Any dragon that froze or was frozen at least once by a dragon owned b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
-The freeze direction does not matter. Therefore - a line (instead of arrow) is used in the pattern.
+The freeze direction does not matter. Therefore - a line (instead of an arrow) is used in the pattern.
 
 ## Properties
 
