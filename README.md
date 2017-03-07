@@ -11,7 +11,7 @@
 
 ## V1 - A Visual Query Language for Schema-based Property Graphs
 
-Copyright (c) 2017 Lior Kogan (koganlior1 [at] gmail [dot] com)
+Copyright (c) 2017 [Lior Kogan](https://www.linkedin.com/in/liorkogan) (koganlior1 [at] gmail [dot] com)
 
 The content of this site is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
