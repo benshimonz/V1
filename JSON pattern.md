@@ -155,7 +155,9 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range" <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. expr] or _range_ [1 .. expr] should be used.
+|         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"
+|         | qVal      | [int]  | mandatory if qType = "range"/"notrange: array[int] of size 2
 | +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
 |         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
 
@@ -163,7 +165,9 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range" <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. expr] or _range_ [1 .. expr] should be used.
+|         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"
+|         | qVal      | [int]  | mandatory if qType = "range"/"notrange: array[int] of size 2
 | +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
 
 ## E-Combiner (type = "EComb")
