@@ -523,7 +523,7 @@ In addition to the 4 quantifiers described above (_All_, _Some_, _> n_, _≥ n_)
 * **_n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ branches. _n_ ∈ [1, _b_]
 * **_< n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of more than _b-n_ branches. _n_ ∈ [2, _b_]
 * **_≤ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of _b-n_ or more branches. _n_ ∈ [1, _b_]
-* **_≠ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of any number but _b-n_ branches. _n_ ∈ [1, _b_]
+* **_≠ n_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of any number except _b-n or _n_ branches. _n_ ∈ [1, _b_]
 * **_n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the start of less than _b-n2_ or more than _b-n1_ branches. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
 * **_∉ n1..n2_** - An assignment matches the pattern _only if_ it matches a similar pattern, where the quantifier is replaced with _All_, and an 'X' is added to (or removed from) the beginning more than _b-n2_ but less than _b-n1_ branches. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
@@ -561,7 +561,7 @@ An assignment _A_ matches the pattern _only if_:
 * **_n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and exactly _n_ of _P1..Pb are matched - each by at least one element of _S(A)_
 * **_< n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and less than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [2, _b_]
 * **_≤ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
-* **_≠ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and any number but _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
+* **_≠ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and any number except _b-n or _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
 * **_n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
 * **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
