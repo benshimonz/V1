@@ -165,7 +165,7 @@ Yellow, blue and red rectangles represent entities. **A yellow rectangle** repre
 A pair of entities can be connected with:
 
 * A horizontal **black arrow** - representing a **directional relationship**, or
-* A horizontal **black line** - representing either a **non-directional relationship** or a directional relationship where the direction doesn't matter, or
+* A horizontal **black line** - representing either a **bidirectional relationship** or a directional relationship where the direction doesn't matter, or
 * A horizontal **red line** - representing a **path** (explained later)
 
 Each relationship has a label above the arrow/line that denotes the relationship's type.
@@ -188,7 +188,7 @@ _**Q184:** Any dragon that froze or was frozen at least once by a dragon owned b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
-The freeze direction does not matter. Therefore - a **non-directional relationship** is used in the pattern.
+The freeze direction does not matter. Therefore - a line (instead of arrow) is used in the pattern.
 
 ## Properties
 
@@ -2302,7 +2302,7 @@ A logical relationship type is defined by:
 * Two typed/untyped entities in the pattern
 * A relationship type name assigned to each such relationship
 
-A logical relationship type can be either symmetrical or asymmetrical.
+A logical relationship type can be either directional or bidirectional.
 
 Logical relationship types can be defined, and then used in queries.
 
@@ -2310,31 +2310,31 @@ Logical relationships in a query - appear as logical relationships in the query'
 
 Here are some definition examples:
 
-**LR1:** _sibling_ - a symmetrical relationship. Two people are siblings if they share a parent
+**LR1:** _sibling_ - a bidirectional relationship. Two people are siblings if they share a parent
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR01.png)
 
-**LR2:** _cousin_ - a symmetrical relationship. Two people are cousins if their parents are siblings
+**LR2:** _cousin_ - a bidirectional relationship. Two people are cousins if their parents are siblings
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR02.png)
 
-**LR3:** _prison-mate_ - a symmetrical relationship. Two people are prison-mates if they were imprisoned in the same prison at intersecting timeframes
+**LR3:** _prison-mate_ - a bidirectional relationship. Two people are prison-mates if they were imprisoned in the same prison at intersecting timeframes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR03.png)
 
-**LR4:** _1st degree_ - a symmetrical relationship. Two people have a 1st degree relationship if one is an offspring of the other, if they are siblings, or if they are spouses
+**LR4:** _1st degree_ - a bidirectional relationship. Two people have a 1st degree relationship if one is an offspring of the other, if they are siblings, or if they are spouses
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR04.png)
 
-**LR5:** _2nd degree_ - a symmetrical relationship. Two people have a 2nd degree relationship if there is a person who have 1st degree relationship with both of them
+**LR5:** _2nd degree_ - a bidirectional relationship. Two people have a 2nd degree relationship if there is a person who have 1st degree relationship with both of them
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR05.png)
 
-**LR6:** _family friend_ - an asymmetrical relationship. A person is family friend of person A if (s)he is A's friend, if (s)he is a friend of A's 1st degree, or if (s)he is a friend of A's 2nd degree
+**LR6:** _family friend_ - a directional relationship. A person is family friend of person A if (s)he is A's friend, if (s)he is a friend of A's 1st degree, or if (s)he is a friend of A's 2nd degree
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR06.png)
 
-**LR7:** _tmo_ - An asymmetrical relationship. Person A is a tradition maintainer offspring of person C if A is an offspring of C, and they are both members of the same guild.
+**LR7:** _tmo_ - a directional relationship. Person A is a tradition maintainer offspring of person C if A is an offspring of C, and they are both members of the same guild.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/LR07.png)
 
