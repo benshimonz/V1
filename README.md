@@ -1937,7 +1937,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
   
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used.
+  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used. ≠ expr is satisfied only if _> 0_.
 
 _**Q153:** Any dragon that in each day of at least 11 days - froze no more than 5 dragons_
 
