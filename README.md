@@ -25,7 +25,7 @@ A **property graph** (AKA attributed graph) is a graph where
 
 - Graph vertices represent entities.
   An entity is an objects or ‘thing’ in our mini-world, with an independent existence and which is distinguishable from other objects (e.g. a person, a horse, a dragon)
-- Graph edges represent relationships between pairs of entities (e.g. 'owns', 'friend of'). Usually all edges are directional.
+- Graph edges represent relationships between pairs of entities - directional (e.g. 'owns', 'offspring of') or bidirectional (e.g. 'sibling of')
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
 - Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = {"First": string = "Brandon", "Last": string = "Stark"}
