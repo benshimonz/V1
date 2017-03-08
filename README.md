@@ -2364,7 +2364,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag04.png)
 
-**R8 todo: delete:** An aggregation can only reference tags defined on its right.
+**R8 An aggregation can only reference tags defined on its top (in a previous filtering step) or on its right
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
 
