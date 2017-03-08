@@ -2386,10 +2386,10 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
 
-**R13:** A tag defined right of an L3 aggregator - cannot be referenced in the aggregate condition.
+**R13:** A tag defined right of an aggregator - cannot be used in the right-side on the aggregate condition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg03.png)
 
-**R14:** A tag defined in an L3 aggregator - cannot be referenced right of its definition.
+**R14:** An aggregation tag cannot be referenced right of its definition.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
