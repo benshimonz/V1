@@ -973,10 +973,6 @@ Functions over multivalued ordinal properties:
 * _avg([t])_ → t
 * _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
 
-## Enumerated Properties
-
-todo
-
 ## Aggregations and Aggregation Tags
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
