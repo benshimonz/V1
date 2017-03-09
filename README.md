@@ -2134,8 +2134,20 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 
 - _n_ is a positive integer
 
-- {pt} is a property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q276) or right of the aggregation (see Q275)
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+
+_**Q275:** Any person and his horses - of the 3 horse colors of which he owns the heaviest horse_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q275.png)
+
+Even if a person's 3 heaviest horses are of the same color, we would still get all his horses for 2 more colors (those with the next heaviest horses)
+
+_**Q276:** Any person and his horses - of the 3 horse colors of which some person's horse ownership start date is the earliest_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q276.png)
+
+Even if the 3 horses with the earliest ownership start date are of the same color, we would still get all persons and their horses of 2 more colors (of the next-earliest ownership start dates)
 
 _**Q264:** Any horse of the 3 colors of which the average horses' weight is maximal_
 
