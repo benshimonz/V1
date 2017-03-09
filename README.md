@@ -1658,7 +1658,7 @@ _**Q274:** The 4 dragons that froze some dragon - with the globally-longest free
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q274.png)
 
-Note that even if one of these dragons is responsible for, say, the 10 globally-longest freezes, we would still get 4 dragons (those with the next globally-longest freezes).
+Even if one dragon is responsible for, say, the 10 globally-longest freezes, we would still get 3 more dragons (those with the next globally-longest freezes).
 
 _**Q91:** The 4 dragons with the maximal (shortest period they were frozen for)_
 
