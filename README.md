@@ -1904,7 +1904,7 @@ _**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative perio
 
 Note that the order of the filtering stages along the left chain can be switched. The semantics would remain the same.
 
-_**Q180:** Any dragon pair (A, B) where the cumulative duration A froze B or vice versa - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
+_**Q180:** Any dragon pair (A, B) where the cumulative duration A and B froze each other - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
 
