@@ -1724,11 +1724,17 @@ _**Q241:** The 4 longest freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q241.png)
 
-_**Q161:** For any dragon that froze at least one dragon at least once: the 4 longest times it froze some dragon_
+_**Q274:** The 4 dragons that froze some dragon for the global longest freezes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q274.png)
+
+Note that even if one of these dragons is responsible for, say, the 10 global longest freezes, we would still get the 4 dragons.
+
+_**Q161:** For any dragon that froze at least one dragon at least once: the 4 longest freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q161.png)
 
-_**Q160:** For any dragon pair (A, B) where A froze B at least once: The 4 longest times A froze B_
+_**Q160:** For any dragon pair (A, B) where A froze B at least once: The 4 longest freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q160.png)
 
