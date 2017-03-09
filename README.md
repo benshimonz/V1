@@ -2135,7 +2135,7 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 - _n_ is a positive integer
 
 - {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q276) or right of the aggregation (see Q275)
-- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (see Q264, Q226, Q223) or right of the aggregation
 
 _**Q275:** Any person and his horses - of the 3 horse colors of which he owns the heaviest horse_
 
