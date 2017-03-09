@@ -1654,6 +1654,12 @@ _**Q131:** The 4 oldest males_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q131.png)
 
+_**Q274:** The 4 dragons that froze some dragon - with the global longest freezes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q274.png)
+
+Note that even if one of these dragons is responsible for, say, the 10 global longest freezes, we would still get the 4 dragons.
+
 _**Q91:** The 4 dragons with the maximal (shortest period they were frozen for)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q091.png)
@@ -1723,12 +1729,6 @@ If _S1_ is given:
 _**Q241:** The 4 longest freezes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q241.png)
-
-_**Q274:** The 4 dragons that froze some dragon for the global longest freezes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q274.png)
-
-Note that even if one of these dragons is responsible for, say, the 10 global longest freezes, we would still get the 4 dragons.
 
 _**Q161:** For any dragon that froze at least one dragon at least once: the 4 longest freezes_
 
