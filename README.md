@@ -1633,7 +1633,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 - M4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - M4 appear directly right of the leftmost member of _S1_ and _S2_
-- {pt} is a property tag of an ordinal property - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q274) or right of the aggregation (see Q130)
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
