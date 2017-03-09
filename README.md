@@ -880,7 +880,7 @@ A property tag serves as a placeholder for the property's value in a given assig
 * as part of another property tag's constraint (see Q108, Q109)
 * as part of an aggregation tag's definition (see Q116, Q117)
 * as part of an aggregation tag's constraint (see Q120)
-* as part of a min/max aggregation (see Q131,Q132)
+* as part of a min/max aggregation (see Q130,Q131)
 * as part of a split definition (see Q226,Q227)
 * as part of a split constraint (see Q255)
 
