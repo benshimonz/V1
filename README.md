@@ -1704,9 +1704,9 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q232.png)
 
-## M5 Min/Max Aggregation
+## R1 Min/Max Aggregation
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-M5.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-R1.png)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -1715,16 +1715,16 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
 
-- M5 appears below a relationship. The relationship may not be wrapped
+- R1 appears below a relationship. The relationship may not be wrapped
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
 If _S1_ is not given:
 
-**M5 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
+**R1 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
 
 If _S1_ is given:
 
-**For each assignment combination to entities _S1_ - M5 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
+**For each assignment combination to entities _S1_ - R1 limits the assignments to the relationship - to the _n_ assignments with the smallest / largest value of _relprop_.**
 
 _**Q241:** The 4 longest freezes_
 
@@ -2001,7 +2001,7 @@ _**Q265:** Any horse color of which the average horses' owners' height is at lea
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q265.png)
 
-## M1/M2/M3/M4/M5 Aggregation below a Split
+## M1/M2/M3/M4/R1 Aggregation below a Split
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-M1.png)
 
