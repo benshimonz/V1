@@ -42,13 +42,15 @@
       "properties": [
         {
           "pType": 1,
-          "name": "since",
-          "type": "date"
+          "type": "date",
+          "DBpName": "since",
+          "name": "since"
         },
         {
           "pType": 2,
-          "name": "till",
-          "type": "date"
+          "type": "date",
+          "DBpName": "till",
+          "name": "till"
         }
       ]
     },
@@ -57,13 +59,15 @@
       "properties": [
         {
           "pType": 1,
-          "name": "first",
-          "type": "string"
+          "type": "string",
+          "DBpName": "firs",
+          "name": "first"
         },
         {
           "pType": 2,
-          "name": "last",
-          "type": "string"
+          "type": "string",
+          "DBpName": "last",
+          "name": "last"
         }
       ]
     }
@@ -71,12 +75,14 @@
   "entityTypes": [
     {
       "eType": 1,
+      "DBeName": "Person",
       "name": "Person",
       "properties": [
         {
           "pType": 1,
-          "name": "name",
           "type": "personName",
+          "DBpName": "name",
+          "name": "name",
           "report": [
             "raw(first)",
             "raw(last)"
@@ -84,26 +90,30 @@
         },
         {
           "pType": 3,
-          "name": "gender",
-          "type": "TYPE_Gender"
+          "type": "TYPE_Gender",
+          "DBpName": "gender",
+          "name": "gender"
         },
         {
           "pType": 4,
-          "name": "birth date",
           "type": "date",
+          "DBpName": "birth",
+          "name": "birth date",
           "report": [
             "raw"
           ]
         },
         {
           "pType": 5,
-          "name": "death date",
-          "type": "date"
+          "type": "date",
+          "DBpName": "death",
+          "name": "death date"
         },
         {
           "pType": 6,
-          "name": "height",
           "type": "int",
+          "DBpName": "height",
+          "name": "height",
           "units": "cm",
           "report": [
             "raw"
@@ -118,12 +128,14 @@
     },
     {
       "eType": 2,
+      "DBeName": "Dragon",
       "name": "Dragon",
       "properties": [
         {
           "pType": 1,
-          "name": "name",
           "type": "string",
+          "DBpName": "name",
+          "name": "name",
           "report": [
             "raw"
           ]
@@ -135,28 +147,32 @@
     },
     {
       "eType": 3,
+      "DBeName": "Horse",
       "name": "Horse",
       "properties": [
         {
           "pType": 1,
-          "name": "name",
           "type": "string",
+          "DBpName": "name",
+          "name": "name",
           "report": [
             "raw"
           ]
         },
         {
           "pType": 2,
-          "name": "color",
           "type": "TYPE_HorseColor",
+          "DBpName": "color",
+          "name": "color",
           "report": [
             "raw"
           ]
         },
         {
           "pType": 3,
-          "name": "weight",
           "type": "int",
+          "DBpName": "weight",
+          "name": "weight",
           "units": "Kg",
           "report": [
             "raw"
@@ -171,12 +187,14 @@
     },
     {
       "eType": 4,
+      "DBeName": "Guild",
       "name": "Guild",
       "properties": [
         {
           "pType": 1,
-          "name": "name",
           "type": "string",
+          "DBpName": "name",
+          "name": "name",
           "report": [
             "raw"
           ]
@@ -185,12 +203,14 @@
     },
     {
       "eType": 5,
+      "DBeName": "Kingdom",
       "name": "Kingdom",
       "properties": [
         {
           "pType": 1,
-          "name": "name",
           "type": "string",
+          "DBpName": "name",
+          "name": "name",
           "report": [
             "raw"
           ]
@@ -204,6 +224,7 @@
   "relationshipTypes": [
     {
       "rType": 1,
+      "DBrName": "own",
       "name": "own",
       "directional": true,
       "ePairs": [
@@ -219,8 +240,9 @@
       "properties": [
         {
           "pType": 1,
-          "name": "tf",
           "type": "datespan",
+          "DBpName": "span",
+          "name": "tf",
           "report": [
             "min(since)",
             "max(since)",
@@ -232,6 +254,7 @@
     },
     {
       "rType": 2,
+      "DBrName": "fires",
       "name": "fires at",
       "directional": true,
       "ePairs": [
@@ -243,8 +266,9 @@
       "properties": [
         {
           "pType": 1,
-          "name": "time",
           "type": "datetime",
+          "DBpName": "time",
+          "name": "time",
           "report": [
             "raw"
           ]
@@ -253,6 +277,7 @@
     },
     {
       "rType": 3,
+      "DBrName": "freezes",
       "name": "freezes",
       "directional": true,
       "ePairs": [
@@ -264,16 +289,18 @@
       "properties": [
         {
           "pType": 1,
-          "name": "time",
           "type": "datetime",
+          "DBpName": "time",
+          "name": "time",
           "report": [
             "raw"
           ]
         },
         {
           "pType": 2,
-          "name": "duration",
           "type": "int",
+          "DBpName": "duration",
+          "name": "duration",
           "units": "min",
           "report": [
             "raw"
@@ -283,6 +310,7 @@
     },
     {
       "rType": 4,
+      "DBrName": "offspring",
       "name": "offspring of",
       "directional": true,
       "ePairs": [
@@ -294,6 +322,7 @@
     },
     {
       "rType": 5,
+      "DBrName": "knows",
       "name": "knows",
       "directional": false,
       "ePairs": [
@@ -305,8 +334,9 @@
       "properties": [
         {
           "pType": 1,
-          "name": "since",
           "type": "date",
+          "DBpName": "since",
+          "name": "since",
           "report": [
             "raw"
           ]
@@ -315,6 +345,7 @@
     },
     {
       "rType": 6,
+      "DBrName": "member",
       "name": "member of",
       "directional": true,
       "ePairs": [
@@ -326,8 +357,9 @@
       "properties": [
         {
           "pType": 1,
-          "name": "tf",
           "type": "datespan",
+          "DBpName": "time",
+          "name": "tf",
           "report": [
             "raw(since)",
             "raw(since)",
@@ -339,6 +371,7 @@
     },
     {
       "rType": 7,
+      "DBrName": "subject",
       "name": "subject of",
       "directional": true,
       "ePairs": [
@@ -350,6 +383,7 @@
     },
     {
       "rType": 8,
+      "DBrName": "registered",
       "name": "registered in",
       "directional": true,
       "ePairs": [
@@ -361,6 +395,7 @@
     },
     {
       "rType": 9,
+      "DBrName": "origin",
       "name": "originated in",
       "directional": true,
       "ePairs": [
