@@ -31,7 +31,7 @@
 | AggM2      | M2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element42.png)
 | AggM3      | M3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element43.png)
 | AggM4      | M4 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element44.png)
-| AggM5      | M5 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
+| AggR1      | R1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element45.png)
 | AggP1      | P1 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element51.png)
 | AggP2      | P2 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element52.png)
 | AggP3      | P3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
@@ -124,7 +124,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | dir       | string | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
 |         | wrapper   | string | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
 |         | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, RComb
-|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
+|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggR1 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
 
 ## Entity's Property (type = "EProp") 
 
@@ -143,7 +143,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | pTag      | string | Property tag to assign to property / to f(property) (e.g. "1")
 |         | f         | string | Function to apply to property
 |         | con       | {...}  | Constraint. see below
-|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggM5 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li> <li>SplitsCon</li></ul> 
+|         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggR1 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li> <li>SplitsCon</li></ul> 
 
 ## Constraint ("con") for EProp/RelProp
 
@@ -204,14 +204,14 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 | +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"lt"/"le"/"ne"/"range"/"notrange"
-| +       | b         | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+| +       | b         | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1
 
 
 ## Horizontal Combiner (type = "HComb")
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-|         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5
+|         | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1
 
 ## Split by (type = "SplitBy")
 
@@ -220,7 +220,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |         | pType     | string | Relationship's property type (e.g. of "tf.since" of "member of") to split by
 |         | tag       | string | pt/at/st to split by (e.g. "1")
 |         | eTTag     | string | entity type tag to split by (e.g. "1")
-| +       | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitsCon
+| +       | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitsCon
 
 Exactly one of the above must be presented
 
@@ -230,7 +230,7 @@ Exactly one of the above must be presented
 |---------|-----------|--------| ------
 | +       | sTag      | string | split tag to assign (e.g. "1")
 |         | con       | {...}  | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in_ [0 .. expr] or _in_ [1 .. expr] should be used. <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## L1 Aggregation (type = "AggL1")
 
@@ -240,7 +240,7 @@ Exactly one of the above must be presented
 | +       | eTag      | string   | entity tag on the '→/{et}' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 |         | con       | {...}    | Constraint. see below
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## L2 Aggregation (type = "AggL2")
 
@@ -249,7 +249,7 @@ Exactly one of the above must be presented
 | +       | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 |         | con       | {...}    | Constraint. see below
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## L3 Aggregation (type = "AggL3")
 
@@ -260,7 +260,7 @@ Exactly one of the above must be presented
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
 |         | con       | {...}    | Constraint. see below
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## L4 Aggregation (type = "AggL4")
 
@@ -271,7 +271,7 @@ Exactly one of the above must be presented
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
 |         | con       | {...}    | Constraint. see below
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy, SplitsCon
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## Constraint ("con") for L1/L2/L3/L4
 
@@ -288,7 +288,7 @@ Exactly one of the above must be presented
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | eTag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## M2 Aggregation (type = "AggM2")
 
@@ -298,7 +298,7 @@ Exactly one of the above must be presented
 | +       | n         | int      | number of min/max entities
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## M3 Aggregation (type = "AggM3")
 
@@ -310,7 +310,7 @@ Exactly one of the above must be presented
 | +       | op        | string   | "min" / "max"
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## M4 Aggregation (type = "AggM4")
 
@@ -321,9 +321,9 @@ Exactly one of the above must be presented
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
-## M5 Aggregation (type = "AggM5")
+## R1 Aggregation (type = "AggR1")
 
 |Mandatory| Name      | Type     | Description
 |---------|-----------|----------| ------
@@ -331,7 +331,7 @@ Exactly one of the above must be presented
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
 | +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggM5, SplitBy
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## Nonidenticality constraints between entity tags
 
