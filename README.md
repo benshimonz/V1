@@ -13,7 +13,7 @@
 
 Copyright © 2017 [Lior Kogan](https://www.linkedin.com/in/liorkogan) (koganlior1 [at] gmail [dot] com)
 
-V1, all the content of https://github.com/LiorKogan/V1, as well as all the content of http://v1.ms/ are licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
+The V1 language, all the content of https://github.com/LiorKogan/V1, as well as all the content of http://v1.ms/ are licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
 V1 is dedicated to my ancestors all the way back, and to their descendants all the way forward.
 
