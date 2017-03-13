@@ -270,6 +270,15 @@ Functions over _dateframe_ properties:
 * _Duration(dateframe)_ → int [days]
 * _Duration(datetimeframe)_ → int [seconds]
 
+Constraints over _dateframe_ / _datetimeframe_ properties:
+
+* _[not] starts during (dateframe / datetimeframe)_
+* _[not] ends during (dateframe / datetimeframe)_
+* _[not] contains (dateframe / datetimeframe)_
+* _[not] overlaps (dateframe / datetimeframe)_
+
+* _[not] contains (date / datetime)_
+
 ## Empty (Missing) Values
 
 The data model may support empty (missing) values for one or more properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases:
