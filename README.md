@@ -259,25 +259,24 @@ Functions over string properties:
 
 * _Length(string)_ → int
 
-Implementations may support additional data types, functions and comarison operators.
-
-## The Dateframe and Datetimeframe Data Types
-
-The dateframe and datetimeframe data types are composite data types that represent time frames. Each has two sub-properties: since and till. For dateframe - the two sub-properties are of type date, and for datetimeframes - the two sub-properties are of type datetime.
-
-Functions over _dateframe_ properties:
-
-* _Duration(dateframe)_ → int [days]
-* _Duration(datetimeframe)_ → int [seconds]
+The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For dateframe - the two sub-properties are of type date, and for datetimeframes - the two sub-properties are of type datetime.
 
 Constraints over _dateframe_ / _datetimeframe_ properties:
 
 * _[not] starts during (dateframe / datetimeframe)_
 * _[not] ends during (dateframe / datetimeframe)_
 * _[not] contains (dateframe / datetimeframe)_
+* _[not] contained in (dateframe / datetimeframe)_
 * _[not] overlaps (dateframe / datetimeframe)_
 
 * _[not] contains (date / datetime)_
+
+Functions over _dateframe_ properties:
+
+* _Duration(dateframe)_ → int [days]
+* _Duration(datetimeframe)_ → int [seconds]
+
+Implementations may support additional data types, functions and comarison operators.
 
 ## Empty (Missing) Values
 
