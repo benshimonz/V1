@@ -17,7 +17,7 @@ The content of this site is licensed under the [CC BY-NC-SA 4.0 licence](https:/
 
 V1 is dedicated to my ancestors all the way back, and to their descendants all the way forward.
 
-**This is an early draft. It’s known to be incomplet and incorrekt.**
+**This is a working draft. It may change at any time.**
 
 ## The Property Graph Data Model
 
