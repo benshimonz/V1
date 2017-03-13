@@ -218,6 +218,12 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
+## Properties - Units
+
+Numeric properties may represent physical measures such as weight, height and duration. Different users, or even the same user in different contexts, may want to display or query about the value of such properties using different units: [Kg] or [lbs]; [cm] or [ft], [sec] or [min].
+
+To avoid ambiguity, date units are always displayed for such properties (see Q117, Q265, Q95). When building a query, users may select  which units to use.
+
 ## Properties - Functions and Constraints
 
 Constraints over ordinal properties / function-range (integer types, floating-point types, _date_, _datetime_):
@@ -254,6 +260,15 @@ Functions over string properties:
 * _Length(string)_ → int
 
 Implementations may support additional data types, functions and comarison operators.
+
+## The Dateframe and Datetimeframe Data Types
+
+The dateframe and datetimeframe data types are composite data types that represent time frames. Each has two sub-properties: since and till. For dateframe - the two sub-properties are of type date, and for datetimeframes - the two sub-properties are of type datetime.
+
+Functions over _dateframe_ properties:
+
+* _Duration(dateframe)_ → int [days]
+* _Duration(datetimeframe)_ → int [seconds]
 
 ## Empty (Missing) Values
 
