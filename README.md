@@ -15,6 +15,8 @@ Copyright (c) 2017 [Lior Kogan](https://www.linkedin.com/in/liorkogan) (koganlio
 
 The content of this site is licensed under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). For other uses please contact the author.
 
+V1 is dedicated to my ancestors all the way back, and to their descendants all the way forward.
+
 **This is an early draft. It’s known to be incomplet and incorrekt.**
 
 ## The Property Graph Data Model
