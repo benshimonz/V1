@@ -190,8 +190,8 @@ The freeze direction does not matter. Therefore - a line (instead of an arrow) i
 **A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
 - The property's name (_'prop'_)
-- An optional function to apply to the property's value (_'prop.f'_)
-- An optional **constraint** on the property's value / on _'prop.f'_
+- An optional function _f_ to apply to the property's value ('prop._f_')
+- An optional **constraint** on the property's value / on 'prop._f_'
 
   **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
@@ -229,20 +229,20 @@ Constraints over ordinal properties / function-range (integer types, floating-po
 
 Functions over _date_ properties:
 
-* _date.year, date.month, date.day_ → int
-* _date.dayofweek, date.dayofyear, daet.weekofyear_ → int
+* dateprop._year_, dateprop._month_, dateprop._day_ → int
+* dateprop._dayofweek_, dateprop._dayofyear_, dateprop._weekofyear_ → int
 
 Functions over _time_ properties (00:00:00 - 23:59:59):
 
-* _time.hour, time.min, time.sec_ → int
+* timeprop._hour_, timeprop._min_, timeprop._sec_ → int
 
 Functions over _datetime_ properties:
 
-* _datetime.date_ → date
-* _datetime.time_ → time
-* _datetime.year, datetime.month, datetime.day_ → int
-* _datetime.hour, datetime.min, datetime.sec_ → int
-* _datetime.dayofweek, datetime.dayofyear, datetime.weekofyear_ → int
+* datetimeprop._date_ → date
+* datetimeprop._time_ → time
+* datetimeprop._year_, datetimeprop._month_, datetimeprop._day_ → int
+* datetimeprop._hour_, datetimeprop._min_, datetimeprop._sec_ → int
+* datetimeprop._dayofweek_, datetimeprop._dayofyear_, datetimeprop._weekofyear_ → int
 
 Constraints over _string_ properties / function-range:
 
@@ -250,7 +250,7 @@ Constraints over _string_ properties / function-range:
 
 Functions over string properties:
 
-* _string.length_ → int
+* _strprop_.length_ → int
 
 Constraints over _dateframe_ / _datetimeframe_ properties:
 
@@ -262,10 +262,10 @@ Constraints over _dateframe_ / _datetimeframe_ properties:
 
 * _[not] date.contains; datetime.contains_
 
-Functions over _dateframe_ properties:
+Functions over _dateframe_ / _datetimeframe_ properties:
 
-* _dateframe.Duration_ → int [days]
-* _datetimeframe.Duration_ → int [seconds]
+* dateframeprop._duration_ → int [days]
+* datetimeframeprop._duration_ → int [seconds]
 
 Implementations may support additional data types, functions and comarison operators.
 
