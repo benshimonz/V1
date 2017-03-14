@@ -128,7 +128,7 @@ and of the following relationship types (and their properties):
 * **fires at**(Dragon, Dragon) - time : datetime
 * **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
 * **offspring**(Person, Person)
-* **knows**(Person, Person) -: since : date
+* **knows**(Person, Person) - since : date
 * **member of**(Person, Guild) - tf : dateframe {since : date, till : date}
 * **subject of**(Person, Kingdom)
 * **registered in**(Guild, Kingdom)
@@ -136,7 +136,7 @@ and of the following relationship types (and their properties):
 
 The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For _dateframe_ - the two sub-properties are of type _date_, and for _datetimeframe_ - the two sub-properties are of type _datetime_.
 
-Person's name is a composite property as well.
+Person's name is a composite property.
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
