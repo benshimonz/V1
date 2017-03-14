@@ -124,17 +124,19 @@ The schema is composed of the following entity types (and their properties):
 
 and of the following relationship types (and their properties):
 
-* **owns**(Person, Horse/Dragon) - tf {since : date, till : date} ("tf" stands for timeframe)
+* **owns**(Person, Horse/Dragon) - tf : dateframe {since : date, till : date}
 * **fires at**(Dragon, Dragon) - time : datetime
 * **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
 * **offspring**(Person, Person)
 * **knows**(Person, Person) -: since : date
-* **member of**(Person, Guild) - tf {since : date, till : date} ("tf" stands for timeframe)
+* **member of**(Person, Guild) - tf : dateframe {since : date, till : date}
 * **subject of**(Person, Kingdom)
 * **registered in**(Guild, Kingdom)
 * **originated in**(Horse/Dragon, Kingdom)
 
-Note that "Person"'s name, "owns"'s _tf_, as well as "member of"'s _tf_ - are composite properties.
+The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For _dateframe_ - the two sub-properties are of type _date_, and for _datetimeframe_ - the two sub-properties are of type _datetime_.
+
+Person's name is a composite property as well.
 
 This schema and the queries will serve us to demonstrate the power of the V1 language.
 
@@ -260,8 +262,6 @@ Constraints over _string_ properties / function-range:
 Functions over string properties:
 
 * _Length(string)_ → int
-
-The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For _dateframe_ - the two sub-properties are of type _date_, and for _datetimeframe_ - the two sub-properties are of type _datetime_.
 
 Constraints over _dateframe_ / _datetimeframe_ properties:
 
