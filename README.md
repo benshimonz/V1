@@ -261,7 +261,7 @@ Functions over string properties:
 
 * _Length(string)_ → int
 
-The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For dateframe - the two sub-properties are of type date, and for datetimeframes - the two sub-properties are of type datetime.
+The **dateframe** and **datetimeframe** data types are composite data types that represent time frames. Each has two sub-properties: _since_ and _till_. For _dateframe_ - the two sub-properties are of type _date_, and for _datetimeframe_ - the two sub-properties are of type _datetime_.
 
 Constraints over _dateframe_ / _datetimeframe_ properties:
 
