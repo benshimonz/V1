@@ -115,7 +115,7 @@ and of the following relationship types (and their properties):
 
 * **owns**(Person, Horse/Dragon) - tf : dateframe {since : date, till : date}
 * **fires at**(Dragon, Dragon) - time : datetime
-* **freezes**(Dragon, Dragon) - time : datetime, duration : int [min]
+* **freezes**(Dragon, Dragon) - tf : datetimeframe {since : datetime, till : datetime}
 * **offspring**(Person, Person)
 * **knows**(Person, Person) - since : date
 * **member of**(Person, Guild) - tf : dateframe {since : date, till : date}
