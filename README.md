@@ -240,20 +240,20 @@ Constraints over ordinal properties / function-range (integer types, floating-po
 
 Functions over _date_ properties:
 
-* _Year(date), Month(date), Day(date)_ → int
-* _DayOfWeek(date), DayOfYear(date), WeekOfYear(date)_ → int
+* _date.year, date.month, date.day_ → int
+* _date.dayofweek, date.dayofyear, daet.weekofyear_ → int
 
 Functions over _time_ properties (00:00:00 - 23:59:59):
 
-* _Hour(time), Min(time), Sec(time)_ → int
+* _time.hour, time.min, time.sec_ → int
 
 Functions over _datetime_ properties:
 
-* _Date(datetime)_ → date
-* _Time(datetime)_ → time
-* _Year(datetime), Month(datetime), Day(datetime)_ → int
-* _Hour(datetime), Min(datetime), Sec(datetime)_ → int
-* _DayOfWeek(datetime), DayOfYear(datetime), WeekOfYear(datetime)_ → int
+* _datetime.date_ → date
+* _datetime.time_ → time
+* _datetime.year, datetime.month, datetime.day_ → int
+* _datetime.hour, datetime.min, datetime.sec_ → int
+* _datetime.dayofweek, datetime.dayofyear, datetime.weekofyear_ → int
 
 Constraints over _string_ properties / function-range:
 
@@ -261,22 +261,22 @@ Constraints over _string_ properties / function-range:
 
 Functions over string properties:
 
-* _Length(string)_ → int
+* _string.length_ → int
 
 Constraints over _dateframe_ / _datetimeframe_ properties:
 
-* _[not] starts during (dateframe / datetimeframe)_
-* _[not] ends during (dateframe / datetimeframe)_
-* _[not] contains (dateframe / datetimeframe)_
-* _[not] contained in (dateframe / datetimeframe)_
-* _[not] overlaps (dateframe / datetimeframe)_
+* _[not] starts during dateframe / datetimeframe_
+* _[not] ends during dateframe / datetimeframe_
+* _[not] contains dateframe / datetimeframe_
+* _[not] contained in dateframe / datetimeframe_
+* _[not] overlaps dateframe / datetimeframe_
 
-* _[not] contains (date / datetime)_
+* _[not] date.contains; datetime.contains_
 
 Functions over _dateframe_ properties:
 
-* _Duration(dateframe)_ → int [days]
-* _Duration(datetimeframe)_ → int [seconds]
+* _dateframe.Duration_ → int [days]
+* _datetimeframe.Duration_ → int [seconds]
 
 Implementations may support additional data types, functions and comarison operators.
 
