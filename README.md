@@ -211,11 +211,11 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (tw
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
-## Properties - Units
+## Units
 
-Numeric properties may represent physical measures such as weight, height and duration. Different users, or even the same user in different contexts, may want to display or query about the value of such properties using different units: [Kg] or [lbs]; [cm] or [ft], [sec] or [min].
+Numeric constants may represent physical measures such as weight, height and duration. Different users, or even the same user in different contexts, may want to define constraints on the value of properties using different units: [Kg] or [lbs]; [cm] or [ft], [sec] or [min].
 
-To avoid ambiguity, date units are always displayed for such properties (see Q117, Q265, Q95). When building a query, users may select  which units to use.
+To avoid ambiguity, units are defined for relevant properties, and are always displayed (see Q117, Q265, Q95). When building a query, users may select which units to use.
 
 ## Properties - Functions and Constraints
 
