@@ -201,8 +201,8 @@ The freeze direction does not matter. Therefore - a line (instead of an arrow) i
 **A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
 
 - The property's name (_'prop'_)
-- An optional function to apply to the property's value (_'f'_)
-- An optional **constraint** on the property's value / on _f_(property's value)
+- An optional function to apply to the property's value (_'prop.f'_)
+- An optional **constraint** on the property's value / on _'prop.f'_
 
   **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
