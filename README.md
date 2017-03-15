@@ -2057,7 +2057,7 @@ todo
 - _relprop_ is a property of the relationship
 
 - P1 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q262, Q224)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2091,7 +2091,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 - _relprop_ is a property of the relationship
 
 - P2 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q225)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2115,7 +2115,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - _relprop1_ is a property of the relationship
 
 - P3 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q269)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2142,7 +2142,7 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 - _relprop_ is a property of the relationship
 
 - P4 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q275)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
