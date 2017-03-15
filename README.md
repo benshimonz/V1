@@ -2053,10 +2053,10 @@ todo
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P1.png)
 
-- P1 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
+- P1 may appear below a 'split by _relprop_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 
-- P1 may appear below a 'split by _{pt/at/st}/< ett >_' below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
+- P1 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 
 - Optional:
@@ -2087,10 +2087,10 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
-- P2 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
+- P2 may appear below a 'split by _relprop_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 
-- P2 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
+- P2 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 
 - Optional:
@@ -2111,10 +2111,10 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P3.png)
 
-- P3 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
+- P3 may appear below a 'split by _relprop_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - _relprop1_ is a property of the relationship
 
-- P3 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship. The relationship may be wrapped by an 'L'
+- P3 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 
 - Optional:
@@ -2138,10 +2138,10 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
-- P4 may appear below a 'split by _relprop_' below a relationship. The relationship may be wrapped by an 'L'
+- P4 may appear below a 'split by _relprop_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - _relprop_ is a property of the relationship
 
-- P4 may appear below a 'split by _{pt/at/st}/< ett >_' below a relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or an 'L'
+- P4 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
 
 - Optional:
