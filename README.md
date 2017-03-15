@@ -1379,7 +1379,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the L4 (in a previous filtering step) or right of the L4
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q116, Q118, Q137, Q169)
 
 - For each assignment to the _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern.
 - An optional **constraint** on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities. The constraint is in one of these forms:
@@ -1650,7 +1650,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 - M4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - M4 appear directly right of the leftmost member of _S1_ and _S2_
 - {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q274) or right of the aggregation (see Q130)
-- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (in a previous filtering step) or right of the aggregation
+- {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (see Q91) or right of the aggregation (see Q128)
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
 
@@ -2057,7 +2057,7 @@ todo
 - _relprop_ is a property of the relationship
 
 - P1 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2091,7 +2091,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 - _relprop_ is a property of the relationship
 
 - P2 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2115,7 +2115,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons 
 - _relprop1_ is a property of the relationship
 
 - P3 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
@@ -2142,7 +2142,7 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 - _relprop_ is a property of the relationship
 
 - P4 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the P1 (in a previous filtering step) or right of the '→' entity
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see XXX)
 
 - Optional:
   - _per {et, et, ...}_ - a set, _S1_, of entity tags of typed/logical/untyped entities
