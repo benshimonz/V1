@@ -2428,6 +2428,10 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg04.png)
 
+**R15:** An _aggop_ cannot be applied for a tag that has only one assignment (e.g. a property tag on an entity which is included in the _per {...}_ part).
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05.png)
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
