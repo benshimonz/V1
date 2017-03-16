@@ -2402,10 +2402,6 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag04.png)
 
-**R8:** The left-side of an aggregate condition can only reference tags defined on its top (in a previous filtering step) or on its right of the aggregator.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag08.png)
-
 **R9:** A tag defined right of an aggregator - cannot be referenced non-aggregatively left of the aggregator / in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag09.png)
