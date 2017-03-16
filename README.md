@@ -1379,7 +1379,7 @@ _**Q86:** Any dragon pair (A, B) where A froze B for a cumulative duration great
 - all _S1 ∪ →/et_ entities should be within scope at the relationship (see _scope_ later on)
 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal tag, or a _distinct_ aggregation of any tag
-- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q116, Q118, Q137, Q169)
+- {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see Q277) or right of the aggregation (see Q116, Q118, Q137, Q169)
 
 - For each assignment to the _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern.
 - An optional **constraint** on the value of _aggop(pt/at/st)_ of the subgraphs that satisfy the pattern - for each assignment combination to the _S1_ entities. The constraint is in one of these forms:
