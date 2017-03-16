@@ -1810,7 +1810,7 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
-_**Q277:** Any dragon that the longest cumulative freezing duration he froze some dragon is more than 10 times longer than the shortest cumulative freezing duration he froze some dragon_
+_**Q277:** Any dragon that the longest cumulative freezing duration it froze some dragon is more than 10 times longer than the shortest cumulative freezing duration it froze some dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277.png)
 
@@ -1908,7 +1908,7 @@ _**Q181:** Any **dragon** with no intersection between the groups of dragons fro
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q181.png)
 
-_**Q164:** Any dragon that the number of times dragons he froze have frozen dragons (cumulatively) - is equal to the number of times dragons he fired at have fired at dragons (cumulatively)_
+_**Q164:** Any dragon that the number of times dragons it froze have frozen dragons (cumulatively) - is equal to the number of times dragons it fired at have fired at dragons (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
@@ -2107,7 +2107,7 @@ _**Q225:** Any person and his horses - of the 3 horse colors with the smallest p
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q225.png)
 
-_**Q221:** Balerion and the dragons it froze - of the 3 colors he froze dragons the largest number of times_
+_**Q221:** Balerion and the dragons it froze - of the 3 colors it froze dragons the largest number of times_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q221.png)
 
@@ -2203,7 +2203,7 @@ A split tag serves as a placeholder for the number of splits that satisfy the co
 * as part of a another split constraint (see Q159)
 * as part of a min/max aggregation
 
-_**Q159:** Any **dragon** for which there are more days where (he froze/was frozen at least 5 times, and the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (he froze/was frozen at least 5 times, and the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
+_**Q159:** Any **dragon** for which there are more days where (it froze/was frozen at least 5 times, and the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (it froze/was frozen at least 5 times, and the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q159.png)
 
