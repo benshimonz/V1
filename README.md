@@ -2434,6 +2434,14 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05-2.png)
 
+**R16:** An aggregation tag {at} defined _per {e = ...}_ can only be aggregated (_aggop {at}_) for a subset of _{e}_
+
+This is a more generalized version of R15.
+
+In the following example, {1} is defined per {A} and hence can't be aggregated per {A,B}. 
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg06.png)
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
