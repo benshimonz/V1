@@ -1814,6 +1814,22 @@ _**Q277:** Any dragon that the longest cumulative freezing duration it froze som
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277.png)
 
+_**Q120:** Any person whose 3 oldest offspring cumulative height is smaller than his own height_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
+
+_**Q202:** Any person whose 3 oldest offspring average height is smaller than the average height of all his offsprings_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
+
+_**Q140:** Any person who his 3 oldest sons cumulatively own horses of 3 colors_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
+
+_**Q141:** Any person who his 3 oldest sons cumulatively own horses of the same number of colors as those owned cumulatively by his 3 youngest daughters_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
+
 _**Q185:** Any dragon that was frozen by Balerion: at least once in 1/1/1010 or later, at least once for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
@@ -1855,22 +1871,6 @@ _**Q199:** Any dragon that (froze more than 10 times each of more than 10 dragon
 _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragons. For each of these 10 dragons - the freezes had exactly 2 distinct durations) and (froze more than 20 times each of less than 10 dragons. The average freeze duration of all these dragons - is greater than 3 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
-
-_**Q120:** Any person whose 3 oldest offspring cumulative height is smaller than his own height_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
-
-_**Q202:** Any person whose 3 oldest offspring average height is smaller than the average height of all his offsprings_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
-
-_**Q140:** Any person who his 3 oldest sons cumulatively own horses of 3 colors_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q140.png)
-
-_**Q141:** Any person who his 3 oldest sons cumulatively own horses of the same number of colors as those owned cumulatively by his 3 youngest daughters_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q141.png)
 
 ## Aggregation Sequences
 
