@@ -2434,7 +2434,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05-2.png)
 
-**R16:** An aggregation tag {at} defined _per {e = ...}_ can only be aggregated (_aggop {at}_) for subsets of _{e}_
+**R16:** An aggregation tag {at} defined _per {e = ...}_ can only be aggregated (_aggop {at}_) per subsets of _{e}_
 
 This is a generalization of R15.
 
