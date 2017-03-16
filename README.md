@@ -2438,7 +2438,7 @@ Here are some definition examples:
 
 This is a more generalized version of R15.
 
-In the following example, {1} is defined per {A} and hence can't be aggregated per {A,B}. 
+In the following example, {1} is defined _per {A}_ and hence can't be aggregated _per {A,B}_ (nor can it be aggregated _per {A}_).
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg06.png)
 
