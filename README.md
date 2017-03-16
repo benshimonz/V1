@@ -2430,7 +2430,9 @@ Here are some definition examples:
 
 **R15:** An _aggop_ cannot be applied for a tag that has only one assignment (e.g. a property tag on an entity which is included in the _per {...}_ part).
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg05-2.png)
 
 
 <script>
