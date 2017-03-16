@@ -1810,7 +1810,7 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
-_**Q277:** Any dragon that the longest cumulative freezing duration it froze some dragon is more than 10 times longer than the shortest cumulative freezing duration it froze some dragon_
+_**Q277:** Any dragon that the longest (cumulative period it froze some dragon) is more than 10 times longer than the shortest (cumulative period it froze some dragon)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277.png)
 
