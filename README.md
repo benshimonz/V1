@@ -1810,10 +1810,6 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
-_**Q277:** Any dragon that the longest (cumulative period it froze some dragon) is more than 10 times longer than the shortest (cumulative period it froze some dragon)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277.png)
-
 _**Q120:** Any person whose 3 oldest offspring cumulative height is smaller than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
@@ -1871,6 +1867,12 @@ _**Q199:** Any dragon that (froze more than 10 times each of more than 10 dragon
 _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragons. For each of these 10 dragons - the freezes had exactly 2 distinct durations) and (froze more than 20 times each of less than 10 dragons. The average freeze duration of all these dragons - is greater than 3 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
+
+_**Q277:** Any dragon that the longest (cumulative period it froze some dragon) is more than 10 times longer than the shortest (cumulative period it froze some dragon) (two versions)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277-2.png)
 
 ## Aggregation Sequences
 
