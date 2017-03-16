@@ -1810,6 +1810,10 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
+_**Q277:** Any dragon that the longest cumulative freezing duration he froze some dragon is more than 10 times longer than the shortest cumulative freezing duration he froze some dragon_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277.png)
+
 _**Q185:** Any dragon that was frozen by Balerion: at least once in 1/1/1010 or later, at least once for less than 10 minutes, more than 10 times (in 1/1/1010 or later, or for less than 10 minutes)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q185.png)
