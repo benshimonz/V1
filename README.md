@@ -601,44 +601,13 @@ _**Q188:** Any dragon that was frozen by Balerion at least once - in 1/1/1010 or
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q188.png)
 
-## E-combiner
+## Combiner
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB15.png)
 
-An E-combiner combines two or more branches (not necessarily of the same quantifier). On its left side are entities and on its right side either:
+A combiner combines two or more branches of the same quantifier. On its left side are relationships, and on its right side - an entity.
 
-* A relationship (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
-* A path (optionally preceded by an 'X', an '↛', an 'O' or an 'L')
-* A green rectangle (entity's property value constraints / tag)
-* A quantifier
-
-The right side of an E-combiner is a direct continuation of each of the combined branches. An E-combiner is simply a syntactic sugar used to save duplication when several branches terminates identically.
-
-The usage of an entity tag both before and after an E-combiner (to express identicality / nonidenticality constraints) subjects to tag rules (again - anything after the E-combiner is duplicated to each branch).
-
-The relationship / property types on an E-combiner's right side must match all the entity types on its left side. 
-
-Here are some examples:
-
-_**Q27:** Any Sarnorian subject who owns a horse and a dragon of the same origin; Any Obmerian guild that owns a horse and a dragon of the same origin_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027.png)
-
-_**Q28:** Any Sarnorian subject who owns a white horse; Any person who doesn't know someone who owns a white horse_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028.png)
-
-_**Q35:** Any person who (i) knows a Sarnorian subject who knows a person who owns a white horse, or (ii) know a person who doesn't know a person who owns a white horse, or (iii) know someone who doesn't own a dragon_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
-
-## R-Combiner
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB15.png)
-
-An R-combiner combines two or more branches of the same quantifier. On its left side are relationships, and on its right side - an entity.
-
-The entity type on an R-combiner's right side must match all the relationship types on its left side.
+The entity type on an combiner's right side must match all the relationship types on its left side.
 
 Here are some examples:
 
@@ -652,7 +621,7 @@ _**Q30:** Any dragon pair (A, B) where A both froze B and fired at B (two versio
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
 
-Note that the concrete entity on the right side of the R-combiner has the same assignment for all the branches.
+Note that the concrete entity on the right side of the combiner has the same assignment for all the branches.
 
 _**Q31:** Any dragon pair (A, B) where A froze B, A fired at B, B froze A, and B fired at A_
 
@@ -1193,7 +1162,7 @@ _**Q121:** Any dragon that froze or fired at at least 10 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q121.png)
 
-('→' is the entity directly right of the R-combiner (in this example - B))
+('→' is the entity directly right of the combiner (in this example - B))
 
 _**Q122:** Any dragon that fired at dragon B, and fired at a dragon that fired at B - for at least 10 different B's_
 
