@@ -15,8 +15,7 @@
 | RelProp    | Relationship's Property | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element09.png)
 | Quant1     | Quantifier 1            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element10.png)
 | Quant2     | Quantifier 2            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element11.png)
-| EComb      | E-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element12.png)
-| RComb      | R-Combiner              | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
+| Comb       | Combiner                | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element13.png)
 | Path       | Path                    | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element14.png)
 | PathSeg    | Path Segment            | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element15.png)
 | HQuant     | Horizontal Quantifier   | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element16.png)
@@ -170,13 +169,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |         | qVal      | [int]  | mandatory if qType = "range"/"notrange": array[int] of size 2
 | +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
 
-## E-Combiner (type = "EComb")
-
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | next      | int    | ENum of next elements. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
-
-## R-Combiner (type = "RComb")
+## Combiner (type = "Comb")
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
