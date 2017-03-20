@@ -567,19 +567,19 @@ The 12 quantifiers are defined as follows:
 
 An assignment _A_ matches the pattern _only if_:
 
-* **All** (denoted '&') - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and each of _P1..Pb_ is matched - each by at least one element of _S(A)_
-* **Some** (denoted '&#124;') - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and at least one of _P1..Pb_ is matched - by at least one element of _S(A)_
-* _**> n**_ - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and more than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_
-* _**≥ n**_ - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n_ or more of _P1..Pb_ are matched - each by at least one element of _S(A)_
+* **All** (denoted '&') - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and each of _P1..Pb_ is matched - each by at least one element of _S(A)_
+* **Some** (denoted '&#124;') - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and at least one of _P1..Pb_ is matched - by at least one element of _S(A)_
+* _**> n**_ - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and more than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_
+* _**≥ n**_ - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and _n_ or more of _P1..Pb_ are matched - each by at least one element of _S(A)_
 
-* **Not all** (denoted by an '&' with stroke) - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and, any number but b of _P1..Pb_ are matched - each by at least one element of _S(A)_
+* **Not all** (denoted by an '&' with stroke) - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and, any number but b of _P1..Pb_ are matched - each by at least one element of _S(A)_
 * **None** (denoted '0') - _A_ matches _P0_  and there is no _S(A)_ such that at least one of _P1..Pb_ is matched - by at least one element of _S(A)_
-* **_n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and exactly _n_ of _P1..Pb are matched - each by at least one element of _S(A)_
-* **_< n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and less than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [2, _b_]
-* **_≤ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
-* **_≠ n_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and any number except _b-n or _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
-* **_n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
-* **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A) matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
+* **_n_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and exactly _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_
+* **_< n_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and less than _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [2, _b_]
+* **_≤ n_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and _n_ or less of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
+* **_≠ n_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and any number except _b-n_ or _n_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n_ ∈ [1, _b_]
+* **_n1..n2_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
+* **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
 "_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
 
