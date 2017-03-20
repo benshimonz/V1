@@ -623,6 +623,10 @@ _**Q30:** Any dragon pair (A, B) where A both froze B and fired at B (two versio
 
 Note that the concrete entity on the right side of the combiner has the same assignment for all the branches.
 
+_**Q35:** Any dragon pair (A, B) where A froze B but didn't fire at B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q035.png)
+
 _**Q31:** Any dragon pair (A, B) where A froze B, A fired at B, B froze A, and B fired at A_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q031.png)
