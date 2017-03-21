@@ -273,6 +273,35 @@ Functions over _dateframe_ / _datetimeframe_ properties:
 
 Implementations may support additional data types, functions and comarison operators.
 
+## Multivalued Properties
+
+Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
+
+An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
+
+Here is an example:
+
+_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
+
+* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
+* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+
+Functions over multivalued properties:
+
+* _count([t])_ → int
+* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
+
+Functions over multivalued ordinal properties:
+
+* _min([t])_ → t
+* _min([t])_ → t
+* _avg([t])_ → t
+* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
+
 ## Empty (Missing) Values
 
 The data model may support empty (missing) values for one or more properties. empty values may mean different things: the value of the property may be unknown, the property may have no value (e.g. a person with no middle name), a date that has not yet arrived (e.g. empty death date), etc. Regardless of the data semantics, the V1 language has several constructs that are useful in many cases:
@@ -932,35 +961,6 @@ _**Q51:** Any person who owns (at least) two things of different types_
 _**Q52:** Any person who owns (at least) two things of different types, both are not horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q052.png)
-
-## Multivalued Properties
-
-Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
-
-An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
-
-Here is an example:
-
-_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
-
-* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
-* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
-
-Functions over multivalued properties:
-
-* _count([t])_ → int
-* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
-
-Functions over multivalued ordinal properties:
-
-* _min([t])_ → t
-* _min([t])_ → t
-* _avg([t])_ → t
-* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
 
 ## Aggregations and Aggregation Tags
 
