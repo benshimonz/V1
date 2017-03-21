@@ -275,11 +275,11 @@ Implementations may support additional data types, functions and comarison opera
 
 ## Multivalued Properties
 
-Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. The property type is 'array of strings' and is denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
+Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. Such property would be of a property type 'array of strings', denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
-An array-constraint is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated over each value in the array. Then, the array-constraint is evaluated over the number of values that satisfies the value-constraint.
+A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value in the array. Then, an array-constraint is evaluated over the number of values that satisfies the value-constraint.
 
 Here is an example:
 
