@@ -331,8 +331,6 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-Sub-properties of a composite property are denoted as "property name"."sub-property name" (e.g. "tf.till").
-
 Note that the condition 'member of.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given schema. 
 
 _**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
@@ -896,6 +894,8 @@ _**Q111:** Any person who doesn't know someone with a birth date similar to his_
 _**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
+
+Sub-properties of a composite property are denoted as "property name"."sub-property name" (e.g. "tf.till").
 
 Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
 
