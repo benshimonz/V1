@@ -284,7 +284,7 @@ The data model may support empty (missing) values for one or more properties. em
 * An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
 * A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
 
-The result of a function on an empty value _f(empty value)_ should be well defined for any function _f().
+The result of a function on an empty value _f(empty value)_ should be well defined for any function _f()_.
 
 ## Quantifiers #1
 
