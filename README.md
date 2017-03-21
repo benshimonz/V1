@@ -207,11 +207,9 @@ _**Q3:** Any person who owns a dragon, and his first name is Brandon **(first ve
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
 
-_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (two versions)_
+_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (version 1)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
 ## Units
 
@@ -233,6 +231,10 @@ Functions over _date_ properties:
 
 * dateprop._year_, dateprop._month_, dateprop._day_ → int
 * dateprop._dayofweek_, dateprop._dayofyear_, dateprop._weekofyear_ → int
+
+_**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (version 2)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q190-2.png)
 
 Functions over _time_ properties (00:00:00 - 23:59:59):
 
