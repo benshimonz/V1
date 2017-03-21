@@ -201,6 +201,8 @@ Constraints cannot be defined for concrete entities.
 
 For untyped entities, green rectangles can represent only properties that are common to all valid entity types. Valid entity types for an untyped entity can be defined explicitly (using entity type constraints - see later) and implicitly (according to the relationship types that are connected to the untyped entity).
 
+Sub-properties of a composite property are denoted as "property name"."sub-property name" (e.g. "tf.till").
+
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(first version)**_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q003-1.png)
@@ -895,8 +897,6 @@ _**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q112.png)
 
-Sub-properties of a composite property are denoted as "property name"."sub-property name" (e.g. "tf.till").
-
 Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
 
 _**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
@@ -910,8 +910,6 @@ _**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
 
 (Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
-
-
 
 ## Entity Type Tag
 
