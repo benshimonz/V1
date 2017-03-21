@@ -281,7 +281,7 @@ Properties can contain a set of values of the same type. For example, a dragon m
 
 A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value in the array. Then, an array-constraint is evaluated over the number of values that satisfies the value-constraint.
 
-_< expr2_ and _≤ expr2_ are not used. To avoid ambiguity - either _in [0 .. expr2]_ or _in [1 .. expr2]_ should be used. ≠ expr is satisfied only if _> 0_.
+'_< expr2_' and '_≤ expr2_' are not used. To avoid ambiguity - either '_in [0 .. expr2]_' or '_in [1 .. expr2]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
 Here is an example:
 
@@ -1002,7 +1002,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
   
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used. ≠ expr is satisfied only if _> 0_.
+  '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
   **L1 filters assignment combinations to _S1_ entities - to only those combinations for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the constraint.**
 
@@ -1214,7 +1214,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
 
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used. ≠ expr is satisfied only if _> 0_.
+  '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
   **L2 filters assignment combinations to _S1_ entities - to only those combinations for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
 
@@ -1936,7 +1936,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
   
-  _< expr_ and _≤ expr_ are not used. To avoid ambiguity - either _in [0 .. expr]_ or _in [1 .. expr]_ should be used. ≠ expr is satisfied only if _> 0_.
+  '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
 _**Q153:** Any dragon that in each day of at least 11 days - froze no more than 5 dragons_
 
