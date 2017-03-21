@@ -281,6 +281,8 @@ Properties can contain a set of values of the same type. For example, a dragon m
 
 A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value in the array. Then, an array-constraint is evaluated over the number of values that satisfies the value-constraint.
 
+_< expr2_ and _≤ expr2_ are not used. To avoid ambiguity - either _in [0 .. expr2]_ or _in [1 .. expr2]_ should be used. ≠ expr is satisfied only if _> 0_.
+
 Here is an example:
 
 _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
