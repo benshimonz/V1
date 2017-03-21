@@ -78,7 +78,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | eID       | string | Technical ID of the entity
 | +       | eType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
 | +       | eName     | string | Display name of the entity (e.g. "Brandon Stark"). It is better to read the name from the database. This  was the display name when the pattern was stored
-|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, Path
 
 ## Typed Entity (type = "ETyped")
 
@@ -86,7 +86,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |---------|-----------|--------| ------
 | +       | eTag      | string | Entity tag (e.g. "A")
 | +       | eType     | int    | Entity type (e.g. of 'Person') <br> According to the ontology
-|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, Path
 
 ## Untyped Entity (type = "EUntyped")
 
@@ -95,7 +95,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | eTag      | string | Entity tag (e.g. "A")
 |         | vTypes    | [int]  | Valid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
 |         | nVTypes   | [int]  | Invalid entity types <br> According to the ontology <br> VTypes and NVTypes can't be both present
-|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, Path
 
 ## Aggregate Entity (type = "EAgg")
 
@@ -104,7 +104,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | eTag      | string | Entity tag (e.g. "A")
 | +       | fName     | string | file name, where defined
 | +       | eName     | string | name - as defined in file
-|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | next      | int    | ENum of next element. <br> Valid element types: Rel, EProp, Quant1, Path
 
 ## Logical Entity (type = "ELog")
 
@@ -113,7 +113,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | eTag      | string | Entity tag (e.g. "A")
 | +       | fName     | string | file name, where defined
 | +       | eName     | string | name - as defined in file
-|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, EComb, Path
+|         | next      | int    | ENum of next element.  <br> Valid element types: Rel, EProp, Quant1, Path
 
 ## Relationship (type = "Rel")
 
@@ -122,7 +122,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 | +       | rType     | int    | Relationship type (e.g. of 'own') <br> According to the ontology
 | +       | dir       | string | "-": non-directional, "R": Arrow pointing right, "L": Arrow pointing left
 |         | wrapper   | string | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, RComb
+|         | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2, Comb
 |         | b         | int    | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NL)</li> <li>AggL2 (valid wrappers: L)</li> <li>AggL3 (valid wrappers: L)</li> <li>AggL4 (valid wrappers: NL)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2(valid wrappers: L)</li> <li>AggM3 (valid wrappers: L)</li> <li>AggM4 (valid wrappers: L)</li> <li>AggR1 (no valid wrappers)</li> <li>SplitBy (valid wrappers: NL)</li></ul> 
 
 ## Entity's Property (type = "EProp") 
@@ -173,7 +173,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, RComb, Quant2
+| +       | next      | int    | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Comb, Quant2
 
 ## Path (type = "Path") 
 
@@ -183,7 +183,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |         | rTypes    | [ * ]      | Relationship types and constraints <br> For each: <br> **relType**: string - Relationship type - according to the ontology <br> _not mandatory_ **op**: string - operator ("eq"/"lt"/"le") and **val**: int - value <br> _not mandatory_ **dir** - string - direction ("-"/"R"/"L")</li></ul>
 |         | length    | *          | Path length. Either <ul><li>[string] operator ("eq"/"lt"/"le") and [int] value</li> <li>[string] operator ('in') and [int],[int] values</li> <li>[string] operator ('shortest')</li></ul>
 |         | wrapper   | string     | "X": no-existance, "N": no-connection, "L": Latent, "O": Optional
-|         | next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, RComb
+|         | next      | int        | ENum of next element. <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant1, Comb
 |         | b         | int        | ENum of element below. <br> Valid element types: <ul><li>RelProp</li> <li>HQuant</li> <li>AggL1 (valid wrappers: NLO)</li> <li>AggL2 (valid wrappers: LO)</li> <li>AggL4 (valid wrappers: NLO)</li> <li>AggM1 (valid wrappers: NL)</li> <li>AggM2 (valid wrappers: L)</li> <li>AggM4(valid wrappers: L)</li></ul> 
 
 ## Path Segment (type = "PathSeg")
