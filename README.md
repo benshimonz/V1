@@ -275,13 +275,13 @@ Implementations may support additional data types, functions and comarison opera
 
 ## Multivalued Properties
 
-A properties may contain multiple values of the same type. 
+A single property may contain multiple values of the same type. 
 
 For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type 'set of strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
 
 As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type 'array of geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
 
-Both {t_} and [_t_] are called multivalued property types.
+Both {_t_} and [_t_] are called multivalued property types.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
@@ -308,7 +308,7 @@ Functions over multivalued ordinal properties:
 * _min([t]), min({t})_ → t
 * _min([t]), max({t})_ → t
 * _avg([t]), avg({t})_ → t
-* _sum([t]), sum({t})_ → t (defined when _t_ is _int_ or _double_, but not when _t_ is _date_, _time_ nor _datetime_)
+* _sum([t]), sum({t})_ → t (_t_ is _int_ or _double_, not _date_, _time_ nor _datetime_)
 
 ## Empty (Missing) Values
 
