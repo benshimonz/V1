@@ -919,9 +919,9 @@ _**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 
 A single property may contain multiple values of the same type. 
 
-For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type 'set of strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
+For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type '**set of** strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
 
-As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type 'array of geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
+As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type '**array of** geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
 
 Both {_t_} and [_t_] are called multivalued property types.
 
