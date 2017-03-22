@@ -944,13 +944,15 @@ Property tag {1} equals to the number of values that satisfy the value-constrain
 
 As an alternative, we can 'extract' one value from a multivalued property and assign it a tag. 
 
-The property tags _{pt a}_ and _{pt n}_ ensure that two different values of _pt_ are extracted. 
-
 _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
-Property tags {1a} and {1b} equal to the two nicknames that satisy the value-condition. If there are no such nicknames - their value would be _empty_.
+The property tags _{1a}_ and _{1b}_ ensure that two different values of multivalued property _{1}_ are extracted. 
+
+Property tags {1a} and {1b} equal to  two nicknames that satisfy the value-condition. If there are no such nicknames - their value would be _empty_.
+
+Another example:
 
 Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a person with a name 'John Doe'. The following pattern won't do:
 
