@@ -271,50 +271,7 @@ Functions over _dateframe_ / _datetimeframe_ properties:
 * dateframeprop._duration_ → int [days]
 * datetimeframeprop._duration_ → int [seconds]
 
-Implementations may support additional data types, functions and comarison operators.
-
-## Multivalued Properties
-
-A single property may contain multiple values of the same type. 
-
-For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type 'set of strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
-
-As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type 'array of geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
-
-Both {_t_} and [_t_] are called multivalued property types.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
-
-A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value. Then, a second constraint is evaluated over the number of values that satisfies the value-constraint.
-
-'_< expr2_' and '_≤ expr2_' are not used. To avoid ambiguity - either '_in [0 .. expr2]_' or '_in [1 .. expr2]_' should be used. '≠ expr' is satisfied only if _> 0_.
-
-Here is an example:
-
-_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-1.png)
-
-* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
-* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
-
-_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
-
-As an alternative, we 
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
-
-Functions over multivalued properties:
-
-* _count([t]), count({t})_ → int
-* _distinct([t])_ → int
-
-Functions over multivalued ordinal properties:
-
-* _min([t]), min({t})_ → t
-* _min([t]), max({t})_ → t
-* _avg([t]), avg({t})_ → t
-* _sum([t]), sum({t})_ → t (_t_ is _int_ or _double_, not _date_, _time_ nor _datetime_)
+Implementations may support additional data types, functions and comparison operators.
 
 ## Empty (Missing) Values
 
@@ -958,12 +915,62 @@ _**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 
 (Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
 
-## Property Tags and Multivalued Composite Properties
+## Multivalued Properties
 
-Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a name with a first name 'John' and a last name 'Doe'. The following pattern won't do:
+A single property may contain multiple values of the same type. 
 
+For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type 'set of strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
 
+As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type 'array of geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
 
+Both {_t_} and [_t_] are called multivalued property types.
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
+
+A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value. Then, a second constraint is evaluated over the number of values that satisfies the value-constraint.
+
+'_< expr2_' and '_≤ expr2_' are not used. To avoid ambiguity - either '_in [0 .. expr2]_' or '_in [1 .. expr2]_' should be used. '≠ expr' is satisfied only if _> 0_.
+
+Here is an example:
+
+_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-1.png)
+
+* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
+* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+
+As an alternative, we can 'extract' one value from a multivalued property and assign it a tag. 
+
+The property tags _{pt.m}_ and _{pt.n}_ ensures that two different values of _pt_ are referenced. 
+
+_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
+
+Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a person with a name 'John Doe'. The following pattern won't do:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-1.png)
+
+This pattern means 'any person with at least one first name 'John' and at least one last name 'Doe'. Note that a person with two names - 'John Nash' and 'Jack Doe' would satisfy the pattern, and this is not what we want.
+
+The right pattern would be:
+
+_**Q28:** Any person with a name (first: 'John', last: 'Doe')_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-2.png)
+
+Functions over multivalued properties:
+
+* _count([t]), count({t})_ → int
+* _distinct([t])_ → int
+
+Functions over multivalued ordinal properties:
+
+* _min([t]), min({t})_ → t
+* _min([t]), max({t})_ → t
+* _avg([t]), avg({t})_ → t
+* _sum([t]), sum({t})_ → t (_t_ is _int_ or _double_, not _date_, _time_ nor _datetime_)
 
 ## Entity Type Tag
 
