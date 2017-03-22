@@ -942,7 +942,7 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)
 
 As an alternative, we can 'extract' one value from a multivalued property and assign it a tag. 
 
-The property tags _{pt.m}_ and _{pt.n}_ ensures that two different values of _pt_ are referenced. 
+The property tags _{pt.m}_ and _{pt.n}_ ensure that two different values of _pt_ are extracted. 
 
 _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
 
@@ -952,7 +952,7 @@ Consider a multivalued composite property '{names}', where each name has two sub
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-1.png)
 
-This pattern means 'any person with at least one first name 'John' and at least one last name 'Doe'. Note that a person with two names - 'John Nash' and 'Jack Doe' would satisfy the pattern, and this is not what we want.
+The above pattern means 'any person with at least one first name 'John' and at least one last name 'Doe'. Note that a person with two names - 'John Nash' and 'Jack Doe' would satisfy the pattern, and this is not what we want.
 
 The right pattern would be:
 
