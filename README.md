@@ -917,7 +917,7 @@ _**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 
 ## Multivalued Properties
 
-A single property may contain multiple values of the same type. 
+A single property may contain multiple (zero or more) values of the same type. 
 
 For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type '**set of** strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
 
