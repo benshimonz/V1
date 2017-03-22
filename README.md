@@ -942,13 +942,13 @@ Property tag {1} equals to the set/array of all nicknames.
 * In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
 * In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
 
-As an alternative, we can 'extract' one value from a multivalued property and assign it a tag. 
+As an alternative, we can 'extract' a value from a multivalued property and assign it a tag. 
 
 _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
-Property tags {1} and {2} equal to two nicknames that satisfy the value-conditions. Multiple 'one value' extractions for the same property are guaranteed to represent different values. Hence, {1} and {2} represent two different values of the 'nicknames' property. 
+Property tags {1} and {2} equal to two nicknames that satisfy the value-conditions. Multiple 'value' extractions for the same property are guaranteed to represent different values. Hence, {1} and {2} represent two different values of the 'nicknames' property. 
 
 If there were no value-conditions in the pattern above - valid assignments would include only persons having at least 2 nicknames.
 
