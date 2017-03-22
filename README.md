@@ -300,7 +300,7 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)
 
 _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
 
-As an alternative, 
+As an alternative, we 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
