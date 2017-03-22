@@ -906,7 +906,7 @@ A property tag serves as a placeholder for the property's value in a given assig
 * as part of a split definition (see Q226,Q227)
 * as part of a split constraint (see Q255)
 
-If a property tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
+If a property tag is used in any of these usages - it is depicted in bold purple. Otherwise - it is depicted in black.
 
 Here are some examples:
 
@@ -982,7 +982,7 @@ An aggregation tag serves as a placeholder for the result of an aggregation. Agg
 * as part of a split definition (see Q253)
 * as part of a split constraint (see Q254)
 
-If an aggregation tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
+If an aggregation tag is used in any of these usages - it is depicted in bold purple. Otherwise - it is depicted in black.
 
 ## L1 Aggregation
 
@@ -2184,7 +2184,7 @@ A split tag serves as a placeholder for the number of splits that satisfy the co
 * as part of a another split constraint (see Q159)
 * as part of a min/max aggregation
 
-If a split tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
+If a split tag is used in any of these usages - it is depicted in bold purple. Otherwise - it is depicted in black.
 
 _**Q159:** Any **dragon** for which there are more days where (it froze/was frozen at least 5 times, and the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (it froze/was frozen at least 5 times, and the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
