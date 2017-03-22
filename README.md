@@ -948,7 +948,7 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
-Property tags {1} and {2} equal to two nicknames that satisfy the value-conditions. 'one value' guarantee that {1} and {2} represent two different values of the 'nicknames' multivalued property. 
+Property tags {1} and {2} equal to two nicknames that satisfy the value-conditions. Multiple 'one value' extractions for the same property are guaranteed to represent different values. Hence, {1} and {2} represent two different values of the 'nicknames' property. 
 
 If there were no value-condition in the pattern above - valid assignments would be only persons having at least 2 nicknames.
 
