@@ -937,7 +937,7 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-1.png)
 
-Property tag {1} equals to the number of values that satisfy the value-constraint.
+Property tag {1} equals to the set/array of all nicknames.
 
 * In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
 * In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
@@ -948,9 +948,9 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
-The property tags _{1a}_ and _{1b}_ ensure that two different values of multivalued property _{1}_ are extracted. 
+Property tags _{1a}_ and _{1b}_ ensure that two different values of multivalued property _{1}_ are extracted. 
 
-Property tags {1a} and {1b} equal to  two nicknames that satisfy the value-condition. If there are no such nicknames - their value would be _empty_.
+Property tags {1a} and {1b} equal to two nicknames that satisfy the value-condition. If there are no such nicknames - their value would be _empty_.
 
 Another example:
 
