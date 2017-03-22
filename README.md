@@ -275,11 +275,17 @@ Implementations may support additional data types, functions and comarison opera
 
 ## Multivalued Properties
 
-Properties can contain a set of values of the same type. For example, a dragon may have several nicknames where each nickname is a string. Such property would be of a property type 'array of strings', denoted as [string]. In general, the type [_t_] denotes an array of values - each of type _t_.
+A properties may contain multiple values of the same type. 
+
+For example, a dragon may have multiple nicknames, each is a string. 'Nicknames' property would be of property type 'set of strings', denoted as '{string}'. In general, the type {_t_} denotes a set of values - each of type _t_. the values in a set are unordered, and duplicate values are not allowed.
+
+As another example, a polygon is composed of multiple geopoint, each has latitude and longitude sub-properties. 'Polygon' property would be of a propert type 'array of geopoints', denoted as '[geopoint]'. In general, the type [_t_] denotes an array of values - each of type _t_. The values in an array are ordered, and duplicate values are allowed.
+
+Both {t_} and [_t_] are called multivalued property types.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
-A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value in the array. Then, an array-constraint is evaluated over the number of values that satisfies the value-constraint.
+A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value. Then, a second constraint is evaluated over the number of values that satisfies the value-constraint.
 
 '_< expr2_' and '_≤ expr2_' are not used. To avoid ambiguity - either '_in [0 .. expr2]_' or '_in [1 .. expr2]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
@@ -294,15 +300,15 @@ _**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
 
 Functions over multivalued properties:
 
-* _count([t])_ → int
-* _distinct([t])_ → int (defined if the multivalued property supports duplicate values)
+* _count([t]), count({t})_ → int
+* _distinct([t])_ → int
 
 Functions over multivalued ordinal properties:
 
-* _min([t])_ → t
-* _min([t])_ → t
-* _avg([t])_ → t
-* _sum([t])_ → t (defined over _int_ and _double_, but not over _date_, _time_ nor _datetime_)
+* _min([t]), min({t})_ → t
+* _min([t]), max({t})_ → t
+* _avg([t]), avg({t})_ → t
+* _sum([t]), sum({t})_ → t (defined when _t_ is _int_ or _double_, but not when _t_ is _date_, _time_ nor _datetime_)
 
 ## Empty (Missing) Values
 
