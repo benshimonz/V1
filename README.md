@@ -927,7 +927,7 @@ Both {_t_} and [_t_] are called multivalued property types.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB09-03.png)
 
-A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value. Then, a second constraint is evaluated over the number of values that satisfies the value-constraint.
+A constraint on a multivalued property is expressed over the number of values (integer) for which a given value-constraint is satisfied: First, (_cmp_op expr1_) is evaluated for each value. Then, a second constraint is evaluated over the number of values that satisfy the value-constraint.
 
 '_< expr2_' and '_≤ expr2_' are not used. To avoid ambiguity - either '_in [0 .. expr2]_' or '_in [1 .. expr2]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
@@ -937,16 +937,20 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-1.png)
 
+Property tag {1} equals to the number of values that satisfy the value-constraint.
+
 * In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
 * In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
 
 As an alternative, we can 'extract' one value from a multivalued property and assign it a tag. 
 
-The property tags _{pt.m}_ and _{pt.n}_ ensure that two different values of _pt_ are extracted. 
+The property tags _{pt a}_ and _{pt n}_ ensure that two different values of _pt_ are extracted. 
 
 _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
+
+Property tags {1a} and {1b} equal to the two nicknames that satisy the value-condition. If there are no such nicknames - their value would be _empty_.
 
 Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a person with a name 'John Doe'. The following pattern won't do:
 
