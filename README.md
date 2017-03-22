@@ -950,7 +950,9 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)
 
 Property tags _{1a}_ and _{1b}_ ensure that two different values of multivalued property _{1}_ are extracted. 
 
-Property tags {1a} and {1b} equal to two nicknames that satisfy the value-condition. If there are no such nicknames - their value would be _empty_.
+Property tags {1a} and {1b} equal to two nicknames that satisfy the value-conditions. 
+
+If there were no value-condition in the pattern above - valid assignments would be only persons that have at least 2 nicknames.
 
 Another example:
 
