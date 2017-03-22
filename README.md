@@ -960,7 +960,7 @@ Consider a multivalued composite property '{names}', where each name has two sub
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-1.png)
 
-The above pattern means 'any person with at least one first name 'John' and at least one last name 'Doe'. Note that a person with two names - 'John Nash' and 'Jack Doe' would satisfy the pattern, and this is not what we want.
+The above pattern means 'any person with at least one first name 'John' and at least one last name 'Doe'. Note that a person with two names - 'John Nash' and 'David Doe' would satisfy the pattern. This is not what we want.
 
 The right pattern would be:
 
