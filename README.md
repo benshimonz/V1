@@ -291,12 +291,18 @@ A constraint on a multivalued property is expressed over the number of values (i
 
 Here is an example:
 
-_**Q252:** Any dragon that has at least 2 nicknames that contains 's'_
+_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-1.png)
 
 * In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
 * In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+
+_**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)_
+
+As an alternative, 
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
 Functions over multivalued properties:
 
@@ -951,6 +957,13 @@ _**Q267:** Any person who was a member of two guilds at intersecting timeframes_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q267.png)
 
 (Assuming that at least one of the _tf.till_ values is not empty. See also note under Q11). Note the red comparison operator.
+
+## Property Tags and Multivalued Composite Properties
+
+Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a name with a first name 'John' and a last name 'Doe'. The following pattern won't do:
+
+
+
 
 ## Entity Type Tag
 
