@@ -895,9 +895,9 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**Property tag**, ('_{pt}_') - depicted by an index wrapped in curly brackets. Each green rectangle (entity's property / relationship property) has a property tag on its top-left corner. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
+**Property tag**, ('_{pt}_') - Each green rectangle (entity's property / relationship's property) has a property tag on its top-left corner, depicted by an index wrapped in curly brackets.  The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A property tag serves as a placeholder for the property's value in a given assignment. Property tags can be used:
+A property tag serves as a placeholder for the property's value in a given assignment. Property tags may be used:
 
 * as part of another property tag's constraint (see Q108, Q109)
 * as part of an aggregation tag's definition (see Q116, Q117)
@@ -905,6 +905,8 @@ A property tag serves as a placeholder for the property's value in a given assig
 * as part of a min/max aggregation (see Q130,Q131)
 * as part of a split definition (see Q226,Q227)
 * as part of a split constraint (see Q255)
+
+If a property tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
 
 Here are some examples:
 
@@ -970,15 +972,17 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 todo: explain aggregation, aggregation constraint
 
-**Aggregation tag**, ('_{at}_') - depicted by an index wrapped in curly brackets. Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower pert. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
+**Aggregation tag**, ('_{at}_') - Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower part, depicted by an index wrapped in curly brackets. The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-An aggregation tag serves as a placeholder for the result of an aggregation. Aggregation tags can be used:
+An aggregation tag serves as a placeholder for the result of an aggregation. Aggregation tags may be used:
 
 * as part of another aggregation tag's definition (see Q129,Q181)
 * as part of another aggregation tag's constraint (see Q125,Q127)
 * as part of a min/max aggregation (see Q91,Q132)
 * as part of a split definition (see Q253)
 * as part of a split constraint (see Q254)
+
+If an aggregation tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
 
 ## L1 Aggregation
 
@@ -2172,13 +2176,15 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB11.png)
 
-**Split tag**, ('_{st}_') - depicted by an index wrapped in curly brackets. Each 'splits' purple rectangle has a property tag on its top-left corner. The numbering for property tags, aggregation tags and split tags is joint, and each tag is unique.
+**Split tag**, ('_{st}_') - Each 'splits' purple rectangle has a property tag on its top-left corner, depicted by an index wrapped in curly brackets. The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags can be used:
+A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags may be used:
 
 * as part of a another split definition
 * as part of a another split constraint (see Q159)
 * as part of a min/max aggregation
+
+If a split tag is used in one of the usages above, it is depicted in bold purple. Otherwise - it is depicted in black.
 
 _**Q159:** Any **dragon** for which there are more days where (it froze/was frozen at least 5 times, and the number of dragons **it** froze is greater than the number of dragons that froze **it**) than days where (it froze/was frozen at least 5 times, and the number of dragons that froze **it** is greater than the number of dragons **it** froze)_
 
