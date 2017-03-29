@@ -318,6 +318,16 @@ Exactly one of the above must be presented
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
+## R1 Aggregation (type = "AggR1")
+
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
+| +       | n         | int      | number of min/max entities
+| +       | op        | string   | "min" / "max"
+| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
+|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
+
 ## P1 Aggregation (type = "AggP1")
 
 |Mandatory| Name      | Type     | Description
@@ -356,16 +366,6 @@ Exactly one of the above must be presented
 | +       | n         | int      | number of min/max splits
 | +       | op        | string   | "min" / "max"
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
-|         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
-
-## R1 Aggregation (type = "AggR1")
-
-|Mandatory| Name      | Type     | Description
-|---------|-----------|----------| ------
-|         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
-| +       | n         | int      | number of min/max entities
-| +       | op        | string   | "min" / "max"
-| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## Nonidenticality constraints between entity tags
