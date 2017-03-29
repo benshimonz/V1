@@ -282,7 +282,7 @@ Exactly one of the above must be presented
 | +       | n         | int      | number of min/max entities
 | +       | eTag      | [string] | entity tags on the 'n {et,et,...} clause
 | +       | op        | string   | "min" / "max"
-| +       | eTag2     | [string] | entity tags on the 'with min/max {et,et,...} clause
+| +       | eTag2     | [string] | entity tags on the 'with min/max {et,et,...}/→' clause. '→' is denoted "->"
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## M2 Aggregation (type = "AggM2")
