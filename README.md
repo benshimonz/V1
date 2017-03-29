@@ -19,7 +19,7 @@ A **property graph** (AKA attributed graph) is a graph where
 - Graph edges represent relationships between pairs of entities - directional (e.g. 'owns', 'offspring of') or bidirectional (e.g. 'sibling of')
 - Each vertex has a set of descriptive features called properties (AKA attributes) (e.g. 'First Name', 'Last Name' for a person)
 - Each edge has a set of properties as well
-- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = {"First": string = "Brandon", "Last": string = "Stark"}
+- Each property has a name (string), a data type (e.g. string / integer), and a value (e.g. "weight": int = 450). Composite properties are composed of a set of sub-properties - each has a name, a data type and a value (e.g. Name = ("First": string = "Brandon", "Last": string = "Stark") )
 - Usually each vertex has a type (e.g. Person, Horse, Dragon), but in a schema-free graph - the type is just another property
 - Edges have types as well (e.g. 'owns', 'member of'). Again - without schema - the type is just another property
 
@@ -956,7 +956,7 @@ If there were no value-conditions in the pattern above - valid assignments would
 
 Another example:
 
-Consider a multivalued composite property '{names}', where each name has two sub-properties: 'first' and 'last' - both of type string. Now, suppose we are looking for a person with a name 'John Doe'. The following pattern won't do:
+Consider a multivalued composite property '{names}', where each name has two sub-properties: (first : string, last : string). Now, suppose we are looking for a person with a name 'John Doe'. The following pattern won't do:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-1.png)
 
@@ -964,7 +964,7 @@ The above pattern means 'any person with at least one first name 'John' and at l
 
 The right pattern would be:
 
-_**Q28:** Any person with a name (first: 'John', last: 'Doe')_
+_**Q28:** Any person with a name (first : 'John', last : 'Doe')_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q028-2.png)
 
