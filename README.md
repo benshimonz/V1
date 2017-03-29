@@ -1364,7 +1364,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
 
-_**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is smaller than 100 minutes_
+_**Q87:** Any dragon that was frozen at least once, and the cumulative duration he was frozen is less than 100 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q087.png)
 
@@ -1823,11 +1823,11 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
-_**Q120:** Any person whose 3 oldest offspring cumulative height is lower than his own height_
+_**Q120:** Any person whose 3 oldest offspring's cumulative height is lower than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
-_**Q202:** Any person whose 3 oldest offspring average height is smaller than the average height of all his offsprings_
+_**Q202:** Any person whose 3 oldest offspring's average height is lower than the average height of all his offsprings_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q202.png)
 
