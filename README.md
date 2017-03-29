@@ -1823,7 +1823,7 @@ _**Q272:** Any dragon pair (A, B) where the longest freeze duration is at least 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q272.png)
 
-_**Q120:** Any person whose 3 oldest offspring cumulative height is smaller than his own height_
+_**Q120:** Any person whose 3 oldest offspring cumulative height is lower than his own height_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q120.png)
 
