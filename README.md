@@ -1409,7 +1409,7 @@ _**Q116:** Any person who owns horses of no more than 3 colors_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q116.png)
 
-_**Q117:** Any person whose owned horses have an average weight greater than 450 Kg_
+_**Q117:** Any person whose owned horses' average weight is greater than 450 Kg_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q117.png)
 
