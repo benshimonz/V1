@@ -154,7 +154,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range" <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range". <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
 |         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"/"ne"
 |         | qVal      | [int]  | mandatory if qType = "range": array[int] of size 2
 | +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
@@ -164,7 +164,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range" <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range". <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
 |         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"/"ne"
 |         | qVal      | [int]  | mandatory if qType = "range": array[int] of size 2
 | +       | next      | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: EConcrete, ETyped, EUntyped, EAgg, ELog, Quant2
@@ -196,7 +196,7 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
-| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range" <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
+| +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range". <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
 |         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"/"ne"
 |         | qVal      | [int]  | mandatory if qType = "range": array[int] of size 2
 | +       | b         | [int]  | ENum of first element in each branch (>1 branches). <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1
