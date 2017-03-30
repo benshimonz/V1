@@ -149,7 +149,7 @@ The following sections define the syntax and semantics of the V1 language. We st
 
 **Syntax**
 
-Patterns are written from left to right. Each pattern starts with (a small black diamond), continues with a (yellow, blue or red rectangle), and continues with zero or more ( (black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle) ).
+Patterns are read from left to right. Each pattern starts with (a small black diamond), continues with a (yellow, blue or red rectangle), and continues with zero or more ( (black arrow, black line, or red line) followed by a (yellow, blue, or red rectangle) ).
 
 **Semantics**
 
