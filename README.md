@@ -91,7 +91,7 @@ Pattern languages differs in the following aspects:
 * **Genericity** - generic (e.g. schema-driven) vs. domain-specific
 * **Representation** - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
 * **Expressivity** - The richness of the patterns that can be expressed. The expressivity is always limited (in a Gödelian sense)
-* **Simplicity** - How simple it is to construct new patterns and to understand existing patterns
+* **Receptivity and Productivity** - How intuitive is it to understand existing patterns and to construct new patterns
 * **Efficiency** - to parse patterns and to execute pattern queries
 
 ## Dragons of Ice and Fire
@@ -135,9 +135,9 @@ Like the king of Sarnor, many potential users won't use textual pattern (query) 
 
 Kings, as well as other query-posers would like to pose complex queries in a manner that is coherent with the way they think. They want to do it with minimal technical training and minimal effort. The ability to express patterns in a way that is aligned with their mental processes is crucial to the flow of their work, and to the value of the insights they can deduce.
 
-Visual query languages are very attractive. They have the potential to be more 'user friendly' in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a visual query language that is generic, simple, and has rich expressivity. This is what V1 aims to be. 
+Visual query languages are very attractive. They have the potential to be more 'user friendly' in the sense that patterns may be constructed and understand much more quickly, with much less mental effort. A long-standing challenge is to design a query language that is generic, has rich expressivity, and is highly receptive and productive. This is what V1 aims to be. 
 
-V1 is a rich simple generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
+V1 is a rich generic visual pattern language for schema-based property graphs. It is named after the [primary visual cortex in our brain](https://en.wikipedia.org/wiki/Visual_cortex), which is also known as Visual area one (V1).
 
 ## V1 Basics
 
