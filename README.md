@@ -175,11 +175,11 @@ _**Q1:** Any dragon owned by Brandon Stark (two versions)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001-2.png)
 
-_**Q2:** Any dragon that was frozen at least once by a dragon owned by Brandon Stark_
+_**Q2:** Any dragon that at least once was frozen by a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q002.png)
 
-_**Q184:** Any dragon that froze or was frozen at least once by a dragon owned by Brandon Stark_
+_**Q184:** Any dragon that at least once **froze or was frozen by** a dragon owned by Brandon Stark_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q184.png)
 
