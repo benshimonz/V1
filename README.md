@@ -90,7 +90,7 @@ Pattern languages differs in the following aspects:
 
 * **Genericity** - generic (e.g. schema-driven) vs. domain-specific
 * **Representation** - textual (structured / controlled natural) or visual (AKA graphical, diagrammatic)
-* **Expressive power** - The richness of the patterns that can be expressed. The expressive power is always limited (in a Gödelian sense)
+* **Expressive power** - The richness of the patterns that can be expressed (always limited, in a Gödelian sense)
 * **Receptivity and Productivity** - How intuitive is it to understand existing patterns and to construct new patterns
 * **Efficiency** - to parse patterns and to execute pattern queries
 
