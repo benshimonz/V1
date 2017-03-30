@@ -343,7 +343,7 @@ _**Q10:** Any person whose first name is Brandon, who owns some dragon B which f
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q010.png)
 
-When a relationship need to satisfy several conditions (as in Q10: the freeze time is in 1010 or after _and_ the freeze duration is longer than 100 seconds) - green rectangles can be chained. Chaining is not valid for entity's properties. Chaining is explained below (see _Horizontal Quantifiers_)
+When a relationship need to satisfy several constraints (as in Q10: the freeze time is in 1010 or after _and_ the freeze duration is longer than 100 seconds) - green rectangles can be chained. Chaining is not valid for entity's properties. Chaining is explained below (see _Horizontal Quantifiers_)
 
 ## Entity Tags
 
@@ -585,7 +585,7 @@ An assignment _A_ matches the pattern _only if_:
 * **_n1..n2_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and _n1_ or more, but not more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [1, _b_], _n2_ ∈ [2, _b_], _n1_ < _n2_
 * **_∉ n1..n2_** - There is _S(A)_ such that each element of _S(A)_ matches at least one of _P1..Pb_, and Less than _n1_ or more than _n2_ of _P1..Pb_ are matched - each by at least one element of _S(A)_. _n1_ ∈ [2, _b-1_], _n2_ ∈ [3, _b_], _n1_ < _n2_
 
-"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other conditions expressed by the pattern.
+"_Only if_" denotes a necessary but not sufficient condition, since assignments must satisfy other constraints expressed by the pattern.
 
 Here are two examples:
 
@@ -950,11 +950,11 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 2)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q027-2.png)
 
-value (1) and value (2) represent two different values of the multivalued property 'nicknames'. Hence, property tags {1} and {2} equal to two nicknames that satisfy the value-conditions. 
+value (1) and value (2) represent two different values of the multivalued property 'nicknames'. Hence, property tags {1} and {2} equal to two nicknames that satisfy the value-constraint. 
 
 Note that (1) and (2) are not indexes within the set / array. They simply represent two different indexes within the set / array.
 
-If there were no value-conditions in the pattern above - valid assignments would include only persons having at least 2 nicknames.
+If there were no value-constraints in the pattern above - valid assignments would include only persons having at least 2 nicknames.
 
 Another example:
 
