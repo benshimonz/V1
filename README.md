@@ -169,9 +169,11 @@ For every blue rectangle, red rectangle, black arrow, and black line - the query
 
 Here are some basic patterns:
 
-_**Q1:** Any dragon owned by Brandon Stark_
+_**Q1:** Any dragon owned by Brandon Stark (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001-2.png)
 
 _**Q2:** Any dragon that was frozen at least once by a dragon owned by Brandon Stark_
 
