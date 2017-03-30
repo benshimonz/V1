@@ -870,6 +870,7 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 A property tag serves as a placeholder for the property's value in a given assignment. Property tags may be used:
 
+* as part of a multivalued composite property's extracted value's sub-property's definition (see Q28)
 * as part of another property tag's constraint (see Q108, Q109)
 * as part of an aggregation tag's definition (see Q116, Q117)
 * as part of an aggregation tag's constraint (see Q120)
