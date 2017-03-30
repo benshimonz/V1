@@ -556,7 +556,7 @@ Horizontal quantifiers are used with relationships / paths. On top of a horizont
 Each branch starts with:
 
 * A green rectangle (relationship only - relationship's property value constraints / tag), or
-* An orange rectangle (aggregate condition / aggregation tag - explained later), or
+* An orange rectangle (aggregate constraint / aggregation tag - explained later), or
 * A horizontal quantifier
 
 The semantics of horizontal quantifiers is quite different from the semantics of vertical quantifiers:
@@ -660,7 +660,7 @@ Anything on the right of an **'L'** is **latent**: It won't be part of the answe
 - An 'L' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
 - An 'L' may not appear right on an 'L', an 'X' or an '↛'
 - An 'L' may not appear right of a '0' quantifier
-- An 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
+- An 'L' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate constraint 
 
 Here are two examples:
 
@@ -677,7 +677,7 @@ Anything on the right of an **'O'** is **optional**: if it has a valid assignmen
 - An 'O' may appear just before a relationship, a path, or a quantifier (excluding a quantifier at the start of the pattern)
 - An 'O' may not appear right of an 'L', an 'X' or an '↛'
 - An 'O' may not appear right of a '0' quantifier
-- An 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate condition 
+- An 'O' may not appear right of a "relationships = 0", "paths = 0" or "→ = 0" aggregate constraint 
 
 Here are some examples:
 
@@ -1441,7 +1441,7 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
-## Aggregate Conditions both before and after a Quantifier
+## Aggregate constraints both before and after a Quantifier
 
 todo
 
@@ -1849,7 +1849,7 @@ _**Q95:** Any dragon that was frozen by Balerion: there were more than 5 freezes
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-1.png)
 
-The two 'per pair' conditions could be chained instead. The meaning would be similar:
+The two 'per pair' constraints could be chained instead. The meaning would be similar:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q095-2.png)
 
@@ -2214,7 +2214,7 @@ _**Q216:** Any dragon that Balerion froze in the three 30-day timeframes in whic
 
 **Split tag**, ('_{st}_') - Each 'splits' purple rectangle has a property tag on its top-left corner, depicted by an index wrapped in curly brackets. The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A split tag serves as a placeholder for the number of splits that satisfy the condition. Split tags may be used:
+A split tag serves as a placeholder for the number of splits that satisfy the constraint. Split tags may be used:
 
 * as part of a another split definition
 * as part of a another split constraint (see Q159)
@@ -2413,7 +2413,7 @@ Here are some definition examples:
 
 **R5 - Tag scope:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
-**R6:** Circular conditions are invalid.
+**R6:** Circular constraints are invalid.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag02.png)
 
@@ -2439,7 +2439,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg02.png)
 
-**R13:** A tag defined right of an aggregator - cannot be used in the right-side on the aggregate condition.
+**R13:** A tag defined right of an aggregator - cannot be used in the right-side on the aggregate constraint.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Agg03.png)
 
