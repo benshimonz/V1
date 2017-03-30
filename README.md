@@ -281,16 +281,16 @@ The data model may support empty (missing) values for one or more properties. em
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
-* A condition with a blue comparison operator: If the value is missing - the condition is evaluated as false; otherwise - it is evaluated according to the value and the expression
-* A condition with a red comparison operator: If the value is missing - the condition is evaluated as true; otherwise - it is evaluated according to the value and the expression
-* An 'empty' condition - if the value is missing - the condition is evaluated as false; otherwise - it is evaluated as true
-* A 'not empty' condition - if the value is missing - the condition is evaluated as true; otherwise - it is evaluated as false
+* A constraint with a blue comparison operator: If the value is missing - the constraint is evaluated as false; otherwise - it is evaluated according to the value and the expression
+* A constraint with a red comparison operator: If the value is missing - the constraint is evaluated as true; otherwise - it is evaluated according to the value and the expression
+* An 'empty' constraint - if the value is missing - the constraint is evaluated as false; otherwise - it is evaluated as true
+* A 'not empty' constraint - if the value is missing - the constraint is evaluated as true; otherwise - it is evaluated as false
 
 The result of a function on an empty value _f(empty value)_ should be well defined for any function _f()_.
 
 ## Quantifiers #1
 
-Vertical quantifiers (or simply 'quantifiers') are used when more than one condition needs to be satisfied. Here is a simple example:
+Vertical quantifiers (or simply 'quantifiers') are used when more than one constraint needs to be satisfied. Here is a simple example:
 
 _**Q3:** Any person who owns a dragon, and his first name is Brandon **(second version)**_
 
@@ -337,7 +337,7 @@ _**Q11:** Any current member of the Masons guild, who since 1011 or later knows 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q011.png)
 
-Note that the condition 'member of tf.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given property graph. 
+Note that the constraint 'member of tf.till _empty_' is based on the assumption that an empty value means that the person is still a member. Alternatively, it could have meant that the _till_ date is unknown. This depends on the semantics of the _till_ property in the given property graph. 
 
 _**Q10:** Any person whose first name is Brandon, who owns some dragon B which froze a dragon C that (i) belongs to an offspring of Rogar Bolton, and (ii) froze a dragon that belongs either to Robin Arryn or to Arrec Durrandon. B froze C at least once in 1010 or after - for longer than 100 seconds_
 
@@ -597,7 +597,7 @@ _**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
-Green rectangles and orange rectangles below a horizontal quantifier can also be **chained**. When chained, each element serves as a filtering step. The branch's condition is met only if there is an assignment that passes all the filtering steps.
+Green rectangles and orange rectangles below a horizontal quantifier can also be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
 
 Here is an example:
 
@@ -941,8 +941,8 @@ _**Q27:** Any dragon that has at least 2 nicknames that contains 's' (version 1)
 
 Property tag {1} equals to the set/array of all nicknames.
 
-* In order to check if ANY nickname contains 's' - the condition would be _(contains 's') > 0_.
-* In order to check if ALL nicknames contain 's' - the condition would be _(not contains 's') = 0_.
+* In order to ensure that ANY nickname contains 's' - the constraint would be _(contains 's') > 0_.
+* In order to ensure that ALL nicknames contain 's' - the constraint would be _(not contains 's') = 0_.
 
 As an alternative, we can 'extract' a value from a multivalued property and assign it a tag. 
 
