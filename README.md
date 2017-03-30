@@ -158,7 +158,7 @@ Yellow, blue and red rectangles represent entities. **A yellow rectangle** repre
 A pair of entities can be connected with:
 
 * A horizontal **black arrow** - representing a **directional relationship**, or
-* A horizontal **black line** - representing either a **bidirectional relationship** or a directional relationship where the direction doesn't matter, or
+* A horizontal **black line** - representing either a **bidirectional relationship** or a directional relationship where either direction is acceptable, or
 * A horizontal **red line** - representing a **path** (explained later)
 
 Each relationship has a label above the arrow/line that denotes the relationship's type.
