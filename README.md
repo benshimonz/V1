@@ -2015,6 +2015,8 @@ _**Q156:** Any dragon that froze dragon for more than 1000 minutes cumulatively 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q156.png)
 
+Note that {3} is aggregated over all splits the passes the per-split constraint. 
+
 _**Q235:** Any dragon that the number of dragons it froze on average - on months it froze dragons in - is at least 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q235.png)
