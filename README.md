@@ -1013,7 +1013,7 @@ Sometimes we need to constrain entities based on counts. Here are some examples:
 - Any dragon the froze dragons at least 10 times
 - Any dragon the froze dragons for more the 1000 minutes cumulatively
 
-Aggregations are used to count the number of entities, to count the number of relationships, or to calculate the value of some aggregation operation (e.g. min/max/sum) over the value of some property / some tag - for entities/relationships which match the pattern. Then, constraints can be enforced on these values.
+Aggregations are used to count the number of assignments to an entity, to count the number of assignments to a relationship, or to calculate the value of some aggregation operation (e.g. min/max/sum) over the value of some property / some tag - for entities/relationships assignments which match the pattern. Then, constraints can be enforced on these values.
 
 **Aggregation tag**, ('_{at}_') - Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower part, depicted by an index wrapped in curly brackets. The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
@@ -1474,7 +1474,13 @@ _**Q158:** Any dragon that in any day of at least 10 days - the number of dragon
 
 ## Min/Max Aggregations
 
-todo
+Sometimes we need to constrain entities based on count - to the _n_ entities with the lowest/highest value. Here are some examples:
+
+- Any person and his 5 oldest offsprings
+- Any dragon the 3 dragons he froze the largest number of times times
+- Any dragon and the 4 dragons it froze for the longest cumulative period
+
+Min/Max aggregations are used to limit entities to the _n_ entities with the lowest/highest count of the number of assignment to an entity, count of the number of assignments to a relationship, or the value of some aggregation operation (e.g. min/max/sum) over the value of some property / some tag - for entities/relationships assignments which match the pattern.
 
 ## M1 Min/Max Aggregation
 
