@@ -1448,9 +1448,9 @@ _**Q167:** Any person who owns things of at least 3 types_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q167.png)
 
-## Aggregate constraints both before and after a Quantifier
+## Applying Aggregate Constraints both before and after a Quantifier Simultaneously
 
-todo
+Aggregate constraints can be applied both before and after a quantifer simultaneously. Here are some examples:
 
 _**Q191:** Any dragon that froze X≥3 dragons and fired at Y≥3 dragons. X+Y≥10_
 
