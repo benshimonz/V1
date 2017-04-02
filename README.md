@@ -1007,7 +1007,13 @@ _**Q52:** Any person who owns (at least) two things of different types, both are
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB06.png)
 
-todo: explain aggregation, aggregation constraint
+Sometimes we need to constrain entities based on counts. Here are some examples:
+
+- Any person having more than 5 offsprings
+- Any dragon the froze dragons at least 10 times
+- Any dragon the froze dragons for more the 1000 minutes cumulatively
+
+Aggregations are used to count the number of entities, to count the number of relationships, or to calculate the value of some aggregation operation (e.g. min/max/sum) over the value of some property / some tag - for entities/relationships which match the pattern. Then, constraints can be enforced on these values.
 
 **Aggregation tag**, ('_{at}_') - Each orange rectangle (aggregation) has an aggregation tag on the top-left corner of its lower part, depicted by an index wrapped in curly brackets. The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
