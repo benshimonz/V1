@@ -213,11 +213,14 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 |Mandatory| Name      | Type   | Description
 |---------|-----------|--------| ------
 |         | pType     | string | Relationship's property type (e.g. of "tf.since" of "member of") to split by
+|         | f         | string | Function to apply to property
 |         | tag       | string | pt/at/st to split by (e.g. "1")
 |         | eTTag     | string | entity type tag to split by (e.g. "1")
 | +       | b         | int    | ENum of element below. <br> Valid element types: RelProp, HQuant, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitsCon
 
-Exactly one of the above must be presented
+Exactly one of (pType, tag, eTTag) must appear
+
+f may appear only if pType appears
 
 ## Splits Constraint (type = "SplitsCon")
 
