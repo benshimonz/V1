@@ -1360,11 +1360,10 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-- An optional function _f_ to apply to the property's value ('relprop._f_')
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
-- For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
-- An optional **constraint** on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
+- For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop) / aggop(relprop.f)_ of the relationships that satisfy the pattern.
+- An optional **constraint** on the value of _aggop(relprop) / aggop(relprop.f)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1635,8 +1634,7 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
-- _relprop_ is a property of the relationship
-- An optional function _f_ to apply to the property's value ('relprop._f_')
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
@@ -1760,8 +1758,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
   - _per →_ - _S1_ is the set of one or more (when following a quantifier - see Q249, Q250) typed/logical/untyped entities directly right of the aggregation
 
 - _n_ is a positive integer
-- _relprop_ is an ordinal property of the relationship
-- An optional function _f_ to apply to the property's value ('relprop._f_')
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - R1 appears below a relationship. The relationship may not be wrapped
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
@@ -2108,7 +2105,7 @@ todo
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P1.png)
 
 - P1 may appear below a 'split by _relprop / relprop.f_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - P1 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q262, Q224)
@@ -2142,7 +2139,7 @@ _**Q220:** Any person and his horses - of the 3 colors he owns the largest numbe
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P2.png)
 
 - P2 may appear below a 'split by _relprop / relprop.f_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - P2 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q225)
@@ -2166,7 +2163,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors it froze dragons 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P3.png)
 
 - P3 may appear below a 'split by _relprop / relprop.f_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- _relprop1_ is a property of the relationship; _f_ is a valid function to apply to the property's value
+- _relprop1_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop1._f_')
 
 - P3 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a relationship. The relationship may be wrapped by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q269)
@@ -2193,7 +2190,7 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-P4.png)
 
 - P4 may appear below a 'split by _relprop / relprop.f_' which appears below a relationship. The relationship may be wrapped by an 'L'
-- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value
+- _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - P4 may appear below a 'split by _{pt/at/st}/< ett >_' which appears below a query-start / relationship / path /  quantifier-input. The relationship / path / quantifier may be wrapped by an '↛' or by an 'L'
 - {pt}/{at}/{st}/< ett > is a property tag / aggregation tag / split tag / entity type tag - defined on top of the aggregation (see XXX) or right of the aggregation (see Q275)
