@@ -375,9 +375,9 @@ f may appear only if pType appears
 | +       | tag       | string   | pt/at/st to aggregate (e.g. "1")
 |         | b         | int      | eNum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
-## Nonidenticality constraints between entity tags
+## Nonidenticality Constraints between Entity Tags
 
-The following snippet demonstrates Nonidenticality constraints between tags "C" and "E", as well as between tags "C" and "F":
+The following snippet demonstrates nonidenticality constraints between tags "C" and "E", as well as between tags "C" and "F":
 
   "nonidentical": [ 
     ["C", "E"]
