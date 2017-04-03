@@ -1995,7 +1995,7 @@ _**Q153:** Any dragon A that in each of at least 11 days - froze between 1 and 5
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
-_**Q252:** Any dragon B that in each of at least 11 days - was frozen by a dragon that in that day froze between 1 and 5 dragons_
+_**Q252:** Any dragon B that in each of at least 11 days - was frozen by a dragon that on that day froze between 1 and 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
 
