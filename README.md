@@ -1984,7 +1984,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
-- A **constraint** on the number of splits that satisfy the pattern may appear below a split. The constraint is in one of these forms:
+- A constraint on the number of splits for which there is at least one assignment that satisfy the pattern - may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1994,6 +1994,8 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 _**Q153:** Any dragon A that in each of at least 11 days - froze between 1 and 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
+
+(Any A for which thaere are at least 10 splits 
 
 _**Q252:** Any dragon B that in each of at least 11 days - was frozen by a dragon that on that day froze between 1 and 5 dragons_
 
