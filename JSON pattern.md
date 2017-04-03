@@ -327,7 +327,8 @@ Exactly one of the above must be presented
 |         | per       | [string] | entity tags on the 'per {et,et,...}/→' clause. '→' is denoted "->"
 | +       | n         | int      | number of min/max entities
 | +       | op        | string   | "min" / "max"
-| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
+| +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of")
+|         | f         | string   | Function to apply to property
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## P1 Aggregation (type = "AggP1")
