@@ -1361,6 +1361,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
+- An optional function _f_ to apply to the property's value ('relprop._f_')
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop)_ of the relationships that satisfy the pattern.
 - An optional **constraint** on the value of _aggop(relprop)_ of the relationships that satisfy the pattern - for each assignment combination to _S1_ entities. The constraint is in one of these forms:
@@ -1635,6 +1636,8 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
 - _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
 - _relprop_ is a property of the relationship
+- An optional function _f_ to apply to the property's value ('relprop._f_')
+
 - Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
 
@@ -1758,6 +1761,7 @@ _**Q232:** Any person and the 3 heaviest horse owned by people he (knows or know
 
 - _n_ is a positive integer
 - _relprop_ is an ordinal property of the relationship
+- An optional function _f_ to apply to the property's value ('relprop._f_')
 
 - R1 appears below a relationship. The relationship may not be wrapped
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
