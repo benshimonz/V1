@@ -219,12 +219,13 @@ There must be a single element with type "Start". Its ENum must equals to 0.
 
 Exactly one of the above must be presented
 
-## Splits constraint (type = "SplitsCon")
+## Splits Constraint (type = "SplitsCon")
 
-|Mandatory| Name      | Type   | Description
-|---------|-----------|--------| ------
-| +       | sTag      | string | split tag to assign (e.g. "1")
-|         | con       | {...}  | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in range_ [0 .. expr] or _in range_ [1 .. expr] should be used. <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
+|Mandatory| Name      | Type     | Description
+|---------|-----------|----------| ------
+| +       | per       | [string] | entity tags on the 'per {et,et,...}' clause
+| +       | sTag      | string   | split tag to assign (e.g. "1")
+|         | con       | {...}    | Constraint <br> _mandatory_ **op**: "eq"/"ne"/gt"/"ge" <br> _mandatory_ **expr**: string <br> ops "lt" and "le" are not used. To avoid ambiguity - either _in range_ [0 .. expr] or _in range_ [1 .. expr] should be used. <br> or <br> _mandatory_ **op**: "in set" <br> _mandatory_ **expr**: array [string] of size 2 or more <br> or <br> _mandatory_ **op**: "in range" <br> _mandatory_ **expr**: array [string] of size 2 <br> _mandatory_ **iType**: interval type: "()"/"(]"/"[)"/"[]" <br> <br> Each element in **expr** may be a constant (e.g. "2"), a tag (e.g. "{2}") or a complex expression (e.g. "{2}+5"). It should be evaluated to a non-negative int.
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
 ## L1 Aggregation (type = "AggL1")
