@@ -1991,9 +1991,17 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
   
   '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
-_**Q153:** Any dragon that in each of at least 11 days - froze no more than 5 dragons_
+_**Q153:** Any dragon A that in each of at least 11 days - froze between 1 and 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
+
+_**Q252:** Any dragon B that in each of at least 11 days - was frozen by a dragon that in that day froze between 1 and 5 dragons_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
+
+_**Q278:** Any dragon pair (A, B) where in each of at least 11 days - A froze between 1 and 5 dragons, one of them is B_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q278.png)
 
 _**Q214:** Any person who owns entities of at least 4 types. For each type - at least 5 entities_
 
