@@ -254,6 +254,7 @@ Exactly one of the above must be presented
 | +       | aTag      | string   | aggregation tag to assign (e.g. "1")
 | +       | aggOp     | string   | aggregation operator: "min" / "max" / "sum" / "avg" / "distinct"
 | +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
+|         | f         | string   | Function to apply to property
 |         | con       | {...}    | Constraint. see below
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy, SplitsCon
 
@@ -305,6 +306,7 @@ Exactly one of the above must be presented
 | +       | op        | string   | "min" / "max"
 | +       | aggOp     | string   | aggregation operator ("min" / "max" / "sum" / "avg" / "distinct")
 | +       | pType     | string   | Relationship's property type (e.g. of "tf.since" of "member of") to aggregate
+|         | f         | string   | Function to apply to property
 |         | b         | int      | ENum of element below. <br> Valid element types: RelProp, HQuant, HComb, AggL1, AggL2, AggL3, AggL4, AggM1, AggM2, AggM3, AggM4, AggR1, SplitBy
 
 ## M4 Aggregation (type = "AggM4")
