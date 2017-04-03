@@ -1984,7 +1984,7 @@ _**Q219:** Any Person and all his horses - of colors he owns at least 3 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Split-L2.png)
 
-- A constraint on the number of splits for which there is at least one assignment that satisfy the pattern - may appear below a split. The constraint is in one of these forms:
+A constraint on the number of splits for which there is at least one assignment that satisfy the pattern - may appear below a split. The constraint is in one of these forms:
   - _= expr / ≠ expr / > expr / ≥ expr_
   - _in (expr .. expr) / in (expr .. expr] / in [expr .. expr) / in [expr .. expr]_
   - _in {expr, expr, ... expr}_
@@ -1995,15 +1995,19 @@ _**Q153:** Any dragon A that in each of at least 11 days - froze between 1 and 5
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q153.png)
 
-(Any A for which thaere are at least 10 splits 
+(Any A for which there are at least 10 splits - for each split there is at least one assignment that satisfies the pattern)
 
 _**Q252:** Any dragon B that in each of at least 11 days - was frozen by a dragon that on that day froze between 1 and 5 dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q252.png)
 
+(Any B for which there are at least 10 splits - for each split there is at least one assignment that satisfies the pattern)
+
 _**Q278:** Any dragon pair (A, B) where in each of at least 11 days - A froze between 1 and 5 dragons, one of them is B_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q278.png)
+
+(Any pair (A,B) for which there are at least 10 splits - for each split there is at least one assignment that satisfies the pattern)
 
 _**Q214:** Any person who owns entities of at least 4 types. For each type - at least 5 entities_
 
