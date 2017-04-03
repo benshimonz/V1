@@ -55,12 +55,29 @@
       ]
     },
     {
+      "cType": "datetimespan",
+      "properties": [
+        {
+          "pType": 1,
+          "type": "datetime",
+          "DBpName": "since",
+          "name": "since"
+        },
+        {
+          "pType": 2,
+          "type": "datetime",
+          "DBpName": "till",
+          "name": "till"
+        }
+      ]
+    },
+    {
       "cType": "personName",
       "properties": [
         {
           "pType": 1,
           "type": "string",
-          "DBpName": "firs",
+          "DBpName": "first",
           "name": "first"
         },
         {
@@ -289,21 +306,12 @@
       "properties": [
         {
           "pType": 1,
-          "type": "datetime",
-          "DBpName": "time",
-          "name": "time",
+          "type": "datetimespan",
+          "DBpName": "span",
+          "name": "tf",
           "report": [
-            "raw"
-          ]
-        },
-        {
-          "pType": 2,
-          "type": "int",
-          "DBpName": "duration",
-          "name": "duration",
-          "units": "min",
-          "report": [
-            "raw"
+            "raw(since)",
+            "raw(till)"
           ]
         }
       ]
@@ -362,8 +370,6 @@
           "name": "tf",
           "report": [
             "raw(since)",
-            "raw(since)",
-            "raw(till)",
             "raw(till)"
           ]
         }
