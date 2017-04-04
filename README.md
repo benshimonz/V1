@@ -195,7 +195,7 @@ Both freeze directions are acceptable. Therefore - a line (instead of an arrow) 
 - An optional function _f_ to apply to the property's value ('prop._f_')
 - An optional **constraint** on the property's value / on 'prop._f_'
 
-  **a constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
+**A constraint filters assignments to the entity/relationship - to only those assignments for which the entity/relationship that satisfy the pattern - satisfy the constraint.**
   
 - A **property tag**, ('_{pt}_') - explained later
 
