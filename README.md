@@ -189,7 +189,7 @@ Both freeze directions are acceptable. Therefore - a line (instead of an arrow) 
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB02.png)
 
-**A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property. It contains:
+**A green rectangle** is connected to an entity (concrete/aggregate/typed/logical/untyped) - on its right, or to a relationship - on its bottom, and represents an entity's / relationship's property, or the result of a function applied to the property's value. It contains:
 
 - The property's name (_'prop'_)
 - An optional function _f_ to apply to the property's value ('prop._f_')
@@ -868,7 +868,7 @@ In this example, the path must contain Rogar Bolton. Any other path segments are
 
 **Property tag**, ('_{pt}_') - Each green rectangle (entity's property / relationship's property) has a property tag on its top-left corner, depicted by an index wrapped in curly brackets.  The indexing of property tags, aggregation tags and split tags is joint, and each tag is unique.
 
-A property tag serves as a placeholder for the property's value in a given assignment. Property tags may be used:
+A property tag serves as a placeholder for the property's value (_'prop'_) or for the result of a function applied to the property's value (_'prop._f_') in a given assignment. Property tags may be used:
 
 * as part of a multivalued composite property's extracted value's sub-property's definition (see Q28)
 * as part of another property tag's constraint (see Q108, Q109)
