@@ -1359,7 +1359,7 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 - L3 appears below a relationship. The relationship may be wrapped by an 'L' or an 'O'
 - all _S1_ entities should be within scope at the relationship (see _scope_ later on)
 
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _aggop_ is _min/max/avg/sum_ - for aggregating an ordinal property / function range, or _distinct_ - for aggregating any property / function range type
 - _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - For each assignment combination to _S1_ entities: _{at}_ - **aggregation tag** - equals to the value of _aggop(relprop) / aggop(relprop.f)_ of the relationships that satisfy the pattern.
@@ -1633,7 +1633,7 @@ _**Q239:** For any pair of people (A,D) where A's dragons froze D's dragons - th
 - _S1_ and _S2_ may not intersect
 
 - M3 appears below a relationship. The relationship may be wrapped by an 'L'.
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _aggop_ is _min/max/avg/sum_ - for aggregating an ordinal property / function range, or _distinct_ - for aggregating any property / function range type
 - _relprop_ is a property of the relationship; _f_ is a valid function to apply to the property's value ('relprop._f_')
 
 - Except for '&' quantifier - M3 aggregation cannot start a quantifier's branch
@@ -1678,7 +1678,7 @@ _**Q201:** For any dragon that froze at least 10 dragons: the 3 dragons it froze
 
 - M4 appears below a relationship / path / quantifier-input. The relationship / path / quantifier may be wrapped by an 'L'
 - M4 appear directly right of the leftmost member of _S1_ and _S2_
-- {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q274) or right of the aggregation (see Q130)
+- {pt} is a property tag of an ordinal property / function range - defined on top of the aggregation (see Q274) or right of the aggregation (see Q130)
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (see Q91) or right of the aggregation (see Q128)
 - Except for '&' quantifier - M4 aggregation cannot start a quantifier's branch
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' (as in 'per pair') or 'pairs' (as in '5 pairs with...') instead of '{_et_, _et_}'
@@ -2174,7 +2174,7 @@ _**Q221:** Balerion and the dragons it froze - of the 3 colors it froze dragons 
 
 - _n_ is a positive integer
 
-- _aggop_ is a _min/max/avg/sum_ aggregation of an ordinal property, or a _distinct_ aggregation of any property
+- _aggop_ is _min/max/avg/sum_ - for aggregating an ordinal property / function range, or _distinct_ - for aggregating any property / function range type
 - _relprop2_ is a property of the relationship (different from _relprop1_)
 
 _**Q269:** Any person and his horses - of the 3 horse colors of which the average ownership start date is the latest_
@@ -2201,7 +2201,7 @@ _**Q222:** Any Person, and his horses - of the 3 colors for which his average ow
 
 - _n_ is a positive integer
 
-- {pt} is a property tag of an ordinal property - defined on top of the aggregation (see Q276) or right of the aggregation (see Q275)
+- {pt} is a property tag of an ordinal property / function range - defined on top of the aggregation (see Q276) or right of the aggregation (see Q275)
 - {at}/{st} is an aggregation tag / split tag - defined on top of the aggregation (see Q264, Q226, Q223) or right of the aggregation
 
 _**Q275:** Any person and his horses - of the 3 horse colors of which he owns the heaviest horse_
