@@ -2423,7 +2423,7 @@ Here are some definition examples:
 
 ## Tag Rules
 
-**R1:** Only one property tag can be assigned to any property.
+**R1:** Only one property tag can be assigned to any property / _f_(property)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
 
