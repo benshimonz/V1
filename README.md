@@ -6,7 +6,7 @@ The V1 language, all the content of [https://github.com/LiorKogan/V1](https://gi
 
 V1 is dedicated to my ancestors all the way back, and to their descendants all the way forward.
 
-This is a work in progress, subject to change at any time.
+This is a work in progress, subject to change at any time. Feedback is welcome.
 
 ## The Property Graph Data Model
 
