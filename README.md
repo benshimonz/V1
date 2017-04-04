@@ -597,7 +597,7 @@ _**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
-Green rectangles and orange rectangles below a horizontal quantifier can also be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
+Green rectangles and orange rectangles below a relationship can also be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
 
 Here is an example:
 
@@ -1789,17 +1789,19 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 
 ## Aggregation Chains
 
-todo
+Green rectangles and orange rectangles below a relationship can be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
 
 _**Q259:** Any person who since 1011 become owner of 0 to 4 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
 
+Note that the order of the constraints along the chain matters: the top constraint filters relationships based on the value of their properties. The second constraint is on the number of entities that passed the first filter.
+
 _**Q96:** Any dragon that was frozen by Balerion more than 10 times - each of these times is on 1/1/1010 or later and for a period shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-Note that the order of the constraints along the chain matters. The first two constraints filter relationships based on the value of their properties. The third constraint ensure that enough relationships passed these filters.
+Again, the order of the constraints along the chain matters: the top two constraints filter relationships based on the value of their properties. The third constraint is on the number of relationships that passed these filters.
 
 _**Q115:** Any person who at a certain date became an owner of more than 5 horses (version 1)_
 
