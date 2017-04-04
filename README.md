@@ -1791,13 +1791,15 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 
 todo
 
-_**Q96:** Any dragon that was frozen by Balerion, in  1/1/1010 or later, more than 10 times, for periods shorter than 10 minutes_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
-
 _**Q259:** Any person who since 1011 become owner of 0 to 4 horses_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
+
+_**Q96:** Any dragon that was frozen by Balerion more than 10 times - each of these times is on 1/1/1010 or later and for a period shorter than 10 minutes_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
+
+Note that the order of the constraints along the chain matters. The first two constraints filter relationships based on the value of their properties. The third constraint ensure that enough relationships passed these filters.
 
 _**Q115:** Any person who at a certain date became an owner of more than 5 horses (version 1)_
 
