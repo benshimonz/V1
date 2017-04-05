@@ -1361,7 +1361,7 @@ _**Q279:** Any pair of people (A, D) where A's dragons didn't froze D's dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q279-1.png)
 
-The pattern above won't return D's. The pattern below fixes it:
+The result of the pattern above won't contain D's. The pattern below fixes this:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q279-2.png)
 
