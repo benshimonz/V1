@@ -1885,9 +1885,13 @@ _**Q186:** Any dragon to that Balerion froze more than 10 times for less than 10
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q186.png)
 
-_**Q99:** Any dragon to that Balerion froze more than 10 times for less than 10 minutes, and not once for 10 minutes or more_
+_**Q99:** Any dragon to that Balerion froze more than 10 times for less than 10 minutes, and not once for 10 minutes or more (3 versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099-1.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099-2.png)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099-3.png)
 
 _**Q100:** Any dragon to which Balerion froze more than 10 times for less than 10 minutes, more than 10 times in 1/1/1010 or later, more than 15 times for less than 10 minutes in 1/1/1010 or later, and more than 100 times altogether_
 
