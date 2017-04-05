@@ -1081,6 +1081,8 @@ _**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
+When a _"per ← : → = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
+
 _**Q82:** Any dragon that wasn't frozen by any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
@@ -1293,9 +1295,13 @@ _**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
+When a _"per ← : relationships = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
+
 _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
+
+When a _"per ← : paths = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
 
 _**Q104:** Any person who owned white horses at least 10 times (same or different horses)_
 
@@ -1791,17 +1797,19 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 
 Green rectangles and orange rectangles below a relationship can be **chained**. When chained, each green/orange rectangle serves as a filtering step. The constraints are met only if there is an assignment that passes all filtering steps.
 
-_**Q259:** Any person who since 1011 become owner of 0 to 4 horses_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
-
-Note that the order of the constraints along the chain matters: the top constraint filters relationships based on the value of their properties. The second constraint is on the number of entities that passed the first filter.
-
 _**Q96:** Any dragon that was frozen by Balerion more than 10 times - each of these times is on 1/1/1010 or later and for a period shorter than 10 minutes_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q096.png)
 
-Again, the order of the constraints along the chain matters: the top two constraints filter relationships based on the value of their properties. The third constraint is on the number of relationships that passed these filters.
+Note that he order of the constraints along the chain matters: the top two constraints filter relationships based on the value of their properties. The third constraint is on the number of relationships that passed these filters.
+
+_**Q259:** Any person who since 1011 become owner of 0 to 4 horses_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q259.png)
+
+Again, the order of the constraints along the chain matters: the top constraint filters relationships based on the value of their properties. The second constraint is on the number of entities that passed the first filter.
+
+Note that the second constraint is satisfied only if no relationship satisfies the top constraint. The second constraint would be evaluated nonetheless. (More such examples: Q99v1, Q158, Q159 and Q260)
 
 _**Q115:** Any person who at a certain date became an owner of more than 5 horses (version 1)_
 
