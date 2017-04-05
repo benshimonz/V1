@@ -422,6 +422,8 @@ In such cases, the **no-connection language element (depicted with a pink '↛' 
 
 '↛''s are usually used directly before a relationship or a path with an aggregation.
 
+Anything or right of a no-existence / a no-connection language element won't be part of the query's answer
+
 Examples:
 
 _**Q12:** Any person who doesn't own a horse_
@@ -1081,7 +1083,7 @@ _**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-When a _"per ← : → = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
+Anything right of a _"per ← : → = 0"_ constraint won't be part of the query's answer.
 
 _**Q82:** Any dragon that wasn't frozen by any dragon_
 
@@ -1295,13 +1297,13 @@ _**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
-When a _"per ← : relationships = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
+Anything right of a _"per ← : relationships = 0"_ constraint won't be part of the query's answer.
 
 _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-When a _"per ← : paths = 0"_ constraint is satisfied - the query's answer will contain only the left side of the constraint.
+Anything right of a _"per ← : paths = 0"_ constraint won't be part of the query's answer.
 
 _**Q104:** Any person who owned white horses at least 10 times (same or different horses)_
 
