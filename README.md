@@ -1297,7 +1297,7 @@ _**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
-Anything right of a _"per ← : relationships = 0"_ constraint won't be part of the query's result.
+Anything right of a _"per {...} : relationships = 0"_ constraint won't be part of the query's result.
 
 _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
