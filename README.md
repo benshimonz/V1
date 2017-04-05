@@ -169,7 +169,7 @@ For every blue rectangle, red rectangle, black arrow, and black line - the query
 
 Here are some basic patterns:
 
-_**Q1:** Any dragon owned by Brandon Stark (two versions)_
+_**Q1:** Any dragon owned by Brandon Stark_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q001-1.png)
 
@@ -492,7 +492,7 @@ _**Q258:** Any person who didn't become a white horse owner on or after 1011_
 
 An 'X' / an '↛' may also appear before a relationship that directly follows a quantifier's branch:
 
-_**Q20:** Any horse that is neither owned by Rogar Bolton nor by Robin Arryn (two versions)_
+_**Q20:** Any horse that is neither owned by Rogar Bolton nor by Robin Arryn_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-1.png)
 
@@ -500,7 +500,7 @@ This pattern can also be represented using the '0' quantifier (explained below)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q020-2.png)
 
-_**Q21:** Any horse that is not owned by both Rogar Bolton and Robin Arryn (two versions)_
+_**Q21:** Any horse that is not owned by both Rogar Bolton and Robin Arryn_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-1.png)
 
@@ -508,12 +508,12 @@ This pattern can also be represented using the 'not all' quantifier (explained b
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q021-2.png)
 
-_**Q25:** Any dragon (C) that wasn't fired at by Balerion, but was fired at by a dragon that Balerion fired at (two versions)_
+_**Q25:** Any dragon (C) that wasn't fired at by Balerion, but was fired at by a dragon that Balerion fired at_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q025-2.png)
 
-_**Q26:** Any guild that people who are members of the same guild as Brandon Stark are member of, but Brandom is not a member of that guild (four versions)_
+_**Q26:** Any guild that people who are members of the same guild as Brandon Stark are member of, but Brandom is not a member of that guild_ (four versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q026-2.png)
@@ -615,12 +615,12 @@ The entity type on an combiner's right side must match all the relationship type
 
 Here are some examples:
 
-_**Q29:** Any dragon that froze or fired at some dragon (two versions)_
+_**Q29:** Any dragon that froze or fired at some dragon_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q029-2.png)
 
-_**Q30:** Any dragon pair (A, B) where A both froze B and fired at B (two versions)_
+_**Q30:** Any dragon pair (A, B) where A both froze B and fired at B_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-1.png)
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q030-2.png)
@@ -906,7 +906,7 @@ _**Q112:** Any person who owned a horse and a dragon in the same time frames_
 
 Composite properties, as well as sub-properties, are tagged, and can be referenced similar to ordinary properties. Here are some examples:
 
-_**Q266:** Any person who has the same name (first and last) as his parent (two versions)_
+_**Q266:** Any person who has the same name (first and last) as his parent_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q266-1.png)
 
@@ -1071,7 +1071,7 @@ _**Q62:** Any person who is within graph distance ≤ 4 from more than 5 people_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q062.png)
 
-_**Q136:** Any dragon A that froze (dragons that froze dragons B). The cumulative number of distinct Bs (per A) is greater than 100  (two versions)_
+_**Q136:** Any dragon A that froze (dragons that froze dragons B). The cumulative number of distinct Bs (per A) is greater than 100_  (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q136-1.png)
 
@@ -1085,7 +1085,7 @@ _**Q82:** Any dragon that wasn't frozen by any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q082.png)
 
-_**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 B's, and froze each one of those (two versions)_
+_**Q177:** Any dragon pair (A,B) were A was frozen by at least 10 B's, and froze each one of those_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q177-1.png)
 
@@ -1116,7 +1116,7 @@ Hence, for each concrete A:
 
 * At least 10 dragons froze A and either (i) A froze only one dragon - which is not one of those (ii) A froze at least 2 dragons
 
-_**Q85:** Any dragon that froze at least 10 dragons, and was frozen by at least 10 dragons (two versions)_
+_**Q85:** Any dragon that froze at least 10 dragons, and was frozen by at least 10 dragons_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q085-1.png)
 
@@ -1271,7 +1271,7 @@ _**Q71:** Any dragon that froze dragons more than 10 times (cumulatively)_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q071.png)
 
-_**Q72:** Any dragon A that was frozen exactly 10 times (cumulatively) (2 versions)_
+_**Q72:** Any dragon A that was frozen exactly 10 times (cumulatively)_ (2 versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072-1.png)
 
@@ -1885,7 +1885,7 @@ _**Q186:** Any dragon to that Balerion froze more than 10 times for less than 10
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q186.png)
 
-_**Q99:** Any dragon to that Balerion froze more than 10 times for less than 10 minutes, and not once for 10 minutes or more (3 versions)_
+_**Q99:** Any dragon to that Balerion froze more than 10 times for less than 10 minutes, and not once for 10 minutes or more_ (3 versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q099-1.png)
 
@@ -1905,7 +1905,7 @@ _**Q200:** Any dragon that (froze more than 10 times each of more than 10 dragon
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q200.png)
 
-_**Q277:** Any dragon that the longest (cumulative period it froze some dragon) is more than 10 times longer than the shortest (cumulative period it froze some dragon) (two versions)_
+_**Q277:** Any dragon that the longest (cumulative period it froze some dragon) is more than 10 times longer than the shortest (cumulative period it froze some dragon)_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q277-1.png)
 
@@ -1951,7 +1951,7 @@ _**Q164:** Any dragon that the number of times dragons it froze have frozen drag
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q164.png)
 
-_**Q179:** Any dragon pair (A, B) where A froze B for a cumulative period longer than the cumulative period that B froze dragons (two versions)_
+_**Q179:** Any dragon pair (A, B) where A froze B for a cumulative period longer than the cumulative period that B froze dragons_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q179-1.png)
 
@@ -2132,7 +2132,7 @@ _**Q262:** Any horse of the 3 colors of which the number of horses is maximal_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q262.png)
 
-_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners (two versions)_
+_**Q224:** Any person and his horses - of the 3 horse colors with the smallest positive number of horse owners_ (two versions)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q224-1.png)
 
