@@ -1357,6 +1357,14 @@ _**Q242:** Any pair of people (A, D) where at least 5 times any of A's dragons f
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q242.png)
 
+_**Q279:** Any pair of people (A, D) where A's dragons didn't froze D's dragons_ (two versions)
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q279-1.png)
+
+The pattern above won't return D's. The pattern below fixes it:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q279-2.png)
+
 ## L3 Aggregation
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Agg-L3.png)
