@@ -349,7 +349,7 @@ When a relationship need to satisfy several constraints (as in Q10: the freeze t
 
 There is a letter in the top-left corner of any entity rectangle (concrete/aggregate/typed/logical/untyped). This letter is called an **'entity tag'**.
 
-Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's answer as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
+Entity tags serve two purposes. First, when a pattern is used as a query, entity tags appear in the query's result as well: any concrete entity in the answer is tagged with the same tag as the query's entity it was assigned to. This helps the user understand why any given entity is part of the answer. Second, entity tags are used to express _identicality constraints_ and _nonidenticality constraints_.
 
 **Identicality constraint** is used when the same (identical) concrete entity must be assigned to several typed entities of the same type / several untyped entities. Here is an example:
 
@@ -422,7 +422,7 @@ In such cases, the **no-connection language element (depicted with a pink '↛' 
 
 '↛''s are usually used directly before a relationship or a path with an aggregation.
 
-Anything or right of a no-existence / a no-connection language element won't be part of the query's answer
+Anything or right of a no-existence / a no-connection language element won't be part of the query's result.
 
 Examples:
 
@@ -1083,7 +1083,7 @@ _**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-Anything right of a _"per ← : → = 0"_ constraint won't be part of the query's answer.
+Anything right of a _"per ← : → = 0"_ constraint won't be part of the query's result.
 
 _**Q82:** Any dragon that wasn't frozen by any dragon_
 
@@ -1297,13 +1297,13 @@ _**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
-Anything right of a _"per ← : relationships = 0"_ constraint won't be part of the query's answer.
+Anything right of a _"per ← : relationships = 0"_ constraint won't be part of the query's result.
 
 _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q084.png)
 
-Anything right of a _"per ← : paths = 0"_ constraint won't be part of the query's answer.
+Anything right of a _"per ← : paths = 0"_ constraint won't be part of the query's result.
 
 _**Q104:** Any person who owned white horses at least 10 times (same or different horses)_
 
@@ -2318,13 +2318,13 @@ _**Q208:** Any dragon owned by an entity encapsulated within 'Kings' - since 1/1
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q208.png)
 
-The aggregate entity 'Kings' will be part of the query result. It won't be disassembled into its four members.
+The aggregate entity 'Kings' will be part of the query's result. It won't be disassembled into its four members.
 
 _**Q209:** Any dragon than froze at least 3 dragons owned by entities encapsulated within 'Sarnorian'_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q209.png)
 
-If, for example, some dragon froze 2 dragons owned by Stark, and 1 dragon owned by Bolton - it would be part of the answer. Again, 'Kings' will be a part of the query result.
+If, for example, some dragon froze 2 dragons owned by Stark, and 1 dragon owned by Bolton - it would be part of the answer. Again, 'Kings' will be a part of the query's result.
 
 _**Q210:** Any person who has at least 3 'owns' relationships with entities encapsulated within 'Black Things'_
 
