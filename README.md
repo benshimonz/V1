@@ -1083,7 +1083,7 @@ _**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
 
-Anything right of a _"per ← : → = 0"_ constraint won't be part of the query's result.
+Trivially, anything right of a _"per ← : → = 0"_ constraint won't be part of the query's result. In general, anything right of a _"per {...} : X = 0"_ constraint won't be part of the query's result, even if 'X' is not directly right of the relationship.
 
 _**Q82:** Any dragon that wasn't frozen by any dragon_
 
