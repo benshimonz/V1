@@ -597,7 +597,7 @@ _**Q189:** Any dragon that was frozen by Balerion: (at least once in 1/1/1010 or
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q189.png)
 
-Green rectangles and orange rectangles below a relationship can also be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
+Green rectangles and orange rectangles below a relationship can also be **chained**. When chained, each green/orange rectangle serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all filtering steps.
 
 Here is an example:
 
@@ -1789,7 +1789,7 @@ _**Q240:** For any pair of people (A, D): The 3 longest freezes where any of A's
 
 ## Aggregation Chains
 
-Green rectangles and orange rectangles below a relationship can be **chained**. When chained, each element serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all the filtering steps.
+Green rectangles and orange rectangles below a relationship can be **chained**. When chained, each green/orange rectangle serves as a filtering step. The branch's constraint is met only if there is an assignment that passes all filtering steps.
 
 _**Q259:** Any person who since 1011 become owner of 0 to 4 horses_
 
