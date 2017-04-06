@@ -215,9 +215,9 @@ _**Q190:** Any person who owns a dragon since 1/1/1011 or since a later date (ve
 
 ## Units
 
-Numeric constants may represent physical measures such as weight, height and duration. Different users, or even the same user in different contexts, may want to define constraints on the value of properties using different units: [Kg] or [lbs]; [cm] or [ft], [sec] or [min].
+Numeric constants may represent physical measures such as weight, height and duration. Different users, or even the same user in different contexts, may want to define constraints on the value of properties using different unit types: [Kg] or [lbs]; [cm] or [ft], [sec] or [min].
 
-To avoid ambiguity, units are defined for relevant properties, and are always displayed (see Q117, Q265, Q95). When building a query, if several units are available (e.g. seconds / minutes / hours / ...) - users may select which units to use.
+To avoid ambiguity, units are defined for relevant properties, and are always displayed (see Q117, Q265, Q95). When building a query, if several unit types are defined - users may select which units to use.
 
 ## Properties - Functions and Constraints
 
