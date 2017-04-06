@@ -2471,7 +2471,7 @@ Here are some definition examples:
 
 **R3:** For any quantifier except '&' - a tag defined in a branch is evaluated as 'empty' if the branch has no valid assignment.
 
-**R4 - Tag scope:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part has no valid assignment.
+**R4:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part has no valid assignment.
 
 **R5 - Tag scope:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
