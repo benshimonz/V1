@@ -157,6 +157,7 @@ There must be a single element with type "Start". Its eNum must equals to 0.
 | +       | qType     | string | "all"/"some"/"gt"/"ge"/"notall"/"none"/"eq"/"ne"/"range". <br> "lt" and "le" are not used. To avoid ambiguity - either _range_ [0 .. value] or _range_ [1 .. value] should be used. "ne" is satisfied only if > 0
 |         | qVal      | int    | mandatory if qType = "gt"/"ge"/"eq"/"ne"
 |         | qVal      | [int]  | mandatory if qType = "range": array[int] of size 2
+|         | wrapper   | string | "L": Latent, "O": Optional
 | +       | next      | [int]  | eNum of first element in each branch (>1 branches). <br> Valid element types: Rel, Path, EProp, Quant1
 |         | b         | int    | eNum of element below. <br> Valid element types: <ul><li>HQuant </li> <li> AggL1 </li> <li> AggL2 </li> <li> AggL4 </li> <li> AggM1 </li> <li> AggM2 </li> <li> AggM4 </li> <li> SplitBy </li></ul> (Aggregation is valid only if there is at least one entity right of the quantifier)
 
