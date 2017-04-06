@@ -1053,7 +1053,7 @@ If an aggregation tag is used in any of these usages - it is depicted in bold pu
   
   '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
   
-When the constraint is in the form _"per {...} : et = 0"_ or _"per {...} : et in [0 .. expr]"_ (see Q64, Q165) - _et_ must be defined right of the constraint. Anything right of a _"= 0"_ constraint won't be part of the query's result.
+When the constraint is in the form _"per {...} : et = 0"_ or _"per {...} : et in [0 .. expr]"_ - _et_ must be defined right of the constraint. Anything right of a _"= 0"_ constraint won't be part of the query's result. See Q64, Q165.
 
   **L1 filters assignment combinations to _S1_ entities - to only those combinations for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the constraint.**
 
@@ -1267,6 +1267,8 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
   '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
+Anything right of a _"relationships = 0"_ constraint won't be part of the query's result (including entities which are part of _S1_). See Q73, Q83, Q84, Q279.
+
   **L2 filters assignment combinations to _S1_ entities - to only those combinations for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
 
 - The visual notation for the entity directly left of the aggregation is '←' instead of '_et_'. Similarly, the visual notation for the entities directly right of the aggregation is '→'. When there is a single entity directly left of the aggregation and a single entity directly right of the aggregation - the visual notation for both is 'pair' instead of '{_et_, _et_}'
@@ -1281,10 +1283,6 @@ _**Q72:** Any dragon A that was frozen exactly 10 times (cumulatively)_ (2 versi
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q072-2.png)
 
-_**Q73:** Any dragon that froze dragons no more than 10 times (cumulatively)_
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
-
 _**Q74:** Any dragon that the number of times it was frozen (cumulatively) is not 10_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q074.png)
@@ -1298,6 +1296,10 @@ _**Q83:** Any dragon that didn't freeze any dragon_
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
 
 Anything right of a _"per {...} : relationships = 0"_ constraint won't be part of the query's result.
+
+_**Q73:** Any dragon that froze dragons no more than 10 times (cumulatively)_
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q073.png)
 
 _**Q84:** Any dragon with no paths with length ≤ 3 to other dragons_
 
