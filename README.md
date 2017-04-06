@@ -2469,7 +2469,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
-**R3** For any quantifier except '&' - a tag defined in a branch is evaluated as 'empty' if the branch has no valid assignment.
+**R3:** For any quantifier except '&' - a tag defined in a branch is evaluated as 'empty' if the branch has no valid assignment.
 
 **R4 - Tag scope:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part has no valid assignment.
 
