@@ -1267,7 +1267,7 @@ _**Q244:** Any pair of people (A, D) where at least 5 of A's dragons froze D's d
 
   '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
 
-Anything right of a _"relationships = 0"_ constraint won't be part of the query's result (including entities which are part of _S1_). See Q73, Q83, Q84, Q279.
+Anything right of a _"relationships = 0" / "paths = 0"_ constraint won't be part of the query's result (even entities which are part of _S1_). See Q83, Q73, Q84, Q279.
 
   **L2 filters assignment combinations to _S1_ entities - to only those combinations for which number of relationships / paths that satisfy the pattern - satisfy the constraint.**
 
@@ -1294,8 +1294,6 @@ _**Q79:** Any person with more than 5 paths (cumulatively) with length ≤ 4 to 
 _**Q83:** Any dragon that didn't freeze any dragon_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q083.png)
-
-Anything right of a _"per {...} : relationships = 0"_ constraint won't be part of the query's result.
 
 _**Q73:** Any dragon that froze dragons no more than 10 times (cumulatively)_
 
