@@ -1981,9 +1981,17 @@ _**Q213:** Out of the dragon pairs (A, B) where A froze B for a cumulative perio
 
 Note that the order of the filtering stages along the left chain can be switched. The semantics would remain the same.
 
-_**Q180:** Any dragon pair (A, B) where the cumulative duration A and B froze each other - is greater the cumulative duration A froze dragons, and greater than the cumulative duration B froze dragons_
+_**Q180:** Any dragon pair (A, B) where the cumulative duration A and B froze each other - is greater the cumulative duration A froze other dragons, and greater than the cumulative duration B froze other dragons (two versions)_
 
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180.png)
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180-1.png)
+
+There is a problem with the pattern above: If A didn't freeze any dragons, or if B didn't freeze an dragon - we won't get the pair (A, B) as an answer.
+
+The following pattern fixes this:
+
+![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180-2.png)
+
+Note that a tag defined right of an 'O' is evaluated as 'empty' if the 'O' part have no valid assignment.
 
 ## L1/L2/L3/L4 Aggregation below a Split
 
@@ -2465,7 +2473,7 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
-**R4 - Tag scope:** A tag defined right of an 'O' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'O' on a quantifier's branch - cannot be referenced in other branches.
+**R4 - Tag scope:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part have no valid assignment.
 
 **R5 - Tag scope:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
