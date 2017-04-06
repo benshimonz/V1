@@ -1052,6 +1052,8 @@ If an aggregation tag is used in any of these usages - it is depicted in bold pu
   - _in {expr, expr, ... expr}_
   
   '_< expr_' and '_≤ expr_' are not used. To avoid ambiguity - either '_in [0 .. expr]_' or '_in [1 .. expr]_' should be used. '≠ expr' is satisfied only if _> 0_.
+  
+When the constraint is in the form _"per {...} : et = 0"_ or _"per {...} : et in [0 .. expr]"_, _et_ must be defined right of the constraint. Anything right of a _"= 0"_ constraint won't be part of the query's result.
 
   **L1 filters assignment combinations to _S1_ entities - to only those combinations for which the number of '→' / _et_ entities that satisfy the pattern - satisfy the constraint.**
 
@@ -1082,8 +1084,6 @@ _**Q136:** Any dragon A that froze (dragons that froze dragons B). The cumulativ
 _**Q81:** Any dragon that didn't freeze any dragons_
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q081.png)
-
-Trivially, anything right of a _"per ← : → = 0"_ constraint won't be part of the query's result. In general, anything right of a _"per {...} : X = 0"_ constraint won't be part of the query's result, even if 'X' is not directly right of the relationship.
 
 _**Q82:** Any dragon that wasn't frozen by any dragon_
 
