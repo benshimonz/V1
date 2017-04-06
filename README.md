@@ -305,6 +305,8 @@ A quantifier has one connection on its left side, and two or more branches on it
 * A green rectangle (entity's property value constraint / tag), or
 * A quantifier
 
+In this usage, a quantifier may be preceded by an 'O' or an 'L' (see Q147, Q149)
+
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB03.png)
 
 4 quantifiers are defined now, and 8 other quantifiers are defined later on - after No-existence is explained.
