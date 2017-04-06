@@ -281,10 +281,10 @@ The data model may support empty (missing) values for one or more properties. em
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/BB10.png)
 
-* A constraint with a blue comparison operator: If the value is missing - the constraint is evaluated as false; otherwise - it is evaluated according to the value and the expression
-* A constraint with a red comparison operator: If the value is missing - the constraint is evaluated as true; otherwise - it is evaluated according to the value and the expression
-* An 'empty' constraint - if the value is missing - the constraint is evaluated as false; otherwise - it is evaluated as true
-* A 'not empty' constraint - if the value is missing - the constraint is evaluated as true; otherwise - it is evaluated as false
+* A constraint with a **blue comparison operator**: If the value is empty - the constraint is evaluated as false; otherwise - it is evaluated according to the value and the expression
+* A constraint with a **red comparison operator**: If the value is empty - the constraint is evaluated as true; otherwise - it is evaluated according to the value and the expression
+* An 'empty' constraint - if the value is empty - the constraint is evaluated as false; otherwise - it is evaluated as true
+* A 'not empty' constraint - if the value is empty - the constraint is evaluated as true; otherwise - it is evaluated as false
 
 The result of a function on an empty value _f(empty value)_ should be well defined for any function _f()_.
 
