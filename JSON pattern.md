@@ -36,7 +36,7 @@
 | AggP3      | P3 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element53.png)
 | AggP4      | P4 Aggregation          | ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/Element54.png)
 
-## Wrappers for relationships / paths
+## Wrappers (for Rel / Path / Quant1)
 
 **N** - No-existance  ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperX.png)
 **X** - No-connection ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Elements/WrapperN.png)
