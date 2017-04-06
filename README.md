@@ -1993,7 +1993,7 @@ The following pattern fixes this:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Q180-2.png)
 
-Note that a tag defined right of an 'O' is evaluated as 'empty' if the 'O' part have no valid assignment.
+Note that a tag defined right of an 'O' is evaluated as 'empty' if the 'O' part has no valid assignment.
 
 ## L1/L2/L3/L4 Aggregation below a Split
 
@@ -2463,19 +2463,15 @@ Here are some definition examples:
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag01.png)
 
-**R2 - Tag scope:** For any quantifier except '&' - a tag defined in a branch cannot be referenced in other branches, and cannot be referenced left of the quantifier.
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-1.png)
-
-![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag03-2.png)
-
-**R3 - Tag scope:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannot be referenced in other branches.
+**R2 - Tag scope:** A tag defined right of an 'X' - cannot be referenced left of its definition. Additionally - A tag defined right of an 'X' on a quantifier's branch - cannot be referenced in other branches.
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-1.png)
 
 ![V1](https://raw.githubusercontent.com/LiorKogan/V1/master/Pictures/Illegal-Tag05-2.png)
 
-**R4 - Tag scope:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part have no valid assignment.
+**R3** For any quantifier except '&' - a tag defined in a branch is evaluated as 'empty' if the branch has no valid assignment.
+
+**R4 - Tag scope:** A tag defined right of an 'O' is evaluated as 'empty' if the 'O' part has no valid assignment.
 
 **R5 - Tag scope:** A tag defined right of an '↛' - cannot be referenced left of its definition. Additionally - A tag defined right of an '↛' on a quantifier's branch - cannot be referenced in other branches.
 
